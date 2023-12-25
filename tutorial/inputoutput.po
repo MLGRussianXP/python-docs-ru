@@ -504,7 +504,7 @@ msgstr ""
 
 #: tutorial/inputoutput.rst:287
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: tutorial/inputoutput.rst:287
 msgid "open"
@@ -512,7 +512,7 @@ msgstr ""
 
 #: tutorial/inputoutput.rst:287
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: tutorial/inputoutput.rst:287
 msgid "file"
@@ -520,7 +520,7 @@ msgstr ""
 
 #: tutorial/inputoutput.rst:469
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: tutorial/inputoutput.rst:469
 msgid "json"

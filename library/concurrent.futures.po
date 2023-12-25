@@ -216,8 +216,7 @@ msgid ""
 "easier debugging."
 msgstr ""
 
-#: library/concurrent.futures.rst:179
-#: library/concurrent.futures.rst:282
+#: library/concurrent.futures.rst:179 library/concurrent.futures.rst:282
 msgid "Added the *initializer* and *initargs* arguments."
 msgstr ""
 
@@ -392,8 +391,7 @@ msgid ""
 "no limit to the wait time."
 msgstr ""
 
-#: library/concurrent.futures.rst:386
-#: library/concurrent.futures.rst:400
+#: library/concurrent.futures.rst:386 library/concurrent.futures.rst:400
 msgid ""
 "If the future is cancelled before completing then :exc:`.CancelledError` "
 "will be raised."
@@ -478,15 +476,13 @@ msgid ""
 "Sets the result of the work associated with the :class:`Future` to *result*."
 msgstr ""
 
-#: library/concurrent.futures.rst:447
-#: library/concurrent.futures.rst:460
+#: library/concurrent.futures.rst:447 library/concurrent.futures.rst:460
 msgid ""
 "This method should only be used by :class:`Executor` implementations and "
 "unit tests."
 msgstr ""
 
-#: library/concurrent.futures.rst:450
-#: library/concurrent.futures.rst:463
+#: library/concurrent.futures.rst:450 library/concurrent.futures.rst:463
 msgid ""
 "This method raises :exc:`concurrent.futures.InvalidStateError` if the :class:"
 "`Future` is already done."

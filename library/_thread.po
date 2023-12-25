@@ -312,7 +312,7 @@ msgstr ""
 
 #: library/_thread.rst:211
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/_thread.rst:211
 msgid "signal"

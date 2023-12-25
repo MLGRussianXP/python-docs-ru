@@ -22,7 +22,7 @@ msgstr ""
 
 #: faq/design.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "內容"
 
 #: faq/design.rst:11
 msgid "Why does Python use indentation for grouping of statements?"

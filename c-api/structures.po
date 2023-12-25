@@ -604,12 +604,8 @@ msgstr ""
 msgid ":c:expr:`char`"
 msgstr ""
 
-#: c-api/structures.rst:573
-#: c-api/structures.rst:575
-#: c-api/structures.rst:577
-#: c-api/structures.rst:579
-#: c-api/structures.rst:581
-#: c-api/structures.rst:582
+#: c-api/structures.rst:573 c-api/structures.rst:575 c-api/structures.rst:577
+#: c-api/structures.rst:579 c-api/structures.rst:581 c-api/structures.rst:582
 msgid ":py:class:`int`"
 msgstr ""
 
@@ -800,7 +796,7 @@ msgstr ""
 
 #: c-api/structures.rst:380
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: c-api/structures.rst:370
 msgid "classmethod"

@@ -98,25 +98,19 @@ msgstr ""
 msgid "These are the Boolean operations, ordered by ascending priority:"
 msgstr ""
 
-#: library/stdtypes.rst:144
-#: library/stdtypes.rst:366
-#: library/stdtypes.rst:965
+#: library/stdtypes.rst:144 library/stdtypes.rst:366 library/stdtypes.rst:965
 #: library/stdtypes.rst:1170
 msgid "Operation"
 msgstr ""
 
-#: library/stdtypes.rst:276
-#: library/stdtypes.rst:416
-#: library/stdtypes.rst:1170
+#: library/stdtypes.rst:276 library/stdtypes.rst:416 library/stdtypes.rst:1170
 msgid "Result"
 msgstr ""
 
-#: library/stdtypes.rst:276
-#: library/stdtypes.rst:965
-#: library/stdtypes.rst:2420
+#: library/stdtypes.rst:276 library/stdtypes.rst:965 library/stdtypes.rst:2420
 #: library/stdtypes.rst:3638
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: library/stdtypes.rst:88
 msgid "``x or y``"
@@ -126,9 +120,7 @@ msgstr ""
 msgid "if *x* is true, then *x*, else *y*"
 msgstr ""
 
-#: library/stdtypes.rst:967
-#: library/stdtypes.rst:1181
-#: library/stdtypes.rst:3644
+#: library/stdtypes.rst:967 library/stdtypes.rst:1181 library/stdtypes.rst:3644
 msgid "\\(1)"
 msgstr ""
 
@@ -140,9 +132,7 @@ msgstr ""
 msgid "if *x* is false, then *x*, else *y*"
 msgstr ""
 
-#: library/stdtypes.rst:289
-#: library/stdtypes.rst:1209
-#: library/stdtypes.rst:2432
+#: library/stdtypes.rst:289 library/stdtypes.rst:1209 library/stdtypes.rst:2432
 #: library/stdtypes.rst:3650
 msgid "\\(2)"
 msgstr ""
@@ -155,18 +145,13 @@ msgstr ""
 msgid "if *x* is false, then ``True``, else ``False``"
 msgstr ""
 
-#: library/stdtypes.rst:979
-#: library/stdtypes.rst:2434
-#: library/stdtypes.rst:2438
-#: library/stdtypes.rst:3652
-#: library/stdtypes.rst:3656
+#: library/stdtypes.rst:979 library/stdtypes.rst:2434 library/stdtypes.rst:2438
+#: library/stdtypes.rst:3652 library/stdtypes.rst:3656
 #: library/stdtypes.rst:3658
 msgid "\\(3)"
 msgstr ""
 
-#: library/stdtypes.rst:320
-#: library/stdtypes.rst:1016
-#: library/stdtypes.rst:2466
+#: library/stdtypes.rst:320 library/stdtypes.rst:1016 library/stdtypes.rst:2466
 #: library/stdtypes.rst:3688
 msgid "Notes:"
 msgstr ""
@@ -206,8 +191,7 @@ msgstr ""
 msgid "This table summarizes the comparison operations:"
 msgstr ""
 
-#: library/stdtypes.rst:2397
-#: library/stdtypes.rst:3615
+#: library/stdtypes.rst:2397 library/stdtypes.rst:3615
 #: library/stdtypes.rst:3638
 msgid "Meaning"
 msgstr ""
@@ -494,8 +478,7 @@ msgid ""
 "zero."
 msgstr ""
 
-#: library/stdtypes.rst:1202
-#: library/stdtypes.rst:3675
+#: library/stdtypes.rst:1202 library/stdtypes.rst:3675
 msgid "\\(6)"
 msgstr ""
 
@@ -531,11 +514,8 @@ msgstr ""
 msgid "*x* to the power *y*"
 msgstr ""
 
-#: library/stdtypes.rst:313
-#: library/stdtypes.rst:1194
-#: library/stdtypes.rst:2456
-#: library/stdtypes.rst:3671
-#: library/stdtypes.rst:3678
+#: library/stdtypes.rst:313 library/stdtypes.rst:1194 library/stdtypes.rst:2456
+#: library/stdtypes.rst:3671 library/stdtypes.rst:3678
 msgid "\\(5)"
 msgstr ""
 
@@ -672,9 +652,7 @@ msgstr ""
 msgid "bitwise :dfn:`or` of *x* and *y*"
 msgstr ""
 
-#: library/stdtypes.rst:421
-#: library/stdtypes.rst:1215
-#: library/stdtypes.rst:2446
+#: library/stdtypes.rst:421 library/stdtypes.rst:1215 library/stdtypes.rst:2446
 #: library/stdtypes.rst:3664
 msgid "\\(4)"
 msgstr ""
@@ -775,8 +753,7 @@ msgid ""
 "bit_length()`` returns ``0``."
 msgstr ""
 
-#: library/stdtypes.rst:498
-#: library/stdtypes.rst:587
+#: library/stdtypes.rst:498 library/stdtypes.rst:587
 msgid "Equivalent to::"
 msgstr ""
 
@@ -2545,16 +2522,11 @@ msgid ""
 "Splitting an empty string with a specified separator returns ``['']``."
 msgstr ""
 
-#: library/stdtypes.rst:2115
-#: library/stdtypes.rst:2235
-#: library/stdtypes.rst:3150
-#: library/stdtypes.rst:3257
-#: library/stdtypes.rst:3298
-#: library/stdtypes.rst:3340
-#: library/stdtypes.rst:3372
-#: library/stdtypes.rst:3422
-#: library/stdtypes.rst:3491
-#: library/stdtypes.rst:3515
+#: library/stdtypes.rst:2115 library/stdtypes.rst:2235
+#: library/stdtypes.rst:3150 library/stdtypes.rst:3257
+#: library/stdtypes.rst:3298 library/stdtypes.rst:3340
+#: library/stdtypes.rst:3372 library/stdtypes.rst:3422
+#: library/stdtypes.rst:3491 library/stdtypes.rst:3515
 msgid "For example::"
 msgstr ""
 
@@ -2963,8 +2935,7 @@ msgstr ""
 msgid "``'d'``"
 msgstr ""
 
-#: library/stdtypes.rst:2424
-#: library/stdtypes.rst:3642
+#: library/stdtypes.rst:2424 library/stdtypes.rst:3642
 msgid "Signed integer decimal."
 msgstr ""
 
@@ -3024,8 +2995,7 @@ msgstr ""
 msgid "``'f'``"
 msgstr ""
 
-#: library/stdtypes.rst:2440
-#: library/stdtypes.rst:3658
+#: library/stdtypes.rst:2440 library/stdtypes.rst:3658
 msgid "Floating point decimal format."
 msgstr ""
 
@@ -3457,8 +3427,7 @@ msgid ""
 "interpreted as in slice notation."
 msgstr ""
 
-#: library/stdtypes.rst:2858
-#: library/stdtypes.rst:2946
+#: library/stdtypes.rst:2858 library/stdtypes.rst:2946
 #: library/stdtypes.rst:2959
 msgid ""
 "The subsequence to search for may be any :term:`bytes-like object` or an "
@@ -3471,8 +3440,7 @@ msgid ""
 "which is the length of the bytes object plus one."
 msgstr ""
 
-#: library/stdtypes.rst:2870
-#: library/stdtypes.rst:2949
+#: library/stdtypes.rst:2870 library/stdtypes.rst:2949
 #: library/stdtypes.rst:2962
 msgid "Also accept an integer in the range 0 to 255 as the subsequence."
 msgstr ""
@@ -3488,14 +3456,10 @@ msgstr ""
 msgid "The *prefix* may be any :term:`bytes-like object`."
 msgstr ""
 
-#: library/stdtypes.rst:2801
-#: library/stdtypes.rst:3027
-#: library/stdtypes.rst:3072
-#: library/stdtypes.rst:3128
-#: library/stdtypes.rst:3216
-#: library/stdtypes.rst:3383
-#: library/stdtypes.rst:3481
-#: library/stdtypes.rst:3524
+#: library/stdtypes.rst:2801 library/stdtypes.rst:3027
+#: library/stdtypes.rst:3072 library/stdtypes.rst:3128
+#: library/stdtypes.rst:3216 library/stdtypes.rst:3383
+#: library/stdtypes.rst:3481 library/stdtypes.rst:3524
 #: library/stdtypes.rst:3726
 msgid ""
 "The bytearray version of this method does *not* operate in place - it always "
@@ -3864,8 +3828,7 @@ msgid ""
 "sequence and no uppercase ASCII characters, ``False`` otherwise."
 msgstr ""
 
-#: library/stdtypes.rst:3361
-#: library/stdtypes.rst:3427
+#: library/stdtypes.rst:3361 library/stdtypes.rst:3427
 #: library/stdtypes.rst:3496
 msgid ""
 "Lowercase ASCII characters are those byte values in the sequence "
@@ -6111,7 +6074,7 @@ msgstr ""
 
 #: library/stdtypes.rst:5697
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/stdtypes.rst:5698
 msgid ""
@@ -6146,18 +6109,14 @@ msgstr ""
 msgid "built-in"
 msgstr ""
 
-#: library/stdtypes.rst:316
-#: library/stdtypes.rst:950
-#: library/stdtypes.rst:1139
-#: library/stdtypes.rst:4422
-#: library/stdtypes.rst:5405
+#: library/stdtypes.rst:316 library/stdtypes.rst:950 library/stdtypes.rst:1139
+#: library/stdtypes.rst:4422 library/stdtypes.rst:5405
 msgid "types"
 msgstr ""
 
-#: library/stdtypes.rst:1154
-#: library/stdtypes.rst:4422
+#: library/stdtypes.rst:1154 library/stdtypes.rst:4422
 msgid "statement"
-msgstr ""
+msgstr "陳述式"
 
 #: library/stdtypes.rst:34
 msgid "if"
@@ -6175,13 +6134,11 @@ msgstr ""
 msgid "value"
 msgstr ""
 
-#: library/stdtypes.rst:81
-#: library/stdtypes.rst:817
+#: library/stdtypes.rst:81 library/stdtypes.rst:817
 msgid "Boolean"
 msgstr ""
 
-#: library/stdtypes.rst:81
-#: library/stdtypes.rst:393
+#: library/stdtypes.rst:81 library/stdtypes.rst:393
 msgid "operations"
 msgstr ""
 
@@ -6201,12 +6158,10 @@ msgstr ""
 msgid "False (Built-in object)"
 msgstr ""
 
-#: library/stdtypes.rst:98
-#: library/stdtypes.rst:195
-#: library/stdtypes.rst:393
+#: library/stdtypes.rst:98 library/stdtypes.rst:195 library/stdtypes.rst:393
 #: library/stdtypes.rst:950
 msgid "operator"
-msgstr ""
+msgstr "運算子"
 
 #: library/stdtypes.rst:98
 msgid "or"
@@ -6272,22 +6227,15 @@ msgstr ""
 msgid "is not"
 msgstr ""
 
-#: library/stdtypes.rst:208
-#: library/stdtypes.rst:1117
-#: library/stdtypes.rst:1259
-#: library/stdtypes.rst:1382
-#: library/stdtypes.rst:1540
-#: library/stdtypes.rst:2533
-#: library/stdtypes.rst:4220
-#: library/stdtypes.rst:4900
-#: library/stdtypes.rst:5325
+#: library/stdtypes.rst:208 library/stdtypes.rst:1117 library/stdtypes.rst:1259
+#: library/stdtypes.rst:1382 library/stdtypes.rst:1540
+#: library/stdtypes.rst:2533 library/stdtypes.rst:4220
+#: library/stdtypes.rst:4900 library/stdtypes.rst:5325
 #: library/stdtypes.rst:5369
 msgid "object"
-msgstr ""
+msgstr "物件"
 
-#: library/stdtypes.rst:208
-#: library/stdtypes.rst:316
-#: library/stdtypes.rst:335
+#: library/stdtypes.rst:208 library/stdtypes.rst:316 library/stdtypes.rst:335
 msgid "numeric"
 msgstr ""
 
@@ -6331,8 +6279,7 @@ msgstr ""
 msgid "not in"
 msgstr ""
 
-#: library/stdtypes.rst:229
-#: library/stdtypes.rst:393
+#: library/stdtypes.rst:229 library/stdtypes.rst:393
 msgid "integer"
 msgstr ""
 
@@ -6372,12 +6319,10 @@ msgstr ""
 msgid "arithmetic"
 msgstr ""
 
-#: library/stdtypes.rst:950
-#: library/stdtypes.rst:4422
-#: library/stdtypes.rst:5390
+#: library/stdtypes.rst:950 library/stdtypes.rst:4422 library/stdtypes.rst:5390
 #: library/stdtypes.rst:5405
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: library/stdtypes.rst:246
 msgid "int"
@@ -6391,8 +6336,7 @@ msgstr ""
 msgid "complex"
 msgstr ""
 
-#: library/stdtypes.rst:2390
-#: library/stdtypes.rst:3608
+#: library/stdtypes.rst:2390 library/stdtypes.rst:3608
 msgid "+ (plus)"
 msgstr ""
 
@@ -6404,13 +6348,11 @@ msgstr ""
 msgid "binary operator"
 msgstr ""
 
-#: library/stdtypes.rst:2390
-#: library/stdtypes.rst:3608
+#: library/stdtypes.rst:2390 library/stdtypes.rst:3608
 msgid "- (minus)"
 msgstr ""
 
-#: library/stdtypes.rst:2347
-#: library/stdtypes.rst:3565
+#: library/stdtypes.rst:2347 library/stdtypes.rst:3565
 msgid "* (asterisk)"
 msgstr ""
 
@@ -6422,8 +6364,7 @@ msgstr ""
 msgid "//"
 msgstr ""
 
-#: library/stdtypes.rst:2317
-#: library/stdtypes.rst:3533
+#: library/stdtypes.rst:2317 library/stdtypes.rst:3533
 msgid "% (percent)"
 msgstr ""
 
@@ -6431,9 +6372,7 @@ msgstr ""
 msgid "**"
 msgstr ""
 
-#: library/stdtypes.rst:393
-#: library/stdtypes.rst:1154
-#: library/stdtypes.rst:4422
+#: library/stdtypes.rst:393 library/stdtypes.rst:1154 library/stdtypes.rst:4422
 msgid "operations on"
 msgstr ""
 
@@ -6441,10 +6380,9 @@ msgstr ""
 msgid "conjugate() (complex number method)"
 msgstr ""
 
-#: library/stdtypes.rst:1606
-#: library/stdtypes.rst:5405
+#: library/stdtypes.rst:1606 library/stdtypes.rst:5405
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/stdtypes.rst:335
 msgid "math"
@@ -6518,9 +6456,7 @@ msgstr ""
 msgid "iterator"
 msgstr ""
 
-#: library/stdtypes.rst:934
-#: library/stdtypes.rst:1117
-#: library/stdtypes.rst:1154
+#: library/stdtypes.rst:934 library/stdtypes.rst:1117 library/stdtypes.rst:1154
 msgid "sequence"
 msgstr ""
 
@@ -6608,21 +6544,18 @@ msgstr ""
 msgid "mutable"
 msgstr ""
 
-#: library/stdtypes.rst:1154
-#: library/stdtypes.rst:1259
+#: library/stdtypes.rst:1154 library/stdtypes.rst:1259
 msgid "list"
 msgstr ""
 
-#: library/stdtypes.rst:2514
-#: library/stdtypes.rst:2712
+#: library/stdtypes.rst:2514 library/stdtypes.rst:2712
 #: library/stdtypes.rst:3533
 msgid "bytearray"
 msgstr ""
 
-#: library/stdtypes.rst:4422
-#: library/stdtypes.rst:5405
+#: library/stdtypes.rst:4422 library/stdtypes.rst:5405
 msgid "type"
-msgstr ""
+msgstr "型別"
 
 #: library/stdtypes.rst:1154
 msgid "assignment"
@@ -6668,8 +6601,7 @@ msgstr ""
 msgid "range"
 msgstr ""
 
-#: library/stdtypes.rst:1553
-#: library/stdtypes.rst:2317
+#: library/stdtypes.rst:1553 library/stdtypes.rst:2317
 msgid "string"
 msgstr ""
 
@@ -6677,8 +6609,7 @@ msgstr ""
 msgid "text sequence type"
 msgstr ""
 
-#: library/stdtypes.rst:1553
-#: library/stdtypes.rst:1571
+#: library/stdtypes.rst:1553 library/stdtypes.rst:1571
 msgid "str (built-in class)"
 msgstr ""
 
@@ -6694,8 +6625,7 @@ msgstr ""
 msgid "buffer protocol"
 msgstr ""
 
-#: library/stdtypes.rst:2514
-#: library/stdtypes.rst:2712
+#: library/stdtypes.rst:2514 library/stdtypes.rst:2712
 #: library/stdtypes.rst:3533
 msgid "bytes"
 msgstr ""
@@ -6744,8 +6674,7 @@ msgstr ""
 msgid "() (parentheses)"
 msgstr ""
 
-#: library/stdtypes.rst:2390
-#: library/stdtypes.rst:3608
+#: library/stdtypes.rst:2390 library/stdtypes.rst:3608
 msgid "in printf-style formatting"
 msgstr ""
 
@@ -6851,11 +6780,11 @@ msgstr ""
 
 #: library/stdtypes.rst:5155
 msgid "union"
-msgstr ""
+msgstr "union"
 
 #: library/stdtypes.rst:5325
 msgid "method"
-msgstr ""
+msgstr "方法"
 
 #: library/stdtypes.rst:5369
 msgid "code"

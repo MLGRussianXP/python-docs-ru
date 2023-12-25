@@ -324,7 +324,7 @@ msgstr ""
 
 #: c-api/dict.rst:8
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: c-api/dict.rst:8
 msgid "dictionary"
@@ -332,7 +332,7 @@ msgstr ""
 
 #: c-api/dict.rst:160
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: c-api/dict.rst:160
 msgid "len"

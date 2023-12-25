@@ -1193,10 +1193,8 @@ msgstr ""
 msgid "HTTPBasicAuthHandler Objects"
 msgstr ""
 
-#: library/urllib.request.rst:1021
-#: library/urllib.request.rst:1032
-#: library/urllib.request.rst:1057
-#: library/urllib.request.rst:1068
+#: library/urllib.request.rst:1021 library/urllib.request.rst:1032
+#: library/urllib.request.rst:1057 library/urllib.request.rst:1068
 msgid "Retry the request with authentication information, if available."
 msgstr ""
 
@@ -1336,7 +1334,7 @@ msgstr ""
 
 #: library/urllib.request.rst:1195
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/urllib.request.rst:1197
 msgid ""
@@ -1796,23 +1794,19 @@ msgstr ""
 msgid "Deprecated in favor of :attr:`~addinfourl.headers`."
 msgstr ""
 
-#: library/urllib.request.rst:1638
-#: library/urllib.request.rst:1643
+#: library/urllib.request.rst:1638 library/urllib.request.rst:1643
 msgid "Deprecated in favor of :attr:`~addinfourl.status`."
 msgstr ""
 
-#: library/urllib.request.rst:1547
-#: library/urllib.request.rst:1570
+#: library/urllib.request.rst:1547 library/urllib.request.rst:1570
 msgid "HTTP"
 msgstr ""
 
-#: library/urllib.request.rst:1547
-#: library/urllib.request.rst:1570
+#: library/urllib.request.rst:1547 library/urllib.request.rst:1570
 msgid "protocol"
 msgstr ""
 
-#: library/urllib.request.rst:1547
-#: library/urllib.request.rst:1581
+#: library/urllib.request.rst:1547 library/urllib.request.rst:1581
 msgid "FTP"
 msgstr ""
 

@@ -125,17 +125,15 @@ msgstr ""
 msgid "program"
 msgstr ""
 
-#: reference/toplevel_components.rst:23
-#: reference/toplevel_components.rst:39
+#: reference/toplevel_components.rst:23 reference/toplevel_components.rst:39
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: reference/toplevel_components.rst:23
 msgid "sys"
 msgstr ""
 
-#: reference/toplevel_components.rst:23
-#: reference/toplevel_components.rst:39
+#: reference/toplevel_components.rst:23 reference/toplevel_components.rst:39
 msgid "__main__"
 msgstr ""
 
@@ -169,7 +167,7 @@ msgstr ""
 
 #: reference/toplevel_components.rst:101
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: reference/toplevel_components.rst:101
 msgid "eval"

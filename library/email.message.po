@@ -809,7 +809,7 @@ msgstr ""
 
 #: library/email.message.rst:748
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/email.message.rst:749
 msgid ""

@@ -268,8 +268,7 @@ msgid ""
 "this user may hold at any time."
 msgstr ""
 
-#: library/resource.rst:250
-#: library/resource.rst:258
+#: library/resource.rst:250 library/resource.rst:258
 msgid ":ref:`Availability <availability>`: FreeBSD."
 msgstr ""
 
@@ -341,7 +340,7 @@ msgstr ""
 
 #: library/resource.rst:312
 msgid "Index"
-msgstr ""
+msgstr "索引"
 
 #: library/resource.rst:312
 msgid "Field"

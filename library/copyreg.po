@@ -62,7 +62,7 @@ msgstr ""
 
 #: library/copyreg.rst:43
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/copyreg.rst:45
 msgid ""
@@ -72,7 +72,7 @@ msgstr ""
 
 #: library/copyreg.rst:9
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/copyreg.rst:9
 msgid "pickle"

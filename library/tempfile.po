@@ -102,8 +102,7 @@ msgid ""
 "for NamedTemporaryFile."
 msgstr ""
 
-#: library/tempfile.rst:137
-#: library/tempfile.rst:264
+#: library/tempfile.rst:137 library/tempfile.rst:264
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``tempfile.mkstemp`` with "
 "argument ``fullpath``."
@@ -113,8 +112,7 @@ msgstr ""
 msgid "The :py:const:`os.O_TMPFILE` flag is now used if available."
 msgstr ""
 
-#: library/tempfile.rst:139
-#: library/tempfile.rst:169
+#: library/tempfile.rst:139 library/tempfile.rst:169
 msgid "Added *errors* parameter."
 msgstr ""
 
@@ -521,7 +519,7 @@ msgstr ""
 
 #: library/tempfile.rst:386
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/tempfile.rst:388
 msgid "Here are some examples of typical usage of the :mod:`tempfile` module::"

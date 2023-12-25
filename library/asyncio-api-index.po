@@ -164,14 +164,11 @@ msgstr ""
 msgid "Monitor for completion with a ``for`` loop."
 msgstr ""
 
-#: library/asyncio-api-index.rst:73
-#: library/asyncio-api-index.rst:109
-#: library/asyncio-api-index.rst:133
-#: library/asyncio-api-index.rst:169
-#: library/asyncio-api-index.rst:205
-#: library/asyncio-api-index.rst:230
+#: library/asyncio-api-index.rst:73 library/asyncio-api-index.rst:109
+#: library/asyncio-api-index.rst:133 library/asyncio-api-index.rst:169
+#: library/asyncio-api-index.rst:205 library/asyncio-api-index.rst:230
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/asyncio-api-index.rst:74
 msgid ""

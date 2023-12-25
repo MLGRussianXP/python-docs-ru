@@ -1353,7 +1353,7 @@ msgstr ""
 
 #: whatsnew/3.5.rst:1123
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: whatsnew/3.5.rst:1125
 msgid ""
@@ -1758,7 +1758,7 @@ msgstr ""
 
 #: whatsnew/3.5.rst:1468
 msgid "operator"
-msgstr ""
+msgstr "運算子"
 
 #: whatsnew/3.5.rst:1470
 msgid ""
@@ -2887,7 +2887,7 @@ msgstr ""
 
 #: whatsnew/3.5.rst:2263
 msgid "Deprecated"
-msgstr ""
+msgstr "已棄用"
 
 #: whatsnew/3.5.rst:2266
 msgid "New Keywords"

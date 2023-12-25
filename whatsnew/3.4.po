@@ -676,7 +676,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:508
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: whatsnew/3.4.rst:510
 msgid ""
@@ -1552,7 +1552,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:1158
 msgid "operator"
-msgstr ""
+msgstr "運算子"
 
 #: whatsnew/3.4.rst:1160
 msgid ""
@@ -2037,7 +2037,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:1508
 msgid "struct"
-msgstr ""
+msgstr "結構"
 
 #: whatsnew/3.4.rst:1510
 msgid ""
@@ -2822,7 +2822,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:2067
 msgid "Deprecated"
-msgstr ""
+msgstr "已棄用"
 
 #: whatsnew/3.4.rst:2069
 msgid ""

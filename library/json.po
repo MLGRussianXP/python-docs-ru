@@ -285,8 +285,7 @@ msgid ""
 "will be passed to the constructor of the class."
 msgstr ""
 
-#: library/json.rst:292
-#: library/json.rst:371
+#: library/json.rst:292 library/json.rst:371
 msgid ""
 "If the data being deserialized is not a valid JSON document, a :exc:"
 "`JSONDecodeError` will be raised."
@@ -341,7 +340,7 @@ msgstr ""
 
 #: library/json.rst:406
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: library/json.rst:406
 msgid "dict"
@@ -821,7 +820,7 @@ msgstr ""
 
 #: library/json.rst:761
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/json.rst:762
 msgid ""

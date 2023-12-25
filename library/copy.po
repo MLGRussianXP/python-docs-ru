@@ -151,7 +151,7 @@ msgstr ""
 
 #: library/copy.rst:71
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/copy.rst:71
 msgid "pickle"

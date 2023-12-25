@@ -1162,7 +1162,7 @@ msgstr ""
 
 #: library/configparser.rst:1353
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/configparser.rst:1354
 msgid ""

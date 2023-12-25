@@ -909,7 +909,7 @@ msgstr ""
 
 #: library/http.cookiejar.rst:740
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/http.cookiejar.rst:742
 msgid ""

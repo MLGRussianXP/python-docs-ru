@@ -188,7 +188,7 @@ msgstr ""
 
 #: c-api/set.rst:11
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: c-api/set.rst:11
 msgid "set"
@@ -200,7 +200,7 @@ msgstr ""
 
 #: c-api/set.rst:110
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: c-api/set.rst:110
 msgid "len"

@@ -94,8 +94,7 @@ msgid ""
 "into floats)."
 msgstr ""
 
-#: library/csv.rst:106
-#: library/csv.rst:217
+#: library/csv.rst:106 library/csv.rst:217
 msgid "A short usage example::"
 msgstr ""
 
@@ -578,7 +577,7 @@ msgstr ""
 
 #: library/csv.rst:545
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/csv.rst:547
 msgid "The simplest example of reading a CSV file::"
@@ -624,7 +623,7 @@ msgstr ""
 
 #: library/csv.rst:612
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/csv.rst:613
 msgid ""
@@ -641,7 +640,7 @@ msgstr ""
 
 #: library/csv.rst:11
 msgid "data"
-msgstr ""
+msgstr "資料"
 
 #: library/csv.rst:11
 msgid "tabular"

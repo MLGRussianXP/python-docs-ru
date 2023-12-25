@@ -900,7 +900,7 @@ msgstr ""
 
 #: tutorial/classes.rst:932
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: tutorial/classes.rst:933
 msgid ""
@@ -914,11 +914,11 @@ msgstr ""
 
 #: tutorial/classes.rst:347
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: tutorial/classes.rst:347
 msgid "method"
-msgstr ""
+msgstr "方法"
 
 #: tutorial/classes.rst:684
 msgid "name"

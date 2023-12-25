@@ -2062,7 +2062,7 @@ msgstr ""
 
 #: library/doctest.rst:1897
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/doctest.rst:1898
 msgid ""

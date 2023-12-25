@@ -318,7 +318,7 @@ msgstr ""
 
 #: howto/instrumentation.rst:390
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: howto/instrumentation.rst:391
 msgid ""

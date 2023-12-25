@@ -22,7 +22,7 @@ msgstr ""
 
 #: howto/unicode.rst:0
 msgid "Release"
-msgstr ""
+msgstr "發佈"
 
 #: howto/unicode.rst:7
 msgid "1.12"
@@ -225,10 +225,9 @@ msgid ""
 "varies depending on the hardware on which the string was encoded."
 msgstr ""
 
-#: howto/unicode.rst:514
-#: howto/unicode.rst:735
+#: howto/unicode.rst:514 howto/unicode.rst:735
 msgid "References"
-msgstr ""
+msgstr "參照"
 
 #: howto/unicode.rst:160
 msgid ""

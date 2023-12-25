@@ -1109,42 +1109,35 @@ msgstr ""
 msgid "simple"
 msgstr ""
 
-#: reference/simple_stmts.rst:39
-#: reference/simple_stmts.rst:263
-#: reference/simple_stmts.rst:379
-#: reference/simple_stmts.rst:444
-#: reference/simple_stmts.rst:483
-#: reference/simple_stmts.rst:556
-#: reference/simple_stmts.rst:716
-#: reference/simple_stmts.rst:871
-#: reference/simple_stmts.rst:1004
-#: reference/simple_stmts.rst:1034
+#: reference/simple_stmts.rst:39 reference/simple_stmts.rst:263
+#: reference/simple_stmts.rst:379 reference/simple_stmts.rst:444
+#: reference/simple_stmts.rst:483 reference/simple_stmts.rst:556
+#: reference/simple_stmts.rst:716 reference/simple_stmts.rst:871
+#: reference/simple_stmts.rst:1004 reference/simple_stmts.rst:1034
 msgid "statement"
-msgstr ""
+msgstr "陳述式"
 
 #: reference/simple_stmts.rst:42
 msgid "expression"
 msgstr ""
 
-#: reference/simple_stmts.rst:42
-#: reference/simple_stmts.rst:116
+#: reference/simple_stmts.rst:42 reference/simple_stmts.rst:116
 #: reference/simple_stmts.rst:444
 msgid "list"
 msgstr ""
 
 #: reference/simple_stmts.rst:985
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: reference/simple_stmts.rst:56
 msgid "repr"
 msgstr ""
 
-#: reference/simple_stmts.rst:75
-#: reference/simple_stmts.rst:196
+#: reference/simple_stmts.rst:75 reference/simple_stmts.rst:196
 #: reference/simple_stmts.rst:578
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: reference/simple_stmts.rst:56
 msgid "None"
@@ -1168,7 +1161,7 @@ msgstr ""
 
 #: reference/simple_stmts.rst:56
 msgid "writing"
-msgstr ""
+msgstr "編寫中"
 
 #: reference/simple_stmts.rst:56
 msgid "values"
@@ -1190,20 +1183,16 @@ msgstr ""
 msgid "assignment statement"
 msgstr ""
 
-#: reference/simple_stmts.rst:116
-#: reference/simple_stmts.rst:187
-#: reference/simple_stmts.rst:263
-#: reference/simple_stmts.rst:322
+#: reference/simple_stmts.rst:116 reference/simple_stmts.rst:187
+#: reference/simple_stmts.rst:263 reference/simple_stmts.rst:322
 msgid "assignment"
 msgstr ""
 
-#: reference/simple_stmts.rst:741
-#: reference/simple_stmts.rst:957
+#: reference/simple_stmts.rst:741 reference/simple_stmts.rst:957
 msgid "binding"
 msgstr ""
 
-#: reference/simple_stmts.rst:457
-#: reference/simple_stmts.rst:796
+#: reference/simple_stmts.rst:457 reference/simple_stmts.rst:796
 #: reference/simple_stmts.rst:957
 msgid "name"
 msgstr ""
@@ -1216,18 +1205,15 @@ msgstr ""
 msgid "mutable"
 msgstr ""
 
-#: reference/simple_stmts.rst:159
-#: reference/simple_stmts.rst:466
+#: reference/simple_stmts.rst:159 reference/simple_stmts.rst:466
 msgid "attribute"
-msgstr ""
+msgstr "屬性"
 
-#: reference/simple_stmts.rst:116
-#: reference/simple_stmts.rst:695
+#: reference/simple_stmts.rst:116 reference/simple_stmts.rst:695
 msgid "target"
 msgstr ""
 
-#: reference/simple_stmts.rst:379
-#: reference/simple_stmts.rst:957
+#: reference/simple_stmts.rst:379 reference/simple_stmts.rst:957
 #: reference/simple_stmts.rst:1004
 msgid ", (comma)"
 msgstr ""
@@ -1372,11 +1358,10 @@ msgstr ""
 msgid "__debug__"
 msgstr ""
 
-#: reference/simple_stmts.rst:520
-#: reference/simple_stmts.rst:588
+#: reference/simple_stmts.rst:520 reference/simple_stmts.rst:588
 #: reference/simple_stmts.rst:741
 msgid "exception"
-msgstr ""
+msgstr "例外"
 
 #: reference/simple_stmts.rst:400
 msgid "AssertionError"
@@ -1416,7 +1401,7 @@ msgstr ""
 
 #: reference/simple_stmts.rst:520
 msgid "function"
-msgstr ""
+msgstr "函式"
 
 #: reference/simple_stmts.rst:483
 msgid "definition"
@@ -1424,16 +1409,14 @@ msgstr ""
 
 #: reference/simple_stmts.rst:483
 msgid "class"
-msgstr ""
+msgstr "類別"
 
-#: reference/simple_stmts.rst:695
-#: reference/simple_stmts.rst:716
+#: reference/simple_stmts.rst:695 reference/simple_stmts.rst:716
 #: reference/simple_stmts.rst:741
 msgid "keyword"
-msgstr ""
+msgstr "關鍵字"
 
-#: reference/simple_stmts.rst:704
-#: reference/simple_stmts.rst:716
+#: reference/simple_stmts.rst:704 reference/simple_stmts.rst:716
 msgid "finally"
 msgstr ""
 
@@ -1515,7 +1498,7 @@ msgstr ""
 
 #: reference/simple_stmts.rst:741
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: reference/simple_stmts.rst:741
 msgid "importing"
@@ -1533,8 +1516,7 @@ msgstr ""
 msgid "ImportError"
 msgstr ""
 
-#: reference/simple_stmts.rst:783
-#: reference/simple_stmts.rst:822
+#: reference/simple_stmts.rst:783 reference/simple_stmts.rst:822
 msgid "import statement"
 msgstr ""
 
@@ -1580,4 +1562,4 @@ msgstr ""
 
 #: reference/simple_stmts.rst:1034
 msgid "type"
-msgstr ""
+msgstr "型別"

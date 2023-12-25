@@ -497,8 +497,7 @@ msgid ""
 "`sys.path`."
 msgstr ""
 
-#: using/cmdline.rst:805
-#: using/cmdline.rst:817
+#: using/cmdline.rst:805 using/cmdline.rst:817
 msgid ":pep:`370` -- Per user site-packages directory"
 msgstr ""
 

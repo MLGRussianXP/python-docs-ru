@@ -191,14 +191,11 @@ msgid ""
 "code object, like :func:`code_info`."
 msgstr ""
 
-#: library/dis.rst:194
-#: library/dis.rst:246
+#: library/dis.rst:194 library/dis.rst:246
 msgid "This can now handle coroutine and asynchronous generator objects."
 msgstr ""
 
-#: library/dis.rst:249
-#: library/dis.rst:292
-#: library/dis.rst:313
+#: library/dis.rst:249 library/dis.rst:292 library/dis.rst:313
 msgid "Added the *show_caches* and *adaptive* parameters."
 msgstr ""
 
@@ -245,8 +242,7 @@ msgid ""
 "intended for interactive exploration at the interpreter prompt."
 msgstr ""
 
-#: library/dis.rst:240
-#: library/dis.rst:289
+#: library/dis.rst:240 library/dis.rst:289
 msgid "Added *file* parameter."
 msgstr ""
 
@@ -266,8 +262,7 @@ msgid ""
 "disassembles the last traceback."
 msgstr ""
 
-#: library/dis.rst:259
-#: library/dis.rst:286
+#: library/dis.rst:259 library/dis.rst:286
 msgid ""
 "The disassembly is written as text to the supplied *file* argument if "
 "provided and to ``sys.stdout`` otherwise."
@@ -588,12 +583,8 @@ msgid ""
 "*op*)::"
 msgstr ""
 
-#: library/dis.rst:575
-#: library/dis.rst:593
-#: library/dis.rst:693
-#: library/dis.rst:713
-#: library/dis.rst:944
-#: library/dis.rst:1056
+#: library/dis.rst:575 library/dis.rst:593 library/dis.rst:693
+#: library/dis.rst:713 library/dis.rst:944 library/dis.rst:1056
 #: library/dis.rst:1068
 msgid "Implements::"
 msgstr ""
@@ -650,8 +641,7 @@ msgid ""
 "is not :exc:`StopAsyncIteration`, it is re-raised."
 msgstr ""
 
-#: library/dis.rst:769
-#: library/dis.rst:780
+#: library/dis.rst:769 library/dis.rst:780
 msgid ""
 "Exception representation on the stack now consist of one, not three, items."
 msgstr ""
@@ -1099,8 +1089,7 @@ msgid ""
 "versions (forward/backward)."
 msgstr ""
 
-#: library/dis.rst:1204
-#: library/dis.rst:1231
+#: library/dis.rst:1204 library/dis.rst:1231
 msgid "This is no longer a pseudo-instruction."
 msgstr ""
 
@@ -1211,8 +1200,7 @@ msgid ""
 "Pushes a reference to the object the cell contains on the stack."
 msgstr ""
 
-#: library/dis.rst:1333
-#: library/dis.rst:1344
+#: library/dis.rst:1333 library/dis.rst:1344
 msgid ""
 "``i`` is no longer offset by the length of :attr:`~codeobject.co_varnames`."
 msgstr ""
@@ -1814,7 +1802,7 @@ msgstr ""
 
 #: library/dis.rst:1451
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: library/dis.rst:1451
 msgid "slice"

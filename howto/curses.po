@@ -30,7 +30,7 @@ msgstr ""
 
 #: howto/curses.rst:0
 msgid "Release"
-msgstr ""
+msgstr "發佈"
 
 #: howto/curses.rst:10
 msgid "2.04"

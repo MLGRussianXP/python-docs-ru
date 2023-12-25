@@ -866,7 +866,7 @@ msgstr ""
 
 #: library/zipfile.rst:772
 msgid "Index"
-msgstr ""
+msgstr "索引"
 
 #: library/zipfile.rst:772
 msgid "Value"

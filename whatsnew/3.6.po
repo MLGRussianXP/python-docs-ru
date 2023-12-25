@@ -1293,7 +1293,7 @@ msgstr ""
 
 #: whatsnew/3.6.rst:1052
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: whatsnew/3.6.rst:1054
 msgid ""
@@ -1905,7 +1905,7 @@ msgstr ""
 
 #: whatsnew/3.6.rst:1484
 msgid "struct"
-msgstr ""
+msgstr "結構"
 
 #: whatsnew/3.6.rst:1486
 msgid ""
@@ -2504,7 +2504,7 @@ msgstr ""
 
 #: whatsnew/3.6.rst:1923
 msgid "Deprecated"
-msgstr ""
+msgstr "已棄用"
 
 #: whatsnew/3.6.rst:1926
 msgid "New Keywords"

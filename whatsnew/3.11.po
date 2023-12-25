@@ -732,7 +732,7 @@ msgstr ""
 
 #: whatsnew/3.11.rst:659
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: whatsnew/3.11.rst:661
 msgid ""
@@ -1019,7 +1019,7 @@ msgstr ""
 
 #: whatsnew/3.11.rst:886
 msgid "operator"
-msgstr ""
+msgstr "運算子"
 
 #: whatsnew/3.11.rst:888
 msgid ""
@@ -1888,8 +1888,7 @@ msgstr ""
 msgid "[#load-global]_"
 msgstr ""
 
-#: whatsnew/3.11.rst:1479
-#: whatsnew/3.11.rst:1488
+#: whatsnew/3.11.rst:1479 whatsnew/3.11.rst:1488
 msgid "Mark Shannon"
 msgstr ""
 
@@ -2156,7 +2155,7 @@ msgstr ""
 
 #: whatsnew/3.11.rst:1634
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: whatsnew/3.11.rst:0
 msgid ":opcode:`!BINARY_*`"
@@ -2334,7 +2333,7 @@ msgstr ""
 
 #: whatsnew/3.11.rst:2566
 msgid "Deprecated"
-msgstr ""
+msgstr "已棄用"
 
 #: whatsnew/3.11.rst:1695
 msgid ""
@@ -2839,9 +2838,7 @@ msgstr ""
 msgid ":meth:`.assertTrue`"
 msgstr ""
 
-#: whatsnew/3.11.rst:1915
-#: whatsnew/3.11.rst:1917
-#: whatsnew/3.11.rst:1919
+#: whatsnew/3.11.rst:1915 whatsnew/3.11.rst:1917 whatsnew/3.11.rst:1919
 #: whatsnew/3.11.rst:1920
 msgid "3.1"
 msgstr ""
@@ -2898,9 +2895,7 @@ msgstr ""
 msgid "``assert_``"
 msgstr ""
 
-#: whatsnew/3.11.rst:1922
-#: whatsnew/3.11.rst:1924
-#: whatsnew/3.11.rst:1926
+#: whatsnew/3.11.rst:1922 whatsnew/3.11.rst:1924 whatsnew/3.11.rst:1926
 #: whatsnew/3.11.rst:1927
 msgid "3.2"
 msgstr ""

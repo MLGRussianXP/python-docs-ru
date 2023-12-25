@@ -596,8 +596,7 @@ msgid ""
 "containing the same number of items as the function's formal parameter list."
 msgstr ""
 
-#: reference/datamodel.rst:1127
-#: reference/datamodel.rst:1279
+#: reference/datamodel.rst:1127 reference/datamodel.rst:1279
 msgid "Special read-only attributes"
 msgstr ""
 
@@ -3751,7 +3750,7 @@ msgstr ""
 
 #: reference/datamodel.rst:3443
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: reference/datamodel.rst:3444
 msgid ""
@@ -3783,51 +3782,37 @@ msgid ""
 "operation is not supported, which is why the reflected method is not called."
 msgstr ""
 
-#: reference/datamodel.rst:148
-#: reference/datamodel.rst:180
-#: reference/datamodel.rst:225
-#: reference/datamodel.rst:261
-#: reference/datamodel.rst:292
-#: reference/datamodel.rst:356
-#: reference/datamodel.rst:402
-#: reference/datamodel.rst:440
-#: reference/datamodel.rst:459
-#: reference/datamodel.rst:512
-#: reference/datamodel.rst:654
-#: reference/datamodel.rst:823
-#: reference/datamodel.rst:938
-#: reference/datamodel.rst:1034
-#: reference/datamodel.rst:1198
-#: reference/datamodel.rst:1364
+#: reference/datamodel.rst:148 reference/datamodel.rst:180
+#: reference/datamodel.rst:225 reference/datamodel.rst:261
+#: reference/datamodel.rst:292 reference/datamodel.rst:356
+#: reference/datamodel.rst:402 reference/datamodel.rst:440
+#: reference/datamodel.rst:459 reference/datamodel.rst:512
+#: reference/datamodel.rst:654 reference/datamodel.rst:823
+#: reference/datamodel.rst:938 reference/datamodel.rst:1034
+#: reference/datamodel.rst:1198 reference/datamodel.rst:1364
 #: reference/datamodel.rst:2788
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: reference/datamodel.rst:122
 msgid "data"
-msgstr ""
+msgstr "資料"
 
-#: reference/datamodel.rst:292
-#: reference/datamodel.rst:420
-#: reference/datamodel.rst:799
-#: reference/datamodel.rst:1447
-#: reference/datamodel.rst:1692
-#: reference/datamodel.rst:2329
-#: reference/datamodel.rst:2916
-#: reference/datamodel.rst:2965
-#: reference/datamodel.rst:3022
-#: reference/datamodel.rst:3050
+#: reference/datamodel.rst:292 reference/datamodel.rst:420
+#: reference/datamodel.rst:799 reference/datamodel.rst:1447
+#: reference/datamodel.rst:1692 reference/datamodel.rst:2329
+#: reference/datamodel.rst:2916 reference/datamodel.rst:2965
+#: reference/datamodel.rst:3022 reference/datamodel.rst:3050
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: reference/datamodel.rst:23
 msgid "id"
 msgstr ""
 
-#: reference/datamodel.rst:122
-#: reference/datamodel.rst:2329
+#: reference/datamodel.rst:122 reference/datamodel.rst:2329
 msgid "type"
-msgstr ""
+msgstr "型別"
 
 #: reference/datamodel.rst:23
 msgid "identity of an object"
@@ -3873,28 +3858,23 @@ msgstr ""
 msgid "extension"
 msgstr ""
 
-#: reference/datamodel.rst:393
-#: reference/datamodel.rst:495
-#: reference/datamodel.rst:876
-#: reference/datamodel.rst:1053
+#: reference/datamodel.rst:393 reference/datamodel.rst:495
+#: reference/datamodel.rst:876 reference/datamodel.rst:1053
 msgid "module"
-msgstr ""
+msgstr "模組"
 
-#: reference/datamodel.rst:261
-#: reference/datamodel.rst:799
+#: reference/datamodel.rst:261 reference/datamodel.rst:799
 msgid "C"
 msgstr ""
 
-#: reference/datamodel.rst:261
-#: reference/datamodel.rst:799
+#: reference/datamodel.rst:261 reference/datamodel.rst:799
 msgid "language"
 msgstr ""
 
-#: reference/datamodel.rst:938
-#: reference/datamodel.rst:1007
+#: reference/datamodel.rst:938 reference/datamodel.rst:1007
 #: reference/datamodel.rst:1027
 msgid "attribute"
-msgstr ""
+msgstr "屬性"
 
 #: reference/datamodel.rst:135
 msgid "special"
@@ -3916,8 +3896,7 @@ msgstr ""
 msgid "numeric"
 msgstr ""
 
-#: reference/datamodel.rst:231
-#: reference/datamodel.rst:336
+#: reference/datamodel.rst:231 reference/datamodel.rst:336
 msgid "integer"
 msgstr ""
 
@@ -3953,8 +3932,7 @@ msgstr ""
 msgid "complex"
 msgstr ""
 
-#: reference/datamodel.rst:420
-#: reference/datamodel.rst:2758
+#: reference/datamodel.rst:420 reference/datamodel.rst:2758
 msgid "len"
 msgstr ""
 
@@ -3970,8 +3948,7 @@ msgstr ""
 msgid "item selection"
 msgstr ""
 
-#: reference/datamodel.rst:381
-#: reference/datamodel.rst:459
+#: reference/datamodel.rst:381 reference/datamodel.rst:459
 msgid "subscription"
 msgstr ""
 
@@ -3987,8 +3964,7 @@ msgstr ""
 msgid "immutable"
 msgstr ""
 
-#: reference/datamodel.rst:1662
-#: reference/datamodel.rst:1692
+#: reference/datamodel.rst:1662 reference/datamodel.rst:1692
 msgid "string"
 msgstr ""
 
@@ -4040,16 +4016,14 @@ msgstr ""
 msgid "mutable"
 msgstr ""
 
-#: reference/datamodel.rst:956
-#: reference/datamodel.rst:1027
+#: reference/datamodel.rst:956 reference/datamodel.rst:1027
 msgid "assignment"
 msgstr ""
 
-#: reference/datamodel.rst:856
-#: reference/datamodel.rst:1583
+#: reference/datamodel.rst:856 reference/datamodel.rst:1583
 #: reference/datamodel.rst:3077
 msgid "statement"
-msgstr ""
+msgstr "陳述式"
 
 #: reference/datamodel.rst:393
 msgid "array"
@@ -4083,8 +4057,7 @@ msgstr ""
 msgid "mapping"
 msgstr ""
 
-#: reference/datamodel.rst:938
-#: reference/datamodel.rst:1773
+#: reference/datamodel.rst:938 reference/datamodel.rst:1773
 msgid "dictionary"
 msgstr ""
 
@@ -4100,14 +4073,12 @@ msgstr ""
 msgid "callable"
 msgstr ""
 
-#: reference/datamodel.rst:527
-#: reference/datamodel.rst:761
+#: reference/datamodel.rst:527 reference/datamodel.rst:761
 #: reference/datamodel.rst:799
 msgid "function"
-msgstr ""
+msgstr "函式"
 
-#: reference/datamodel.rst:938
-#: reference/datamodel.rst:2710
+#: reference/datamodel.rst:938 reference/datamodel.rst:2710
 msgid "call"
 msgstr ""
 
@@ -4181,7 +4152,7 @@ msgstr ""
 
 #: reference/datamodel.rst:823
 msgid "method"
-msgstr ""
+msgstr "方法"
 
 #: reference/datamodel.rst:654
 msgid "user-defined method"
@@ -4259,19 +4230,16 @@ msgstr ""
 msgid "__dict__ (module attribute)"
 msgstr ""
 
-#: reference/datamodel.rst:956
-#: reference/datamodel.rst:1566
+#: reference/datamodel.rst:956 reference/datamodel.rst:1566
 #: reference/datamodel.rst:2440
 msgid "class"
-msgstr ""
+msgstr "類別"
 
-#: reference/datamodel.rst:1007
-#: reference/datamodel.rst:1027
+#: reference/datamodel.rst:1007 reference/datamodel.rst:1027
 msgid "class instance"
 msgstr ""
 
-#: reference/datamodel.rst:1007
-#: reference/datamodel.rst:2710
+#: reference/datamodel.rst:1007 reference/datamodel.rst:2710
 msgid "instance"
 msgstr ""
 
@@ -4509,7 +4477,7 @@ msgstr ""
 
 #: reference/datamodel.rst:1364
 msgid "exception"
-msgstr ""
+msgstr "例外"
 
 #: reference/datamodel.rst:1364
 msgid "handler"
@@ -4577,7 +4545,7 @@ msgstr ""
 
 #: reference/datamodel.rst:1501
 msgid "operator"
-msgstr ""
+msgstr "運算子"
 
 #: reference/datamodel.rst:1501
 msgid "overloading"
@@ -4707,8 +4675,7 @@ msgstr ""
 msgid "divmod"
 msgstr ""
 
-#: reference/datamodel.rst:2951
-#: reference/datamodel.rst:2965
+#: reference/datamodel.rst:2951 reference/datamodel.rst:2965
 msgid "pow"
 msgstr ""
 

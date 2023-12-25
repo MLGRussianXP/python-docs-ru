@@ -108,7 +108,7 @@ msgstr ""
 
 #: library/email.encoders.rst:72
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/email.encoders.rst:73
 msgid ""

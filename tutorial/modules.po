@@ -599,7 +599,7 @@ msgstr ""
 
 #: tutorial/modules.rst:599
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: tutorial/modules.rst:600
 msgid ""
@@ -608,14 +608,13 @@ msgid ""
 "the module's global namespace."
 msgstr ""
 
-#: tutorial/modules.rst:267
-#: tutorial/modules.rst:348
+#: tutorial/modules.rst:267 tutorial/modules.rst:348
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: tutorial/modules.rst:184
 msgid "search"
-msgstr ""
+msgstr "搜尋"
 
 #: tutorial/modules.rst:184
 msgid "path"

@@ -210,7 +210,7 @@ msgstr ""
 
 #: c-api/float.rst:8
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: c-api/float.rst:8
 msgid "floating point"

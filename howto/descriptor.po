@@ -38,7 +38,7 @@ msgstr ""
 
 #: howto/descriptor.rst:11
 msgid "Contents"
-msgstr ""
+msgstr "內容"
 
 #: howto/descriptor.rst:13
 msgid ""
@@ -852,7 +852,7 @@ msgstr ""
 
 #: howto/descriptor.rst:1266
 msgid "function"
-msgstr ""
+msgstr "函式"
 
 #: howto/descriptor.rst:1266
 msgid "f(obj, \\*args)"

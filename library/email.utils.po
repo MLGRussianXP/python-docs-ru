@@ -237,7 +237,7 @@ msgstr ""
 
 #: library/email.utils.rst:215
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/email.utils.rst:216
 msgid ""

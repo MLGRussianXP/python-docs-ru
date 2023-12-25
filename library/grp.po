@@ -39,7 +39,7 @@ msgstr ""
 
 #: library/grp.rst:20
 msgid "Index"
-msgstr ""
+msgstr "索引"
 
 #: library/grp.rst:20
 msgid "Attribute"

@@ -910,9 +910,7 @@ msgid ""
 "filled in automatically."
 msgstr ""
 
-#: whatsnew/3.2.rst:839
-#: whatsnew/3.2.rst:904
-#: whatsnew/3.2.rst:1788
+#: whatsnew/3.2.rst:839 whatsnew/3.2.rst:904 whatsnew/3.2.rst:1788
 #: whatsnew/3.2.rst:1832
 msgid "(Contributed by Raymond Hettinger.)"
 msgstr ""
@@ -1932,8 +1930,7 @@ msgid ""
 "and a directory to start discovery with ``-s``:"
 msgstr ""
 
-#: whatsnew/3.2.rst:1768
-#: whatsnew/3.2.rst:1924
+#: whatsnew/3.2.rst:1768 whatsnew/3.2.rst:1924
 msgid "(Contributed by Michael Foord.)"
 msgstr ""
 

@@ -60,7 +60,7 @@ msgstr ""
 
 #: license.rst:35
 msgid "Release"
-msgstr ""
+msgstr "發佈"
 
 #: license.rst:35
 msgid "Derived from"

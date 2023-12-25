@@ -403,8 +403,7 @@ msgid ""
 "of type :class:`int` and returns a :class:`str`."
 msgstr ""
 
-#: library/typing.rst:2890
-#: library/typing.rst:3032
+#: library/typing.rst:2890 library/typing.rst:3032
 msgid "For example:"
 msgstr ""
 
@@ -821,9 +820,7 @@ msgid ""
 "or :class:`bytes` arguments but cannot allow the two to mix."
 msgstr ""
 
-#: library/typing.rst:934
-#: library/typing.rst:1011
-#: library/typing.rst:1234
+#: library/typing.rst:934 library/typing.rst:1011 library/typing.rst:1234
 #: library/typing.rst:2830
 msgid "For example::"
 msgstr ""
@@ -1806,8 +1803,7 @@ msgstr ""
 msgid "Typed version of :func:`collections.namedtuple`."
 msgstr ""
 
-#: library/typing.rst:2107
-#: library/typing.rst:3072
+#: library/typing.rst:2107 library/typing.rst:3072
 msgid "Usage::"
 msgstr ""
 
@@ -2371,7 +2367,7 @@ msgstr ""
 
 #: library/typing.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: library/typing.rst:2678
 msgid ""
@@ -3476,8 +3472,7 @@ msgstr ""
 msgid "3.11"
 msgstr ""
 
-#: library/typing.rst:3685
-#: library/typing.rst:3689
+#: library/typing.rst:3685 library/typing.rst:3689
 msgid "Undecided"
 msgstr ""
 

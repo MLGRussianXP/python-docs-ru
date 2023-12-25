@@ -1117,7 +1117,7 @@ msgstr ""
 
 #: whatsnew/3.0.rst:797
 msgid "Builtins"
-msgstr ""
+msgstr "內建"
 
 #: whatsnew/3.0.rst:799
 msgid ""

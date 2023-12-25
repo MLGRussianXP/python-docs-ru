@@ -22,7 +22,7 @@ msgstr ""
 
 #: faq/extending.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "內容"
 
 #: faq/extending.rst:16
 msgid "Can I create my own functions in C?"

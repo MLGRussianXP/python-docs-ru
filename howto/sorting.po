@@ -30,7 +30,7 @@ msgstr ""
 
 #: howto/sorting.rst:0
 msgid "Release"
-msgstr ""
+msgstr "發佈"
 
 #: howto/sorting.rst:7
 msgid "0.1"

@@ -100,7 +100,7 @@ msgstr ""
 
 #: c-api/bytearray.rst:8
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: c-api/bytearray.rst:8
 msgid "bytearray"

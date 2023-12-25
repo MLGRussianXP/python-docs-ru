@@ -200,7 +200,7 @@ msgstr ""
 
 #: reference/import.rst:158
 msgid "Searching"
-msgstr ""
+msgstr "搜尋中"
 
 #: reference/import.rst:160
 msgid ""
@@ -1335,7 +1335,7 @@ msgstr ""
 
 #: reference/import.rst:1043
 msgid "References"
-msgstr ""
+msgstr "參照"
 
 #: reference/import.rst:1045
 msgid ""
@@ -1386,7 +1386,7 @@ msgstr ""
 
 #: reference/import.rst:1073
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: reference/import.rst:1074
 msgid "See :class:`types.ModuleType`."
@@ -1405,8 +1405,7 @@ msgstr ""
 msgid "import machinery"
 msgstr ""
 
-#: reference/import.rst:95
-#: reference/import.rst:129
+#: reference/import.rst:95 reference/import.rst:129
 msgid "package"
 msgstr ""
 

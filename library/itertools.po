@@ -55,24 +55,21 @@ msgstr ""
 msgid "**Infinite iterators:**"
 msgstr ""
 
-#: library/itertools.rst:52
-#: library/itertools.rst:73
+#: library/itertools.rst:52 library/itertools.rst:73
 msgid "Iterator"
 msgstr ""
 
-#: library/itertools.rst:52
-#: library/itertools.rst:73
+#: library/itertools.rst:52 library/itertools.rst:73
 msgid "Arguments"
-msgstr ""
+msgstr "引數"
 
-#: library/itertools.rst:52
-#: library/itertools.rst:82
+#: library/itertools.rst:52 library/itertools.rst:82
 msgid "Results"
 msgstr ""
 
 #: library/itertools.rst:52
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/itertools.rst:44
 msgid ":func:`count`"
@@ -206,8 +203,7 @@ msgstr ""
 msgid ":func:`dropwhile`"
 msgstr ""
 
-#: library/itertools.rst:60
-#: library/itertools.rst:65
+#: library/itertools.rst:60 library/itertools.rst:65
 msgid "pred, seq"
 msgstr ""
 
@@ -373,7 +369,7 @@ msgstr ""
 
 #: library/itertools.rst:82
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/itertools.rst:84
 msgid "``product('ABCD', repeat=2)``"
@@ -441,10 +437,8 @@ msgid ""
 "input iterable."
 msgstr ""
 
-#: library/itertools.rst:191
-#: library/itertools.rst:291
-#: library/itertools.rst:527
-#: library/itertools.rst:634
+#: library/itertools.rst:191 library/itertools.rst:291
+#: library/itertools.rst:527 library/itertools.rst:634
 msgid "Roughly equivalent to::"
 msgstr ""
 

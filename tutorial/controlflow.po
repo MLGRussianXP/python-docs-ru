@@ -543,7 +543,7 @@ msgstr ""
 
 #: tutorial/controlflow.rst:629
 msgid "Keyword Arguments"
-msgstr ""
+msgstr "關鍵字引數"
 
 #: tutorial/controlflow.rst:631
 msgid ""
@@ -980,7 +980,7 @@ msgstr ""
 
 #: tutorial/controlflow.rst:1123
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: tutorial/controlflow.rst:1124
 msgid ""
@@ -991,7 +991,7 @@ msgstr ""
 
 #: tutorial/controlflow.rst:48
 msgid "statement"
-msgstr ""
+msgstr "陳述式"
 
 #: tutorial/controlflow.rst:48
 msgid "for"
@@ -1023,7 +1023,7 @@ msgstr ""
 
 #: tutorial/controlflow.rst:1040
 msgid "function"
-msgstr ""
+msgstr "函式"
 
 #: tutorial/controlflow.rst:1040
 msgid "annotations"

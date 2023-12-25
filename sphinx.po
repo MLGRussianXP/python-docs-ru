@@ -18,7 +18,7 @@ msgstr ""
 
 #: tools/templates/customsourcelink.html:3
 msgid "This Page"
-msgstr ""
+msgstr "本頁"
 
 #: tools/templates/customsourcelink.html:5
 msgid "Report a Bug"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: tools/templates/customsourcelink.html:8
 msgid "Show Source"
-msgstr ""
+msgstr "顯示原始碼"
 
 #: tools/templates/dummy.html:6
 msgid "CPython implementation detail:"
@@ -212,23 +212,23 @@ msgstr ""
 
 #: tools/templates/indexcontent.html:39
 msgid "Indices and tables:"
-msgstr ""
+msgstr "索引與表格："
 
 #: tools/templates/indexcontent.html:42
 msgid "Global Module Index"
-msgstr ""
+msgstr "全域模組索引"
 
 #: tools/templates/indexcontent.html:43
 msgid "quick access to all modules"
-msgstr ""
+msgstr "迅速找到所有模組"
 
 #: tools/templates/indexcontent.html:44
 msgid "General Index"
-msgstr ""
+msgstr "總索引"
 
 #: tools/templates/indexcontent.html:45
 msgid "all functions, classes, terms"
-msgstr ""
+msgstr "所有函式、類別、術語"
 
 #: tools/templates/indexcontent.html:46
 msgid "Glossary"
@@ -244,15 +244,15 @@ msgstr ""
 
 #: tools/templates/indexcontent.html:50
 msgid "search this documentation"
-msgstr ""
+msgstr "搜尋這份說明文件"
 
 #: tools/templates/indexcontent.html:51
 msgid "Complete Table of Contents"
-msgstr ""
+msgstr "完整目錄"
 
 #: tools/templates/indexcontent.html:52
 msgid "lists all sections and subsections"
-msgstr ""
+msgstr "列出所有章節與小節"
 
 #: tools/templates/indexcontent.html:56
 msgid "Meta information:"
@@ -276,7 +276,7 @@ msgstr ""
 
 #: tools/templates/indexcontent.html:64
 msgid "Copyright"
-msgstr ""
+msgstr "版權所有"
 
 #: tools/templates/indexcontent.html:65
 msgid "Download the documentation"

@@ -143,8 +143,7 @@ msgid ""
 "supports JavaScript, will act the same as if the HTTP headers was sent."
 msgstr ""
 
-#: library/http.cookies.rst:207
-#: library/http.cookies.rst:215
+#: library/http.cookies.rst:207 library/http.cookies.rst:215
 msgid "The meaning for *attrs* is the same as in :meth:`output`."
 msgstr ""
 
@@ -270,7 +269,7 @@ msgstr ""
 
 #: library/http.cookies.rst:245
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/http.cookies.rst:247
 msgid ""

@@ -157,8 +157,7 @@ msgstr ""
 msgid "2.2.0a2"
 msgstr ""
 
-#: library/__future__.rst:84
-#: library/__future__.rst:93
+#: library/__future__.rst:84 library/__future__.rst:93
 msgid "3.0"
 msgstr ""
 

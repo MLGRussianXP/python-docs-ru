@@ -483,11 +483,9 @@ msgid ""
 "raised if *o* does not have :c:macro:`Py_TPFLAGS_ITEMS_AT_END` set."
 msgstr ""
 
-#: c-api/object.rst:209
-#: c-api/object.rst:285
-#: c-api/object.rst:340
+#: c-api/object.rst:209 c-api/object.rst:285 c-api/object.rst:340
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: c-api/object.rst:197
 msgid "repr"
@@ -515,7 +513,7 @@ msgstr ""
 
 #: c-api/object.rst:319
 msgid "type"
-msgstr ""
+msgstr "型別"
 
 #: c-api/object.rst:340
 msgid "len"

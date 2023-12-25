@@ -239,7 +239,7 @@ msgstr ""
 
 #: glossary.rst:137
 msgid "attribute"
-msgstr ""
+msgstr "屬性"
 
 #: glossary.rst:139
 msgid ""
@@ -393,7 +393,7 @@ msgstr ""
 
 #: glossary.rst:227
 msgid "class"
-msgstr ""
+msgstr "類別"
 
 #: glossary.rst:229
 msgid ""
@@ -770,7 +770,7 @@ msgstr ""
 
 #: glossary.rst:448
 msgid "function"
-msgstr ""
+msgstr "函式"
 
 #: glossary.rst:450
 msgid ""
@@ -1352,7 +1352,7 @@ msgstr ""
 
 #: glossary.rst:1128
 msgid "method"
-msgstr ""
+msgstr "方法"
 
 #: glossary.rst:795
 msgid ""
@@ -1376,7 +1376,7 @@ msgstr ""
 
 #: glossary.rst:805
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: glossary.rst:807
 msgid ""
@@ -1506,7 +1506,7 @@ msgstr ""
 
 #: glossary.rst:883
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: glossary.rst:885
 msgid ""
@@ -1900,7 +1900,7 @@ msgstr ""
 
 #: glossary.rst:1134
 msgid "statement"
-msgstr ""
+msgstr "陳述式"
 
 #: glossary.rst:1136
 msgid ""
@@ -2003,7 +2003,7 @@ msgstr ""
 
 #: glossary.rst:1190
 msgid "type"
-msgstr ""
+msgstr "型別"
 
 #: glossary.rst:1192
 msgid ""

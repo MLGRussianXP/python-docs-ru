@@ -106,7 +106,7 @@ msgstr ""
 
 #: c-api/method.rst:50
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: c-api/method.rst:8
 msgid "instancemethod"
@@ -114,7 +114,7 @@ msgstr ""
 
 #: c-api/method.rst:50
 msgid "method"
-msgstr ""
+msgstr "方法"
 
 #: c-api/method.rst:59
 msgid "MethodType (in module types)"

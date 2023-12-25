@@ -178,8 +178,7 @@ msgstr ""
 msgid "Set the context pointer inside *capsule* to *context*."
 msgstr ""
 
-#: c-api/capsule.rst:142
-#: c-api/capsule.rst:159
+#: c-api/capsule.rst:142 c-api/capsule.rst:159
 msgid ""
 "Return ``0`` on success.  Return nonzero and set an exception on failure."
 msgstr ""
@@ -203,7 +202,7 @@ msgstr ""
 
 #: c-api/capsule.rst:8
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: c-api/capsule.rst:8
 msgid "Capsule"

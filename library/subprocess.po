@@ -149,8 +149,7 @@ msgid ""
 "*universal_newlines*. Added the *capture_output* parameter."
 msgstr ""
 
-#: library/subprocess.rst:503
-#: library/subprocess.rst:1225
+#: library/subprocess.rst:503 library/subprocess.rst:1225
 #: library/subprocess.rst:1288
 msgid ""
 "Changed Windows shell search order for ``shell=True``. The current directory "
@@ -708,8 +707,7 @@ msgid ""
 "the child process prior to the execution of the subprocess."
 msgstr ""
 
-#: library/subprocess.rst:602
-#: library/subprocess.rst:621
+#: library/subprocess.rst:602 library/subprocess.rst:621
 #: library/subprocess.rst:636
 msgid ":ref:`Availability <availability>`: POSIX"
 msgstr ""
@@ -1011,8 +1009,7 @@ msgid ""
 "`asyncio.create_subprocess_exec`."
 msgstr ""
 
-#: library/subprocess.rst:839
-#: library/subprocess.rst:1220
+#: library/subprocess.rst:839 library/subprocess.rst:1220
 #: library/subprocess.rst:1274
 msgid "*timeout* was added."
 msgstr ""
@@ -1529,8 +1526,7 @@ msgstr ""
 msgid "Replacing :program:`/bin/sh` shell command substitution"
 msgstr ""
 
-#: library/subprocess.rst:1335
-#: library/subprocess.rst:1352
+#: library/subprocess.rst:1335 library/subprocess.rst:1352
 msgid "becomes::"
 msgstr ""
 
@@ -1707,7 +1703,7 @@ msgstr ""
 
 #: library/subprocess.rst:1563
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: library/subprocess.rst:1568
 msgid "Converting an argument sequence to a string on Windows"

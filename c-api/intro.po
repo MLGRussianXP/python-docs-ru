@@ -213,8 +213,7 @@ msgid ""
 "symbol name."
 msgstr ""
 
-#: c-api/intro.rst:256
-#: c-api/intro.rst:274
+#: c-api/intro.rst:256 c-api/intro.rst:274
 msgid "Example::"
 msgstr ""
 
@@ -798,11 +797,11 @@ msgstr ""
 
 #: c-api/intro.rst:288
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: c-api/intro.rst:288
 msgid "type"
-msgstr ""
+msgstr "型別"
 
 #: c-api/intro.rst:327
 msgid "Py_INCREF()"
@@ -874,7 +873,7 @@ msgstr ""
 
 #: c-api/intro.rst:737
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: c-api/intro.rst:737
 msgid "builtins"
@@ -890,7 +889,7 @@ msgstr ""
 
 #: c-api/intro.rst:737
 msgid "search"
-msgstr ""
+msgstr "搜尋"
 
 #: c-api/intro.rst:737
 msgid "path"

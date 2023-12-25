@@ -518,7 +518,7 @@ msgstr ""
 
 #: library/socketserver.rst:476
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/socketserver.rst:479
 msgid ":class:`socketserver.TCPServer` Example"

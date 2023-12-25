@@ -56,7 +56,7 @@ msgstr ""
 
 #: library/html.entities.rst:46
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/html.entities.rst:47
 msgid ""

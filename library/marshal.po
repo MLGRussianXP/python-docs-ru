@@ -174,7 +174,7 @@ msgstr ""
 
 #: library/marshal.rst:130
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/marshal.rst:131
 msgid ""
@@ -187,7 +187,7 @@ msgstr ""
 
 #: library/marshal.rst:17
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/marshal.rst:17
 msgid "pickle"
@@ -199,7 +199,7 @@ msgstr ""
 
 #: library/marshal.rst:37
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: library/marshal.rst:37
 msgid "code"

@@ -1514,7 +1514,7 @@ msgstr ""
 
 #: whatsnew/3.12.rst:2254
 msgid "Deprecated"
-msgstr ""
+msgstr "已棄用"
 
 #: whatsnew/3.12.rst:1144
 msgid ""
@@ -2211,7 +2211,7 @@ msgstr ""
 
 #: whatsnew/3.12.rst:1523
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: whatsnew/3.12.rst:1525
 msgid ""
@@ -2561,9 +2561,7 @@ msgstr ""
 msgid ":meth:`.assertTrue`"
 msgstr ""
 
-#: whatsnew/3.12.rst:1708
-#: whatsnew/3.12.rst:1710
-#: whatsnew/3.12.rst:1712
+#: whatsnew/3.12.rst:1708 whatsnew/3.12.rst:1710 whatsnew/3.12.rst:1712
 #: whatsnew/3.12.rst:1713
 msgid "3.1"
 msgstr ""
@@ -2620,9 +2618,7 @@ msgstr ""
 msgid "``assert_``"
 msgstr ""
 
-#: whatsnew/3.12.rst:1715
-#: whatsnew/3.12.rst:1717
-#: whatsnew/3.12.rst:1719
+#: whatsnew/3.12.rst:1715 whatsnew/3.12.rst:1717 whatsnew/3.12.rst:1719
 #: whatsnew/3.12.rst:1720
 msgid "3.2"
 msgstr ""

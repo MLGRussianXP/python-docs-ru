@@ -319,7 +319,7 @@ msgstr ""
 
 #: library/selectors.rst:243
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/selectors.rst:245
 msgid "Here is a simple echo server implementation::"

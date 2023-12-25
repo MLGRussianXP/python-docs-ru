@@ -22,7 +22,7 @@ msgstr ""
 
 #: faq/general.rst:8
 msgid "Contents"
-msgstr ""
+msgstr "內容"
 
 #: faq/general.rst:13
 msgid "General Information"

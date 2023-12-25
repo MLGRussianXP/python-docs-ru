@@ -312,11 +312,11 @@ msgstr ""
 
 #: library/site.rst:16
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/site.rst:16
 msgid "search"
-msgstr ""
+msgstr "搜尋"
 
 #: library/site.rst:77
 msgid "path"
@@ -340,7 +340,7 @@ msgstr ""
 
 #: library/site.rst:52
 msgid "statement"
-msgstr ""
+msgstr "陳述式"
 
 #: library/site.rst:52
 msgid "import"

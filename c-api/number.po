@@ -299,11 +299,9 @@ msgid ""
 "always succeeds."
 msgstr ""
 
-#: c-api/number.rst:75
-#: c-api/number.rst:195
-#: c-api/number.rst:249
+#: c-api/number.rst:75 c-api/number.rst:195 c-api/number.rst:249
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: c-api/number.rst:67
 msgid "divmod"

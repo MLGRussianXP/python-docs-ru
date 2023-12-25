@@ -237,8 +237,7 @@ msgid ""
 "during reference leak debugging."
 msgstr ""
 
-#: library/sys.rst:210
-#: library/sys.rst:223
+#: library/sys.rst:210 library/sys.rst:223
 msgid ""
 "This function should be used for internal and specialized purposes only."
 msgstr ""
@@ -357,8 +356,7 @@ msgstr ""
 msgid "Integer specifying the handle of the Python DLL."
 msgstr ""
 
-#: library/sys.rst:976
-#: library/sys.rst:1967
+#: library/sys.rst:976 library/sys.rst:1967
 msgid ":ref:`Availability <availability>`: Windows."
 msgstr ""
 
@@ -739,7 +737,7 @@ msgstr ""
 
 #: library/sys.rst:616
 msgid "attribute"
-msgstr ""
+msgstr "屬性"
 
 #: library/sys.rst:617
 msgid "float.h macro"
@@ -2141,8 +2139,7 @@ msgid ""
 "is ``\"perf\"``."
 msgstr ""
 
-#: library/sys.rst:1707
-#: library/sys.rst:1715
+#: library/sys.rst:1707 library/sys.rst:1715
 msgid ":ref:`Availability <availability>`: Linux."
 msgstr ""
 
@@ -2548,7 +2545,7 @@ msgstr ""
 
 #: library/sys.rst:449
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: library/sys.rst:449
 msgid "traceback"
@@ -2572,11 +2569,11 @@ msgstr ""
 
 #: library/sys.rst:1286
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/sys.rst:1286
 msgid "search"
-msgstr ""
+msgstr "搜尋"
 
 #: library/sys.rst:1286
 msgid "path"

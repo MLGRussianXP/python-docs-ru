@@ -196,8 +196,7 @@ msgid ""
 "exc:`Exception`."
 msgstr ""
 
-#: library/http.client.rst:164
-#: library/http.client.rst:174
+#: library/http.client.rst:164 library/http.client.rst:174
 #: library/http.client.rst:184
 msgid "A subclass of :exc:`HTTPException`."
 msgstr ""
@@ -208,8 +207,7 @@ msgid ""
 "non-numeric or empty."
 msgstr ""
 
-#: library/http.client.rst:194
-#: library/http.client.rst:199
+#: library/http.client.rst:194 library/http.client.rst:199
 msgid "A subclass of :exc:`ImproperConnectionState`."
 msgstr ""
 
@@ -621,7 +619,7 @@ msgstr ""
 
 #: library/http.client.rst:570
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/http.client.rst:572
 msgid "Here is an example session that uses the ``GET`` method::"
@@ -671,7 +669,7 @@ msgstr ""
 
 #: library/http.client.rst:13
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/http.client.rst:13
 msgid "urllib.request"

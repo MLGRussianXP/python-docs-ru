@@ -86,7 +86,7 @@ msgstr ""
 
 #: library/importlib.metadata.rst:67
 msgid "Overview"
-msgstr ""
+msgstr "概要"
 
 #: library/importlib.metadata.rst:69
 msgid ""

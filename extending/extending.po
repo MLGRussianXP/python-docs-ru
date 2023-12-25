@@ -1264,7 +1264,7 @@ msgstr ""
 
 #: extending/extending.rst:1364
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: extending/extending.rst:1365
 msgid ""

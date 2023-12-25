@@ -234,7 +234,7 @@ msgstr ""
 
 #: c-api/tuple.rst:8
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: c-api/tuple.rst:8
 msgid "tuple"

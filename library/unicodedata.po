@@ -183,7 +183,7 @@ msgstr ""
 
 #: library/unicodedata.rst:177
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/unicodedata.rst:178
 msgid "https://www.unicode.org/Public/15.0.0/ucd/NameAliases.txt"

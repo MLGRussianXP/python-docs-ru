@@ -65,7 +65,7 @@ msgstr ""
 
 #: tutorial/introduction.rst:51
 msgid "Numbers"
-msgstr ""
+msgstr "數字"
 
 #: tutorial/introduction.rst:53
 msgid ""
@@ -470,7 +470,7 @@ msgstr ""
 
 #: tutorial/introduction.rst:550
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: tutorial/introduction.rst:551
 msgid ""

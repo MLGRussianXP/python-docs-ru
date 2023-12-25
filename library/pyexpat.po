@@ -539,7 +539,7 @@ msgstr ""
 
 #: library/pyexpat.rst:528
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/pyexpat.rst:530
 msgid ""
@@ -790,8 +790,7 @@ msgid ""
 "suspended."
 msgstr ""
 
-#: library/pyexpat.rst:890
-#: library/pyexpat.rst:895
+#: library/pyexpat.rst:890 library/pyexpat.rst:895
 msgid "This should not be reported to Python applications."
 msgstr ""
 
@@ -828,7 +827,7 @@ msgstr ""
 
 #: library/pyexpat.rst:905
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/pyexpat.rst:906
 msgid ""
@@ -844,7 +843,7 @@ msgstr ""
 
 #: library/pyexpat.rst:36
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/pyexpat.rst:36
 msgid "pyexpat"

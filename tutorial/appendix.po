@@ -148,7 +148,7 @@ msgstr ""
 
 #: tutorial/appendix.rst:123
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: tutorial/appendix.rst:124
 msgid "A problem with the GNU Readline package may prevent this."

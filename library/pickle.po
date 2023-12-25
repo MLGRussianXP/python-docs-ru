@@ -317,8 +317,7 @@ msgid ""
 "same meaning as in the :class:`Pickler` constructor."
 msgstr ""
 
-#: library/pickle.rst:236
-#: library/pickle.rst:328
+#: library/pickle.rst:236 library/pickle.rst:328
 msgid "The *buffer_callback* argument was added."
 msgstr ""
 
@@ -354,8 +353,7 @@ msgid ""
 "*buffers* have the same meaning as in the :class:`Unpickler` constructor."
 msgstr ""
 
-#: library/pickle.rst:267
-#: library/pickle.rst:429
+#: library/pickle.rst:267 library/pickle.rst:429
 msgid "The *buffers* argument was added."
 msgstr ""
 
@@ -1215,7 +1213,7 @@ msgstr ""
 
 #: library/pickle.rst:1004
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/pickle.rst:1006
 msgid ""
@@ -1316,7 +1314,7 @@ msgstr ""
 
 #: library/pickle.rst:1156
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/pickle.rst:1158
 msgid ""
@@ -1369,7 +1367,7 @@ msgstr ""
 
 #: library/pickle.rst:1207
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/pickle.rst:1208
 msgid "Don't confuse this with the :mod:`marshal` module"

@@ -211,8 +211,7 @@ msgid ""
 "attribute to the rank element::"
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:223
-#: library/xml.etree.elementtree.rst:267
+#: library/xml.etree.elementtree.rst:223 library/xml.etree.elementtree.rst:267
 msgid "Our XML now looks like this:"
 msgstr ""
 
@@ -289,10 +288,9 @@ msgid ""
 "scope of the module."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:378
-#: library/xml.etree.elementtree.rst:772
+#: library/xml.etree.elementtree.rst:378 library/xml.etree.elementtree.rst:772
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/xml.etree.elementtree.rst:380
 msgid ""
@@ -474,13 +472,11 @@ msgid ""
 "preceded by a tag name."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:494
-#: library/xml.etree.elementtree.rst:824
+#: library/xml.etree.elementtree.rst:494 library/xml.etree.elementtree.rst:824
 msgid "Reference"
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:499
-#: library/xml.etree.elementtree.rst:829
+#: library/xml.etree.elementtree.rst:499 library/xml.etree.elementtree.rst:829
 msgid "Functions"
 msgstr ""
 
@@ -523,8 +519,7 @@ msgid ""
 "*strip_text*: set to true to strip whitespace before and after text content"
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:533
-#: library/xml.etree.elementtree.rst:535
+#: library/xml.etree.elementtree.rst:533 library/xml.etree.elementtree.rst:535
 msgid "(default: false)"
 msgstr ""
 
@@ -538,8 +533,7 @@ msgstr ""
 msgid "*qname_aware_tags*: a set of qname aware tag names in which prefixes"
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:537
-#: library/xml.etree.elementtree.rst:539
+#: library/xml.etree.elementtree.rst:537 library/xml.etree.elementtree.rst:539
 msgid "should be replaced in text content (default: empty)"
 msgstr ""
 
@@ -667,8 +661,7 @@ msgid ""
 "present."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:642
-#: library/xml.etree.elementtree.rst:1481
+#: library/xml.etree.elementtree.rst:642 library/xml.etree.elementtree.rst:1481
 msgid "If you need a fully populated element, look for \"end\" events instead."
 msgstr ""
 
@@ -676,8 +669,7 @@ msgstr ""
 msgid "The *parser* argument."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:647
-#: library/xml.etree.elementtree.rst:1485
+#: library/xml.etree.elementtree.rst:647 library/xml.etree.elementtree.rst:1485
 msgid "The ``comment`` and ``pi`` events were added."
 msgstr ""
 
@@ -741,14 +733,12 @@ msgid ""
 "Returns an (optionally) encoded string containing the XML data."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:708
-#: library/xml.etree.elementtree.rst:735
+#: library/xml.etree.elementtree.rst:708 library/xml.etree.elementtree.rst:735
 #: library/xml.etree.elementtree.rst:1192
 msgid "The *short_empty_elements* parameter."
 msgstr ""
 
-#: library/xml.etree.elementtree.rst:711
-#: library/xml.etree.elementtree.rst:738
+#: library/xml.etree.elementtree.rst:711 library/xml.etree.elementtree.rst:738
 msgid "The *xml_declaration* and *default_namespace* parameters."
 msgstr ""
 
@@ -1473,7 +1463,7 @@ msgstr ""
 
 #: library/xml.etree.elementtree.rst:1509
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/xml.etree.elementtree.rst:1510
 msgid ""

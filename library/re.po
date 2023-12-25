@@ -773,8 +773,7 @@ msgstr ""
 msgid "``\\d``"
 msgstr ""
 
-#: library/re.rst:582
-#: library/re.rst:601
+#: library/re.rst:582 library/re.rst:601
 msgid "For Unicode (str) patterns:"
 msgstr ""
 
@@ -786,8 +785,7 @@ msgid ""
 "matched."
 msgstr ""
 
-#: library/re.rst:586
-#: library/re.rst:607
+#: library/re.rst:586 library/re.rst:607
 msgid "For 8-bit (bytes) patterns:"
 msgstr ""
 
@@ -1184,8 +1182,7 @@ msgid ""
 "previous empty match."
 msgstr ""
 
-#: library/re.rst:1015
-#: library/re.rst:1044
+#: library/re.rst:1015 library/re.rst:1044
 msgid "Added the optional flags argument."
 msgstr ""
 
@@ -1270,8 +1267,7 @@ msgid ""
 "RE."
 msgstr ""
 
-#: library/re.rst:1047
-#: library/re.rst:1290
+#: library/re.rst:1047 library/re.rst:1290
 msgid "Unmatched groups are replaced with an empty string."
 msgstr ""
 
@@ -1974,26 +1970,11 @@ msgstr ""
 msgid ". (dot)"
 msgstr ""
 
-#: library/re.rst:112
-#: library/re.rst:130
-#: library/re.rst:143
-#: library/re.rst:181
-#: library/re.rst:235
-#: library/re.rst:257
-#: library/re.rst:296
-#: library/re.rst:319
-#: library/re.rst:394
-#: library/re.rst:432
-#: library/re.rst:444
-#: library/re.rst:478
-#: library/re.rst:511
-#: library/re.rst:528
-#: library/re.rst:555
-#: library/re.rst:574
-#: library/re.rst:595
-#: library/re.rst:618
-#: library/re.rst:798
-#: library/re.rst:1003
+#: library/re.rst:112 library/re.rst:130 library/re.rst:143 library/re.rst:181
+#: library/re.rst:235 library/re.rst:257 library/re.rst:296 library/re.rst:319
+#: library/re.rst:394 library/re.rst:432 library/re.rst:444 library/re.rst:478
+#: library/re.rst:511 library/re.rst:528 library/re.rst:555 library/re.rst:574
+#: library/re.rst:595 library/re.rst:618 library/re.rst:798 library/re.rst:1003
 msgid "in regular expressions"
 msgstr ""
 
@@ -2045,8 +2026,7 @@ msgstr ""
 msgid "{} (curly brackets)"
 msgstr ""
 
-#: library/re.rst:257
-#: library/re.rst:511
+#: library/re.rst:257 library/re.rst:511
 msgid "\\ (backslash)"
 msgstr ""
 

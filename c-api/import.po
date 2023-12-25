@@ -362,7 +362,7 @@ msgstr ""
 
 #: c-api/import.rst:123
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: c-api/import.rst:44
 msgid "__import__"

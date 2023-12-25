@@ -196,7 +196,7 @@ msgstr ""
 
 #: library/asyncio-queue.rst:149
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/asyncio-queue.rst:153
 msgid ""

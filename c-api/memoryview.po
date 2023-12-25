@@ -81,7 +81,7 @@ msgstr ""
 
 #: c-api/memoryview.rst:5
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: c-api/memoryview.rst:5
 msgid "memoryview"

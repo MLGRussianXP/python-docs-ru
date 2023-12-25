@@ -294,7 +294,7 @@ msgstr ""
 
 #: tutorial/stdlib.rst:27
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: tutorial/stdlib.rst:27
 msgid "help"

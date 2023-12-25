@@ -123,8 +123,7 @@ msgid ""
 ":func:`traceback.print_tb`, which can be used to print a traceback object."
 msgstr ""
 
-#: library/faulthandler.rst:82
-#: library/faulthandler.rst:146
+#: library/faulthandler.rst:82 library/faulthandler.rst:146
 msgid "Added support for passing file descriptor to this function."
 msgstr ""
 
@@ -243,7 +242,7 @@ msgstr ""
 
 #: library/faulthandler.rst:171
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/faulthandler.rst:173
 msgid ""

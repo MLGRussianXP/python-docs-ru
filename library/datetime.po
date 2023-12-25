@@ -368,9 +368,7 @@ msgid ""
 "example::"
 msgstr ""
 
-#: library/datetime.rst:561
-#: library/datetime.rst:1693
-#: library/datetime.rst:2298
+#: library/datetime.rst:561 library/datetime.rst:1693 library/datetime.rst:2298
 msgid "Class attributes:"
 msgstr ""
 
@@ -396,8 +394,7 @@ msgid ""
 "``-timedelta.max`` is not representable as a :class:`timedelta` object."
 msgstr ""
 
-#: library/datetime.rst:579
-#: library/datetime.rst:1713
+#: library/datetime.rst:579 library/datetime.rst:1713
 msgid "Instance attributes (read-only):"
 msgstr ""
 
@@ -433,18 +430,15 @@ msgstr ""
 msgid "Between 0 and 999999 inclusive"
 msgstr ""
 
-#: library/datetime.rst:596
-#: library/datetime.rst:1147
+#: library/datetime.rst:596 library/datetime.rst:1147
 msgid "Supported operations:"
 msgstr ""
 
-#: library/datetime.rst:599
-#: library/datetime.rst:1150
+#: library/datetime.rst:599 library/datetime.rst:1150
 msgid "Operation"
 msgstr ""
 
-#: library/datetime.rst:599
-#: library/datetime.rst:1150
+#: library/datetime.rst:599 library/datetime.rst:1150
 msgid "Result"
 msgstr ""
 
@@ -588,8 +582,7 @@ msgid ""
 "constructor call with canonical attribute values."
 msgstr ""
 
-#: library/datetime.rst:613
-#: library/datetime.rst:2529
+#: library/datetime.rst:613 library/datetime.rst:2529
 msgid "Notes:"
 msgstr ""
 
@@ -662,8 +655,7 @@ msgid ""
 "and only if it isn't equal to ``timedelta(0)``."
 msgstr ""
 
-#: library/datetime.rst:642
-#: library/datetime.rst:1823
+#: library/datetime.rst:642 library/datetime.rst:1823
 msgid "Instance methods:"
 msgstr ""
 
@@ -1088,8 +1080,7 @@ msgstr ""
 msgid "``fold in [0, 1]``."
 msgstr ""
 
-#: library/datetime.rst:1255
-#: library/datetime.rst:1833
+#: library/datetime.rst:1255 library/datetime.rst:1833
 msgid "Added the ``fold`` argument."
 msgstr ""
 
@@ -1298,8 +1289,7 @@ msgstr ""
 msgid "Fractional hours and minutes are not supported."
 msgstr ""
 
-#: library/datetime.rst:1449
-#: library/datetime.rst:1794
+#: library/datetime.rst:1449 library/datetime.rst:1794
 msgid "Examples::"
 msgstr ""
 
@@ -1359,8 +1349,7 @@ msgstr ""
 msgid "In ``range(24)``."
 msgstr ""
 
-#: library/datetime.rst:1123
-#: library/datetime.rst:1727
+#: library/datetime.rst:1123 library/datetime.rst:1727
 msgid "In ``range(60)``."
 msgstr ""
 
@@ -1387,10 +1376,8 @@ msgstr ""
 msgid "``datetime2 = datetime1 + timedelta``"
 msgstr ""
 
-#: library/datetime.rst:2356
-#: library/datetime.rst:2373
-#: library/datetime.rst:2438
-#: library/datetime.rst:2447
+#: library/datetime.rst:2356 library/datetime.rst:2373
+#: library/datetime.rst:2438 library/datetime.rst:2447
 msgid "\\(1)"
 msgstr ""
 
@@ -1590,8 +1577,7 @@ msgid ""
 "``None`` or a :class:`timedelta` object with magnitude less than one day."
 msgstr ""
 
-#: library/datetime.rst:1906
-#: library/datetime.rst:2258
+#: library/datetime.rst:1906 library/datetime.rst:2258
 #: library/datetime.rst:2582
 msgid "The UTC offset is not restricted to a whole number of minutes."
 msgstr ""
@@ -1603,8 +1589,7 @@ msgid ""
 "or a :class:`timedelta` object with magnitude less than one day."
 msgstr ""
 
-#: library/datetime.rst:1916
-#: library/datetime.rst:2067
+#: library/datetime.rst:1916 library/datetime.rst:2067
 msgid "The DST offset is not restricted to a whole number of minutes."
 msgstr ""
 
@@ -2535,11 +2520,11 @@ msgstr ""
 
 #: library/datetime.rst:2457
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/datetime.rst:2457
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: library/datetime.rst:2356
 msgid "``%a``"
@@ -2597,10 +2582,8 @@ msgstr ""
 msgid "01, 02, ..., 31"
 msgstr ""
 
-#: library/datetime.rst:2383
-#: library/datetime.rst:2392
-#: library/datetime.rst:2401
-#: library/datetime.rst:2419
+#: library/datetime.rst:2383 library/datetime.rst:2392
+#: library/datetime.rst:2401 library/datetime.rst:2419
 msgid "\\(9)"
 msgstr ""
 
@@ -2766,8 +2749,7 @@ msgstr ""
 msgid "(empty), +0000, -0400, +1030, +063415, -030712.345216"
 msgstr ""
 
-#: library/datetime.rst:2416
-#: library/datetime.rst:2473
+#: library/datetime.rst:2416 library/datetime.rst:2473
 msgid "\\(6)"
 msgstr ""
 
@@ -3174,7 +3156,7 @@ msgstr ""
 
 #: library/datetime.rst:2632
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/datetime.rst:2633
 msgid "If, that is, we ignore the effects of Relativity"

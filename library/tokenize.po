@@ -237,7 +237,7 @@ msgstr ""
 
 #: library/tokenize.rst:181
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/tokenize.rst:183
 msgid ""

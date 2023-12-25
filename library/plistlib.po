@@ -213,7 +213,7 @@ msgstr ""
 
 #: library/plistlib.rst:158
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/plistlib.rst:160
 msgid "Generating a plist::"

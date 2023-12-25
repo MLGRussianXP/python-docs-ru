@@ -78,8 +78,7 @@ msgstr ""
 msgid "Support for the :keyword:`with` statement was added."
 msgstr ""
 
-#: library/ftplib.rst:102
-#: library/ftplib.rst:207
+#: library/ftplib.rst:102 library/ftplib.rst:207
 msgid "*source_address* parameter was added."
 msgstr ""
 

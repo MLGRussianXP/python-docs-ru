@@ -411,7 +411,7 @@ msgstr ""
 
 #: c-api/arg.rst:230
 msgid "Numbers"
-msgstr ""
+msgstr "數字"
 
 #: c-api/arg.rst:234
 msgid "``b`` (:class:`int`) [unsigned char]"

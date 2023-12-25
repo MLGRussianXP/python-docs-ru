@@ -266,7 +266,7 @@ msgstr ""
 
 #: library/pprint.rst:259
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/pprint.rst:261
 msgid ""
@@ -301,7 +301,7 @@ msgstr ""
 
 #: library/pprint.rst:221
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: library/pprint.rst:221
 msgid "eval"

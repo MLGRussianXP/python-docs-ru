@@ -171,7 +171,7 @@ msgstr ""
 
 #: library/webbrowser.rst:112
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: library/webbrowser.rst:114
 msgid "``'mozilla'``"
@@ -197,13 +197,11 @@ msgstr ""
 msgid "``'kfmclient'``"
 msgstr ""
 
-#: library/webbrowser.rst:122
-#: library/webbrowser.rst:124
+#: library/webbrowser.rst:122 library/webbrowser.rst:124
 msgid ":class:`Konqueror()`"
 msgstr ""
 
-#: library/webbrowser.rst:122
-#: library/webbrowser.rst:124
+#: library/webbrowser.rst:122 library/webbrowser.rst:124
 msgid "\\(1)"
 msgstr ""
 
@@ -396,7 +394,7 @@ msgstr ""
 
 #: library/webbrowser.rst:223
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/webbrowser.rst:224
 msgid ""

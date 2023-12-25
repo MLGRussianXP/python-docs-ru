@@ -818,7 +818,7 @@ msgstr ""
 
 #: extending/newtypes_tutorial.rst:886
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: extending/newtypes_tutorial.rst:887
 msgid ""

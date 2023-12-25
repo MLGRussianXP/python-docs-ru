@@ -44,7 +44,7 @@ msgstr ""
 
 #: c-api/none.rst:8
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: c-api/none.rst:8
 msgid "None"

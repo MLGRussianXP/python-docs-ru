@@ -52,7 +52,7 @@ msgstr ""
 
 #: library/audit_events.rst:27
 msgid "Arguments"
-msgstr ""
+msgstr "引數"
 
 #: library/audit_events.rst:29
 msgid "_winapi.CreateFile"

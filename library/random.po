@@ -568,7 +568,7 @@ msgstr ""
 
 #: library/random.rst:444
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/random.rst:446
 msgid "Basic examples::"

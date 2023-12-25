@@ -603,7 +603,7 @@ msgstr ""
 
 #: library/hashlib.rst:503
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/hashlib.rst:506
 msgid "Simple hashing"

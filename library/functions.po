@@ -460,8 +460,7 @@ msgid ""
 "ways."
 msgstr ""
 
-#: library/functions.rst:846
-#: library/functions.rst:1164
+#: library/functions.rst:846 library/functions.rst:1164
 msgid "See also :func:`format` for more information."
 msgstr ""
 
@@ -475,8 +474,7 @@ msgid ""
 "``True`` (see :ref:`typebool`)."
 msgstr ""
 
-#: library/functions.rst:711
-#: library/functions.rst:935
+#: library/functions.rst:711 library/functions.rst:935
 msgid "*x* is now a positional-only parameter."
 msgstr ""
 
@@ -806,8 +804,7 @@ msgstr ""
 msgid "The complex type is described in :ref:`typesnumeric`."
 msgstr ""
 
-#: library/functions.rst:708
-#: library/functions.rst:932
+#: library/functions.rst:708 library/functions.rst:932
 msgid "Grouping digits with underscores as in code literals is allowed."
 msgstr ""
 
@@ -2732,7 +2729,7 @@ msgstr ""
 
 #: library/functions.rst:2087
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/functions.rst:2088
 msgid ""
@@ -2747,11 +2744,11 @@ msgstr ""
 
 #: library/functions.rst:1861
 msgid "type"
-msgstr ""
+msgstr "型別"
 
 #: library/functions.rst:576
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: library/functions.rst:576
 msgid "exec"
@@ -2823,7 +2820,7 @@ msgstr ""
 
 #: library/functions.rst:2016
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/functions.rst:1348
 msgid "sys"
@@ -2835,11 +2832,11 @@ msgstr ""
 
 #: library/functions.rst:1861
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: library/functions.rst:2016
 msgid "statement"
-msgstr ""
+msgstr "陳述式"
 
 #: library/functions.rst:2016
 msgid "import"

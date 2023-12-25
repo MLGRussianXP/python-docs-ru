@@ -126,7 +126,7 @@ msgstr ""
 
 #: tutorial/whatnow.rst:70
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: tutorial/whatnow.rst:71
 msgid ""

@@ -30,7 +30,7 @@ msgstr ""
 
 #: howto/functional.rst:0
 msgid "Release"
-msgstr ""
+msgstr "發佈"
 
 #: howto/functional.rst:6
 msgid "0.32"
@@ -1292,7 +1292,7 @@ msgstr ""
 
 #: howto/functional.rst:1205
 msgid "References"
-msgstr ""
+msgstr "參照"
 
 #: howto/functional.rst:1208
 msgid "General"

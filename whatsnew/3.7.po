@@ -1247,7 +1247,7 @@ msgstr ""
 
 #: whatsnew/3.7.rst:1985
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: whatsnew/3.7.rst:908
 msgid ""

@@ -168,9 +168,7 @@ msgid ""
 "filesystem paths::"
 msgstr ""
 
-#: library/pathlib.rst:180
-#: library/pathlib.rst:752
-#: library/pathlib.rst:762
+#: library/pathlib.rst:180 library/pathlib.rst:752 library/pathlib.rst:762
 msgid "*pathsegments* is specified similarly to :class:`PurePath`."
 msgstr ""
 
@@ -439,8 +437,7 @@ msgid ""
 "Set *case_sensitive* to ``True`` or ``False`` to override this behaviour."
 msgstr ""
 
-#: library/pathlib.rst:934
-#: library/pathlib.rst:1347
+#: library/pathlib.rst:934 library/pathlib.rst:1347
 msgid "The *case_sensitive* parameter was added."
 msgstr ""
 
@@ -589,8 +586,7 @@ msgid ""
 "``follow_symlinks=False``, or use :meth:`~Path.lstat`."
 msgstr ""
 
-#: library/pathlib.rst:859
-#: library/pathlib.rst:880
+#: library/pathlib.rst:859 library/pathlib.rst:880
 msgid "The *follow_symlinks* parameter was added."
 msgstr ""
 
@@ -673,9 +669,7 @@ msgid ""
 "pointing to a directory), ``False`` if it points to another kind of file."
 msgstr ""
 
-#: library/pathlib.rst:958
-#: library/pathlib.rst:1009
-#: library/pathlib.rst:1027
+#: library/pathlib.rst:958 library/pathlib.rst:1009 library/pathlib.rst:1027
 msgid ""
 "``False`` is also returned if the path doesn't exist or is a broken symlink; "
 "other errors (such as permission errors) are propagated."
@@ -1360,7 +1354,7 @@ msgstr ""
 
 #: library/pathlib.rst:1519
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/pathlib.rst:1520
 msgid ""

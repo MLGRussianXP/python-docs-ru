@@ -273,7 +273,7 @@ msgstr ""
 
 #: library/runpy.rst:103
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/runpy.rst:103
 msgid "__main__"

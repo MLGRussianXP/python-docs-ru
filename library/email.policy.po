@@ -347,8 +347,7 @@ msgstr ""
 msgid "*sourcelines* may contain surrogateescaped binary data."
 msgstr ""
 
-#: library/email.policy.rst:327
-#: library/email.policy.rst:343
+#: library/email.policy.rst:327 library/email.policy.rst:343
 msgid "There is no default implementation"
 msgstr ""
 
@@ -728,7 +727,7 @@ msgstr ""
 
 #: library/email.policy.rst:650
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/email.policy.rst:651
 msgid ""

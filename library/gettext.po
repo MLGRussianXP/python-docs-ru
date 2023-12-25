@@ -738,7 +738,7 @@ msgstr ""
 
 #: library/gettext.rst:638
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/gettext.rst:639
 msgid ""

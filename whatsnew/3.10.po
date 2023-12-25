@@ -1181,8 +1181,7 @@ msgstr ""
 msgid "doctest"
 msgstr ""
 
-#: whatsnew/3.10.rst:1213
-#: whatsnew/3.10.rst:1339
+#: whatsnew/3.10.rst:1213 whatsnew/3.10.rst:1339
 msgid ""
 "When a module does not define ``__loader__``, fall back to ``__spec__."
 "loader``. (Contributed by Brett Cannon in :issue:`42133`.)"
@@ -1200,7 +1199,7 @@ msgstr ""
 
 #: whatsnew/3.10.rst:1088
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: whatsnew/3.10.rst:1090
 msgid ""
@@ -1969,7 +1968,7 @@ msgstr ""
 
 #: whatsnew/3.10.rst:2203
 msgid "Deprecated"
-msgstr ""
+msgstr "已棄用"
 
 #: whatsnew/3.10.rst:1599
 msgid ""

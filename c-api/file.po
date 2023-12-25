@@ -134,7 +134,7 @@ msgstr ""
 
 #: c-api/file.rst:8
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: c-api/file.rst:8
 msgid "file"

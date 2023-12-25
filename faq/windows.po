@@ -22,7 +22,7 @@ msgstr ""
 
 #: faq/windows.rst:12
 msgid "Contents"
-msgstr ""
+msgstr "內容"
 
 #: faq/windows.rst:22
 msgid "How do I run a Python program under Windows?"

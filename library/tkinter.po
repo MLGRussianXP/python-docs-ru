@@ -973,7 +973,7 @@ msgstr ""
 
 #: library/tkinter.rst:614
 msgid "Index"
-msgstr ""
+msgstr "索引"
 
 #: library/tkinter.rst:614
 msgid "Meaning"
@@ -981,7 +981,7 @@ msgstr ""
 
 #: library/tkinter.rst:614
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/tkinter.rst:616
 msgid "0"
@@ -1506,7 +1506,7 @@ msgstr ""
 
 #: library/tkinter.rst:921
 msgid "type"
-msgstr ""
+msgstr "型別"
 
 #: library/tkinter.rst:923
 msgid "%w"

@@ -533,7 +533,7 @@ msgstr ""
 
 #: howto/urllib2.rst:579
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: howto/urllib2.rst:581
 msgid "This document was reviewed and revised by John Lee."

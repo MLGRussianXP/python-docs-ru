@@ -243,8 +243,7 @@ msgstr ""
 msgid "This code is equivalent to::"
 msgstr ""
 
-#: library/contextlib.rst:352
-#: library/contextlib.rst:379
+#: library/contextlib.rst:352 library/contextlib.rst:379
 msgid "This context manager is :ref:`reentrant <reentrant-cms>`."
 msgstr ""
 

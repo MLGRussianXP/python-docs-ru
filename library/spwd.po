@@ -58,7 +58,7 @@ msgstr ""
 
 #: library/spwd.rst:28
 msgid "Index"
-msgstr ""
+msgstr "索引"
 
 #: library/spwd.rst:28
 msgid "Attribute"

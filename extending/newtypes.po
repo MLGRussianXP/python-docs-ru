@@ -577,7 +577,7 @@ msgstr ""
 
 #: extending/newtypes.rst:56
 msgid "object"
-msgstr ""
+msgstr "物件"
 
 #: extending/newtypes.rst:56
 msgid "deallocation"
@@ -613,7 +613,7 @@ msgstr ""
 
 #: extending/newtypes.rst:150
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: extending/newtypes.rst:150
 msgid "repr"

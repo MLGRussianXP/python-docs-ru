@@ -729,7 +729,7 @@ msgstr ""
 
 #: library/logging.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: library/logging.rst:585
 msgid ""
@@ -1128,8 +1128,7 @@ msgstr ""
 msgid "args"
 msgstr ""
 
-#: library/logging.rst:931
-#: library/logging.rst:977
+#: library/logging.rst:931 library/logging.rst:977
 msgid "You shouldn't need to format this yourself."
 msgstr ""
 
@@ -1259,7 +1258,7 @@ msgstr ""
 
 #: library/logging.rst:954
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/logging.rst:954
 msgid "``%(module)s``"

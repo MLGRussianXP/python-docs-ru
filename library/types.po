@@ -588,7 +588,7 @@ msgstr ""
 
 #: library/types.rst:189
 msgid "built-in function"
-msgstr ""
+msgstr "內建函式"
 
 #: library/types.rst:189
 msgid "compile"

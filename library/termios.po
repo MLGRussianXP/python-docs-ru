@@ -134,7 +134,7 @@ msgstr ""
 
 #: library/termios.rst:118
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/termios.rst:120
 msgid ""

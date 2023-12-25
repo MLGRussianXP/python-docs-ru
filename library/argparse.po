@@ -200,7 +200,7 @@ msgstr ""
 
 #: library/argparse.rst:77
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/argparse.rst:79
 msgid ""
@@ -1070,7 +1070,7 @@ msgstr ""
 
 #: library/argparse.rst:1138
 msgid "type"
-msgstr ""
+msgstr "型別"
 
 #: library/argparse.rst:1140
 msgid ""
@@ -2067,8 +2067,7 @@ msgstr ""
 msgid "? (question mark)"
 msgstr ""
 
-#: library/argparse.rst:1014
-#: library/argparse.rst:1028
+#: library/argparse.rst:1014 library/argparse.rst:1028
 msgid "in argparse module"
 msgstr ""
 

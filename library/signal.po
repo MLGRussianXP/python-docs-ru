@@ -150,17 +150,10 @@ msgid ""
 "`SIG_UNBLOCK` and :const:`SIG_SETMASK`."
 msgstr ""
 
-#: library/signal.rst:136
-#: library/signal.rst:154
-#: library/signal.rst:178
-#: library/signal.rst:204
-#: library/signal.rst:236
-#: library/signal.rst:349
-#: library/signal.rst:435
-#: library/signal.rst:499
-#: library/signal.rst:559
-#: library/signal.rst:616
-#: library/signal.rst:662
+#: library/signal.rst:136 library/signal.rst:154 library/signal.rst:178
+#: library/signal.rst:204 library/signal.rst:236 library/signal.rst:349
+#: library/signal.rst:435 library/signal.rst:499 library/signal.rst:559
+#: library/signal.rst:616 library/signal.rst:662
 msgid ":ref:`Availability <availability>`: Unix."
 msgstr ""
 
@@ -200,8 +193,7 @@ msgstr ""
 msgid "Interrupt from keyboard (CTRL + BREAK)."
 msgstr ""
 
-#: library/signal.rst:260
-#: library/signal.rst:270
+#: library/signal.rst:260 library/signal.rst:270
 msgid ":ref:`Availability <availability>`: Windows."
 msgstr ""
 
@@ -784,7 +776,7 @@ msgstr ""
 
 #: library/signal.rst:679
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/signal.rst:681
 msgid ""

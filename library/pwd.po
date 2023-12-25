@@ -39,7 +39,7 @@ msgstr ""
 
 #: library/pwd.rst:20
 msgid "Index"
-msgstr ""
+msgstr "索引"
 
 #: library/pwd.rst:20
 msgid "Attribute"
@@ -186,7 +186,7 @@ msgstr ""
 
 #: library/pwd.rst:42
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/pwd.rst:42
 msgid "crypt"

@@ -185,13 +185,11 @@ msgstr ""
 msgid "``=``"
 msgstr ""
 
-#: library/struct.rst:150
-#: library/struct.rst:154
+#: library/struct.rst:150 library/struct.rst:154
 msgid "standard"
 msgstr ""
 
-#: library/struct.rst:150
-#: library/struct.rst:154
+#: library/struct.rst:150 library/struct.rst:154
 msgid "none"
 msgstr ""
 
@@ -316,7 +314,7 @@ msgstr ""
 
 #: library/struct.rst:205
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: library/struct.rst:207
 msgid "``x``"
@@ -346,8 +344,7 @@ msgstr ""
 msgid "bytes of length 1"
 msgstr ""
 
-#: library/struct.rst:211
-#: library/struct.rst:215
+#: library/struct.rst:211 library/struct.rst:215
 msgid "1"
 msgstr ""
 
@@ -359,12 +356,8 @@ msgstr ""
 msgid ":c:expr:`signed char`"
 msgstr ""
 
-#: library/struct.rst:213
-#: library/struct.rst:219
-#: library/struct.rst:223
-#: library/struct.rst:227
-#: library/struct.rst:231
-#: library/struct.rst:236
+#: library/struct.rst:213 library/struct.rst:219 library/struct.rst:223
+#: library/struct.rst:227 library/struct.rst:231 library/struct.rst:236
 #: library/struct.rst:248
 msgid "integer"
 msgstr ""
@@ -381,11 +374,8 @@ msgstr ""
 msgid ":c:expr:`unsigned char`"
 msgstr ""
 
-#: library/struct.rst:217
-#: library/struct.rst:221
-#: library/struct.rst:225
-#: library/struct.rst:229
-#: library/struct.rst:231
+#: library/struct.rst:217 library/struct.rst:221 library/struct.rst:225
+#: library/struct.rst:229 library/struct.rst:231
 msgid "\\(2)"
 msgstr ""
 
@@ -413,8 +403,7 @@ msgstr ""
 msgid ":c:expr:`short`"
 msgstr ""
 
-#: library/struct.rst:219
-#: library/struct.rst:238
+#: library/struct.rst:219 library/struct.rst:238
 msgid "2"
 msgstr ""
 
@@ -434,9 +423,7 @@ msgstr ""
 msgid ":c:expr:`int`"
 msgstr ""
 
-#: library/struct.rst:223
-#: library/struct.rst:227
-#: library/struct.rst:240
+#: library/struct.rst:223 library/struct.rst:227 library/struct.rst:240
 msgid "4"
 msgstr ""
 
@@ -472,8 +459,7 @@ msgstr ""
 msgid ":c:expr:`long long`"
 msgstr ""
 
-#: library/struct.rst:231
-#: library/struct.rst:242
+#: library/struct.rst:231 library/struct.rst:242
 msgid "8"
 msgstr ""
 
@@ -513,13 +499,11 @@ msgstr ""
 msgid "\\(6)"
 msgstr ""
 
-#: library/struct.rst:240
-#: library/struct.rst:242
+#: library/struct.rst:240 library/struct.rst:242
 msgid "float"
 msgstr ""
 
-#: library/struct.rst:240
-#: library/struct.rst:242
+#: library/struct.rst:240 library/struct.rst:242
 msgid "\\(4)"
 msgstr ""
 
@@ -707,7 +691,7 @@ msgstr ""
 
 #: library/struct.rst:360
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/struct.rst:363
 msgid ""
@@ -943,14 +927,13 @@ msgstr ""
 
 #: library/struct.rst:9
 msgid "data"
-msgstr ""
+msgstr "資料"
 
 #: library/struct.rst:132
 msgid "@ (at)"
 msgstr ""
 
-#: library/struct.rst:261
-#: library/struct.rst:348
+#: library/struct.rst:261 library/struct.rst:348
 msgid "in struct format strings"
 msgstr ""
 

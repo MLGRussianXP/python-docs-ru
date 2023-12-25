@@ -242,8 +242,7 @@ msgstr ""
 msgid "Select the entire contents of the current window."
 msgstr ""
 
-#: library/idle.rst:370
-#: library/idle.rst:355
+#: library/idle.rst:370 library/idle.rst:355
 msgid "Cut"
 msgstr ""
 
@@ -252,8 +251,7 @@ msgid ""
 "Copy selection into the system-wide clipboard; then delete the selection."
 msgstr ""
 
-#: library/idle.rst:373
-#: library/idle.rst:355
+#: library/idle.rst:373 library/idle.rst:355
 msgid "Copy"
 msgstr ""
 
@@ -261,8 +259,7 @@ msgstr ""
 msgid "Copy selection into the system-wide clipboard."
 msgstr ""
 
-#: library/idle.rst:376
-#: library/idle.rst:355
+#: library/idle.rst:376 library/idle.rst:355
 msgid "Paste"
 msgstr ""
 

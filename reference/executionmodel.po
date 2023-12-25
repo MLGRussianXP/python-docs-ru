@@ -477,7 +477,7 @@ msgstr ""
 
 #: reference/executionmodel.rst:387
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: reference/executionmodel.rst:388
 msgid ""
@@ -497,8 +497,7 @@ msgstr ""
 msgid "block"
 msgstr ""
 
-#: reference/executionmodel.rst:31
-#: reference/executionmodel.rst:287
+#: reference/executionmodel.rst:31 reference/executionmodel.rst:287
 msgid "execution"
 msgstr ""
 
@@ -510,8 +509,7 @@ msgstr ""
 msgid "namespace"
 msgstr ""
 
-#: reference/executionmodel.rst:42
-#: reference/executionmodel.rst:103
+#: reference/executionmodel.rst:42 reference/executionmodel.rst:103
 msgid "scope"
 msgstr ""
 
@@ -537,7 +535,7 @@ msgstr ""
 
 #: reference/executionmodel.rst:87
 msgid "variable"
-msgstr ""
+msgstr "變數"
 
 #: reference/executionmodel.rst:111
 msgid "environment"
@@ -553,7 +551,7 @@ msgstr ""
 
 #: reference/executionmodel.rst:157
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: reference/executionmodel.rst:157
 msgid "__main__"
@@ -565,7 +563,7 @@ msgstr ""
 
 #: reference/executionmodel.rst:334
 msgid "exception"
-msgstr ""
+msgstr "例外"
 
 #: reference/executionmodel.rst:336
 msgid "raise an exception"

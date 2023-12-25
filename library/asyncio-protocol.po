@@ -84,7 +84,7 @@ msgstr ""
 
 #: library/asyncio-protocol.rst:51
 msgid "Contents"
-msgstr ""
+msgstr "內容"
 
 #: library/asyncio-protocol.rst:52
 msgid "This documentation page contains the following sections:"
@@ -452,8 +452,7 @@ msgstr ""
 msgid "Write some *data* bytes to the transport."
 msgstr ""
 
-#: library/asyncio-protocol.rst:333
-#: library/asyncio-protocol.rst:362
+#: library/asyncio-protocol.rst:333 library/asyncio-protocol.rst:362
 msgid ""
 "This method does not block; it buffers the data and arranges for it to be "
 "sent out asynchronously."
@@ -776,8 +775,7 @@ msgid ""
 "being closed."
 msgstr ""
 
-#: library/asyncio-protocol.rst:578
-#: library/asyncio-protocol.rst:636
+#: library/asyncio-protocol.rst:578 library/asyncio-protocol.rst:636
 msgid "State machine:"
 msgstr ""
 
@@ -937,7 +935,7 @@ msgstr ""
 
 #: library/asyncio-protocol.rst:716
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/asyncio-protocol.rst:721
 msgid "TCP Echo Server"

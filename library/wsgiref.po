@@ -159,8 +159,7 @@ msgid ""
 "actual WSGI servers or applications, since the data is fake!"
 msgstr ""
 
-#: library/wsgiref.rst:170
-#: library/wsgiref.rst:426
+#: library/wsgiref.rst:170 library/wsgiref.rst:426
 msgid "Example usage::"
 msgstr ""
 
@@ -888,7 +887,7 @@ msgstr ""
 
 #: library/wsgiref.rst:817
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/wsgiref.rst:819
 msgid "This is a working \"Hello World\" WSGI application::"

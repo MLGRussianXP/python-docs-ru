@@ -76,7 +76,7 @@ msgstr ""
 
 #: library/email.examples.rst:66
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/email.examples.rst:67
 msgid ""

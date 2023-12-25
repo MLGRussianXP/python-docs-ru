@@ -261,7 +261,7 @@ msgstr ""
 
 #: library/sqlite3.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: library/sqlite3.rst:267
 msgid ""
@@ -342,7 +342,7 @@ msgstr ""
 
 #: library/sqlite3.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"
 
 #: library/sqlite3.rst:343
 msgid ""
@@ -714,7 +714,7 @@ msgstr ""
 
 #: library/sqlite3.rst:0
 msgid "Raises"
-msgstr ""
+msgstr "引發"
 
 #: library/sqlite3.rst:659
 msgid "When trying to open a blob in a ``WITHOUT ROWID`` table."
@@ -805,9 +805,7 @@ msgstr ""
 msgid "The *deterministic* parameter."
 msgstr ""
 
-#: library/sqlite3.rst:782
-#: library/sqlite3.rst:1115
-#: library/sqlite3.rst:1568
+#: library/sqlite3.rst:782 library/sqlite3.rst:1115 library/sqlite3.rst:1568
 msgid "Example:"
 msgstr ""
 
@@ -1366,8 +1364,7 @@ msgid ""
 "`tuple`."
 msgstr ""
 
-#: library/sqlite3.rst:1694
-#: library/sqlite3.rst:1717
+#: library/sqlite3.rst:1694 library/sqlite3.rst:1717
 msgid "See :ref:`sqlite3-howto-row-factory` for more details."
 msgstr ""
 

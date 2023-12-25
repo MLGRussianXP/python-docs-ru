@@ -585,7 +585,7 @@ msgstr ""
 
 #: tutorial/datastructures.rst:733
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: tutorial/datastructures.rst:734
 msgid ""

@@ -52,7 +52,7 @@ msgstr ""
 
 #: library/chunk.rst:34
 msgid "Contents"
-msgstr ""
+msgstr "內容"
 
 #: library/chunk.rst:36
 msgid "0"
@@ -192,7 +192,7 @@ msgstr ""
 
 #: library/chunk.rst:139
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/chunk.rst:140
 msgid ""

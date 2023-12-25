@@ -150,7 +150,7 @@ msgstr ""
 
 #: library/fnmatch.rst:41
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/fnmatch.rst:11
 msgid "re"

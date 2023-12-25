@@ -142,9 +142,7 @@ msgstr ""
 msgid "Use"
 msgstr ""
 
-#: library/time.rst:105
-#: library/time.rst:111
-#: library/time.rst:29
+#: library/time.rst:105 library/time.rst:111 library/time.rst:29
 msgid "seconds since the epoch"
 msgstr ""
 
@@ -231,11 +229,8 @@ msgid ""
 "to :ref:`time-clock-id-constants` for a list of accepted values for *clk_id*."
 msgstr ""
 
-#: library/time.rst:174
-#: library/time.rst:196
-#: library/time.rst:707
-#: library/time.rst:843
-#: library/time.rst:906
+#: library/time.rst:174 library/time.rst:196 library/time.rst:707
+#: library/time.rst:843 library/time.rst:906
 msgid ":ref:`Availability <availability>`: Unix."
 msgstr ""
 
@@ -536,7 +531,7 @@ msgstr ""
 
 #: library/time.rst:413
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: library/time.rst:415
 msgid "``%a``"
@@ -837,7 +832,7 @@ msgstr ""
 
 #: library/time.rst:575
 msgid "Index"
-msgstr ""
+msgstr "索引"
 
 #: library/time.rst:576
 msgid "Attribute"
@@ -1319,7 +1314,7 @@ msgstr ""
 
 #: library/time.rst:960
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/time.rst:961
 msgid ""
@@ -1360,8 +1355,7 @@ msgstr ""
 msgid "Daylight Saving Time"
 msgstr ""
 
-#: library/time.rst:336
-#: library/time.rst:669
+#: library/time.rst:336 library/time.rst:669
 msgid "benchmarking"
 msgstr ""
 

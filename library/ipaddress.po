@@ -386,8 +386,7 @@ msgid ""
 "ID."
 msgstr ""
 
-#: library/ipaddress.rst:757
-#: library/ipaddress.rst:893
+#: library/ipaddress.rst:757 library/ipaddress.rst:893
 msgid "Operators"
 msgstr ""
 

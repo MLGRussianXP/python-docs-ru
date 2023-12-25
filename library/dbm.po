@@ -55,8 +55,7 @@ msgid ""
 "name, such as ``'dbm.ndbm'`` or ``'dbm.gnu'``."
 msgstr ""
 
-#: library/dbm.rst:210
-#: library/dbm.rst:400
+#: library/dbm.rst:210 library/dbm.rst:400
 msgid "Accepts :term:`path-like object` for filename."
 msgstr ""
 
@@ -71,65 +70,51 @@ msgid ""
 "the first module listed above that can be imported is used."
 msgstr ""
 
-#: library/dbm.rst:166
-#: library/dbm.rst:364
+#: library/dbm.rst:166 library/dbm.rst:364
 msgid "The optional *flag* argument can be:"
 msgstr ""
 
-#: library/dbm.rst:169
-#: library/dbm.rst:294
-#: library/dbm.rst:367
+#: library/dbm.rst:169 library/dbm.rst:294 library/dbm.rst:367
 msgid "Value"
 msgstr ""
 
-#: library/dbm.rst:169
-#: library/dbm.rst:294
-#: library/dbm.rst:367
+#: library/dbm.rst:169 library/dbm.rst:294 library/dbm.rst:367
 msgid "Meaning"
 msgstr ""
 
-#: library/dbm.rst:171
-#: library/dbm.rst:369
+#: library/dbm.rst:171 library/dbm.rst:369
 msgid "``'r'``"
 msgstr ""
 
-#: library/dbm.rst:171
-#: library/dbm.rst:369
+#: library/dbm.rst:171 library/dbm.rst:369
 msgid "Open existing database for reading only (default)"
 msgstr ""
 
-#: library/dbm.rst:174
-#: library/dbm.rst:372
+#: library/dbm.rst:174 library/dbm.rst:372
 msgid "``'w'``"
 msgstr ""
 
-#: library/dbm.rst:174
-#: library/dbm.rst:372
+#: library/dbm.rst:174 library/dbm.rst:372
 msgid "Open existing database for reading and writing"
 msgstr ""
 
-#: library/dbm.rst:177
-#: library/dbm.rst:375
+#: library/dbm.rst:177 library/dbm.rst:375
 msgid "``'c'``"
 msgstr ""
 
-#: library/dbm.rst:177
-#: library/dbm.rst:375
+#: library/dbm.rst:177 library/dbm.rst:375
 msgid "Open database for reading and writing, creating it if it doesn't exist"
 msgstr ""
 
-#: library/dbm.rst:180
-#: library/dbm.rst:378
+#: library/dbm.rst:180 library/dbm.rst:378
 msgid "``'n'``"
 msgstr ""
 
-#: library/dbm.rst:180
-#: library/dbm.rst:378
+#: library/dbm.rst:180 library/dbm.rst:378
 msgid "Always create a new, empty database, open for reading and writing"
 msgstr ""
 
-#: library/dbm.rst:309
-#: library/dbm.rst:382
+#: library/dbm.rst:309 library/dbm.rst:382
 msgid ""
 "The optional *mode* argument is the Unix mode of the file, used only when "
 "the database has to be created.  It defaults to octal ``0o666`` (and will be "

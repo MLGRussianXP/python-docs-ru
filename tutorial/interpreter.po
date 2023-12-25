@@ -193,7 +193,7 @@ msgstr ""
 
 #: tutorial/interpreter.rst:160
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: tutorial/interpreter.rst:161
 msgid ""

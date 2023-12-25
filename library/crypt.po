@@ -193,7 +193,7 @@ msgstr ""
 
 #: library/crypt.rst:153
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/crypt.rst:155
 msgid ""
@@ -208,8 +208,7 @@ msgid ""
 "check it against the original::"
 msgstr ""
 
-#: library/crypt.rst:33
-#: library/crypt.rst:119
+#: library/crypt.rst:33 library/crypt.rst:119
 msgid "crypt(3)"
 msgstr ""
 

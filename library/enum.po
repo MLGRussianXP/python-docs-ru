@@ -339,7 +339,7 @@ msgstr ""
 
 #: library/enum.rst:0
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/enum.rst:188
 msgid "The name of the module the new Enum is created in."
@@ -355,7 +355,7 @@ msgstr ""
 
 #: library/enum.rst:0
 msgid "type"
-msgstr ""
+msgstr "型別"
 
 #: library/enum.rst:190
 msgid "A mix-in type for the new Enum."
@@ -953,7 +953,7 @@ msgstr ""
 
 #: library/enum.rst:909
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: library/enum.rst:911
 msgid ":class:`IntEnum`, :class:`StrEnum`, and :class:`IntFlag`"

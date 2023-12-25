@@ -49,7 +49,7 @@ msgstr ""
 
 #: library/sunau.rst:26
 msgid "Contents"
-msgstr ""
+msgstr "內容"
 
 #: library/sunau.rst:28
 msgid "magic word"

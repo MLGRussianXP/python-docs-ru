@@ -309,7 +309,7 @@ msgstr ""
 
 #: library/readline.rst:292
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: library/readline.rst:294
 msgid ""

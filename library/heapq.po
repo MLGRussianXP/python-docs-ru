@@ -365,7 +365,7 @@ msgstr ""
 
 #: library/heapq.rst:312
 msgid "Footnotes"
-msgstr ""
+msgstr "註腳"
 
 #: library/heapq.rst:313
 msgid ""

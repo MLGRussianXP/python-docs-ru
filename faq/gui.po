@@ -22,7 +22,7 @@ msgstr ""
 
 #: faq/gui.rst:8
 msgid "Contents"
-msgstr ""
+msgstr "內容"
 
 #: faq/gui.rst:15
 msgid "General GUI Questions"

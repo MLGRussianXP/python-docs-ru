@@ -88,7 +88,7 @@ msgstr ""
 
 #: library/tomllib.rst:69
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/tomllib.rst:71
 msgid "Parsing a TOML file::"
@@ -114,8 +114,7 @@ msgstr ""
 msgid "TOML document"
 msgstr ""
 
-#: library/tomllib.rst:118
-#: library/tomllib.rst:120
+#: library/tomllib.rst:118 library/tomllib.rst:120
 msgid "dict"
 msgstr ""
 

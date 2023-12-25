@@ -605,7 +605,7 @@ msgstr ""
 
 #: library/lzma.rst:389
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: library/lzma.rst:391
 msgid "Reading in a compressed file::"

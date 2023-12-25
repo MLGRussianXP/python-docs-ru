@@ -143,7 +143,7 @@ msgstr ""
 
 #: library/logging.config.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: library/logging.config.rst:94
 msgid ""

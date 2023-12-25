@@ -88,11 +88,11 @@ msgstr ""
 
 #: library/linecache.rst:31
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/linecache.rst:31
 msgid "search"
-msgstr ""
+msgstr "搜尋"
 
 #: library/linecache.rst:31
 msgid "path"

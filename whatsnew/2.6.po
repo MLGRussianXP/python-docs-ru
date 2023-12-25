@@ -1700,8 +1700,7 @@ msgid ""
 "`update`, :meth:`difference` and :meth:`difference_update`."
 msgstr ""
 
-#: whatsnew/2.6.rst:1881
-#: whatsnew/2.6.rst:1902
+#: whatsnew/2.6.rst:1881 whatsnew/2.6.rst:1902
 msgid "(Contributed by Raymond Hettinger.)"
 msgstr ""
 

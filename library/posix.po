@@ -118,7 +118,7 @@ msgstr ""
 
 #: library/posix.rst:16
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/posix.rst:16
 msgid "os"

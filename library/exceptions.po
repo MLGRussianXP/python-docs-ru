@@ -962,8 +962,7 @@ msgid ""
 "already active deprecations."
 msgstr ""
 
-#: library/exceptions.rst:867
-#: library/exceptions.rst:894
+#: library/exceptions.rst:867 library/exceptions.rst:894
 msgid ""
 "Ignored by the default warning filters. Enabling the :ref:`Python "
 "Development Mode <devmode>` shows this warning."
@@ -1134,10 +1133,9 @@ msgstr ""
 msgid "The class hierarchy for built-in exceptions is:"
 msgstr ""
 
-#: library/exceptions.rst:17
-#: library/exceptions.rst:196
+#: library/exceptions.rst:17 library/exceptions.rst:196
 msgid "statement"
-msgstr ""
+msgstr "陳述式"
 
 #: library/exceptions.rst:6
 msgid "try"
@@ -1153,7 +1151,7 @@ msgstr ""
 
 #: library/exceptions.rst:41
 msgid "exception"
-msgstr ""
+msgstr "例外"
 
 #: library/exceptions.rst:41
 msgid "chaining"
@@ -1177,7 +1175,7 @@ msgstr ""
 
 #: library/exceptions.rst:345
 msgid "module"
-msgstr ""
+msgstr "模組"
 
 #: library/exceptions.rst:345
 msgid "errno"

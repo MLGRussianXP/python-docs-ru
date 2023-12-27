@@ -3,32 +3,43 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Pavel Karateev <lancelote.du.lac@gmail.com>, 2021
+# Kristina Mironova, 2021
+# alex alev <alex.alev@bk.ru>, 2021
+# myoldloverock, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-25 17:31+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-12-08 14:14+0000\n"
+"PO-Revision-Date: 2021-06-28 01:49+0000\n"
+"Last-Translator: myoldloverock, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: tutorial/appendix.rst:5
+#: ../../tutorial/appendix.rst:5
 msgid "Appendix"
-msgstr ""
+msgstr "Приложение"
 
-#: tutorial/appendix.rst:11
+#: ../../tutorial/appendix.rst:11
 msgid "Interactive Mode"
-msgstr ""
+msgstr "Интерактивный режим"
 
-#: tutorial/appendix.rst:16
+#: ../../tutorial/appendix.rst:16
 msgid "Error Handling"
-msgstr ""
+msgstr "Обработка ошибок"
 
-#: tutorial/appendix.rst:18
+#: ../../tutorial/appendix.rst:18
 msgid ""
 "When an error occurs, the interpreter prints an error message and a stack "
 "trace. In interactive mode, it then returns to the primary prompt; when "
@@ -40,8 +51,18 @@ msgid ""
 "messages are written to the standard error stream; normal output from "
 "executed commands is written to standard output."
 msgstr ""
+"При вознокновении исключений интерпретатор возвращает сообщение об ошибке и "
+"трассировку стека. В интерактивном режиме исполнение возвращается к "
+"приглашению ввода; исполнение файла в свою очередь прерывается с ненулевым "
+"кодом завершения. (Исключения обработанные условием :keyword:`except` "
+"инструкции :keyword:`try` ошибками в данном контекте не считаются.) От "
+"некоторых ошибок интерпретатор не может восстановиться, они вызывают "
+"завершение его работы с ненулевым кодом завершения; это относится ко случаям "
+"внутренней неконсистентности и нехватки памяти. Все сообщения об исключениях "
+"пишутся на стандартный вывод ошибок; обычные сообщения от комманд - на "
+"стандартный вывод."
 
-#: tutorial/appendix.rst:28
+#: ../../tutorial/appendix.rst:28
 msgid ""
 "Typing the interrupt character (usually :kbd:`Control-C` or :kbd:`Delete`) "
 "to the primary or secondary prompt cancels the input and returns to the "
@@ -49,18 +70,26 @@ msgid ""
 "the :exc:`KeyboardInterrupt` exception, which may be handled by a :keyword:"
 "`try` statement."
 msgstr ""
+"Нажатие символа прерывания (обычно :kbd:`Control-C` или :kbd:`Delete`) во "
+"время первичного или вторичного приглашения ввода прерывает текущий ввод и "
+"возвращает пользователя к первичному приглашению. [#]_ При исполнении "
+"команды прерывание вызывает исключение :exc:`KeyboardInterrupt`, которое "
+"может быть обработано инструкцией :keyword:`try`."
 
-#: tutorial/appendix.rst:38
+#: ../../tutorial/appendix.rst:38
 msgid "Executable Python Scripts"
-msgstr ""
+msgstr "Исполняемые Python файлы"
 
-#: tutorial/appendix.rst:40
+#: ../../tutorial/appendix.rst:40
 msgid ""
 "On BSD'ish Unix systems, Python scripts can be made directly executable, "
 "like shell scripts, by putting the line ::"
 msgstr ""
+"На BSD версиях Unix Python файлы могут быть отмечены как исполняемые по "
+"аналогии с файлами командной оболочки (например Bash). Для этого необходимо "
+"добавить следующую строку : ::"
 
-#: tutorial/appendix.rst:45
+#: ../../tutorial/appendix.rst:45
 msgid ""
 "(assuming that the interpreter is on the user's :envvar:`PATH`) at the "
 "beginning of the script and giving the file an executable mode.  The ``#!`` "
@@ -69,14 +98,21 @@ msgid ""
 "(``'\\r\\n'``) line ending.  Note that the hash, or pound, character, "
 "``'#'``, is used to start a comment in Python."
 msgstr ""
+"(предполагается наличие интерпретатора в :envvar:`PATH`) в начало файла и "
+"выставить ему исполняемый бит. ``#!`` должны быть первыми двумя символами "
+"файла. На некоторых платформах первая строка должна заканчиваться переносом "
+"в стиле Unix (``'\\n'``), а не Windows (``'\\r\\n'``). Обратите внимание что "
+"символ решетки ``'#'`` в Python используется для комментариев."
 
-#: tutorial/appendix.rst:52
+#: ../../tutorial/appendix.rst:52
 msgid ""
 "The script can be given an executable mode, or permission, using the :"
 "program:`chmod` command."
 msgstr ""
+"Файлу может быть выставлен исполняемый бит или права доступа при помощи "
+"команды :program:`chmod`."
 
-#: tutorial/appendix.rst:59
+#: ../../tutorial/appendix.rst:59
 msgid ""
 "On Windows systems, there is no notion of an \"executable mode\".  The "
 "Python installer automatically associates ``.py`` files with ``python.exe`` "
@@ -84,12 +120,17 @@ msgid ""
 "extension can also be ``.pyw``, in that case, the console window that "
 "normally appears is suppressed."
 msgstr ""
+"На Windows не существует понятия \"исполняемый бит\". Установщик Python "
+"автоматически проассоциирует ``.py`` файлы с ``python.exe``, таким образом "
+"двойной щелчек мыши по Python файлу запустит его. Расширение файла может "
+"быть также ``.pyw``, в этом случае окно консоли, которое обычно появляется "
+"на время исполнения, будет отключено."
 
-#: tutorial/appendix.rst:69
+#: ../../tutorial/appendix.rst:69
 msgid "The Interactive Startup File"
-msgstr ""
+msgstr "Файл настройки запуска интерактивного режима"
 
-#: tutorial/appendix.rst:71
+#: ../../tutorial/appendix.rst:71
 msgid ""
 "When you use Python interactively, it is frequently handy to have some "
 "standard commands executed every time the interpreter is started.  You can "
@@ -97,8 +138,13 @@ msgid ""
 "the name of a file containing your start-up commands.  This is similar to "
 "the :file:`.profile` feature of the Unix shells."
 msgstr ""
+"Когда вы запускаете Python в интерактивном режиме очень удобно иметь набор "
+"команд, которые исполняются автоматически с запуском интрпретатора. Этого "
+"можно добиться задав переменную окружения :envvar:`PYTHONSTARTUP` и указав "
+"на файл содержащий ваши команды запуска. По схожей схеме работает :file:`."
+"profile` в командной оболочке Unix."
 
-#: tutorial/appendix.rst:77
+#: ../../tutorial/appendix.rst:77
 msgid ""
 "This file is only read in interactive sessions, not when Python reads "
 "commands from a script, and not when :file:`/dev/tty` is given as the "
@@ -108,8 +154,15 @@ msgid ""
 "qualification in the interactive session. You can also change the prompts "
 "``sys.ps1`` and ``sys.ps2`` in this file."
 msgstr ""
+"Этот файл исполняется только в интерактивном режиме, а не при исполнении "
+"других файлов или при использовании :file:`/dev/tty` в качестве источника "
+"команд (который в других случаях работает как интерактивный режим). Файл "
+"исполняется в том же пространстве имен что и интерактивные команды, таким "
+"образом любые определенные в нем объекты или импорты напрямую доступны в "
+"интерактивной сессии. Вы также можете поменять вид первичного ``sys.ps1`` и "
+"вторичного ``sys.ps2`` приглашения ввода."
 
-#: tutorial/appendix.rst:85
+#: ../../tutorial/appendix.rst:85
 msgid ""
 "If you want to read an additional start-up file from the current directory, "
 "you can program this in the global start-up file using code like ``if os."
@@ -117,39 +170,56 @@ msgid ""
 "want to use the startup file in a script, you must do this explicitly in the "
 "script::"
 msgstr ""
+"Если вы хотите использовать дополнительный файл настройки запуска из текущей "
+"директории, то запрограммируйте это в глобальном файле настроек через ``if "
+"os.path.isfile('.pythonrc.py'): exec(open('.pythonrc.py').read())``. Если вы "
+"хотите использовать файл настроек напряму в вашей программе, то используйте "
+"следующий код : ::"
 
-#: tutorial/appendix.rst:102
+#: ../../tutorial/appendix.rst:102
 msgid "The Customization Modules"
-msgstr ""
+msgstr "Модули настройки"
 
-#: tutorial/appendix.rst:104
+#: ../../tutorial/appendix.rst:104
 msgid ""
 "Python provides two hooks to let you customize it: :index:`sitecustomize` "
 "and :index:`usercustomize`.  To see how it works, you need first to find the "
 "location of your user site-packages directory.  Start Python and run this "
 "code::"
 msgstr ""
+"Python предоставляет два хука, позволяющих настроить его: :index:"
+"`sitecustomize`и :index:`usercustomize`. Чтобы увидеть, как это работает, "
+"вам нужно сначала найти вашу папку site-package. Запустить Python и "
+"запустите этот код::"
 
-#: tutorial/appendix.rst:112
+#: ../../tutorial/appendix.rst:112
 msgid ""
 "Now you can create a file named :file:`usercustomize.py` in that directory "
 "and put anything you want in it.  It will affect every invocation of Python, "
 "unless it is started with the :option:`-s` option to disable the automatic "
 "import."
 msgstr ""
+"Теперь в можете создать в этой директории файл :file:`usercustomize.py` и "
+"добавить в него любой желаемый код. Он будет влиять на любой запуск Python, "
+"за исключением случаев когда использовалась опция :option:`-s` для "
+"отключения автоматического импорта."
 
-#: tutorial/appendix.rst:116
+#: ../../tutorial/appendix.rst:116
 msgid ""
 ":index:`sitecustomize` works in the same way, but is typically created by an "
 "administrator of the computer in the global site-packages directory, and is "
 "imported before :index:`usercustomize`.  See the documentation of the :mod:"
 "`site` module for more details."
 msgstr ""
+":index:`sitecustomize`работает таким же образом, но обычно создается "
+"администратором компьютера в глобальном каталоге site-package и "
+"импортируется перед :index:`usercustomize`. Дополнительную информацию "
+"смотрите в документации модуля:mod:`site`"
 
-#: tutorial/appendix.rst:123
+#: ../../tutorial/appendix.rst:123
 msgid "Footnotes"
-msgstr "註腳"
+msgstr "Сноски"
 
-#: tutorial/appendix.rst:124
+#: ../../tutorial/appendix.rst:124
 msgid "A problem with the GNU Readline package may prevent this."
-msgstr ""
+msgstr "Проблема с пакетом GNU Readline могут этому воспрепятствовать."

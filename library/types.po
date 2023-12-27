@@ -3,62 +3,70 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Kristina Mironova, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-25 17:31+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-12-15 14:14+0000\n"
+"PO-Revision-Date: 2021-06-28 01:16+0000\n"
+"Last-Translator: Kristina Mironova, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: library/types.rst:2
+#: ../../library/types.rst:2
 msgid ":mod:`types` --- Dynamic type creation and names for built-in types"
 msgstr ""
 
-#: library/types.rst:7
+#: ../../library/types.rst:7
 msgid "**Source code:** :source:`Lib/types.py`"
 msgstr ""
 
-#: library/types.rst:11
+#: ../../library/types.rst:11
 msgid ""
 "This module defines utility functions to assist in dynamic creation of new "
 "types."
 msgstr ""
 
-#: library/types.rst:14
+#: ../../library/types.rst:14
 msgid ""
 "It also defines names for some object types that are used by the standard "
 "Python interpreter, but not exposed as builtins like :class:`int` or :class:"
 "`str` are."
 msgstr ""
 
-#: library/types.rst:18
+#: ../../library/types.rst:18
 msgid ""
 "Finally, it provides some additional type-related utility classes and "
 "functions that are not fundamental enough to be builtins."
 msgstr ""
 
-#: library/types.rst:23
+#: ../../library/types.rst:23
 msgid "Dynamic Type Creation"
 msgstr ""
 
-#: library/types.rst:27
+#: ../../library/types.rst:27
 msgid "Creates a class object dynamically using the appropriate metaclass."
 msgstr ""
 
-#: library/types.rst:29
+#: ../../library/types.rst:29
 msgid ""
 "The first three arguments are the components that make up a class definition "
 "header: the class name, the base classes (in order), the keyword arguments "
 "(such as ``metaclass``)."
 msgstr ""
 
-#: library/types.rst:33
+#: ../../library/types.rst:33
 msgid ""
 "The *exec_body* argument is a callback that is used to populate the freshly "
 "created class namespace. It should accept the class namespace as its sole "
@@ -67,22 +75,22 @@ msgid ""
 "None``."
 msgstr ""
 
-#: library/types.rst:43
+#: ../../library/types.rst:43
 msgid "Calculates the appropriate metaclass and creates the class namespace."
 msgstr ""
 
-#: library/types.rst:45
+#: ../../library/types.rst:45
 msgid ""
 "The arguments are the components that make up a class definition header: the "
 "class name, the base classes (in order) and the keyword arguments (such as "
 "``metaclass``)."
 msgstr ""
 
-#: library/types.rst:49
+#: ../../library/types.rst:49
 msgid "The return value is a 3-tuple: ``metaclass, namespace, kwds``"
 msgstr ""
 
-#: library/types.rst:51
+#: ../../library/types.rst:51
 msgid ""
 "*metaclass* is the appropriate metaclass, *namespace* is the prepared class "
 "namespace and *kwds* is an updated copy of the passed in *kwds* argument "
@@ -90,34 +98,34 @@ msgid ""
 "this will be an empty dict."
 msgstr ""
 
-#: library/types.rst:60
+#: ../../library/types.rst:60
 msgid ""
 "The default value for the ``namespace`` element of the returned tuple has "
 "changed.  Now an insertion-order-preserving mapping is used when the "
 "metaclass does not have a ``__prepare__`` method."
 msgstr ""
 
-#: library/types.rst:67
+#: ../../library/types.rst:67
 msgid ":ref:`metaclasses`"
 msgstr ""
 
-#: library/types.rst:67
+#: ../../library/types.rst:67
 msgid "Full details of the class creation process supported by these functions"
 msgstr ""
 
-#: library/types.rst:69
+#: ../../library/types.rst:69
 msgid ":pep:`3115` - Metaclasses in Python 3000"
 msgstr ""
 
-#: library/types.rst:70
+#: ../../library/types.rst:70
 msgid "Introduced the ``__prepare__`` namespace hook"
 msgstr ""
 
-#: library/types.rst:74
+#: ../../library/types.rst:74
 msgid "Resolve MRO entries dynamically as specified by :pep:`560`."
 msgstr ""
 
-#: library/types.rst:76
+#: ../../library/types.rst:76
 msgid ""
 "This function looks for items in *bases* that are not instances of :class:"
 "`type`, and returns a tuple where each such object that has an :meth:"
@@ -127,7 +135,7 @@ msgid ""
 "the return tuple unchanged."
 msgstr ""
 
-#: library/types.rst:87
+#: ../../library/types.rst:87
 msgid ""
 "Return the tuple of objects originally given as the bases of *cls* before "
 "the :meth:`~object.__mro_entries__` method has been called on any bases "
@@ -135,26 +143,26 @@ msgid ""
 "introspecting :ref:`Generics <user-defined-generics>`."
 msgstr ""
 
-#: library/types.rst:92
+#: ../../library/types.rst:92
 msgid ""
 "For classes that have an ``__orig_bases__`` attribute, this function returns "
 "the value of ``cls.__orig_bases__``. For classes without the "
 "``__orig_bases__`` attribute, ``cls.__bases__`` is returned."
 msgstr ""
 
-#: library/types.rst:97
+#: ../../library/types.rst:97
 msgid "Examples::"
-msgstr ""
+msgstr "Примеры::"
 
-#: library/types.rst:127
+#: ../../library/types.rst:127
 msgid ":pep:`560` - Core support for typing module and generic types"
 msgstr ""
 
-#: library/types.rst:131
+#: ../../library/types.rst:131
 msgid "Standard Interpreter Types"
 msgstr ""
 
-#: library/types.rst:133
+#: ../../library/types.rst:133
 msgid ""
 "This module provides names for many of the types that are required to "
 "implement a Python interpreter. It deliberately avoids including some of the "
@@ -162,156 +170,156 @@ msgid ""
 "``listiterator`` type."
 msgstr ""
 
-#: library/types.rst:138
+#: ../../library/types.rst:138
 msgid ""
 "Typical use of these names is for :func:`isinstance` or :func:`issubclass` "
 "checks."
 msgstr ""
 
-#: library/types.rst:142
+#: ../../library/types.rst:142
 msgid ""
 "If you instantiate any of these types, note that signatures may vary between "
 "Python versions."
 msgstr ""
 
-#: library/types.rst:144
+#: ../../library/types.rst:144
 msgid "Standard names are defined for the following types:"
 msgstr ""
 
-#: library/types.rst:148
+#: ../../library/types.rst:148
 msgid "The type of :data:`None`."
 msgstr ""
 
-#: library/types.rst:156
+#: ../../library/types.rst:156
 msgid ""
 "The type of user-defined functions and functions created by :keyword:"
 "`lambda`  expressions."
 msgstr ""
 
-#: library/types.rst:159
+#: ../../library/types.rst:159
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``function.__new__`` with "
 "argument ``code``."
 msgstr ""
 
-#: library/types.rst:161
+#: ../../library/types.rst:161
 msgid ""
 "The audit event only occurs for direct instantiation of function objects, "
 "and is not raised for normal compilation."
 msgstr ""
 
-#: library/types.rst:167
+#: ../../library/types.rst:167
 msgid ""
 "The type of :term:`generator`-iterator objects, created by generator "
 "functions."
 msgstr ""
 
-#: library/types.rst:173
+#: ../../library/types.rst:173
 msgid ""
 "The type of :term:`coroutine` objects, created by :keyword:`async def` "
 "functions."
 msgstr ""
 
-#: library/types.rst:181
+#: ../../library/types.rst:181
 msgid ""
 "The type of :term:`asynchronous generator`-iterator objects, created by "
 "asynchronous generator functions."
 msgstr ""
 
-#: library/types.rst:191
+#: ../../library/types.rst:191
 msgid "The type for code objects such as returned by :func:`compile`."
 msgstr ""
 
-#: library/types.rst:193
+#: ../../library/types.rst:193
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``code.__new__`` with arguments "
 "``code``, ``filename``, ``name``, ``argcount``, ``posonlyargcount``, "
 "``kwonlyargcount``, ``nlocals``, ``stacksize``, ``flags``."
 msgstr ""
 
-#: library/types.rst:195
+#: ../../library/types.rst:195
 msgid ""
 "Note that the audited arguments may not match the names or positions "
 "required by the initializer.  The audit event only occurs for direct "
 "instantiation of code objects, and is not raised for normal compilation."
 msgstr ""
 
-#: library/types.rst:201
+#: ../../library/types.rst:201
 msgid ""
 "Return a copy of the code object with new values for the specified fields."
 msgstr ""
 
-#: library/types.rst:207
+#: ../../library/types.rst:207
 msgid ""
 "The type for cell objects: such objects are used as containers for a "
 "function's free variables."
 msgstr ""
 
-#: library/types.rst:215
+#: ../../library/types.rst:215
 msgid "The type of methods of user-defined class instances."
 msgstr ""
 
-#: library/types.rst:221
+#: ../../library/types.rst:221
 msgid ""
 "The type of built-in functions like :func:`len` or :func:`sys.exit`, and "
 "methods of built-in classes.  (Here, the term \"built-in\" means \"written "
 "in C\".)"
 msgstr ""
 
-#: library/types.rst:228
+#: ../../library/types.rst:228
 msgid ""
 "The type of methods of some built-in data types and base classes such as :"
 "meth:`object.__init__` or :meth:`object.__lt__`."
 msgstr ""
 
-#: library/types.rst:236
+#: ../../library/types.rst:236
 msgid ""
 "The type of *bound* methods of some built-in data types and base classes. "
 "For example it is the type of :code:`object().__str__`."
 msgstr ""
 
-#: library/types.rst:244
+#: ../../library/types.rst:244
 msgid "The type of :data:`NotImplemented`."
 msgstr ""
 
-#: library/types.rst:251
+#: ../../library/types.rst:251
 msgid ""
 "The type of methods of some built-in data types such as :meth:`str.join`."
 msgstr ""
 
-#: library/types.rst:258
+#: ../../library/types.rst:258
 msgid ""
 "The type of *unbound* class methods of some built-in data types such as "
 "``dict.__dict__['fromkeys']``."
 msgstr ""
 
-#: library/types.rst:266
+#: ../../library/types.rst:266
 msgid ""
 "The type of :term:`modules <module>`. The constructor takes the name of the "
 "module to be created and optionally its :term:`docstring`."
 msgstr ""
 
-#: library/types.rst:270
+#: ../../library/types.rst:270
 msgid ""
 "Use :func:`importlib.util.module_from_spec` to create a new module if you "
 "wish to set the various import-controlled attributes."
 msgstr ""
 
-#: library/types.rst:275
+#: ../../library/types.rst:275
 msgid "The :term:`docstring` of the module. Defaults to ``None``."
 msgstr ""
 
-#: library/types.rst:279
+#: ../../library/types.rst:279
 msgid "The :term:`loader` which loaded the module. Defaults to ``None``."
 msgstr ""
 
-#: library/types.rst:281
+#: ../../library/types.rst:281
 msgid ""
 "This attribute is to match :attr:`importlib.machinery.ModuleSpec.loader` as "
 "stored in the :attr:`__spec__` object."
 msgstr ""
 
-#: library/types.rst:285
+#: ../../library/types.rst:285
 msgid ""
 "A future version of Python may stop setting this attribute by default. To "
 "guard against this potential change, preferably read from the :attr:"
@@ -319,17 +327,17 @@ msgid ""
 "None)`` if you explicitly need to use this attribute."
 msgstr ""
 
-#: library/types.rst:316
+#: ../../library/types.rst:291 ../../library/types.rst:316
 msgid "Defaults to ``None``. Previously the attribute was optional."
 msgstr ""
 
-#: library/types.rst:296
+#: ../../library/types.rst:296
 msgid ""
 "The name of the module. Expected to match :attr:`importlib.machinery."
 "ModuleSpec.name`."
 msgstr ""
 
-#: library/types.rst:301
+#: ../../library/types.rst:301
 msgid ""
 "Which :term:`package` a module belongs to. If the module is top-level (i.e. "
 "not a part of any specific package) then the attribute should be set to "
@@ -337,13 +345,13 @@ msgid ""
 "`__name__` if the module is a package itself). Defaults to ``None``."
 msgstr ""
 
-#: library/types.rst:306
+#: ../../library/types.rst:306
 msgid ""
 "This attribute is to match :attr:`importlib.machinery.ModuleSpec.parent` as "
 "stored in the :attr:`__spec__` object."
 msgstr ""
 
-#: library/types.rst:310
+#: ../../library/types.rst:310
 msgid ""
 "A future version of Python may stop setting this attribute by default. To "
 "guard against this potential change, preferably read from the :attr:"
@@ -351,73 +359,73 @@ msgid ""
 "None)`` if you explicitly need to use this attribute."
 msgstr ""
 
-#: library/types.rst:321
+#: ../../library/types.rst:321
 msgid ""
 "A record of the module's import-system-related state. Expected to be an "
 "instance of :class:`importlib.machinery.ModuleSpec`."
 msgstr ""
 
-#: library/types.rst:329
+#: ../../library/types.rst:329
 msgid "The type of :data:`Ellipsis`."
 msgstr ""
 
-#: library/types.rst:335
+#: ../../library/types.rst:335
 msgid ""
 "The type of :ref:`parameterized generics <types-genericalias>` such as "
 "``list[int]``."
 msgstr ""
 
-#: library/types.rst:338
+#: ../../library/types.rst:338
 msgid ""
 "``t_origin`` should be a non-parameterized generic class, such as ``list``, "
 "``tuple`` or ``dict``.  ``t_args`` should be a :class:`tuple` (possibly of "
 "length 1) of types which parameterize ``t_origin``::"
 msgstr ""
 
-#: library/types.rst:351
+#: ../../library/types.rst:351
 msgid "This type can now be subclassed."
 msgstr ""
 
-#: library/types.rst:357
+#: ../../library/types.rst:357
 msgid ":ref:`Generic Alias Types<types-genericalias>`"
 msgstr ""
 
-#: library/types.rst:357
+#: ../../library/types.rst:357
 msgid "In-depth documentation on instances of :class:`!types.GenericAlias`"
 msgstr ""
 
-#: library/types.rst:359
+#: ../../library/types.rst:359
 msgid ":pep:`585` - Type Hinting Generics In Standard Collections"
 msgstr ""
 
-#: library/types.rst:360
+#: ../../library/types.rst:360
 msgid "Introducing the :class:`!types.GenericAlias` class"
 msgstr ""
 
-#: library/types.rst:364
+#: ../../library/types.rst:364
 msgid "The type of :ref:`union type expressions<types-union>`."
 msgstr ""
 
-#: library/types.rst:370
+#: ../../library/types.rst:370
 msgid ""
 "The type of traceback objects such as found in ``sys.exception()."
 "__traceback__``."
 msgstr ""
 
-#: library/types.rst:372
+#: ../../library/types.rst:372
 msgid ""
 "See :ref:`the language reference <traceback-objects>` for details of the "
 "available attributes and operations, and guidance on creating tracebacks "
 "dynamically."
 msgstr ""
 
-#: library/types.rst:379
+#: ../../library/types.rst:379
 msgid ""
 "The type of :ref:`frame objects <frame-objects>` such as found in :attr:`tb."
 "tb_frame <traceback.tb_frame>` if ``tb`` is a traceback object."
 msgstr ""
 
-#: library/types.rst:385
+#: ../../library/types.rst:385
 msgid ""
 "The type of objects defined in extension modules with ``PyGetSetDef``, such "
 "as :attr:`FrameType.f_locals <frame.f_locals>` or ``array.array.typecode``. "
@@ -426,7 +434,7 @@ msgid ""
 "modules."
 msgstr ""
 
-#: library/types.rst:394
+#: ../../library/types.rst:394
 msgid ""
 "The type of objects defined in extension modules with ``PyMemberDef``, such "
 "as ``datetime.timedelta.days``.  This type is used as descriptor for simple "
@@ -435,117 +443,117 @@ msgid ""
 "modules."
 msgstr ""
 
-#: library/types.rst:401
+#: ../../library/types.rst:401
 msgid ""
 "In other implementations of Python, this type may be identical to "
 "``GetSetDescriptorType``."
 msgstr ""
 
-#: library/types.rst:406
+#: ../../library/types.rst:406
 msgid ""
 "Read-only proxy of a mapping. It provides a dynamic view on the mapping's "
 "entries, which means that when the mapping changes, the view reflects these "
 "changes."
 msgstr ""
 
-#: library/types.rst:414
+#: ../../library/types.rst:414
 msgid ""
 "Updated to support the new union (``|``) operator from :pep:`584`, which "
 "simply delegates to the underlying mapping."
 msgstr ""
 
-#: library/types.rst:419
+#: ../../library/types.rst:419
 msgid ""
 "Return ``True`` if the underlying mapping has a key *key*, else ``False``."
 msgstr ""
 
-#: library/types.rst:424
+#: ../../library/types.rst:424
 msgid ""
 "Return the item of the underlying mapping with key *key*.  Raises a :exc:"
 "`KeyError` if *key* is not in the underlying mapping."
 msgstr ""
 
-#: library/types.rst:429
+#: ../../library/types.rst:429
 msgid ""
 "Return an iterator over the keys of the underlying mapping.  This is a "
 "shortcut for ``iter(proxy.keys())``."
 msgstr ""
 
-#: library/types.rst:434
+#: ../../library/types.rst:434
 msgid "Return the number of items in the underlying mapping."
 msgstr ""
 
-#: library/types.rst:438
+#: ../../library/types.rst:438
 msgid "Return a shallow copy of the underlying mapping."
 msgstr ""
 
-#: library/types.rst:442
+#: ../../library/types.rst:442
 msgid ""
 "Return the value for *key* if *key* is in the underlying mapping, else "
 "*default*.  If *default* is not given, it defaults to ``None``, so that this "
 "method never raises a :exc:`KeyError`."
 msgstr ""
 
-#: library/types.rst:448
+#: ../../library/types.rst:448
 msgid ""
 "Return a new view of the underlying mapping's items (``(key, value)`` pairs)."
 msgstr ""
 
-#: library/types.rst:453
+#: ../../library/types.rst:453
 msgid "Return a new view of the underlying mapping's keys."
 msgstr ""
 
-#: library/types.rst:457
+#: ../../library/types.rst:457
 msgid "Return a new view of the underlying mapping's values."
 msgstr ""
 
-#: library/types.rst:461
+#: ../../library/types.rst:461
 msgid "Return a reverse iterator over the keys of the underlying mapping."
 msgstr ""
 
-#: library/types.rst:467
+#: ../../library/types.rst:467
 msgid "Return a hash of the underlying mapping."
 msgstr ""
 
-#: library/types.rst:473
+#: ../../library/types.rst:473
 msgid "Additional Utility Classes and Functions"
 msgstr ""
 
-#: library/types.rst:477
+#: ../../library/types.rst:477
 msgid ""
 "A simple :class:`object` subclass that provides attribute access to its "
 "namespace, as well as a meaningful repr."
 msgstr ""
 
-#: library/types.rst:480
+#: ../../library/types.rst:480
 msgid ""
 "Unlike :class:`object`, with ``SimpleNamespace`` you can add and remove "
 "attributes.  If a ``SimpleNamespace`` object is initialized with keyword "
 "arguments, those are directly added to the underlying namespace."
 msgstr ""
 
-#: library/types.rst:484
+#: ../../library/types.rst:484
 msgid "The type is roughly equivalent to the following code::"
 msgstr ""
 
-#: library/types.rst:499
+#: ../../library/types.rst:499
 msgid ""
 "``SimpleNamespace`` may be useful as a replacement for ``class NS: pass``. "
 "However, for a structured record type use :func:`~collections.namedtuple` "
 "instead."
 msgstr ""
 
-#: library/types.rst:505
+#: ../../library/types.rst:505
 msgid ""
 "Attribute order in the repr changed from alphabetical to insertion (like "
 "``dict``)."
 msgstr ""
 
-#: library/types.rst:511
+#: ../../library/types.rst:511
 msgid "Route attribute access on a class to __getattr__."
 msgstr ""
 
-#: library/types.rst:513
+#: ../../library/types.rst:513
 msgid ""
 "This is a descriptor, used to define attributes that act differently when "
 "accessed through an instance and through a class.  Instance access remains "
@@ -553,18 +561,18 @@ msgid ""
 "class's __getattr__ method; this is done by raising AttributeError."
 msgstr ""
 
-#: library/types.rst:518
+#: ../../library/types.rst:518
 msgid ""
 "This allows one to have properties active on an instance, and have virtual "
 "attributes on the class with the same name (see :class:`enum.Enum` for an "
 "example)."
 msgstr ""
 
-#: library/types.rst:525
+#: ../../library/types.rst:525
 msgid "Coroutine Utility Functions"
 msgstr ""
 
-#: library/types.rst:529
+#: ../../library/types.rst:529
 msgid ""
 "This function transforms a :term:`generator` function into a :term:"
 "`coroutine function` which returns a generator-based coroutine. The "
@@ -574,11 +582,11 @@ msgid ""
 "method."
 msgstr ""
 
-#: library/types.rst:536
+#: ../../library/types.rst:536
 msgid "If *gen_func* is a generator function, it will be modified in-place."
 msgstr ""
 
-#: library/types.rst:538
+#: ../../library/types.rst:538
 msgid ""
 "If *gen_func* is not a generator function, it will be wrapped. If it returns "
 "an instance of :class:`collections.abc.Generator`, the instance will be "
@@ -586,10 +594,10 @@ msgid ""
 "returned as is."
 msgstr ""
 
-#: library/types.rst:189
+#: ../../library/types.rst:189
 msgid "built-in function"
-msgstr "內建函式"
+msgstr ""
 
-#: library/types.rst:189
+#: ../../library/types.rst:189
 msgid "compile"
 msgstr ""

@@ -8,23 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-25 17:31+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-12-22 14:13+0000\n"
+"PO-Revision-Date: 2021-06-28 01:18+0000\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: library/zipimport.rst:2
+#: ../../library/zipimport.rst:2
 msgid ":mod:`zipimport` --- Import modules from Zip archives"
 msgstr ""
 
-#: library/zipimport.rst:9
+#: ../../library/zipimport.rst:9
 msgid "**Source code:** :source:`Lib/zipimport.py`"
 msgstr ""
 
-#: library/zipimport.rst:13
+#: ../../library/zipimport.rst:13
 msgid ""
 "This module adds the ability to import Python modules (:file:`\\*.py`, :file:"
 "`\\*.pyc`) and packages from ZIP-format archives. It is usually not needed "
@@ -33,7 +37,7 @@ msgid ""
 "paths to ZIP archives."
 msgstr ""
 
-#: library/zipimport.rst:19
+#: ../../library/zipimport.rst:19
 msgid ""
 "Typically, :data:`sys.path` is a list of directory names as strings.  This "
 "module also allows an item of :data:`sys.path` to be a string naming a ZIP "
@@ -44,7 +48,7 @@ msgid ""
 "archive."
 msgstr ""
 
-#: library/zipimport.rst:26
+#: ../../library/zipimport.rst:26
 msgid ""
 "Any files may be present in the ZIP archive, but importers are only invoked "
 "for :file:`.py` and :file:`.pyc` files.  ZIP import of dynamic modules (:"
@@ -54,27 +58,27 @@ msgid ""
 "doesn't contain :file:`.pyc` files, importing may be rather slow."
 msgstr ""
 
-#: library/zipimport.rst:33
+#: ../../library/zipimport.rst:33
 msgid "Previously, ZIP archives with an archive comment were not supported."
 msgstr ""
 
-#: library/zipimport.rst:40
+#: ../../library/zipimport.rst:40
 msgid ""
 "`PKZIP Application Note <https://pkware.cachefly.net/webdocs/casestudies/"
 "APPNOTE.TXT>`_"
 msgstr ""
 
-#: library/zipimport.rst:39
+#: ../../library/zipimport.rst:39
 msgid ""
 "Documentation on the ZIP file format by Phil Katz, the creator of the format "
 "and algorithms used."
 msgstr ""
 
-#: library/zipimport.rst:45
+#: ../../library/zipimport.rst:45
 msgid ":pep:`273` - Import Modules from Zip Archives"
 msgstr ""
 
-#: library/zipimport.rst:43
+#: ../../library/zipimport.rst:43
 msgid ""
 "Written by James C. Ahlstrom, who also provided an implementation. Python "
 "2.3 follows the specification in :pep:`273`, but uses an implementation "
@@ -82,34 +86,34 @@ msgid ""
 "`302`."
 msgstr ""
 
-#: library/zipimport.rst:48
+#: ../../library/zipimport.rst:48
 msgid ":mod:`importlib` - The implementation of the import machinery"
 msgstr ""
 
-#: library/zipimport.rst:48
+#: ../../library/zipimport.rst:48
 msgid ""
 "Package providing the relevant protocols for all importers to implement."
 msgstr ""
 
-#: library/zipimport.rst:52
+#: ../../library/zipimport.rst:52
 msgid "This module defines an exception:"
 msgstr ""
 
-#: library/zipimport.rst:56
+#: ../../library/zipimport.rst:56
 msgid ""
 "Exception raised by zipimporter objects. It's a subclass of :exc:"
 "`ImportError`, so it can be caught as :exc:`ImportError`, too."
 msgstr ""
 
-#: library/zipimport.rst:63
+#: ../../library/zipimport.rst:63
 msgid "zipimporter Objects"
 msgstr ""
 
-#: library/zipimport.rst:65
+#: ../../library/zipimport.rst:65
 msgid ":class:`zipimporter` is the class for importing ZIP files."
 msgstr ""
 
-#: library/zipimport.rst:69
+#: ../../library/zipimport.rst:69
 msgid ""
 "Create a new zipimporter instance. *archivepath* must be a path to a ZIP "
 "file, or to a specific path within a ZIP file.  For example, an "
@@ -118,108 +122,108 @@ msgid ""
 "exists)."
 msgstr ""
 
-#: library/zipimport.rst:74
+#: ../../library/zipimport.rst:74
 msgid ""
 ":exc:`ZipImportError` is raised if *archivepath* doesn't point to a valid "
 "ZIP archive."
 msgstr ""
 
-#: library/zipimport.rst:79
+#: ../../library/zipimport.rst:79
 msgid ""
 "Methods ``find_loader()`` and ``find_module()``, deprecated in 3.10 are now "
 "removed.  Use :meth:`find_spec` instead."
 msgstr ""
 
-#: library/zipimport.rst:84
+#: ../../library/zipimport.rst:84
 msgid ""
 "Implementation of :meth:`importlib.abc.Loader.create_module` that returns :"
 "const:`None` to explicitly request the default semantics."
 msgstr ""
 
-#: library/zipimport.rst:92
+#: ../../library/zipimport.rst:92
 msgid "Implementation of :meth:`importlib.abc.Loader.exec_module`."
 msgstr ""
 
-#: library/zipimport.rst:99
+#: ../../library/zipimport.rst:99
 msgid "An implementation of :meth:`importlib.abc.PathEntryFinder.find_spec`."
 msgstr ""
 
-#: library/zipimport.rst:106
+#: ../../library/zipimport.rst:106
 msgid ""
 "Return the code object for the specified module. Raise :exc:`ZipImportError` "
 "if the module couldn't be imported."
 msgstr ""
 
-#: library/zipimport.rst:112
+#: ../../library/zipimport.rst:112
 msgid ""
 "Return the data associated with *pathname*. Raise :exc:`OSError` if the file "
 "wasn't found."
 msgstr ""
 
-#: library/zipimport.rst:115
+#: ../../library/zipimport.rst:115
 msgid ":exc:`IOError` used to be raised, it is now an alias of :exc:`OSError`."
 msgstr ""
 
-#: library/zipimport.rst:121
+#: ../../library/zipimport.rst:121
 msgid ""
 "Return the value ``__file__`` would be set to if the specified module was "
 "imported. Raise :exc:`ZipImportError` if the module couldn't be imported."
 msgstr ""
 
-#: library/zipimport.rst:130
+#: ../../library/zipimport.rst:130
 msgid ""
 "Return the source code for the specified module. Raise :exc:`ZipImportError` "
 "if the module couldn't be found, return :const:`None` if the archive does "
 "contain the module, but has no source for it."
 msgstr ""
 
-#: library/zipimport.rst:138
+#: ../../library/zipimport.rst:138
 msgid ""
 "Return ``True`` if the module specified by *fullname* is a package. Raise :"
 "exc:`ZipImportError` if the module couldn't be found."
 msgstr ""
 
-#: library/zipimport.rst:144
+#: ../../library/zipimport.rst:144
 msgid ""
 "Load the module specified by *fullname*. *fullname* must be the fully "
 "qualified (dotted) module name. Returns the imported module on success, "
 "raises :exc:`ZipImportError` on failure."
 msgstr ""
 
-#: library/zipimport.rst:150
+#: ../../library/zipimport.rst:150
 msgid "Use :meth:`exec_module` instead."
 msgstr ""
 
-#: library/zipimport.rst:155
+#: ../../library/zipimport.rst:155
 msgid ""
 "Clear out the internal cache of information about files found within the ZIP "
 "archive."
 msgstr ""
 
-#: library/zipimport.rst:163
+#: ../../library/zipimport.rst:163
 msgid ""
 "The file name of the importer's associated ZIP file, without a possible "
 "subpath."
 msgstr ""
 
-#: library/zipimport.rst:169
+#: ../../library/zipimport.rst:169
 msgid ""
 "The subpath within the ZIP file where modules are searched.  This is the "
 "empty string for zipimporter objects which point to the root of the ZIP file."
 msgstr ""
 
-#: library/zipimport.rst:173
+#: ../../library/zipimport.rst:173
 msgid ""
 "The :attr:`archive` and :attr:`prefix` attributes, when combined with a "
 "slash, equal the original *archivepath* argument given to the :class:"
 "`zipimporter` constructor."
 msgstr ""
 
-#: library/zipimport.rst:181
+#: ../../library/zipimport.rst:181
 msgid "Examples"
-msgstr "範例"
+msgstr ""
 
-#: library/zipimport.rst:183
+#: ../../library/zipimport.rst:183
 msgid ""
 "Here is an example that imports a module from a ZIP archive - note that the :"
 "mod:`zipimport` module is not explicitly used."

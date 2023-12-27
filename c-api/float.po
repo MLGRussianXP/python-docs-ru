@@ -8,53 +8,57 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-25 17:31+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-12-22 14:13+0000\n"
+"PO-Revision-Date: 2021-06-28 00:48+0000\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: c-api/float.rst:6
+#: ../../c-api/float.rst:6
 msgid "Floating Point Objects"
 msgstr ""
 
-#: c-api/float.rst:13
+#: ../../c-api/float.rst:13
 msgid ""
 "This subtype of :c:type:`PyObject` represents a Python floating point object."
 msgstr ""
 
-#: c-api/float.rst:18
+#: ../../c-api/float.rst:18
 msgid ""
 "This instance of :c:type:`PyTypeObject` represents the Python floating point "
 "type.  This is the same object as :class:`float` in the Python layer."
 msgstr ""
 
-#: c-api/float.rst:24
+#: ../../c-api/float.rst:24
 msgid ""
 "Return true if its argument is a :c:type:`PyFloatObject` or a subtype of :c:"
 "type:`PyFloatObject`.  This function always succeeds."
 msgstr ""
 
-#: c-api/float.rst:30
+#: ../../c-api/float.rst:30
 msgid ""
 "Return true if its argument is a :c:type:`PyFloatObject`, but not a subtype "
 "of :c:type:`PyFloatObject`.  This function always succeeds."
 msgstr ""
 
-#: c-api/float.rst:36
+#: ../../c-api/float.rst:36
 msgid ""
 "Create a :c:type:`PyFloatObject` object based on the string value in *str*, "
 "or ``NULL`` on failure."
 msgstr ""
 
-#: c-api/float.rst:42
+#: ../../c-api/float.rst:42
 msgid ""
 "Create a :c:type:`PyFloatObject` object from *v*, or ``NULL`` on failure."
 msgstr ""
 
-#: c-api/float.rst:47
+#: ../../c-api/float.rst:47
 msgid ""
 "Return a C :c:expr:`double` representation of the contents of *pyfloat*.  If "
 "*pyfloat* is not a Python floating point object but has a :meth:`~object."
@@ -64,39 +68,39 @@ msgid ""
 "should call :c:func:`PyErr_Occurred` to check for errors."
 msgstr ""
 
-#: c-api/float.rst:54
+#: ../../c-api/float.rst:54
 msgid "Use :meth:`~object.__index__` if available."
 msgstr ""
 
-#: c-api/float.rst:60
+#: ../../c-api/float.rst:60
 msgid ""
 "Return a C :c:expr:`double` representation of the contents of *pyfloat*, but "
 "without error checking."
 msgstr ""
 
-#: c-api/float.rst:66
+#: ../../c-api/float.rst:66
 msgid ""
 "Return a structseq instance which contains information about the precision, "
 "minimum and maximum values of a float. It's a thin wrapper around the header "
 "file :file:`float.h`."
 msgstr ""
 
-#: c-api/float.rst:73
+#: ../../c-api/float.rst:73
 msgid ""
 "Return the maximum representable finite float *DBL_MAX* as C :c:expr:"
 "`double`."
 msgstr ""
 
-#: c-api/float.rst:78
+#: ../../c-api/float.rst:78
 msgid ""
 "Return the minimum normalized positive float *DBL_MIN* as C :c:expr:`double`."
 msgstr ""
 
-#: c-api/float.rst:82
+#: ../../c-api/float.rst:82
 msgid "Pack and Unpack functions"
 msgstr ""
 
-#: c-api/float.rst:84
+#: ../../c-api/float.rst:84
 msgid ""
 "The pack and unpack functions provide an efficient platform-independent way "
 "to store floating-point values as byte strings. The Pack routines produce a "
@@ -105,7 +109,7 @@ msgid ""
 "the number of bytes in the bytes string."
 msgstr ""
 
-#: c-api/float.rst:90
+#: ../../c-api/float.rst:90
 msgid ""
 "On platforms that appear to use IEEE 754 formats these functions work by "
 "copying bits. On other platforms, the 2-byte format is identical to the IEEE "
@@ -117,7 +121,7 @@ msgid ""
 "an exception."
 msgstr ""
 
-#: c-api/float.rst:99
+#: ../../c-api/float.rst:99
 msgid ""
 "On non-IEEE platforms with more precision, or larger dynamic range, than "
 "IEEE 754 supports, not all values can be packed; on non-IEEE platforms with "
@@ -125,11 +129,11 @@ msgid ""
 "What happens in such cases is partly accidental (alas)."
 msgstr ""
 
-#: c-api/float.rst:107
+#: ../../c-api/float.rst:107
 msgid "Pack functions"
 msgstr ""
 
-#: c-api/float.rst:109
+#: ../../c-api/float.rst:109
 msgid ""
 "The pack routines write 2, 4 or 8 bytes, starting at *p*. *le* is an :c:expr:"
 "`int` argument, non-zero if you want the bytes string in little-endian "
@@ -139,41 +143,41 @@ msgid ""
 "to ``1`` on big endian processor, or ``0`` on little endian processor."
 msgstr ""
 
-#: c-api/float.rst:116
+#: ../../c-api/float.rst:116
 msgid ""
 "Return value: ``0`` if all is OK, ``-1`` if error (and an exception is set, "
 "most likely :exc:`OverflowError`)."
 msgstr ""
 
-#: c-api/float.rst:119
+#: ../../c-api/float.rst:119
 msgid "There are two problems on non-IEEE platforms:"
 msgstr ""
 
-#: c-api/float.rst:121
+#: ../../c-api/float.rst:121
 msgid "What this does is undefined if *x* is a NaN or infinity."
 msgstr ""
 
-#: c-api/float.rst:122
+#: ../../c-api/float.rst:122
 msgid "``-0.0`` and ``+0.0`` produce the same bytes string."
 msgstr ""
 
-#: c-api/float.rst:126
+#: ../../c-api/float.rst:126
 msgid "Pack a C double as the IEEE 754 binary16 half-precision format."
 msgstr ""
 
-#: c-api/float.rst:130
+#: ../../c-api/float.rst:130
 msgid "Pack a C double as the IEEE 754 binary32 single precision format."
 msgstr ""
 
-#: c-api/float.rst:134
+#: ../../c-api/float.rst:134
 msgid "Pack a C double as the IEEE 754 binary64 double precision format."
 msgstr ""
 
-#: c-api/float.rst:138
+#: ../../c-api/float.rst:138
 msgid "Unpack functions"
 msgstr ""
 
-#: c-api/float.rst:140
+#: ../../c-api/float.rst:140
 msgid ""
 "The unpack routines read 2, 4 or 8 bytes, starting at *p*.  *le* is an :c:"
 "expr:`int` argument, non-zero if the bytes string is in little-endian format "
@@ -183,35 +187,35 @@ msgid ""
 "processor, or ``0`` on little endian processor."
 msgstr ""
 
-#: c-api/float.rst:147
+#: ../../c-api/float.rst:147
 msgid ""
 "Return value: The unpacked double.  On error, this is ``-1.0`` and :c:func:"
 "`PyErr_Occurred` is true (and an exception is set, most likely :exc:"
 "`OverflowError`)."
 msgstr ""
 
-#: c-api/float.rst:151
+#: ../../c-api/float.rst:151
 msgid ""
 "Note that on a non-IEEE platform this will refuse to unpack a bytes string "
 "that represents a NaN or infinity."
 msgstr ""
 
-#: c-api/float.rst:156
+#: ../../c-api/float.rst:156
 msgid "Unpack the IEEE 754 binary16 half-precision format as a C double."
 msgstr ""
 
-#: c-api/float.rst:160
+#: ../../c-api/float.rst:160
 msgid "Unpack the IEEE 754 binary32 single precision format as a C double."
 msgstr ""
 
-#: c-api/float.rst:164
+#: ../../c-api/float.rst:164
 msgid "Unpack the IEEE 754 binary64 double precision format as a C double."
 msgstr ""
 
-#: c-api/float.rst:8
+#: ../../c-api/float.rst:8
 msgid "object"
-msgstr "物件"
+msgstr ""
 
-#: c-api/float.rst:8
+#: ../../c-api/float.rst:8
 msgid "floating point"
 msgstr ""

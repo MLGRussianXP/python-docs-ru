@@ -3,28 +3,36 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Dmitriy Q, 2022
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-25 17:31+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-12-08 14:14+0000\n"
+"PO-Revision-Date: 2021-06-28 00:47+0000\n"
+"Last-Translator: Dmitriy Q, 2022\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: license.rst:7
+#: ../../license.rst:7
 msgid "History and License"
 msgstr ""
 
-#: license.rst:11
+#: ../../license.rst:11
 msgid "History of the software"
 msgstr ""
 
-#: license.rst:13
+#: ../../license.rst:13
 msgid ""
 "Python was created in the early 1990s by Guido van Rossum at Stichting "
 "Mathematisch Centrum (CWI, see https://www.cwi.nl/) in the Netherlands as a "
@@ -32,14 +40,14 @@ msgid ""
 "author, although it includes many contributions from others."
 msgstr ""
 
-#: license.rst:18
+#: ../../license.rst:18
 msgid ""
 "In 1995, Guido continued his work on Python at the Corporation for National "
 "Research Initiatives (CNRI, see https://www.cnri.reston.va.us/) in Reston, "
 "Virginia where he released several versions of the software."
 msgstr ""
 
-#: license.rst:22
+#: ../../license.rst:22
 msgid ""
 "In May 2000, Guido and the Python core development team moved to BeOpen.com "
 "to form the BeOpen PythonLabs team.  In October of the same year, the "
@@ -50,7 +58,7 @@ msgid ""
 "is a sponsoring member of the PSF."
 msgstr ""
 
-#: license.rst:30
+#: ../../license.rst:30
 msgid ""
 "All Python releases are Open Source (see https://opensource.org/ for the "
 "Open Source Definition). Historically, most, but not all, Python releases "
@@ -58,139 +66,144 @@ msgid ""
 "releases."
 msgstr ""
 
-#: license.rst:35
+#: ../../license.rst:35
 msgid "Release"
-msgstr "發佈"
+msgstr "Релиз"
 
-#: license.rst:35
+#: ../../license.rst:35
 msgid "Derived from"
 msgstr ""
 
-#: license.rst:35
+#: ../../license.rst:35
 msgid "Year"
 msgstr ""
 
-#: license.rst:35
+#: ../../license.rst:35
 msgid "Owner"
 msgstr ""
 
-#: license.rst:35
+#: ../../license.rst:35
 msgid "GPL compatible?"
 msgstr ""
 
-#: license.rst:37
+#: ../../license.rst:37
 msgid "0.9.0 thru 1.2"
 msgstr ""
 
-#: license.rst:37
+#: ../../license.rst:37
 msgid "n/a"
 msgstr ""
 
-#: license.rst:37
+#: ../../license.rst:37
 msgid "1991-1995"
 msgstr ""
 
-#: license.rst:37
+#: ../../license.rst:37
 msgid "CWI"
 msgstr ""
 
-#: license.rst:49 license.rst:55 license.rst:57
+#: ../../license.rst:37 ../../license.rst:39 ../../license.rst:49
+#: ../../license.rst:51 ../../license.rst:53 ../../license.rst:55
+#: ../../license.rst:57
 msgid "yes"
 msgstr ""
 
-#: license.rst:39
+#: ../../license.rst:39
 msgid "1.3 thru 1.5.2"
 msgstr ""
 
-#: license.rst:39
+#: ../../license.rst:39
 msgid "1.2"
 msgstr ""
 
-#: license.rst:39
+#: ../../license.rst:39
 msgid "1995-1999"
 msgstr ""
 
-#: license.rst:45
+#: ../../license.rst:39 ../../license.rst:41 ../../license.rst:45
 msgid "CNRI"
 msgstr ""
 
-#: license.rst:45
+#: ../../license.rst:41 ../../license.rst:43 ../../license.rst:45
 msgid "1.6"
 msgstr ""
 
-#: license.rst:41
+#: ../../license.rst:41
 msgid "1.5.2"
 msgstr ""
 
-#: license.rst:43
+#: ../../license.rst:41 ../../license.rst:43
 msgid "2000"
 msgstr ""
 
-#: license.rst:45 license.rst:47
+#: ../../license.rst:41 ../../license.rst:43 ../../license.rst:45
+#: ../../license.rst:47
 msgid "no"
 msgstr ""
 
-#: license.rst:43
+#: ../../license.rst:43
 msgid "2.0"
 msgstr ""
 
-#: license.rst:43
+#: ../../license.rst:43
 msgid "BeOpen.com"
 msgstr ""
 
-#: license.rst:45
+#: ../../license.rst:45
 msgid "1.6.1"
 msgstr ""
 
-#: license.rst:49 license.rst:51
+#: ../../license.rst:45 ../../license.rst:47 ../../license.rst:49
+#: ../../license.rst:51
 msgid "2001"
 msgstr ""
 
-#: license.rst:47
+#: ../../license.rst:47
 msgid "2.1"
 msgstr ""
 
-#: license.rst:49
+#: ../../license.rst:47 ../../license.rst:49
 msgid "2.0+1.6.1"
 msgstr ""
 
-#: license.rst:51 license.rst:57
+#: ../../license.rst:47 ../../license.rst:49 ../../license.rst:51
+#: ../../license.rst:53 ../../license.rst:55 ../../license.rst:57
 msgid "PSF"
 msgstr ""
 
-#: license.rst:49
+#: ../../license.rst:49
 msgid "2.0.1"
 msgstr ""
 
-#: license.rst:57
+#: ../../license.rst:51 ../../license.rst:53 ../../license.rst:57
 msgid "2.1.1"
 msgstr ""
 
-#: license.rst:51
+#: ../../license.rst:51
 msgid "2.1+2.0.1"
 msgstr ""
 
-#: license.rst:55
+#: ../../license.rst:53 ../../license.rst:55
 msgid "2.1.2"
 msgstr ""
 
-#: license.rst:55
+#: ../../license.rst:53 ../../license.rst:55
 msgid "2002"
 msgstr ""
 
-#: license.rst:55
+#: ../../license.rst:55
 msgid "2.1.3"
 msgstr ""
 
-#: license.rst:57
+#: ../../license.rst:57
 msgid "2.2 and above"
 msgstr ""
 
-#: license.rst:57
+#: ../../license.rst:57
 msgid "2001-now"
 msgstr ""
 
-#: license.rst:62
+#: ../../license.rst:62
 msgid ""
 "GPL-compatible doesn't mean that we're distributing Python under the GPL.  "
 "All Python licenses, unlike the GPL, let you distribute a modified version "
@@ -199,76 +212,76 @@ msgid ""
 "GPL; the others don't."
 msgstr ""
 
-#: license.rst:68
+#: ../../license.rst:68
 msgid ""
 "Thanks to the many outside volunteers who have worked under Guido's "
 "direction to make these releases possible."
 msgstr ""
 
-#: license.rst:73
+#: ../../license.rst:73
 msgid "Terms and conditions for accessing or otherwise using Python"
 msgstr ""
 
-#: license.rst:75
+#: ../../license.rst:75
 msgid ""
 "Python software and documentation are licensed under the :ref:`PSF License "
 "Agreement <PSF-license>`."
 msgstr ""
 
-#: license.rst:78
+#: ../../license.rst:78
 msgid ""
 "Starting with Python 3.8.6, examples, recipes, and other code in the "
 "documentation are dual licensed under the PSF License Agreement and the :ref:"
 "`Zero-Clause BSD license <BSD0>`."
 msgstr ""
 
-#: license.rst:82
+#: ../../license.rst:82
 msgid ""
 "Some software incorporated into Python is under different licenses. The "
 "licenses are listed with code falling under that license. See :ref:"
 "`OtherLicenses` for an incomplete list of these licenses."
 msgstr ""
 
-#: license.rst:90
+#: ../../license.rst:90
 msgid "PSF LICENSE AGREEMENT FOR PYTHON |release|"
 msgstr ""
 
-#: license.rst:138
+#: ../../license.rst:138
 msgid "BEOPEN.COM LICENSE AGREEMENT FOR PYTHON 2.0"
 msgstr ""
 
-#: license.rst:140
+#: ../../license.rst:140
 msgid "BEOPEN PYTHON OPEN SOURCE LICENSE AGREEMENT VERSION 1"
 msgstr ""
 
-#: license.rst:185
+#: ../../license.rst:185
 msgid "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
 msgstr ""
 
-#: license.rst:250
+#: ../../license.rst:250
 msgid "CWI LICENSE AGREEMENT FOR PYTHON 0.9.0 THROUGH 1.2"
 msgstr ""
 
-#: license.rst:277
+#: ../../license.rst:277
 msgid "ZERO-CLAUSE BSD LICENSE FOR CODE IN THE PYTHON |release| DOCUMENTATION"
 msgstr ""
 
-#: license.rst:296
+#: ../../license.rst:296
 msgid "Licenses and Acknowledgements for Incorporated Software"
 msgstr ""
 
-#: license.rst:298
+#: ../../license.rst:298
 msgid ""
 "This section is an incomplete, but growing list of licenses and "
 "acknowledgements for third-party software incorporated in the Python "
 "distribution."
 msgstr ""
 
-#: license.rst:303
+#: ../../license.rst:303
 msgid "Mersenne Twister"
 msgstr ""
 
-#: license.rst:305
+#: ../../license.rst:305
 msgid ""
 "The :mod:`!_random` C extension underlying the :mod:`random` module includes "
 "code based on a download from http://www.math.sci.hiroshima-u.ac.jp/~m-mat/"
@@ -276,92 +289,92 @@ msgid ""
 "original code::"
 msgstr ""
 
-#: license.rst:353
+#: ../../license.rst:353
 msgid "Sockets"
 msgstr ""
 
-#: license.rst:355
+#: ../../license.rst:355
 msgid ""
 "The :mod:`socket` module uses the functions, :c:func:`!getaddrinfo`, and :c:"
 "func:`!getnameinfo`, which are coded in separate source files from the WIDE "
 "Project, https://www.wide.ad.jp/. ::"
 msgstr ""
 
-#: license.rst:388
+#: ../../license.rst:388
 msgid "Asynchronous socket services"
 msgstr ""
 
-#: license.rst:390
+#: ../../license.rst:390
 msgid ""
 "The :mod:`!test.support.asynchat` and :mod:`!test.support.asyncore` modules "
 "contain the following notice::"
 msgstr ""
 
-#: license.rst:416
+#: ../../license.rst:416
 msgid "Cookie management"
 msgstr ""
 
-#: license.rst:418
+#: ../../license.rst:418
 msgid "The :mod:`http.cookies` module contains the following notice::"
 msgstr ""
 
-#: license.rst:444
+#: ../../license.rst:444
 msgid "Execution tracing"
 msgstr ""
 
-#: license.rst:446
+#: ../../license.rst:446
 msgid "The :mod:`trace` module contains the following notice::"
 msgstr ""
 
-#: license.rst:477
+#: ../../license.rst:477
 msgid "UUencode and UUdecode functions"
 msgstr ""
 
-#: license.rst:479
+#: ../../license.rst:479
 msgid "The :mod:`uu` module contains the following notice::"
 msgstr ""
 
-#: license.rst:507
+#: ../../license.rst:507
 msgid "XML Remote Procedure Calls"
 msgstr ""
 
-#: license.rst:509
+#: ../../license.rst:509
 msgid "The :mod:`xmlrpc.client` module contains the following notice::"
 msgstr ""
 
-#: license.rst:540
+#: ../../license.rst:540
 msgid "test_epoll"
 msgstr ""
 
-#: license.rst:542
+#: ../../license.rst:542
 msgid "The :mod:`!test.test_epoll` module contains the following notice::"
 msgstr ""
 
-#: license.rst:566
+#: ../../license.rst:566
 msgid "Select kqueue"
 msgstr ""
 
-#: license.rst:568
+#: ../../license.rst:568
 msgid ""
 "The :mod:`select` module contains the following notice for the kqueue "
 "interface::"
 msgstr ""
 
-#: license.rst:597
+#: ../../license.rst:597
 msgid "SipHash24"
 msgstr ""
 
-#: license.rst:599
+#: ../../license.rst:599
 msgid ""
 "The file :file:`Python/pyhash.c` contains Marek Majkowski' implementation of "
 "Dan Bernstein's SipHash24 algorithm. It contains the following note::"
 msgstr ""
 
-#: license.rst:626
+#: ../../license.rst:626
 msgid "strtod and dtoa"
 msgstr ""
 
-#: license.rst:628
+#: ../../license.rst:628
 msgid ""
 "The file :file:`Python/dtoa.c`, which supplies C functions dtoa and strtod "
 "for conversion of C doubles to and from strings, is derived from the file of "
@@ -371,11 +384,11 @@ msgid ""
 "licensing notice::"
 msgstr ""
 
-#: license.rst:656
+#: ../../license.rst:656
 msgid "OpenSSL"
 msgstr ""
 
-#: license.rst:658
+#: ../../license.rst:658
 msgid ""
 "The modules :mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` use the "
 "OpenSSL library for added performance if made available by the operating "
@@ -385,76 +398,76 @@ msgid ""
 "that, the Apache License v2 applies::"
 msgstr ""
 
-#: license.rst:845
+#: ../../license.rst:845
 msgid "expat"
 msgstr ""
 
-#: license.rst:847
+#: ../../license.rst:847
 msgid ""
 "The :mod:`pyexpat <xml.parsers.expat>` extension is built using an included "
 "copy of the expat sources unless the build is configured ``--with-system-"
 "expat``::"
 msgstr ""
 
-#: license.rst:874
+#: ../../license.rst:874
 msgid "libffi"
 msgstr ""
 
-#: license.rst:876
+#: ../../license.rst:876
 msgid ""
 "The :mod:`!_ctypes` C extension underlying the :mod:`ctypes` module is built "
 "using an included copy of the libffi sources unless the build is configured "
 "``--with-system-libffi``::"
 msgstr ""
 
-#: license.rst:904
+#: ../../license.rst:904
 msgid "zlib"
 msgstr ""
 
-#: license.rst:906
+#: ../../license.rst:906
 msgid ""
 "The :mod:`zlib` extension is built using an included copy of the zlib "
 "sources if the zlib version found on the system is too old to be used for "
 "the build::"
 msgstr ""
 
-#: license.rst:935
+#: ../../license.rst:935
 msgid "cfuhash"
 msgstr ""
 
-#: license.rst:937
+#: ../../license.rst:937
 msgid ""
 "The implementation of the hash table used by the :mod:`tracemalloc` is based "
 "on the cfuhash project::"
 msgstr ""
 
-#: license.rst:976
+#: ../../license.rst:976
 msgid "libmpdec"
 msgstr ""
 
-#: license.rst:978
+#: ../../license.rst:978
 msgid ""
 "The :mod:`!_decimal` C extension underlying the :mod:`decimal` module is "
 "built using an included copy of the libmpdec library unless the build is "
 "configured ``--with-system-libmpdec``::"
 msgstr ""
 
-#: license.rst:1009
+#: ../../license.rst:1009
 msgid "W3C C14N test suite"
 msgstr ""
 
-#: license.rst:1011
+#: ../../license.rst:1011
 msgid ""
 "The C14N 2.0 test suite in the :mod:`test` package (``Lib/test/xmltestdata/"
 "c14n-20/``) was retrieved from the W3C website at https://www.w3.org/TR/xml-"
 "c14n2-testcases/ and is distributed under the 3-clause BSD license::"
 msgstr ""
 
-#: license.rst:1046
+#: ../../license.rst:1046
 msgid "Audioop"
 msgstr ""
 
-#: license.rst:1048
+#: ../../license.rst:1048
 msgid ""
 "The audioop module uses the code base in g771.c file of the SoX project::"
 msgstr ""

@@ -8,19 +8,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-25 17:31+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-12-22 14:13+0000\n"
+"PO-Revision-Date: 2021-06-28 01:15+0000\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: library/tk.rst:5
+#: ../../library/tk.rst:5
 msgid "Graphical User Interfaces with Tk"
 msgstr ""
 
-#: library/tk.rst:13
+#: ../../library/tk.rst:13
 msgid ""
 "Tk/Tcl has long been an integral part of Python.  It provides a robust and "
 "platform independent windowing toolkit, that is available to Python "
@@ -28,7 +32,7 @@ msgid ""
 "`tkinter.tix` and the :mod:`tkinter.ttk` modules."
 msgstr ""
 
-#: library/tk.rst:18
+#: ../../library/tk.rst:18
 msgid ""
 "The :mod:`tkinter` package is a thin object-oriented layer on top of Tcl/Tk. "
 "To use :mod:`tkinter`, you don't need to write Tcl code, but you will need "
@@ -37,7 +41,7 @@ msgid ""
 "classes."
 msgstr ""
 
-#: library/tk.rst:24
+#: ../../library/tk.rst:24
 msgid ""
 ":mod:`tkinter`'s chief virtues are that it is fast, and that it usually "
 "comes bundled with Python. Although its standard documentation is weak, good "
@@ -49,18 +53,18 @@ msgid ""
 "GuiProgramming>`_."
 msgstr ""
 
-#: library/tk.rst:7
+#: ../../library/tk.rst:7
 msgid "GUI"
 msgstr ""
 
-#: library/tk.rst:7
+#: ../../library/tk.rst:7
 msgid "Graphical User Interface"
 msgstr ""
 
-#: library/tk.rst:7
+#: ../../library/tk.rst:7
 msgid "Tkinter"
 msgstr ""
 
-#: library/tk.rst:7
+#: ../../library/tk.rst:7
 msgid "Tk"
 msgstr ""

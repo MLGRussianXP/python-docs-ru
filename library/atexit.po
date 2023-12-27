@@ -8,19 +8,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-25 17:31+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-12-22 14:13+0000\n"
+"PO-Revision-Date: 2021-06-28 00:55+0000\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: library/atexit.rst:2
+#: ../../library/atexit.rst:2
 msgid ":mod:`atexit` --- Exit handlers"
 msgstr ""
 
-#: library/atexit.rst:12
+#: ../../library/atexit.rst:12
 msgid ""
 "The :mod:`atexit` module defines functions to register and unregister "
 "cleanup functions.  Functions thus registered are automatically executed "
@@ -30,26 +34,26 @@ msgid ""
 "order ``C``, ``B``, ``A``."
 msgstr ""
 
-#: library/atexit.rst:19
+#: ../../library/atexit.rst:19
 msgid ""
 "**Note:** The functions registered via this module are not called when the "
 "program is killed by a signal not handled by Python, when a Python fatal "
 "internal error is detected, or when :func:`os._exit` is called."
 msgstr ""
 
-#: library/atexit.rst:23
+#: ../../library/atexit.rst:23
 msgid ""
 "**Note:** The effect of registering or unregistering functions from within a "
 "cleanup function is undefined."
 msgstr ""
 
-#: library/atexit.rst:26
+#: ../../library/atexit.rst:26
 msgid ""
 "When used with C-API subinterpreters, registered functions are local to the "
 "interpreter they were registered in."
 msgstr ""
 
-#: library/atexit.rst:32
+#: ../../library/atexit.rst:32
 msgid ""
 "Register *func* as a function to be executed at termination.  Any optional "
 "arguments that are to be passed to *func* must be passed as arguments to :"
@@ -57,7 +61,7 @@ msgid ""
 "more than once."
 msgstr ""
 
-#: library/atexit.rst:37
+#: ../../library/atexit.rst:37
 msgid ""
 "At normal program termination (for instance, if :func:`sys.exit` is called "
 "or the main module's execution completes), all functions registered are "
@@ -66,7 +70,7 @@ msgid ""
 "be cleaned up later."
 msgstr ""
 
-#: library/atexit.rst:43
+#: ../../library/atexit.rst:43
 msgid ""
 "If an exception is raised during execution of the exit handlers, a traceback "
 "is printed (unless :exc:`SystemExit` is raised) and the exception "
@@ -74,13 +78,13 @@ msgid ""
 "last exception to be raised is re-raised."
 msgstr ""
 
-#: library/atexit.rst:48
+#: ../../library/atexit.rst:48
 msgid ""
 "This function returns *func*, which makes it possible to use it as a "
 "decorator."
 msgstr ""
 
-#: library/atexit.rst:52
+#: ../../library/atexit.rst:52
 msgid ""
 "Starting new threads or calling :func:`os.fork` from a registered function "
 "can lead to race condition between the main Python runtime thread freeing "
@@ -88,13 +92,13 @@ msgid ""
 "try to use that state. This can lead to crashes rather than clean shutdown."
 msgstr ""
 
-#: library/atexit.rst:58
+#: ../../library/atexit.rst:58
 msgid ""
 "Attempts to start a new thread or :func:`os.fork` a new process in a "
 "registered function now leads to :exc:`RuntimeError`."
 msgstr ""
 
-#: library/atexit.rst:64
+#: ../../library/atexit.rst:64
 msgid ""
 "Remove *func* from the list of functions to be run at interpreter shutdown. :"
 "func:`unregister` silently does nothing if *func* was not previously "
@@ -104,21 +108,21 @@ msgid ""
 "references do not need to have matching identities."
 msgstr ""
 
-#: library/atexit.rst:75
+#: ../../library/atexit.rst:75
 msgid "Module :mod:`readline`"
 msgstr ""
 
-#: library/atexit.rst:75
+#: ../../library/atexit.rst:75
 msgid ""
 "Useful example of :mod:`atexit` to read and write :mod:`readline` history "
 "files."
 msgstr ""
 
-#: library/atexit.rst:82
+#: ../../library/atexit.rst:82
 msgid ":mod:`atexit` Example"
 msgstr ""
 
-#: library/atexit.rst:84
+#: ../../library/atexit.rst:84
 msgid ""
 "The following simple example demonstrates how a module can initialize a "
 "counter from a file when it is imported and save the counter's updated value "
@@ -126,16 +130,16 @@ msgid ""
 "making an explicit call into this module at termination. ::"
 msgstr ""
 
-#: library/atexit.rst:107
+#: ../../library/atexit.rst:107
 msgid ""
 "Positional and keyword arguments may also be passed to :func:`register` to "
 "be passed along to the registered function when it is called::"
 msgstr ""
 
-#: library/atexit.rst:119
+#: ../../library/atexit.rst:119
 msgid "Usage as a :term:`decorator`::"
 msgstr ""
 
-#: library/atexit.rst:127
+#: ../../library/atexit.rst:127
 msgid "This only works with functions that can be called without arguments."
 msgstr ""

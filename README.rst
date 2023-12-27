@@ -1,12 +1,12 @@
-Translation of the Python Documentation — ru
+Русский перевод документации Python
 ============================================
 
 .. image:: https://travis-ci.org/python/python-docs-ru.svg?branch=3.12
   :target: https://travis-ci.org/python/python-docs-ru
 
 
-Documentation Contribution Agreement
-------------------------------------
+Соглашение о внесении кладов в Документацию
+-------------------------------------------
 
 NOTE REGARDING THE LICENSE FOR TRANSLATIONS: Python's documentation is
 maintained using a global network of volunteers. By posting this
@@ -28,149 +28,148 @@ You signify acceptance of this agreement by submitting your work to
 the PSF for inclusion in the documentation.
 
 
-Contributing to the Translation
--------------------------------
+Внесение вклада в Перевод
+-------------------------
 
-How to Contribute
-~~~~~~~~~~~~~~~~~
+Как внести вклад
+~~~~~~~~~~~~~~~~
 
-You can contribute using:
+Вы можете внести вклад используя:
 
-- Github
+- GitHub
 - `transifex <https://www.transifex.com/python-doc/public/>`_
-- Or just by opening `an issue on github <https://github.com/python/python-docs-ru/issues>`_
+- Или просто открыв `issue на GitHub <https://github.com/python/python-docs-ru/issues>`_
 
 
-Contributing using Github
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Внесение вклада с помощью GitHub
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Prerequisites:
+Предварительные требования:
 
-- A `github account <https://github.com/join>`_.
-- ``git`` `installed <https://help.github.com/articles/set-up-git/>`_ (for windows, see
-  https://gitforwindows.org/).
-- A ``.po`` file editor (Use `poedit <https://poedit.net/>`_
-  if you don't already have one).
+- `GitHub аккаунт <https://github.com/join>`_.
+- `Установленный <https://help.github.com/articles/set-up-git/>`_ ``git`` (для Windows, см. https://gitforwindows.org/).
+- Редактор файлов ``.po`` (Используйте `poedit <https://poedit.net/>`_
+  если у вас его еще нет).
 
 
-Let's start:
+Давайте начнем:
 
-You'll need to fork the `python-docs-ru
-<https://github.com/python/python-docs-ru>`_ clicking its ``Fork``
-button. This creates a copy of the whole project on your github
-account: a place where you have the rights to do modifications.
+Вам нужно будет форкнуть `python-docs-ru
+<https://github.com/python/python-docs-ru>`_ нажав на его кнопку ``Fork``.
+кнопку. Это создаст копию всего проекта на вашем GitHub
+где у вас есть права на внесение изменений.
 
-Step by step:
+Поэтапно:
 
 .. code-block:: bash
 
-    # Git clone your github fork using ssh (replace JulienPalard):
+    # Клонируйте свой форк на github с помощью ssh (замените JulienPalard):
     git clone git@github.com:JulienPalard/python-docs-ru.git
 
-    # Go to the cloned directory:
+    # Перейдите в клонированный каталог:
     cd python-docs-ru/
 
-    # Add the upstream (the public repository) using HTTPS (won't ask for password):
+    # Добавьте upstream (публичный репозиторий), используя HTTPS (пароль запрашиваться не будет):
     git remote add upstream https://github.com/python/python-docs-ru.git
 
-All the translations must be made on the latest release.
-We never translate on an oldest version, by example, the latest Python release
-is Python 3.12, we don't want to translate directly on the Python 3.5 release.
-If needed translations would be backported on the oldest versions by the
-`documentation team <https://www.python.org/dev/peps/pep-8015/#documentation-team>`_.
+Все переводы должны быть сделаны на последнюю версию.
+Мы никогда не переводим самую старую версию, например, последний релиз Python
+это Python 3.12, мы не хотим переводить непосредственно релиз Python 3.5.
+При необходимости переводы будут перенесены на самые старые версии
+`командой документации <https://www.python.org/dev/peps/pep-8015/#documentation-team>`_.
 
-Now you're ready to start a work session, each time you'll start a new task, start here:
+Теперь вы готовы приступить к работе. Каждый раз, когда вы будете начинать новую задачу, начинайте с этого места:
 
 .. code-block:: bash
 
-    # To work, we'll need a branch, based on an up-to-date (freshly fetched)
-    # upstream/3.12 branch, let's say we'll work on glossary so we name
-    # the branch "glossary":
+    # Для работы нам понадобится ветка, основанная на актуальной (только что полученной)
+    # ветка upstream/3.12, допустим, мы будем работать над глоссарием, поэтому мы назовём
+    # ветку "glossary":
     git fetch upstream
     git checkout -b glossary upstream/3.12
 
-    # You can now work on the file, typically using poedit,
+    # Теперь вы можете работать с файлом, обычно используя poedit,
     poedit directory/file.po
 
-    # When everything is clear (syntax errors from Sphinx, html rendering,
-    # semantics, typography),
-    # you can commit your work with a nice explicit message:
+    # Когда все чисто (синтаксические ошибки от Sphinx, рендеринг html,
+    # семантика, типографика),
+    # вы можете зафиксировать свою работу с красивым явным сообщением:
     git commit -a -m "Working on glossary."
 
-    # Then push your modifications to your github clone,
-    # as they are ephemeral branches, let's not configure git to track them all,
-    # "origin HEAD" is a "special" syntax to say "Push on origin,
-    # on a branch with the same name as the local one",
-    # it's nice as it's exactly what we want:
+    # Затем отправьте изменения в ваш клон на GitHub,
+    # поскольку это эфемерные ветки, давайте не будем настраивать git на отслеживание их всех,
+    # "origin HEAD" - это "специальный" синтаксис, чтобы сказать "Отправка на origin,
+    # в ветку с тем же именем, что и локальная",
+    # это хорошо, так как это именно то, что нам нужно:
     git push origin HEAD
 
-    # The previous command will print you a link to open a PR on github.
-    # If you missed it, just go to
-    # https://github.com/python/python-docs-ru/ and a nice "Compare & pull request"
-    # button should appear after a few seconds telling you can ask for a pull request.
+    # Предыдущая команда выведет вам ссылку для открытия PR на GitHub.
+    # Если вы пропустили это, просто перейдите на
+    # https://github.com/python/python-docs-ru/ и через несколько секунд появится
+    # приятная кнопка "Compare & pull request",
+    # сообщающая, что вы можете запросить pull request.
 
-    # Now someone is reviewing your modifications, and you'll want to fix their
-    # findings, get back to your branch
-    # (in case you started something else on another branch):
+    # Теперь кто-то просматривает ваши изменения, и вы захотите исправить
+    # их выводы, вернитесь в свою ветку
+    # (на случай, если вы начали что-то другое в другой ветке):
     git checkout glossary
-    # Fix the issues, then commit again:
+    # Исправьте проблемы, а затем снова зафиксируйте работу:
     git commit -a -m "glossary: small fixes."
     git push origin HEAD
 
 
-You may have noted that this looks like a triangle, with a missing segment:
+Вы могли заметить, что это похоже на треугольник с недостающим сегментом:
 
-- You're fetching from upstream (public common repo on github)
-- You're pushing to origin (your clone on github)
+- Вы берете из upstream (публичное общее репо на GitHub)
+- Вы пушите в origin (ваш клон на github)
 
-So yes it's the work of someone to add the last segment, from your
-origin to the public upstream, to "close the loop", that's the role of
-the people who merges pull requests after proofreading them.
+Так что да, это работа кого-то - добавить последний сегмент,
+от вашего источника к публичному апстриму, чтобы "замкнуть петлю".
+Это роль людей, которые объединяют pull requests после их корректировки.
 
-You may also have noted you never ever commit on a version branch
-(``3.6``, ``3.7``, ...), only pull from them, consider them read-only
-you'll avoid problems.
-
-
-What to translate
-~~~~~~~~~~~~~~~~~
-
-You can start with easy tasks like reviewing fuzzy entries to help
-keeping the documentation up to date (find them using ``make fuzzy``).
-
-You can also proofread already translated entries, and finally
-translate untranslated ones (find them using ``make todo``)..
-
-- Do not translate content of ``:ref:...`` and ``:term:...``
-- Put english words, if you have to use them, in *italics* (surrounded
-  by stars).
-- If you translate a link title, please translate the link too
-  (typically if it's Wikipedia and the article has a translation). If
-  no translation of the target exists, do not translate the
-  title.
+Вы также могли заметить: никогда не делайте коммиты в ветках
+версий (``3.6``, ``3.7``, ...), только пульте из них,
+считайте их доступными только для чтения, и вы избежите проблем.
 
 
-Where to get help
-~~~~~~~~~~~~~~~~~
+Что переводить
+~~~~~~~~~~~~~~
+
+Вы можете начать с простых задач, таких как просмотр нечетких записей, чтобы помочь
+поддерживать документацию в актуальном состоянии (найдите их с помощью ``make fuzzy``).
+
+Вы также можете скорректировать уже переведенные записи и, наконец,
+перевести непереведенные (найдите их с помощью ``make todo``).
+
+- Не переводите содержимое ``:ref:...`` и ``:term:...``
+- Английские слова, если они должны быть использованы, выделяйте *курсивом* (окруженным звездочками).
+- Если вы переводите заголовок ссылки, переведите и саму ссылку
+  (обычно, если это Википедия и у статьи есть перевод).
+  Если перевода цели не существует, не переводите заголовок.
 
 
-Translation Resources
+Куда обратиться за помощью
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Ресурсы для перевода
 ---------------------
 
 
-Glossary
---------
+Глоссарий
+---------
 
-For consistency in our translations, here are some propositions and
-reminders for frequent terms you'll have to translate, don't hesitate
-to open an issue if you disagree.
+Для единообразия наших переводов здесь приведены некоторые предложения
+и напоминания о часто встречающихся терминах, которые вам
+придется переводить, не стесняйтесь открывать issue, если вы
+с ними не согласны.
 
-To easily find how a term is already translated in our documentation,
-you may use
+Чтобы легко найти, как тот или иной термин уже переведен в нашей документации,
+вы можете использовать
 `find_in_po.py <https://gist.github.com/JulienPalard/c430ac23446da2081060ab17bf006ac1>`_.
 
 ========================== ===========================================
-Term                       Proposed Translation
+Термин                     Предлагаемый перевод
 ========================== ===========================================
 -like
 abstract data type
@@ -209,18 +208,20 @@ expression
 ========================== ===========================================
 
 
-Simplify git diffs
-------------------
+Упрощение git различий
+----------------------
 
-Git diffs are often crowded with useless line number changes, like:
+Различия git часто переполнены бесполезными
+изменениями номеров строк, например:
 
 .. code-block:: diff
 
     -#: ../Doc/library/signal.rst:406
     +#: ../Doc/library/signal.rst:408
 
-To tell git they are not usefull information, you can do the following
-after ensuring ``~/.local/bin/`` is in your ``PATH``.
+Чтобы сообщить git, что эта информация не является полезной,
+вы можете сделать следующее после того, как убедитесь,
+что ``~/.local/bin/`` находится в вашем ``PATH``.
 
 .. code-block:: bash
 
@@ -234,12 +235,12 @@ after ensuring ``~/.local/bin/`` is in your ``PATH``.
     git config diff.podiff.textconv podiff
 
 
-Maintenance
------------
+Обслуживание
+------------
 
-All those snippets are to run from the root of a ``python-docs-ru``
-clone, and some expect to find an up-to-date CPython clone near to it,
-like:
+Все эти фрагменты должны запускаться из корня клона ``python-docs-ru``,
+а некоторые ожидают найти рядом с ним
+обновленный клон CPython, например:
 
 .. code-block:: bash
 
@@ -247,47 +248,48 @@ like:
   ├── python-docs-ru/
   └── cpython/
 
-To clone CPython you may use:
+Для клонирования CPython вы можете использовать:
 
 .. code-block:: bash
 
   git clone --depth 1 --no-single-branch https://github.com/python/cpython.git
 
-This avoids to download the whole history (not usefull to build
-documentation) but still fetches all branches.
+Это позволяет избежать загрузки всей истории
+(не очень полезной для создания документации),
+но при этом получает все ветки.
 
 
-Merge pot files from CPython
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Слияние файлов pot из CPython
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
   make merge
 
 
-Find fuzzy strings
-~~~~~~~~~~~~~~~~~~
+Поиск нечетких строк
+~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
   make fuzzy
 
 
-Run a test build locally
-~~~~~~~~~~~~~~~~~~~~~~~~
+Запуск тестовой сборки локально
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
   make
 
 
-Synchronize translation with Transifex
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Синхронизация перевода с Transifex
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You'll need the ``transifex-client`` and ``powrap``
-from Pypi.
+Вам понадобятся ``transifex-client`` и ``powrap`` из Pypi.
 
-You'll need to configure ``tx`` via ``tx init`` if not already done.
+Вам нужно будет настроить ``tx`` через ``tx init``,
+если это еще не сделано.
 
 .. code-block:: bash
 

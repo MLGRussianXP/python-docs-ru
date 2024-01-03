@@ -5,7 +5,6 @@
 #
 # Translators:
 # Влад Табаков <vl.tab.kov@gmail.com>, 2021
-# impo code, 2022
 # Daniil Kolesnikov, 2023
 #
 #, fuzzy
@@ -13,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-22 14:13+0000\n"
+"POT-Creation-Date: 2023-12-29 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -35,7 +34,7 @@ msgid ""
 "These documents are generated from `reStructuredText`_ sources by `Sphinx`_, "
 "a document processor specifically written for the Python documentation."
 msgstr ""
-"Документация сгенерирована из файлов `reStructuredText`_ с помощью "
+"Эта документация сгенерирована из файлов `reStructuredText`_ с помощью "
 "`Sphinx`_, генератора документации, созданного специально для Python."
 
 #: ../../about.rst:15
@@ -47,8 +46,8 @@ msgid ""
 msgstr ""
 "Разработка и совершенствование данной документации и ее инструментов, как и "
 "весь проект Python поддерживается добровольцами. Вся информация о том как "
-"внести свой вклад в развитие проекта находится на :ref:`reporting-bugs` этой "
-"странице. Мы всегда рады новым людям!"
+"внести свой вклад в развитие проекта находится на странице :ref:`reporting-"
+"bugs`. Мы всегда рады новым людям!"
 
 #: ../../about.rst:20
 msgid "Many thanks go to:"
@@ -59,8 +58,8 @@ msgid ""
 "Fred L. Drake, Jr., the creator of the original Python documentation toolset "
 "and writer of much of the content;"
 msgstr ""
-"Fred L. Drake, Jr., создателю инструментов документации Python и автору "
-"большой ее части;"
+"Fred L. Drake, Jr., создателю оригинального набора инструментов для "
+"документации Python и автору большей части контента;"
 
 #: ../../about.rst:24
 msgid ""
@@ -76,11 +75,11 @@ msgid ""
 "got many good ideas."
 msgstr ""
 "Fredrik Lundh за его проект Alternative Python Reference, из которого Sphinx "
-"почерпнул много хороших идей."
+"получил много хороших идей."
 
 #: ../../about.rst:31
 msgid "Contributors to the Python Documentation"
-msgstr "Контрибьюторам Документации Python"
+msgstr "Контрибьюторы Документации Python"
 
 #: ../../about.rst:33
 msgid ""
@@ -88,14 +87,14 @@ msgid ""
 "library, and the Python documentation.  See :source:`Misc/ACKS` in the "
 "Python source distribution for a partial list of contributors."
 msgstr ""
-"Множество люди внесли свой вклад в язык Python, стандартную библиотеку "
-"Python и документацию Python. Частичный список контрибьюторов можно найти "
-"здесь: :source:`Misc/ACKS`"
+"Множество людей внесли свой вклад в развитие языка Python, стандартной "
+"библиотеки и документации Python. Частичный список контрибьюторов можно "
+"найти здесь: :source:`Misc/ACKS`."
 
 #: ../../about.rst:37
 msgid ""
 "It is only with the input and contributions of the Python community that "
 "Python has such wonderful documentation -- Thank You!"
 msgstr ""
-"Только благодаря помощи контрибьюторов и python-сообществу y Python "
-"появилась такая замечательная документация – Спасибо Вам!"
+"Только благодаря вкладу и участию сообщества у Python есть такая "
+"замечательная документация - Спасибо Вам!"

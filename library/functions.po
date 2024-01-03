@@ -7,16 +7,16 @@
 # alex alev <alex.alev@bk.ru>, 2021
 # Kristina Mironova, 2021
 # Влад Табаков <vl.tab.kov@gmail.com>, 2021
-# Daniil Kolesnikov, 2023
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-22 14:13+0000\n"
+"POT-Creation-Date: 2023-12-29 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:06+0000\n"
-"Last-Translator: Daniil Kolesnikov, 2023\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -29,19 +29,19 @@ msgstr ""
 
 #: ../../library/functions.rst:5 ../../library/functions.rst:11
 msgid "Built-in Functions"
-msgstr "Встроенные методы"
+msgstr "Встроенные Функции"
 
 #: ../../library/functions.rst:7
 msgid ""
 "The Python interpreter has a number of functions and types built into it "
 "that are always available.  They are listed here in alphabetical order."
 msgstr ""
-"Интерпретатор Python имеет множество встроенных функций и типов данных, "
-"доступных из любой среды. Они перечислены ниже в алфавитном порядке."
+"Интерпретатор Python имеет ряд встроенных функций и типов, которые доступны "
+"всегда. Они перечислены здесь в алфавитном порядке."
 
 #: ../../library/functions.rst:0
 msgid "**A**"
-msgstr "**А**"
+msgstr "**A**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`abs`"
@@ -277,7 +277,7 @@ msgstr ":func:`next`"
 
 #: ../../library/functions.rst:0
 msgid "**O**"
-msgstr "**О**"
+msgstr "**O**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`object`"
@@ -432,8 +432,8 @@ msgid ""
 "Return ``True`` if all elements of the *iterable* are true (or if the "
 "iterable is empty).  Equivalent to::"
 msgstr ""
-"Если все элементы итерируемого объекта ``True`` или объект пуст то вернет "
-"``True``. Эквивалентно::"
+"Возвращает ``True``, если все элементы *итерируемого объекта* истинны (или "
+"если итерируемый объект пуст). Эквивалентно::"
 
 #: ../../library/functions.rst:89
 msgid ""
@@ -447,7 +447,7 @@ msgstr ""
 msgid ""
 "This is the async variant of the :func:`next` builtin, and behaves similarly."
 msgstr ""
-"Это асинхронный вариант встроенной функции :func:`next`, и ведет себя "
+"Это асинхронный вариант встроенной функции :func:`next`, и ведёт себя "
 "аналогично."
 
 #: ../../library/functions.rst:95
@@ -468,8 +468,8 @@ msgid ""
 "Return ``True`` if any element of the *iterable* is true.  If the iterable "
 "is empty, return ``False``.  Equivalent to::"
 msgstr ""
-"Если хотя бы один элемент итерируемого объекта возвращает ``True``, то "
-"вернет ``True``. Если объект пуст, то вернет ``False``. Эквивалентно::"
+"Возвращает ``True``, если любой элемент *итерируемого объекта* истинный. "
+"Если итерируемый объект пуст, возвращает ``False``. Эквивалентно::"
 
 #: ../../library/functions.rst:116
 msgid ""
@@ -506,7 +506,7 @@ msgstr ""
 #: ../../library/functions.rst:141 ../../library/functions.rst:846
 #: ../../library/functions.rst:1164
 msgid "See also :func:`format` for more information."
-msgstr "Подробнее смотрите :func:`format`"
+msgstr "См. также :func:`format` для получения дополнительной информации."
 
 #: ../../library/functions.rst:146
 msgid ""

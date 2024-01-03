@@ -7,16 +7,16 @@
 # Dmitriy Q, 2021
 # Kristina Mironova, 2021
 # myoldloverock, 2023
-# Daniil Kolesnikov, 2023
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-22 14:13+0000\n"
+"POT-Creation-Date: 2023-12-29 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: Daniil Kolesnikov, 2023\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -37,9 +37,9 @@ msgid ""
 "for stability.  In order to maintain this reputation, the developers would "
 "like to know of any deficiencies you find in Python."
 msgstr ""
-"Python - это зрелый язык программирования, завоевавший репутацию благодаря "
-"своей стабильности. Для поддержания такой репутации разработчики хотели бы "
-"знать о любых найденных вами в Python недочетах."
+"Python - это продуманный язык программирования, завоевавший репутацию "
+"благодаря своей стабильности. Для поддержания такой репутации разработчики "
+"хотели бы знать о любых найденных вами в Python недочётах."
 
 #: ../../bugs.rst:11
 msgid ""
@@ -47,9 +47,9 @@ msgid ""
 "Python as it streamlines the process and involves less people. Learn how to :"
 "ref:`contribute <contributing-to-python>`."
 msgstr ""
-"Иногда может быть быстрее исправить ошибку самому и внести исправления в "
-"Python, так как это упрощает процесс и вовлекает меньше людей. Узнайте, "
-"как  :ref:`contribute <contributing-to-python>`."
+"Иногда бывает быстрее самостоятельно исправить ошибки и внести патчи в "
+"Python, так как это упрощает процесс и вовлекает меньше людей. Узнайте, как :"
+"ref:`внести свой вклад <contributing-to-python>`."
 
 #: ../../bugs.rst:16
 msgid "Documentation bugs"
@@ -61,16 +61,16 @@ msgid ""
 "improvement, please submit a bug report on the :ref:`tracker <using-the-"
 "tracker>`.  If you have a suggestion on how to fix it, include that as well."
 msgstr ""
-"Если вы нашли ошибку в этой документации или хотите предложить улучшение, "
-"пожалуйста, отправьте отчет об ошибке на :ref:`tracker <using-the-tracker>`. "
-"Если у вас есть предложение о том, как это исправить, включите и это."
+"Если вы обнаружили ошибку в этой документации или хотите предложить "
+"улучшение, пожалуйста, отправьте отчет об ошибке на :ref:`трекер <using-the-"
+"tracker>`. Если у вас есть предложение по исправлению, включите и его тоже."
 
 #: ../../bugs.rst:22
 msgid ""
 "You can also open a discussion item on our `Documentation Discourse forum "
 "<https://discuss.python.org/c/documentation/26>`_."
 msgstr ""
-"Вы также можете открыть обсуждение на нашем форуме `Documentation Discourse "
+"Вы также можете открыть обсуждение на нашем `форуме Documentation Discourse "
 "<https://discuss.python.org/c/documentation/26>`_."
 
 #: ../../bugs.rst:25
@@ -80,11 +80,11 @@ msgid ""
 "'docs@' is a mailing list run by volunteers; your request will be noticed, "
 "though it may take a while to be processed."
 msgstr ""
-"Если у вас мало времени - вы также можете отправить сообщение об ошибке в "
-"документации по электронной почте на имя docs@python.org (поведенческие "
-"ошибки могут быть направлены на python-list@python.org). 'docs@' это список "
-"рассылки, созданный добровольцами; ваш запрос будет принят, хотя для его "
-"обработки может потребоваться время."
+"Если у вас мало времени, вы также можете отправить отчеты об ошибках в "
+"документации по электронной почте на адрес docs@python.org (поведенческие "
+"ошибки можно отправить на python-list@python.org). 'docs@' - это список "
+"рассылки, управляемый добровольцами; ваш запрос будет принят, хотя может "
+"потребоваться некоторое время для его обработки."
 
 #: ../../bugs.rst:33
 msgid "`Documentation bugs`_"
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../bugs.rst:36
 msgid "`Issue Tracking <https://devguide.python.org/tracker/>`_"
-msgstr "`Отслеживание ошибок <https://devguide.python.org/tracker/>`_"
+msgstr "`Отслеживание Ошибок <https://devguide.python.org/tracker/>`_"
 
 #: ../../bugs.rst:36
 msgid ""
@@ -111,7 +111,7 @@ msgid ""
 "`Helping with Documentation <https://devguide.python.org/docquality/#helping-"
 "with-documentation>`_"
 msgstr ""
-"`Помощь с документацией <https://devguide.python.org/docquality/#helping-"
+"`Помощь с Документацией <https://devguide.python.org/docquality/#helping-"
 "with-documentation>`_"
 
 #: ../../bugs.rst:39
@@ -127,7 +127,7 @@ msgid ""
 "`Documentation Translations <https://devguide.python.org/documentation/"
 "translating/>`_"
 msgstr ""
-"`Переводы документации <https://devguide.python.org/documentation/"
+"`Переводы Документации <https://devguide.python.org/documentation/"
 "translating/>`_"
 
 #: ../../bugs.rst:42
@@ -139,7 +139,7 @@ msgstr ""
 
 #: ../../bugs.rst:48
 msgid "Using the Python issue tracker"
-msgstr "Использование списка задач Python"
+msgstr "Использование трекера проблем Python"
 
 #: ../../bugs.rst:50
 msgid ""
@@ -148,10 +148,10 @@ msgid ""
 "tracker offers a web form which allows pertinent information to be entered "
 "and submitted to the developers."
 msgstr ""
-"Отчеты об ошибках для самого Python должны быть отправлены через систему "
-"отслеживания проблем GitHub (https://github.com/python/cpython/issues). "
-"Система отслеживания проблем GitHub предлагает веб-форму, которая позволяет "
-"вводить соответствующую информацию и отправлять ее разработчикам."
+"Отчеты об ошибках для самого Python должны быть отправлены через трекер "
+"проблем GitHub (https://github.com/python/cpython/issues). Трекер проблем "
+"GitHub предлагает веб-форму, которая позволяет вводить соответствующую "
+"информацию и отправлять ее разработчикам."
 
 #: ../../bugs.rst:55
 msgid ""
@@ -164,12 +164,12 @@ msgid ""
 "page."
 msgstr ""
 "Первый шаг при подаче отчета - определить, было ли уже сообщено об этой "
-"проблеме. Преимущество данного шага состоит не только в экономии времени "
-"разработчиков, но и в том, что вы узнаете, что было сделано для ее "
-"исправления; возможно, проблема уже была исправлена для следующего релиза, "
-"или требуется дополнительная информация (в этом случае, если у вас есть "
-"возможность, пожалуйста, предоставьте её!). Для этого воспользуйтесь поиском "
-"в трекере, используя поле поиска в верхней части страницы."
+"проблеме. Этот шаг не только помогает сэкономить время разработчикам, но и "
+"позволяет понять, какие усилия были приложены для устранения проблемы; "
+"возможно, проблема уже была исправлена для следующего релиза, или требуется "
+"дополнительная информация (в этом случае, если у вас есть возможность, "
+"пожалуйста, предоставьте её!). Для этого воспользуйтесь поиском в трекере, "
+"используя поле поиска в верхней части страницы."
 
 #: ../../bugs.rst:62
 msgid ""
@@ -180,7 +180,7 @@ msgid ""
 msgstr ""
 "Если проблема, о которой вы сообщаете, еще не указана в списке, войдите в "
 "GitHub. Если у вас еще нет учетной записи GitHub, создайте новую учетную "
-"запись, перейдя по ссылке \"Sign Up\". Невозможно отправить отчет об ошибке "
+"запись, перейдя по ссылке \"Sign up\". Невозможно отправить отчет об ошибке "
 "анонимно."
 
 #: ../../bugs.rst:67
@@ -211,11 +211,10 @@ msgid ""
 "extension modules were involved, and what hardware and software platform you "
 "were using (including version information as appropriate)."
 msgstr ""
-"В поле \"Комментарий\" опишите проблему в деталях, включая то, что вы "
-"ожидали должно было произойти, и что произошло. Обязательно укажите, были ли "
-"задействованы какие-либо модули расширения и какое оборудование и "
-"операционную систему вы использовали  (включая информацию о версии, если это "
-"необходимо)."
+"В поле \"Comment\" подробно опишите проблему, включая то, что вы ожидали, и "
+"что произошло на самом деле. Обязательно укажите, были ли задействованы "
+"какие-либо модули расширений, а также информацию о используемом аппаратном и "
+"программном обеспечении (включая соответствующую версию)."
 
 #: ../../bugs.rst:80
 msgid ""
@@ -224,15 +223,15 @@ msgid ""
 "time an action is taken on the issue."
 msgstr ""
 "Каждый отчет о проблеме будет рассмотрен разработчиком, который определит, "
-"что нужно сделать, чтобы исправить проблему. Вы будете получать обновление "
-"каждый раз, когда будет предпринято действие по этой проблеме."
+"что нужно сделать для устранения проблемы. Вы будете получать обновления "
+"каждый раз, когда будет предпринято какое-либо действие для решения проблемы."
 
 #: ../../bugs.rst:89
 msgid ""
 "`How to Report Bugs Effectively <https://www.chiark.greenend.org.uk/"
 "~sgtatham/bugs.html>`_"
 msgstr ""
-"`Как эффективно сообщать об ошибках <https://www.chiark.greenend.org.uk/"
+"`Как Эффективно Сообщать об Ошибках <https://www.chiark.greenend.org.uk/"
 "~sgtatham/bugs.html>`_"
 
 #: ../../bugs.rst:88
@@ -240,15 +239,15 @@ msgid ""
 "Article which goes into some detail about how to create a useful bug report. "
 "This describes what kind of information is useful and why it is useful."
 msgstr ""
-"Статья, в которой подробно рассказывается о том, как создать полезный отчет "
-"об ошибке. Она описывает какая информация полезна и почему."
+"Статья, которая подробно описывает, как создать полезный отчет об ошибке. В "
+"ней описывается, какая информация является полезной и почему."
 
 #: ../../bugs.rst:92
 msgid ""
 "`Bug Writing Guidelines <https://bugzilla.mozilla.org/page.cgi?id=bug-"
 "writing.html>`_"
 msgstr ""
-"`Рекомендации по написанию отчетов об ошибках <https://bugzilla.mozilla.org/"
+"`Руководство по Написанию Отчетов об Ошибках <https://bugzilla.mozilla.org/"
 "page.cgi?id=bug-writing.html>`_"
 
 #: ../../bugs.rst:92
@@ -272,9 +271,9 @@ msgid ""
 "the `core-mentorship mailing list`_ is a friendly place to get answers to "
 "any and all questions pertaining to the process of fixing issues in Python."
 msgstr ""
-"Кроме отправки сообщений об ошибках, которые вы обнаружили, приветствуется "
-"отправлять патчи для их исправления. Вы можете найти больше информации о "
-"том, как патчить Python в `Справочник разработчика Python `_.  Если у вас "
-"есть вопросы, `core-mentorship mailing list`_ это дружественное пространство "
-"для получения ответов на все вопросы, касающиеся процесса исправления ошибок "
-"в Python."
+"Помимо отправки сообщений об обнаруженных вами ошибках, вы также можете "
+"предложить исправления для них. Более подробную информацию о том, как начать "
+"исправлять ошибки в Python, вы можете найти в `Руководстве Разработчика "
+"Python`_. Если у вас возникнут вопросы, `список рассылки core-mentorship`_ - "
+"дружелюбное место, где можно получить ответы на любые вопросы, касающиеся "
+"процесса исправления ошибок в Python."

@@ -130,8 +130,8 @@
 
 Куда обратиться за помощью
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: https://img.shields.io/discord/1189854077731995692?style=flat-square&logo=python&logoColor=yellow&label=%D0%9D%D0%B0%D1%88%20Discord%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80!&color=blue&link=https%3A%2F%2Fdiscord.gg%2FJGUZjp5VYy&link=https%3A%2F%2Fdiscord.gg%2FJGUZjp5VYy
-   :alt: Discord
+.. image:: https://dcbadge.vercel.app/api/server/JGUZjp5VYy
+   :target: https://discord.gg/JGUZjp5VYy
 
 
 Ресурсы для перевода

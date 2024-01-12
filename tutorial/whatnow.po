@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
 # alex alev <alex.alev@bk.ru>, 2021
 # Boris Verkhovskiy <boris.verk@gmail.com>, 2021
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-22 14:13+0000\n"
+"POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: Boris Verkhovskiy <boris.verk@gmail.com>, 2021\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -60,6 +61,13 @@ msgid ""
 "other tasks. Skimming through the Library Reference will give you an idea of "
 "what's available."
 msgstr ""
+"Вам следует просмотреть эту инструкцию, которая предоставляет полный (хотя и "
+"сжатый) справочный материал о типах, функциях и модулях в стандартной "
+"библиотеке. Стандартный дистрибутив Python включает *много* дополнительного "
+"кода. Есть модули для чтения почтовых ящиков Unix, получения документов "
+"через HTTP, генерации случайных чисел, анализа параметров командной строки, "
+"сжатия данных и многих других задач. Просмотр Справочника Библиотеки даст "
+"вам представление о доступных возможностях."
 
 #: ../../tutorial/whatnow.rst:24
 msgid ""
@@ -88,6 +96,8 @@ msgid ""
 "https://www.python.org:  The major Python web site.  It contains code, "
 "documentation, and pointers to Python-related pages around the web."
 msgstr ""
+"https://www.python.org:  Основной веб-сайт Python. Он содержит код, "
+"документацию и указатели на страницы, связанные с Python, в Интернете."
 
 #: ../../tutorial/whatnow.rst:36
 msgid "https://docs.python.org:  Fast access to Python's  documentation."
@@ -125,6 +135,8 @@ msgid ""
 "https://pyvideo.org collects links to Python-related videos from conferences "
 "and user-group meetings."
 msgstr ""
+"https://pyvideo.org собирает ссылки на видео, связанные с Python, с "
+"конференций и встреч групп пользователей."
 
 #: ../../tutorial/whatnow.rst:51
 msgid ""

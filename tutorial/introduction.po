@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
 # Kristina Mironova, 2021
 # alex alev <alex.alev@bk.ru>, 2021
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:13+0000\n"
+"POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: alex alev <alex.alev@bk.ru>, 2021\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -186,7 +187,7 @@ msgstr ""
 
 #: ../../tutorial/introduction.rst:142
 msgid "Text"
-msgstr ""
+msgstr "Текст"
 
 #: ../../tutorial/introduction.rst:144
 msgid ""
@@ -196,12 +197,21 @@ msgid ""
 "\"``Yay! :)``\". They can be enclosed in single quotes (``'...'``) or double "
 "quotes (``\"...\"``) with the same result [#]_."
 msgstr ""
+"Python может манипулировать текстом (представленным типом :class:`str`, так "
+"называемыми \"строками\") также как и числами. Это включает символы \"``!"
+"``\", слова \"``rabbit``\", имена \"``Paris``\", предложения \"``Got your "
+"back.``\", и т.д. \"``Yay! :)``\". Они могут быть заключены в одинарные "
+"кавычки (``'...'``) или двойные кавычки (``\"...\"``) с тем же результатом "
+"[#]_."
 
 #: ../../tutorial/introduction.rst:157
 msgid ""
 "To quote a quote, we need to \"escape\" it, by preceding it with ``\\``. "
 "Alternatively, we can use the other type of quotation marks::"
 msgstr ""
+"Для цитирования цитаты нам нужно \"экранировать\" ее, предварительно добавив "
+"перед ней ``\\``. В качестве альтернативы можно использовать другой тип "
+"кавычек::"
 
 #: ../../tutorial/introduction.rst:171
 msgid ""
@@ -227,6 +237,10 @@ msgid ""
 "odd number of ``\\`` characters; see :ref:`the FAQ entry <faq-programming-"
 "raw-string-backslash>` for more information and workarounds."
 msgstr ""
+"Есть один тонкий момент в отношении необработанных строк: необработанная "
+"строка не может заканчиваться нечетным количеством символов ``\\``; см. :ref:"
+"`запись в ЧаВо <faq-programming-raw-string-backslash>` для получения "
+"дополнительной информации и обходных путей."
 
 #: ../../tutorial/introduction.rst:197
 msgid ""
@@ -635,4 +649,4 @@ msgstr ""
 
 #: ../../tutorial/introduction.rst:21
 msgid "comment"
-msgstr ""
+msgstr "комментарий"

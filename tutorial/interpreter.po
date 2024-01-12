@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -7,15 +7,16 @@
 # Pavel Karateev <lancelote.du.lac@gmail.com>, 2021
 # alex alev <alex.alev@bk.ru>, 2021
 # impo code, 2022
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:13+0000\n"
+"POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: impo code, 2022\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -28,11 +29,11 @@ msgstr ""
 
 #: ../../tutorial/interpreter.rst:5
 msgid "Using the Python Interpreter"
-msgstr "Использование Интерпретатора Python"
+msgstr "Использование интерпретатора Python"
 
 #: ../../tutorial/interpreter.rst:11
 msgid "Invoking the Interpreter"
-msgstr "Запуск Интерпретатора"
+msgstr "Запуск интерпретатора"
 
 #: ../../tutorial/interpreter.rst:13
 msgid ""
@@ -41,6 +42,10 @@ msgid ""
 "local/bin` in your Unix shell's search path makes it possible to start it by "
 "typing the command:"
 msgstr ""
+"Интерпретатор Python обычно устанавливается как :file:`/usr/local/bin/"
+"python3.12` на тех машинах, где он доступен; добавление :file:`/usr/local/"
+"bin` в путь поиска вашей командной оболочки Unix позволяет запустить его, "
+"написав команду:"
 
 #: ../../tutorial/interpreter.rst:21
 msgid ""
@@ -49,10 +54,10 @@ msgid ""
 "local Python guru or system administrator.  (E.g., :file:`/usr/local/python` "
 "is a popular alternative location.)"
 msgstr ""
-"в оболочке. [#]_ Поскольку выбор каталога, в котором находится "
-"интерпретатор, осуществляется при его установке, возможны и другие места; "
-"обратитесь к местному гуру Python или системному администратору. (Например, :"
-"file:`/usr/local/python` является популярным альтернативным расположением.)"
+"в командную оболочку. [#]_ Поскольку выбор каталога, где находится "
+"интерпретатор, является опциональным, возможны и другие места; уточните у "
+"своего местного гуру по Python или системного администратора. (Например, :"
+"file:`/usr/local/python` - популярное альтернативное место.)"
 
 #: ../../tutorial/interpreter.rst:26
 msgid ""
@@ -62,6 +67,11 @@ msgid ""
 "file:`py` command. See :ref:`setting-envvars` for other ways to launch "
 "Python."
 msgstr ""
+"На Windows-машинах, где вы установили Python из :ref:`Microsoft Store "
+"<windows-store>`, будет доступна команда :file:`python3.12`. Если у вас "
+"установлен :ref:`py.exe launcher <launcher>`, вы можете использовать "
+"команду :file:`py`. См. :ref:`setting-envvars` для других способов запуска "
+"Python."
 
 #: ../../tutorial/interpreter.rst:31
 msgid ""
@@ -71,9 +81,9 @@ msgid ""
 "the following command: ``quit()``."
 msgstr ""
 "Ввод символа конца файла (:kbd:`Control-D` в Unix, :kbd:`Control-Z` в "
-"Windows) в основном приглашении приводит к тому, что интерпретатор завершает "
-"работу с нулевым статусом выхода. Если это не сработает, вы можете выйти из "
-"интерпретатора, введя следующую команду: ``quit()``."
+"Windows) в основном запросе заставляет интерпретатор завершиться с нулевым "
+"кодом завершения. Если это не работает, вы можете выйти из интерпретатора, "
+"набрав следующую команду: ``quit()``."
 
 #: ../../tutorial/interpreter.rst:36
 msgid ""
@@ -87,16 +97,17 @@ msgid ""
 "echoed, command line editing isn't available; you'll only be able to use "
 "backspace to remove characters from the current line."
 msgstr ""
-"Особенности редактирования строк интерпретатора включают интерактивное "
-"редактирование, подстановку истории и завершение кода в системах, "
+"Возможности интерпретатора по редактированию строк включают интерактивное "
+"редактирование, подстановку истории и завершение кода на системах, "
 "поддерживающих библиотеку `GNU Readline <https://tiswww.case.edu/php/chet/"
-"readline/rltop.html>`_. Возможно, самая быстрая проверка, поддерживается ли "
-"редактирование командной строки, это ввести :kbd:`Control-P` в первое "
-"полученное приглашение Python. Если он подает звуковой сигнал, у вас есть "
-"редактирование командной строки; см. Приложение :ref:`tut-interacting` для "
-"ознакомления с ключами. Если ничего не происходит или если отображается "
-"``^P``, редактирование командной строки недоступно; вы сможете использовать "
-"клавишу Backspace только для удаления символов из текущей строки."
+"readline/rltop.html>`_. Возможно, самой быстрой проверкой того, "
+"поддерживается ли редактирование командной строки, является ввод :kbd:"
+"`Control-P` в первом появившемся запросе Python. Если он подаст звуковой "
+"сигнал, значит, у вас есть редактирование командной строки; введение в "
+"клавиши см. в приложении :ref:`tut-interacting`. Если ничего не происходит "
+"или эхом выводится ``^P``, значит, редактирование командной строки "
+"недоступно; вы сможете использовать backspace только для удаления символов "
+"из текущей строки."
 
 #: ../../tutorial/interpreter.rst:46
 msgid ""

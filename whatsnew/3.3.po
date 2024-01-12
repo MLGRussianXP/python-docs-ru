@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-22 14:13+0000\n"
+"POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-29 13:04+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
@@ -253,7 +253,7 @@ msgstr ""
 #: ../../whatsnew/3.3.rst:176
 msgid ""
 "Arbitrary slicing of any 1-D arrays type is supported. For example, it is "
-"now possible to reverse a memoryview in O(1) by using a negative step."
+"now possible to reverse a memoryview in *O*\\ (1) by using a negative step."
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:180 ../../whatsnew/3.3.rst:1133
@@ -2669,7 +2669,7 @@ msgstr ""
 
 #: ../../whatsnew/3.3.rst:1848
 msgid ""
-"The :mod:`smtpd` module now supports :rfc:`5321` (extended SMTP) and :rfc:"
+"The :mod:`!smtpd` module now supports :rfc:`5321` (extended SMTP) and :rfc:"
 "`1870` (size extension).  Per the standard, these extensions are enabled if "
 "and only if the client initiates the session with an ``EHLO`` command."
 msgstr ""

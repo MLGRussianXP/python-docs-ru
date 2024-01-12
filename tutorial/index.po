@@ -1,20 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Kristina Mironova, 2021
-# impo code, 2022
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-22 14:13+0000\n"
+"POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: impo code, 2022\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +26,7 @@ msgstr ""
 
 #: ../../tutorial/index.rst:5
 msgid "The Python Tutorial"
-msgstr "Учебник Python "
+msgstr "Руководство по Python"
 
 #: ../../tutorial/index.rst:7
 msgid ""
@@ -37,11 +36,11 @@ msgid ""
 "with its interpreted nature, make it an ideal language for scripting and "
 "rapid application development in many areas on most platforms."
 msgstr ""
-"Python - простой для изучения, мощный язык программирования.  Он имеет "
-"эффективные высокоуровневые структуры данных  и простой, но эффективный "
+"Python - это простой в изучении, мощный язык программирования. Он имеет "
+"эффективные структуры данных высокого уровня и простой, но эффективный "
 "подход к объектно-ориентированному программированию. Элегантный синтаксис "
-"языка Python и динамическая типизация вместе со встроенным интерпретатором, "
-"делают его идеальным языком для написания сценариев и быстрой разработки "
+"Python и динамическая типизация, вместе с его интерпретируемым характером, "
+"делают его идеальным языком для написания скриптов и быстрой разработки "
 "приложений во многих областях на большинстве платформ."
 
 #: ../../tutorial/index.rst:13
@@ -54,9 +53,9 @@ msgid ""
 msgstr ""
 "Интерпретатор Python и обширная стандартная библиотека свободно доступны в "
 "исходном или бинарном виде для всех основных платформ на веб-сайте Python, "
-"https://www.python.org/, и могут свободно распространяться. Этот же сайт "
-"также содержит дистрибутивы и указатели на многие бесплатные сторонние "
-"модули Python, программы и инструменты, а также дополнительную документацию."
+"https://www.python.org/, и могут быть свободно распространены. На этом же "
+"сайте вы найдете дистрибутивы и указатели на множество бесплатных сторонних "
+"модулей, программ и инструментов Python, а также дополнительную документацию."
 
 #: ../../tutorial/index.rst:19
 msgid ""
@@ -65,7 +64,7 @@ msgid ""
 "suitable as an extension language for customizable applications."
 msgstr ""
 "Интерпретатор Python легко расширяется новыми функциями и типами данных, "
-"реализованными на C или C++ (или других языках, вызываемых из C). Python "
+"реализованными на C или C++ (или на других языках, вызываемых из C). Python "
 "также подходит в качестве языка расширения для настраиваемых приложений."
 
 #: ../../tutorial/index.rst:23
@@ -75,10 +74,10 @@ msgid ""
 "interpreter handy for hands-on experience, but all examples are self-"
 "contained, so the tutorial can be read off-line as well."
 msgstr ""
-"Этот учебник неформально знакомит читателя с основными понятиями и функциями "
-"языка и системы Python. Желательно иметь под рукой интерпретатор Python для "
-"экспериментов, в то же время  все примеры являются самостоятельными, таким "
-"образом учебник можно читать и в автономном режиме."
+"Это руководство неформально знакомит читателя с основными концепциями и "
+"фичами языка и системы Python. Хорошо иметь под рукой интерпретатор Python "
+"для практического опыта, но все примеры являются автономными, поэтому "
+"руководство можно читать офлайн."
 
 #: ../../tutorial/index.rst:28
 msgid ""
@@ -87,10 +86,10 @@ msgid ""
 "language.  To write extensions in C or C++, read :ref:`extending-index` and :"
 "ref:`c-api-index`. There are also several books covering Python in depth."
 msgstr ""
-"Описание стандартных объектов и модулей смотрите :ref:`library-index`. :ref:"
-"`reference-index` дает больше формальных определений языка. Для написания "
-"расширений на C или C++, читайте  :ref:`extending-index` и :ref:`c-api-"
-"index`. Есть также несколько книг для более глубокого изучения Python."
+"Для описания стандартных объектов и модулей см. :ref:`library-index`. :ref:"
+"`reference-index` дает более формальное определение языка. Чтобы написать "
+"расширения на C или C++, прочтите :ref:`extending-index` и :ref:`c-api-"
+"index`. Также есть несколько книг для более глубокого изучения Python."
 
 #: ../../tutorial/index.rst:33
 msgid ""
@@ -101,14 +100,13 @@ msgid ""
 "write Python modules and programs, and you will be ready to learn more about "
 "the various Python library modules described in :ref:`library-index`."
 msgstr ""
-"Этот учебник не претендует на то, чтобы быть исчерпывающим и охватывать "
-"каждую отдельную функцию или даже каждую часто используемую функцию. Вместо "
-"этого он знакомит вас со многими наиболее примечательными возможностями "
-"Python и дает вам хорошее представление об особенностях и стиле языка. "
-"Прочитав его, вы сможете читать и писать модули и программы Python, а также "
-"будете готовы узнать больше о различных модулях библиотеки Python, описанных "
-"в :ref:`library-index`."
+"Это руководство не претендует на полноту и не охватывает каждую отдельную "
+"фичу, или даже каждую часто используемую фичу. Вместо этого он представляет "
+"множество наиболее важных фич Python и даст вам хорошее представление о "
+"стиле и особенностях языка. После прочтения вы сможете читать и писать "
+"модули и программы на Python, а также будете готовы узнать больше о "
+"различных модулях библиотеки Python, описанных в :ref:`library-index`."
 
 #: ../../tutorial/index.rst:40
 msgid "The :ref:`glossary` is also worth going through."
-msgstr ":ref:`glossary` также стоит того, чтобы туда заглянуть."
+msgstr "Также стоит ознакомиться с :ref:`glossary`."

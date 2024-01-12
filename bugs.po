@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:13+0000\n"
+"POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -49,7 +49,7 @@ msgid ""
 msgstr ""
 "Иногда бывает быстрее самостоятельно исправить ошибки и внести патчи в "
 "Python, так как это упрощает процесс и вовлекает меньше людей. Узнайте, как :"
-"ref:`contribute <contributing-to-python>`."
+"ref:`внести свой вклад<contributing-to-python>`."
 
 #: ../../bugs.rst:16
 msgid "Documentation bugs"
@@ -62,7 +62,7 @@ msgid ""
 "tracker>`.  If you have a suggestion on how to fix it, include that as well."
 msgstr ""
 "Если вы обнаружили ошибку в этой документации или хотите предложить "
-"улучшение, пожалуйста, отправьте отчет об ошибке на :ref:`tracker <using-the-"
+"улучшение, пожалуйста, отправьте отчет об ошибке на :ref:`трекер <using-the-"
 "tracker>`. Если у вас есть предложение по исправлению, включите и его тоже."
 
 #: ../../bugs.rst:22
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../bugs.rst:36
 msgid "`Issue Tracking <https://devguide.python.org/tracker/>`_"
-msgstr "`Отслеживание Ошибок <https://devguide.python.org/tracker/>`_"
+msgstr "`Отслеживание ошибок <https://devguide.python.org/tracker/>`_"
 
 #: ../../bugs.rst:36
 msgid ""
@@ -111,7 +111,7 @@ msgid ""
 "`Helping with Documentation <https://devguide.python.org/docquality/#helping-"
 "with-documentation>`_"
 msgstr ""
-"`Помощь с Документацией <https://devguide.python.org/docquality/#helping-"
+"`Помощь с документацией <https://devguide.python.org/docquality/#helping-"
 "with-documentation>`_"
 
 #: ../../bugs.rst:39
@@ -127,7 +127,7 @@ msgid ""
 "`Documentation Translations <https://devguide.python.org/documentation/"
 "translating/>`_"
 msgstr ""
-"`Переводы Документации <https://devguide.python.org/documentation/"
+"`Переводы документации <https://devguide.python.org/documentation/"
 "translating/>`_"
 
 #: ../../bugs.rst:42
@@ -231,8 +231,8 @@ msgid ""
 "`How to Report Bugs Effectively <https://www.chiark.greenend.org.uk/"
 "~sgtatham/bugs.html>`_"
 msgstr ""
-"`Как Эффективно Сообщать об Ошибках <https://www.chiark.greenend.org.uk/"
-"~sgtatham/bugs.html>`_"
+"`Как эффективно сообщать об ошибках <https://www.chiark.greenend.org.uk/"
+"~sgtatham/bugs-ru.html>`_"
 
 #: ../../bugs.rst:88
 msgid ""
@@ -247,7 +247,7 @@ msgid ""
 "`Bug Writing Guidelines <https://bugzilla.mozilla.org/page.cgi?id=bug-"
 "writing.html>`_"
 msgstr ""
-"`Руководство по Написанию Отчетов об Ошибках <https://bugzilla.mozilla.org/"
+"`Руководство по написанию отчетов об ошибках <https://bugzilla.mozilla.org/"
 "page.cgi?id=bug-writing.html>`_"
 
 #: ../../bugs.rst:92
@@ -273,7 +273,7 @@ msgid ""
 msgstr ""
 "Помимо отправки сообщений об обнаруженных вами ошибках, вы также можете "
 "предложить исправления для них. Более подробную информацию о том, как начать "
-"исправлять ошибки в Python, вы можете найти в `Руководстве Разработчика "
+"исправлять ошибки в Python, вы можете найти в `Руководстве разработчика "
 "Python`_. Если у вас возникнут вопросы, `список рассылки core-mentorship`_ - "
 "дружелюбное место, где можно получить ответы на любые вопросы, касающиеся "
 "процесса исправления ошибок в Python."

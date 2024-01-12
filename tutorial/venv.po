@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
 # Kristina Mironova, 2021
 # alex alev <alex.alev@bk.ru>, 2021
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-22 14:13+0000\n"
+"POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: alex alev <alex.alev@bk.ru>, 2021\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -119,6 +120,9 @@ msgid ""
 "also create directories inside it containing a copy of the Python "
 "interpreter and various supporting files."
 msgstr ""
+"Это создаст каталог ``tutorial-env``, если его не существует, а также "
+"создаст внутри него каталоги, содержащие копию интерпретатора Python и "
+"различные вспомогательные файлы."
 
 #: ../../tutorial/venv.rst:53
 msgid ""
@@ -164,11 +168,11 @@ msgstr ""
 
 #: ../../tutorial/venv.rst:91
 msgid "To deactivate a virtual environment, type::"
-msgstr ""
+msgstr "Для деактивации виртуального окружения введите::"
 
 #: ../../tutorial/venv.rst:95
 msgid "into the terminal."
-msgstr ""
+msgstr "в терминал."
 
 #: ../../tutorial/venv.rst:98
 msgid "Managing Packages with pip"
@@ -188,6 +192,9 @@ msgid ""
 "etc.  (Consult the :ref:`installing-index` guide for complete documentation "
 "for ``pip``.)"
 msgstr ""
+"``pip`` имеет несколько подкоманд: \"install\", \"uninstall\", \"freeze\" и "
+"т.д. (Подробную документацию по ``pip`` см. в руководстве :ref:`installing-"
+"index`.)"
 
 #: ../../tutorial/venv.rst:109
 msgid ""
@@ -221,13 +228,15 @@ msgstr ""
 #: ../../tutorial/venv.rst:149
 msgid ""
 "``python -m pip show`` will display information about a particular package:"
-msgstr ""
+msgstr "``python -m pip show`` отобразит информацию о конкретном пакете:"
 
 #: ../../tutorial/venv.rst:166
 msgid ""
 "``python -m pip list`` will display all of the packages installed in the "
 "virtual environment:"
 msgstr ""
+"``python -m pip list`` отобразит все установленные пакеты в виртуальном "
+"окружении:"
 
 #: ../../tutorial/venv.rst:178
 msgid ""
@@ -236,6 +245,10 @@ msgid ""
 "expects. A common convention is to put this list in a ``requirements.txt`` "
 "file:"
 msgstr ""
+"``python -m pip freeze`` выведет аналогичный список установленных пакетов, "
+"но вывод будет в формате, который ожидает ``python -m pip install``. "
+"Общепринятой практикой является помещение этого списка в файл ``requirements."
+"txt``:"
 
 #: ../../tutorial/venv.rst:190
 msgid ""

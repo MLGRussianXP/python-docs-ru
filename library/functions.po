@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:13+0000\n"
+"POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:06+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../library/functions.rst:5 ../../library/functions.rst:11
 msgid "Built-in Functions"
-msgstr "Встроенные Функции"
+msgstr "Встроенные функции"
 
 #: ../../library/functions.rst:7
 msgid ""
@@ -432,8 +432,8 @@ msgid ""
 "Return ``True`` if all elements of the *iterable* are true (or if the "
 "iterable is empty).  Equivalent to::"
 msgstr ""
-"Возвращает ``True``, если все элементы *итерируемого объекта* истинны (или "
-"если итерируемый объект пуст). Эквивалентно::"
+"Возвращает ``True``, если все элементы *iterable* истинны (или если "
+"итерируемый объект пуст). Эквивалентно::"
 
 #: ../../library/functions.rst:89
 msgid ""
@@ -1926,6 +1926,12 @@ msgid ""
 "return ``True`` if *class* is a subclass of any entry in *classinfo*.  In "
 "any other case, a :exc:`TypeError` exception is raised."
 msgstr ""
+"Возвращает ``True``, если *class* является подклассом (прямым, косвенным "
+"или :term:`виртуальным <abstract base class>`) *classinfo*. Класс считается "
+"подклассом самого себя. *classinfo* может быть кортежем объектов класса (или "
+"рекурсивно, других таких кортежей) или :ref:`types-union`, в этом случае "
+"возвращается ``True``, если *class* является подклассом любого элемента в "
+"*classinfo*. В любом другом случае возбуждается исключение :exc:`TypeError`."
 
 #: ../../library/functions.rst:986
 msgid ""
@@ -1942,10 +1948,22 @@ msgid ""
 "*sentinel*, :exc:`StopIteration` will be raised, otherwise the value will be "
 "returned."
 msgstr ""
+"Возвращает объект :term:`итератора`. Первый аргумент интерпретируется по-"
+"разному в зависимости от наличия второго аргумента. Без второго аргумента "
+"*object* должен быть объектом коллекции, поддерживающим протокол :term:"
+"`iterable` (метод :meth:`~object.__iter__`), или он должен поддерживать "
+"протокол последовательности (метод :meth:`~object.__getitem__` с "
+"целочисленными аргументами, начиная с ``0``). Если он не поддерживает ни "
+"один из этих протоколов, возбуждается исключение :exc:`TypeError`. Если "
+"задан второй аргумент *sentinel*, то *object* должен быть вызываемым "
+"объектом. Итератор, созданный в этом случае, будет вызывать *object* без "
+"аргументов для каждого вызова его метода :meth:`~iterator.__next__`; если "
+"возвращаемое значение равно *sentinel*, возбуждается исключение :exc:"
+"`StopIteration`, в противном случае будет возвращено значение."
 
 #: ../../library/functions.rst:1000
 msgid "See also :ref:`typeiter`."
-msgstr ""
+msgstr "См. также :ref:`typeiter`."
 
 #: ../../library/functions.rst:1002
 msgid ""
@@ -1953,6 +1971,9 @@ msgid ""
 "block-reader. For example, reading fixed-width blocks from a binary database "
 "file until the end of file is reached::"
 msgstr ""
+"Одно из полезных применений второй формы :func:`iter` - это создание блок-"
+"ридера. Например, чтение блоков фиксированной ширины из двоичного файла базы "
+"данных до достижения конца файла::"
 
 #: ../../library/functions.rst:1014
 msgid ""
@@ -1966,12 +1987,17 @@ msgid ""
 "``len`` raises :exc:`OverflowError` on lengths larger than :data:`sys."
 "maxsize`, such as :class:`range(2 ** 100) <range>`."
 msgstr ""
+"``len`` возбуждает :exc:`OverflowError` на длинах, превышающих :data:`sys."
+"maxsize`, таких как :class:`range(2 ** 100) <range>`."
 
 #: ../../library/functions.rst:1029
 msgid ""
 "Rather than being a function, :class:`list` is actually a mutable sequence "
 "type, as documented in :ref:`typesseq-list` and :ref:`typesseq`."
 msgstr ""
+"Вместо того чтобы быть функцией, :class:`list` на самом деле является "
+"изменяемым типом последовательности, как указано в :ref:`typesseq-list` и :"
+"ref:`typesseq`."
 
 #: ../../library/functions.rst:1035
 msgid ""
@@ -1986,6 +2012,8 @@ msgid ""
 "The contents of this dictionary should not be modified; changes may not "
 "affect the values of local and free variables used by the interpreter."
 msgstr ""
+"Содержимое этого словаря не должно изменяться; изменения могут не влиять на "
+"значения локальных и свободных переменных, используемых интерпретатором."
 
 #: ../../library/functions.rst:1046
 msgid ""
@@ -3256,7 +3284,7 @@ msgstr ""
 
 #: ../../library/functions.rst:576
 msgid "built-in function"
-msgstr ""
+msgstr "встроенная функция"
 
 #: ../../library/functions.rst:576
 msgid "exec"

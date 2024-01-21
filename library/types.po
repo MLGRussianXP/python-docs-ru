@@ -2,11 +2,11 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Kristina Mironova, 2023
 # Daniil Kolesnikov, 2024
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -15,15 +15,12 @@ msgstr ""
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/types.rst:2
 msgid ":mod:`types` --- Dynamic type creation and names for built-in types"
@@ -42,8 +39,8 @@ msgstr ""
 #: ../../library/types.rst:14
 msgid ""
 "It also defines names for some object types that are used by the standard "
-"Python interpreter, but not exposed as builtins like :class:`int` or :class:"
-"`str` are."
+"Python interpreter, but not exposed as builtins like :class:`int` or "
+":class:`str` are."
 msgstr ""
 
 #: ../../library/types.rst:18
@@ -62,8 +59,8 @@ msgstr ""
 
 #: ../../library/types.rst:29
 msgid ""
-"The first three arguments are the components that make up a class definition "
-"header: the class name, the base classes (in order), the keyword arguments "
+"The first three arguments are the components that make up a class definition"
+" header: the class name, the base classes (in order), the keyword arguments "
 "(such as ``metaclass``)."
 msgstr ""
 
@@ -82,8 +79,8 @@ msgstr ""
 
 #: ../../library/types.rst:45
 msgid ""
-"The arguments are the components that make up a class definition header: the "
-"class name, the base classes (in order) and the keyword arguments (such as "
+"The arguments are the components that make up a class definition header: the"
+" class name, the base classes (in order) and the keyword arguments (such as "
 "``metaclass``)."
 msgstr ""
 
@@ -111,7 +108,8 @@ msgid ":ref:`metaclasses`"
 msgstr ""
 
 #: ../../library/types.rst:67
-msgid "Full details of the class creation process supported by these functions"
+msgid ""
+"Full details of the class creation process supported by these functions"
 msgstr ""
 
 #: ../../library/types.rst:69
@@ -128,12 +126,12 @@ msgstr ""
 
 #: ../../library/types.rst:76
 msgid ""
-"This function looks for items in *bases* that are not instances of :class:"
-"`type`, and returns a tuple where each such object that has an :meth:"
-"`~object.__mro_entries__` method is replaced with an unpacked result of "
-"calling this method.  If a *bases* item is an instance of :class:`type`, or "
-"it doesn't have an :meth:`!__mro_entries__` method, then it is included in "
-"the return tuple unchanged."
+"This function looks for items in *bases* that are not instances of "
+":class:`type`, and returns a tuple where each such object that has an "
+":meth:`~object.__mro_entries__` method is replaced with an unpacked result "
+"of calling this method.  If a *bases* item is an instance of :class:`type`, "
+"or it doesn't have an :meth:`!__mro_entries__` method, then it is included "
+"in the return tuple unchanged."
 msgstr ""
 
 #: ../../library/types.rst:87
@@ -146,8 +144,8 @@ msgstr ""
 
 #: ../../library/types.rst:92
 msgid ""
-"For classes that have an ``__orig_bases__`` attribute, this function returns "
-"the value of ``cls.__orig_bases__``. For classes without the "
+"For classes that have an ``__orig_bases__`` attribute, this function returns"
+" the value of ``cls.__orig_bases__``. For classes without the "
 "``__orig_bases__`` attribute, ``cls.__bases__`` is returned."
 msgstr ""
 
@@ -166,8 +164,8 @@ msgstr ""
 #: ../../library/types.rst:133
 msgid ""
 "This module provides names for many of the types that are required to "
-"implement a Python interpreter. It deliberately avoids including some of the "
-"types that arise only incidentally during processing such as the "
+"implement a Python interpreter. It deliberately avoids including some of the"
+" types that arise only incidentally during processing such as the "
 "``listiterator`` type."
 msgstr ""
 
@@ -179,8 +177,8 @@ msgstr ""
 
 #: ../../library/types.rst:142
 msgid ""
-"If you instantiate any of these types, note that signatures may vary between "
-"Python versions."
+"If you instantiate any of these types, note that signatures may vary between"
+" Python versions."
 msgstr ""
 
 #: ../../library/types.rst:144
@@ -193,8 +191,8 @@ msgstr ""
 
 #: ../../library/types.rst:156
 msgid ""
-"The type of user-defined functions and functions created by :keyword:"
-"`lambda`  expressions."
+"The type of user-defined functions and functions created by "
+":keyword:`lambda`  expressions."
 msgstr ""
 
 #: ../../library/types.rst:159
@@ -269,8 +267,8 @@ msgstr ""
 
 #: ../../library/types.rst:228
 msgid ""
-"The type of methods of some built-in data types and base classes such as :"
-"meth:`object.__init__` or :meth:`object.__lt__`."
+"The type of methods of some built-in data types and base classes such as "
+":meth:`object.__init__` or :meth:`object.__lt__`."
 msgstr ""
 
 #: ../../library/types.rst:236
@@ -323,8 +321,8 @@ msgstr ""
 #: ../../library/types.rst:285
 msgid ""
 "A future version of Python may stop setting this attribute by default. To "
-"guard against this potential change, preferably read from the :attr:"
-"`__spec__` attribute instead or use ``getattr(module, \"__loader__\", "
+"guard against this potential change, preferably read from the "
+":attr:`__spec__` attribute instead or use ``getattr(module, \"__loader__\", "
 "None)`` if you explicitly need to use this attribute."
 msgstr ""
 
@@ -334,16 +332,16 @@ msgstr ""
 
 #: ../../library/types.rst:296
 msgid ""
-"The name of the module. Expected to match :attr:`importlib.machinery."
-"ModuleSpec.name`."
+"The name of the module. Expected to match "
+":attr:`importlib.machinery.ModuleSpec.name`."
 msgstr ""
 
 #: ../../library/types.rst:301
 msgid ""
 "Which :term:`package` a module belongs to. If the module is top-level (i.e. "
 "not a part of any specific package) then the attribute should be set to "
-"``''``, else it should be set to the name of the package (which can be :attr:"
-"`__name__` if the module is a package itself). Defaults to ``None``."
+"``''``, else it should be set to the name of the package (which can be "
+":attr:`__name__` if the module is a package itself). Defaults to ``None``."
 msgstr ""
 
 #: ../../library/types.rst:306
@@ -355,9 +353,9 @@ msgstr ""
 #: ../../library/types.rst:310
 msgid ""
 "A future version of Python may stop setting this attribute by default. To "
-"guard against this potential change, preferably read from the :attr:"
-"`__spec__` attribute instead or use ``getattr(module, \"__package__\", "
-"None)`` if you explicitly need to use this attribute."
+"guard against this potential change, preferably read from the "
+":attr:`__spec__` attribute instead or use ``getattr(module, \"__package__\","
+" None)`` if you explicitly need to use this attribute."
 msgstr ""
 
 #: ../../library/types.rst:321
@@ -409,8 +407,8 @@ msgstr ""
 
 #: ../../library/types.rst:370
 msgid ""
-"The type of traceback objects such as found in ``sys.exception()."
-"__traceback__``."
+"The type of traceback objects such as found in "
+"``sys.exception().__traceback__``."
 msgstr ""
 
 #: ../../library/types.rst:372
@@ -422,8 +420,8 @@ msgstr ""
 
 #: ../../library/types.rst:379
 msgid ""
-"The type of :ref:`frame objects <frame-objects>` such as found in :attr:`tb."
-"tb_frame <traceback.tb_frame>` if ``tb`` is a traceback object."
+"The type of :ref:`frame objects <frame-objects>` such as found in "
+":attr:`tb.tb_frame <traceback.tb_frame>` if ``tb`` is a traceback object."
 msgstr ""
 
 #: ../../library/types.rst:385
@@ -470,8 +468,8 @@ msgstr ""
 
 #: ../../library/types.rst:424
 msgid ""
-"Return the item of the underlying mapping with key *key*.  Raises a :exc:"
-"`KeyError` if *key* is not in the underlying mapping."
+"Return the item of the underlying mapping with key *key*.  Raises a "
+":exc:`KeyError` if *key* is not in the underlying mapping."
 msgstr ""
 
 #: ../../library/types.rst:429
@@ -491,13 +489,14 @@ msgstr ""
 #: ../../library/types.rst:442
 msgid ""
 "Return the value for *key* if *key* is in the underlying mapping, else "
-"*default*.  If *default* is not given, it defaults to ``None``, so that this "
-"method never raises a :exc:`KeyError`."
+"*default*.  If *default* is not given, it defaults to ``None``, so that this"
+" method never raises a :exc:`KeyError`."
 msgstr ""
 
 #: ../../library/types.rst:448
 msgid ""
-"Return a new view of the underlying mapping's items (``(key, value)`` pairs)."
+"Return a new view of the underlying mapping's items (``(key, value)`` "
+"pairs)."
 msgstr ""
 
 #: ../../library/types.rst:453
@@ -575,10 +574,10 @@ msgstr ""
 
 #: ../../library/types.rst:529
 msgid ""
-"This function transforms a :term:`generator` function into a :term:"
-"`coroutine function` which returns a generator-based coroutine. The "
-"generator-based coroutine is still a :term:`generator iterator`, but is also "
-"considered to be a :term:`coroutine` object and is :term:`awaitable`.  "
+"This function transforms a :term:`generator` function into a "
+":term:`coroutine function` which returns a generator-based coroutine. The "
+"generator-based coroutine is still a :term:`generator iterator`, but is also"
+" considered to be a :term:`coroutine` object and is :term:`awaitable`.  "
 "However, it may not necessarily implement the :meth:`~object.__await__` "
 "method."
 msgstr ""
@@ -589,8 +588,8 @@ msgstr ""
 
 #: ../../library/types.rst:538
 msgid ""
-"If *gen_func* is not a generator function, it will be wrapped. If it returns "
-"an instance of :class:`collections.abc.Generator`, the instance will be "
+"If *gen_func* is not a generator function, it will be wrapped. If it returns"
+" an instance of :class:`collections.abc.Generator`, the instance will be "
 "wrapped in an *awaitable* proxy object.  All other types of objects will be "
 "returned as is."
 msgstr ""

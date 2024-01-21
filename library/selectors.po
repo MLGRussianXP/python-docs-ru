@@ -1,29 +1,26 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Kristina Mironova, 2021
 # Gennady Kotov <gena.web@gmail.com>, 2021
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:13+0000\n"
+"POT-Creation-Date: 2024-01-19 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
 "Last-Translator: Gennady Kotov <gena.web@gmail.com>, 2021\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/selectors.rst:2
 msgid ":mod:`selectors` --- High-level I/O multiplexing"
@@ -39,19 +36,19 @@ msgstr "Введение"
 
 #: ../../library/selectors.rst:16
 msgid ""
-"This module allows high-level and efficient I/O multiplexing, built upon "
-"the :mod:`select` module primitives. Users are encouraged to use this module "
+"This module allows high-level and efficient I/O multiplexing, built upon the"
+" :mod:`select` module primitives. Users are encouraged to use this module "
 "instead, unless they want precise control over the OS-level primitives used."
 msgstr ""
 
 #: ../../library/selectors.rst:20
 msgid ""
 "It defines a :class:`BaseSelector` abstract base class, along with several "
-"concrete implementations (:class:`KqueueSelector`, :class:"
-"`EpollSelector`...), that can be used to wait for I/O readiness notification "
-"on multiple file objects. In the following, \"file object\" refers to any "
-"object with a :meth:`~io.IOBase.fileno` method, or a raw file descriptor. "
-"See :term:`file object`."
+"concrete implementations (:class:`KqueueSelector`, "
+":class:`EpollSelector`...), that can be used to wait for I/O readiness "
+"notification on multiple file objects. In the following, \"file object\" "
+"refers to any object with a :meth:`~io.IOBase.fileno` method, or a raw file "
+"descriptor. See :term:`file object`."
 msgstr ""
 
 #: ../../library/selectors.rst:26
@@ -141,8 +138,8 @@ msgstr ""
 
 #: ../../library/selectors.rst:90
 msgid ""
-"Optional opaque data associated to this file object: for example, this could "
-"be used to store a per-client session ID."
+"Optional opaque data associated to this file object: for example, this could"
+" be used to store a per-client session ID."
 msgstr ""
 
 #: ../../library/selectors.rst:96
@@ -150,11 +147,11 @@ msgid ""
 "A :class:`BaseSelector` is used to wait for I/O event readiness on multiple "
 "file objects. It supports file stream registration, unregistration, and a "
 "method to wait for I/O events on those streams, with an optional timeout. "
-"It's an abstract base class, so cannot be instantiated. Use :class:"
-"`DefaultSelector` instead, or one of :class:`SelectSelector`, :class:"
-"`KqueueSelector` etc. if you want to specifically use an implementation, and "
-"your platform supports it. :class:`BaseSelector` and its concrete "
-"implementations support the :term:`context manager` protocol."
+"It's an abstract base class, so cannot be instantiated. Use "
+":class:`DefaultSelector` instead, or one of :class:`SelectSelector`, "
+":class:`KqueueSelector` etc. if you want to specifically use an "
+"implementation, and your platform supports it. :class:`BaseSelector` and its"
+" concrete implementations support the :term:`context manager` protocol."
 msgstr ""
 
 #: ../../library/selectors.rst:108
@@ -170,15 +167,15 @@ msgstr ""
 
 #: ../../library/selectors.rst:115
 msgid ""
-"This returns a new :class:`SelectorKey` instance, or raises a :exc:"
-"`ValueError` in case of invalid event mask or file descriptor, or :exc:"
-"`KeyError` if the file object is already registered."
+"This returns a new :class:`SelectorKey` instance, or raises a "
+":exc:`ValueError` in case of invalid event mask or file descriptor, or "
+":exc:`KeyError` if the file object is already registered."
 msgstr ""
 
 #: ../../library/selectors.rst:121
 msgid ""
-"Unregister a file object from selection, removing it from monitoring. A file "
-"object shall be unregistered prior to being closed."
+"Unregister a file object from selection, removing it from monitoring. A file"
+" object shall be unregistered prior to being closed."
 msgstr ""
 
 #: ../../library/selectors.rst:124
@@ -187,10 +184,10 @@ msgstr ""
 
 #: ../../library/selectors.rst:126
 msgid ""
-"This returns the associated :class:`SelectorKey` instance, or raises a :exc:"
-"`KeyError` if *fileobj* is not registered.  It will raise :exc:`ValueError` "
-"if *fileobj* is invalid (e.g. it has no ``fileno()`` method or its "
-"``fileno()`` method has an invalid return value)."
+"This returns the associated :class:`SelectorKey` instance, or raises a "
+":exc:`KeyError` if *fileobj* is not registered.  It will raise "
+":exc:`ValueError` if *fileobj* is invalid (e.g. it has no ``fileno()`` "
+"method or its ``fileno()`` method has an invalid return value)."
 msgstr ""
 
 #: ../../library/selectors.rst:133
@@ -206,14 +203,15 @@ msgstr ""
 
 #: ../../library/selectors.rst:139
 msgid ""
-"This returns a new :class:`SelectorKey` instance, or raises a :exc:"
-"`ValueError` in case of invalid event mask or file descriptor, or :exc:"
-"`KeyError` if the file object is not registered."
+"This returns a new :class:`SelectorKey` instance, or raises a "
+":exc:`ValueError` in case of invalid event mask or file descriptor, or "
+":exc:`KeyError` if the file object is not registered."
 msgstr ""
 
 #: ../../library/selectors.rst:145
 msgid ""
-"Wait until some registered file objects become ready, or the timeout expires."
+"Wait until some registered file objects become ready, or the timeout "
+"expires."
 msgstr ""
 
 #: ../../library/selectors.rst:148
@@ -239,8 +237,8 @@ msgstr ""
 #: ../../library/selectors.rst:162
 msgid ""
 "This method can return before any file object becomes ready or the timeout "
-"has elapsed if the current process receives a signal: in this case, an empty "
-"list will be returned."
+"has elapsed if the current process receives a signal: in this case, an empty"
+" list will be returned."
 msgstr ""
 
 #: ../../library/selectors.rst:166
@@ -277,8 +275,8 @@ msgstr ""
 
 #: ../../library/selectors.rst:190
 msgid ""
-"This returns a :class:`~collections.abc.Mapping` instance mapping registered "
-"file objects to their associated :class:`SelectorKey` instance."
+"This returns a :class:`~collections.abc.Mapping` instance mapping registered"
+" file objects to their associated :class:`SelectorKey` instance."
 msgstr ""
 
 #: ../../library/selectors.rst:197
@@ -302,8 +300,8 @@ msgstr ""
 
 #: ../../library/selectors.rst:218
 msgid ""
-"This returns the file descriptor used by the underlying :func:`select.epoll` "
-"object."
+"This returns the file descriptor used by the underlying :func:`select.epoll`"
+" object."
 msgstr ""
 
 #: ../../library/selectors.rst:223
@@ -312,8 +310,8 @@ msgstr ""
 
 #: ../../library/selectors.rst:227
 msgid ""
-"This returns the file descriptor used by the underlying :func:`select."
-"devpoll` object."
+"This returns the file descriptor used by the underlying "
+":func:`select.devpoll` object."
 msgstr ""
 
 #: ../../library/selectors.rst:234
@@ -322,8 +320,8 @@ msgstr ""
 
 #: ../../library/selectors.rst:238
 msgid ""
-"This returns the file descriptor used by the underlying :func:`select."
-"kqueue` object."
+"This returns the file descriptor used by the underlying "
+":func:`select.kqueue` object."
 msgstr ""
 
 #: ../../library/selectors.rst:243

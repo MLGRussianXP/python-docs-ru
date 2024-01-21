@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,15 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/_thread.rst:2
 msgid ":mod:`_thread` --- Low-level threading API"
@@ -67,10 +64,10 @@ msgstr ""
 
 #: ../../library/_thread.rst:52
 msgid ""
-"When the function terminates with an unhandled exception, :func:`sys."
-"unraisablehook` is called to handle the exception. The *object* attribute of "
-"the hook argument is *function*. By default, a stack trace is printed and "
-"then the thread exits (but other threads continue to run)."
+"When the function terminates with an unhandled exception, "
+":func:`sys.unraisablehook` is called to handle the exception. The *object* "
+"attribute of the hook argument is *function*. By default, a stack trace is "
+"printed and then the thread exits (but other threads continue to run)."
 msgstr ""
 
 #: ../../library/_thread.rst:57
@@ -81,8 +78,8 @@ msgstr ""
 
 #: ../../library/_thread.rst:60
 msgid ""
-"Raises an :ref:`auditing event <auditing>` ``_thread.start_new_thread`` with "
-"arguments ``function``, ``args``, ``kwargs``."
+"Raises an :ref:`auditing event <auditing>` ``_thread.start_new_thread`` with"
+" arguments ``function``, ``args``, ``kwargs``."
 msgstr ""
 
 #: ../../library/_thread.rst:62
@@ -92,8 +89,8 @@ msgstr ""
 #: ../../library/_thread.rst:68
 msgid ""
 "Simulate the effect of a signal arriving in the main thread. A thread can "
-"use this function to interrupt the main thread, though there is no guarantee "
-"that the interruption will happen immediately."
+"use this function to interrupt the main thread, though there is no guarantee"
+" that the interruption will happen immediately."
 msgstr ""
 
 #: ../../library/_thread.rst:72
@@ -104,8 +101,9 @@ msgstr ""
 
 #: ../../library/_thread.rst:75
 msgid ""
-"If the given signal isn't handled by Python (it was set to :const:`signal."
-"SIG_DFL` or :const:`signal.SIG_IGN`), this function does nothing."
+"If the given signal isn't handled by Python (it was set to "
+":const:`signal.SIG_DFL` or :const:`signal.SIG_IGN`), this function does "
+"nothing."
 msgstr ""
 
 #: ../../library/_thread.rst:79
@@ -115,14 +113,14 @@ msgstr ""
 #: ../../library/_thread.rst:83
 msgid ""
 "This does not emit the corresponding signal but schedules a call to the "
-"associated handler (if it exists). If you want to truly emit the signal, "
-"use :func:`signal.raise_signal`."
+"associated handler (if it exists). If you want to truly emit the signal, use"
+" :func:`signal.raise_signal`."
 msgstr ""
 
 #: ../../library/_thread.rst:90
 msgid ""
-"Raise the :exc:`SystemExit` exception.  When not caught, this will cause the "
-"thread to exit silently."
+"Raise the :exc:`SystemExit` exception.  When not caught, this will cause the"
+" thread to exit silently."
 msgstr ""
 
 #: ../../library/_thread.rst:104
@@ -150,19 +148,19 @@ msgstr ""
 
 #: ../../library/_thread.rst:123
 msgid ""
-":ref:`Availability <availability>`: Windows, FreeBSD, Linux, macOS, OpenBSD, "
-"NetBSD, AIX, DragonFlyBSD."
+":ref:`Availability <availability>`: Windows, FreeBSD, Linux, macOS, OpenBSD,"
+" NetBSD, AIX, DragonFlyBSD."
 msgstr ""
 
 #: ../../library/_thread.rst:130
 msgid ""
 "Return the thread stack size used when creating new threads.  The optional "
-"*size* argument specifies the stack size to be used for subsequently created "
-"threads, and must be 0 (use platform or configured default) or a positive "
+"*size* argument specifies the stack size to be used for subsequently created"
+" threads, and must be 0 (use platform or configured default) or a positive "
 "integer value of at least 32,768 (32 KiB). If *size* is not specified, 0 is "
-"used.  If changing the thread stack size is unsupported, a :exc:"
-"`RuntimeError` is raised.  If the specified stack size is invalid, a :exc:"
-"`ValueError` is raised and the stack size is unmodified.  32 KiB is "
+"used.  If changing the thread stack size is unsupported, a "
+":exc:`RuntimeError` is raised.  If the specified stack size is invalid, a "
+":exc:`ValueError` is raised and the stack size is unmodified.  32 KiB is "
 "currently the minimum supported stack size value to guarantee sufficient "
 "stack space for the interpreter itself.  Note that some platforms may have "
 "particular restrictions on values for the stack size, such as requiring a "
@@ -183,9 +181,9 @@ msgstr ""
 
 #: ../../library/_thread.rst:152
 msgid ""
-"The maximum value allowed for the *timeout* parameter of :meth:`Lock.acquire "
-"<threading.Lock.acquire>`. Specifying a timeout greater than this value will "
-"raise an :exc:`OverflowError`."
+"The maximum value allowed for the *timeout* parameter of :meth:`Lock.acquire"
+" <threading.Lock.acquire>`. Specifying a timeout greater than this value "
+"will raise an :exc:`OverflowError`."
 msgstr ""
 
 #: ../../library/_thread.rst:159
@@ -195,8 +193,8 @@ msgstr ""
 #: ../../library/_thread.rst:164
 msgid ""
 "Without any optional argument, this method acquires the lock "
-"unconditionally, if necessary waiting until it is released by another thread "
-"(only one thread at a time can acquire a lock --- that's their reason for "
+"unconditionally, if necessary waiting until it is released by another thread"
+" (only one thread at a time can acquire a lock --- that's their reason for "
 "existence)."
 msgstr ""
 
@@ -218,8 +216,8 @@ msgstr ""
 
 #: ../../library/_thread.rst:178
 msgid ""
-"The return value is ``True`` if the lock is acquired successfully, ``False`` "
-"if not."
+"The return value is ``True`` if the lock is acquired successfully, ``False``"
+" if not."
 msgstr ""
 
 #: ../../library/_thread.rst:181
@@ -244,8 +242,8 @@ msgstr ""
 
 #: ../../library/_thread.rst:199
 msgid ""
-"In addition to these methods, lock objects can also be used via the :keyword:"
-"`with` statement, e.g.::"
+"In addition to these methods, lock objects can also be used via the "
+":keyword:`with` statement, e.g.::"
 msgstr ""
 
 #: ../../library/_thread.rst:209
@@ -275,8 +273,8 @@ msgstr ""
 #: ../../library/_thread.rst:224
 msgid ""
 "When the main thread exits, it is system defined whether the other threads "
-"survive.  On most systems, they are killed without executing :keyword:"
-"`try` ... :keyword:`finally` clauses or executing object destructors."
+"survive.  On most systems, they are killed without executing :keyword:`try` "
+"... :keyword:`finally` clauses or executing object destructors."
 msgstr ""
 
 #: ../../library/_thread.rst:229

@@ -2,10 +2,10 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Daniil Kolesnikov, 2024
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,15 +14,12 @@ msgstr ""
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/site.rst:2
 msgid ":mod:`site` --- Site-specific configuration hook"
@@ -50,8 +47,8 @@ msgstr ""
 
 #: ../../library/site.rst:24
 msgid ""
-"Importing the module used to trigger paths manipulation even when using :"
-"option:`-S`."
+"Importing the module used to trigger paths manipulation even when using "
+":option:`-S`."
 msgstr ""
 
 #: ../../library/site.rst:31
@@ -61,9 +58,9 @@ msgid ""
 "empty heads are skipped.  For the tail part, it uses the empty string and "
 "then :file:`lib/site-packages` (on Windows) or :file:`lib/python{X.Y}/site-"
 "packages` (on Unix and macOS).  For each of the distinct head-tail "
-"combinations, it sees if it refers to an existing directory, and if so, adds "
-"it to ``sys.path`` and also inspects the newly added path for configuration "
-"files."
+"combinations, it sees if it refers to an existing directory, and if so, adds"
+" it to ``sys.path`` and also inspects the newly added path for configuration"
+" files."
 msgstr ""
 
 #: ../../library/site.rst:40
@@ -75,23 +72,23 @@ msgid ""
 "If a file named \"pyvenv.cfg\" exists one directory above sys.executable, "
 "sys.prefix and sys.exec_prefix are set to that directory and it is also "
 "checked for site-packages (sys.base_prefix and sys.base_exec_prefix will "
-"always be the \"real\" prefixes of the Python installation). If \"pyvenv."
-"cfg\" (a bootstrap configuration file) contains the key \"include-system-"
-"site-packages\" set to anything other than \"true\" (case-insensitive), the "
-"system-level prefixes will not be searched for site-packages; otherwise they "
-"will."
+"always be the \"real\" prefixes of the Python installation). If "
+"\"pyvenv.cfg\" (a bootstrap configuration file) contains the key \"include-"
+"system-site-packages\" set to anything other than \"true\" (case-"
+"insensitive), the system-level prefixes will not be searched for site-"
+"packages; otherwise they will."
 msgstr ""
 
 #: ../../library/site.rst:56
 msgid ""
-"A path configuration file is a file whose name has the form :file:`{name}."
-"pth` and exists in one of the four directories mentioned above; its contents "
-"are additional items (one per line) to be added to ``sys.path``.  Non-"
-"existing items are never added to ``sys.path``, and no check is made that "
-"the item refers to a directory rather than a file.  No item is added to "
-"``sys.path`` more than once.  Blank lines and lines beginning with ``#`` are "
-"skipped.  Lines starting with ``import`` (followed by space or tab) are "
-"executed."
+"A path configuration file is a file whose name has the form "
+":file:`{name}.pth` and exists in one of the four directories mentioned "
+"above; its contents are additional items (one per line) to be added to "
+"``sys.path``.  Non-existing items are never added to ``sys.path``, and no "
+"check is made that the item refers to a directory rather than a file.  No "
+"item is added to ``sys.path`` more than once.  Blank lines and lines "
+"beginning with ``#`` are skipped.  Lines starting with ``import`` (followed "
+"by space or tab) are executed."
 msgstr ""
 
 #: ../../library/site.rst:66
@@ -99,21 +96,22 @@ msgid ""
 "An executable line in a :file:`.pth` file is run at every Python startup, "
 "regardless of whether a particular module is actually going to be used. Its "
 "impact should thus be kept to a minimum. The primary intended purpose of "
-"executable lines is to make the corresponding module(s) importable (load 3rd-"
-"party import hooks, adjust :envvar:`PATH` etc). Any other initialization is "
-"supposed to be done upon a module's actual import, if and when it happens. "
-"Limiting a code chunk to a single line is a deliberate measure to discourage "
-"putting anything more complex here."
+"executable lines is to make the corresponding module(s) importable (load "
+"3rd-party import hooks, adjust :envvar:`PATH` etc). Any other initialization"
+" is supposed to be done upon a module's actual import, if and when it "
+"happens. Limiting a code chunk to a single line is a deliberate measure to "
+"discourage putting anything more complex here."
 msgstr ""
 
 #: ../../library/site.rst:81
 msgid ""
-"For example, suppose ``sys.prefix`` and ``sys.exec_prefix`` are set to :file:"
-"`/usr/local`.  The Python X.Y library is then installed in :file:`/usr/local/"
-"lib/python{X.Y}`.  Suppose this has a subdirectory :file:`/usr/local/lib/"
-"python{X.Y}/site-packages` with three subsubdirectories, :file:`foo`, :file:"
-"`bar` and :file:`spam`, and two path configuration files, :file:`foo.pth` "
-"and :file:`bar.pth`.  Assume :file:`foo.pth` contains the following::"
+"For example, suppose ``sys.prefix`` and ``sys.exec_prefix`` are set to "
+":file:`/usr/local`.  The Python X.Y library is then installed in "
+":file:`/usr/local/lib/python{X.Y}`.  Suppose this has a subdirectory "
+":file:`/usr/local/lib/python{X.Y}/site-packages` with three "
+"subsubdirectories, :file:`foo`, :file:`bar` and :file:`spam`, and two path "
+"configuration files, :file:`foo.pth` and :file:`bar.pth`.  Assume "
+":file:`foo.pth` contains the following::"
 msgstr ""
 
 #: ../../library/site.rst:95
@@ -128,10 +126,11 @@ msgstr ""
 
 #: ../../library/site.rst:107
 msgid ""
-"Note that :file:`bletch` is omitted because it doesn't exist; the :file:"
-"`bar` directory precedes the :file:`foo` directory because :file:`bar.pth` "
-"comes alphabetically before :file:`foo.pth`; and :file:`spam` is omitted "
-"because it is not mentioned in either path configuration file."
+"Note that :file:`bletch` is omitted because it doesn't exist; the "
+":file:`bar` directory precedes the :file:`foo` directory because "
+":file:`bar.pth` comes alphabetically before :file:`foo.pth`; and "
+":file:`spam` is omitted because it is not mentioned in either path "
+"configuration file."
 msgstr ""
 
 #: ../../library/site.rst:113
@@ -140,16 +139,16 @@ msgstr ""
 
 #: ../../library/site.rst:117
 msgid ""
-"After these path manipulations, an attempt is made to import a module named :"
-"mod:`sitecustomize`, which can perform arbitrary site-specific "
+"After these path manipulations, an attempt is made to import a module named "
+":mod:`sitecustomize`, which can perform arbitrary site-specific "
 "customizations. It is typically created by a system administrator in the "
-"site-packages directory.  If this import fails with an :exc:`ImportError` or "
-"its subclass exception, and the exception's :attr:`~ImportError.name` "
+"site-packages directory.  If this import fails with an :exc:`ImportError` or"
+" its subclass exception, and the exception's :attr:`~ImportError.name` "
 "attribute equals to ``'sitecustomize'``, it is silently ignored.  If Python "
 "is started without output streams available, as with :file:`pythonw.exe` on "
-"Windows (which is used by default to start IDLE), attempted output from :mod:"
-"`sitecustomize` is ignored.  Any other exception causes a silent and perhaps "
-"mysterious failure of the process."
+"Windows (which is used by default to start IDLE), attempted output from "
+":mod:`sitecustomize` is ignored.  Any other exception causes a silent and "
+"perhaps mysterious failure of the process."
 msgstr ""
 
 #: ../../library/site.rst:129
@@ -158,21 +157,21 @@ msgstr ""
 
 #: ../../library/site.rst:133
 msgid ""
-"After this, an attempt is made to import a module named :mod:"
-"`usercustomize`, which can perform arbitrary user-specific customizations, "
-"if :data:`~site.ENABLE_USER_SITE` is true.  This file is intended to be "
-"created in the user site-packages directory (see below), which is part of "
-"``sys.path`` unless disabled by :option:`-s`.  If this import fails with an :"
-"exc:`ImportError` or its subclass exception, and the exception's :attr:"
-"`~ImportError.name` attribute equals to ``'usercustomize'``, it is silently "
-"ignored."
+"After this, an attempt is made to import a module named "
+":mod:`usercustomize`, which can perform arbitrary user-specific "
+"customizations, if :data:`~site.ENABLE_USER_SITE` is true.  This file is "
+"intended to be created in the user site-packages directory (see below), "
+"which is part of ``sys.path`` unless disabled by :option:`-s`.  If this "
+"import fails with an :exc:`ImportError` or its subclass exception, and the "
+"exception's :attr:`~ImportError.name` attribute equals to "
+"``'usercustomize'``, it is silently ignored."
 msgstr ""
 
 #: ../../library/site.rst:141
 msgid ""
 "Note that for some non-Unix systems, ``sys.prefix`` and ``sys.exec_prefix`` "
-"are empty, and the path manipulations are skipped; however the import of :"
-"mod:`sitecustomize` and :mod:`usercustomize` is still attempted."
+"are empty, and the path manipulations are skipped; however the import of "
+":mod:`sitecustomize` and :mod:`usercustomize` is still attempted."
 msgstr ""
 
 #: ../../library/site.rst:150
@@ -182,13 +181,13 @@ msgstr ""
 #: ../../library/site.rst:152
 msgid ""
 "On systems that support :mod:`readline`, this module will also import and "
-"configure the :mod:`rlcompleter` module, if Python is started in :ref:"
-"`interactive mode <tut-interactive>` and without the :option:`-S` option. "
-"The default behavior is enable tab-completion and to use :file:`~/."
-"python_history` as the history save file.  To disable it, delete (or "
-"override) the :data:`sys.__interactivehook__` attribute in your :mod:"
-"`sitecustomize` or :mod:`usercustomize` module or your :envvar:"
-"`PYTHONSTARTUP` file."
+"configure the :mod:`rlcompleter` module, if Python is started in "
+":ref:`interactive mode <tut-interactive>` and without the :option:`-S` "
+"option. The default behavior is enable tab-completion and to use "
+":file:`~/.python_history` as the history save file.  To disable it, delete "
+"(or override) the :data:`sys.__interactivehook__` attribute in your "
+":mod:`sitecustomize` or :mod:`usercustomize` module or your "
+":envvar:`PYTHONSTARTUP` file."
 msgstr ""
 
 #: ../../library/site.rst:161
@@ -205,33 +204,36 @@ msgstr ""
 
 #: ../../library/site.rst:175
 msgid ""
-"Flag showing the status of the user site-packages directory.  ``True`` means "
-"that it is enabled and was added to ``sys.path``.  ``False`` means that it "
-"was disabled by user request (with :option:`-s` or :envvar:"
-"`PYTHONNOUSERSITE`).  ``None`` means it was disabled for security reasons "
-"(mismatch between user or group id and effective id) or by an administrator."
+"Flag showing the status of the user site-packages directory.  ``True`` means"
+" that it is enabled and was added to ``sys.path``.  ``False`` means that it "
+"was disabled by user request (with :option:`-s` or "
+":envvar:`PYTHONNOUSERSITE`).  ``None`` means it was disabled for security "
+"reasons (mismatch between user or group id and effective id) or by an "
+"administrator."
 msgstr ""
 
 #: ../../library/site.rst:185
 msgid ""
-"Path to the user site-packages for the running Python.  Can be ``None`` if :"
-"func:`getusersitepackages` hasn't been called yet.  Default value is :file:"
-"`~/.local/lib/python{X.Y}/site-packages` for UNIX and non-framework macOS "
-"builds, :file:`~/Library/Python/{X.Y}/lib/python/site-packages` for macOS "
-"framework builds, and :file:`{%APPDATA%}\\\\Python\\\\Python{XY}\\\\site-"
-"packages` on Windows.  This directory is a site directory, which means that :"
-"file:`.pth` files in it will be processed."
+"Path to the user site-packages for the running Python.  Can be ``None`` if "
+":func:`getusersitepackages` hasn't been called yet.  Default value is "
+":file:`~/.local/lib/python{X.Y}/site-packages` for UNIX and non-framework "
+"macOS builds, :file:`~/Library/Python/{X.Y}/lib/python/site-packages` for "
+"macOS framework builds, and "
+":file:`{%APPDATA%}\\\\Python\\\\Python{XY}\\\\site-packages` on Windows.  "
+"This directory is a site directory, which means that :file:`.pth` files in "
+"it will be processed."
 msgstr ""
 
 #: ../../library/site.rst:196
 msgid ""
-"Path to the base directory for the user site-packages.  Can be ``None`` if :"
-"func:`getuserbase` hasn't been called yet.  Default value is :file:`~/."
-"local` for UNIX and macOS non-framework builds, :file:`~/Library/Python/{X.Y}"
-"` for macOS framework builds, and :file:`{%APPDATA%}\\\\Python` for "
-"Windows.  This value is used to compute the installation directories for "
-"scripts, data files, Python modules, etc. for the :ref:`user installation "
-"scheme <sysconfig-user-scheme>`. See also :envvar:`PYTHONUSERBASE`."
+"Path to the base directory for the user site-packages.  Can be ``None`` if "
+":func:`getuserbase` hasn't been called yet.  Default value is "
+":file:`~/.local` for UNIX and macOS non-framework builds, "
+":file:`~/Library/Python/{X.Y}` for macOS framework builds, and "
+":file:`{%APPDATA%}\\\\Python` for Windows.  This value is used to compute "
+"the installation directories for scripts, data files, Python modules, etc. "
+"for the :ref:`user installation scheme <sysconfig-user-scheme>`. See also "
+":envvar:`PYTHONUSERBASE`."
 msgstr ""
 
 #: ../../library/site.rst:208
@@ -257,17 +259,18 @@ msgstr ""
 
 #: ../../library/site.rst:231
 msgid ""
-"Return the path of the user base directory, :data:`USER_BASE`.  If it is not "
-"initialized yet, this function will also set it, respecting :envvar:"
-"`PYTHONUSERBASE`."
+"Return the path of the user base directory, :data:`USER_BASE`.  If it is not"
+" initialized yet, this function will also set it, respecting "
+":envvar:`PYTHONUSERBASE`."
 msgstr ""
 
 #: ../../library/site.rst:240
 msgid ""
-"Return the path of the user-specific site-packages directory, :data:"
-"`USER_SITE`.  If it is not initialized yet, this function will also set it, "
-"respecting :data:`USER_BASE`.  To determine if the user-specific site-"
-"packages was added to ``sys.path`` :data:`ENABLE_USER_SITE` should be used."
+"Return the path of the user-specific site-packages directory, "
+":data:`USER_SITE`.  If it is not initialized yet, this function will also "
+"set it, respecting :data:`USER_BASE`.  To determine if the user-specific "
+"site-packages was added to ``sys.path`` :data:`ENABLE_USER_SITE` should be "
+"used."
 msgstr ""
 
 #: ../../library/site.rst:252
@@ -282,10 +285,10 @@ msgstr ""
 
 #: ../../library/site.rst:264
 msgid ""
-"If it is called without arguments, it will print the contents of :data:`sys."
-"path` on the standard output, followed by the value of :data:`USER_BASE` and "
-"whether the directory exists, then the same thing for :data:`USER_SITE`, and "
-"finally the value of :data:`ENABLE_USER_SITE`."
+"If it is called without arguments, it will print the contents of "
+":data:`sys.path` on the standard output, followed by the value of "
+":data:`USER_BASE` and whether the directory exists, then the same thing for "
+":data:`USER_SITE`, and finally the value of :data:`ENABLE_USER_SITE`."
 msgstr ""
 
 #: ../../library/site.rst:271
@@ -304,9 +307,9 @@ msgstr ""
 
 #: ../../library/site.rst:280
 msgid ""
-"If any option is given, the script will exit with one of these values: ``0`` "
-"if the user site-packages directory is enabled, ``1`` if it was disabled by "
-"the user, ``2`` if it is disabled for security reasons or by an "
+"If any option is given, the script will exit with one of these values: ``0``"
+" if the user site-packages directory is enabled, ``1`` if it was disabled by"
+" the user, ``2`` if it is disabled for security reasons or by an "
 "administrator, and a value greater than 2 if there is an error."
 msgstr ""
 

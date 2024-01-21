@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,15 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/sys_path_init.rst:4
 msgid "The initialization of the :data:`sys.path` module search path"
@@ -32,10 +29,10 @@ msgstr ""
 
 #: ../../library/sys_path_init.rst:9
 msgid ""
-"The first entry in the module search path is the directory that contains the "
-"input script, if there is one. Otherwise, the first entry is the current "
-"directory, which is the case when executing the interactive shell, a :option:"
-"`-c` command, or :option:`-m` module."
+"The first entry in the module search path is the directory that contains the"
+" input script, if there is one. Otherwise, the first entry is the current "
+"directory, which is the case when executing the interactive shell, a "
+":option:`-c` command, or :option:`-m` module."
 msgstr ""
 
 #: ../../library/sys_path_init.rst:14
@@ -47,8 +44,8 @@ msgstr ""
 
 #: ../../library/sys_path_init.rst:20
 msgid ""
-":envvar:`PYTHONPATH` will affect all installed Python versions/environments. "
-"Be wary of setting this in your shell profile or global environment "
+":envvar:`PYTHONPATH` will affect all installed Python versions/environments."
+" Be wary of setting this in your shell profile or global environment "
 "variables. The :mod:`site` module offers more nuanced techniques as "
 "mentioned below."
 msgstr ""
@@ -76,25 +73,26 @@ msgstr ""
 #: ../../library/sys_path_init.rst:37
 msgid ""
 "Once ``home`` is determined, the ``prefix`` directory is found by first "
-"looking for :file:`python{majorversion}{minorversion}.zip` (``python311."
-"zip``). On Windows the zip archive is searched for in ``home`` and on Unix "
-"the archive is expected to be in :file:`lib`. Note that the expected zip "
-"archive location is added to the module search path even if the archive does "
-"not exist. If no archive was found, Python on Windows will continue the "
-"search for ``prefix`` by looking for :file:`Lib\\\\os.py`. Python on Unix "
-"will look for :file:`lib/python{majorversion}.{minorversion}/os.py` (``lib/"
-"python3.11/os.py``). On Windows ``prefix`` and ``exec_prefix`` are the same, "
-"however on other platforms :file:`lib/python{majorversion}.{minorversion}/"
-"lib-dynload` (``lib/python3.11/lib-dynload``) is searched for and used as an "
-"anchor for ``exec_prefix``. On some platforms :file:`lib` may be :file:"
-"`lib64` or another value, see :data:`sys.platlibdir` and :envvar:"
-"`PYTHONPLATLIBDIR`."
+"looking for :file:`python{majorversion}{minorversion}.zip` "
+"(``python311.zip``). On Windows the zip archive is searched for in ``home`` "
+"and on Unix the archive is expected to be in :file:`lib`. Note that the "
+"expected zip archive location is added to the module search path even if the"
+" archive does not exist. If no archive was found, Python on Windows will "
+"continue the search for ``prefix`` by looking for :file:`Lib\\\\os.py`. "
+"Python on Unix will look for "
+":file:`lib/python{majorversion}.{minorversion}/os.py` "
+"(``lib/python3.11/os.py``). On Windows ``prefix`` and ``exec_prefix`` are "
+"the same, however on other platforms "
+":file:`lib/python{majorversion}.{minorversion}/lib-dynload` "
+"(``lib/python3.11/lib-dynload``) is searched for and used as an anchor for "
+"``exec_prefix``. On some platforms :file:`lib` may be :file:`lib64` or "
+"another value, see :data:`sys.platlibdir` and :envvar:`PYTHONPLATLIBDIR`."
 msgstr ""
 
 #: ../../library/sys_path_init.rst:50
 msgid ""
-"Once found, ``prefix`` and ``exec_prefix`` are available at :data:`sys."
-"prefix` and :data:`sys.exec_prefix` respectively."
+"Once found, ``prefix`` and ``exec_prefix`` are available at "
+":data:`sys.prefix` and :data:`sys.exec_prefix` respectively."
 msgstr ""
 
 #: ../../library/sys_path_init.rst:53
@@ -107,8 +105,9 @@ msgstr ""
 
 #: ../../library/sys_path_init.rst:60
 msgid ""
-"Certain command line options may further affect path calculations. See :"
-"option:`-E`, :option:`-I`, :option:`-s` and :option:`-S` for further details."
+"Certain command line options may further affect path calculations. See "
+":option:`-E`, :option:`-I`, :option:`-s` and :option:`-S` for further "
+"details."
 msgstr ""
 
 #: ../../library/sys_path_init.rst:64
@@ -144,16 +143,17 @@ msgid ""
 "same name as the shared library or executable (``python._pth`` or "
 "``python311._pth``). The shared library path is always known on Windows, "
 "however it may not be available on other platforms. In the ``._pth`` file "
-"specify one line for each path to add to :data:`sys.path`. The file based on "
-"the shared library name overrides the one based on the executable, which "
-"allows paths to be restricted for any program loading the runtime if desired."
+"specify one line for each path to add to :data:`sys.path`. The file based on"
+" the shared library name overrides the one based on the executable, which "
+"allows paths to be restricted for any program loading the runtime if "
+"desired."
 msgstr ""
 
 #: ../../library/sys_path_init.rst:87
 msgid ""
 "When the file exists, all registry and environment variables are ignored, "
-"isolated mode is enabled, and :mod:`site` is not imported unless one line in "
-"the file specifies ``import site``. Blank paths and lines starting with "
+"isolated mode is enabled, and :mod:`site` is not imported unless one line in"
+" the file specifies ``import site``. Blank paths and lines starting with "
 "``#`` are ignored. Each path may be absolute or relative to the location of "
 "the file. Import statements other than to ``site`` are not permitted, and "
 "arbitrary code cannot be specified."
@@ -171,11 +171,11 @@ msgstr ""
 
 #: ../../library/sys_path_init.rst:100
 msgid ""
-"If Python is embedded within another application :c:func:"
-"`Py_InitializeFromConfig` and the :c:type:`PyConfig` structure can be used "
-"to initialize Python. The path specific details are described at :ref:`init-"
-"path-config`. Alternatively the older :c:func:`Py_SetPath` can be used to "
-"bypass the initialization of the module search path."
+"If Python is embedded within another application "
+":c:func:`Py_InitializeFromConfig` and the :c:type:`PyConfig` structure can "
+"be used to initialize Python. The path specific details are described at "
+":ref:`init-path-config`. Alternatively the older :c:func:`Py_SetPath` can be"
+" used to bypass the initialization of the module search path."
 msgstr ""
 
 #: ../../library/sys_path_init.rst:107

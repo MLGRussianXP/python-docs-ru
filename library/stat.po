@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,15 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/stat.rst:2
 msgid ":mod:`stat` --- Interpreting :func:`~os.stat` results"
@@ -32,8 +29,8 @@ msgstr ""
 msgid ""
 "The :mod:`stat` module defines constants and functions for interpreting the "
 "results of :func:`os.stat`, :func:`os.fstat` and :func:`os.lstat` (if they "
-"exist).  For complete details about the :c:func:`stat`, :c:func:`!fstat` "
-"and :c:func:`!lstat` calls, consult the documentation for your system."
+"exist).  For complete details about the :c:func:`stat`, :c:func:`!fstat` and"
+" :c:func:`!lstat` calls, consult the documentation for your system."
 msgstr ""
 
 #: ../../library/stat.rst:19
@@ -107,8 +104,8 @@ msgstr ""
 
 #: ../../library/stat.rst:94
 msgid ""
-"Normally, you would use the :func:`!os.path.is\\*` functions for testing the "
-"type of a file; the functions here are useful when you are doing multiple "
+"Normally, you would use the :func:`!os.path.is\\*` functions for testing the"
+" type of a file; the functions here are useful when you are doing multiple "
 "tests of the same file and wish to avoid the overhead of the :c:func:`stat` "
 "system call for each test.  These are also useful when checking for "
 "information about a file that isn't handled by :mod:`os.path`, like the "
@@ -131,7 +128,8 @@ msgstr ""
 
 #: ../../library/stat.rst:138
 msgid ""
-"The function supports :data:`S_IFDOOR`, :data:`S_IFPORT` and :data:`S_IFWHT`."
+"The function supports :data:`S_IFDOOR`, :data:`S_IFPORT` and "
+":data:`S_IFWHT`."
 msgstr ""
 
 #: ../../library/stat.rst:143
@@ -186,18 +184,20 @@ msgstr ""
 
 #: ../../library/stat.rst:198
 msgid ""
-"The interpretation of \"file size\" changes according to the file type.  For "
-"plain files this is the size of the file in bytes.  For FIFOs and sockets "
+"The interpretation of \"file size\" changes according to the file type.  For"
+" plain files this is the size of the file in bytes.  For FIFOs and sockets "
 "under most flavors of Unix (including Linux in particular), the \"size\" is "
-"the number of bytes waiting to be read at the time of the call to :func:`os."
-"stat`, :func:`os.fstat`, or :func:`os.lstat`; this can sometimes be useful, "
-"especially for polling one of these special files after a non-blocking "
-"open.  The meaning of the size field for other character and block devices "
-"varies more, depending on the implementation of the underlying system call."
+"the number of bytes waiting to be read at the time of the call to "
+":func:`os.stat`, :func:`os.fstat`, or :func:`os.lstat`; this can sometimes "
+"be useful, especially for polling one of these special files after a non-"
+"blocking open.  The meaning of the size field for other character and block "
+"devices varies more, depending on the implementation of the underlying "
+"system call."
 msgstr ""
 
 #: ../../library/stat.rst:207
-msgid "The variables below define the flags used in the :data:`ST_MODE` field."
+msgid ""
+"The variables below define the flags used in the :data:`ST_MODE` field."
 msgstr ""
 
 #: ../../library/stat.rst:209
@@ -254,8 +254,8 @@ msgstr ""
 
 #: ../../library/stat.rst:262
 msgid ""
-"The following flags can also be used in the *mode* argument of :func:`os."
-"chmod`:"
+"The following flags can also be used in the *mode* argument of "
+":func:`os.chmod`:"
 msgstr ""
 
 #: ../../library/stat.rst:266
@@ -265,8 +265,8 @@ msgstr ""
 #: ../../library/stat.rst:270
 msgid ""
 "Set-group-ID bit.  This bit has several special uses.  For a directory it "
-"indicates that BSD semantics is to be used for that directory: files created "
-"there inherit their group ID from the directory, not from the effective "
+"indicates that BSD semantics is to be used for that directory: files created"
+" there inherit their group ID from the directory, not from the effective "
 "group ID of the creating process, and directories created there will also "
 "get the :data:`S_ISGID` bit set.  For a file that does not have the group "
 "execution bit (:data:`S_IXGRP`) set, the set-group-ID bit indicates "
@@ -330,9 +330,9 @@ msgstr ""
 
 #: ../../library/stat.rst:335
 msgid ""
-"System V file locking enforcement.  This flag is shared with :data:"
-"`S_ISGID`: file/record locking is enforced on files that do not have the "
-"group execution bit (:data:`S_IXGRP`) set."
+"System V file locking enforcement.  This flag is shared with "
+":data:`S_ISGID`: file/record locking is enforced on files that do not have "
+"the group execution bit (:data:`S_IXGRP`) set."
 msgstr ""
 
 #: ../../library/stat.rst:341
@@ -349,8 +349,8 @@ msgstr ""
 
 #: ../../library/stat.rst:351
 msgid ""
-"The following flags can be used in the *flags* argument of :func:`os."
-"chflags`:"
+"The following flags can be used in the *flags* argument of "
+":func:`os.chflags`:"
 msgstr ""
 
 #: ../../library/stat.rst:355
@@ -398,15 +398,15 @@ msgstr ""
 #: ../../library/stat.rst:403
 msgid ""
 "On Windows, the following file attribute constants are available for use "
-"when testing bits in the ``st_file_attributes`` member returned by :func:`os."
-"stat`. See the `Windows API documentation <https://msdn.microsoft.com/en-us/"
-"library/windows/desktop/gg258117.aspx>`_ for more detail on the meaning of "
-"these constants."
+"when testing bits in the ``st_file_attributes`` member returned by "
+":func:`os.stat`. See the `Windows API documentation "
+"<https://msdn.microsoft.com/en-us/library/windows/desktop/gg258117.aspx>`_ "
+"for more detail on the meaning of these constants."
 msgstr ""
 
 #: ../../library/stat.rst:429
 msgid ""
 "On Windows, the following constants are available for comparing against the "
-"``st_reparse_tag`` member returned by :func:`os.lstat`. These are well-known "
-"constants, but are not an exhaustive list."
+"``st_reparse_tag`` member returned by :func:`os.lstat`. These are well-known"
+" constants, but are not an exhaustive list."
 msgstr ""

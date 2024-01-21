@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,25 +10,22 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:55+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../library/asyncio.rst:80
+#: ../../library/asyncio.rst:80 ../../library/asyncio.rst:80
 msgid "High-level APIs"
 msgstr ""
 
-#: ../../library/asyncio.rst:92
+#: ../../library/asyncio.rst:92 ../../library/asyncio.rst:92
 msgid "Low-level APIs"
 msgstr ""
 
-#: ../../library/asyncio.rst:103
+#: ../../library/asyncio.rst:103 ../../library/asyncio.rst:103
 msgid "Guides and Tutorials"
 msgstr ""
 
@@ -94,8 +91,8 @@ msgstr ""
 #: ../../library/asyncio.rst:48
 msgid ""
 "create and manage :ref:`event loops <asyncio-event-loop>`, which provide "
-"asynchronous APIs for :ref:`networking <loop_create_server>`, running :ref:"
-"`subprocesses <loop_subprocess_exec>`, handling :ref:`OS signals "
+"asynchronous APIs for :ref:`networking <loop_create_server>`, running "
+":ref:`subprocesses <loop_subprocess_exec>`, handling :ref:`OS signals "
 "<loop_add_signal_handler>`, etc;"
 msgstr ""
 
@@ -107,8 +104,8 @@ msgstr ""
 
 #: ../../library/asyncio.rst:56
 msgid ""
-":ref:`bridge <asyncio-futures>` callback-based libraries and code with async/"
-"await syntax."
+":ref:`bridge <asyncio-futures>` callback-based libraries and code with "
+"async/await syntax."
 msgstr ""
 
 #: ../../library/asyncio.rst:61

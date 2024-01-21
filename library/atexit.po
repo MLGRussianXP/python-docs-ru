@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,15 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:55+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/atexit.rst:2
 msgid ":mod:`atexit` --- Exit handlers"
@@ -43,8 +40,8 @@ msgstr ""
 
 #: ../../library/atexit.rst:23
 msgid ""
-"**Note:** The effect of registering or unregistering functions from within a "
-"cleanup function is undefined."
+"**Note:** The effect of registering or unregistering functions from within a"
+" cleanup function is undefined."
 msgstr ""
 
 #: ../../library/atexit.rst:26
@@ -56,9 +53,9 @@ msgstr ""
 #: ../../library/atexit.rst:32
 msgid ""
 "Register *func* as a function to be executed at termination.  Any optional "
-"arguments that are to be passed to *func* must be passed as arguments to :"
-"func:`register`.  It is possible to register the same function and arguments "
-"more than once."
+"arguments that are to be passed to *func* must be passed as arguments to "
+":func:`register`.  It is possible to register the same function and "
+"arguments more than once."
 msgstr ""
 
 #: ../../library/atexit.rst:37
@@ -72,10 +69,10 @@ msgstr ""
 
 #: ../../library/atexit.rst:43
 msgid ""
-"If an exception is raised during execution of the exit handlers, a traceback "
-"is printed (unless :exc:`SystemExit` is raised) and the exception "
-"information is saved.  After all exit handlers have had a chance to run, the "
-"last exception to be raised is re-raised."
+"If an exception is raised during execution of the exit handlers, a traceback"
+" is printed (unless :exc:`SystemExit` is raised) and the exception "
+"information is saved.  After all exit handlers have had a chance to run, the"
+" last exception to be raised is re-raised."
 msgstr ""
 
 #: ../../library/atexit.rst:48
@@ -100,8 +97,8 @@ msgstr ""
 
 #: ../../library/atexit.rst:64
 msgid ""
-"Remove *func* from the list of functions to be run at interpreter shutdown. :"
-"func:`unregister` silently does nothing if *func* was not previously "
+"Remove *func* from the list of functions to be run at interpreter shutdown. "
+":func:`unregister` silently does nothing if *func* was not previously "
 "registered.  If *func* has been registered more than once, every occurrence "
 "of that function in the :mod:`atexit` call stack will be removed.  Equality "
 "comparisons (``==``) are used internally during unregistration, so function "
@@ -125,9 +122,9 @@ msgstr ""
 #: ../../library/atexit.rst:84
 msgid ""
 "The following simple example demonstrates how a module can initialize a "
-"counter from a file when it is imported and save the counter's updated value "
-"automatically when the program terminates without relying on the application "
-"making an explicit call into this module at termination. ::"
+"counter from a file when it is imported and save the counter's updated value"
+" automatically when the program terminates without relying on the "
+"application making an explicit call into this module at termination. ::"
 msgstr ""
 
 #: ../../library/atexit.rst:107

@@ -2,10 +2,10 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Daniil Kolesnikov, 2023
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,15 +14,12 @@ msgstr ""
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:10+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2023\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/operator.rst:2
 msgid ":mod:`operator` --- Standard operators as functions"
@@ -35,12 +32,12 @@ msgstr ""
 #: ../../library/operator.rst:18
 msgid ""
 "The :mod:`operator` module exports a set of efficient functions "
-"corresponding to the intrinsic operators of Python.  For example, ``operator."
-"add(x, y)`` is equivalent to the expression ``x+y``. Many function names are "
-"those used for special methods, without the double underscores.  For "
-"backward compatibility, many of these have a variant with the double "
-"underscores kept. The variants without the double underscores are preferred "
-"for clarity."
+"corresponding to the intrinsic operators of Python.  For example, "
+"``operator.add(x, y)`` is equivalent to the expression ``x+y``. Many "
+"function names are those used for special methods, without the double "
+"underscores.  For backward compatibility, many of these have a variant with "
+"the double underscores kept. The variants without the double underscores are"
+" preferred for clarity."
 msgstr ""
 
 #: ../../library/operator.rst:25
@@ -57,13 +54,13 @@ msgstr ""
 
 #: ../../library/operator.rst:45
 msgid ""
-"Perform \"rich comparisons\" between *a* and *b*. Specifically, ``lt(a, b)`` "
-"is equivalent to ``a < b``, ``le(a, b)`` is equivalent to ``a <= b``, "
-"``eq(a, b)`` is equivalent to ``a == b``, ``ne(a, b)`` is equivalent to ``a !"
-"= b``, ``gt(a, b)`` is equivalent to ``a > b`` and ``ge(a, b)`` is "
+"Perform \"rich comparisons\" between *a* and *b*. Specifically, ``lt(a, b)``"
+" is equivalent to ``a < b``, ``le(a, b)`` is equivalent to ``a <= b``, "
+"``eq(a, b)`` is equivalent to ``a == b``, ``ne(a, b)`` is equivalent to ``a "
+"!= b``, ``gt(a, b)`` is equivalent to ``a > b`` and ``ge(a, b)`` is "
 "equivalent to ``a >= b``.  Note that these functions can return any value, "
-"which may or may not be interpretable as a Boolean value.  See :ref:"
-"`comparisons` for more information about rich comparisons."
+"which may or may not be interpretable as a Boolean value.  See "
+":ref:`comparisons` for more information about rich comparisons."
 msgstr ""
 
 #: ../../library/operator.rst:54
@@ -74,10 +71,10 @@ msgstr ""
 
 #: ../../library/operator.rst:61
 msgid ""
-"Return the outcome of :keyword:`not` *obj*.  (Note that there is no :meth:`!"
-"__not__` method for object instances; only the interpreter core defines this "
-"operation.  The result is affected by the :meth:`~object.__bool__` and :meth:"
-"`~object.__len__` methods.)"
+"Return the outcome of :keyword:`not` *obj*.  (Note that there is no "
+":meth:`!__not__` method for object instances; only the interpreter core "
+"defines this operation.  The result is affected by the "
+":meth:`~object.__bool__` and :meth:`~object.__len__` methods.)"
 msgstr ""
 
 #: ../../library/operator.rst:69
@@ -120,8 +117,8 @@ msgstr ""
 
 #: ../../library/operator.rst:115
 msgid ""
-"The result always has exact type :class:`int`.  Previously, the result could "
-"have been an instance of a subclass of ``int``."
+"The result always has exact type :class:`int`.  Previously, the result could"
+" have been an instance of a subclass of ``int``."
 msgstr ""
 
 #: ../../library/operator.rst:125
@@ -245,13 +242,14 @@ msgid ""
 msgstr ""
 
 #: ../../library/operator.rst:277
-msgid "After ``f = attrgetter('name')``, the call ``f(b)`` returns ``b.name``."
+msgid ""
+"After ``f = attrgetter('name')``, the call ``f(b)`` returns ``b.name``."
 msgstr ""
 
 #: ../../library/operator.rst:279
 msgid ""
-"After ``f = attrgetter('name', 'date')``, the call ``f(b)`` returns ``(b."
-"name, b.date)``."
+"After ``f = attrgetter('name', 'date')``, the call ``f(b)`` returns "
+"``(b.name, b.date)``."
 msgstr ""
 
 #: ../../library/operator.rst:282
@@ -284,15 +282,16 @@ msgstr ""
 
 #: ../../library/operator.rst:329
 msgid ""
-"The items can be any type accepted by the operand's :meth:`~object."
-"__getitem__` method.  Dictionaries accept any :term:`hashable` value.  "
-"Lists, tuples, and strings accept an index or a slice:"
+"The items can be any type accepted by the operand's "
+":meth:`~object.__getitem__` method.  Dictionaries accept any "
+":term:`hashable` value.  Lists, tuples, and strings accept an index or a "
+"slice:"
 msgstr ""
 
 #: ../../library/operator.rst:343
 msgid ""
-"Example of using :func:`itemgetter` to retrieve specific fields from a tuple "
-"record:"
+"Example of using :func:`itemgetter` to retrieve specific fields from a tuple"
+" record:"
 msgstr ""
 
 #: ../../library/operator.rst:356
@@ -766,8 +765,8 @@ msgstr ""
 
 #: ../../library/operator.rst:479
 msgid ""
-"For mutable targets such as lists and dictionaries, the in-place method will "
-"perform the update, so no subsequent assignment is necessary:"
+"For mutable targets such as lists and dictionaries, the in-place method will"
+" perform the update, so no subsequent assignment is necessary:"
 msgstr ""
 
 #: ../../library/operator.rst:491

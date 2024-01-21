@@ -2,10 +2,10 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Kristina Mironova, 2021
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,15 +14,12 @@ msgstr ""
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:51+0000\n"
 "Last-Translator: Kristina Mironova, 2021\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../using/editors.rst:7
 msgid "Editors and IDEs"
@@ -41,10 +38,12 @@ msgstr ""
 #: ../../using/editors.rst:12
 msgid ""
 "Please go to `Python Editors <https://wiki.python.org/moin/PythonEditors>`_ "
-"and `Integrated Development Environments <https://wiki.python.org/moin/"
-"IntegratedDevelopmentEnvironments>`_ for a comprehensive list."
+"and `Integrated Development Environments "
+"<https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`_ for a "
+"comprehensive list."
 msgstr ""
-"Пожалуйста, перейдите на  `Python Editors <https://wiki.python.org/moin/"
-"PythonEditors>`_ and `Integrated Development Environments <https://wiki."
-"python.org/moin/IntegratedDevelopmentEnvironments>`_  чтобы получить полный "
-"список."
+"Пожалуйста, перейдите на  `Python Editors "
+"<https://wiki.python.org/moin/PythonEditors>`_ and `Integrated Development "
+"Environments "
+"<https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`_  чтобы "
+"получить полный список."

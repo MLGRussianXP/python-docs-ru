@@ -2,12 +2,12 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Kristina Mironova, 2021
 # alex alev <alex.alev@bk.ru>, 2021
 # Daniil Kolesnikov, 2024
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -16,15 +16,12 @@ msgstr ""
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../reference/lexical_analysis.rst:6
 msgid "Lexical analysis"
@@ -40,9 +37,9 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:14
 msgid ""
 "Python reads program text as Unicode code points; the encoding of a source "
-"file can be given by an encoding declaration and defaults to UTF-8, see :pep:"
-"`3120` for details.  If the source file cannot be decoded, a :exc:"
-"`SyntaxError` is raised."
+"file can be given by an encoding declaration and defaults to UTF-8, see "
+":pep:`3120` for details.  If the source file cannot be decoded, a "
+":exc:`SyntaxError` is raised."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:23
@@ -74,11 +71,11 @@ msgstr ""
 msgid ""
 "A physical line is a sequence of characters terminated by an end-of-line "
 "sequence.  In source files and strings, any of the standard platform line "
-"termination sequences can be used - the Unix form using ASCII LF (linefeed), "
-"the Windows form using the ASCII sequence CR LF (return followed by "
-"linefeed), or the old Macintosh form using the ASCII CR (return) character.  "
-"All of these forms can be used equally, regardless of platform. The end of "
-"input also serves as an implicit terminator for the final physical line."
+"termination sequences can be used - the Unix form using ASCII LF (linefeed),"
+" the Windows form using the ASCII sequence CR LF (return followed by "
+"linefeed), or the old Macintosh form using the ASCII CR (return) character."
+"  All of these forms can be used equally, regardless of platform. The end of"
+" input also serves as an implicit terminator for the final physical line."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:57
@@ -153,8 +150,8 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:128
 msgid ""
 "A line ending in a backslash cannot carry a comment.  A backslash does not "
-"continue a comment.  A backslash does not continue a token except for string "
-"literals (i.e., tokens other than string literals cannot be split across "
+"continue a comment.  A backslash does not continue a token except for string"
+" literals (i.e., tokens other than string literals cannot be split across "
 "physical lines using a backslash).  A backslash is illegal elsewhere on a "
 "line outside a string literal."
 msgstr ""
@@ -207,12 +204,12 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:181
 msgid ""
 "Tabs are replaced (from left to right) by one to eight spaces such that the "
-"total number of characters up to and including the replacement is a multiple "
-"of eight (this is intended to be the same rule as used by Unix).  The total "
-"number of spaces preceding the first non-blank character then determines the "
-"line's indentation.  Indentation cannot be split over multiple physical "
-"lines using backslashes; the whitespace up to the first backslash determines "
-"the indentation."
+"total number of characters up to and including the replacement is a multiple"
+" of eight (this is intended to be the same rule as used by Unix).  The total"
+" number of spaces preceding the first non-blank character then determines "
+"the line's indentation.  Indentation cannot be split over multiple physical "
+"lines using backslashes; the whitespace up to the first backslash determines"
+" the indentation."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:189
@@ -224,9 +221,9 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:193
 msgid ""
-"**Cross-platform compatibility note:** because of the nature of text editors "
-"on non-UNIX platforms, it is unwise to use a mixture of spaces and tabs for "
-"the indentation in a single source file.  It should also be noted that "
+"**Cross-platform compatibility note:** because of the nature of text editors"
+" on non-UNIX platforms, it is unwise to use a mixture of spaces and tabs for"
+" the indentation in a single source file.  It should also be noted that "
 "different platforms may explicitly limit the maximum indentation level."
 msgstr ""
 
@@ -247,11 +244,11 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:208
 msgid ""
 "Before the first line of the file is read, a single zero is pushed on the "
-"stack; this will never be popped off again.  The numbers pushed on the stack "
-"will always be strictly increasing from bottom to top.  At the beginning of "
-"each logical line, the line's indentation level is compared to the top of "
-"the stack. If it is equal, nothing happens. If it is larger, it is pushed on "
-"the stack, and one INDENT token is generated.  If it is smaller, it *must* "
+"stack; this will never be popped off again.  The numbers pushed on the stack"
+" will always be strictly increasing from bottom to top.  At the beginning of"
+" each logical line, the line's indentation level is compared to the top of "
+"the stack. If it is equal, nothing happens. If it is larger, it is pushed on"
+" the stack, and one INDENT token is generated.  If it is smaller, it *must* "
 "be one of the numbers occurring on the stack; all numbers on the stack that "
 "are larger are popped off, and for each number popped off a DEDENT token is "
 "generated.  At the end of the file, a DEDENT token is generated for each "
@@ -282,8 +279,8 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:254
 msgid ""
 "Except at the beginning of a logical line or in string literals, the "
-"whitespace characters space, tab and formfeed can be used interchangeably to "
-"separate tokens.  Whitespace is needed between two tokens only if their "
+"whitespace characters space, tab and formfeed can be used interchangeably to"
+" separate tokens.  Whitespace is needed between two tokens only if their "
 "concatenation could otherwise be interpreted as a different token (e.g., ab "
 "is one token, but a b is two tokens)."
 msgstr ""
@@ -295,8 +292,8 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:266
 msgid ""
 "Besides NEWLINE, INDENT and DEDENT, the following categories of tokens "
-"exist: *identifiers*, *keywords*, *literals*, *operators*, and *delimiters*. "
-"Whitespace characters (other than line terminators, discussed earlier) are "
+"exist: *identifiers*, *keywords*, *literals*, *operators*, and *delimiters*."
+" Whitespace characters (other than line terminators, discussed earlier) are "
 "not tokens, but serve to delimit tokens. Where ambiguity exists, a token "
 "comprises the longest possible string that forms a legal token, when read "
 "from left to right."
@@ -331,8 +328,8 @@ msgstr ""
 msgid ""
 "Python 3.0 introduces additional characters from outside the ASCII range "
 "(see :pep:`3131`).  For these characters, the classification uses the "
-"version of the Unicode Character Database as included in the :mod:"
-"`unicodedata` module."
+"version of the Unicode Character Database as included in the "
+":mod:`unicodedata` module."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:296
@@ -385,9 +382,9 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:317
 msgid ""
-"*Other_ID_Start* - explicit list of characters in `PropList.txt <https://www."
-"unicode.org/Public/15.0.0/ucd/PropList.txt>`_ to support backwards "
-"compatibility"
+"*Other_ID_Start* - explicit list of characters in `PropList.txt "
+"<https://www.unicode.org/Public/15.0.0/ucd/PropList.txt>`_ to support "
+"backwards compatibility"
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:320
@@ -403,8 +400,8 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:325
 msgid ""
 "A non-normative HTML file listing all valid identifier characters for "
-"Unicode 15.0.0 can be found at https://www.unicode.org/Public/15.0.0/ucd/"
-"DerivedCoreProperties.txt"
+"Unicode 15.0.0 can be found at "
+"https://www.unicode.org/Public/15.0.0/ucd/DerivedCoreProperties.txt"
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:333
@@ -425,9 +422,9 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:363
 msgid ""
 "Some identifiers are only reserved under specific contexts. These are known "
-"as *soft keywords*.  The identifiers ``match``, ``case``, ``type`` and ``_`` "
-"can syntactically act as keywords in certain contexts, but this distinction "
-"is done at the parser level, not when tokenizing."
+"as *soft keywords*.  The identifiers ``match``, ``case``, ``type`` and ``_``"
+" can syntactically act as keywords in certain contexts, but this distinction"
+" is done at the parser level, not when tokenizing."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:368
@@ -472,16 +469,16 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:394
 msgid ""
-"In a ``case`` pattern within a :keyword:`match` statement, ``_`` is a :ref:"
-"`soft keyword <soft-keywords>` that denotes a :ref:`wildcard <wildcard-"
+"In a ``case`` pattern within a :keyword:`match` statement, ``_`` is a "
+":ref:`soft keyword <soft-keywords>` that denotes a :ref:`wildcard <wildcard-"
 "patterns>`."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:398
 msgid ""
 "Separately, the interactive interpreter makes the result of the last "
-"evaluation available in the variable ``_``. (It is stored in the :mod:"
-"`builtins` module, alongside built-in functions like ``print``.)"
+"evaluation available in the variable ``_``. (It is stored in the "
+":mod:`builtins` module, alongside built-in functions like ``print``.)"
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:403
@@ -492,8 +489,8 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:408
 msgid ""
-"The name ``_`` is often used in conjunction with internationalization; refer "
-"to the documentation for the :mod:`gettext` module for more information on "
+"The name ``_`` is often used in conjunction with internationalization; refer"
+" to the documentation for the :mod:`gettext` module for more information on "
 "this convention."
 msgstr ""
 
@@ -523,8 +520,8 @@ msgstr ""
 msgid ""
 "Class-private names.  Names in this category, when used within the context "
 "of a class definition, are re-written to use a mangled form to help avoid "
-"name clashes between \"private\" attributes of base and derived classes. See "
-"section :ref:`atom-identifiers`."
+"name clashes between \"private\" attributes of base and derived classes. See"
+" section :ref:`atom-identifiers`."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:432
@@ -549,8 +546,8 @@ msgid ""
 "whitespace is not allowed between the :token:`~python-grammar:stringprefix` "
 "or :token:`~python-grammar:bytesprefix` and the rest of the literal. The "
 "source character set is defined by the encoding declaration; it is UTF-8 if "
-"no encoding declaration is given in the source file; see section :ref:"
-"`encodings`."
+"no encoding declaration is given in the source file; see section "
+":ref:`encodings`."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:484
@@ -558,11 +555,11 @@ msgid ""
 "In plain English: Both types of literals can be enclosed in matching single "
 "quotes (``'``) or double quotes (``\"``).  They can also be enclosed in "
 "matching groups of three single or double quotes (these are generally "
-"referred to as *triple-quoted strings*). The backslash (``\\``) character is "
-"used to give special meaning to otherwise ordinary characters like ``n``, "
+"referred to as *triple-quoted strings*). The backslash (``\\``) character is"
+" used to give special meaning to otherwise ordinary characters like ``n``, "
 "which means 'newline' when escaped (``\\n``). It can also be used to escape "
-"characters that otherwise have a special meaning, such as newline, backslash "
-"itself, or the quote character. See :ref:`escape sequences <escape-"
+"characters that otherwise have a special meaning, such as newline, backslash"
+" itself, or the quote character. See :ref:`escape sequences <escape-"
 "sequences>` below for examples."
 msgstr ""
 
@@ -593,8 +590,8 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:517
 msgid ""
 "Support for the unicode legacy literal (``u'value'``) was reintroduced to "
-"simplify the maintenance of dual Python 2.x and 3.x codebases. See :pep:"
-"`414` for more information."
+"simplify the maintenance of dual Python 2.x and 3.x codebases. See "
+":pep:`414` for more information."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:526
@@ -816,15 +813,15 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:622
 msgid ""
-"Octal escapes with value larger than ``0o377`` produce a :exc:"
-"`DeprecationWarning`."
+"Octal escapes with value larger than ``0o377`` produce a "
+":exc:`DeprecationWarning`."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:626
 msgid ""
-"Octal escapes with value larger than ``0o377`` produce a :exc:"
-"`SyntaxWarning`. In a future Python version they will be eventually a :exc:"
-"`SyntaxError`."
+"Octal escapes with value larger than ``0o377`` produce a "
+":exc:`SyntaxWarning`. In a future Python version they will be eventually a "
+":exc:`SyntaxError`."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:632
@@ -848,8 +845,8 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:647
 msgid ""
-"Any Unicode character can be encoded this way.  Exactly eight hex digits are "
-"required."
+"Any Unicode character can be encoded this way.  Exactly eight hex digits are"
+" required."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:653
@@ -876,10 +873,10 @@ msgstr ""
 msgid ""
 "Even in a raw literal, quotes can be escaped with a backslash, but the "
 "backslash remains in the result; for example, ``r\"\\\"\"`` is a valid "
-"string literal consisting of two characters: a backslash and a double quote; "
-"``r\"\\\"`` is not a valid string literal (even a raw string cannot end in "
-"an odd number of backslashes).  Specifically, *a raw literal cannot end in a "
-"single backslash* (since the backslash would escape the following quote "
+"string literal consisting of two characters: a backslash and a double quote;"
+" ``r\"\\\"`` is not a valid string literal (even a raw string cannot end in "
+"an odd number of backslashes).  Specifically, *a raw literal cannot end in a"
+" single backslash* (since the backslash would escape the following quote "
 "character).  Note also that a single backslash followed by a newline is "
 "interpreted as those two characters as part of the literal, *not* as a line "
 "continuation."
@@ -892,11 +889,11 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:682
 msgid ""
 "Multiple adjacent string or bytes literals (delimited by whitespace), "
-"possibly using different quoting conventions, are allowed, and their meaning "
-"is the same as their concatenation.  Thus, ``\"hello\" 'world'`` is "
+"possibly using different quoting conventions, are allowed, and their meaning"
+" is the same as their concatenation.  Thus, ``\"hello\" 'world'`` is "
 "equivalent to ``\"helloworld\"``.  This feature can be used to reduce the "
-"number of backslashes needed, to split long strings conveniently across long "
-"lines, or even to add comments to parts of strings, for example::"
+"number of backslashes needed, to split long strings conveniently across long"
+" lines, or even to add comments to parts of strings, for example::"
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:693
@@ -924,8 +921,8 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:726
 msgid ""
-"Escape sequences are decoded like in ordinary string literals (except when a "
-"literal is also marked as a raw string).  After decoding, the grammar for "
+"Escape sequences are decoded like in ordinary string literals (except when a"
+" literal is also marked as a raw string).  After decoding, the grammar for "
 "the contents of the string is:"
 msgstr ""
 
@@ -934,8 +931,8 @@ msgid ""
 "The parts of the string outside curly braces are treated literally, except "
 "that any doubled curly braces ``'{{'`` or ``'}}'`` are replaced with the "
 "corresponding single curly brace.  A single opening curly bracket ``'{'`` "
-"marks a replacement field, which starts with a Python expression. To display "
-"both the expression text and its value after evaluation, (useful in "
+"marks a replacement field, which starts with a Python expression. To display"
+" both the expression text and its value after evaluation, (useful in "
 "debugging), an equal sign ``'='`` may be added after the expression. A "
 "conversion field, introduced by an exclamation point ``'!'`` may follow.  A "
 "format specifier may also be appended, introduced by a colon ``':'``. A "
@@ -959,8 +956,8 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:767
 msgid ""
 "Prior to Python 3.7, an :keyword:`await` expression and comprehensions "
-"containing an :keyword:`async for` clause were illegal in the expressions in "
-"formatted string literals due to a problem with the implementation."
+"containing an :keyword:`async for` clause were illegal in the expressions in"
+" formatted string literals due to a problem with the implementation."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:772
@@ -971,13 +968,13 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:776
 msgid ""
-"When the equal sign ``'='`` is provided, the output will have the expression "
-"text, the ``'='`` and the evaluated value. Spaces after the opening brace "
-"``'{'``, within the expression and after the ``'='`` are all retained in the "
-"output. By default, the ``'='`` causes the :func:`repr` of the expression to "
-"be provided, unless there is a format specified. When a format is specified "
-"it defaults to the :func:`str` of the expression unless a conversion ``'!"
-"r'`` is declared."
+"When the equal sign ``'='`` is provided, the output will have the expression"
+" text, the ``'='`` and the evaluated value. Spaces after the opening brace "
+"``'{'``, within the expression and after the ``'='`` are all retained in the"
+" output. By default, the ``'='`` causes the :func:`repr` of the expression "
+"to be provided, unless there is a format specified. When a format is "
+"specified it defaults to the :func:`str` of the expression unless a "
+"conversion ``'!r'`` is declared."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:784
@@ -1004,15 +1001,15 @@ msgstr ""
 msgid ""
 "Top-level format specifiers may include nested replacement fields. These "
 "nested fields may include their own conversion fields and :ref:`format "
-"specifiers <formatspec>`, but may not include more deeply nested replacement "
-"fields. The :ref:`format specifier mini-language <formatspec>` is the same "
+"specifiers <formatspec>`, but may not include more deeply nested replacement"
+" fields. The :ref:`format specifier mini-language <formatspec>` is the same "
 "as that used by the :meth:`str.format` method."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:803
 msgid ""
-"Formatted string literals may be concatenated, but replacement fields cannot "
-"be split across literals."
+"Formatted string literals may be concatenated, but replacement fields cannot"
+" be split across literals."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:806
@@ -1061,8 +1058,8 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:887
 msgid ""
-"There are three types of numeric literals: integers, floating point numbers, "
-"and imaginary numbers.  There are no complex literals (complex numbers can "
+"There are three types of numeric literals: integers, floating point numbers,"
+" and imaginary numbers.  There are no complex literals (complex numbers can "
 "be formed by adding a real number and an imaginary number)."
 msgstr ""
 
@@ -1143,8 +1140,8 @@ msgstr ""
 #: ../../reference/lexical_analysis.rst:986
 msgid ""
 "An imaginary literal yields a complex number with a real part of 0.0.  "
-"Complex numbers are represented as a pair of floating point numbers and have "
-"the same restrictions on their range.  To create a complex number with a "
+"Complex numbers are represented as a pair of floating point numbers and have"
+" the same restrictions on their range.  To create a complex number with a "
 "nonzero real part, add a floating point number to it, e.g., ``(3+4j)``.  "
 "Some examples of imaginary literals::"
 msgstr ""
@@ -1169,8 +1166,8 @@ msgstr ""
 msgid ""
 "The period can also occur in floating-point and imaginary literals.  A "
 "sequence of three periods has a special meaning as an ellipsis literal. The "
-"second half of the list, the augmented assignment operators, serve lexically "
-"as delimiters, but also perform an operation."
+"second half of the list, the augmented assignment operators, serve lexically"
+" as delimiters, but also perform an operation."
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:1033

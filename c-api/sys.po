@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,15 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:50+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../c-api/sys.rst:6
 msgid "Operating System Utilities"
@@ -26,12 +23,12 @@ msgstr ""
 
 #: ../../c-api/sys.rst:10
 msgid ""
-"Return the file system representation for *path*. If the object is a :class:"
-"`str` or :class:`bytes` object, then a new :term:`strong reference` is "
-"returned. If the object implements the :class:`os.PathLike` interface, then :"
-"meth:`~os.PathLike.__fspath__` is returned as long as it is a :class:`str` "
-"or :class:`bytes` object. Otherwise :exc:`TypeError` is raised and ``NULL`` "
-"is returned."
+"Return the file system representation for *path*. If the object is a "
+":class:`str` or :class:`bytes` object, then a new :term:`strong reference` "
+"is returned. If the object implements the :class:`os.PathLike` interface, "
+"then :meth:`~os.PathLike.__fspath__` is returned as long as it is a "
+":class:`str` or :class:`bytes` object. Otherwise :exc:`TypeError` is raised "
+"and ``NULL`` is returned."
 msgstr ""
 
 #: ../../c-api/sys.rst:23
@@ -58,15 +55,15 @@ msgstr ""
 
 #: ../../c-api/sys.rst:40
 msgid ""
-"The C :c:func:`fork` call should only be made from the :ref:`\"main\" thread "
-"<fork-and-threads>` (of the :ref:`\"main\" interpreter <sub-interpreter-"
+"The C :c:func:`fork` call should only be made from the :ref:`\"main\" thread"
+" <fork-and-threads>` (of the :ref:`\"main\" interpreter <sub-interpreter-"
 "support>`).  The same is true for ``PyOS_BeforeFork()``."
 msgstr ""
 
 #: ../../c-api/sys.rst:50
 msgid ""
-"Function to update some internal state after a process fork.  This should be "
-"called from the parent process after calling :c:func:`fork` or any similar "
+"Function to update some internal state after a process fork.  This should be"
+" called from the parent process after calling :c:func:`fork` or any similar "
 "function that clones the current process, regardless of whether process "
 "cloning was successful. Only available on systems where :c:func:`fork` is "
 "defined."
@@ -74,8 +71,8 @@ msgstr ""
 
 #: ../../c-api/sys.rst:57
 msgid ""
-"The C :c:func:`fork` call should only be made from the :ref:`\"main\" thread "
-"<fork-and-threads>` (of the :ref:`\"main\" interpreter <sub-interpreter-"
+"The C :c:func:`fork` call should only be made from the :ref:`\"main\" thread"
+" <fork-and-threads>` (of the :ref:`\"main\" interpreter <sub-interpreter-"
 "support>`).  The same is true for ``PyOS_AfterFork_Parent()``."
 msgstr ""
 
@@ -83,31 +80,31 @@ msgstr ""
 msgid ""
 "Function to update internal interpreter state after a process fork. This "
 "must be called from the child process after calling :c:func:`fork`, or any "
-"similar function that clones the current process, if there is any chance the "
-"process will call back into the Python interpreter. Only available on "
+"similar function that clones the current process, if there is any chance the"
+" process will call back into the Python interpreter. Only available on "
 "systems where :c:func:`fork` is defined."
 msgstr ""
 
 #: ../../c-api/sys.rst:74
 msgid ""
-"The C :c:func:`fork` call should only be made from the :ref:`\"main\" thread "
-"<fork-and-threads>` (of the :ref:`\"main\" interpreter <sub-interpreter-"
+"The C :c:func:`fork` call should only be made from the :ref:`\"main\" thread"
+" <fork-and-threads>` (of the :ref:`\"main\" interpreter <sub-interpreter-"
 "support>`).  The same is true for ``PyOS_AfterFork_Child()``."
 msgstr ""
 
 #: ../../c-api/sys.rst:82
 msgid ""
-":func:`os.register_at_fork` allows registering custom Python functions to be "
-"called by :c:func:`PyOS_BeforeFork()`, :c:func:`PyOS_AfterFork_Parent` and  :"
-"c:func:`PyOS_AfterFork_Child`."
+":func:`os.register_at_fork` allows registering custom Python functions to be"
+" called by :c:func:`PyOS_BeforeFork()`, :c:func:`PyOS_AfterFork_Parent` and"
+"  :c:func:`PyOS_AfterFork_Child`."
 msgstr ""
 
 #: ../../c-api/sys.rst:89
 msgid ""
 "Function to update some internal state after a process fork; this should be "
 "called in the new process if the Python interpreter will continue to be "
-"used. If a new executable is loaded into the new process, this function does "
-"not need to be called."
+"used. If a new executable is loaded into the new process, this function does"
+" not need to be called."
 msgstr ""
 
 #: ../../c-api/sys.rst:94
@@ -118,45 +115,46 @@ msgstr ""
 msgid ""
 "Return true when the interpreter runs out of stack space.  This is a "
 "reliable check, but is only available when :c:macro:`USE_STACKCHECK` is "
-"defined (currently on certain versions of Windows using the Microsoft Visual "
-"C++ compiler). :c:macro:`USE_STACKCHECK` will be defined automatically; you "
-"should never change the definition in your own code."
+"defined (currently on certain versions of Windows using the Microsoft Visual"
+" C++ compiler). :c:macro:`USE_STACKCHECK` will be defined automatically; you"
+" should never change the definition in your own code."
 msgstr ""
 
 #: ../../c-api/sys.rst:109
 msgid ""
 "Return the current signal handler for signal *i*.  This is a thin wrapper "
 "around either :c:func:`!sigaction` or :c:func:`!signal`.  Do not call those "
-"functions directly! :c:type:`PyOS_sighandler_t` is a typedef alias for :c:"
-"expr:`void (\\*)(int)`."
+"functions directly! :c:type:`PyOS_sighandler_t` is a typedef alias for "
+":c:expr:`void (\\*)(int)`."
 msgstr ""
 
 #: ../../c-api/sys.rst:117
 msgid ""
 "Set the signal handler for signal *i* to be *h*; return the old signal "
-"handler. This is a thin wrapper around either :c:func:`!sigaction` or :c:"
-"func:`!signal`.  Do not call those functions directly!  :c:type:"
-"`PyOS_sighandler_t` is a typedef alias for :c:expr:`void (\\*)(int)`."
+"handler. This is a thin wrapper around either :c:func:`!sigaction` or "
+":c:func:`!signal`.  Do not call those functions directly!  "
+":c:type:`PyOS_sighandler_t` is a typedef alias for :c:expr:`void "
+"(\\*)(int)`."
 msgstr ""
 
 #: ../../c-api/sys.rst:125
 msgid ""
 "This function should not be called directly: use the :c:type:`PyConfig` API "
-"with the :c:func:`PyConfig_SetBytesString` function which ensures that :ref:"
-"`Python is preinitialized <c-preinit>`."
+"with the :c:func:`PyConfig_SetBytesString` function which ensures that "
+":ref:`Python is preinitialized <c-preinit>`."
 msgstr ""
 
 #: ../../c-api/sys.rst:129 ../../c-api/sys.rst:196
 msgid ""
-"This function must not be called before :ref:`Python is preinitialized <c-"
-"preinit>` and so that the LC_CTYPE locale is properly configured: see the :c:"
-"func:`Py_PreInitialize` function."
+"This function must not be called before :ref:`Python is preinitialized "
+"<c-preinit>` and so that the LC_CTYPE locale is properly configured: see the"
+" :c:func:`Py_PreInitialize` function."
 msgstr ""
 
 #: ../../c-api/sys.rst:133
 msgid ""
-"Decode a byte string from the :term:`filesystem encoding and error handler`. "
-"If the error handler is :ref:`surrogateescape error handler "
+"Decode a byte string from the :term:`filesystem encoding and error handler`."
+" If the error handler is :ref:`surrogateescape error handler "
 "<surrogateescape>`, undecodable bytes are decoded as characters in range "
 "U+DC80..U+DCFF; and if a byte sequence can be decoded as a surrogate "
 "character, the bytes are escaped using the surrogateescape error handler "
@@ -165,9 +163,9 @@ msgstr ""
 
 #: ../../c-api/sys.rst:140
 msgid ""
-"Return a pointer to a newly allocated wide character string, use :c:func:"
-"`PyMem_RawFree` to free the memory. If size is not ``NULL``, write the "
-"number of wide characters excluding the null character into ``*size``"
+"Return a pointer to a newly allocated wide character string, use "
+":c:func:`PyMem_RawFree` to free the memory. If size is not ``NULL``, write "
+"the number of wide characters excluding the null character into ``*size``"
 msgstr ""
 
 #: ../../c-api/sys.rst:144
@@ -179,9 +177,9 @@ msgstr ""
 
 #: ../../c-api/sys.rst:148 ../../c-api/sys.rst:188
 msgid ""
-"The :term:`filesystem encoding and error handler` are selected by :c:func:"
-"`PyConfig_Read`: see :c:member:`~PyConfig.filesystem_encoding` and :c:member:"
-"`~PyConfig.filesystem_errors` members of :c:type:`PyConfig`."
+"The :term:`filesystem encoding and error handler` are selected by "
+":c:func:`PyConfig_Read`: see :c:member:`~PyConfig.filesystem_encoding` and "
+":c:member:`~PyConfig.filesystem_errors` members of :c:type:`PyConfig`."
 msgstr ""
 
 #: ../../c-api/sys.rst:152
@@ -197,8 +195,8 @@ msgstr ""
 
 #: ../../c-api/sys.rst:160
 msgid ""
-"The :c:func:`PyUnicode_DecodeFSDefaultAndSize` and :c:func:"
-"`PyUnicode_DecodeLocaleAndSize` functions."
+"The :c:func:`PyUnicode_DecodeFSDefaultAndSize` and "
+":c:func:`PyUnicode_DecodeLocaleAndSize` functions."
 msgstr ""
 
 #: ../../c-api/sys.rst:165 ../../c-api/sys.rst:207
@@ -209,8 +207,8 @@ msgstr ""
 
 #: ../../c-api/sys.rst:169
 msgid ""
-"The function now uses the UTF-8 encoding on Windows if :c:member:"
-"`PyPreConfig.legacy_windows_fs_encoding` is zero;"
+"The function now uses the UTF-8 encoding on Windows if "
+":c:member:`PyPreConfig.legacy_windows_fs_encoding` is zero;"
 msgstr ""
 
 #: ../../c-api/sys.rst:176
@@ -242,14 +240,14 @@ msgstr ""
 
 #: ../../c-api/sys.rst:202
 msgid ""
-"The :c:func:`PyUnicode_EncodeFSDefault` and :c:func:`PyUnicode_EncodeLocale` "
-"functions."
+"The :c:func:`PyUnicode_EncodeFSDefault` and :c:func:`PyUnicode_EncodeLocale`"
+" functions."
 msgstr ""
 
 #: ../../c-api/sys.rst:211
 msgid ""
-"The function now uses the UTF-8 encoding on Windows if :c:member:"
-"`PyPreConfig.legacy_windows_fs_encoding` is zero."
+"The function now uses the UTF-8 encoding on Windows if "
+":c:member:`PyPreConfig.legacy_windows_fs_encoding` is zero."
 msgstr ""
 
 #: ../../c-api/sys.rst:219
@@ -260,8 +258,8 @@ msgstr ""
 msgid ""
 "These are utility functions that make functionality from the :mod:`sys` "
 "module accessible to C code.  They all work with the current interpreter "
-"thread's :mod:`sys` module's dict, which is contained in the internal thread "
-"state structure."
+"thread's :mod:`sys` module's dict, which is contained in the internal thread"
+" state structure."
 msgstr ""
 
 #: ../../c-api/sys.rst:227
@@ -273,8 +271,8 @@ msgstr ""
 #: ../../c-api/sys.rst:232
 msgid ""
 "Set *name* in the :mod:`sys` module to *v* unless *v* is ``NULL``, in which "
-"case *name* is deleted from the sys module. Returns ``0`` on success, ``-1`` "
-"on error."
+"case *name* is deleted from the sys module. Returns ``0`` on success, ``-1``"
+" on error."
 msgstr ""
 
 #: ../../c-api/sys.rst:238
@@ -285,15 +283,15 @@ msgstr ""
 
 #: ../../c-api/sys.rst:243 ../../c-api/sys.rst:254
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"warnoptions` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: setting "
+":c:member:`PyConfig.warnoptions` should be used instead, see :ref:`Python "
+"Initialization Configuration <init-config>`."
 msgstr ""
 
 #: ../../c-api/sys.rst:247
 msgid ""
-"Append *s* to :data:`sys.warnoptions`. This function must be called prior "
-"to :c:func:`Py_Initialize` in order to affect the warnings filter list."
+"Append *s* to :data:`sys.warnoptions`. This function must be called prior to"
+" :c:func:`Py_Initialize` in order to affect the warnings filter list."
 msgstr ""
 
 #: ../../c-api/sys.rst:258
@@ -303,25 +301,25 @@ msgstr ""
 #: ../../c-api/sys.rst:260
 msgid ""
 "Note: this function is not currently usable from outside the CPython "
-"implementation, as it must be called prior to the implicit import of :mod:"
-"`warnings` in :c:func:`Py_Initialize` to be effective, but can't be called "
-"until enough of the runtime has been initialized to permit the creation of "
-"Unicode objects."
+"implementation, as it must be called prior to the implicit import of "
+":mod:`warnings` in :c:func:`Py_Initialize` to be effective, but can't be "
+"called until enough of the runtime has been initialized to permit the "
+"creation of Unicode objects."
 msgstr ""
 
 #: ../../c-api/sys.rst:270
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"module_search_paths` and :c:member:`PyConfig.module_search_paths_set` should "
-"be used instead, see :ref:`Python Initialization Configuration <init-"
-"config>`."
+"This API is kept for backward compatibility: setting "
+":c:member:`PyConfig.module_search_paths` and "
+":c:member:`PyConfig.module_search_paths_set` should be used instead, see "
+":ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
 
 #: ../../c-api/sys.rst:275
 msgid ""
 "Set :data:`sys.path` to a list object of paths found in *path* which should "
-"be a list of paths separated with the platform's search path delimiter (``:"
-"`` on Unix, ``;`` on Windows)."
+"be a list of paths separated with the platform's search path delimiter "
+"(``:`` on Unix, ``;`` on Windows)."
 msgstr ""
 
 #: ../../c-api/sys.rst:283
@@ -355,22 +353,22 @@ msgstr ""
 
 #: ../../c-api/sys.rst:304
 msgid ""
-"Function similar to PySys_WriteStdout() but format the message using :c:func:"
-"`PyUnicode_FromFormatV` and don't truncate the message to an arbitrary "
-"length."
+"Function similar to PySys_WriteStdout() but format the message using "
+":c:func:`PyUnicode_FromFormatV` and don't truncate the message to an "
+"arbitrary length."
 msgstr ""
 
 #: ../../c-api/sys.rst:312
 msgid ""
-"As :c:func:`PySys_FormatStdout`, but write to :data:`sys.stderr` or *stderr* "
-"instead."
+"As :c:func:`PySys_FormatStdout`, but write to :data:`sys.stderr` or *stderr*"
+" instead."
 msgstr ""
 
 #: ../../c-api/sys.rst:319
 msgid ""
-"This API is kept for backward compatibility: setting :c:member:`PyConfig."
-"xoptions` should be used instead, see :ref:`Python Initialization "
-"Configuration <init-config>`."
+"This API is kept for backward compatibility: setting "
+":c:member:`PyConfig.xoptions` should be used instead, see :ref:`Python "
+"Initialization Configuration <init-config>`."
 msgstr ""
 
 #: ../../c-api/sys.rst:323
@@ -382,8 +380,9 @@ msgstr ""
 
 #: ../../c-api/sys.rst:333
 msgid ""
-"Return the current dictionary of :option:`-X` options, similarly to :data:"
-"`sys._xoptions`.  On error, ``NULL`` is returned and an exception is set."
+"Return the current dictionary of :option:`-X` options, similarly to "
+":data:`sys._xoptions`.  On error, ``NULL`` is returned and an exception is "
+"set."
 msgstr ""
 
 #: ../../c-api/sys.rst:342
@@ -405,8 +404,9 @@ msgstr ""
 
 #: ../../c-api/sys.rst:353
 msgid ""
-"Note that ``#`` format characters should always be treated as :c:type:"
-"`Py_ssize_t`, regardless of whether ``PY_SSIZE_T_CLEAN`` was defined."
+"Note that ``#`` format characters should always be treated as "
+":c:type:`Py_ssize_t`, regardless of whether ``PY_SSIZE_T_CLEAN`` was "
+"defined."
 msgstr ""
 
 #: ../../c-api/sys.rst:356
@@ -421,8 +421,8 @@ msgstr ""
 
 #: ../../c-api/sys.rst:368
 msgid ""
-"Append the callable *hook* to the list of active auditing hooks. Return zero "
-"on success and non-zero on failure. If the runtime has been initialized, "
+"Append the callable *hook* to the list of active auditing hooks. Return zero"
+" on success and non-zero on failure. If the runtime has been initialized, "
 "also set an error on failure. Hooks added through this API are called for "
 "all interpreters created by the runtime."
 msgstr ""
@@ -438,23 +438,23 @@ msgstr ""
 msgid ""
 "This function is safe to call before :c:func:`Py_Initialize`. When called "
 "after runtime initialization, existing audit hooks are notified and may "
-"silently abort the operation by raising an error subclassed from :class:"
-"`Exception` (other errors will not be silenced)."
+"silently abort the operation by raising an error subclassed from "
+":class:`Exception` (other errors will not be silenced)."
 msgstr ""
 
 #: ../../c-api/sys.rst:383
 msgid ""
 "The hook function is of type :c:expr:`int (*)(const char *event, PyObject "
-"*args, void *userData)`, where *args* is guaranteed to be a :c:type:"
-"`PyTupleObject`. The hook function is always called with the GIL held by the "
-"Python interpreter that raised the event."
+"*args, void *userData)`, where *args* is guaranteed to be a "
+":c:type:`PyTupleObject`. The hook function is always called with the GIL "
+"held by the Python interpreter that raised the event."
 msgstr ""
 
 #: ../../c-api/sys.rst:388
 msgid ""
 "See :pep:`578` for a detailed description of auditing.  Functions in the "
-"runtime and standard library that raise events are listed in the :ref:`audit "
-"events table <audit-events>`. Details are in each function's documentation."
+"runtime and standard library that raise events are listed in the :ref:`audit"
+" events table <audit-events>`. Details are in each function's documentation."
 msgstr ""
 
 #: ../../c-api/sys.rst:393
@@ -479,11 +479,11 @@ msgstr ""
 #: ../../c-api/sys.rst:414
 msgid ""
 "Print a fatal error message and kill the process.  No cleanup is performed. "
-"This function should only be invoked when a condition is detected that would "
-"make it dangerous to continue using the Python interpreter; e.g., when the "
+"This function should only be invoked when a condition is detected that would"
+" make it dangerous to continue using the Python interpreter; e.g., when the "
 "object administration appears to be corrupted.  On Unix, the standard C "
-"library function :c:func:`!abort` is called which will attempt to produce a :"
-"file:`core` file."
+"library function :c:func:`!abort` is called which will attempt to produce a "
+":file:`core` file."
 msgstr ""
 
 #: ../../c-api/sys.rst:421
@@ -499,9 +499,9 @@ msgstr ""
 
 #: ../../c-api/sys.rst:435
 msgid ""
-"Exit the current process.  This calls :c:func:`Py_FinalizeEx` and then calls "
-"the standard C library function ``exit(status)``.  If :c:func:"
-"`Py_FinalizeEx` indicates an error, the exit status is set to 120."
+"Exit the current process.  This calls :c:func:`Py_FinalizeEx` and then calls"
+" the standard C library function ``exit(status)``.  If "
+":c:func:`Py_FinalizeEx` indicates an error, the exit status is set to 120."
 msgstr ""
 
 #: ../../c-api/sys.rst:439
@@ -516,8 +516,8 @@ msgid ""
 "registration is successful, :c:func:`Py_AtExit` returns ``0``; on failure, "
 "it returns ``-1``.  The cleanup function registered last is called first. "
 "Each cleanup function will be called at most once.  Since Python's internal "
-"finalization will have completed before the cleanup function, no Python APIs "
-"should be called by *func*."
+"finalization will have completed before the cleanup function, no Python APIs"
+" should be called by *func*."
 msgstr ""
 
 #: ../../c-api/sys.rst:412

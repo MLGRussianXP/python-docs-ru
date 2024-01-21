@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,15 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:15+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/tkinter.messagebox.rst:2
 msgid ":mod:`tkinter.messagebox` --- Tkinter message prompts"
@@ -40,9 +37,9 @@ msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:23
 msgid ""
-"Create a message window with an application-specified message, an icon and a "
-"set of buttons. Each of the buttons in the message window is identified by a "
-"unique symbolic name (see the *type* options)."
+"Create a message window with an application-specified message, an icon and a"
+" set of buttons. Each of the buttons in the message window is identified by "
+"a unique symbolic name (see the *type* options)."
 msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:27
@@ -56,8 +53,8 @@ msgstr ""
 #: ../../library/tkinter.messagebox.rst:30
 msgid ""
 "Specifies the function to invoke when the user closes the dialog. The name "
-"of the button clicked by the user to close the dialog is passed as argument. "
-"This is only available on macOS."
+"of the button clicked by the user to close the dialog is passed as argument."
+" This is only available on macOS."
 msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:39
@@ -136,9 +133,9 @@ msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:72
 msgid ""
-"Display a message window and wait for the user to select one of the buttons. "
-"Then return the symbolic name of the selected button. Keyword arguments can "
-"override options specified in the constructor."
+"Display a message window and wait for the user to select one of the buttons."
+" Then return the symbolic name of the selected button. Keyword arguments can"
+" override options specified in the constructor."
 msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:76
@@ -147,8 +144,8 @@ msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:80
 msgid ""
-"Creates and displays an information message box with the specified title and "
-"message."
+"Creates and displays an information message box with the specified title and"
+" message."
 msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:83
@@ -173,20 +170,22 @@ msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:99
 msgid ""
-"Ask a question. By default shows buttons :data:`YES` and :data:`NO`. Returns "
-"the symbolic name of the selected button."
+"Ask a question. By default shows buttons :data:`YES` and :data:`NO`. Returns"
+" the symbolic name of the selected button."
 msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:104
 msgid ""
-"Ask if operation should proceed. Shows buttons :data:`OK` and :data:"
-"`CANCEL`. Returns ``True`` if the answer is ok and ``False`` otherwise."
+"Ask if operation should proceed. Shows buttons :data:`OK` and "
+":data:`CANCEL`. Returns ``True`` if the answer is ok and ``False`` "
+"otherwise."
 msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:109
 msgid ""
-"Ask if operation should be retried. Shows buttons :data:`RETRY` and :data:"
-"`CANCEL`. Return ``True`` if the answer is yes and ``False`` otherwise."
+"Ask if operation should be retried. Shows buttons :data:`RETRY` and "
+":data:`CANCEL`. Return ``True`` if the answer is yes and ``False`` "
+"otherwise."
 msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:114
@@ -212,8 +211,8 @@ msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:150
 msgid ""
-"Displays three buttons whose symbolic names are :data:`ABORT`, :data:`RETRY` "
-"and :data:`IGNORE`."
+"Displays three buttons whose symbolic names are :data:`ABORT`, :data:`RETRY`"
+" and :data:`IGNORE`."
 msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:157
@@ -227,8 +226,8 @@ msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:168
 msgid ""
-"Displays two buttons whose symbolic names are :data:`RETRY` and :data:"
-"`CANCEL`."
+"Displays two buttons whose symbolic names are :data:`RETRY` and "
+":data:`CANCEL`."
 msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:174
@@ -238,8 +237,8 @@ msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:180
 msgid ""
-"Displays three buttons whose symbolic names are :data:`YES`, :data:`NO` and :"
-"data:`CANCEL`."
+"Displays three buttons whose symbolic names are :data:`YES`, :data:`NO` and "
+":data:`CANCEL`."
 msgstr ""
 
 #: ../../library/tkinter.messagebox.rst:185

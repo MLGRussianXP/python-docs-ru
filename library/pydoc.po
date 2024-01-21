@@ -2,10 +2,10 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Daniil Kolesnikov, 2024
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,15 +14,12 @@ msgstr ""
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/pydoc.rst:2
 msgid ":mod:`pydoc` --- Documentation generator and online help system"
@@ -46,8 +43,8 @@ msgid ""
 "object, and recursively of its documentable members.  If there is no "
 "docstring, :mod:`pydoc` tries to obtain a description from the block of "
 "comment lines just above the definition of the class, function or method in "
-"the source file, or at the top of the module (see :func:`inspect."
-"getcomments`)."
+"the source file, or at the top of the module (see "
+":func:`inspect.getcomments`)."
 msgstr ""
 
 #: ../../library/pydoc.rst:30
@@ -55,16 +52,16 @@ msgid ""
 "The built-in function :func:`help` invokes the online help system in the "
 "interactive interpreter, which uses :mod:`pydoc` to generate its "
 "documentation as text on the console.  The same text documentation can also "
-"be viewed from outside the Python interpreter by running :program:`pydoc` as "
-"a script at the operating system's command prompt. For example, running ::"
+"be viewed from outside the Python interpreter by running :program:`pydoc` as"
+" a script at the operating system's command prompt. For example, running ::"
 msgstr ""
 
 #: ../../library/pydoc.rst:38
 msgid ""
 "at a shell prompt will display documentation on the :mod:`sys` module, in a "
-"style similar to the manual pages shown by the Unix :program:`man` command.  "
-"The argument to :program:`pydoc` can be the name of a function, module, or "
-"package, or a dotted reference to a class, method, or function within a "
+"style similar to the manual pages shown by the Unix :program:`man` command."
+"  The argument to :program:`pydoc` can be the name of a function, module, or"
+" package, or a dotted reference to a class, method, or function within a "
 "module or module in a package.  If the argument to :program:`pydoc` looks "
 "like a path (that is, it contains the path separator for your operating "
 "system, such as a slash in Unix), and refers to an existing Python source "
@@ -104,11 +101,11 @@ msgstr ""
 #: ../../library/pydoc.rst:67
 msgid ""
 "You can also use :program:`pydoc` to start an HTTP server on the local "
-"machine that will serve documentation to visiting web browsers.  :program:"
-"`python -m pydoc -p 1234` will start a HTTP server on port 1234, allowing "
-"you to browse the documentation at ``http://localhost:1234/`` in your "
-"preferred web browser. Specifying ``0`` as the port number will select an "
-"arbitrary unused port."
+"machine that will serve documentation to visiting web browsers.  "
+":program:`python -m pydoc -p 1234` will start a HTTP server on port 1234, "
+"allowing you to browse the documentation at ``http://localhost:1234/`` in "
+"your preferred web browser. Specifying ``0`` as the port number will select "
+"an arbitrary unused port."
 msgstr ""
 
 #: ../../library/pydoc.rst:73
@@ -125,8 +122,8 @@ msgid ""
 ":program:`python -m pydoc -b` will start the server and additionally open a "
 "web browser to a module index page.  Each served page has a navigation bar "
 "at the top where you can *Get* help on an individual item, *Search* all "
-"modules with a keyword in their synopsis line, and go to the *Module index*, "
-"*Topics* and *Keywords* pages."
+"modules with a keyword in their synopsis line, and go to the *Module index*,"
+" *Topics* and *Keywords* pages."
 msgstr ""
 
 #: ../../library/pydoc.rst:85
@@ -139,11 +136,12 @@ msgstr ""
 
 #: ../../library/pydoc.rst:90
 msgid ""
-"Module docs for core modules are assumed to reside in ``https://docs.python."
-"org/X.Y/library/`` where ``X`` and ``Y`` are the major and minor version "
-"numbers of the Python interpreter.  This can be overridden by setting the :"
-"envvar:`PYTHONDOCS` environment variable to a different URL or to a local "
-"directory containing the Library Reference Manual pages."
+"Module docs for core modules are assumed to reside in "
+"``https://docs.python.org/X.Y/library/`` where ``X`` and ``Y`` are the major"
+" and minor version numbers of the Python interpreter.  This can be "
+"overridden by setting the :envvar:`PYTHONDOCS` environment variable to a "
+"different URL or to a local directory containing the Library Reference "
+"Manual pages."
 msgstr ""
 
 #: ../../library/pydoc.rst:97
@@ -156,15 +154,16 @@ msgstr ""
 
 #: ../../library/pydoc.rst:103
 msgid ""
-":mod:`pydoc` now uses :func:`inspect.signature` rather than :func:`inspect."
-"getfullargspec` to extract signature information from callables."
+":mod:`pydoc` now uses :func:`inspect.signature` rather than "
+":func:`inspect.getfullargspec` to extract signature information from "
+"callables."
 msgstr ""
 
 #: ../../library/pydoc.rst:108
 msgid "Added the ``-n`` option."
 msgstr ""
 
-#: ../../library/pydoc.rst:12
+#: ../../library/pydoc.rst:12 ../../library/pydoc.rst:12
 msgid "documentation"
 msgstr ""
 
@@ -172,7 +171,7 @@ msgstr ""
 msgid "generation"
 msgstr ""
 
-#: ../../library/pydoc.rst:12
+#: ../../library/pydoc.rst:12 ../../library/pydoc.rst:12
 msgid "online"
 msgstr ""
 

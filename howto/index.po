@@ -2,10 +2,10 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Dmitriy Q, 2022
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,15 +14,12 @@ msgstr ""
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
 "Last-Translator: Dmitriy Q, 2022\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../howto/index.rst:3
 msgid "Python HOWTOs"
@@ -30,15 +27,15 @@ msgstr "Python КакСде"
 
 #: ../../howto/index.rst:5
 msgid ""
-"Python HOWTOs are documents that cover a single, specific topic, and attempt "
-"to cover it fairly completely. Modelled on the Linux Documentation Project's "
-"HOWTO collection, this collection is an effort to foster documentation "
-"that's more detailed than the Python Library Reference."
+"Python HOWTOs are documents that cover a single, specific topic, and attempt"
+" to cover it fairly completely. Modelled on the Linux Documentation "
+"Project's HOWTO collection, this collection is an effort to foster "
+"documentation that's more detailed than the Python Library Reference."
 msgstr ""
 "Python КакСде - это документы, которые охватывают одну конкретную тему и "
 "пытаются охватить ее достаточно полно. Созданная по образцу коллекции HOWTO "
-"проекта документации Linux, эта коллекция представляет собой попытку создать "
-"документацию, которая была бы более подробной, чем ссылка на библиотеку "
+"проекта документации Linux, эта коллекция представляет собой попытку создать"
+" документацию, которая была бы более подробной, чем ссылка на библиотеку "
 "Python."
 
 #: ../../howto/index.rst:11

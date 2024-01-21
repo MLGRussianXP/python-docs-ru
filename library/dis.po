@@ -2,10 +2,10 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Daniil Kolesnikov, 2024
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,15 +14,12 @@ msgstr ""
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:04+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/dis.rst:2
 msgid ":mod:`dis` --- Disassembler for Python bytecode"
@@ -36,8 +33,8 @@ msgstr ""
 msgid ""
 "The :mod:`dis` module supports the analysis of CPython :term:`bytecode` by "
 "disassembling it. The CPython bytecode which this module takes as an input "
-"is defined in the file :file:`Include/opcode.h` and used by the compiler and "
-"the interpreter."
+"is defined in the file :file:`Include/opcode.h` and used by the compiler and"
+" the interpreter."
 msgstr ""
 
 #: ../../library/dis.rst:24
@@ -62,19 +59,19 @@ msgstr ""
 
 #: ../../library/dis.rst:37
 msgid ""
-"Some instructions are accompanied by one or more inline cache entries, which "
-"take the form of :opcode:`CACHE` instructions. These instructions are hidden "
-"by default, but can be shown by passing ``show_caches=True`` to any :mod:"
-"`dis` utility. Furthermore, the interpreter now adapts the bytecode to "
-"specialize it for different runtime conditions. The adaptive bytecode can be "
-"shown by passing ``adaptive=True``."
+"Some instructions are accompanied by one or more inline cache entries, which"
+" take the form of :opcode:`CACHE` instructions. These instructions are "
+"hidden by default, but can be shown by passing ``show_caches=True`` to any "
+":mod:`dis` utility. Furthermore, the interpreter now adapts the bytecode to "
+"specialize it for different runtime conditions. The adaptive bytecode can be"
+" shown by passing ``adaptive=True``."
 msgstr ""
 
 #: ../../library/dis.rst:45
 msgid ""
 "The argument of a jump is the offset of the target instruction relative to "
-"the instruction that appears immediately after the jump instruction's :"
-"opcode:`CACHE` entries."
+"the instruction that appears immediately after the jump instruction's "
+":opcode:`CACHE` entries."
 msgstr ""
 
 #: ../../library/dis.rst:50
@@ -90,8 +87,8 @@ msgstr ""
 
 #: ../../library/dis.rst:59
 msgid ""
-"the following command can be used to display the disassembly of :func:`!"
-"myfunc`:"
+"the following command can be used to display the disassembly of "
+":func:`!myfunc`:"
 msgstr ""
 
 #: ../../library/dis.rst:72
@@ -103,7 +100,8 @@ msgid "Command-line interface"
 msgstr ""
 
 #: ../../library/dis.rst:79
-msgid "The :mod:`dis` module can be invoked as a script from the command line:"
+msgid ""
+"The :mod:`dis` module can be invoked as a script from the command line:"
 msgstr ""
 
 #: ../../library/dis.rst:85
@@ -117,8 +115,8 @@ msgstr ""
 #: ../../library/dis.rst:93
 msgid ""
 "If :file:`infile` is specified, its disassembled code will be written to "
-"stdout. Otherwise, disassembly is performed on compiled source code recieved "
-"from stdin."
+"stdout. Otherwise, disassembly is performed on compiled source code recieved"
+" from stdin."
 msgstr ""
 
 #: ../../library/dis.rst:97
@@ -127,9 +125,9 @@ msgstr ""
 
 #: ../../library/dis.rst:101
 msgid ""
-"The bytecode analysis API allows pieces of Python code to be wrapped in a :"
-"class:`Bytecode` object that provides easy access to details of the compiled "
-"code."
+"The bytecode analysis API allows pieces of Python code to be wrapped in a "
+":class:`Bytecode` object that provides easy access to details of the "
+"compiled code."
 msgstr ""
 
 #: ../../library/dis.rst:108
@@ -142,16 +140,16 @@ msgstr ""
 #: ../../library/dis.rst:112
 msgid ""
 "This is a convenience wrapper around many of the functions listed below, "
-"most notably :func:`get_instructions`, as iterating over a :class:`Bytecode` "
-"instance yields the bytecode operations as :class:`Instruction` instances."
+"most notably :func:`get_instructions`, as iterating over a :class:`Bytecode`"
+" instance yields the bytecode operations as :class:`Instruction` instances."
 msgstr ""
 
 #: ../../library/dis.rst:116 ../../library/dis.rst:304
 msgid ""
-"If *first_line* is not ``None``, it indicates the line number that should be "
-"reported for the first source line in the disassembled code.  Otherwise, the "
-"source line information (if any) is taken directly from the disassembled "
-"code object."
+"If *first_line* is not ``None``, it indicates the line number that should be"
+" reported for the first source line in the disassembled code.  Otherwise, "
+"the source line information (if any) is taken directly from the disassembled"
+" code object."
 msgstr ""
 
 #: ../../library/dis.rst:121
@@ -163,8 +161,8 @@ msgstr ""
 
 #: ../../library/dis.rst:125
 msgid ""
-"If *show_caches* is ``True``, :meth:`.dis` will display inline cache entries "
-"used by the interpreter to specialize the bytecode."
+"If *show_caches* is ``True``, :meth:`.dis` will display inline cache entries"
+" used by the interpreter to specialize the bytecode."
 msgstr ""
 
 #: ../../library/dis.rst:128
@@ -189,8 +187,8 @@ msgstr ""
 
 #: ../../library/dis.rst:146
 msgid ""
-"Return a formatted view of the bytecode operations (the same as printed by :"
-"func:`dis.dis`, but returned as a multi-line string)."
+"Return a formatted view of the bytecode operations (the same as printed by "
+":func:`dis.dis`, but returned as a multi-line string)."
 msgstr ""
 
 #: ../../library/dis.rst:151
@@ -221,8 +219,8 @@ msgstr ""
 #: ../../library/dis.rst:178
 msgid ""
 "The :mod:`dis` module also defines the following analysis functions that "
-"convert the input directly to the desired output. They can be useful if only "
-"a single operation is being performed, so the intermediate analysis object "
+"convert the input directly to the desired output. They can be useful if only"
+" a single operation is being performed, so the intermediate analysis object "
 "isn't useful:"
 msgstr ""
 
@@ -262,8 +260,8 @@ msgstr ""
 msgid ""
 "Disassemble the *x* object.  *x* can denote either a module, a class, a "
 "method, a function, a generator, an asynchronous generator, a coroutine, a "
-"code object, a string of source code or a byte sequence of raw bytecode. For "
-"a module, it disassembles all functions. For a class, it disassembles all "
+"code object, a string of source code or a byte sequence of raw bytecode. For"
+" a module, it disassembles all functions. For a class, it disassembles all "
 "methods (including class and static methods). For a code object or sequence "
 "of raw bytecode, it prints one line per bytecode instruction. It also "
 "recursively disassembles nested code objects. These can include generator "
@@ -369,10 +367,10 @@ msgstr ""
 
 #: ../../library/dis.rst:319
 msgid ""
-"This generator function uses the :meth:`~codeobject.co_lines` method of the :"
-"ref:`code object <code-objects>` *code* to find the offsets which are starts "
-"of lines in the source code.  They are generated as ``(offset, lineno)`` "
-"pairs."
+"This generator function uses the :meth:`~codeobject.co_lines` method of the "
+":ref:`code object <code-objects>` *code* to find the offsets which are "
+"starts of lines in the source code.  They are generated as ``(offset, "
+"lineno)`` pairs."
 msgstr ""
 
 #: ../../library/dis.rst:324
@@ -381,15 +379,15 @@ msgstr ""
 
 #: ../../library/dis.rst:327
 msgid ""
-"The :pep:`626` :meth:`~codeobject.co_lines` method is used instead of the :"
-"attr:`~codeobject.co_firstlineno` and :attr:`~codeobject.co_lnotab` "
+"The :pep:`626` :meth:`~codeobject.co_lines` method is used instead of the "
+":attr:`~codeobject.co_firstlineno` and :attr:`~codeobject.co_lnotab` "
 "attributes of the :ref:`code object <code-objects>`."
 msgstr ""
 
 #: ../../library/dis.rst:335
 msgid ""
-"Detect all offsets in the raw compiled bytecode string *code* which are jump "
-"targets, and return a list of these offsets."
+"Detect all offsets in the raw compiled bytecode string *code* which are jump"
+" targets, and return a list of these offsets."
 msgstr ""
 
 #: ../../library/dis.rst:341
@@ -400,8 +398,8 @@ msgstr ""
 msgid ""
 "If the code has a jump target and *jump* is ``True``, :func:`~stack_effect` "
 "will return the stack effect of jumping.  If *jump* is ``False``, it will "
-"return the stack effect of not jumping. And if *jump* is ``None`` (default), "
-"it will return the maximal stack effect of both cases."
+"return the stack effect of not jumping. And if *jump* is ``None`` (default),"
+" it will return the maximal stack effect of both cases."
 msgstr ""
 
 #: ../../library/dis.rst:350
@@ -569,8 +567,8 @@ msgstr ""
 
 #: ../../library/dis.rst:537
 msgid ""
-"If ``STACK[-1]`` is a :term:`generator iterator` or :term:`coroutine` object "
-"it is left as is.  Otherwise, implements ``STACK[-1] = iter(STACK[-1])``."
+"If ``STACK[-1]`` is a :term:`generator iterator` or :term:`coroutine` object"
+" it is left as is.  Otherwise, implements ``STACK[-1] = iter(STACK[-1])``."
 msgstr ""
 
 #: ../../library/dis.rst:543
@@ -579,16 +577,16 @@ msgstr ""
 
 #: ../../library/dis.rst:545
 msgid ""
-"Binary operations remove the top two items from the stack (``STACK[-1]`` and "
-"``STACK[-2]``). They perform the operation, then put the result back on the "
-"stack."
+"Binary operations remove the top two items from the stack (``STACK[-1]`` and"
+" ``STACK[-2]``). They perform the operation, then put the result back on the"
+" stack."
 msgstr ""
 
 #: ../../library/dis.rst:548
 msgid ""
-"In-place operations are like binary operations, but the operation is done in-"
-"place when ``STACK[-2]`` supports it, and the resulting ``STACK[-1]`` may be "
-"(but does not have to be) the original ``STACK[-2]``."
+"In-place operations are like binary operations, but the operation is done "
+"in-place when ``STACK[-2]`` supports it, and the resulting ``STACK[-1]`` may"
+" be (but does not have to be) the original ``STACK[-2]``."
 msgstr ""
 
 #: ../../library/dis.rst:555
@@ -654,9 +652,9 @@ msgstr ""
 #: ../../library/dis.rst:658
 msgid ""
 "Terminates an :keyword:`async for` loop.  Handles an exception raised when "
-"awaiting a next item. The stack contains the async iterable in ``STACK[-2]`` "
-"and the raised exception in ``STACK[-1]``. Both are popped. If the exception "
-"is not :exc:`StopAsyncIteration`, it is re-raised."
+"awaiting a next item. The stack contains the async iterable in ``STACK[-2]``"
+" and the raised exception in ``STACK[-1]``. Both are popped. If the "
+"exception is not :exc:`StopAsyncIteration`, it is re-raised."
 msgstr ""
 
 #: ../../library/dis.rst:665 ../../library/dis.rst:770
@@ -667,10 +665,10 @@ msgstr ""
 
 #: ../../library/dis.rst:671
 msgid ""
-"Handles an exception raised during a :meth:`~generator.throw` or :meth:"
-"`~generator.close` call through the current frame.  If ``STACK[-1]`` is an "
-"instance of :exc:`StopIteration`, pop three values from the stack and push "
-"its ``value`` member.  Otherwise, re-raise ``STACK[-1]``."
+"Handles an exception raised during a :meth:`~generator.throw` or "
+":meth:`~generator.close` call through the current frame.  If ``STACK[-1]`` "
+"is an instance of :exc:`StopIteration`, pop three values from the stack and "
+"push its ``value`` member.  Otherwise, re-raise ``STACK[-1]``."
 msgstr ""
 
 #: ../../library/dis.rst:681
@@ -703,10 +701,10 @@ msgstr ""
 
 #: ../../library/dis.rst:727
 msgid ""
-"For all of the :opcode:`SET_ADD`, :opcode:`LIST_APPEND` and :opcode:"
-"`MAP_ADD` instructions, while the added value or key/value pair is popped "
-"off, the container object remains on the stack so that it is available for "
-"further iterations of the loop."
+"For all of the :opcode:`SET_ADD`, :opcode:`LIST_APPEND` and "
+":opcode:`MAP_ADD` instructions, while the added value or key/value pair is "
+"popped off, the container object remains on the stack so that it is "
+"available for further iterations of the loop."
 msgstr ""
 
 #: ../../library/dis.rst:735
@@ -746,9 +744,9 @@ msgstr ""
 
 #: ../../library/dis.rst:775
 msgid ""
-"Re-raises the exception currently on top of the stack. If oparg is non-zero, "
-"pops an additional value from the stack which is used to set :attr:`~frame."
-"f_lasti` of the current frame."
+"Re-raises the exception currently on top of the stack. If oparg is non-zero,"
+" pops an additional value from the stack which is used to set "
+":attr:`~frame.f_lasti` of the current frame."
 msgstr ""
 
 #: ../../library/dis.rst:786
@@ -767,8 +765,8 @@ msgstr ""
 
 #: ../../library/dis.rst:802
 msgid ""
-"Performs exception matching for ``except*``. Applies ``split(STACK[-1])`` on "
-"the exception group representing ``STACK[-2]``."
+"Performs exception matching for ``except*``. Applies ``split(STACK[-1])`` on"
+" the exception group representing ``STACK[-2]``."
 msgstr ""
 
 #: ../../library/dis.rst:805
@@ -781,8 +779,8 @@ msgstr ""
 
 #: ../../library/dis.rst:814
 msgid ""
-"Calls the function in position 4 on the stack with arguments (type, val, tb) "
-"representing the exception at the top of the stack. Used to implement the "
+"Calls the function in position 4 on the stack with arguments (type, val, tb)"
+" representing the exception at the top of the stack. Used to implement the "
 "call ``context_manager.__exit__(*exc_info())`` when an exception has "
 "occurred in a :keyword:`with` statement."
 msgstr ""
@@ -801,16 +799,16 @@ msgstr ""
 
 #: ../../library/dis.rst:836
 msgid ""
-"Pushes :func:`!builtins.__build_class__` onto the stack.  It is later called "
-"to construct a class."
+"Pushes :func:`!builtins.__build_class__` onto the stack.  It is later called"
+" to construct a class."
 msgstr ""
 
 #: ../../library/dis.rst:842
 msgid ""
 "This opcode performs several operations before a with block starts.  First, "
 "it loads :meth:`~object.__exit__` from the context manager and pushes it "
-"onto the stack for later use by :opcode:`WITH_EXCEPT_START`.  Then, :meth:"
-"`~object.__enter__` is called. Finally, the result of calling the "
+"onto the stack for later use by :opcode:`WITH_EXCEPT_START`.  Then, "
+":meth:`~object.__enter__` is called. Finally, the result of calling the "
 "``__enter__()`` method is pushed onto the stack."
 msgstr ""
 
@@ -838,8 +836,9 @@ msgstr ""
 #: ../../library/dis.rst:880
 msgid ""
 "``STACK[-1]`` is a tuple of mapping keys, and ``STACK[-2]`` is the match "
-"subject. If ``STACK[-2]`` contains all of the keys in ``STACK[-1]``, push a :"
-"class:`tuple` containing the corresponding values. Otherwise, push ``None``."
+"subject. If ``STACK[-2]`` contains all of the keys in ``STACK[-1]``, push a "
+":class:`tuple` containing the corresponding values. Otherwise, push "
+"``None``."
 msgstr ""
 
 #: ../../library/dis.rst:886 ../../library/dis.rst:1513
@@ -852,20 +851,21 @@ msgstr ""
 msgid ""
 "Implements ``name = STACK.pop()``. *namei* is the index of *name* in the "
 "attribute :attr:`~codeobject.co_names` of the :ref:`code object <code-"
-"objects>`. The compiler tries to use :opcode:`STORE_FAST` or :opcode:"
-"`STORE_GLOBAL` if possible."
+"objects>`. The compiler tries to use :opcode:`STORE_FAST` or "
+":opcode:`STORE_GLOBAL` if possible."
 msgstr ""
 
 #: ../../library/dis.rst:900
 msgid ""
-"Implements ``del name``, where *namei* is the index into :attr:`~codeobject."
-"co_names` attribute of the :ref:`code object <code-objects>`."
+"Implements ``del name``, where *namei* is the index into "
+":attr:`~codeobject.co_names` attribute of the :ref:`code object <code-"
+"objects>`."
 msgstr ""
 
 #: ../../library/dis.rst:906
 msgid ""
-"Unpacks ``STACK[-1]`` into *count* individual values, which are put onto the "
-"stack right-to-left. Require there to be exactly *count* values.::"
+"Unpacks ``STACK[-1]`` into *count* individual values, which are put onto the"
+" stack right-to-left. Require there to be exactly *count* values.::"
 msgstr ""
 
 #: ../../library/dis.rst:915
@@ -877,13 +877,14 @@ msgid ""
 msgstr ""
 
 #: ../../library/dis.rst:920
-msgid "The number of values before and after the list value is limited to 255."
+msgid ""
+"The number of values before and after the list value is limited to 255."
 msgstr ""
 
 #: ../../library/dis.rst:922
 msgid ""
-"The number of values before the list value is encoded in the argument of the "
-"opcode. The number of values after the list if any is encoded using an "
+"The number of values before the list value is encoded in the argument of the"
+" opcode. The number of values after the list if any is encoded using an "
 "``EXTENDED_ARG``. As a consequence, the argument can be seen as a two bytes "
 "values where the low byte of *counts* is the number of values before the "
 "list value, the high byte of *counts* the number of values after it."
@@ -891,20 +892,20 @@ msgstr ""
 
 #: ../../library/dis.rst:928
 msgid ""
-"The extracted values are put onto the stack right-to-left, i.e. ``a, *b, c = "
-"d`` will be stored after execution as ``STACK.extend((a, b, c))``."
+"The extracted values are put onto the stack right-to-left, i.e. ``a, *b, c ="
+" d`` will be stored after execution as ``STACK.extend((a, b, c))``."
 msgstr ""
 
 #: ../../library/dis.rst:940
 msgid ""
-"where *namei* is the index of name in :attr:`~codeobject.co_names` of the :"
-"ref:`code object <code-objects>`."
+"where *namei* is the index of name in :attr:`~codeobject.co_names` of the "
+":ref:`code object <code-objects>`."
 msgstr ""
 
 #: ../../library/dis.rst:950
 msgid ""
-"where *namei* is the index of name into :attr:`~codeobject.co_names` of the :"
-"ref:`code object <code-objects>`."
+"where *namei* is the index of name into :attr:`~codeobject.co_names` of the "
+":ref:`code object <code-objects>`."
 msgstr ""
 
 #: ../../library/dis.rst:956
@@ -927,15 +928,15 @@ msgstr ""
 
 #: ../../library/dis.rst:977
 msgid ""
-"Pushes a reference to the locals dictionary onto the stack.  This is used to "
-"prepare namespace dictionaries for :opcode:`LOAD_FROM_DICT_OR_DEREF` and :"
-"opcode:`LOAD_FROM_DICT_OR_GLOBALS`."
+"Pushes a reference to the locals dictionary onto the stack.  This is used to"
+" prepare namespace dictionaries for :opcode:`LOAD_FROM_DICT_OR_DEREF` and "
+":opcode:`LOAD_FROM_DICT_OR_GLOBALS`."
 msgstr ""
 
 #: ../../library/dis.rst:986
 msgid ""
-"Pops a mapping off the stack and looks up the value for ``co_names[namei]``. "
-"If the name is not found there, looks it up in the globals and then the "
+"Pops a mapping off the stack and looks up the value for ``co_names[namei]``."
+" If the name is not found there, looks it up in the globals and then the "
 "builtins, similar to :opcode:`LOAD_GLOBAL`. This is used for loading global "
 "variables in :ref:`annotation scopes <annotation-scopes>` within class "
 "bodies."
@@ -1005,10 +1006,10 @@ msgstr ""
 
 #: ../../library/dis.rst:1091
 msgid ""
-"If the low bit of ``namei`` is set, this will attempt to load a method named "
-"``co_names[namei>>1]`` from the ``STACK[-1]`` object. ``STACK[-1]`` is "
-"popped. This bytecode distinguishes two cases: if ``STACK[-1]`` has a method "
-"with the correct name, the bytecode pushes the unbound method and "
+"If the low bit of ``namei`` is set, this will attempt to load a method named"
+" ``co_names[namei>>1]`` from the ``STACK[-1]`` object. ``STACK[-1]`` is "
+"popped. This bytecode distinguishes two cases: if ``STACK[-1]`` has a method"
+" with the correct name, the bytecode pushes the unbound method and "
 "``STACK[-1]``. ``STACK[-1]`` will be used as the first argument (``self``) "
 "by :opcode:`CALL` when calling the unbound method. Otherwise, ``NULL`` and "
 "the object returned by the attribute lookup are pushed."
@@ -1016,15 +1017,15 @@ msgstr ""
 
 #: ../../library/dis.rst:1099
 msgid ""
-"If the low bit of ``namei`` is set, then a ``NULL`` or ``self`` is pushed to "
-"the stack before the attribute or unbound method respectively."
+"If the low bit of ``namei`` is set, then a ``NULL`` or ``self`` is pushed to"
+" the stack before the attribute or unbound method respectively."
 msgstr ""
 
 #: ../../library/dis.rst:1106
 msgid ""
 "This opcode implements :func:`super`, both in its zero-argument and two-"
-"argument forms (e.g. ``super().method()``, ``super().attr`` and ``super(cls, "
-"self).method()``, ``super(cls, self).attr``)."
+"argument forms (e.g. ``super().method()``, ``super().attr`` and ``super(cls,"
+" self).method()``, ``super(cls, self).attr``)."
 msgstr ""
 
 #: ../../library/dis.rst:1110
@@ -1042,9 +1043,9 @@ msgstr ""
 
 #: ../../library/dis.rst:1118
 msgid ""
-"The low bit of ``namei`` signals to attempt a method load, as with :opcode:"
-"`LOAD_ATTR`, which results in pushing ``None`` and the loaded method. When "
-"it is unset a single value is pushed to the stack."
+"The low bit of ``namei`` signals to attempt a method load, as with "
+":opcode:`LOAD_ATTR`, which results in pushing ``None`` and the loaded "
+"method. When it is unset a single value is pushed to the stack."
 msgstr ""
 
 #: ../../library/dis.rst:1122
@@ -1069,11 +1070,11 @@ msgstr ""
 
 #: ../../library/dis.rst:1150
 msgid ""
-"Imports the module ``co_names[namei]``.  ``STACK[-1]`` and ``STACK[-2]`` are "
-"popped and provide the *fromlist* and *level* arguments of :func:"
-"`__import__`. The module object is pushed onto the stack.  The current "
-"namespace is not affected: for a proper import statement, a subsequent :"
-"opcode:`STORE_FAST` instruction modifies the namespace."
+"Imports the module ``co_names[namei]``.  ``STACK[-1]`` and ``STACK[-2]`` are"
+" popped and provide the *fromlist* and *level* arguments of "
+":func:`__import__`. The module object is pushed onto the stack.  The current"
+" namespace is not affected: for a proper import statement, a subsequent "
+":opcode:`STORE_FAST` instruction modifies the namespace."
 msgstr ""
 
 #: ../../library/dis.rst:1158
@@ -1141,8 +1142,8 @@ msgstr ""
 msgid ""
 "``STACK[-1]`` is an :term:`iterator`.  Call its :meth:`~iterator.__next__` "
 "method. If this yields a new value, push it on the stack (leaving the "
-"iterator below it).  If the iterator indicates it is exhausted then the byte "
-"code counter is incremented by *delta*."
+"iterator below it).  If the iterator indicates it is exhausted then the byte"
+" code counter is incremented by *delta*."
 msgstr ""
 
 #: ../../library/dis.rst:1242
@@ -1230,10 +1231,10 @@ msgstr ""
 msgid ""
 "Pops a mapping off the stack and looks up the name associated with slot "
 "``i`` of the \"fast locals\" storage in this mapping. If the name is not "
-"found there, loads it from the cell contained in slot ``i``, similar to :"
-"opcode:`LOAD_DEREF`. This is used for loading free variables in class bodies "
-"(which previously used :opcode:`!LOAD_CLASSDEREF`) and in :ref:`annotation "
-"scopes <annotation-scopes>` within class bodies."
+"found there, loads it from the cell contained in slot ``i``, similar to "
+":opcode:`LOAD_DEREF`. This is used for loading free variables in class "
+"bodies (which previously used :opcode:`!LOAD_CLASSDEREF`) and in "
+":ref:`annotation scopes <annotation-scopes>` within class bodies."
 msgstr ""
 
 #: ../../library/dis.rst:1331
@@ -1250,8 +1251,8 @@ msgstr ""
 
 #: ../../library/dis.rst:1351
 msgid ""
-"Copies the ``n`` free variables from the closure into the frame. Removes the "
-"need for special code on the caller's side when calling closures."
+"Copies the ``n`` free variables from the closure into the frame. Removes the"
+" need for special code on the caller's side when calling closures."
 msgstr ""
 
 #: ../../library/dis.rst:1360
@@ -1278,8 +1279,8 @@ msgstr ""
 #: ../../library/dis.rst:1371
 msgid ""
 "Calls a callable object with the number of arguments specified by ``argc``, "
-"including the named arguments specified by the preceding :opcode:`KW_NAMES`, "
-"if any. On the stack are (in ascending order), either:"
+"including the named arguments specified by the preceding :opcode:`KW_NAMES`,"
+" if any. On the stack are (in ascending order), either:"
 msgstr ""
 
 #: ../../library/dis.rst:1376
@@ -1318,8 +1319,8 @@ msgstr ""
 
 #: ../../library/dis.rst:1391
 msgid ""
-"``CALL`` pops all arguments and the callable object off the stack, calls the "
-"callable object with those arguments, and pushes the return value returned "
+"``CALL`` pops all arguments and the callable object off the stack, calls the"
+" callable object with those arguments, and pushes the return value returned "
 "by the callable object."
 msgstr ""
 
@@ -1343,15 +1344,15 @@ msgstr ""
 
 #: ../../library/dis.rst:1424
 msgid ""
-"Prefixes :opcode:`CALL`. Stores a reference to ``co_consts[consti]`` into an "
-"internal variable for use by :opcode:`CALL`. ``co_consts[consti]`` must be a "
-"tuple of strings."
+"Prefixes :opcode:`CALL`. Stores a reference to ``co_consts[consti]`` into an"
+" internal variable for use by :opcode:`CALL`. ``co_consts[consti]`` must be "
+"a tuple of strings."
 msgstr ""
 
 #: ../../library/dis.rst:1433
 msgid ""
-"Pushes a new function object on the stack.  From bottom to top, the consumed "
-"stack must consist of values if the argument carries a specified flag value"
+"Pushes a new function object on the stack.  From bottom to top, the consumed"
+" stack must consist of values if the argument carries a specified flag value"
 msgstr ""
 
 #: ../../library/dis.rst:1436
@@ -1419,7 +1420,8 @@ msgstr ""
 
 #: ../../library/dis.rst:1485
 msgid ""
-"``(flags & 0x03) == 0x01``: call :func:`str` on *value* before formatting it."
+"``(flags & 0x03) == 0x01``: call :func:`str` on *value* before formatting "
+"it."
 msgstr ""
 
 #: ../../library/dis.rst:1487
@@ -1457,8 +1459,8 @@ msgstr ""
 msgid ""
 "Pop ``STACK[-1]``, ``STACK[-2]``, and ``STACK[-3]``. If ``STACK[-3]`` is an "
 "instance of ``STACK[-2]`` and has the positional and keyword attributes "
-"required by *count* and ``STACK[-1]``, push a tuple of extracted attributes. "
-"Otherwise, push ``None``."
+"required by *count* and ``STACK[-1]``, push a tuple of extracted attributes."
+" Otherwise, push ``None``."
 msgstr ""
 
 #: ../../library/dis.rst:1520
@@ -1503,8 +1505,8 @@ msgstr ""
 #: ../../library/dis.rst:1547
 msgid ""
 "If the call raises :exc:`StopIteration`, pop the top value from the stack, "
-"push the exception's ``value`` attribute, and increment the bytecode counter "
-"by *delta*."
+"push the exception's ``value`` attribute, and increment the bytecode counter"
+" by *delta*."
 msgstr ""
 
 #: ../../library/dis.rst:1556
@@ -1716,8 +1718,8 @@ msgid ""
 "Like ``SETUP_FINALLY``, but in case of an exception also pushes the last "
 "instruction (``lasti``) to the stack so that ``RERAISE`` can restore it. If "
 "an exception occurs, the value stack level and the last instruction on the "
-"frame are restored to their current state, and control is transferred to the "
-"exception handler at ``target``."
+"frame are restored to their current state, and control is transferred to the"
+" exception handler at ``target``."
 msgstr ""
 
 #: ../../library/dis.rst:1681
@@ -1730,8 +1732,8 @@ msgstr ""
 #: ../../library/dis.rst:1685
 msgid ""
 "This variant is used in :keyword:`with` and :keyword:`async with` "
-"constructs, which push the return value of the context manager's :meth:"
-"`~object.__enter__` or :meth:`~object.__aenter__` to the stack."
+"constructs, which push the return value of the context manager's "
+":meth:`~object.__enter__` or :meth:`~object.__aenter__` to the stack."
 msgstr ""
 
 #: ../../library/dis.rst:1692
@@ -1765,8 +1767,8 @@ msgstr ""
 #: ../../library/dis.rst:1715
 msgid ""
 "The collections now contain pseudo instructions and instrumented "
-"instructions as well. These are opcodes with values ``>= MIN_PSEUDO_OPCODE`` "
-"and ``>= MIN_INSTRUMENTED_OPCODE``."
+"instructions as well. These are opcodes with values ``>= MIN_PSEUDO_OPCODE``"
+" and ``>= MIN_INSTRUMENTED_OPCODE``."
 msgstr ""
 
 #: ../../library/dis.rst:1722

@@ -2,10 +2,10 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # decorator_factory <decorator-factory+transifex@yandex.ru>, 2021
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -13,17 +13,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: decorator_factory <decorator-factory+transifex@yandex.ru>, "
-"2021\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Last-Translator: decorator_factory <decorator-factory+transifex@yandex.ru>, 2021\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../faq/programming.rst:5
 msgid "Programming FAQ"
@@ -49,14 +45,14 @@ msgstr ""
 
 #: ../../faq/programming.rst:19
 msgid ""
-"Several debuggers for Python are described below, and the built-in function :"
-"func:`breakpoint` allows you to drop into any of them."
+"Several debuggers for Python are described below, and the built-in function "
+":func:`breakpoint` allows you to drop into any of them."
 msgstr ""
 
 #: ../../faq/programming.rst:22
 msgid ""
-"The pdb module is a simple but adequate console-mode debugger for Python. It "
-"is part of the standard Python library, and is :mod:`documented in the "
+"The pdb module is a simple but adequate console-mode debugger for Python. It"
+" is part of the standard Python library, and is :mod:`documented in the "
 "Library Reference Manual <pdb>`. You can also write your own debugger by "
 "using the code for pdb as an example."
 msgstr ""
@@ -64,16 +60,16 @@ msgstr ""
 #: ../../faq/programming.rst:27
 msgid ""
 "The IDLE interactive development environment, which is part of the standard "
-"Python distribution (normally available as `Tools/scripts/idle3 <https://"
-"github.com/python/cpython/blob/main/Tools/scripts/idle3>`_), includes a "
-"graphical debugger."
+"Python distribution (normally available as `Tools/scripts/idle3 "
+"<https://github.com/python/cpython/blob/main/Tools/scripts/idle3>`_), "
+"includes a graphical debugger."
 msgstr ""
 
 #: ../../faq/programming.rst:32
 msgid ""
 "PythonWin is a Python IDE that includes a GUI debugger based on pdb.  The "
-"PythonWin debugger colors breakpoints and has quite a few cool features such "
-"as debugging non-PythonWin programs.  PythonWin is available as part of "
+"PythonWin debugger colors breakpoints and has quite a few cool features such"
+" as debugging non-PythonWin programs.  PythonWin is available as part of "
 "`pywin32 <https://github.com/mhammond/pywin32>`_ project and as a part of "
 "the `ActivePython <https://www.activestate.com/products/python/>`_ "
 "distribution."
@@ -129,8 +125,9 @@ msgstr ""
 #: ../../faq/programming.rst:64
 msgid ""
 "Static type checkers such as `Mypy <https://mypy-lang.org/>`_, `Pyre "
-"<https://pyre-check.org/>`_, and `Pytype <https://github.com/google/"
-"pytype>`_ can check type hints in Python source code."
+"<https://pyre-check.org/>`_, and `Pytype "
+"<https://github.com/google/pytype>`_ can check type hints in Python source "
+"code."
 msgstr ""
 
 #: ../../faq/programming.rst:73
@@ -149,23 +146,24 @@ msgstr ""
 #: ../../faq/programming.rst:81
 msgid ""
 "One is to use the freeze tool, which is included in the Python source tree "
-"as `Tools/freeze <https://github.com/python/cpython/tree/main/Tools/"
-"freeze>`_. It converts Python byte code to C arrays; with a C compiler you "
-"can embed all your modules into a new program, which is then linked with the "
-"standard Python modules."
+"as `Tools/freeze "
+"<https://github.com/python/cpython/tree/main/Tools/freeze>`_. It converts "
+"Python byte code to C arrays; with a C compiler you can embed all your "
+"modules into a new program, which is then linked with the standard Python "
+"modules."
 msgstr ""
 
 #: ../../faq/programming.rst:87
 msgid ""
 "It works by scanning your source recursively for import statements (in both "
-"forms) and looking for the modules in the standard Python path as well as in "
-"the source directory (for built-in modules).  It then turns the bytecode for "
-"modules written in Python into C code (array initializers that can be turned "
-"into code objects using the marshal module) and creates a custom-made config "
-"file that only contains those built-in modules which are actually used in "
-"the program.  It then compiles the generated C code and links it with the "
-"rest of the Python interpreter to form a self-contained binary which acts "
-"exactly like your script."
+"forms) and looking for the modules in the standard Python path as well as in"
+" the source directory (for built-in modules).  It then turns the bytecode "
+"for modules written in Python into C code (array initializers that can be "
+"turned into code objects using the marshal module) and creates a custom-made"
+" config file that only contains those built-in modules which are actually "
+"used in the program.  It then compiles the generated C code and links it "
+"with the rest of the Python interpreter to form a self-contained binary "
+"which acts exactly like your script."
 msgstr ""
 
 #: ../../faq/programming.rst:96
@@ -184,7 +182,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:101
 msgid ""
-"`PyOxidizer <https://pyoxidizer.readthedocs.io/en/stable/>`_ (Cross-platform)"
+"`PyOxidizer <https://pyoxidizer.readthedocs.io/en/stable/>`_ (Cross-"
+"platform)"
 msgstr ""
 
 #: ../../faq/programming.rst:102
@@ -221,8 +220,8 @@ msgstr ""
 #: ../../faq/programming.rst:121
 msgid ""
 "It can be a surprise to get the :exc:`UnboundLocalError` in previously "
-"working code when it is modified by adding an assignment statement somewhere "
-"in the body of a function."
+"working code when it is modified by adding an assignment statement somewhere"
+" in the body of a function."
 msgstr ""
 
 #: ../../faq/programming.rst:125
@@ -249,15 +248,15 @@ msgstr ""
 
 #: ../../faq/programming.rst:155
 msgid ""
-"In the example above you can access the outer scope variable by declaring it "
-"global:"
+"In the example above you can access the outer scope variable by declaring it"
+" global:"
 msgstr ""
 
 #: ../../faq/programming.rst:167
 msgid ""
 "This explicit declaration is required in order to remind you that (unlike "
-"the superficially analogous situation with class and instance variables) you "
-"are actually modifying the value of the variable in the outer scope:"
+"the superficially analogous situation with class and instance variables) you"
+" are actually modifying the value of the variable in the outer scope:"
 msgstr ""
 
 #: ../../faq/programming.rst:174
@@ -283,10 +282,10 @@ msgid ""
 "Though a bit surprising at first, a moment's consideration explains this.  "
 "On one hand, requiring :keyword:`global` for assigned variables provides a "
 "bar against unintended side-effects.  On the other hand, if ``global`` was "
-"required for all global references, you'd be using ``global`` all the time.  "
-"You'd have to declare as global every reference to a built-in function or to "
-"a component of an imported module.  This clutter would defeat the usefulness "
-"of the ``global`` declaration for identifying side-effects."
+"required for all global references, you'd be using ``global`` all the time."
+"  You'd have to declare as global every reference to a built-in function or "
+"to a component of an imported module.  This clutter would defeat the "
+"usefulness of the ``global`` declaration for identifying side-effects."
 msgstr ""
 
 #: ../../faq/programming.rst:208
@@ -314,8 +313,8 @@ msgid ""
 "This happens because ``x`` is not local to the lambdas, but is defined in "
 "the outer scope, and it is accessed when the lambda is called --- not when "
 "it is defined.  At the end of the loop, the value of ``x`` is ``4``, so all "
-"the functions now return ``4**2``, i.e. ``16``.  You can also verify this by "
-"changing the value of ``x`` and see how the results of the lambdas change::"
+"the functions now return ``4**2``, i.e. ``16``.  You can also verify this by"
+" changing the value of ``x`` and see how the results of the lambdas change::"
 msgstr ""
 
 #: ../../faq/programming.rst:237
@@ -328,8 +327,8 @@ msgstr ""
 msgid ""
 "Here, ``n=x`` creates a new variable ``n`` local to the lambda and computed "
 "when the lambda is defined so that it has the same value that ``x`` had at "
-"that point in the loop.  This means that the value of ``n`` will be ``0`` in "
-"the first lambda, ``1`` in the second, ``2`` in the third, and so on. "
+"that point in the loop.  This means that the value of ``n`` will be ``0`` in"
+" the first lambda, ``1`` in the second, ``2`` in the third, and so on. "
 "Therefore each lambda will now return the correct result::"
 msgstr ""
 
@@ -347,10 +346,10 @@ msgstr ""
 msgid ""
 "The canonical way to share information across modules within a single "
 "program is to create a special module (often called config or cfg).  Just "
-"import the config module in all modules of your application; the module then "
-"becomes available as a global name.  Because there is only one instance of "
-"each module, any changes made to the module object get reflected "
-"everywhere.  For example:"
+"import the config module in all modules of your application; the module then"
+" becomes available as a global name.  Because there is only one instance of "
+"each module, any changes made to the module object get reflected everywhere."
+"  For example:"
 msgstr ""
 
 #: ../../faq/programming.rst:268
@@ -396,8 +395,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:301
 msgid ""
-"standard library modules -- e.g. :mod:`sys`, :mod:`os`, :mod:`argparse`, :"
-"mod:`re`"
+"standard library modules -- e.g. :mod:`sys`, :mod:`os`, :mod:`argparse`, "
+":mod:`re`"
 msgstr ""
 
 #: ../../faq/programming.rst:302
@@ -420,8 +419,8 @@ msgstr ""
 msgid ""
 "Circular imports are fine where both modules use the \"import <module>\" "
 "form of import.  They fail when the 2nd module wants to grab a name out of "
-"the first (\"from module import name\") and the import is at the top level.  "
-"That's because names in the 1st are not yet available, because the first "
+"the first (\"from module import name\") and the import is at the top level."
+"  That's because names in the 1st are not yet available, because the first "
 "module is busy importing the 2nd."
 msgstr ""
 
@@ -436,21 +435,21 @@ msgstr ""
 #: ../../faq/programming.rst:320
 msgid ""
 "It may also be necessary to move imports out of the top level of code if "
-"some of the modules are platform-specific.  In that case, it may not even be "
-"possible to import all of the modules at the top of the file.  In this case, "
-"importing the correct modules in the corresponding platform-specific code is "
-"a good option."
+"some of the modules are platform-specific.  In that case, it may not even be"
+" possible to import all of the modules at the top of the file.  In this "
+"case, importing the correct modules in the corresponding platform-specific "
+"code is a good option."
 msgstr ""
 
 #: ../../faq/programming.rst:325
 msgid ""
 "Only move imports into a local scope, such as inside a function definition, "
 "if it's necessary to solve a problem such as avoiding a circular import or "
-"are trying to reduce the initialization time of a module.  This technique is "
-"especially helpful if many of the imports are unnecessary depending on how "
+"are trying to reduce the initialization time of a module.  This technique is"
+" especially helpful if many of the imports are unnecessary depending on how "
 "the program executes.  You may also want to move imports into a function if "
-"the modules are only ever used in that function.  Note that loading a module "
-"the first time may be expensive because of the one time initialization of "
+"the modules are only ever used in that function.  Note that loading a module"
+" the first time may be expensive because of the one time initialization of "
 "the module, but loading a module multiple times is virtually free, costing "
 "only a couple of dictionary lookups.  Even if the module name has gone out "
 "of scope, the module is probably available in :data:`sys.modules`."
@@ -469,8 +468,8 @@ msgstr ""
 #: ../../faq/programming.rst:347
 msgid ""
 "The first time you call this function, ``mydict`` contains a single item.  "
-"The second time, ``mydict`` contains two items because when ``foo()`` begins "
-"executing, ``mydict`` starts out with an item already in it."
+"The second time, ``mydict`` contains two items because when ``foo()`` begins"
+" executing, ``mydict`` starts out with an item already in it."
 msgstr ""
 
 #: ../../faq/programming.rst:351
@@ -537,15 +536,15 @@ msgstr ""
 msgid ""
 ":term:`Parameters <parameter>` are defined by the names that appear in a "
 "function definition, whereas :term:`arguments <argument>` are the values "
-"actually passed to a function when calling it.  Parameters define what :term:"
-"`kind of arguments <parameter>` a function can accept.  For example, given "
-"the function definition::"
+"actually passed to a function when calling it.  Parameters define what "
+":term:`kind of arguments <parameter>` a function can accept.  For example, "
+"given the function definition::"
 msgstr ""
 
 #: ../../faq/programming.rst:426
 msgid ""
-"*foo*, *bar* and *kwargs* are parameters of ``func``.  However, when calling "
-"``func``, for example::"
+"*foo*, *bar* and *kwargs* are parameters of ``func``.  However, when calling"
+" ``func``, for example::"
 msgstr ""
 
 #: ../../faq/programming.rst:431
@@ -585,8 +584,8 @@ msgstr ""
 #: ../../faq/programming.rst:457
 msgid ""
 "After the call to :meth:`!append`, the content of the mutable object has "
-"changed from ``[]`` to ``[10]``.  Since both the variables refer to the same "
-"object, using either name accesses the modified value ``[10]``."
+"changed from ``[]`` to ``[10]``.  Since both the variables refer to the same"
+" object, using either name accesses the modified value ``[10]``."
 msgstr ""
 
 #: ../../faq/programming.rst:461
@@ -595,9 +594,9 @@ msgstr ""
 
 #: ../../faq/programming.rst:471
 msgid ""
-"we can see that in this case ``x`` and ``y`` are not equal anymore.  This is "
-"because integers are :term:`immutable`, and when we do ``x = x + 1`` we are "
-"not mutating the int ``5`` by incrementing its value; instead, we are "
+"we can see that in this case ``x`` and ``y`` are not equal anymore.  This is"
+" because integers are :term:`immutable`, and when we do ``x = x + 1`` we are"
+" not mutating the int ``5`` by incrementing its value; instead, we are "
 "creating a new object (the int ``6``) and assigning it to ``x`` (that is, "
 "changing which object ``x`` refers to).  After this assignment we have two "
 "objects (the ints ``6`` and ``5``) and two variables that refer to them "
@@ -618,8 +617,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:488
 msgid ""
-"However, there is one class of operations where the same operation sometimes "
-"has different behaviors with different types:  the augmented assignment "
+"However, there is one class of operations where the same operation sometimes"
+" has different behaviors with different types:  the augmented assignment "
 "operators.  For example, ``+=`` mutates lists but not tuples or ints "
 "(``a_list += [1, 2, 3]`` is equivalent to ``a_list.extend([1, 2, 3])`` and "
 "mutates ``a_list``, whereas ``some_tuple += (1, 2, 3)`` and ``some_int += "
@@ -659,8 +658,8 @@ msgstr ""
 msgid ""
 "Remember that arguments are passed by assignment in Python.  Since "
 "assignment just creates references to objects, there's no alias between an "
-"argument name in the caller and callee, and so no call-by-reference per se.  "
-"You can achieve the desired effect in a number of ways."
+"argument name in the caller and callee, and so no call-by-reference per se."
+"  You can achieve the desired effect in a number of ways."
 msgstr ""
 
 #: ../../faq/programming.rst:517
@@ -704,8 +703,8 @@ msgstr ""
 msgid ""
 "You have two choices: you can use nested scopes or you can use callable "
 "objects. For example, suppose you wanted to define ``linear(a,b)`` which "
-"returns a function ``f(x)`` that computes the value ``a*x+b``.  Using nested "
-"scopes::"
+"returns a function ``f(x)`` that computes the value ``a*x+b``.  Using nested"
+" scopes::"
 msgstr ""
 
 #: ../../faq/programming.rst:588
@@ -733,8 +732,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:631
 msgid ""
-"Here ``inc()``, ``dec()`` and ``reset()`` act like functions which share the "
-"same counting variable."
+"Here ``inc()``, ``dec()`` and ``reset()`` act like functions which share the"
+" same counting variable."
 msgstr ""
 
 #: ../../faq/programming.rst:636
@@ -749,8 +748,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:641
 msgid ""
-"Some objects can be copied more easily.  Dictionaries have a :meth:`~dict."
-"copy` method::"
+"Some objects can be copied more easily.  Dictionaries have a "
+":meth:`~dict.copy` method::"
 msgstr ""
 
 #: ../../faq/programming.rst:646
@@ -869,9 +868,9 @@ msgstr ""
 
 #: ../../faq/programming.rst:744
 msgid ""
-"Yes.  Usually this is done by nesting :keyword:`lambda` within :keyword:`!"
-"lambda`.  See the following three examples, slightly adapted from Ulf "
-"Bartelt::"
+"Yes.  Usually this is done by nesting :keyword:`lambda` within "
+":keyword:`!lambda`.  See the following three examples, slightly adapted from"
+" Ulf Bartelt::"
 msgstr ""
 
 #: ../../faq/programming.rst:771
@@ -884,12 +883,12 @@ msgstr ""
 
 #: ../../faq/programming.rst:779
 msgid ""
-"A slash in the argument list of a function denotes that the parameters prior "
-"to it are positional-only.  Positional-only parameters are the ones without "
-"an externally usable name.  Upon calling a function that accepts positional-"
-"only parameters, arguments are mapped to parameters based solely on their "
-"position. For example, :func:`divmod` is a function that accepts positional-"
-"only parameters. Its documentation looks like this::"
+"A slash in the argument list of a function denotes that the parameters prior"
+" to it are positional-only.  Positional-only parameters are the ones without"
+" an externally usable name.  Upon calling a function that accepts "
+"positional-only parameters, arguments are mapped to parameters based solely "
+"on their position. For example, :func:`divmod` is a function that accepts "
+"positional-only parameters. Its documentation looks like this::"
 msgstr ""
 
 #: ../../faq/programming.rst:792
@@ -953,8 +952,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:850
 msgid ""
-"Trying to lookup an ``int`` literal attribute in the normal manner gives a :"
-"exc:`SyntaxError` because the period is seen as a decimal point::"
+"Trying to lookup an ``int`` literal attribute in the normal manner gives a "
+":exc:`SyntaxError` because the period is seen as a decimal point::"
 msgstr ""
 
 #: ../../faq/programming.rst:859
@@ -970,8 +969,8 @@ msgstr ""
 #: ../../faq/programming.rst:871
 msgid ""
 "For integers, use the built-in :func:`int` type constructor, e.g. "
-"``int('144') == 144``.  Similarly, :func:`float` converts to floating-point, "
-"e.g. ``float('144') == 144.0``."
+"``int('144') == 144``.  Similarly, :func:`float` converts to floating-point,"
+" e.g. ``float('144') == 144.0``."
 msgstr ""
 
 #: ../../faq/programming.rst:875
@@ -997,8 +996,8 @@ msgstr ""
 #: ../../faq/programming.rst:889
 msgid ""
 ":func:`eval` also has the effect of interpreting numbers as Python "
-"expressions, so that e.g. ``eval('09')`` gives a syntax error because Python "
-"does not allow leading '0' in a decimal number (except '0')."
+"expressions, so that e.g. ``eval('09')`` gives a syntax error because Python"
+" does not allow leading '0' in a decimal number (except '0')."
 msgstr ""
 
 #: ../../faq/programming.rst:895
@@ -1011,8 +1010,8 @@ msgid ""
 "in type constructor :func:`str`.  If you want a hexadecimal or octal "
 "representation, use the built-in functions :func:`hex` or :func:`oct`.  For "
 "fancy formatting, see the :ref:`f-strings` and :ref:`formatstrings` "
-"sections, e.g. ``\"{:04d}\".format(144)`` yields ``'0144'`` and ``\"{:.3f}\"."
-"format(1.0/3.0)`` yields ``'0.333'``."
+"sections, e.g. ``\"{:04d}\".format(144)`` yields ``'0144'`` and "
+"``\"{:.3f}\".format(1.0/3.0)`` yields ``'0.333'``."
 msgstr ""
 
 #: ../../faq/programming.rst:906
@@ -1022,8 +1021,8 @@ msgstr ""
 #: ../../faq/programming.rst:908
 msgid ""
 "You can't, because strings are immutable.  In most situations, you should "
-"simply construct a new string from the various parts you want to assemble it "
-"from.  However, if you need an object with the ability to modify in-place "
+"simply construct a new string from the various parts you want to assemble it"
+" from.  However, if you need an object with the ability to modify in-place "
 "unicode data, try using an :class:`io.StringIO` object or the :mod:`array` "
 "module::"
 msgstr ""
@@ -1038,8 +1037,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:942
 msgid ""
-"The best is to use a dictionary that maps strings to functions.  The primary "
-"advantage of this technique is that the strings do not need to match the "
+"The best is to use a dictionary that maps strings to functions.  The primary"
+" advantage of this technique is that the strings do not need to match the "
 "names of the functions.  This is also the primary technique used to emulate "
 "a case construct::"
 msgstr ""
@@ -1064,17 +1063,17 @@ msgstr ""
 
 #: ../../faq/programming.rst:990
 msgid ""
-"Is there an equivalent to Perl's chomp() for removing trailing newlines from "
-"strings?"
+"Is there an equivalent to Perl's chomp() for removing trailing newlines from"
+" strings?"
 msgstr ""
 
 #: ../../faq/programming.rst:992
 msgid ""
 "You can use ``S.rstrip(\"\\r\\n\")`` to remove all occurrences of any line "
 "terminator from the end of the string ``S`` without removing other trailing "
-"whitespace.  If the string ``S`` represents more than one line, with several "
-"empty lines at the end, the line terminators for all the blank lines will be "
-"removed::"
+"whitespace.  If the string ``S`` represents more than one line, with several"
+" empty lines at the end, the line terminators for all the blank lines will "
+"be removed::"
 msgstr ""
 
 #: ../../faq/programming.rst:1004
@@ -1095,9 +1094,9 @@ msgstr ""
 msgid ""
 "For simple input parsing, the easiest approach is usually to split the line "
 "into whitespace-delimited words using the :meth:`~str.split` method of "
-"string objects and then convert decimal strings to numeric values using :"
-"func:`int` or :func:`float`.  :meth:`!split()` supports an optional \"sep\" "
-"parameter which is useful if the line uses something other than whitespace "
+"string objects and then convert decimal strings to numeric values using "
+":func:`int` or :func:`float`.  :meth:`!split()` supports an optional \"sep\""
+" parameter which is useful if the line uses something other than whitespace "
 "as a separator."
 msgstr ""
 
@@ -1177,8 +1176,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:1080
 msgid ""
-"Behaviour can vary across operating systems, especially when talking about I/"
-"O or multi-threading."
+"Behaviour can vary across operating systems, especially when talking about "
+"I/O or multi-threading."
 msgstr ""
 
 #: ../../faq/programming.rst:1082
@@ -1195,8 +1194,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:1086
 msgid ""
-"It is highly recommended to have good code coverage (through unit testing or "
-"any other technique) before potentially introducing regressions hidden in "
+"It is highly recommended to have good code coverage (through unit testing or"
+" any other technique) before potentially introducing regressions hidden in "
 "sophisticated optimizations."
 msgstr ""
 
@@ -1225,8 +1224,8 @@ msgid ""
 "When the standard library provides a primitive for doing something, it is "
 "likely (although not guaranteed) to be faster than any alternative you may "
 "come up with.  This is doubly true for primitives written in C, such as "
-"builtins and some extension types.  For example, be sure to use either the :"
-"meth:`list.sort` built-in method or the related :func:`sorted` function to "
+"builtins and some extension types.  For example, be sure to use either the "
+":meth:`list.sort` built-in method or the related :func:`sorted` function to "
 "do sorting (and see the :ref:`sortinghowto` for examples of moderately "
 "advanced usage)."
 msgstr ""
@@ -1234,16 +1233,16 @@ msgstr ""
 #: ../../faq/programming.rst:1109
 msgid ""
 "Abstractions tend to create indirections and force the interpreter to work "
-"more.  If the levels of indirection outweigh the amount of useful work done, "
-"your program will be slower.  You should avoid excessive abstraction, "
-"especially under the form of tiny functions or methods (which are also often "
-"detrimental to readability)."
+"more.  If the levels of indirection outweigh the amount of useful work done,"
+" your program will be slower.  You should avoid excessive abstraction, "
+"especially under the form of tiny functions or methods (which are also often"
+" detrimental to readability)."
 msgstr ""
 
 #: ../../faq/programming.rst:1115
 msgid ""
-"If you have reached the limit of what pure Python can allow, there are tools "
-"to take you further away.  For example, `Cython <https://cython.org>`_ can "
+"If you have reached the limit of what pure Python can allow, there are tools"
+" to take you further away.  For example, `Cython <https://cython.org>`_ can "
 "compile a slightly modified version of Python code into a C extension, and "
 "can be used on many different platforms.  Cython can take advantage of "
 "compilation (and optional type annotations) to make your code significantly "
@@ -1254,8 +1253,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:1125
 msgid ""
-"The wiki page devoted to `performance tips <https://wiki.python.org/moin/"
-"PythonSpeed/PerformanceTips>`_."
+"The wiki page devoted to `performance tips "
+"<https://wiki.python.org/moin/PythonSpeed/PerformanceTips>`_."
 msgstr ""
 
 #: ../../faq/programming.rst:1131
@@ -1365,14 +1364,14 @@ msgstr ""
 
 #: ../../faq/programming.rst:1208
 msgid ""
-"If you don't mind reordering the list, sort it and then scan from the end of "
-"the list, deleting duplicates as you go::"
+"If you don't mind reordering the list, sort it and then scan from the end of"
+" the list, deleting duplicates as you go::"
 msgstr ""
 
 #: ../../faq/programming.rst:1220
 msgid ""
-"If all elements of the list may be used as set keys (i.e. they are all :term:"
-"`hashable`) this is often faster ::"
+"If all elements of the list may be used as set keys (i.e. they are all "
+":term:`hashable`) this is often faster ::"
 msgstr ""
 
 #: ../../faq/programming.rst:1225
@@ -1388,8 +1387,8 @@ msgstr ""
 #: ../../faq/programming.rst:1232
 msgid ""
 "As with removing duplicates, explicitly iterating in reverse with a delete "
-"condition is one possibility.  However, it is easier and faster to use slice "
-"replacement with an implicit or explicit forward iteration. Here are three "
+"condition is one possibility.  However, it is easier and faster to use slice"
+" replacement with an implicit or explicit forward iteration. Here are three "
 "variations.::"
 msgstr ""
 
@@ -1415,8 +1414,8 @@ msgstr ""
 #: ../../faq/programming.rst:1254
 msgid ""
 "The ``array`` module also provides methods for creating arrays of fixed "
-"types with compact representations, but they are slower to index than "
-"lists.  Also note that `NumPy <https://numpy.org/>`_ and other third party "
+"types with compact representations, but they are slower to index than lists."
+"  Also note that `NumPy <https://numpy.org/>`_ and other third party "
 "packages define array-like structures with various characteristics as well."
 msgstr ""
 
@@ -1481,14 +1480,14 @@ msgstr ""
 
 #: ../../faq/programming.rst:1327
 msgid ""
-"To call a method or function and accumulate the return values is a list, a :"
-"term:`list comprehension` is an elegant solution::"
+"To call a method or function and accumulate the return values is a list, a "
+":term:`list comprehension` is an elegant solution::"
 msgstr ""
 
 #: ../../faq/programming.rst:1334
 msgid ""
-"To just run the method or function without saving the return values, a "
-"plain :keyword:`for` loop will suffice::"
+"To just run the method or function without saving the return values, a plain"
+" :keyword:`for` loop will suffice::"
 msgstr ""
 
 #: ../../faq/programming.rst:1346
@@ -1499,8 +1498,8 @@ msgstr ""
 #: ../../faq/programming.rst:1348
 msgid ""
 "This is because of a combination of the fact that augmented assignment "
-"operators are *assignment* operators, and the difference between mutable and "
-"immutable objects in Python."
+"operators are *assignment* operators, and the difference between mutable and"
+" immutable objects in Python."
 msgstr ""
 
 #: ../../faq/programming.rst:1352
@@ -1541,8 +1540,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:1390
 msgid ""
-"The exception is a bit more surprising, and even more surprising is the fact "
-"that even though there was an error, the append worked::"
+"The exception is a bit more surprising, and even more surprising is the fact"
+" that even though there was an error, the append worked::"
 msgstr ""
 
 #: ../../faq/programming.rst:1396
@@ -1550,8 +1549,8 @@ msgid ""
 "To see why this happens, you need to know that (a) if an object implements "
 "an :meth:`~object.__iadd__` magic method, it gets called when the ``+=`` "
 "augmented assignment is executed, and its return value is what gets used in "
-"the assignment statement; and (b) for lists, :meth:`!__iadd__` is equivalent "
-"to calling :meth:`!extend` on the list and returning the list.  That's why "
+"the assignment statement; and (b) for lists, :meth:`!__iadd__` is equivalent"
+" to calling :meth:`!extend` on the list and returning the list.  That's why "
 "we say that for lists, ``+=`` is a \"shorthand\" for :meth:`!list.extend`::"
 msgstr ""
 
@@ -1635,9 +1634,9 @@ msgstr ""
 
 #: ../../faq/programming.rst:1481
 msgid ""
-"A method is a function on some object ``x`` that you normally call as ``x."
-"name(arguments...)``.  Methods are defined as functions inside the class "
-"definition::"
+"A method is a function on some object ``x`` that you normally call as "
+"``x.name(arguments...)``.  Methods are defined as functions inside the class"
+" definition::"
 msgstr ""
 
 #: ../../faq/programming.rst:1491
@@ -1647,8 +1646,8 @@ msgstr ""
 #: ../../faq/programming.rst:1493
 msgid ""
 "Self is merely a conventional name for the first argument of a method.  A "
-"method defined as ``meth(self, a, b, c)`` should be called as ``x.meth(a, b, "
-"c)`` for some instance ``x`` of the class in which the definition occurs; "
+"method defined as ``meth(self, a, b, c)`` should be called as ``x.meth(a, b,"
+" c)`` for some instance ``x`` of the class in which the definition occurs; "
 "the called method will think it is called as ``meth(x, a, b, c)``."
 msgstr ""
 
@@ -1658,24 +1657,24 @@ msgstr ""
 
 #: ../../faq/programming.rst:1502
 msgid ""
-"How do I check if an object is an instance of a given class or of a subclass "
-"of it?"
+"How do I check if an object is an instance of a given class or of a subclass"
+" of it?"
 msgstr ""
 
 #: ../../faq/programming.rst:1504
 msgid ""
 "Use the built-in function :func:`isinstance(obj, cls) <isinstance>`.  You "
 "can check if an object is an instance of any of a number of classes by "
-"providing a tuple instead of a single class, e.g. ``isinstance(obj, (class1, "
-"class2, ...))``, and can also check whether an object is one of Python's "
+"providing a tuple instead of a single class, e.g. ``isinstance(obj, (class1,"
+" class2, ...))``, and can also check whether an object is one of Python's "
 "built-in types, e.g. ``isinstance(obj, str)`` or ``isinstance(obj, (int, "
 "float, complex))``."
 msgstr ""
 
 #: ../../faq/programming.rst:1511
 msgid ""
-"Note that :func:`isinstance` also checks for virtual inheritance from an :"
-"term:`abstract base class`.  So, the test will return ``True`` for a "
+"Note that :func:`isinstance` also checks for virtual inheritance from an "
+":term:`abstract base class`.  So, the test will return ``True`` for a "
 "registered class even if hasn't directly or indirectly inherited from it.  "
 "To test for \"true inheritance\", scan the :term:`MRO` of the class:"
 msgstr ""
@@ -1705,41 +1704,41 @@ msgid ""
 "Delegation is an object oriented technique (also called a design pattern). "
 "Let's say you have an object ``x`` and want to change the behaviour of just "
 "one of its methods.  You can create a new class that provides a new "
-"implementation of the method you're interested in changing and delegates all "
-"other methods to the corresponding method of ``x``."
+"implementation of the method you're interested in changing and delegates all"
+" other methods to the corresponding method of ``x``."
 msgstr ""
 
 #: ../../faq/programming.rst:1583
 msgid ""
 "Python programmers can easily implement delegation.  For example, the "
-"following class implements a class that behaves like a file but converts all "
-"written data to uppercase::"
+"following class implements a class that behaves like a file but converts all"
+" written data to uppercase::"
 msgstr ""
 
 #: ../../faq/programming.rst:1598
 msgid ""
 "Here the ``UpperOut`` class redefines the ``write()`` method to convert the "
-"argument string to uppercase before calling the underlying ``self._outfile."
-"write()`` method.  All other methods are delegated to the underlying ``self."
-"_outfile`` object.  The delegation is accomplished via the :meth:`~object."
-"__getattr__` method; consult :ref:`the language reference <attribute-"
-"access>` for more information about controlling attribute access."
+"argument string to uppercase before calling the underlying "
+"``self._outfile.write()`` method.  All other methods are delegated to the "
+"underlying ``self._outfile`` object.  The delegation is accomplished via the"
+" :meth:`~object.__getattr__` method; consult :ref:`the language reference "
+"<attribute-access>` for more information about controlling attribute access."
 msgstr ""
 
 #: ../../faq/programming.rst:1605
 msgid ""
 "Note that for more general cases delegation can get trickier. When "
-"attributes must be set as well as retrieved, the class must define a :meth:"
-"`~object.__setattr__` method too, and it must do so carefully.  The basic "
-"implementation of :meth:`!__setattr__` is roughly equivalent to the "
+"attributes must be set as well as retrieved, the class must define a "
+":meth:`~object.__setattr__` method too, and it must do so carefully.  The "
+"basic implementation of :meth:`!__setattr__` is roughly equivalent to the "
 "following::"
 msgstr ""
 
 #: ../../faq/programming.rst:1616
 msgid ""
 "Most :meth:`!__setattr__` implementations must modify :meth:`self.__dict__ "
-"<object.__dict__>` to store local state for self without causing an infinite "
-"recursion."
+"<object.__dict__>` to store local state for self without causing an infinite"
+" recursion."
 msgstr ""
 
 #: ../../faq/programming.rst:1622
@@ -1754,8 +1753,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:1630
 msgid ""
-"In the example, :func:`super` will automatically determine the instance from "
-"which it was called (the ``self`` value), look up the :term:`method "
+"In the example, :func:`super` will automatically determine the instance from"
+" which it was called (the ``self`` value), look up the :term:`method "
 "resolution order` (MRO) with ``type(self).__mro__``, and return the next in "
 "line after ``Derived`` in the MRO: ``Base``."
 msgstr ""
@@ -1766,8 +1765,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:1639
 msgid ""
-"You could assign the base class to an alias and derive from the alias.  Then "
-"all you have to change is the value assigned to the alias.  Incidentally, "
+"You could assign the base class to an alias and derive from the alias.  Then"
+" all you have to change is the value assigned to the alias.  Incidentally, "
 "this trick is also handy if you want to decide dynamically (e.g. depending "
 "on availability of resources) which base class to use.  Example::"
 msgstr ""
@@ -1798,8 +1797,8 @@ msgstr ""
 #: ../../faq/programming.rst:1675
 msgid ""
 "Caution: within a method of C, an assignment like ``self.count = 42`` "
-"creates a new and unrelated instance named \"count\" in ``self``'s own "
-"dict.  Rebinding of a class-static data name must always specify the class "
+"creates a new and unrelated instance named \"count\" in ``self``'s own dict."
+"  Rebinding of a class-static data name must always specify the class "
 "whether inside a method or not::"
 msgstr ""
 
@@ -1809,8 +1808,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:1690
 msgid ""
-"However, a far more straightforward way to get the effect of a static method "
-"is via a simple module-level function::"
+"However, a far more straightforward way to get the effect of a static method"
+" is via a simple module-level function::"
 msgstr ""
 
 #: ../../faq/programming.rst:1696
@@ -1868,13 +1867,14 @@ msgstr ""
 #: ../../faq/programming.rst:1744
 msgid ""
 "This doesn't guarantee privacy: an outside user can still deliberately "
-"access the \"_classname__spam\" attribute, and private values are visible in "
-"the object's ``__dict__``.  Many Python programmers never bother to use "
+"access the \"_classname__spam\" attribute, and private values are visible in"
+" the object's ``__dict__``.  Many Python programmers never bother to use "
 "private variable names at all."
 msgstr ""
 
 #: ../../faq/programming.rst:1751
-msgid "My class defines __del__ but it is not called when I delete the object."
+msgid ""
+"My class defines __del__ but it is not called when I delete the object."
 msgstr ""
 
 #: ../../faq/programming.rst:1753
@@ -1883,33 +1883,33 @@ msgstr ""
 
 #: ../../faq/programming.rst:1755
 msgid ""
-"The :keyword:`del` statement does not necessarily call :meth:`~object."
-"__del__` -- it simply decrements the object's reference count, and if this "
-"reaches zero :meth:`!__del__` is called."
+"The :keyword:`del` statement does not necessarily call "
+":meth:`~object.__del__` -- it simply decrements the object's reference "
+"count, and if this reaches zero :meth:`!__del__` is called."
 msgstr ""
 
 #: ../../faq/programming.rst:1759
 msgid ""
-"If your data structures contain circular links (e.g. a tree where each child "
-"has a parent reference and each parent has a list of children) the reference "
-"counts will never go back to zero.  Once in a while Python runs an algorithm "
-"to detect such cycles, but the garbage collector might run some time after "
-"the last reference to your data structure vanishes, so your :meth:`!__del__` "
-"method may be called at an inconvenient and random time. This is "
-"inconvenient if you're trying to reproduce a problem. Worse, the order in "
-"which object's :meth:`!__del__` methods are executed is arbitrary.  You can "
-"run :func:`gc.collect` to force a collection, but there *are* pathological "
-"cases where objects will never be collected."
+"If your data structures contain circular links (e.g. a tree where each child"
+" has a parent reference and each parent has a list of children) the "
+"reference counts will never go back to zero.  Once in a while Python runs an"
+" algorithm to detect such cycles, but the garbage collector might run some "
+"time after the last reference to your data structure vanishes, so your "
+":meth:`!__del__` method may be called at an inconvenient and random time. "
+"This is inconvenient if you're trying to reproduce a problem. Worse, the "
+"order in which object's :meth:`!__del__` methods are executed is arbitrary."
+"  You can run :func:`gc.collect` to force a collection, but there *are* "
+"pathological cases where objects will never be collected."
 msgstr ""
 
 #: ../../faq/programming.rst:1770
 msgid ""
 "Despite the cycle collector, it's still a good idea to define an explicit "
 "``close()`` method on objects to be called whenever you're done with them.  "
-"The ``close()`` method can then remove attributes that refer to subobjects.  "
-"Don't call :meth:`!__del__` directly -- :meth:`!__del__` should call "
-"``close()`` and ``close()`` should make sure that it can be called more than "
-"once for the same object."
+"The ``close()`` method can then remove attributes that refer to subobjects."
+"  Don't call :meth:`!__del__` directly -- :meth:`!__del__` should call "
+"``close()`` and ``close()`` should make sure that it can be called more than"
+" once for the same object."
 msgstr ""
 
 #: ../../faq/programming.rst:1777
@@ -1946,14 +1946,14 @@ msgid ""
 "The :func:`id` builtin returns an integer that is guaranteed to be unique "
 "during the lifetime of the object.  Since in CPython, this is the object's "
 "memory address, it happens frequently that after an object is deleted from "
-"memory, the next freshly created object is allocated at the same position in "
-"memory.  This is illustrated by this example:"
+"memory, the next freshly created object is allocated at the same position in"
+" memory.  This is illustrated by this example:"
 msgstr ""
 
 #: ../../faq/programming.rst:1816
 msgid ""
-"The two ids belong to different integer objects that are created before, and "
-"deleted immediately after execution of the ``id()`` call.  To be sure that "
+"The two ids belong to different integer objects that are created before, and"
+" deleted immediately after execution of the ``id()`` call.  To be sure that "
 "objects whose id you want to examine are still alive, create another "
 "reference to the object:"
 msgstr ""
@@ -1971,8 +1971,8 @@ msgstr ""
 #: ../../faq/programming.rst:1834
 msgid ""
 "The most important property of an identity test is that an object is always "
-"identical to itself, ``a is a`` always returns ``True``.  Identity tests are "
-"usually faster than equality tests.  And unlike equality tests, identity "
+"identical to itself, ``a is a`` always returns ``True``.  Identity tests are"
+" usually faster than equality tests.  And unlike equality tests, identity "
 "tests are guaranteed to return a boolean ``True`` or ``False``."
 msgstr ""
 
@@ -2031,8 +2031,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:1885
 msgid ""
-"2) Detecting optional arguments can be tricky when ``None`` is a valid input "
-"value.  In those situations, you can create a singleton sentinel object "
+"2) Detecting optional arguments can be tricky when ``None`` is a valid input"
+" value.  In those situations, you can create a singleton sentinel object "
 "guaranteed to be distinct from other objects.  For example, here is how to "
 "implement a method that behaves like :meth:`dict.pop`::"
 msgstr ""
@@ -2046,8 +2046,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:1905
 msgid ""
-"For example, here is the implementation of :meth:`!collections.abc.Sequence."
-"__contains__`::"
+"For example, here is the implementation of "
+":meth:`!collections.abc.Sequence.__contains__`::"
 msgstr ""
 
 #: ../../faq/programming.rst:1916
@@ -2058,8 +2058,8 @@ msgstr ""
 #: ../../faq/programming.rst:1918
 msgid ""
 "When subclassing an immutable type, override the :meth:`~object.__new__` "
-"method instead of the :meth:`~object.__init__` method.  The latter only runs "
-"*after* an instance is created, which is too late to alter data in an "
+"method instead of the :meth:`~object.__init__` method.  The latter only runs"
+" *after* an instance is created, which is too late to alter data in an "
 "immutable instance."
 msgstr ""
 
@@ -2079,9 +2079,10 @@ msgstr ""
 
 #: ../../faq/programming.rst:1968
 msgid ""
-"The two principal tools for caching methods are :func:`functools."
-"cached_property` and :func:`functools.lru_cache`.  The former stores results "
-"at the instance level and the latter at the class level."
+"The two principal tools for caching methods are "
+":func:`functools.cached_property` and :func:`functools.lru_cache`.  The "
+"former stores results at the instance level and the latter at the class "
+"level."
 msgstr ""
 
 #: ../../faq/programming.rst:1973
@@ -2127,8 +2128,9 @@ msgstr ""
 #: ../../faq/programming.rst:2020
 msgid ""
 "To make the *lru_cache* approach work when the *station_id* is mutable, the "
-"class needs to define the :meth:`~object.__eq__` and :meth:`~object."
-"__hash__` methods so that the cache can detect relevant attribute updates::"
+"class needs to define the :meth:`~object.__eq__` and "
+":meth:`~object.__hash__` methods so that the cache can detect relevant "
+"attribute updates::"
 msgstr ""
 
 #: ../../faq/programming.rst:2046
@@ -2147,7 +2149,8 @@ msgid ""
 "subdirectory of the directory containing the ``.py`` file.  The ``.pyc`` "
 "file will have a filename that starts with the same name as the ``.py`` "
 "file, and ends with ``.pyc``, with a middle component that depends on the "
-"particular ``python`` binary that created it.  (See :pep:`3147` for details.)"
+"particular ``python`` binary that created it.  (See :pep:`3147` for "
+"details.)"
 msgstr ""
 
 #: ../../faq/programming.rst:2059
@@ -2162,40 +2165,40 @@ msgstr ""
 #: ../../faq/programming.rst:2064
 msgid ""
 "Unless the :envvar:`PYTHONDONTWRITEBYTECODE` environment variable is set, "
-"creation of a .pyc file is automatic if you're importing a module and Python "
-"has the ability (permissions, free space, etc...) to create a "
+"creation of a .pyc file is automatic if you're importing a module and Python"
+" has the ability (permissions, free space, etc...) to create a "
 "``__pycache__`` subdirectory and write the compiled module to that "
 "subdirectory."
 msgstr ""
 
 #: ../../faq/programming.rst:2069
 msgid ""
-"Running Python on a top level script is not considered an import and no ``."
-"pyc`` will be created.  For example, if you have a top-level module ``foo."
-"py`` that imports another module ``xyz.py``, when you run ``foo`` (by typing "
-"``python foo.py`` as a shell command), a ``.pyc`` will be created for "
-"``xyz`` because ``xyz`` is imported, but no ``.pyc`` file will be created "
+"Running Python on a top level script is not considered an import and no "
+"``.pyc`` will be created.  For example, if you have a top-level module "
+"``foo.py`` that imports another module ``xyz.py``, when you run ``foo`` (by "
+"typing ``python foo.py`` as a shell command), a ``.pyc`` will be created for"
+" ``xyz`` because ``xyz`` is imported, but no ``.pyc`` file will be created "
 "for ``foo`` since ``foo.py`` isn't being imported."
 msgstr ""
 
 #: ../../faq/programming.rst:2076
 msgid ""
-"If you need to create a ``.pyc`` file for ``foo`` -- that is, to create a ``."
-"pyc`` file for a module that is not imported -- you can, using the :mod:"
-"`py_compile` and :mod:`compileall` modules."
+"If you need to create a ``.pyc`` file for ``foo`` -- that is, to create a "
+"``.pyc`` file for a module that is not imported -- you can, using the "
+":mod:`py_compile` and :mod:`compileall` modules."
 msgstr ""
 
 #: ../../faq/programming.rst:2080
 msgid ""
-"The :mod:`py_compile` module can manually compile any module.  One way is to "
-"use the ``compile()`` function in that module interactively::"
+"The :mod:`py_compile` module can manually compile any module.  One way is to"
+" use the ``compile()`` function in that module interactively::"
 msgstr ""
 
 #: ../../faq/programming.rst:2086
 msgid ""
 "This will write the ``.pyc`` to a ``__pycache__`` subdirectory in the same "
-"location as ``foo.py`` (or you can override that with the optional parameter "
-"``cfile``)."
+"location as ``foo.py`` (or you can override that with the optional parameter"
+" ``cfile``)."
 msgstr ""
 
 #: ../../faq/programming.rst:2090
@@ -2277,8 +2280,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:2141
 msgid ""
-"The last step fails, because Python isn't done with interpreting ``foo`` yet "
-"and the global symbol dictionary for ``foo`` is still empty."
+"The last step fails, because Python isn't done with interpreting ``foo`` yet"
+" and the global symbol dictionary for ``foo`` is still empty."
 msgstr ""
 
 #: ../../faq/programming.rst:2144
@@ -2293,8 +2296,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:2149
 msgid ""
-"Guido van Rossum recommends avoiding all uses of ``from <module> import ..."
-"``, and placing all code inside functions.  Initializations of global "
+"Guido van Rossum recommends avoiding all uses of ``from <module> import "
+"...``, and placing all code inside functions.  Initializations of global "
 "variables and class variables should use constants or built-in functions "
 "only.  This means everything from an imported module is referenced as "
 "``<module>.<name>``."
@@ -2357,8 +2360,8 @@ msgid ""
 "For reasons of efficiency as well as consistency, Python only reads the "
 "module file on the first time a module is imported.  If it didn't, in a "
 "program consisting of many modules where each one imports the same basic "
-"module, the basic module would be parsed and re-parsed many times.  To force "
-"re-reading of a changed module, do this::"
+"module, the basic module would be parsed and re-parsed many times.  To force"
+" re-reading of a changed module, do this::"
 msgstr ""
 
 #: ../../faq/programming.rst:2192
@@ -2377,8 +2380,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:2210
 msgid ""
-"The nature of the problem is made clear if you print out the \"identity\" of "
-"the class objects::"
+"The nature of the problem is made clear if you print out the \"identity\" of"
+" the class objects::"
 msgstr ""
 
 #: ../../faq/programming.rst:408

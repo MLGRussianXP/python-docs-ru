@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,15 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/__main__.rst:2
 msgid ":mod:`__main__` --- Top-level code environment"
@@ -44,8 +41,8 @@ msgstr ""
 msgid ""
 "Both of these mechanisms are related to Python modules; how users interact "
 "with them and how they interact with each other.  They are explained in "
-"detail below.  If you're new to Python modules, see the tutorial section :"
-"ref:`tut-modules` for an introduction."
+"detail below.  If you're new to Python modules, see the tutorial section "
+":ref:`tut-modules` for an introduction."
 msgstr ""
 
 #: ../../library/__main__.rst:25
@@ -98,8 +95,8 @@ msgstr ""
 
 #: ../../library/__main__.rst:67
 msgid ""
-"the Python module or package passed to the Python interpreter with the :"
-"option:`-m` argument:"
+"the Python module or package passed to the Python interpreter with the "
+":option:`-m` argument:"
 msgstr ""
 
 #: ../../library/__main__.rst:75
@@ -137,17 +134,17 @@ msgstr ""
 
 #: ../../library/__main__.rst:118
 msgid ""
-"Some modules contain code that is intended for script use only, like parsing "
-"command-line arguments or fetching data from standard input.  If a module "
-"like this was imported from a different module, for example to unit test it, "
-"the script code would unintentionally execute as well."
+"Some modules contain code that is intended for script use only, like parsing"
+" command-line arguments or fetching data from standard input.  If a module "
+"like this was imported from a different module, for example to unit test it,"
+" the script code would unintentionally execute as well."
 msgstr ""
 
 #: ../../library/__main__.rst:123
 msgid ""
 "This is where using the ``if __name__ == '__main__'`` code block comes in "
-"handy. Code within this block won't run unless the module is executed in the "
-"top-level environment."
+"handy. Code within this block won't run unless the module is executed in the"
+" top-level environment."
 msgstr ""
 
 #: ../../library/__main__.rst:127
@@ -159,12 +156,12 @@ msgstr ""
 
 #: ../../library/__main__.rst:151
 msgid ""
-"Note that if the module didn't encapsulate code inside the ``main`` function "
-"but instead put it directly within the ``if __name__ == '__main__'`` block, "
-"the ``phrase`` variable would be global to the entire module.  This is error-"
-"prone as other functions within the module could be unintentionally using "
-"the global variable instead of a local name.  A ``main`` function solves "
-"this problem."
+"Note that if the module didn't encapsulate code inside the ``main`` function"
+" but instead put it directly within the ``if __name__ == '__main__'`` block,"
+" the ``phrase`` variable would be global to the entire module.  This is "
+"error-prone as other functions within the module could be unintentionally "
+"using the global variable instead of a local name.  A ``main`` function "
+"solves this problem."
 msgstr ""
 
 #: ../../library/__main__.rst:158
@@ -181,25 +178,26 @@ msgstr ""
 
 #: ../../library/__main__.rst:167
 msgid ""
-"``main`` functions are often used to create command-line tools by specifying "
-"them as entry points for console scripts.  When this is done, `pip <https://"
-"pip.pypa.io/>`_ inserts the function call into a template script, where the "
-"return value of ``main`` is passed into :func:`sys.exit`. For example::"
+"``main`` functions are often used to create command-line tools by specifying"
+" them as entry points for console scripts.  When this is done, `pip "
+"<https://pip.pypa.io/>`_ inserts the function call into a template script, "
+"where the return value of ``main`` is passed into :func:`sys.exit`. For "
+"example::"
 msgstr ""
 
 #: ../../library/__main__.rst:175
 msgid ""
 "Since the call to ``main`` is wrapped in :func:`sys.exit`, the expectation "
-"is that your function will return some value acceptable as an input to :func:"
-"`sys.exit`; typically, an integer or ``None`` (which is implicitly returned "
-"if your function does not have a return statement)."
+"is that your function will return some value acceptable as an input to "
+":func:`sys.exit`; typically, an integer or ``None`` (which is implicitly "
+"returned if your function does not have a return statement)."
 msgstr ""
 
 #: ../../library/__main__.rst:180
 msgid ""
-"By proactively following this convention ourselves, our module will have the "
-"same behavior when run directly (i.e. ``python echo.py``) as it will have if "
-"we later package it as a console script entry-point in a pip-installable "
+"By proactively following this convention ourselves, our module will have the"
+" same behavior when run directly (i.e. ``python echo.py``) as it will have "
+"if we later package it as a console script entry-point in a pip-installable "
 "package."
 msgstr ""
 
@@ -208,8 +206,8 @@ msgid ""
 "In particular, be careful about returning strings from your ``main`` "
 "function. :func:`sys.exit` will interpret a string argument as a failure "
 "message, so your program will have an exit code of ``1``, indicating "
-"failure, and the string will be written to :data:`sys.stderr`.  The ``echo."
-"py`` example from earlier exemplifies using the ``sys.exit(main())`` "
+"failure, and the string will be written to :data:`sys.stderr`.  The "
+"``echo.py`` example from earlier exemplifies using the ``sys.exit(main())`` "
 "convention."
 msgstr ""
 
@@ -234,8 +232,8 @@ msgstr ""
 
 #: ../../library/__main__.rst:213
 msgid ""
-"``__main__.py`` will be executed when the package itself is invoked directly "
-"from the command line using the :option:`-m` flag. For example:"
+"``__main__.py`` will be executed when the package itself is invoked directly"
+" from the command line using the :option:`-m` flag. For example:"
 msgstr ""
 
 #: ../../library/__main__.rst:220
@@ -272,8 +270,8 @@ msgstr ""
 #: ../../library/__main__.rst:254
 msgid ""
 "This won't work for ``__main__.py`` files in the root directory of a .zip "
-"file though.  Hence, for consistency, minimal ``__main__.py`` like the :mod:"
-"`venv` one mentioned below are preferred."
+"file though.  Hence, for consistency, minimal ``__main__.py`` like the "
+":mod:`venv` one mentioned below are preferred."
 msgstr ""
 
 #: ../../library/__main__.rst:260
@@ -357,12 +355,12 @@ msgstr ""
 
 #: ../../library/__main__.rst:364
 msgid ""
-"Note that in this case the ``__main__`` scope doesn't contain a ``__file__`` "
-"attribute as it's interactive."
+"Note that in this case the ``__main__`` scope doesn't contain a ``__file__``"
+" attribute as it's interactive."
 msgstr ""
 
 #: ../../library/__main__.rst:367
 msgid ""
-"The ``__main__`` scope is used in the implementation of :mod:`pdb` and :mod:"
-"`rlcompleter`."
+"The ``__main__`` scope is used in the implementation of :mod:`pdb` and "
+":mod:`rlcompleter`."
 msgstr ""

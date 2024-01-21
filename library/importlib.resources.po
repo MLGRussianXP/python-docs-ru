@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,15 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/importlib.resources.rst:2
 msgid ""
@@ -37,11 +34,11 @@ msgstr ""
 
 #: ../../library/importlib.resources.rst:16
 msgid ""
-"\"Resources\" are file-like resources associated with a module or package in "
-"Python. The resources may be contained directly in a package, within a "
+"\"Resources\" are file-like resources associated with a module or package in"
+" Python. The resources may be contained directly in a package, within a "
 "subdirectory contained in that package, or adjacent to modules outside a "
-"package. Resources may be text or binary. As a result, Python module sources "
-"(.py) of a package and compilation artifacts (pycache) are technically de-"
+"package. Resources may be text or binary. As a result, Python module sources"
+" (.py) of a package and compilation artifacts (pycache) are technically de-"
 "facto resources of that package. In practice, however, resources are "
 "primarily those non-Python artifacts exposed specifically by the package "
 "author."
@@ -56,15 +53,16 @@ msgid ""
 "Resources are roughly akin to files inside directories, though it's "
 "important to keep in mind that this is just a metaphor.  Resources and "
 "packages **do not** have to exist as physical files and directories on the "
-"file system: for example, a package and its resources can be imported from a "
-"zip file using :py:mod:`zipimport`."
+"file system: for example, a package and its resources can be imported from a"
+" zip file using :py:mod:`zipimport`."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:35
 msgid ""
-"This module provides functionality similar to `pkg_resources <https://"
-"setuptools.readthedocs.io/en/latest/pkg_resources.html>`_ `Basic Resource "
-"Access <https://setuptools.readthedocs.io/en/latest/pkg_resources.html#basic-"
+"This module provides functionality similar to `pkg_resources "
+"<https://setuptools.readthedocs.io/en/latest/pkg_resources.html>`_ `Basic "
+"Resource Access "
+"<https://setuptools.readthedocs.io/en/latest/pkg_resources.html#basic-"
 "resource-access>`_ without the performance overhead of that package.  This "
 "makes reading resources included in packages easier, with more stable and "
 "consistent semantics."
@@ -73,9 +71,10 @@ msgstr ""
 #: ../../library/importlib.resources.rst:43
 msgid ""
 "The standalone backport of this module provides more information on `using "
-"importlib.resources <https://importlib-resources.readthedocs.io/en/latest/"
-"using.html>`_ and `migrating from pkg_resources to importlib.resources "
-"<https://importlib-resources.readthedocs.io/en/latest/migration.html>`_."
+"importlib.resources <https://importlib-"
+"resources.readthedocs.io/en/latest/using.html>`_ and `migrating from "
+"pkg_resources to importlib.resources <https://importlib-"
+"resources.readthedocs.io/en/latest/migration.html>`_."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:49
@@ -87,8 +86,8 @@ msgstr ""
 
 #: ../../library/importlib.resources.rst:55
 msgid ""
-"Represents an anchor for resources, either a :class:`module object <types."
-"ModuleType>` or a module name as a string. Defined as ``Union[str, "
+"Represents an anchor for resources, either a :class:`module object "
+"<types.ModuleType>` or a module name as a string. Defined as ``Union[str, "
 "ModuleType]``."
 msgstr ""
 
@@ -110,10 +109,11 @@ msgstr ""
 #: ../../library/importlib.resources.rst:74
 msgid ""
 "*package* parameter was renamed to *anchor*. *anchor* can now be a non-"
-"package module and if omitted will default to the caller's module. *package* "
-"is still accepted for compatibility but will raise a :exc:"
-"`DeprecationWarning`. Consider passing the anchor positionally or using "
-"``importlib_resources >= 5.10`` for a compatible interface on older Pythons."
+"package module and if omitted will default to the caller's module. *package*"
+" is still accepted for compatibility but will raise a "
+":exc:`DeprecationWarning`. Consider passing the anchor positionally or using"
+" ``importlib_resources >= 5.10`` for a compatible interface on older "
+"Pythons."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:84
@@ -148,16 +148,16 @@ msgstr ""
 msgid ""
 "An older, deprecated set of functions is still available, but is scheduled "
 "for removal in a future version of Python. The main drawback of these "
-"functions is that they do not support directories: they assume all resources "
-"are located directly within a *package*."
+"functions is that they do not support directories: they assume all resources"
+" are located directly within a *package*."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:112
 msgid ""
-"Whenever a function accepts a ``Package`` argument, you can pass in either "
-"a :class:`module object <types.ModuleType>` or a module name as a string.  "
-"You can only pass module objects whose ``__spec__."
-"submodule_search_locations`` is not ``None``."
+"Whenever a function accepts a ``Package`` argument, you can pass in either a"
+" :class:`module object <types.ModuleType>` or a module name as a string.  "
+"You can only pass module objects whose "
+"``__spec__.submodule_search_locations`` is not ``None``."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:117
@@ -166,8 +166,8 @@ msgstr ""
 
 #: ../../library/importlib.resources.rst:124
 msgid ""
-"For *resource* arguments of the functions below, you can pass in the name of "
-"a resource as a string or a :class:`path-like object <os.PathLike>`."
+"For *resource* arguments of the functions below, you can pass in the name of"
+" a resource as a string or a :class:`path-like object <os.PathLike>`."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:128
@@ -182,9 +182,9 @@ msgstr ""
 msgid ""
 "*package* is either a name or a module object which conforms to the "
 "``Package`` requirements.  *resource* is the name of the resource to open "
-"within *package*; it may not contain path separators and it may not have sub-"
-"resources (i.e. it cannot be a directory).  This function returns a ``typing."
-"BinaryIO`` instance, a binary I/O stream open for reading."
+"within *package*; it may not contain path separators and it may not have "
+"sub-resources (i.e. it cannot be a directory).  This function returns a "
+"``typing.BinaryIO`` instance, a binary I/O stream open for reading."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:143
@@ -206,9 +206,9 @@ msgstr ""
 msgid ""
 "*package* is either a name or a module object which conforms to the "
 "``Package`` requirements.  *resource* is the name of the resource to open "
-"within *package*; it may not contain path separators and it may not have sub-"
-"resources (i.e. it cannot be a directory).  *encoding* and *errors* have the "
-"same meaning as with built-in :func:`open`."
+"within *package*; it may not contain path separators and it may not have "
+"sub-resources (i.e. it cannot be a directory).  *encoding* and *errors* have"
+" the same meaning as with built-in :func:`open`."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:159
@@ -219,31 +219,32 @@ msgstr ""
 
 #: ../../library/importlib.resources.rst:171
 msgid ""
-"Read and return the contents of the *resource* within *package* as ``bytes``."
+"Read and return the contents of the *resource* within *package* as "
+"``bytes``."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:174
 msgid ""
 "*package* is either a name or a module object which conforms to the "
 "``Package`` requirements.  *resource* is the name of the resource to open "
-"within *package*; it may not contain path separators and it may not have sub-"
-"resources (i.e. it cannot be a directory).  This function returns the "
+"within *package*; it may not contain path separators and it may not have "
+"sub-resources (i.e. it cannot be a directory).  This function returns the "
 "contents of the resource as :class:`bytes`."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:189
 msgid ""
-"Read and return the contents of *resource* within *package* as a ``str``. By "
-"default, the contents are read as strict UTF-8."
+"Read and return the contents of *resource* within *package* as a ``str``. By"
+" default, the contents are read as strict UTF-8."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:192
 msgid ""
 "*package* is either a name or a module object which conforms to the "
 "``Package`` requirements.  *resource* is the name of the resource to open "
-"within *package*; it may not contain path separators and it may not have sub-"
-"resources (i.e. it cannot be a directory).  *encoding* and *errors* have the "
-"same meaning as with built-in :func:`open`.  This function returns the "
+"within *package*; it may not contain path separators and it may not have "
+"sub-resources (i.e. it cannot be a directory).  *encoding* and *errors* have"
+" the same meaning as with built-in :func:`open`.  This function returns the "
 "contents of the resource as :class:`str`."
 msgstr ""
 
@@ -264,8 +265,8 @@ msgstr ""
 msgid ""
 "*package* is either a name or a module object which conforms to the "
 "``Package`` requirements.  *resource* is the name of the resource to open "
-"within *package*; it may not contain path separators and it may not have sub-"
-"resources (i.e. it cannot be a directory)."
+"within *package*; it may not contain path separators and it may not have "
+"sub-resources (i.e. it cannot be a directory)."
 msgstr ""
 
 #: ../../library/importlib.resources.rst:222

@@ -1,28 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Dmitriy Q, 2022
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:13+0000\n"
+"POT-Creation-Date: 2024-01-19 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
 "Last-Translator: Dmitriy Q, 2022\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../license.rst:7
 msgid "History and License"
@@ -207,8 +204,8 @@ msgstr ""
 msgid ""
 "GPL-compatible doesn't mean that we're distributing Python under the GPL.  "
 "All Python licenses, unlike the GPL, let you distribute a modified version "
-"without making your changes open source. The GPL-compatible licenses make it "
-"possible to combine Python with other software that is released under the "
+"without making your changes open source. The GPL-compatible licenses make it"
+" possible to combine Python with other software that is released under the "
 "GPL; the others don't."
 msgstr ""
 
@@ -231,15 +228,15 @@ msgstr ""
 #: ../../license.rst:78
 msgid ""
 "Starting with Python 3.8.6, examples, recipes, and other code in the "
-"documentation are dual licensed under the PSF License Agreement and the :ref:"
-"`Zero-Clause BSD license <BSD0>`."
+"documentation are dual licensed under the PSF License Agreement and the "
+":ref:`Zero-Clause BSD license <BSD0>`."
 msgstr ""
 
 #: ../../license.rst:82
 msgid ""
 "Some software incorporated into Python is under different licenses. The "
-"licenses are listed with code falling under that license. See :ref:"
-"`OtherLicenses` for an incomplete list of these licenses."
+"licenses are listed with code falling under that license. See "
+":ref:`OtherLicenses` for an incomplete list of these licenses."
 msgstr ""
 
 #: ../../license.rst:90
@@ -283,10 +280,10 @@ msgstr ""
 
 #: ../../license.rst:305
 msgid ""
-"The :mod:`!_random` C extension underlying the :mod:`random` module includes "
-"code based on a download from http://www.math.sci.hiroshima-u.ac.jp/~m-mat/"
-"MT/MT2002/emt19937ar.html. The following are the verbatim comments from the "
-"original code::"
+"The :mod:`!_random` C extension underlying the :mod:`random` module includes"
+" code based on a download from "
+"http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/emt19937ar.html. The "
+"following are the verbatim comments from the original code::"
 msgstr ""
 
 #: ../../license.rst:353
@@ -295,9 +292,9 @@ msgstr ""
 
 #: ../../license.rst:355
 msgid ""
-"The :mod:`socket` module uses the functions, :c:func:`!getaddrinfo`, and :c:"
-"func:`!getnameinfo`, which are coded in separate source files from the WIDE "
-"Project, https://www.wide.ad.jp/. ::"
+"The :mod:`socket` module uses the functions, :c:func:`!getaddrinfo`, and "
+":c:func:`!getnameinfo`, which are coded in separate source files from the "
+"WIDE Project, https://www.wide.ad.jp/. ::"
 msgstr ""
 
 #: ../../license.rst:388
@@ -366,8 +363,8 @@ msgstr ""
 
 #: ../../license.rst:599
 msgid ""
-"The file :file:`Python/pyhash.c` contains Marek Majkowski' implementation of "
-"Dan Bernstein's SipHash24 algorithm. It contains the following note::"
+"The file :file:`Python/pyhash.c` contains Marek Majkowski' implementation of"
+" Dan Bernstein's SipHash24 algorithm. It contains the following note::"
 msgstr ""
 
 #: ../../license.rst:626
@@ -377,11 +374,11 @@ msgstr ""
 #: ../../license.rst:628
 msgid ""
 "The file :file:`Python/dtoa.c`, which supplies C functions dtoa and strtod "
-"for conversion of C doubles to and from strings, is derived from the file of "
-"the same name by David M. Gay, currently available from https://web.archive."
-"org/web/20220517033456/http://www.netlib.org/fp/dtoa.c. The original file, "
-"as retrieved on March 16, 2009, contains the following copyright and "
-"licensing notice::"
+"for conversion of C doubles to and from strings, is derived from the file of"
+" the same name by David M. Gay, currently available from "
+"https://web.archive.org/web/20220517033456/http://www.netlib.org/fp/dtoa.c. "
+"The original file, as retrieved on March 16, 2009, contains the following "
+"copyright and licensing notice::"
 msgstr ""
 
 #: ../../license.rst:656
@@ -393,8 +390,8 @@ msgid ""
 "The modules :mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` use the "
 "OpenSSL library for added performance if made available by the operating "
 "system. Additionally, the Windows and macOS installers for Python may "
-"include a copy of the OpenSSL libraries, so we include a copy of the OpenSSL "
-"license here. For the OpenSSL 3.0 release, and later releases derived from "
+"include a copy of the OpenSSL libraries, so we include a copy of the OpenSSL"
+" license here. For the OpenSSL 3.0 release, and later releases derived from "
 "that, the Apache License v2 applies::"
 msgstr ""
 
@@ -415,9 +412,9 @@ msgstr ""
 
 #: ../../license.rst:876
 msgid ""
-"The :mod:`!_ctypes` C extension underlying the :mod:`ctypes` module is built "
-"using an included copy of the libffi sources unless the build is configured "
-"``--with-system-libffi``::"
+"The :mod:`!_ctypes` C extension underlying the :mod:`ctypes` module is built"
+" using an included copy of the libffi sources unless the build is configured"
+" ``--with-system-libffi``::"
 msgstr ""
 
 #: ../../license.rst:904
@@ -437,8 +434,8 @@ msgstr ""
 
 #: ../../license.rst:937
 msgid ""
-"The implementation of the hash table used by the :mod:`tracemalloc` is based "
-"on the cfuhash project::"
+"The implementation of the hash table used by the :mod:`tracemalloc` is based"
+" on the cfuhash project::"
 msgstr ""
 
 #: ../../license.rst:976
@@ -458,9 +455,10 @@ msgstr ""
 
 #: ../../license.rst:1011
 msgid ""
-"The C14N 2.0 test suite in the :mod:`test` package (``Lib/test/xmltestdata/"
-"c14n-20/``) was retrieved from the W3C website at https://www.w3.org/TR/xml-"
-"c14n2-testcases/ and is distributed under the 3-clause BSD license::"
+"The C14N 2.0 test suite in the :mod:`test` package "
+"(``Lib/test/xmltestdata/c14n-20/``) was retrieved from the W3C website at "
+"https://www.w3.org/TR/xml-c14n2-testcases/ and is distributed under the "
+"3-clause BSD license::"
 msgstr ""
 
 #: ../../license.rst:1046
@@ -470,4 +468,15 @@ msgstr ""
 #: ../../license.rst:1048
 msgid ""
 "The audioop module uses the code base in g771.c file of the SoX project::"
+msgstr ""
+
+#: ../../license.rst:1074
+msgid "asyncio"
+msgstr ""
+
+#: ../../license.rst:1076
+msgid ""
+"Parts of the :mod:`asyncio` module are incorporated from `uvloop 0.16 "
+"<https://github.com/MagicStack/uvloop/tree/v0.16.0>`_, which is distributed "
+"under the MIT license::"
 msgstr ""

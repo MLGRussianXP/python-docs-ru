@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,15 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2022-11-05 19:48+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/asyncio-extending.rst:6
 msgid "Extending"
@@ -42,8 +39,8 @@ msgstr ""
 
 #: ../../library/asyncio-extending.rst:21
 msgid ""
-":class:`asyncio.AbstractEventLoop` declares very many methods.  Implementing "
-"all them from scratch is a tedious job."
+":class:`asyncio.AbstractEventLoop` declares very many methods.  Implementing"
+" all them from scratch is a tedious job."
 msgstr ""
 
 #: ../../library/asyncio-extending.rst:24
@@ -73,8 +70,8 @@ msgstr ""
 #: ../../library/asyncio-extending.rst:40
 msgid ""
 ":class:`asyncio.Future` and :class:`asyncio.Task` should be never created "
-"directly, please use corresponding :meth:`loop.create_future` and :meth:"
-"`loop.create_task`, or :func:`asyncio.create_task` factories instead."
+"directly, please use corresponding :meth:`loop.create_future` and "
+":meth:`loop.create_task`, or :func:`asyncio.create_task` factories instead."
 msgstr ""
 
 #: ../../library/asyncio-extending.rst:44
@@ -117,8 +114,8 @@ msgstr ""
 #: ../../library/asyncio-extending.rst:71
 msgid ""
 "A third party task implementation should call the following functions to "
-"keep a task visible by :func:`asyncio.all_tasks` and :func:`asyncio."
-"current_task`:"
+"keep a task visible by :func:`asyncio.all_tasks` and "
+":func:`asyncio.current_task`:"
 msgstr ""
 
 #: ../../library/asyncio-extending.rst:76
@@ -143,8 +140,8 @@ msgstr ""
 
 #: ../../library/asyncio-extending.rst:90
 msgid ""
-"Call the function just before executing a portion of embedded *coroutine* (:"
-"meth:`coroutine.send` or :meth:`coroutine.throw`)."
+"Call the function just before executing a portion of embedded *coroutine* "
+"(:meth:`coroutine.send` or :meth:`coroutine.throw`)."
 msgstr ""
 
 #: ../../library/asyncio-extending.rst:95
@@ -153,6 +150,6 @@ msgstr ""
 
 #: ../../library/asyncio-extending.rst:97
 msgid ""
-"Call the function just after :meth:`coroutine.send` or :meth:`coroutine."
-"throw` execution."
+"Call the function just after :meth:`coroutine.send` or "
+":meth:`coroutine.throw` execution."
 msgstr ""

@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,15 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/sndhdr.rst:2
 msgid ":mod:`sndhdr` --- Determine type of sound file"
@@ -38,24 +35,24 @@ msgstr ""
 msgid ""
 "The :mod:`sndhdr` provides utility functions which attempt to determine the "
 "type of sound data which is in a file.  When these functions are able to "
-"determine what type of sound data is stored in a file, they return a :func:"
-"`~collections.namedtuple`, containing five attributes: (``filetype``, "
+"determine what type of sound data is stored in a file, they return a "
+":func:`~collections.namedtuple`, containing five attributes: (``filetype``, "
 "``framerate``, ``nchannels``, ``nframes``, ``sampwidth``). The value for "
 "*type* indicates the data type and will be one of the strings ``'aifc'``, "
 "``'aiff'``, ``'au'``, ``'hcom'``, ``'sndr'``, ``'sndt'``, ``'voc'``, "
-"``'wav'``, ``'8svx'``, ``'sb'``, ``'ub'``, or ``'ul'``.  The *sampling_rate* "
-"will be either the actual value or ``0`` if unknown or difficult to decode.  "
-"Similarly, *channels* will be either the number of channels or ``0`` if it "
-"cannot be determined or if the value is difficult to decode.  The value for "
-"*frames* will be either the number of frames or ``-1``.  The last item in "
+"``'wav'``, ``'8svx'``, ``'sb'``, ``'ub'``, or ``'ul'``.  The *sampling_rate*"
+" will be either the actual value or ``0`` if unknown or difficult to decode."
+"  Similarly, *channels* will be either the number of channels or ``0`` if it"
+" cannot be determined or if the value is difficult to decode.  The value for"
+" *frames* will be either the number of frames or ``-1``.  The last item in "
 "the tuple, *bits_per_sample*, will either be the sample size in bits or "
 "``'A'`` for A-LAW or ``'U'`` for u-LAW."
 msgstr ""
 
 #: ../../library/sndhdr.rst:40
 msgid ""
-"Determines the type of sound data stored in the file *filename* using :func:"
-"`whathdr`.  If it succeeds, returns a namedtuple as described above, "
+"Determines the type of sound data stored in the file *filename* using "
+":func:`whathdr`.  If it succeeds, returns a namedtuple as described above, "
 "otherwise ``None`` is returned."
 msgstr ""
 
@@ -175,8 +172,9 @@ msgstr ""
 #: ../../library/sndhdr.rst:88
 msgid ""
 "A list of functions performing the individual tests.  Each function takes "
-"two arguments: the byte-stream and an open file-like object. When :func:"
-"`what` is called with a byte-stream, the file-like object will be ``None``."
+"two arguments: the byte-stream and an open file-like object. When "
+":func:`what` is called with a byte-stream, the file-like object will be "
+"``None``."
 msgstr ""
 
 #: ../../library/sndhdr.rst:92

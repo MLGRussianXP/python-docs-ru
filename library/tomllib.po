@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,15 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
-"ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/tomllib.rst:2
 msgid ":mod:`tomllib` --- Parse TOML files"
@@ -37,8 +34,8 @@ msgstr ""
 
 #: ../../library/tomllib.rst:22
 msgid ""
-"The `Tomli-W package <https://pypi.org/project/tomli-w/>`__ is a TOML writer "
-"that can be used in conjunction with this module, providing a write API "
+"The `Tomli-W package <https://pypi.org/project/tomli-w/>`__ is a TOML writer"
+" that can be used in conjunction with this module, providing a write API "
 "familiar to users of the standard library :mod:`marshal` and :mod:`pickle` "
 "modules."
 msgstr ""
@@ -58,17 +55,17 @@ msgstr ""
 #: ../../library/tomllib.rst:39
 msgid ""
 "Read a TOML file. The first argument should be a readable and binary file "
-"object. Return a :class:`dict`. Convert TOML types to Python using this :ref:"
-"`conversion table <toml-to-py-table>`."
+"object. Return a :class:`dict`. Convert TOML types to Python using this "
+":ref:`conversion table <toml-to-py-table>`."
 msgstr ""
 
 #: ../../library/tomllib.rst:43
 msgid ""
 "*parse_float* will be called with the string of every TOML float to be "
 "decoded.  By default, this is equivalent to ``float(num_str)``. This can be "
-"used to use another datatype or parser for TOML floats (e.g. :class:`decimal."
-"Decimal`). The callable must not return a :class:`dict` or a :class:`list`, "
-"else a :exc:`ValueError` is raised."
+"used to use another datatype or parser for TOML floats (e.g. "
+":class:`decimal.Decimal`). The callable must not return a :class:`dict` or a"
+" :class:`list`, else a :exc:`ValueError` is raised."
 msgstr ""
 
 #: ../../library/tomllib.rst:49 ../../library/tomllib.rst:58
@@ -161,8 +158,8 @@ msgstr ""
 
 #: ../../library/tomllib.rst:108
 msgid ""
-"datetime.datetime (``tzinfo`` attribute set to an instance of ``datetime."
-"timezone``)"
+"datetime.datetime (``tzinfo`` attribute set to an instance of "
+"``datetime.timezone``)"
 msgstr ""
 
 #: ../../library/tomllib.rst:110

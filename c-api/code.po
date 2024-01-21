@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,12 +10,15 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../c-api/code.rst:8
 msgid "Code Objects"
@@ -30,14 +33,14 @@ msgstr ""
 
 #: ../../c-api/code.rst:18
 msgid ""
-"The C structure of the objects used to describe code objects.  The fields of"
-" this type are subject to change at any time."
+"The C structure of the objects used to describe code objects.  The fields of "
+"this type are subject to change at any time."
 msgstr ""
 
 #: ../../c-api/code.rst:24
 msgid ""
-"This is an instance of :c:type:`PyTypeObject` representing the Python "
-":class:`code` type."
+"This is an instance of :c:type:`PyTypeObject` representing the Python :class:"
+"`code` type."
 msgstr ""
 
 #: ../../c-api/code.rst:30
@@ -58,9 +61,8 @@ msgstr ""
 
 #: ../../c-api/code.rst:41
 msgid ""
-"Since the definition of the bytecode changes often, calling "
-":c:func:`PyUnstable_Code_New` directly can bind you to a precise Python "
-"version."
+"Since the definition of the bytecode changes often, calling :c:func:"
+"`PyUnstable_Code_New` directly can bind you to a precise Python version."
 msgstr ""
 
 #: ../../c-api/code.rst:44
@@ -104,8 +106,8 @@ msgstr ""
 #: ../../c-api/code.rst:79
 msgid ""
 "Return a new empty code object with the specified filename, function name, "
-"and first line number. The resulting code object will raise an ``Exception``"
-" if executed."
+"and first line number. The resulting code object will raise an ``Exception`` "
+"if executed."
 msgstr ""
 
 #: ../../c-api/code.rst:85
@@ -179,10 +181,10 @@ msgstr ""
 
 #: ../../c-api/code.rst:151
 msgid ""
-"Clear watcher identified by *watcher_id* previously returned from "
-":c:func:`PyCode_AddWatcher` for the current interpreter. Return ``0`` on "
-"success, or ``-1`` and set an exception on error (e.g. if the given "
-"*watcher_id* was never registered.)"
+"Clear watcher identified by *watcher_id* previously returned from :c:func:"
+"`PyCode_AddWatcher` for the current interpreter. Return ``0`` on success, or "
+"``-1`` and set an exception on error (e.g. if the given *watcher_id* was "
+"never registered.)"
 msgstr ""
 
 #: ../../c-api/code.rst:160
@@ -224,8 +226,8 @@ msgstr ""
 #: ../../c-api/code.rst:187
 msgid ""
 "If the callback sets an exception, it must return ``-1``; this exception "
-"will be printed as an unraisable exception using "
-":c:func:`PyErr_WriteUnraisable`. Otherwise it should return ``0``."
+"will be printed as an unraisable exception using :c:func:"
+"`PyErr_WriteUnraisable`. Otherwise it should return ``0``."
 msgstr ""
 
 #: ../../c-api/code.rst:191
@@ -233,8 +235,8 @@ msgid ""
 "There may already be a pending exception set on entry to the callback. In "
 "this case, the callback should return ``0`` with the same exception still "
 "set. This means the callback may not call any other API that can set an "
-"exception unless it saves and clears the exception state first, and restores"
-" it before returning."
+"exception unless it saves and clears the exception state first, and restores "
+"it before returning."
 msgstr ""
 
 #: ../../c-api/code.rst:201
@@ -250,14 +252,13 @@ msgstr ""
 
 #: ../../c-api/code.rst:207
 msgid ""
-"These functions are part of the unstable C API tier: this functionality is a"
-" CPython implementation detail, and the API may change without deprecation "
+"These functions are part of the unstable C API tier: this functionality is a "
+"CPython implementation detail, and the API may change without deprecation "
 "warnings."
 msgstr ""
 
 #: ../../c-api/code.rst:213
-msgid ""
-"Return a new an opaque index value used to adding data to code objects."
+msgid "Return a new an opaque index value used to adding data to code objects."
 msgstr ""
 
 #: ../../c-api/code.rst:215
@@ -269,9 +270,9 @@ msgstr ""
 
 #: ../../c-api/code.rst:219
 msgid ""
-"If *free* is not ``NULL``: when a code object is deallocated, *free* will be"
-" called on non-``NULL`` data stored under the new index. Use "
-":c:func:`Py_DecRef` when storing :c:type:`PyObject`."
+"If *free* is not ``NULL``: when a code object is deallocated, *free* will be "
+"called on non-``NULL`` data stored under the new index. Use :c:func:"
+"`Py_DecRef` when storing :c:type:`PyObject`."
 msgstr ""
 
 #: ../../c-api/code.rst:225
@@ -302,8 +303,8 @@ msgstr ""
 
 #: ../../c-api/code.rst:247
 msgid ""
-"Renamed to ``PyUnstable_Code_GetExtra``. The old private name is deprecated,"
-" but will be available until the API changes."
+"Renamed to ``PyUnstable_Code_GetExtra``. The old private name is deprecated, "
+"but will be available until the API changes."
 msgstr ""
 
 #: ../../c-api/code.rst:253
@@ -318,8 +319,8 @@ msgstr ""
 
 #: ../../c-api/code.rst:262
 msgid ""
-"Renamed to ``PyUnstable_Code_SetExtra``. The old private name is deprecated,"
-" but will be available until the API changes."
+"Renamed to ``PyUnstable_Code_SetExtra``. The old private name is deprecated, "
+"but will be available until the API changes."
 msgstr ""
 
 #: ../../c-api/code.rst:3

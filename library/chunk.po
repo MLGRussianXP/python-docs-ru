@@ -2,11 +2,11 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # alex alev <alex.alev@bk.ru>, 2021
 # decorator_factory <decorator-factory+transifex@yandex.ru>, 2021
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,13 +14,17 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:56+0000\n"
-"Last-Translator: decorator_factory <decorator-factory+transifex@yandex.ru>, 2021\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Last-Translator: decorator_factory <decorator-factory+transifex@yandex.ru>, "
+"2021\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/chunk.rst:2
 msgid ":mod:`chunk` --- Read IFF chunked data"
@@ -65,7 +69,6 @@ msgid "0"
 msgstr ""
 
 #: ../../library/chunk.rst:36 ../../library/chunk.rst:38
-#: ../../library/chunk.rst:38
 msgid "4"
 msgstr ""
 
@@ -113,10 +116,10 @@ msgstr ""
 
 #: ../../library/chunk.rst:55
 msgid ""
-"Usually an IFF-type file consists of one or more chunks.  The proposed usage"
-" of the :class:`Chunk` class defined here is to instantiate an instance at "
-"the start of each chunk and read from the instance until it reaches the end,"
-" after which a new instance can be instantiated. At the end of the file, "
+"Usually an IFF-type file consists of one or more chunks.  The proposed usage "
+"of the :class:`Chunk` class defined here is to instantiate an instance at "
+"the start of each chunk and read from the instance until it reaches the end, "
+"after which a new instance can be instantiated. At the end of the file, "
 "creating a new instance will fail with an :exc:`EOFError` exception."
 msgstr ""
 
@@ -124,17 +127,17 @@ msgstr ""
 msgid ""
 "Class which represents a chunk.  The *file* argument is expected to be a "
 "file-like object.  An instance of this class is specifically allowed.  The "
-"only method that is needed is :meth:`~io.IOBase.read`.  If the methods "
-":meth:`~io.IOBase.seek` and :meth:`~io.IOBase.tell` are present and don't "
-"raise an exception, they are also used. If these methods are present and "
-"raise an exception, they are expected to not have altered the object.  If "
-"the optional argument *align* is true, chunks are assumed to be aligned on "
-"2-byte boundaries.  If *align* is false, no alignment is assumed.  The "
-"default value is true.  If the optional argument *bigendian* is false, the "
-"chunk size is assumed to be in little-endian order. This is needed for WAVE "
-"audio files. The default value is true.  If the optional argument "
-"*inclheader* is true, the size given in the chunk header includes the size "
-"of the header.  The default value is false."
+"only method that is needed is :meth:`~io.IOBase.read`.  If the methods :meth:"
+"`~io.IOBase.seek` and :meth:`~io.IOBase.tell` are present and don't raise an "
+"exception, they are also used. If these methods are present and raise an "
+"exception, they are expected to not have altered the object.  If the "
+"optional argument *align* is true, chunks are assumed to be aligned on 2-"
+"byte boundaries.  If *align* is false, no alignment is assumed.  The default "
+"value is true.  If the optional argument *bigendian* is false, the chunk "
+"size is assumed to be in little-endian order. This is needed for WAVE audio "
+"files. The default value is true.  If the optional argument *inclheader* is "
+"true, the size given in the chunk header includes the size of the header.  "
+"The default value is false."
 msgstr ""
 
 #: ../../library/chunk.rst:78
@@ -158,9 +161,9 @@ msgstr ""
 
 #: ../../library/chunk.rst:97
 msgid ""
-"The remaining methods will raise :exc:`OSError` if called after the "
-":meth:`close` method has been called.  Before Python 3.3, they used to raise"
-" :exc:`IOError`, now an alias of :exc:`OSError`."
+"The remaining methods will raise :exc:`OSError` if called after the :meth:"
+"`close` method has been called.  Before Python 3.3, they used to raise :exc:"
+"`IOError`, now an alias of :exc:`OSError`."
 msgstr ""
 
 #: ../../library/chunk.rst:104
@@ -172,8 +175,8 @@ msgid ""
 "Set the chunk's current position.  The *whence* argument is optional and "
 "defaults to ``0`` (absolute file positioning); other values are ``1`` (seek "
 "relative to the current position) and ``2`` (seek relative to the file's "
-"end).  There is no return value. If the underlying file does not allow seek,"
-" only forward seeks are allowed."
+"end).  There is no return value. If the underlying file does not allow seek, "
+"only forward seeks are allowed."
 msgstr ""
 
 #: ../../library/chunk.rst:118
@@ -192,9 +195,9 @@ msgstr ""
 #: ../../library/chunk.rst:132
 msgid ""
 "Skip to the end of the chunk.  All further calls to :meth:`read` for the "
-"chunk will return ``b''``.  If you are not interested in the contents of the"
-" chunk, this method should be called so that the file points to the start of"
-" the next chunk."
+"chunk will return ``b''``.  If you are not interested in the contents of the "
+"chunk, this method should be called so that the file points to the start of "
+"the next chunk."
 msgstr ""
 
 #: ../../library/chunk.rst:139

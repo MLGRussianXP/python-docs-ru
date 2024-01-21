@@ -2,10 +2,10 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # alex alev <alex.alev@bk.ru>, 2021
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,12 +14,15 @@ msgstr ""
 "POT-Creation-Date: 2024-01-19 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
 "Last-Translator: alex alev <alex.alev@bk.ru>, 2021\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/pathlib.rst:3
 msgid ":mod:`pathlib` --- Object-oriented filesystem paths"
@@ -59,9 +62,9 @@ msgstr ""
 
 #: ../../library/pathlib.rst:35
 msgid ""
-"You want to make sure that your code only manipulates paths without actually"
-" accessing the OS. In this case, instantiating one of the pure classes may "
-"be useful since those simply don't have any OS-accessing operations."
+"You want to make sure that your code only manipulates paths without actually "
+"accessing the OS. In this case, instantiating one of the pure classes may be "
+"useful since those simply don't have any OS-accessing operations."
 msgstr ""
 
 #: ../../library/pathlib.rst:40
@@ -70,8 +73,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:43
 msgid ""
-"For low-level path manipulation on strings, you can also use the "
-":mod:`os.path` module."
+"For low-level path manipulation on strings, you can also use the :mod:`os."
+"path` module."
 msgstr ""
 
 #: ../../library/pathlib.rst:48
@@ -109,8 +112,8 @@ msgstr ""
 #: ../../library/pathlib.rst:96
 msgid ""
 "Pure path objects provide path-handling operations which don't actually "
-"access a filesystem.  There are three ways to access these classes, which we"
-" also call *flavours*:"
+"access a filesystem.  There are three ways to access these classes, which we "
+"also call *flavours*:"
 msgstr ""
 
 #: ../../library/pathlib.rst:102
@@ -123,8 +126,8 @@ msgstr ""
 msgid ""
 "Each element of *pathsegments* can be either a string representing a path "
 "segment, or an object implementing the :class:`os.PathLike` interface where "
-"the :meth:`~os.PathLike.__fspath__` method returns a string, such as another"
-" path object::"
+"the :meth:`~os.PathLike.__fspath__` method returns a string, such as another "
+"path object::"
 msgstr ""
 
 #: ../../library/pathlib.rst:118
@@ -133,14 +136,14 @@ msgstr ""
 
 #: ../../library/pathlib.rst:123
 msgid ""
-"If a segment is an absolute path, all previous segments are ignored (like "
-":func:`os.path.join`)::"
+"If a segment is an absolute path, all previous segments are ignored (like :"
+"func:`os.path.join`)::"
 msgstr ""
 
 #: ../../library/pathlib.rst:131
 msgid ""
-"On Windows, the drive is not reset when a rooted relative path segment "
-"(e.g., ``r'\\foo'``) is encountered::"
+"On Windows, the drive is not reset when a rooted relative path segment (e."
+"g., ``r'\\foo'``) is encountered::"
 msgstr ""
 
 #: ../../library/pathlib.rst:137
@@ -187,8 +190,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:184
 msgid ""
-"Regardless of the system you're running on, you can instantiate all of these"
-" classes, since they don't provide any operation that does system calls."
+"Regardless of the system you're running on, you can instantiate all of these "
+"classes, since they don't provide any operation that does system calls."
 msgstr ""
 
 #: ../../library/pathlib.rst:189
@@ -220,21 +223,21 @@ msgstr ""
 
 #: ../../library/pathlib.rst:235
 msgid ""
-"A path object can be used anywhere an object implementing "
-":class:`os.PathLike` is accepted::"
+"A path object can be used anywhere an object implementing :class:`os."
+"PathLike` is accepted::"
 msgstr ""
 
 #: ../../library/pathlib.rst:243
 msgid ""
 "The string representation of a path is the raw filesystem path itself (in "
-"native form, e.g. with backslashes under Windows), which you can pass to any"
-" function taking a file path as a string::"
+"native form, e.g. with backslashes under Windows), which you can pass to any "
+"function taking a file path as a string::"
 msgstr ""
 
 #: ../../library/pathlib.rst:254
 msgid ""
-"Similarly, calling :class:`bytes` on a path gives the raw filesystem path as"
-" a bytes object, as encoded by :func:`os.fsencode`::"
+"Similarly, calling :class:`bytes` on a path gives the raw filesystem path as "
+"a bytes object, as encoded by :func:`os.fsencode`::"
 msgstr ""
 
 #: ../../library/pathlib.rst:261
@@ -249,8 +252,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:268
 msgid ""
-"To access the individual \"parts\" (components) of a path, use the following"
-" property:"
+"To access the individual \"parts\" (components) of a path, use the following "
+"property:"
 msgstr ""
 
 #: ../../library/pathlib.rst:273
@@ -287,15 +290,15 @@ msgstr ""
 
 #: ../../library/pathlib.rst:327
 msgid ""
-"If the path starts with more than two successive slashes, "
-":class:`~pathlib.PurePosixPath` collapses them::"
+"If the path starts with more than two successive slashes, :class:`~pathlib."
+"PurePosixPath` collapses them::"
 msgstr ""
 
 #: ../../library/pathlib.rst:339
 msgid ""
 "This behavior conforms to *The Open Group Base Specifications Issue 6*, "
-"paragraph `4.11 Pathname Resolution "
-"<https://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap04.html#tag_04_11>`_:"
+"paragraph `4.11 Pathname Resolution <https://pubs.opengroup.org/"
+"onlinepubs/009695399/basedefs/xbd_chap04.html#tag_04_11>`_:"
 msgstr ""
 
 #: ../../library/pathlib.rst:343
@@ -311,8 +314,7 @@ msgstr ""
 
 #: ../../library/pathlib.rst:363
 msgid ""
-"An immutable sequence providing access to the logical ancestors of the "
-"path::"
+"An immutable sequence providing access to the logical ancestors of the path::"
 msgstr ""
 
 #: ../../library/pathlib.rst:374
@@ -398,8 +400,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:530
 msgid ""
-"File system calls on reserved paths can fail mysteriously or have unintended"
-" effects."
+"File system calls on reserved paths can fail mysteriously or have unintended "
+"effects."
 msgstr ""
 
 #: ../../library/pathlib.rst:536
@@ -410,8 +412,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:551
 msgid ""
-"Match this path against the provided glob-style pattern.  Return ``True`` if"
-" matching is successful, ``False`` otherwise."
+"Match this path against the provided glob-style pattern.  Return ``True`` if "
+"matching is successful, ``False`` otherwise."
 msgstr ""
 
 #: ../../library/pathlib.rst:554
@@ -422,8 +424,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:564
 msgid ""
-"If *pattern* is absolute, the path must be absolute, and the whole path must"
-" match::"
+"If *pattern* is absolute, the path must be absolute, and the whole path must "
+"match::"
 msgstr ""
 
 #: ../../library/pathlib.rst:572
@@ -452,16 +454,16 @@ msgstr ""
 
 #: ../../library/pathlib.rst:597
 msgid ""
-"Compute a version of this path relative to the path represented by *other*."
-"  If it's impossible, :exc:`ValueError` is raised::"
+"Compute a version of this path relative to the path represented by *other*.  "
+"If it's impossible, :exc:`ValueError` is raised::"
 msgstr ""
 
 #: ../../library/pathlib.rst:612
 msgid ""
 "When *walk_up* is False (the default), the path must start with *other*. "
 "When the argument is True, ``..`` entries may be added to form the relative "
-"path. In all other cases, such as the paths referencing different drives, "
-":exc:`ValueError` is raised.::"
+"path. In all other cases, such as the paths referencing different drives, :"
+"exc:`ValueError` is raised.::"
 msgstr ""
 
 #: ../../library/pathlib.rst:627
@@ -480,8 +482,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:638
 msgid ""
-"Passing additional positional arguments is deprecated; if supplied, they are"
-" joined with *other*."
+"Passing additional positional arguments is deprecated; if supplied, they are "
+"joined with *other*."
 msgstr ""
 
 #: ../../library/pathlib.rst:643
@@ -506,9 +508,9 @@ msgstr ""
 #: ../../library/pathlib.rst:701
 msgid ""
 "Create a new path object of the same type by combining the given "
-"*pathsegments*. This method is called whenever a derivative path is created,"
-" such as from :attr:`parent` and :meth:`relative_to`. Subclasses may "
-"override this method to pass information to derivative paths, for example::"
+"*pathsegments*. This method is called whenever a derivative path is created, "
+"such as from :attr:`parent` and :meth:`relative_to`. Subclasses may override "
+"this method to pass information to derivative paths, for example::"
 msgstr ""
 
 #: ../../library/pathlib.rst:727
@@ -524,9 +526,9 @@ msgstr ""
 
 #: ../../library/pathlib.rst:735
 msgid ""
-"A subclass of :class:`PurePath`, this class represents concrete paths of the"
-" system's path flavour (instantiating it creates either a :class:`PosixPath`"
-" or a :class:`WindowsPath`)::"
+"A subclass of :class:`PurePath`, this class represents concrete paths of the "
+"system's path flavour (instantiating it creates either a :class:`PosixPath` "
+"or a :class:`WindowsPath`)::"
 msgstr ""
 
 #: ../../library/pathlib.rst:746
@@ -544,8 +546,8 @@ msgstr ""
 #: ../../library/pathlib.rst:764
 msgid ""
 "You can only instantiate the class flavour that corresponds to your system "
-"(allowing system calls on non-compatible path flavours could lead to bugs or"
-" failures in your application)::"
+"(allowing system calls on non-compatible path flavours could lead to bugs or "
+"failures in your application)::"
 msgstr ""
 
 #: ../../library/pathlib.rst:784
@@ -555,30 +557,30 @@ msgstr ""
 #: ../../library/pathlib.rst:786
 msgid ""
 "Concrete paths provide the following methods in addition to pure paths "
-"methods.  Many of these methods can raise an :exc:`OSError` if a system call"
-" fails (for example because the path doesn't exist)."
+"methods.  Many of these methods can raise an :exc:`OSError` if a system call "
+"fails (for example because the path doesn't exist)."
 msgstr ""
 
 #: ../../library/pathlib.rst:792
 msgid ""
-":meth:`~Path.exists()`, :meth:`~Path.is_dir()`, :meth:`~Path.is_file()`, "
-":meth:`~Path.is_mount()`, :meth:`~Path.is_symlink()`, "
-":meth:`~Path.is_block_device()`, :meth:`~Path.is_char_device()`, "
-":meth:`~Path.is_fifo()`, :meth:`~Path.is_socket()` now return ``False`` "
-"instead of raising an exception for paths that contain characters "
-"unrepresentable at the OS level."
+":meth:`~Path.exists()`, :meth:`~Path.is_dir()`, :meth:`~Path.is_file()`, :"
+"meth:`~Path.is_mount()`, :meth:`~Path.is_symlink()`, :meth:`~Path."
+"is_block_device()`, :meth:`~Path.is_char_device()`, :meth:`~Path."
+"is_fifo()`, :meth:`~Path.is_socket()` now return ``False`` instead of "
+"raising an exception for paths that contain characters unrepresentable at "
+"the OS level."
 msgstr ""
 
 #: ../../library/pathlib.rst:802
 msgid ""
-"Return a new path object representing the current directory (as returned by "
-":func:`os.getcwd`)::"
+"Return a new path object representing the current directory (as returned by :"
+"func:`os.getcwd`)::"
 msgstr ""
 
 #: ../../library/pathlib.rst:811
 msgid ""
-"Return a new path object representing the user's home directory (as returned"
-" by :func:`os.path.expanduser` with ``~`` construct). If the home directory "
+"Return a new path object representing the user's home directory (as returned "
+"by :func:`os.path.expanduser` with ``~`` construct). If the home directory "
 "can't be resolved, :exc:`RuntimeError` is raised."
 msgstr ""
 
@@ -617,35 +619,35 @@ msgstr ""
 
 #: ../../library/pathlib.rst:866
 msgid ""
-"This method normally follows symlinks; to check if a symlink exists, add the"
-" argument ``follow_symlinks=False``."
+"This method normally follows symlinks; to check if a symlink exists, add the "
+"argument ``follow_symlinks=False``."
 msgstr ""
 
 #: ../../library/pathlib.rst:885
 msgid ""
 "Return a new path with expanded ``~`` and ``~user`` constructs, as returned "
-"by :meth:`os.path.expanduser`. If a home directory can't be resolved, "
-":exc:`RuntimeError` is raised."
+"by :meth:`os.path.expanduser`. If a home directory can't be resolved, :exc:"
+"`RuntimeError` is raised."
 msgstr ""
 
 #: ../../library/pathlib.rst:900
 msgid ""
-"Glob the given relative *pattern* in the directory represented by this path,"
-" yielding all matching files (of any kind)::"
+"Glob the given relative *pattern* in the directory represented by this path, "
+"yielding all matching files (of any kind)::"
 msgstr ""
 
 #: ../../library/pathlib.rst:908
 msgid ""
-"Patterns are the same as for :mod:`fnmatch`, with the addition of \"``**``\""
-" which means \"this directory and all subdirectories, recursively\".  In "
+"Patterns are the same as for :mod:`fnmatch`, with the addition of \"``**``\" "
+"which means \"this directory and all subdirectories, recursively\".  In "
 "other words, it enables recursive globbing::"
 msgstr ""
 
 #: ../../library/pathlib.rst:919
 msgid ""
 "This method calls :meth:`Path.is_dir` on the top-level directory and "
-"propagates any :exc:`OSError` exception that is raised. Subsequent "
-":exc:`OSError` exceptions from scanning directories are suppressed."
+"propagates any :exc:`OSError` exception that is raised. Subsequent :exc:"
+"`OSError` exceptions from scanning directories are suppressed."
 msgstr ""
 
 #: ../../library/pathlib.rst:923 ../../library/pathlib.rst:1340
@@ -690,8 +692,8 @@ msgstr ""
 #: ../../library/pathlib.rst:1004 ../../library/pathlib.rst:1013
 #: ../../library/pathlib.rst:1022 ../../library/pathlib.rst:1031
 msgid ""
-"``False`` is also returned if the path doesn't exist or is a broken symlink;"
-" other errors (such as permission errors) are propagated."
+"``False`` is also returned if the path doesn't exist or is a broken symlink; "
+"other errors (such as permission errors) are propagated."
 msgstr ""
 
 #: ../../library/pathlib.rst:959
@@ -741,8 +743,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:1010
 msgid ""
-"Return ``True`` if the path points to a FIFO (or a symbolic link pointing to"
-" a FIFO), ``False`` if it points to another kind of file."
+"Return ``True`` if the path points to a FIFO (or a symbolic link pointing to "
+"a FIFO), ``False`` if it points to another kind of file."
 msgstr ""
 
 #: ../../library/pathlib.rst:1019
@@ -753,8 +755,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:1028
 msgid ""
-"Return ``True`` if the path points to a character device (or a symbolic link"
-" pointing to a character device), ``False`` if it points to another kind of "
+"Return ``True`` if the path points to a character device (or a symbolic link "
+"pointing to a character device), ``False`` if it points to another kind of "
 "file."
 msgstr ""
 
@@ -766,8 +768,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:1051
 msgid ""
-"The children are yielded in arbitrary order, and the special entries ``'.'``"
-" and ``'..'`` are not included.  If a file is removed from or added to the "
+"The children are yielded in arbitrary order, and the special entries ``'.'`` "
+"and ``'..'`` are not included.  If a file is removed from or added to the "
 "directory after creating the iterator, whether a path object for that file "
 "be included is unspecified."
 msgstr ""
@@ -788,10 +790,10 @@ msgstr ""
 #: ../../library/pathlib.rst:1065
 msgid ""
 "*dirpath* is a :class:`Path` to the directory currently being walked, "
-"*dirnames* is a list of strings for the names of subdirectories in *dirpath*"
-" (excluding ``'.'`` and ``'..'``), and *filenames* is a list of strings for "
-"the names of the non-directory files in *dirpath*. To get a full path (which"
-" begins with *self*) to a file or directory in *dirpath*, do ``dirpath / "
+"*dirnames* is a list of strings for the names of subdirectories in *dirpath* "
+"(excluding ``'.'`` and ``'..'``), and *filenames* is a list of strings for "
+"the names of the non-directory files in *dirpath*. To get a full path (which "
+"begins with *self*) to a file or directory in *dirpath*, do ``dirpath / "
 "name``. Whether or not the lists are sorted is file system-dependent."
 msgstr ""
 
@@ -809,22 +811,21 @@ msgstr ""
 #: ../../library/pathlib.rst:1081
 msgid ""
 "When *top_down* is true, the caller can modify the *dirnames* list in-place "
-"(for example, using :keyword:`del` or slice assignment), and "
-":meth:`Path.walk` will only recurse into the subdirectories whose names "
-"remain in *dirnames*. This can be used to prune the search, or to impose a "
-"specific order of visiting, or even to inform :meth:`Path.walk` about "
-"directories the caller creates or renames before it resumes "
-":meth:`Path.walk` again. Modifying *dirnames* when *top_down* is false has "
-"no effect on the behavior of :meth:`Path.walk()` since the directories in "
-"*dirnames* have already been generated by the time *dirnames* is yielded to "
-"the caller."
+"(for example, using :keyword:`del` or slice assignment), and :meth:`Path."
+"walk` will only recurse into the subdirectories whose names remain in "
+"*dirnames*. This can be used to prune the search, or to impose a specific "
+"order of visiting, or even to inform :meth:`Path.walk` about directories the "
+"caller creates or renames before it resumes :meth:`Path.walk` again. "
+"Modifying *dirnames* when *top_down* is false has no effect on the behavior "
+"of :meth:`Path.walk()` since the directories in *dirnames* have already been "
+"generated by the time *dirnames* is yielded to the caller."
 msgstr ""
 
 #: ../../library/pathlib.rst:1091
 msgid ""
 "By default, errors from :func:`os.scandir` are ignored.  If the optional "
-"argument *on_error* is specified, it should be a callable; it will be called"
-" with one argument, an :exc:`OSError` instance. The callable can handle the "
+"argument *on_error* is specified, it should be a callable; it will be called "
+"with one argument, an :exc:`OSError` instance. The callable can handle the "
 "error to continue the walk or re-raise it to stop the walk. Note that the "
 "filename is available as the ``filename`` attribute of the exception object."
 msgstr ""
@@ -841,9 +842,8 @@ msgstr ""
 #: ../../library/pathlib.rst:1104
 msgid ""
 "Be aware that setting *follow_symlinks* to true can lead to infinite "
-"recursion if a link points to a parent directory of itself. "
-":meth:`Path.walk` does not keep track of the directories it has already "
-"visited."
+"recursion if a link points to a parent directory of itself. :meth:`Path."
+"walk` does not keep track of the directories it has already visited."
 msgstr ""
 
 #: ../../library/pathlib.rst:1109
@@ -902,8 +902,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:1174
 msgid ""
-"If *parents* is false (the default), a missing parent raises "
-":exc:`FileNotFoundError`."
+"If *parents* is false (the default), a missing parent raises :exc:"
+"`FileNotFoundError`."
 msgstr ""
 
 #: ../../library/pathlib.rst:1177
@@ -915,8 +915,8 @@ msgstr ""
 #: ../../library/pathlib.rst:1180
 msgid ""
 "If *exist_ok* is true, :exc:`FileExistsError` exceptions will be ignored "
-"(same behavior as the POSIX ``mkdir -p`` command), but only if the last path"
-" component is not an existing non-directory file."
+"(same behavior as the POSIX ``mkdir -p`` command), but only if the last path "
+"component is not an existing non-directory file."
 msgstr ""
 
 #: ../../library/pathlib.rst:1184
@@ -951,8 +951,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:1237
 msgid ""
-"Return the path to which the symbolic link points (as returned by "
-":func:`os.readlink`)::"
+"Return the path to which the symbolic link points (as returned by :func:`os."
+"readlink`)::"
 msgstr ""
 
 #: ../../library/pathlib.rst:1250
@@ -990,8 +990,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:1291
 msgid ""
-"Make the path absolute, without normalization or resolving symlinks. Returns"
-" a new path object::"
+"Make the path absolute, without normalization or resolving symlinks. Returns "
+"a new path object::"
 msgstr ""
 
 #: ../../library/pathlib.rst:1303
@@ -1008,11 +1008,11 @@ msgstr ""
 
 #: ../../library/pathlib.rst:1318
 msgid ""
-"If the path doesn't exist and *strict* is ``True``, :exc:`FileNotFoundError`"
-" is raised.  If *strict* is ``False``, the path is resolved as far as "
+"If the path doesn't exist and *strict* is ``True``, :exc:`FileNotFoundError` "
+"is raised.  If *strict* is ``False``, the path is resolved as far as "
 "possible and any remainder is appended without checking whether it exists.  "
-"If an infinite loop is encountered along the resolution path, "
-":exc:`RuntimeError` is raised."
+"If an infinite loop is encountered along the resolution path, :exc:"
+"`RuntimeError` is raised."
 msgstr ""
 
 #: ../../library/pathlib.rst:1324
@@ -1021,8 +1021,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:1329
 msgid ""
-"Glob the given relative *pattern* recursively.  This is like calling "
-":func:`Path.glob` with \"``**/``\" added in front of the *pattern*, where "
+"Glob the given relative *pattern* recursively.  This is like calling :func:"
+"`Path.glob` with \"``**/``\" added in front of the *pattern*, where "
 "*patterns* are the same as for :mod:`fnmatch`::"
 msgstr ""
 
@@ -1039,8 +1039,8 @@ msgstr ""
 #: ../../library/pathlib.rst:1362
 msgid ""
 "Return whether this path points to the same file as *other_path*, which can "
-"be either a Path object, or a string.  The semantics are similar to "
-":func:`os.path.samefile` and :func:`os.path.samestat`."
+"be either a Path object, or a string.  The semantics are similar to :func:"
+"`os.path.samefile` and :func:`os.path.samestat`."
 msgstr ""
 
 #: ../../library/pathlib.rst:1366
@@ -1058,8 +1058,7 @@ msgstr ""
 
 #: ../../library/pathlib.rst:1399
 msgid ""
-"The order of arguments (link, target) is the reverse of "
-":func:`os.symlink`'s."
+"The order of arguments (link, target) is the reverse of :func:`os.symlink`'s."
 msgstr ""
 
 #: ../../library/pathlib.rst:1404
@@ -1075,15 +1074,15 @@ msgstr ""
 msgid ""
 "Create a file at this given path.  If *mode* is given, it is combined with "
 "the process' ``umask`` value to determine the file mode and access flags.  "
-"If the file already exists, the function succeeds if *exist_ok* is true (and"
-" its modification time is updated to the current time), otherwise "
-":exc:`FileExistsError` is raised."
+"If the file already exists, the function succeeds if *exist_ok* is true (and "
+"its modification time is updated to the current time), otherwise :exc:"
+"`FileExistsError` is raised."
 msgstr ""
 
 #: ../../library/pathlib.rst:1424
 msgid ""
-"Remove this file or symbolic link.  If the path points to a directory, use "
-":func:`Path.rmdir` instead."
+"Remove this file or symbolic link.  If the path points to a directory, use :"
+"func:`Path.rmdir` instead."
 msgstr ""
 
 #: ../../library/pathlib.rst:1427
@@ -1094,8 +1093,8 @@ msgstr ""
 
 #: ../../library/pathlib.rst:1430
 msgid ""
-"If *missing_ok* is true, :exc:`FileNotFoundError` exceptions will be ignored"
-" (same behavior as the POSIX ``rm -f`` command)."
+"If *missing_ok* is true, :exc:`FileNotFoundError` exceptions will be ignored "
+"(same behavior as the POSIX ``rm -f`` command)."
 msgstr ""
 
 #: ../../library/pathlib.rst:1433
@@ -1134,16 +1133,16 @@ msgstr ""
 
 #: ../../library/pathlib.rst:1475
 msgid ""
-"Below is a table mapping various :mod:`os` functions to their corresponding "
-":class:`PurePath`/:class:`Path` equivalent."
+"Below is a table mapping various :mod:`os` functions to their corresponding :"
+"class:`PurePath`/:class:`Path` equivalent."
 msgstr ""
 
 #: ../../library/pathlib.rst:1480
 msgid ""
 "Not all pairs of functions/methods below are equivalent. Some of them, "
 "despite having some overlapping use-cases, have different semantics. They "
-"include :func:`os.path.abspath` and :meth:`Path.absolute`, "
-":func:`os.path.relpath` and :meth:`PurePath.relative_to`."
+"include :func:`os.path.abspath` and :meth:`Path.absolute`, :func:`os.path."
+"relpath` and :meth:`PurePath.relative_to`."
 msgstr ""
 
 #: ../../library/pathlib.rst:1486

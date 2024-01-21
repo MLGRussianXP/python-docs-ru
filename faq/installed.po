@@ -2,10 +2,10 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # decorator_factory <decorator-factory+transifex@yandex.ru>, 2021
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -13,13 +13,17 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: decorator_factory <decorator-factory+transifex@yandex.ru>, 2021\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Last-Translator: decorator_factory <decorator-factory+transifex@yandex.ru>, "
+"2021\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../faq/installed.rst:3
 msgid "\"Why is Python Installed on my Computer?\" FAQ"
@@ -32,9 +36,9 @@ msgstr "Что такое Python?"
 #: ../../faq/installed.rst:8
 msgid ""
 "Python is a programming language.  It's used for many different "
-"applications. It's used in some high schools and colleges as an introductory"
-" programming language because Python is easy to learn, but it's also used by"
-" professional software developers at places such as Google, NASA, and "
+"applications. It's used in some high schools and colleges as an introductory "
+"programming language because Python is easy to learn, but it's also used by "
+"professional software developers at places such as Google, NASA, and "
 "Lucasfilm Ltd."
 msgstr ""
 
@@ -94,8 +98,7 @@ msgstr ""
 #: ../../faq/installed.rst:42
 msgid ""
 "If someone installed it deliberately, you can remove it without hurting "
-"anything.  On Windows, use the Add/Remove Programs icon in the Control "
-"Panel."
+"anything.  On Windows, use the Add/Remove Programs icon in the Control Panel."
 msgstr ""
 
 #: ../../faq/installed.rst:45

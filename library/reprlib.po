@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,12 +10,15 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-19 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/reprlib.rst:2
 msgid ":mod:`reprlib` --- Alternate :func:`repr` implementation"
@@ -47,8 +50,8 @@ msgstr ""
 #: ../../library/reprlib.rst:28
 msgid ""
 "The keyword arguments of the constructor can be used as a shortcut to set "
-"the attributes of the :class:`Repr` instance. Which means that the following"
-" initialization::"
+"the attributes of the :class:`Repr` instance. Which means that the following "
+"initialization::"
 msgstr ""
 
 #: ../../library/reprlib.rst:34
@@ -67,23 +70,22 @@ msgstr ""
 
 #: ../../library/reprlib.rst:48
 msgid ""
-"This is an instance of :class:`Repr` which is used to provide the "
-":func:`.repr` function described below.  Changing the attributes of this "
-"object will affect the size limits used by :func:`.repr` and the Python "
-"debugger."
+"This is an instance of :class:`Repr` which is used to provide the :func:`."
+"repr` function described below.  Changing the attributes of this object will "
+"affect the size limits used by :func:`.repr` and the Python debugger."
 msgstr ""
 
 #: ../../library/reprlib.rst:56
 msgid ""
 "This is the :meth:`~Repr.repr` method of ``aRepr``.  It returns a string "
-"similar to that returned by the built-in function of the same name, but with"
-" limits on most sizes."
+"similar to that returned by the built-in function of the same name, but with "
+"limits on most sizes."
 msgstr ""
 
 #: ../../library/reprlib.rst:60
 msgid ""
-"In addition to size-limiting tools, the module also provides a decorator for"
-" detecting recursive calls to :meth:`~object.__repr__` and substituting a "
+"In addition to size-limiting tools, the module also provides a decorator for "
+"detecting recursive calls to :meth:`~object.__repr__` and substituting a "
 "placeholder string instead."
 msgstr ""
 
@@ -119,8 +121,8 @@ msgstr ""
 #: ../../library/reprlib.rst:121
 msgid ""
 "Limits on the number of entries represented for the named object type.  The "
-"default is ``4`` for :attr:`maxdict`, ``5`` for :attr:`maxarray`, and  ``6``"
-" for the others."
+"default is ``4`` for :attr:`maxdict`, ``5`` for :attr:`maxarray`, and  ``6`` "
+"for the others."
 msgstr ""
 
 #: ../../library/reprlib.rst:128
@@ -131,17 +133,17 @@ msgstr ""
 
 #: ../../library/reprlib.rst:134
 msgid ""
-"Limit on the number of characters in the representation of the string.  Note"
-" that the \"normal\" representation of the string is used as the character "
+"Limit on the number of characters in the representation of the string.  Note "
+"that the \"normal\" representation of the string is used as the character "
 "source: if escape sequences are needed in the representation, these may be "
 "mangled when the representation is shortened.  The default is ``30``."
 msgstr ""
 
 #: ../../library/reprlib.rst:142
 msgid ""
-"This limit is used to control the size of object types for which no specific"
-" formatting method is available on the :class:`Repr` object. It is applied "
-"in a similar manner as :attr:`maxstring`.  The default is ``20``."
+"This limit is used to control the size of object types for which no specific "
+"formatting method is available on the :class:`Repr` object. It is applied in "
+"a similar manner as :attr:`maxstring`.  The default is ``20``."
 msgstr ""
 
 #: ../../library/reprlib.rst:149
@@ -165,26 +167,26 @@ msgstr ""
 
 #: ../../library/reprlib.rst:209
 msgid ""
-"The equivalent to the built-in :func:`repr` that uses the formatting imposed"
-" by the instance."
+"The equivalent to the built-in :func:`repr` that uses the formatting imposed "
+"by the instance."
 msgstr ""
 
 #: ../../library/reprlib.rst:215
 msgid ""
-"Recursive implementation used by :meth:`.repr`.  This uses the type of *obj*"
-" to determine which formatting method to call, passing it *obj* and *level*."
-"  The type-specific methods should call :meth:`repr1` to perform recursive "
+"Recursive implementation used by :meth:`.repr`.  This uses the type of *obj* "
+"to determine which formatting method to call, passing it *obj* and *level*.  "
+"The type-specific methods should call :meth:`repr1` to perform recursive "
 "formatting, with ``level - 1`` for the value of *level* in the recursive  "
 "call."
 msgstr ""
 
 #: ../../library/reprlib.rst:224
 msgid ""
-"Formatting methods for specific types are implemented as methods with a name"
-" based on the type name.  In the method name, **TYPE** is replaced by "
-"``'_'.join(type(obj).__name__.split())``. Dispatch to these methods is "
-"handled by :meth:`repr1`. Type-specific methods which need to recursively "
-"format a value should call ``self.repr1(subobj, level - 1)``."
+"Formatting methods for specific types are implemented as methods with a name "
+"based on the type name.  In the method name, **TYPE** is replaced by ``'_'."
+"join(type(obj).__name__.split())``. Dispatch to these methods is handled by :"
+"meth:`repr1`. Type-specific methods which need to recursively format a value "
+"should call ``self.repr1(subobj, level - 1)``."
 msgstr ""
 
 #: ../../library/reprlib.rst:234
@@ -193,8 +195,8 @@ msgstr ""
 
 #: ../../library/reprlib.rst:236
 msgid ""
-"The use of dynamic dispatching by :meth:`Repr.repr1` allows subclasses of "
-":class:`Repr` to add support for additional built-in object types or to "
+"The use of dynamic dispatching by :meth:`Repr.repr1` allows subclasses of :"
+"class:`Repr` to add support for additional built-in object types or to "
 "modify the handling of types already supported. This example shows how "
 "special support for file objects could be added:"
 msgstr ""

@@ -2,11 +2,11 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Влад Табаков <vl.tab.kov@gmail.com>, 2021
 # Daniil Kolesnikov, 2024
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -15,12 +15,15 @@ msgstr ""
 "POT-Creation-Date: 2024-01-19 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../about.rst:3
 msgid "About these documents"
@@ -28,8 +31,8 @@ msgstr "Об этой документации"
 
 #: ../../about.rst:6
 msgid ""
-"These documents are generated from `reStructuredText`_ sources by `Sphinx`_,"
-" a document processor specifically written for the Python documentation."
+"These documents are generated from `reStructuredText`_ sources by `Sphinx`_, "
+"a document processor specifically written for the Python documentation."
 msgstr ""
 "Эта документация сгенерирована из файлов `reStructuredText`_ с помощью "
 "`Sphinx`_, генератора документации, созданного специально для Python."
@@ -38,8 +41,8 @@ msgstr ""
 msgid ""
 "Development of the documentation and its toolchain is an entirely volunteer "
 "effort, just like Python itself.  If you want to contribute, please take a "
-"look at the :ref:`reporting-bugs` page for information on how to do so.  New"
-" volunteers are always welcome!"
+"look at the :ref:`reporting-bugs` page for information on how to do so.  New "
+"volunteers are always welcome!"
 msgstr ""
 "Разработка и совершенствование данной документации и ее инструментов, как и "
 "весь проект Python поддерживается добровольцами. Вся информация о том как "
@@ -52,8 +55,8 @@ msgstr " Мы благодарны:"
 
 #: ../../about.rst:22
 msgid ""
-"Fred L. Drake, Jr., the creator of the original Python documentation toolset"
-" and writer of much of the content;"
+"Fred L. Drake, Jr., the creator of the original Python documentation toolset "
+"and writer of much of the content;"
 msgstr ""
 "Fred L. Drake, Jr., создателю оригинального набора инструментов для "
 "документации Python и автору большей части контента;"
@@ -68,11 +71,11 @@ msgstr ""
 
 #: ../../about.rst:26
 msgid ""
-"Fredrik Lundh for his Alternative Python Reference project from which Sphinx"
-" got many good ideas."
+"Fredrik Lundh for his Alternative Python Reference project from which Sphinx "
+"got many good ideas."
 msgstr ""
-"Fredrik Lundh за его проект Alternative Python Reference, из которого Sphinx"
-" получил много хороших идей."
+"Fredrik Lundh за его проект Alternative Python Reference, из которого Sphinx "
+"получил много хороших идей."
 
 #: ../../about.rst:31
 msgid "Contributors to the Python Documentation"

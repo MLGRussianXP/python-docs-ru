@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,12 +10,15 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:50+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../c-api/tuple.rst:6
 msgid "Tuple Objects"
@@ -27,8 +30,8 @@ msgstr ""
 
 #: ../../c-api/tuple.rst:18
 msgid ""
-"This instance of :c:type:`PyTypeObject` represents the Python tuple type; it"
-" is the same object as :class:`tuple` in the Python layer."
+"This instance of :c:type:`PyTypeObject` represents the Python tuple type; it "
+"is the same object as :class:`tuple` in the Python layer."
 msgstr ""
 
 #: ../../c-api/tuple.rst:24
@@ -68,8 +71,8 @@ msgstr ""
 #: ../../c-api/tuple.rst:59
 msgid ""
 "Return the object at position *pos* in the tuple pointed to by *p*.  If "
-"*pos* is negative or out of bounds, return ``NULL`` and set an "
-":exc:`IndexError` exception."
+"*pos* is negative or out of bounds, return ``NULL`` and set an :exc:"
+"`IndexError` exception."
 msgstr ""
 
 #: ../../c-api/tuple.rst:65
@@ -78,8 +81,8 @@ msgstr ""
 
 #: ../../c-api/tuple.rst:70
 msgid ""
-"Return the slice of the tuple pointed to by *p* between *low* and *high*, or"
-" ``NULL`` on failure.  This is the equivalent of the Python expression "
+"Return the slice of the tuple pointed to by *p* between *low* and *high*, or "
+"``NULL`` on failure.  This is the equivalent of the Python expression "
 "``p[low:high]``.  Indexing from the end of the tuple is not supported."
 msgstr ""
 
@@ -104,25 +107,24 @@ msgstr ""
 
 #: ../../c-api/tuple.rst:94
 msgid ""
-"This function \"steals\" a reference to *o*, and, unlike "
-":c:func:`PyTuple_SetItem`, does *not* discard a reference to any item that "
-"is being replaced; any reference in the tuple at position *pos* will be "
-"leaked."
+"This function \"steals\" a reference to *o*, and, unlike :c:func:"
+"`PyTuple_SetItem`, does *not* discard a reference to any item that is being "
+"replaced; any reference in the tuple at position *pos* will be leaked."
 msgstr ""
 
 #: ../../c-api/tuple.rst:102
 msgid ""
 "Can be used to resize a tuple.  *newsize* will be the new length of the "
 "tuple. Because tuples are *supposed* to be immutable, this should only be "
-"used if there is only one reference to the object.  Do *not* use this if the"
-" tuple may already be known to some other part of the code.  The tuple will "
-"always grow or shrink at the end.  Think of this as destroying the old tuple"
-" and creating a new one, only more efficiently.  Returns ``0`` on success. "
+"used if there is only one reference to the object.  Do *not* use this if the "
+"tuple may already be known to some other part of the code.  The tuple will "
+"always grow or shrink at the end.  Think of this as destroying the old tuple "
+"and creating a new one, only more efficiently.  Returns ``0`` on success. "
 "Client code should never assume that the resulting value of ``*p`` will be "
-"the same as before calling this function. If the object referenced by ``*p``"
-" is replaced, the original ``*p`` is destroyed.  On failure, returns ``-1`` "
-"and sets ``*p`` to ``NULL``, and raises :exc:`MemoryError` or "
-":exc:`SystemError`."
+"the same as before calling this function. If the object referenced by ``*p`` "
+"is replaced, the original ``*p`` is destroyed.  On failure, returns ``-1`` "
+"and sets ``*p`` to ``NULL``, and raises :exc:`MemoryError` or :exc:"
+"`SystemError`."
 msgstr ""
 
 #: ../../c-api/tuple.rst:117
@@ -131,17 +133,17 @@ msgstr ""
 
 #: ../../c-api/tuple.rst:119
 msgid ""
-"Struct sequence objects are the C equivalent of "
-":func:`~collections.namedtuple` objects, i.e. a sequence whose items can "
-"also be accessed through attributes. To create a struct sequence, you first "
-"have to create a specific struct sequence type."
+"Struct sequence objects are the C equivalent of :func:`~collections."
+"namedtuple` objects, i.e. a sequence whose items can also be accessed "
+"through attributes. To create a struct sequence, you first have to create a "
+"specific struct sequence type."
 msgstr ""
 
 #: ../../c-api/tuple.rst:126
 msgid ""
 "Create a new struct sequence type from the data in *desc*, described below. "
-"Instances of the resulting type can be created with "
-":c:func:`PyStructSequence_New`."
+"Instances of the resulting type can be created with :c:func:"
+"`PyStructSequence_New`."
 msgstr ""
 
 #: ../../c-api/tuple.rst:132
@@ -176,17 +178,17 @@ msgstr ""
 
 #: ../../c-api/tuple.rst:166
 msgid ""
-"Describes a field of a struct sequence. As a struct sequence is modeled as a"
-" tuple, all fields are typed as :c:expr:`PyObject*`.  The index in the "
-":c:member:`~PyStructSequence_Desc.fields` array of the "
-":c:type:`PyStructSequence_Desc` determines which field of the struct "
-"sequence is described."
+"Describes a field of a struct sequence. As a struct sequence is modeled as a "
+"tuple, all fields are typed as :c:expr:`PyObject*`.  The index in the :c:"
+"member:`~PyStructSequence_Desc.fields` array of the :c:type:"
+"`PyStructSequence_Desc` determines which field of the struct sequence is "
+"described."
 msgstr ""
 
 #: ../../c-api/tuple.rst:174
 msgid ""
-"Name for the field or ``NULL`` to end the list of named fields, set to "
-":c:data:`PyStructSequence_UnnamedField` to leave unnamed."
+"Name for the field or ``NULL`` to end the list of named fields, set to :c:"
+"data:`PyStructSequence_UnnamedField` to leave unnamed."
 msgstr ""
 
 #: ../../c-api/tuple.rst:179
@@ -203,8 +205,8 @@ msgstr ""
 
 #: ../../c-api/tuple.rst:192
 msgid ""
-"Creates an instance of *type*, which must have been created with "
-":c:func:`PyStructSequence_NewType`."
+"Creates an instance of *type*, which must have been created with :c:func:"
+"`PyStructSequence_NewType`."
 msgstr ""
 
 #: ../../c-api/tuple.rst:198
@@ -219,9 +221,9 @@ msgstr ""
 
 #: ../../c-api/tuple.rst:209
 msgid ""
-"Sets the field at index *pos* of the struct sequence *p* to value *o*.  Like"
-" :c:func:`PyTuple_SET_ITEM`, this should only be used to fill in brand new "
-"instances."
+"Sets the field at index *pos* of the struct sequence *p* to value *o*.  "
+"Like :c:func:`PyTuple_SET_ITEM`, this should only be used to fill in brand "
+"new instances."
 msgstr ""
 
 #: ../../c-api/tuple.rst:215 ../../c-api/tuple.rst:225

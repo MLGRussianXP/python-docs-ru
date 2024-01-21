@@ -2,10 +2,10 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # 256c6f581e7306f8fe260875df9dd39f_33ba001, 2021
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,16 +14,18 @@ msgstr ""
 "POT-Creation-Date: 2024-01-19 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:06+0000\n"
 "Last-Translator: 256c6f581e7306f8fe260875df9dd39f_33ba001, 2021\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/graphlib.rst:2
-msgid ""
-":mod:`graphlib` --- Functionality to operate with graph-like structures"
+msgid ":mod:`graphlib` --- Functionality to operate with graph-like structures"
 msgstr ""
 
 #: ../../library/graphlib.rst:8
@@ -42,8 +44,8 @@ msgid ""
 "that for every directed edge u -> v from vertex u to vertex v, vertex u "
 "comes before vertex v in the ordering. For instance, the vertices of the "
 "graph may represent tasks to be performed, and the edges may represent "
-"constraints that one task must be performed before another; in this example,"
-" a topological ordering is just a valid sequence for the tasks. A complete "
+"constraints that one task must be performed before another; in this example, "
+"a topological ordering is just a valid sequence for the tasks. A complete "
 "topological ordering is possible if and only if the graph has no directed "
 "cycles, that is, if it is a directed acyclic graph."
 msgstr ""
@@ -87,8 +89,8 @@ msgstr ""
 #: ../../library/graphlib.rst:49
 msgid ""
 "In case just an immediate sorting of the nodes in the graph is required and "
-"no parallelism is involved, the convenience method "
-":meth:`TopologicalSorter.static_order` can be used directly:"
+"no parallelism is involved, the convenience method :meth:`TopologicalSorter."
+"static_order` can be used directly:"
 msgstr ""
 
 #: ../../library/graphlib.rst:60
@@ -125,21 +127,21 @@ msgstr ""
 #: ../../library/graphlib.rst:102
 msgid ""
 "Mark the graph as finished and check for cycles in the graph. If any cycle "
-"is detected, :exc:`CycleError` will be raised, but "
-":meth:`~TopologicalSorter.get_ready` can still be used to obtain as many "
-"nodes as possible until cycles block more progress. After a call to this "
-"function, the graph cannot be modified, and therefore no more nodes can be "
-"added using :meth:`~TopologicalSorter.add`."
+"is detected, :exc:`CycleError` will be raised, but :meth:`~TopologicalSorter."
+"get_ready` can still be used to obtain as many nodes as possible until "
+"cycles block more progress. After a call to this function, the graph cannot "
+"be modified, and therefore no more nodes can be added using :meth:"
+"`~TopologicalSorter.add`."
 msgstr ""
 
 #: ../../library/graphlib.rst:111
 msgid ""
 "Returns ``True`` if more progress can be made and ``False`` otherwise. "
 "Progress can be made if cycles do not block the resolution and either there "
-"are still nodes ready that haven't yet been returned by "
-":meth:`TopologicalSorter.get_ready` or the number of nodes marked "
-":meth:`TopologicalSorter.done` is less than the number that have been "
-"returned by :meth:`TopologicalSorter.get_ready`."
+"are still nodes ready that haven't yet been returned by :meth:"
+"`TopologicalSorter.get_ready` or the number of nodes marked :meth:"
+"`TopologicalSorter.done` is less than the number that have been returned by :"
+"meth:`TopologicalSorter.get_ready`."
 msgstr ""
 
 #: ../../library/graphlib.rst:118
@@ -154,8 +156,8 @@ msgstr ""
 
 #: ../../library/graphlib.rst:129 ../../library/graphlib.rst:152
 msgid ""
-"Raises :exc:`ValueError` if called without calling "
-":meth:`~TopologicalSorter.prepare` previously."
+"Raises :exc:`ValueError` if called without calling :meth:`~TopologicalSorter."
+"prepare` previously."
 msgstr ""
 
 #: ../../library/graphlib.rst:134
@@ -169,9 +171,9 @@ msgstr ""
 msgid ""
 "Raises :exc:`ValueError` if any node in *nodes* has already been marked as "
 "processed by a previous call to this method or if a node was not added to "
-"the graph by using :meth:`TopologicalSorter.add`, if called without calling "
-":meth:`~TopologicalSorter.prepare` or if node has not yet been returned by "
-":meth:`~TopologicalSorter.get_ready`."
+"the graph by using :meth:`TopologicalSorter.add`, if called without calling :"
+"meth:`~TopologicalSorter.prepare` or if node has not yet been returned by :"
+"meth:`~TopologicalSorter.get_ready`."
 msgstr ""
 
 #: ../../library/graphlib.rst:146
@@ -186,9 +188,9 @@ msgstr ""
 #: ../../library/graphlib.rst:157
 msgid ""
 "Returns an iterator object which will iterate over nodes in a topological "
-"order. When using this method, :meth:`~TopologicalSorter.prepare` and "
-":meth:`~TopologicalSorter.done` should not be called. This method is "
-"equivalent to::"
+"order. When using this method, :meth:`~TopologicalSorter.prepare` and :meth:"
+"`~TopologicalSorter.done` should not be called. This method is equivalent "
+"to::"
 msgstr ""
 
 #: ../../library/graphlib.rst:169
@@ -200,9 +202,9 @@ msgstr ""
 #: ../../library/graphlib.rst:186
 msgid ""
 "This is due to the fact that \"0\" and \"2\" are in the same level in the "
-"graph (they would have been returned in the same call to "
-":meth:`~TopologicalSorter.get_ready`) and the order between them is "
-"determined by the order of insertion."
+"graph (they would have been returned in the same call to :meth:"
+"`~TopologicalSorter.get_ready`) and the order between them is determined by "
+"the order of insertion."
 msgstr ""
 
 #: ../../library/graphlib.rst:192
@@ -219,16 +221,16 @@ msgstr ""
 
 #: ../../library/graphlib.rst:203
 msgid ""
-"Subclass of :exc:`ValueError` raised by :meth:`TopologicalSorter.prepare` if"
-" cycles exist in the working graph. If multiple cycles exist, only one "
+"Subclass of :exc:`ValueError` raised by :meth:`TopologicalSorter.prepare` if "
+"cycles exist in the working graph. If multiple cycles exist, only one "
 "undefined choice among them will be reported and included in the exception."
 msgstr ""
 
 #: ../../library/graphlib.rst:207
 msgid ""
-"The detected cycle can be accessed via the second element in the "
-":attr:`~BaseException.args` attribute of the exception instance and consists"
-" in a list of nodes, such that each node is, in the graph, an immediate "
+"The detected cycle can be accessed via the second element in the :attr:"
+"`~BaseException.args` attribute of the exception instance and consists in a "
+"list of nodes, such that each node is, in the graph, an immediate "
 "predecessor of the next node in the list. In the reported list, the first "
 "and the last node will be the same, to make it clear that it is cyclic."
 msgstr ""

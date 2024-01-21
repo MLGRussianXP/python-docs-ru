@@ -2,11 +2,11 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Kristina Mironova, 2021
 # Daniil Kolesnikov, 2024
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -15,12 +15,15 @@ msgstr ""
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../reference/simple_stmts.rst:6
 msgid "Simple statements"
@@ -28,8 +31,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:10
 msgid ""
-"A simple statement is comprised within a single logical line. Several simple"
-" statements may occur on a single line separated by semicolons.  The syntax "
+"A simple statement is comprised within a single logical line. Several simple "
+"statements may occur on a single line separated by semicolons.  The syntax "
 "for simple statements is:"
 msgstr ""
 
@@ -39,8 +42,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:44
 msgid ""
-"Expression statements are used (mostly interactively) to compute and write a"
-" value, or (usually) to call a procedure (a function that returns no "
+"Expression statements are used (mostly interactively) to compute and write a "
+"value, or (usually) to call a procedure (a function that returns no "
 "meaningful result; in Python, procedures return the value ``None``).  Other "
 "uses of expression statements are allowed and occasionally useful.  The "
 "syntax for an expression statement is:"
@@ -48,8 +51,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:53
 msgid ""
-"An expression statement evaluates the expression list (which may be a single"
-" expression)."
+"An expression statement evaluates the expression list (which may be a single "
+"expression)."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:65
@@ -72,8 +75,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:97
 msgid ""
-"(See section :ref:`primaries` for the syntax definitions for *attributeref*,"
-" *subscription*, and *slicing*.)"
+"(See section :ref:`primaries` for the syntax definitions for *attributeref*, "
+"*subscription*, and *slicing*.)"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:100
@@ -97,8 +100,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:122
 msgid ""
-"Assignment of an object to a target list, optionally enclosed in parentheses"
-" or square brackets, is recursively defined as follows."
+"Assignment of an object to a target list, optionally enclosed in parentheses "
+"or square brackets, is recursively defined as follows."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:125
@@ -117,9 +120,9 @@ msgid ""
 "\"starred\" target: The object must be an iterable with at least as many "
 "items as there are targets in the target list, minus one.  The first items "
 "of the iterable are assigned, from left to right, to the targets before the "
-"starred target.  The final items of the iterable are assigned to the targets"
-" after the starred target.  A list of the remaining items in the iterable is"
-" then assigned to the starred target (the list can be empty)."
+"starred target.  The final items of the iterable are assigned to the targets "
+"after the starred target.  A list of the remaining items in the iterable is "
+"then assigned to the starred target (the list can be empty)."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:138
@@ -131,8 +134,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:142
 msgid ""
-"Assignment of an object to a single target is recursively defined as "
-"follows."
+"Assignment of an object to a single target is recursively defined as follows."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:144
@@ -155,8 +157,8 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:155
 msgid ""
 "The name is rebound if it was already bound.  This may cause the reference "
-"count for the object previously bound to the name to reach zero, causing the"
-" object to be deallocated and its destructor (if it has one) to be called."
+"count for the object previously bound to the name to reach zero, causing the "
+"object to be deallocated and its destructor (if it has one) to be called."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:161
@@ -165,17 +167,17 @@ msgid ""
 "reference is evaluated.  It should yield an object with assignable "
 "attributes; if this is not the case, :exc:`TypeError` is raised.  That "
 "object is then asked to assign the assigned object to the given attribute; "
-"if it cannot perform the assignment, it raises an exception (usually but not"
-" necessarily :exc:`AttributeError`)."
+"if it cannot perform the assignment, it raises an exception (usually but not "
+"necessarily :exc:`AttributeError`)."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:170
 msgid ""
 "Note: If the object is a class instance and the attribute reference occurs "
 "on both sides of the assignment operator, the right-hand side expression, "
-"``a.x`` can access either an instance attribute or (if no instance attribute"
-" exists) a class attribute.  The left-hand side target ``a.x`` is always set"
-" as an instance attribute, creating it if necessary.  Thus, the two "
+"``a.x`` can access either an instance attribute or (if no instance attribute "
+"exists) a class attribute.  The left-hand side target ``a.x`` is always set "
+"as an instance attribute, creating it if necessary.  Thus, the two "
 "occurrences of ``a.x`` do not necessarily refer to the same attribute: if "
 "the right-hand side expression refers to a class attribute, the left-hand "
 "side creates a new instance attribute as the target of the assignment::"
@@ -198,12 +200,12 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:200
 msgid ""
 "If the primary is a mutable sequence object (such as a list), the subscript "
-"must yield an integer.  If it is negative, the sequence's length is added to"
-" it.  The resulting value must be a nonnegative integer less than the "
+"must yield an integer.  If it is negative, the sequence's length is added to "
+"it.  The resulting value must be a nonnegative integer less than the "
 "sequence's length, and the sequence is asked to assign the assigned object "
-"to its item with that index.  If the index is out of range, "
-":exc:`IndexError` is raised (assignment to a subscripted sequence cannot add"
-" new items to a list)."
+"to its item with that index.  If the index is out of range, :exc:"
+"`IndexError` is raised (assignment to a subscripted sequence cannot add new "
+"items to a list)."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:211
@@ -225,12 +227,12 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:222
 msgid ""
 "If the target is a slicing: The primary expression in the reference is "
-"evaluated.  It should yield a mutable sequence object (such as a list).  The"
-" assigned object should be a sequence object of the same type.  Next, the "
+"evaluated.  It should yield a mutable sequence object (such as a list).  The "
+"assigned object should be a sequence object of the same type.  Next, the "
 "lower and upper bound expressions are evaluated, insofar they are present; "
 "defaults are zero and the sequence's length.  The bounds should evaluate to "
-"integers. If either bound is negative, the sequence's length is added to it."
-"  The resulting bounds are clipped to lie between zero and the sequence's "
+"integers. If either bound is negative, the sequence's length is added to "
+"it.  The resulting bounds are clipped to lie between zero and the sequence's "
 "length, inclusive.  Finally, the sequence object is asked to replace the "
 "slice with the items of the assigned sequence.  The length of the slice may "
 "be different from the length of the assigned sequence, thus changing the "
@@ -246,11 +248,11 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:240
 msgid ""
-"Although the definition of assignment implies that overlaps between the "
-"left-hand side and the right-hand side are 'simultaneous' (for example ``a, "
-"b = b, a`` swaps two variables), overlaps *within* the collection of "
-"assigned-to variables occur left-to-right, sometimes resulting in confusion."
-"  For instance, the following program prints ``[0, 2]``::"
+"Although the definition of assignment implies that overlaps between the left-"
+"hand side and the right-hand side are 'simultaneous' (for example ``a, b = "
+"b, a`` swaps two variables), overlaps *within* the collection of assigned-to "
+"variables occur left-to-right, sometimes resulting in confusion.  For "
+"instance, the following program prints ``[0, 2]``::"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:254
@@ -282,24 +284,23 @@ msgid ""
 "An augmented assignment evaluates the target (which, unlike normal "
 "assignment statements, cannot be an unpacking) and the expression list, "
 "performs the binary operation specific to the type of assignment on the two "
-"operands, and assigns the result to the original target.  The target is only"
-" evaluated once."
+"operands, and assigns the result to the original target.  The target is only "
+"evaluated once."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:296
 msgid ""
-"An augmented assignment expression like ``x += 1`` can be rewritten as ``x ="
-" x + 1`` to achieve a similar, but not exactly equal effect. In the "
-"augmented version, ``x`` is only evaluated once. Also, when possible, the "
-"actual operation is performed *in-place*, meaning that rather than creating "
-"a new object and assigning that to the target, the old object is modified "
-"instead."
+"An augmented assignment expression like ``x += 1`` can be rewritten as ``x = "
+"x + 1`` to achieve a similar, but not exactly equal effect. In the augmented "
+"version, ``x`` is only evaluated once. Also, when possible, the actual "
+"operation is performed *in-place*, meaning that rather than creating a new "
+"object and assigning that to the target, the old object is modified instead."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:302
 msgid ""
-"Unlike normal assignments, augmented assignments evaluate the left-hand side"
-" *before* evaluating the right-hand side.  For example, ``a[i] += f(x)`` "
+"Unlike normal assignments, augmented assignments evaluate the left-hand side "
+"*before* evaluating the right-hand side.  For example, ``a[i] += f(x)`` "
 "first looks-up ``a[i]``, then it evaluates ``f(x)`` and performs the "
 "addition, and lastly, it writes the result back to ``a[i]``."
 msgstr ""
@@ -307,8 +308,8 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:307
 msgid ""
 "With the exception of assigning to tuples and multiple targets in a single "
-"statement, the assignment done by augmented assignment statements is handled"
-" the same way as normal assignments. Similarly, with the exception of the "
+"statement, the assignment done by augmented assignment statements is handled "
+"the same way as normal assignments. Similarly, with the exception of the "
 "possible *in-place* behavior, the binary operation performed by augmented "
 "assignment is the same as the normal binary operations."
 msgstr ""
@@ -326,25 +327,25 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:327
 msgid ""
-":term:`Annotation <variable annotation>` assignment is the combination, in a"
-" single statement, of a variable or attribute annotation and an optional "
+":term:`Annotation <variable annotation>` assignment is the combination, in a "
+"single statement, of a variable or attribute annotation and an optional "
 "assignment statement:"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:334
 msgid ""
-"The difference from normal :ref:`assignment` is that only a single target is"
-" allowed."
+"The difference from normal :ref:`assignment` is that only a single target is "
+"allowed."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:336
 msgid ""
 "For simple names as assignment targets, if in class or module scope, the "
-"annotations are evaluated and stored in a special class or module attribute "
-":attr:`__annotations__` that is a dictionary mapping from variable names "
+"annotations are evaluated and stored in a special class or module attribute :"
+"attr:`__annotations__` that is a dictionary mapping from variable names "
 "(mangled if private) to evaluated annotations. This attribute is writable "
-"and is automatically created at the start of class or module body execution,"
-" if annotations are found statically."
+"and is automatically created at the start of class or module body execution, "
+"if annotations are found statically."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:344
@@ -355,8 +356,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:347
 msgid ""
-"If a name is annotated in a function scope, then this name is local for that"
-" scope. Annotations are never evaluated and stored in function scopes."
+"If a name is annotated in a function scope, then this name is local for that "
+"scope. Annotations are never evaluated and stored in function scopes."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:350
@@ -364,8 +365,8 @@ msgid ""
 "If the right hand side is present, an annotated assignment performs the "
 "actual assignment before evaluating annotations (where applicable). If the "
 "right hand side is not present for an expression target, then the "
-"interpreter evaluates the target except for the last "
-":meth:`~object.__setitem__` or :meth:`~object.__setattr__` call."
+"interpreter evaluates the target except for the last :meth:`~object."
+"__setitem__` or :meth:`~object.__setattr__` call."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:361
@@ -403,8 +404,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:384
 msgid ""
-"Assert statements are a convenient way to insert debugging assertions into a"
-" program:"
+"Assert statements are a convenient way to insert debugging assertions into a "
+"program:"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:390
@@ -421,8 +422,8 @@ msgid ""
 "These equivalences assume that :const:`__debug__` and :exc:`AssertionError` "
 "refer to the built-in variables with those names.  In the current "
 "implementation, the built-in variable :const:`__debug__` is ``True`` under "
-"normal circumstances, ``False`` when optimization is requested (command line"
-" option :option:`-O`).  The current code generator emits no code for an "
+"normal circumstances, ``False`` when optimization is requested (command line "
+"option :option:`-O`).  The current code generator emits no code for an "
 "assert statement when optimization is requested at compile time.  Note that "
 "it is unnecessary to include the source code for the expression that failed "
 "in the error message; it will be displayed as part of the stack trace."
@@ -463,10 +464,10 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:461
 msgid ""
-"Deletion of a name removes the binding of that name from the local or global"
-" namespace, depending on whether the name occurs in a :keyword:`global` "
-"statement in the same code block.  If the name is unbound, a "
-":exc:`NameError` exception will be raised."
+"Deletion of a name removes the binding of that name from the local or global "
+"namespace, depending on whether the name occurs in a :keyword:`global` "
+"statement in the same code block.  If the name is unbound, a :exc:"
+"`NameError` exception will be raised."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:468
@@ -507,8 +508,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:501
 msgid ""
-"When :keyword:`return` passes control out of a :keyword:`try` statement with"
-" a :keyword:`finally` clause, that :keyword:`!finally` clause is executed "
+"When :keyword:`return` passes control out of a :keyword:`try` statement with "
+"a :keyword:`finally` clause, that :keyword:`!finally` clause is executed "
 "before really leaving the function."
 msgstr ""
 
@@ -516,16 +517,16 @@ msgstr ""
 msgid ""
 "In a generator function, the :keyword:`return` statement indicates that the "
 "generator is done and will cause :exc:`StopIteration` to be raised. The "
-"returned value (if any) is used as an argument to construct "
-":exc:`StopIteration` and becomes the :attr:`StopIteration.value` attribute."
+"returned value (if any) is used as an argument to construct :exc:"
+"`StopIteration` and becomes the :attr:`StopIteration.value` attribute."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:510
 msgid ""
 "In an asynchronous generator function, an empty :keyword:`return` statement "
-"indicates that the asynchronous generator is done and will cause "
-":exc:`StopAsyncIteration` to be raised.  A non-empty :keyword:`!return` "
-"statement is a syntax error in an asynchronous generator function."
+"indicates that the asynchronous generator is done and will cause :exc:"
+"`StopAsyncIteration` to be raised.  A non-empty :keyword:`!return` statement "
+"is a syntax error in an asynchronous generator function."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:518
@@ -546,16 +547,16 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:543
 msgid ""
-"Yield expressions and statements are only used when defining a "
-":term:`generator` function, and are only used in the body of the generator "
+"Yield expressions and statements are only used when defining a :term:"
+"`generator` function, and are only used in the body of the generator "
 "function.  Using yield in a function definition is sufficient to cause that "
 "definition to create a generator function instead of a normal function."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:548
 msgid ""
-"For full details of :keyword:`yield` semantics, refer to the "
-":ref:`yieldexpr` section."
+"For full details of :keyword:`yield` semantics, refer to the :ref:"
+"`yieldexpr` section."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:554
@@ -564,8 +565,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:565
 msgid ""
-"If no expressions are present, :keyword:`raise` re-raises the exception that"
-" is currently being handled, which is also known as the *active exception*. "
+"If no expressions are present, :keyword:`raise` re-raises the exception that "
+"is currently being handled, which is also known as the *active exception*. "
 "If there isn't currently an active exception, a :exc:`RuntimeError` "
 "exception is raised indicating that this is an error."
 msgstr ""
@@ -573,15 +574,15 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:570
 msgid ""
 "Otherwise, :keyword:`raise` evaluates the first expression as the exception "
-"object.  It must be either a subclass or an instance of "
-":class:`BaseException`. If it is a class, the exception instance will be "
-"obtained when needed by instantiating the class with no arguments."
+"object.  It must be either a subclass or an instance of :class:"
+"`BaseException`. If it is a class, the exception instance will be obtained "
+"when needed by instantiating the class with no arguments."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:575
 msgid ""
-"The :dfn:`type` of the exception is the exception instance's class, the "
-":dfn:`value` is the instance itself."
+"The :dfn:`type` of the exception is the exception instance's class, the :dfn:"
+"`value` is the instance itself."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:580
@@ -589,8 +590,8 @@ msgid ""
 "A traceback object is normally created automatically when an exception is "
 "raised and attached to it as the :attr:`~BaseException.__traceback__` "
 "attribute. You can create an exception and set your own traceback in one "
-"step using the :meth:`~BaseException.with_traceback` exception method (which"
-" returns the same exception instance, with its traceback set to its "
+"step using the :meth:`~BaseException.with_traceback` exception method (which "
+"returns the same exception instance, with its traceback set to its "
 "argument), like so::"
 msgstr ""
 
@@ -609,8 +610,8 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:621
 msgid ""
 "A similar mechanism works implicitly if a new exception is raised when an "
-"exception is already being handled.  An exception may be handled when an "
-":keyword:`except` or :keyword:`finally` clause, or a :keyword:`with` "
+"exception is already being handled.  An exception may be handled when an :"
+"keyword:`except` or :keyword:`finally` clause, or a :keyword:`with` "
 "statement, is used.  The previous exception is then attached as the new "
 "exception's :attr:`~BaseException.__context__` attribute:"
 msgstr ""
@@ -623,9 +624,9 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:661
 msgid ""
-"Additional information on exceptions can be found in section "
-":ref:`exceptions`, and information about handling exceptions is in section "
-":ref:`try`."
+"Additional information on exceptions can be found in section :ref:"
+"`exceptions`, and information about handling exceptions is in section :ref:"
+"`try`."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:664
@@ -640,8 +641,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:671
 msgid ""
-"If the traceback of the active exception is modified in an :keyword:`except`"
-" clause, a subsequent ``raise`` statement re-raises the exception with the "
+"If the traceback of the active exception is modified in an :keyword:`except` "
+"clause, a subsequent ``raise`` statement re-raises the exception with the "
 "modified traceback. Previously, the exception was re-raised with the "
 "traceback it had when it was caught."
 msgstr ""
@@ -652,21 +653,21 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:691
 msgid ""
-":keyword:`break` may only occur syntactically nested in a :keyword:`for` or "
-":keyword:`while` loop, but not nested in a function or class definition "
+":keyword:`break` may only occur syntactically nested in a :keyword:`for` or :"
+"keyword:`while` loop, but not nested in a function or class definition "
 "within that loop."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:698
 msgid ""
-"It terminates the nearest enclosing loop, skipping the optional "
-":keyword:`!else` clause if the loop has one."
+"It terminates the nearest enclosing loop, skipping the optional :keyword:`!"
+"else` clause if the loop has one."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:701
 msgid ""
-"If a :keyword:`for` loop is terminated by :keyword:`break`, the loop control"
-" target keeps its current value."
+"If a :keyword:`for` loop is terminated by :keyword:`break`, the loop control "
+"target keeps its current value."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:706
@@ -684,8 +685,8 @@ msgstr ""
 msgid ""
 ":keyword:`continue` may only occur syntactically nested in a :keyword:`for` "
 "or :keyword:`while` loop, but not nested in a function or class definition "
-"within that loop.  It continues with the next cycle of the nearest enclosing"
-" loop."
+"within that loop.  It continues with the next cycle of the nearest enclosing "
+"loop."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:730
@@ -711,21 +712,21 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:764
 msgid ""
-"define a name or names in the local namespace for the scope where the "
-":keyword:`import` statement occurs."
+"define a name or names in the local namespace for the scope where the :"
+"keyword:`import` statement occurs."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:767
 msgid ""
 "When the statement contains multiple clauses (separated by commas) the two "
-"steps are carried out separately for each clause, just as though the clauses"
-" had been separated out into individual import statements."
+"steps are carried out separately for each clause, just as though the clauses "
+"had been separated out into individual import statements."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:772
 msgid ""
-"The details of the first step, finding and loading modules, are described in"
-" greater detail in the section on the :ref:`import system <importsystem>`, "
+"The details of the first step, finding and loading modules, are described in "
+"greater detail in the section on the :ref:`import system <importsystem>`, "
 "which also describes the various types of packages and modules that can be "
 "imported, as well as all the hooks that can be used to customize the import "
 "system. Note that failures in this step may indicate either that the module "
@@ -735,14 +736,14 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:780
 msgid ""
-"If the requested module is retrieved successfully, it will be made available"
-" in the local namespace in one of three ways:"
+"If the requested module is retrieved successfully, it will be made available "
+"in the local namespace in one of three ways:"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:785
 msgid ""
-"If the module name is followed by :keyword:`!as`, then the name following "
-":keyword:`!as` is bound directly to the imported module."
+"If the module name is followed by :keyword:`!as`, then the name following :"
+"keyword:`!as` is bound directly to the imported module."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:787
@@ -771,8 +772,7 @@ msgid ""
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:804
-msgid ""
-"for each of the identifiers specified in the :keyword:`import` clauses:"
+msgid "for each of the identifiers specified in the :keyword:`import` clauses:"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:806
@@ -791,9 +791,9 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:810
 msgid ""
-"otherwise, a reference to that value is stored in the local namespace, using"
-" the name in the :keyword:`!as` clause if it is present, otherwise using the"
-" attribute name"
+"otherwise, a reference to that value is stored in the local namespace, using "
+"the name in the :keyword:`!as` clause if it is present, otherwise using the "
+"attribute name"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:814
@@ -802,8 +802,8 @@ msgstr "Примеры::"
 
 #: ../../reference/simple_stmts.rst:824
 msgid ""
-"If the list of identifiers is replaced by a star (``'*'``), all public names"
-" defined in the module are bound in the local namespace for the scope where "
+"If the list of identifiers is replaced by a star (``'*'``), all public names "
+"defined in the module are bound in the local namespace for the scope where "
 "the :keyword:`import` statement occurs."
 msgstr ""
 
@@ -812,13 +812,12 @@ msgid ""
 "The *public names* defined by a module are determined by checking the "
 "module's namespace for a variable named ``__all__``; if defined, it must be "
 "a sequence of strings which are names defined or imported by that module.  "
-"The names given in ``__all__`` are all considered public and are required to"
-" exist.  If ``__all__`` is not defined, the set of public names includes all"
-" names found in the module's namespace which do not begin with an underscore"
-" character (``'_'``).  ``__all__`` should contain the entire public API. It "
+"The names given in ``__all__`` are all considered public and are required to "
+"exist.  If ``__all__`` is not defined, the set of public names includes all "
+"names found in the module's namespace which do not begin with an underscore "
+"character (``'_'``).  ``__all__`` should contain the entire public API. It "
 "is intended to avoid accidentally exporting items that are not part of the "
-"API (such as library modules which were imported and used within the "
-"module)."
+"API (such as library modules which were imported and used within the module)."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:840
@@ -832,12 +831,12 @@ msgstr ""
 msgid ""
 "When specifying what module to import you do not have to specify the "
 "absolute name of the module. When a module or package is contained within "
-"another package it is possible to make a relative import within the same top"
-" package without having to mention the package name. By using leading dots "
-"in the specified module or package after :keyword:`from` you can specify how"
-" high to traverse up the current package hierarchy without specifying exact "
-"names. One leading dot means the current package where the module making the"
-" import exists. Two dots means up one package level. Three dots is up two "
+"another package it is possible to make a relative import within the same top "
+"package without having to mention the package name. By using leading dots in "
+"the specified module or package after :keyword:`from` you can specify how "
+"high to traverse up the current package hierarchy without specifying exact "
+"names. One leading dot means the current package where the module making the "
+"import exists. Two dots means up one package level. Three dots is up two "
 "levels, etc. So if you execute ``from . import mod`` from a module in the "
 "``pkg`` package then you will end up importing ``pkg.mod``. If you execute "
 "``from ..subpkg2 import mod`` from within ``pkg.subpkg1`` you will import "
@@ -854,8 +853,8 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:864
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``import`` with arguments "
-"``module``, ``filename``, ``sys.path``, ``sys.meta_path``, "
-"``sys.path_hooks``."
+"``module``, ``filename``, ``sys.path``, ``sys.meta_path``, ``sys."
+"path_hooks``."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:869
@@ -901,14 +900,14 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:899
 msgid ""
-"The only feature that requires using the future statement is ``annotations``"
-" (see :pep:`563`)."
+"The only feature that requires using the future statement is ``annotations`` "
+"(see :pep:`563`)."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:902
 msgid ""
-"All historical features enabled by the future statement are still recognized"
-" by Python 3.  The list includes ``absolute_import``, ``division``, "
+"All historical features enabled by the future statement are still recognized "
+"by Python 3.  The list includes ``absolute_import``, ``division``, "
 "``generators``, ``generator_stop``, ``unicode_literals``, "
 "``print_function``, ``nested_scopes`` and ``with_statement``.  They are all "
 "redundant because they are always enabled, and only kept for backwards "
@@ -934,8 +933,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:920
 msgid ""
-"The direct runtime semantics are the same as for any import statement: there"
-" is a standard module :mod:`__future__`, described later, and it will be "
+"The direct runtime semantics are the same as for any import statement: there "
+"is a standard module :mod:`__future__`, described later, and it will be "
 "imported in the usual way at the time the future statement is executed."
 msgstr ""
 
@@ -957,11 +956,11 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:934
 msgid ""
-"Code compiled by calls to the built-in functions :func:`exec` and "
-":func:`compile` that occur in a module :mod:`!M` containing a future "
-"statement will, by default, use the new syntax or semantics associated with "
-"the future statement.  This can be controlled by optional arguments to "
-":func:`compile` --- see the documentation of that function for details."
+"Code compiled by calls to the built-in functions :func:`exec` and :func:"
+"`compile` that occur in a module :mod:`!M` containing a future statement "
+"will, by default, use the new syntax or semantics associated with the future "
+"statement.  This can be controlled by optional arguments to :func:`compile` "
+"--- see the documentation of that function for details."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:940
@@ -1003,8 +1002,8 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:974
 msgid ""
 "Names listed in a :keyword:`global` statement must not be defined as formal "
-"parameters, or as targets in :keyword:`with` statements or :keyword:`except`"
-" clauses, or in a :keyword:`for` target list, :keyword:`class` definition, "
+"parameters, or as targets in :keyword:`with` statements or :keyword:`except` "
+"clauses, or in a :keyword:`for` target list, :keyword:`class` definition, "
 "function definition, :keyword:`import` statement, or variable annotation."
 msgstr ""
 
@@ -1021,10 +1020,10 @@ msgid ""
 "applies only to code parsed at the same time as the :keyword:`!global` "
 "statement. In particular, a :keyword:`!global` statement contained in a "
 "string or code object supplied to the built-in :func:`exec` function does "
-"not affect the code block *containing* the function call, and code contained"
-" in such a string is unaffected by :keyword:`!global` statements in the code"
-" containing the function call.  The same applies to the :func:`eval` and "
-":func:`compile` functions."
+"not affect the code block *containing* the function call, and code contained "
+"in such a string is unaffected by :keyword:`!global` statements in the code "
+"containing the function call.  The same applies to the :func:`eval` and :"
+"func:`compile` functions."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:1002
@@ -1034,16 +1033,16 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:1010
 msgid ""
 "The :keyword:`nonlocal` statement causes the listed identifiers to refer to "
-"previously bound variables in the nearest enclosing scope excluding globals."
-" This is important because the default behavior for binding is to search the"
-" local namespace first.  The statement allows encapsulated code to rebind "
+"previously bound variables in the nearest enclosing scope excluding globals. "
+"This is important because the default behavior for binding is to search the "
+"local namespace first.  The statement allows encapsulated code to rebind "
 "variables outside of the local scope besides the global (module) scope."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:1016
 msgid ""
-"Names listed in a :keyword:`nonlocal` statement, unlike those listed in a "
-":keyword:`global` statement, must refer to pre-existing bindings in an "
+"Names listed in a :keyword:`nonlocal` statement, unlike those listed in a :"
+"keyword:`global` statement, must refer to pre-existing bindings in an "
 "enclosing scope (the scope in which a new binding should be created cannot "
 "be determined unambiguously)."
 msgstr ""
@@ -1082,23 +1081,23 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:1052
 msgid ""
-"``annotation-def`` indicates an :ref:`annotation scope <annotation-scopes>`,"
-" which behaves mostly like a function, but with several small differences."
+"``annotation-def`` indicates an :ref:`annotation scope <annotation-scopes>`, "
+"which behaves mostly like a function, but with several small differences."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:1055
 msgid ""
 "The value of the type alias is evaluated in the annotation scope. It is not "
 "evaluated when the type alias is created, but only when the value is "
-"accessed through the type alias's :attr:`!__value__` attribute (see "
-":ref:`lazy-evaluation`). This allows the type alias to refer to names that "
-"are not yet defined."
+"accessed through the type alias's :attr:`!__value__` attribute (see :ref:"
+"`lazy-evaluation`). This allows the type alias to refer to names that are "
+"not yet defined."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:1061
 msgid ""
-"Type aliases may be made generic by adding a :ref:`type parameter list "
-"<type-params>` after the name. See :ref:`generic-type-aliases` for more."
+"Type aliases may be made generic by adding a :ref:`type parameter list <type-"
+"params>` after the name. See :ref:`generic-type-aliases` for more."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:1064
@@ -1111,8 +1110,8 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:1071
 msgid ""
-"Introduced the :keyword:`!type` statement and syntax for generic classes and"
-" functions."
+"Introduced the :keyword:`!type` statement and syntax for generic classes and "
+"functions."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:8
@@ -1125,18 +1124,14 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:422 ../../reference/simple_stmts.rst:444
 #: ../../reference/simple_stmts.rst:457 ../../reference/simple_stmts.rst:483
 #: ../../reference/simple_stmts.rst:520 ../../reference/simple_stmts.rst:556
-#: ../../reference/simple_stmts.rst:682 ../../reference/simple_stmts.rst:682
-#: ../../reference/simple_stmts.rst:682 ../../reference/simple_stmts.rst:682
-#: ../../reference/simple_stmts.rst:716 ../../reference/simple_stmts.rst:716
-#: ../../reference/simple_stmts.rst:716 ../../reference/simple_stmts.rst:716
+#: ../../reference/simple_stmts.rst:682 ../../reference/simple_stmts.rst:716
 #: ../../reference/simple_stmts.rst:741 ../../reference/simple_stmts.rst:871
 #: ../../reference/simple_stmts.rst:957 ../../reference/simple_stmts.rst:1004
 #: ../../reference/simple_stmts.rst:1034
 msgid "statement"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:39 ../../reference/simple_stmts.rst:39
-#: ../../reference/simple_stmts.rst:42
+#: ../../reference/simple_stmts.rst:39 ../../reference/simple_stmts.rst:42
 msgid "expression"
 msgstr ""
 
@@ -1147,7 +1142,6 @@ msgid "list"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:56 ../../reference/simple_stmts.rst:985
-#: ../../reference/simple_stmts.rst:985 ../../reference/simple_stmts.rst:985
 msgid "built-in function"
 msgstr "встроенная функция"
 
@@ -1157,7 +1151,6 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:56 ../../reference/simple_stmts.rst:75
 #: ../../reference/simple_stmts.rst:187 ../../reference/simple_stmts.rst:196
-#: ../../reference/simple_stmts.rst:196 ../../reference/simple_stmts.rst:207
 #: ../../reference/simple_stmts.rst:207 ../../reference/simple_stmts.rst:578
 msgid "object"
 msgstr ""
@@ -1174,7 +1167,7 @@ msgstr ""
 msgid "conversion"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:56 ../../reference/simple_stmts.rst:56
+#: ../../reference/simple_stmts.rst:56
 msgid "output"
 msgstr ""
 
@@ -1206,10 +1199,10 @@ msgstr ""
 msgid "assignment statement"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:75 ../../reference/simple_stmts.rst:75
-#: ../../reference/simple_stmts.rst:116 ../../reference/simple_stmts.rst:159
-#: ../../reference/simple_stmts.rst:187 ../../reference/simple_stmts.rst:220
-#: ../../reference/simple_stmts.rst:263 ../../reference/simple_stmts.rst:322
+#: ../../reference/simple_stmts.rst:75 ../../reference/simple_stmts.rst:116
+#: ../../reference/simple_stmts.rst:159 ../../reference/simple_stmts.rst:187
+#: ../../reference/simple_stmts.rst:220 ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:322
 msgid "assignment"
 msgstr ""
 
@@ -1218,9 +1211,9 @@ msgstr ""
 msgid "binding"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:75 ../../reference/simple_stmts.rst:75
-#: ../../reference/simple_stmts.rst:457 ../../reference/simple_stmts.rst:741
-#: ../../reference/simple_stmts.rst:796 ../../reference/simple_stmts.rst:957
+#: ../../reference/simple_stmts.rst:75 ../../reference/simple_stmts.rst:457
+#: ../../reference/simple_stmts.rst:741 ../../reference/simple_stmts.rst:796
+#: ../../reference/simple_stmts.rst:957
 msgid "name"
 msgstr ""
 
@@ -1237,8 +1230,7 @@ msgstr ""
 msgid "attribute"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:105 ../../reference/simple_stmts.rst:105
-#: ../../reference/simple_stmts.rst:116 ../../reference/simple_stmts.rst:444
+#: ../../reference/simple_stmts.rst:105 ../../reference/simple_stmts.rst:116
 #: ../../reference/simple_stmts.rst:444 ../../reference/simple_stmts.rst:695
 msgid "target"
 msgstr ""
@@ -1257,7 +1249,6 @@ msgstr ""
 msgid "* (asterisk)"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:116 ../../reference/simple_stmts.rst:116
 #: ../../reference/simple_stmts.rst:116
 msgid "in assignment target list"
 msgstr ""
@@ -1306,12 +1297,7 @@ msgstr ""
 msgid "+="
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:263 ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263 ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263 ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263 ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263 ../../reference/simple_stmts.rst:263
-#: ../../reference/simple_stmts.rst:263 ../../reference/simple_stmts.rst:263
+#: ../../reference/simple_stmts.rst:263
 msgid "augmented assignment"
 msgstr ""
 
@@ -1396,8 +1382,8 @@ msgid "__debug__"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:400 ../../reference/simple_stmts.rst:520
-#: ../../reference/simple_stmts.rst:556 ../../reference/simple_stmts.rst:556
-#: ../../reference/simple_stmts.rst:588 ../../reference/simple_stmts.rst:741
+#: ../../reference/simple_stmts.rst:556 ../../reference/simple_stmts.rst:588
+#: ../../reference/simple_stmts.rst:741
 msgid "exception"
 msgstr ""
 
@@ -1409,11 +1395,11 @@ msgstr ""
 msgid "pass"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:422 ../../reference/simple_stmts.rst:422
+#: ../../reference/simple_stmts.rst:422
 msgid "null"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:422 ../../reference/simple_stmts.rst:422
+#: ../../reference/simple_stmts.rst:422
 msgid "operation"
 msgstr ""
 
@@ -1421,13 +1407,11 @@ msgstr ""
 msgid "del"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:444 ../../reference/simple_stmts.rst:444
-#: ../../reference/simple_stmts.rst:466
+#: ../../reference/simple_stmts.rst:444 ../../reference/simple_stmts.rst:466
 msgid "deletion"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:457 ../../reference/simple_stmts.rst:957
-#: ../../reference/simple_stmts.rst:957
 msgid "global"
 msgstr ""
 
@@ -1440,11 +1424,10 @@ msgid "return"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:483 ../../reference/simple_stmts.rst:520
-#: ../../reference/simple_stmts.rst:520
 msgid "function"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:483 ../../reference/simple_stmts.rst:483
+#: ../../reference/simple_stmts.rst:483
 msgid "definition"
 msgstr ""
 
@@ -1454,7 +1437,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:499 ../../reference/simple_stmts.rst:695
 #: ../../reference/simple_stmts.rst:704 ../../reference/simple_stmts.rst:716
-#: ../../reference/simple_stmts.rst:741 ../../reference/simple_stmts.rst:741
+#: ../../reference/simple_stmts.rst:741
 msgid "keyword"
 msgstr ""
 
@@ -1467,7 +1450,6 @@ msgstr ""
 msgid "yield"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:520 ../../reference/simple_stmts.rst:520
 #: ../../reference/simple_stmts.rst:520
 msgid "generator"
 msgstr ""

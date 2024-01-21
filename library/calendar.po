@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,12 +10,15 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-19 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:56+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/calendar.rst:2
 msgid ":mod:`calendar` --- General calendar-related functions"
@@ -30,8 +33,8 @@ msgid ""
 "This module allows you to output calendars like the Unix :program:`cal` "
 "program, and provides additional useful functions related to the calendar. "
 "By default, these calendars have Monday as the first day of the week, and "
-"Sunday as the last (the European convention). Use :func:`setfirstweekday` to"
-" set the first day of the week to Sunday (6) or to any other weekday.  "
+"Sunday as the last (the European convention). Use :func:`setfirstweekday` to "
+"set the first day of the week to Sunday (6) or to any other weekday.  "
 "Parameters that specify dates are given as integers. For related "
 "functionality, see also the :mod:`datetime` and :mod:`time` modules."
 msgstr ""
@@ -42,16 +45,16 @@ msgid ""
 "the current Gregorian calendar extended indefinitely in both directions.  "
 "This matches the definition of the \"proleptic Gregorian\" calendar in "
 "Dershowitz and Reingold's book \"Calendrical Calculations\", where it's the "
-"base calendar for all computations.  Zero and negative years are interpreted"
-" as prescribed by the ISO 8601 standard.  Year 0 is 1 BC, year -1 is 2 BC, "
+"base calendar for all computations.  Zero and negative years are interpreted "
+"as prescribed by the ISO 8601 standard.  Year 0 is 1 BC, year -1 is 2 BC, "
 "and so on."
 msgstr ""
 
 #: ../../library/calendar.rst:33
 msgid ""
 "Creates a :class:`Calendar` object. *firstweekday* is an integer specifying "
-"the first day of the week. :const:`MONDAY` is ``0`` (the default), "
-":const:`SUNDAY` is ``6``."
+"the first day of the week. :const:`MONDAY` is ``0`` (the default), :const:"
+"`SUNDAY` is ``6``."
 msgstr ""
 
 #: ../../library/calendar.rst:36
@@ -67,9 +70,9 @@ msgstr ""
 
 #: ../../library/calendar.rst:45
 msgid ""
-"Return an iterator for the week day numbers that will be used for one week."
-"  The first value from the iterator will be the same as the value of the "
-":attr:`firstweekday` property."
+"Return an iterator for the week day numbers that will be used for one week.  "
+"The first value from the iterator will be the same as the value of the :attr:"
+"`firstweekday` property."
 msgstr ""
 
 #: ../../library/calendar.rst:52
@@ -82,52 +85,52 @@ msgstr ""
 
 #: ../../library/calendar.rst:60
 msgid ""
-"Return an iterator for the month *month* in the year *year* similar to "
-":meth:`itermonthdates`, but not restricted by the :class:`datetime.date` "
-"range. Days returned will simply be day of the month numbers.  For the days "
-"outside of the specified month, the day number is ``0``."
+"Return an iterator for the month *month* in the year *year* similar to :meth:"
+"`itermonthdates`, but not restricted by the :class:`datetime.date` range. "
+"Days returned will simply be day of the month numbers.  For the days outside "
+"of the specified month, the day number is ``0``."
 msgstr ""
 
 #: ../../library/calendar.rst:68
 msgid ""
-"Return an iterator for the month *month* in the year *year* similar to "
-":meth:`itermonthdates`, but not restricted by the :class:`datetime.date` "
-"range. Days returned will be tuples consisting of a day of the month number "
-"and a week day number."
+"Return an iterator for the month *month* in the year *year* similar to :meth:"
+"`itermonthdates`, but not restricted by the :class:`datetime.date` range. "
+"Days returned will be tuples consisting of a day of the month number and a "
+"week day number."
 msgstr ""
 
 #: ../../library/calendar.rst:76
 msgid ""
-"Return an iterator for the month *month* in the year *year* similar to "
-":meth:`itermonthdates`, but not restricted by the :class:`datetime.date` "
-"range. Days returned will be tuples consisting of a year, a month and a day "
-"of the month numbers."
+"Return an iterator for the month *month* in the year *year* similar to :meth:"
+"`itermonthdates`, but not restricted by the :class:`datetime.date` range. "
+"Days returned will be tuples consisting of a year, a month and a day of the "
+"month numbers."
 msgstr ""
 
 #: ../../library/calendar.rst:86
 msgid ""
-"Return an iterator for the month *month* in the year *year* similar to "
-":meth:`itermonthdates`, but not restricted by the :class:`datetime.date` "
-"range. Days returned will be tuples consisting of a year, a month, a day of "
-"the month, and a day of the week numbers."
+"Return an iterator for the month *month* in the year *year* similar to :meth:"
+"`itermonthdates`, but not restricted by the :class:`datetime.date` range. "
+"Days returned will be tuples consisting of a year, a month, a day of the "
+"month, and a day of the week numbers."
 msgstr ""
 
 #: ../../library/calendar.rst:96
 msgid ""
-"Return a list of the weeks in the month *month* of the *year* as full weeks."
-"  Weeks are lists of seven :class:`datetime.date` objects."
+"Return a list of the weeks in the month *month* of the *year* as full "
+"weeks.  Weeks are lists of seven :class:`datetime.date` objects."
 msgstr ""
 
 #: ../../library/calendar.rst:102
 msgid ""
-"Return a list of the weeks in the month *month* of the *year* as full weeks."
-"  Weeks are lists of seven tuples of day numbers and weekday numbers."
+"Return a list of the weeks in the month *month* of the *year* as full "
+"weeks.  Weeks are lists of seven tuples of day numbers and weekday numbers."
 msgstr ""
 
 #: ../../library/calendar.rst:109
 msgid ""
-"Return a list of the weeks in the month *month* of the *year* as full weeks."
-"  Weeks are lists of seven day numbers."
+"Return a list of the weeks in the month *month* of the *year* as full "
+"weeks.  Weeks are lists of seven day numbers."
 msgstr ""
 
 #: ../../library/calendar.rst:115
@@ -140,15 +143,15 @@ msgstr ""
 
 #: ../../library/calendar.rst:123
 msgid ""
-"Return the data for the specified year ready for formatting (similar to "
-":meth:`yeardatescalendar`). Entries in the week lists are tuples of day "
+"Return the data for the specified year ready for formatting (similar to :"
+"meth:`yeardatescalendar`). Entries in the week lists are tuples of day "
 "numbers and weekday numbers. Day numbers outside this month are zero."
 msgstr ""
 
 #: ../../library/calendar.rst:130
 msgid ""
-"Return the data for the specified year ready for formatting (similar to "
-":meth:`yeardatescalendar`). Entries in the week lists are day numbers. Day "
+"Return the data for the specified year ready for formatting (similar to :"
+"meth:`yeardatescalendar`). Entries in the week lists are day numbers. Day "
 "numbers outside this month are zero."
 msgstr ""
 
@@ -165,8 +168,8 @@ msgid ""
 "Return a month's calendar in a multi-line string. If *w* is provided, it "
 "specifies the width of the date columns, which are centered. If *l* is "
 "given, it specifies the number of lines that each week will use. Depends on "
-"the first weekday as specified in the constructor or set by the "
-":meth:`setfirstweekday` method."
+"the first weekday as specified in the constructor or set by the :meth:"
+"`setfirstweekday` method."
 msgstr ""
 
 #: ../../library/calendar.rst:152
@@ -178,9 +181,9 @@ msgid ""
 "Return a *m*-column calendar for an entire year as a multi-line string. "
 "Optional parameters *w*, *l*, and *c* are for date column width, lines per "
 "week, and number of spaces between month columns, respectively. Depends on "
-"the first weekday as specified in the constructor or set by the "
-":meth:`setfirstweekday` method.  The earliest year for which a calendar can "
-"be generated is platform-dependent."
+"the first weekday as specified in the constructor or set by the :meth:"
+"`setfirstweekday` method.  The earliest year for which a calendar can be "
+"generated is platform-dependent."
 msgstr ""
 
 #: ../../library/calendar.rst:167
@@ -212,8 +215,8 @@ msgstr ""
 msgid ""
 "Return a year's calendar as a complete HTML page. *width* (defaulting to 3) "
 "specifies the number of months per row. *css* is the name for the cascading "
-"style sheet to be used. :const:`None` can be passed if no style sheet should"
-" be used. *encoding* specifies the encoding to be used for the output "
+"style sheet to be used. :const:`None` can be passed if no style sheet should "
+"be used. *encoding* specifies the encoding to be used for the output "
 "(defaulting to the system default encoding)."
 msgstr ""
 
@@ -260,20 +263,20 @@ msgstr ""
 
 #: ../../library/calendar.rst:247
 msgid ""
-"The CSS class for the whole month's table (used by :meth:`formatmonth`). The"
-" default value is ``\"month\"``."
+"The CSS class for the whole month's table (used by :meth:`formatmonth`). The "
+"default value is ``\"month\"``."
 msgstr ""
 
 #: ../../library/calendar.rst:255
 msgid ""
-"The CSS class for the whole year's table of tables (used by "
-":meth:`formatyear`). The default value is ``\"year\"``."
+"The CSS class for the whole year's table of tables (used by :meth:"
+"`formatyear`). The default value is ``\"year\"``."
 msgstr ""
 
 #: ../../library/calendar.rst:263
 msgid ""
-"The CSS class for the table head for the whole year (used by "
-":meth:`formatyear`). The default value is ``\"year\"``."
+"The CSS class for the table head for the whole year (used by :meth:"
+"`formatyear`). The default value is ``\"year\"``."
 msgstr ""
 
 #: ../../library/calendar.rst:269
@@ -301,24 +304,22 @@ msgstr ""
 
 #: ../../library/calendar.rst:299
 msgid ""
-"The constructor, :meth:`!formatweekday` and :meth:`!formatmonthname` methods"
-" of these two classes temporarily change the ``LC_TIME`` locale to the given"
-" *locale*. Because the current locale is a process-wide setting, they are "
-"not thread-safe."
+"The constructor, :meth:`!formatweekday` and :meth:`!formatmonthname` methods "
+"of these two classes temporarily change the ``LC_TIME`` locale to the given "
+"*locale*. Because the current locale is a process-wide setting, they are not "
+"thread-safe."
 msgstr ""
 
 #: ../../library/calendar.rst:305
-msgid ""
-"For simple text calendars this module provides the following functions."
+msgid "For simple text calendars this module provides the following functions."
 msgstr ""
 
 #: ../../library/calendar.rst:309
 msgid ""
 "Sets the weekday (``0`` is Monday, ``6`` is Sunday) to start each week. The "
-"values :const:`MONDAY`, :const:`TUESDAY`, :const:`WEDNESDAY`, "
-":const:`THURSDAY`, :const:`FRIDAY`, :const:`SATURDAY`, and :const:`SUNDAY` "
-"are provided for convenience. For example, to set the first weekday to "
-"Sunday::"
+"values :const:`MONDAY`, :const:`TUESDAY`, :const:`WEDNESDAY`, :const:"
+"`THURSDAY`, :const:`FRIDAY`, :const:`SATURDAY`, and :const:`SUNDAY` are "
+"provided for convenience. For example, to set the first weekday to Sunday::"
 msgstr ""
 
 #: ../../library/calendar.rst:320
@@ -332,8 +333,8 @@ msgstr ""
 
 #: ../../library/calendar.rst:330
 msgid ""
-"Returns the number of leap years in the range from *y1* to *y2* (exclusive),"
-" where *y1* and *y2* are years."
+"Returns the number of leap years in the range from *y1* to *y2* (exclusive), "
+"where *y1* and *y2* are years."
 msgstr ""
 
 #: ../../library/calendar.rst:333
@@ -371,8 +372,8 @@ msgstr ""
 
 #: ../../library/calendar.rst:368
 msgid ""
-"Returns a month's calendar in a multi-line string using the "
-":meth:`~TextCalendar.formatmonth` of the :class:`TextCalendar` class."
+"Returns a month's calendar in a multi-line string using the :meth:"
+"`~TextCalendar.formatmonth` of the :class:`TextCalendar` class."
 msgstr ""
 
 #: ../../library/calendar.rst:374
@@ -389,10 +390,10 @@ msgstr ""
 #: ../../library/calendar.rst:385
 msgid ""
 "An unrelated but handy function that takes a time tuple such as returned by "
-"the :func:`~time.gmtime` function in the :mod:`time` module, and returns the"
-" corresponding Unix timestamp value, assuming an epoch of 1970, and the "
-"POSIX encoding.  In fact, :func:`time.gmtime` and :func:`timegm` are each "
-"others' inverse."
+"the :func:`~time.gmtime` function in the :mod:`time` module, and returns the "
+"corresponding Unix timestamp value, assuming an epoch of 1970, and the POSIX "
+"encoding.  In fact, :func:`time.gmtime` and :func:`timegm` are each others' "
+"inverse."
 msgstr ""
 
 #: ../../library/calendar.rst:392
@@ -418,14 +419,14 @@ msgstr ""
 #: ../../library/calendar.rst:420
 msgid ""
 "Enumeration defining days of the week as integer constants. The members of "
-"this enumeration are exported to the module scope as :data:`MONDAY` through "
-":data:`SUNDAY`."
+"this enumeration are exported to the module scope as :data:`MONDAY` through :"
+"data:`SUNDAY`."
 msgstr ""
 
 #: ../../library/calendar.rst:429
 msgid ""
-"An array that represents the months of the year in the current locale.  This"
-" follows normal convention of January being month number 1, so it has a "
+"An array that represents the months of the year in the current locale.  This "
+"follows normal convention of January being month number 1, so it has a "
 "length of 13 and  ``month_name[0]`` is the empty string."
 msgstr ""
 
@@ -444,8 +445,8 @@ msgstr ""
 
 #: ../../library/calendar.rst:462
 msgid ""
-"Enumeration defining months of the year as integer constants. The members of"
-" this enumeration are exported to the module scope as :data:`JANUARY` "
+"Enumeration defining months of the year as integer constants. The members of "
+"this enumeration are exported to the module scope as :data:`JANUARY` "
 "through :data:`DECEMBER`."
 msgstr ""
 
@@ -497,8 +498,8 @@ msgstr ""
 
 #: ../../library/calendar.rst:508
 msgid ""
-"The :mod:`calendar` module can be executed as a script from the command line"
-" to interactively print a calendar."
+"The :mod:`calendar` module can be executed as a script from the command line "
+"to interactively print a calendar."
 msgstr ""
 
 #: ../../library/calendar.rst:518
@@ -519,8 +520,8 @@ msgstr ""
 
 #: ../../library/calendar.rst:579
 msgid ""
-"The encoding to use for output. :option:`--encoding` is required if "
-":option:`--locale` is set."
+"The encoding to use for output. :option:`--encoding` is required if :option:"
+"`--locale` is set."
 msgstr ""
 
 #: ../../library/calendar.rst:585
@@ -535,8 +536,8 @@ msgstr ""
 
 #: ../../library/calendar.rst:598
 msgid ""
-"The month of the specified :option:`year` to print the calendar for. Must be"
-" a number between 1 and 12, and may only be used in text mode. Defaults to "
+"The month of the specified :option:`year` to print the calendar for. Must be "
+"a number between 1 and 12, and may only be used in text mode. Defaults to "
 "printing a calendar for the full year."
 msgstr ""
 

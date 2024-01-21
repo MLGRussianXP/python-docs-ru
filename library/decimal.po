@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,12 +10,15 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:04+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/decimal.rst:2
 msgid ":mod:`decimal` --- Decimal fixed point and floating point arithmetic"
@@ -28,15 +31,15 @@ msgstr ""
 #: ../../library/decimal.rst:33
 msgid ""
 "The :mod:`decimal` module provides support for fast correctly rounded "
-"decimal floating point arithmetic. It offers several advantages over the "
-":class:`float` datatype:"
+"decimal floating point arithmetic. It offers several advantages over the :"
+"class:`float` datatype:"
 msgstr ""
 
 #: ../../library/decimal.rst:37
 msgid ""
 "Decimal \"is based on a floating-point model which was designed with people "
-"in mind, and necessarily has a paramount guiding principle -- computers must"
-" provide an arithmetic that works in the same way as the arithmetic that "
+"in mind, and necessarily has a paramount guiding principle -- computers must "
+"provide an arithmetic that works in the same way as the arithmetic that "
 "people learn at school.\" -- excerpt from the decimal arithmetic "
 "specification."
 msgstr ""
@@ -55,8 +58,8 @@ msgid ""
 "``0.1 + 0.1 + 0.1 - 0.3`` is exactly equal to zero.  In binary floating "
 "point, the result is ``5.5511151231257827e-017``.  While near to zero, the "
 "differences prevent reliable equality testing and differences can "
-"accumulate. For this reason, decimal is preferred in accounting applications"
-" which have strict equality invariants."
+"accumulate. For this reason, decimal is preferred in accounting applications "
+"which have strict equality invariants."
 msgstr ""
 
 #: ../../library/decimal.rst:54
@@ -78,8 +81,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:73
 msgid ""
-"Both binary and decimal floating point are implemented in terms of published"
-" standards.  While the built-in float type exposes only a modest portion of "
+"Both binary and decimal floating point are implemented in terms of published "
+"standards.  While the built-in float type exposes only a modest portion of "
 "its capabilities, the decimal module exposes all required parts of the "
 "standard. When needed, the programmer has full control over rounding and "
 "signal handling. This includes an option to enforce exact arithmetic by "
@@ -90,8 +93,8 @@ msgstr ""
 msgid ""
 "The decimal module was designed to support \"without prejudice, both exact "
 "unrounded decimal arithmetic (sometimes called fixed-point arithmetic) and "
-"rounded floating-point arithmetic.\"  -- excerpt from the decimal arithmetic"
-" specification."
+"rounded floating-point arithmetic.\"  -- excerpt from the decimal arithmetic "
+"specification."
 msgstr ""
 
 #: ../../library/decimal.rst:85
@@ -114,9 +117,9 @@ msgid ""
 "The context for arithmetic is an environment specifying precision, rounding "
 "rules, limits on exponents, flags indicating the results of operations, and "
 "trap enablers which determine whether signals are treated as exceptions.  "
-"Rounding options include :const:`ROUND_CEILING`, :const:`ROUND_DOWN`, "
-":const:`ROUND_FLOOR`, :const:`ROUND_HALF_DOWN`, :const:`ROUND_HALF_EVEN`, "
-":const:`ROUND_HALF_UP`, :const:`ROUND_UP`, and :const:`ROUND_05UP`."
+"Rounding options include :const:`ROUND_CEILING`, :const:`ROUND_DOWN`, :const:"
+"`ROUND_FLOOR`, :const:`ROUND_HALF_DOWN`, :const:`ROUND_HALF_EVEN`, :const:"
+"`ROUND_HALF_UP`, :const:`ROUND_UP`, and :const:`ROUND_05UP`."
 msgstr ""
 
 #: ../../library/decimal.rst:101
@@ -124,10 +127,10 @@ msgid ""
 "Signals are groups of exceptional conditions arising during the course of "
 "computation.  Depending on the needs of the application, signals may be "
 "ignored, considered as informational, or treated as exceptions. The signals "
-"in the decimal module are: :const:`Clamped`, :const:`InvalidOperation`, "
-":const:`DivisionByZero`, :const:`Inexact`, :const:`Rounded`, "
-":const:`Subnormal`, :const:`Overflow`, :const:`Underflow` and "
-":const:`FloatOperation`."
+"in the decimal module are: :const:`Clamped`, :const:`InvalidOperation`, :"
+"const:`DivisionByZero`, :const:`Inexact`, :const:`Rounded`, :const:"
+"`Subnormal`, :const:`Overflow`, :const:`Underflow` and :const:"
+"`FloatOperation`."
 msgstr ""
 
 #: ../../library/decimal.rst:108
@@ -158,8 +161,8 @@ msgstr ""
 #: ../../library/decimal.rst:139
 msgid ""
 "Decimal instances can be constructed from integers, strings, floats, or "
-"tuples. Construction from an integer or a float performs an exact conversion"
-" of the value of that integer or float.  Decimal numbers include special "
+"tuples. Construction from an integer or a float performs an exact conversion "
+"of the value of that integer or float.  Decimal numbers include special "
 "values such as ``NaN`` which stands for \"Not a number\", positive and "
 "negative ``Infinity``, and ``-0``::"
 msgstr ""
@@ -180,8 +183,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:199
 msgid ""
-"If the internal limits of the C version are exceeded, constructing a decimal"
-" raises :class:`InvalidOperation`::"
+"If the internal limits of the C version are exceeded, constructing a decimal "
+"raises :class:`InvalidOperation`::"
 msgstr ""
 
 #: ../../library/decimal.rst:209
@@ -203,24 +206,24 @@ msgstr ""
 
 #: ../../library/decimal.rst:262
 msgid ""
-"As shown above, the :func:`getcontext` function accesses the current context"
-" and allows the settings to be changed.  This approach meets the needs of "
+"As shown above, the :func:`getcontext` function accesses the current context "
+"and allows the settings to be changed.  This approach meets the needs of "
 "most applications."
 msgstr ""
 
 #: ../../library/decimal.rst:266
 msgid ""
 "For more advanced work, it may be useful to create alternate contexts using "
-"the Context() constructor.  To make an alternate active, use the "
-":func:`setcontext` function."
+"the Context() constructor.  To make an alternate active, use the :func:"
+"`setcontext` function."
 msgstr ""
 
 #: ../../library/decimal.rst:270
 msgid ""
 "In accordance with the standard, the :mod:`decimal` module provides two "
-"ready to use standard contexts, :const:`BasicContext` and "
-":const:`ExtendedContext`. The former is especially useful for debugging "
-"because many of the traps are enabled:"
+"ready to use standard contexts, :const:`BasicContext` and :const:"
+"`ExtendedContext`. The former is especially useful for debugging because "
+"many of the traps are enabled:"
 msgstr ""
 
 #: ../../library/decimal.rst:299
@@ -263,27 +266,27 @@ msgstr ""
 
 #: ../../library/decimal.rst:350
 msgid ""
-"*value* can be an integer, string, tuple, :class:`float`, or another "
-":class:`Decimal` object. If no *value* is given, returns ``Decimal('0')``.  "
-"If *value* is a string, it should conform to the decimal numeric string "
-"syntax after leading and trailing whitespace characters, as well as "
-"underscores throughout, are removed::"
+"*value* can be an integer, string, tuple, :class:`float`, or another :class:"
+"`Decimal` object. If no *value* is given, returns ``Decimal('0')``.  If "
+"*value* is a string, it should conform to the decimal numeric string syntax "
+"after leading and trailing whitespace characters, as well as underscores "
+"throughout, are removed::"
 msgstr ""
 
 #: ../../library/decimal.rst:366
 msgid ""
 "Other Unicode decimal digits are also permitted where ``digit`` appears "
 "above.  These include decimal digits from various other alphabets (for "
-"example, Arabic-Indic and Devanāgarī digits) along with the fullwidth digits"
-" ``'\\uff10'`` through ``'\\uff19'``."
+"example, Arabic-Indic and Devanāgarī digits) along with the fullwidth digits "
+"``'\\uff10'`` through ``'\\uff19'``."
 msgstr ""
 
 #: ../../library/decimal.rst:371
 msgid ""
 "If *value* is a :class:`tuple`, it should have three components, a sign "
 "(``0`` for positive or ``1`` for negative), a :class:`tuple` of digits, and "
-"an integer exponent. For example, ``Decimal((0, (1, 4, 1, 4), -3))`` returns"
-" ``Decimal('1.414')``."
+"an integer exponent. For example, ``Decimal((0, (1, 4, 1, 4), -3))`` returns "
+"``Decimal('1.414')``."
 msgstr ""
 
 #: ../../library/decimal.rst:376
@@ -335,12 +338,12 @@ msgstr ""
 
 #: ../../library/decimal.rst:406
 msgid ""
-"Decimal floating point objects share many properties with the other built-in"
-" numeric types such as :class:`float` and :class:`int`.  All of the usual "
-"math operations and special methods apply.  Likewise, decimal objects can be"
-" copied, pickled, printed, used as dictionary keys, used as set elements, "
-"compared, sorted, and coerced to another type (such as :class:`float` or "
-":class:`int`)."
+"Decimal floating point objects share many properties with the other built-in "
+"numeric types such as :class:`float` and :class:`int`.  All of the usual "
+"math operations and special methods apply.  Likewise, decimal objects can be "
+"copied, pickled, printed, used as dictionary keys, used as set elements, "
+"compared, sorted, and coerced to another type (such as :class:`float` or :"
+"class:`int`)."
 msgstr ""
 
 #: ../../library/decimal.rst:413
@@ -366,13 +369,13 @@ msgstr ""
 
 #: ../../library/decimal.rst:436
 msgid ""
-"Decimal objects cannot generally be combined with floats or instances of "
-":class:`fractions.Fraction` in arithmetic operations: an attempt to add a "
-":class:`Decimal` to a :class:`float`, for example, will raise a "
-":exc:`TypeError`.  However, it is possible to use Python's comparison "
-"operators to compare a :class:`Decimal` instance ``x`` with another number "
-"``y``.  This avoids confusing results when doing equality comparisons "
-"between numbers of different types."
+"Decimal objects cannot generally be combined with floats or instances of :"
+"class:`fractions.Fraction` in arithmetic operations: an attempt to add a :"
+"class:`Decimal` to a :class:`float`, for example, will raise a :exc:"
+"`TypeError`.  However, it is possible to use Python's comparison operators "
+"to compare a :class:`Decimal` instance ``x`` with another number ``y``.  "
+"This avoids confusing results when doing equality comparisons between "
+"numbers of different types."
 msgstr ""
 
 #: ../../library/decimal.rst:444
@@ -397,9 +400,9 @@ msgstr ""
 
 #: ../../library/decimal.rst:461
 msgid ""
-"Return a pair ``(n, d)`` of integers that represent the given "
-":class:`Decimal` instance as a fraction, in lowest terms and with a positive"
-" denominator::"
+"Return a pair ``(n, d)`` of integers that represent the given :class:"
+"`Decimal` instance as a fraction, in lowest terms and with a positive "
+"denominator::"
 msgstr ""
 
 #: ../../library/decimal.rst:468
@@ -416,8 +419,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:481
 msgid ""
-"Return the canonical encoding of the argument.  Currently, the encoding of a"
-" :class:`Decimal` instance is always canonical, so this operation returns "
+"Return the canonical encoding of the argument.  Currently, the encoding of "
+"a :class:`Decimal` instance is always canonical, so this operation returns "
 "its argument unchanged."
 msgstr ""
 
@@ -447,8 +450,8 @@ msgstr ""
 msgid ""
 "Quiet and signaling NaNs are also included in the total ordering.  The "
 "result of this function is ``Decimal('0')`` if both operands have the same "
-"representation, ``Decimal('-1')`` if the first operand is lower in the total"
-" order than the second, and ``Decimal('1')`` if the first operand is higher "
+"representation, ``Decimal('-1')`` if the first operand is lower in the total "
+"order than the second, and ``Decimal('1')`` if the first operand is higher "
 "in the total order than the second operand.  See the specification for "
 "details of the total order."
 msgstr ""
@@ -465,8 +468,8 @@ msgstr ""
 msgid ""
 "Compare two operands using their abstract representation rather than their "
 "value as in :meth:`compare_total`, but ignoring the sign of each operand. "
-"``x.compare_total_mag(y)`` is equivalent to "
-"``x.copy_abs().compare_total(y.copy_abs())``."
+"``x.compare_total_mag(y)`` is equivalent to ``x.copy_abs().compare_total(y."
+"copy_abs())``."
 msgstr ""
 
 #: ../../library/decimal.rst:537
@@ -495,15 +498,15 @@ msgstr ""
 
 #: ../../library/decimal.rst:565
 msgid ""
-"Return the value of the (natural) exponential function ``e**x`` at the given"
-" number.  The result is correctly rounded using the :const:`ROUND_HALF_EVEN`"
-" rounding mode."
+"Return the value of the (natural) exponential function ``e**x`` at the given "
+"number.  The result is correctly rounded using the :const:`ROUND_HALF_EVEN` "
+"rounding mode."
 msgstr ""
 
 #: ../../library/decimal.rst:576
 msgid ""
-"Alternative constructor that only accepts instances of :class:`float` or "
-":class:`int`."
+"Alternative constructor that only accepts instances of :class:`float` or :"
+"class:`int`."
 msgstr ""
 
 #: ../../library/decimal.rst:579
@@ -517,8 +520,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:585
 msgid ""
-"From Python 3.2 onwards, a :class:`Decimal` instance can also be constructed"
-" directly from a :class:`float`."
+"From Python 3.2 onwards, a :class:`Decimal` instance can also be constructed "
+"directly from a :class:`float`."
 msgstr ""
 
 #: ../../library/decimal.rst:603
@@ -542,20 +545,20 @@ msgstr ""
 
 #: ../../library/decimal.rst:622
 msgid ""
-"Return :const:`True` if the argument is either positive or negative infinity"
-" and :const:`False` otherwise."
+"Return :const:`True` if the argument is either positive or negative infinity "
+"and :const:`False` otherwise."
 msgstr ""
 
 #: ../../library/decimal.rst:627
 msgid ""
-"Return :const:`True` if the argument is a (quiet or signaling) NaN and "
-":const:`False` otherwise."
+"Return :const:`True` if the argument is a (quiet or signaling) NaN and :"
+"const:`False` otherwise."
 msgstr ""
 
 #: ../../library/decimal.rst:632
 msgid ""
-"Return :const:`True` if the argument is a *normal* finite number.  Return "
-":const:`False` if the argument is zero, subnormal, infinite or a NaN."
+"Return :const:`True` if the argument is a *normal* finite number.  Return :"
+"const:`False` if the argument is zero, subnormal, infinite or a NaN."
 msgstr ""
 
 #: ../../library/decimal.rst:637
@@ -584,8 +587,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:657
 msgid ""
-"Return :const:`True` if the argument is a (positive or negative) zero and "
-":const:`False` otherwise."
+"Return :const:`True` if the argument is a (positive or negative) zero and :"
+"const:`False` otherwise."
 msgstr ""
 
 #: ../../library/decimal.rst:662
@@ -602,38 +605,37 @@ msgstr ""
 
 #: ../../library/decimal.rst:672
 msgid ""
-"For a nonzero number, return the adjusted exponent of its operand as a "
-":class:`Decimal` instance.  If the operand is a zero then "
-"``Decimal('-Infinity')`` is returned and the :const:`DivisionByZero` flag is"
-" raised.  If the operand is an infinity then ``Decimal('Infinity')`` is "
-"returned."
+"For a nonzero number, return the adjusted exponent of its operand as a :"
+"class:`Decimal` instance.  If the operand is a zero then ``Decimal('-"
+"Infinity')`` is returned and the :const:`DivisionByZero` flag is raised.  If "
+"the operand is an infinity then ``Decimal('Infinity')`` is returned."
 msgstr ""
 
 #: ../../library/decimal.rst:680
 msgid ""
 ":meth:`logical_and` is a logical operation which takes two *logical "
-"operands* (see :ref:`logical_operands_label`).  The result is the digit-wise"
-" ``and`` of the two operands."
+"operands* (see :ref:`logical_operands_label`).  The result is the digit-wise "
+"``and`` of the two operands."
 msgstr ""
 
 #: ../../library/decimal.rst:686
 msgid ""
-":meth:`logical_invert` is a logical operation.  The result is the digit-wise"
-" inversion of the operand."
+":meth:`logical_invert` is a logical operation.  The result is the digit-wise "
+"inversion of the operand."
 msgstr ""
 
 #: ../../library/decimal.rst:691
 msgid ""
-":meth:`logical_or` is a logical operation which takes two *logical operands*"
-" (see :ref:`logical_operands_label`).  The result is the digit-wise ``or`` "
-"of the two operands."
+":meth:`logical_or` is a logical operation which takes two *logical operands* "
+"(see :ref:`logical_operands_label`).  The result is the digit-wise ``or`` of "
+"the two operands."
 msgstr ""
 
 #: ../../library/decimal.rst:697
 msgid ""
 ":meth:`logical_xor` is a logical operation which takes two *logical "
-"operands* (see :ref:`logical_operands_label`).  The result is the digit-wise"
-" exclusive or of the two operands."
+"operands* (see :ref:`logical_operands_label`).  The result is the digit-wise "
+"exclusive or of the two operands."
 msgstr ""
 
 #: ../../library/decimal.rst:703
@@ -693,9 +695,9 @@ msgstr ""
 #: ../../library/decimal.rst:749
 msgid ""
 "This has the same semantics as the unary plus operation, except that if the "
-"final result is finite it is reduced to its simplest form, with all trailing"
-" zeros removed and its sign preserved. That is, while the coefficient is "
-"non-zero and a multiple of ten the coefficient is divided by ten and the "
+"final result is finite it is reduced to its simplest form, with all trailing "
+"zeros removed and its sign preserved. That is, while the coefficient is non-"
+"zero and a multiple of ten the coefficient is divided by ten and the "
 "exponent is incremented by 1. Otherwise (the coefficient is zero) the "
 "exponent is set to 0. In all cases the sign is unchanged."
 msgstr ""
@@ -712,8 +714,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:761
 msgid ""
-"In the latest versions of the specification, this operation is also known as"
-" ``reduce``."
+"In the latest versions of the specification, this operation is also known as "
+"``reduce``."
 msgstr ""
 
 #: ../../library/decimal.rst:766
@@ -727,11 +729,13 @@ msgid "``\"-Infinity\"``, indicating that the operand is negative infinity."
 msgstr ""
 
 #: ../../library/decimal.rst:770
-msgid "``\"-Normal\"``, indicating that the operand is a negative normal number."
+msgid ""
+"``\"-Normal\"``, indicating that the operand is a negative normal number."
 msgstr ""
 
 #: ../../library/decimal.rst:771
-msgid "``\"-Subnormal\"``, indicating that the operand is negative and subnormal."
+msgid ""
+"``\"-Subnormal\"``, indicating that the operand is negative and subnormal."
 msgstr ""
 
 #: ../../library/decimal.rst:772
@@ -743,11 +747,13 @@ msgid "``\"+Zero\"``, indicating that the operand is a positive zero."
 msgstr ""
 
 #: ../../library/decimal.rst:774
-msgid "``\"+Subnormal\"``, indicating that the operand is positive and subnormal."
+msgid ""
+"``\"+Subnormal\"``, indicating that the operand is positive and subnormal."
 msgstr ""
 
 #: ../../library/decimal.rst:775
-msgid "``\"+Normal\"``, indicating that the operand is a positive normal number."
+msgid ""
+"``\"+Normal\"``, indicating that the operand is a positive normal number."
 msgstr ""
 
 #: ../../library/decimal.rst:776
@@ -770,11 +776,10 @@ msgstr ""
 
 #: ../../library/decimal.rst:788
 msgid ""
-"Unlike other operations, if the length of the coefficient after the quantize"
-" operation would be greater than precision, then an "
-":const:`InvalidOperation` is signaled. This guarantees that, unless there is"
-" an error condition, the quantized exponent is always equal to that of the "
-"right-hand operand."
+"Unlike other operations, if the length of the coefficient after the quantize "
+"operation would be greater than precision, then an :const:`InvalidOperation` "
+"is signaled. This guarantees that, unless there is an error condition, the "
+"quantized exponent is always equal to that of the right-hand operand."
 msgstr ""
 
 #: ../../library/decimal.rst:794
@@ -786,32 +791,31 @@ msgstr ""
 #: ../../library/decimal.rst:797
 msgid ""
 "If the exponent of the second operand is larger than that of the first then "
-"rounding may be necessary.  In this case, the rounding mode is determined by"
-" the ``rounding`` argument if given, else by the given ``context`` argument;"
-" if neither argument is given the rounding mode of the current thread's "
+"rounding may be necessary.  In this case, the rounding mode is determined by "
+"the ``rounding`` argument if given, else by the given ``context`` argument; "
+"if neither argument is given the rounding mode of the current thread's "
 "context is used."
 msgstr ""
 
 #: ../../library/decimal.rst:803
 msgid ""
-"An error is returned whenever the resulting exponent is greater than "
-":attr:`~Context.Emax` or less than :meth:`~Context.Etiny`."
+"An error is returned whenever the resulting exponent is greater than :attr:"
+"`~Context.Emax` or less than :meth:`~Context.Etiny`."
 msgstr ""
 
 #: ../../library/decimal.rst:808
 msgid ""
-"Return ``Decimal(10)``, the radix (base) in which the :class:`Decimal` class"
-" does all its arithmetic.  Included for compatibility with the "
-"specification."
+"Return ``Decimal(10)``, the radix (base) in which the :class:`Decimal` class "
+"does all its arithmetic.  Included for compatibility with the specification."
 msgstr ""
 
 #: ../../library/decimal.rst:814
 msgid ""
 "Return the remainder from dividing *self* by *other*.  This differs from "
 "``self % other`` in that the sign of the remainder is chosen so as to "
-"minimize its absolute value.  More precisely, the return value is ``self - n"
-" * other`` where ``n`` is the integer nearest to the exact value of ``self /"
-" other``, and if two integers are equally near then the even one is chosen."
+"minimize its absolute value.  More precisely, the return value is ``self - n "
+"* other`` where ``n`` is the integer nearest to the exact value of ``self / "
+"other``, and if two integers are equally near then the even one is chosen."
 msgstr ""
 
 #: ../../library/decimal.rst:821
@@ -838,8 +842,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:852
 msgid ""
-"Return the first operand with exponent adjusted by the second. Equivalently,"
-" return the first operand multiplied by ``10**other``.  The second operand "
+"Return the first operand with exponent adjusted by the second. Equivalently, "
+"return the first operand multiplied by ``10**other``.  The second operand "
 "must be an integer."
 msgstr ""
 
@@ -849,9 +853,9 @@ msgid ""
 "specified by the second operand.  The second operand must be an integer in "
 "the range -precision through precision.  The absolute value of the second "
 "operand gives the number of places to shift.  If the second operand is "
-"positive then the shift is to the left; otherwise the shift is to the right."
-"  Digits shifted into the coefficient are zeros.  The sign and exponent of "
-"the first operand are unchanged."
+"positive then the shift is to the left; otherwise the shift is to the "
+"right.  Digits shifted into the coefficient are zeros.  The sign and "
+"exponent of the first operand are unchanged."
 msgstr ""
 
 #: ../../library/decimal.rst:868
@@ -877,23 +881,23 @@ msgstr ""
 
 #: ../../library/decimal.rst:883
 msgid ""
-"Identical to the :meth:`to_integral_value` method.  The ``to_integral`` name"
-" has been kept for compatibility with older versions."
+"Identical to the :meth:`to_integral_value` method.  The ``to_integral`` name "
+"has been kept for compatibility with older versions."
 msgstr ""
 
 #: ../../library/decimal.rst:888
 msgid ""
-"Round to the nearest integer, signaling :const:`Inexact` or :const:`Rounded`"
-" as appropriate if rounding occurs.  The rounding mode is determined by the "
+"Round to the nearest integer, signaling :const:`Inexact` or :const:`Rounded` "
+"as appropriate if rounding occurs.  The rounding mode is determined by the "
 "``rounding`` parameter if given, else by the given ``context``.  If neither "
 "parameter is given then the rounding mode of the current context is used."
 msgstr ""
 
 #: ../../library/decimal.rst:896
 msgid ""
-"Round to the nearest integer without signaling :const:`Inexact` or "
-":const:`Rounded`.  If given, applies *rounding*; otherwise, uses the "
-"rounding method in either the supplied *context* or the current context."
+"Round to the nearest integer without signaling :const:`Inexact` or :const:"
+"`Rounded`.  If given, applies *rounding*; otherwise, uses the rounding "
+"method in either the supplied *context* or the current context."
 msgstr ""
 
 #: ../../library/decimal.rst:904
@@ -902,11 +906,11 @@ msgstr ""
 
 #: ../../library/decimal.rst:906
 msgid ""
-"The :meth:`~Decimal.logical_and`, :meth:`~Decimal.logical_invert`, "
-":meth:`~Decimal.logical_or`, and :meth:`~Decimal.logical_xor` methods expect"
-" their arguments to be *logical operands*.  A *logical operand* is a "
-":class:`Decimal` instance whose exponent and sign are both zero, and whose "
-"digits are all either ``0`` or ``1``."
+"The :meth:`~Decimal.logical_and`, :meth:`~Decimal.logical_invert`, :meth:"
+"`~Decimal.logical_or`, and :meth:`~Decimal.logical_xor` methods expect their "
+"arguments to be *logical operands*.  A *logical operand* is a :class:"
+"`Decimal` instance whose exponent and sign are both zero, and whose digits "
+"are all either ``0`` or ``1``."
 msgstr ""
 
 #: ../../library/decimal.rst:918
@@ -915,8 +919,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:920
 msgid ""
-"Contexts are environments for arithmetic operations.  They govern precision,"
-" set rules for rounding, determine which signals are treated as exceptions, "
+"Contexts are environments for arithmetic operations.  They govern precision, "
+"set rules for rounding, determine which signals are treated as exceptions, "
 "and limit the range for exponents."
 msgstr ""
 
@@ -952,8 +956,8 @@ msgstr ""
 #: ../../library/decimal.rst:948
 msgid ""
 "For example, the following code sets the current decimal precision to 42 "
-"places, performs a calculation, and then automatically restores the previous"
-" context::"
+"places, performs a calculation, and then automatically restores the previous "
+"context::"
 msgstr ""
 
 #: ../../library/decimal.rst:958
@@ -962,15 +966,15 @@ msgstr ""
 
 #: ../../library/decimal.rst:966
 msgid ""
-"Raises :exc:`TypeError` if *kwargs* supplies an attribute that "
-":class:`Context` doesn't support.  Raises either :exc:`TypeError` or "
-":exc:`ValueError` if *kwargs* supplies an invalid value for an attribute."
+"Raises :exc:`TypeError` if *kwargs* supplies an attribute that :class:"
+"`Context` doesn't support.  Raises either :exc:`TypeError` or :exc:"
+"`ValueError` if *kwargs* supplies an invalid value for an attribute."
 msgstr ""
 
 #: ../../library/decimal.rst:970
 msgid ""
-":meth:`localcontext` now supports setting context attributes through the use"
-" of keyword arguments."
+":meth:`localcontext` now supports setting context attributes through the use "
+"of keyword arguments."
 msgstr ""
 
 #: ../../library/decimal.rst:973
@@ -982,10 +986,10 @@ msgstr ""
 #: ../../library/decimal.rst:979
 msgid ""
 "This is a standard context defined by the General Decimal Arithmetic "
-"Specification.  Precision is set to nine.  Rounding is set to "
-":const:`ROUND_HALF_UP`.  All flags are cleared.  All traps are enabled "
-"(treated as exceptions) except :const:`Inexact`, :const:`Rounded`, and "
-":const:`Subnormal`."
+"Specification.  Precision is set to nine.  Rounding is set to :const:"
+"`ROUND_HALF_UP`.  All flags are cleared.  All traps are enabled (treated as "
+"exceptions) except :const:`Inexact`, :const:`Rounded`, and :const:"
+"`Subnormal`."
 msgstr ""
 
 #: ../../library/decimal.rst:985
@@ -996,17 +1000,17 @@ msgstr ""
 #: ../../library/decimal.rst:990
 msgid ""
 "This is a standard context defined by the General Decimal Arithmetic "
-"Specification.  Precision is set to nine.  Rounding is set to "
-":const:`ROUND_HALF_EVEN`.  All flags are cleared.  No traps are enabled (so "
-"that exceptions are not raised during computations)."
+"Specification.  Precision is set to nine.  Rounding is set to :const:"
+"`ROUND_HALF_EVEN`.  All flags are cleared.  No traps are enabled (so that "
+"exceptions are not raised during computations)."
 msgstr ""
 
 #: ../../library/decimal.rst:995
 msgid ""
-"Because the traps are disabled, this context is useful for applications that"
-" prefer to have result value of ``NaN`` or ``Infinity`` instead of raising "
-"exceptions.  This allows an application to complete a run in the presence of"
-" conditions that would otherwise halt the program."
+"Because the traps are disabled, this context is useful for applications that "
+"prefer to have result value of ``NaN`` or ``Infinity`` instead of raising "
+"exceptions.  This allows an application to complete a run in the presence of "
+"conditions that would otherwise halt the program."
 msgstr ""
 
 #: ../../library/decimal.rst:1003
@@ -1019,38 +1023,36 @@ msgstr ""
 
 #: ../../library/decimal.rst:1007
 msgid ""
-"This context is most useful in multi-threaded environments.  Changing one of"
-" the fields before threads are started has the effect of setting system-wide"
-" defaults.  Changing the fields after threads have started is not "
-"recommended as it would require thread synchronization to prevent race "
-"conditions."
+"This context is most useful in multi-threaded environments.  Changing one of "
+"the fields before threads are started has the effect of setting system-wide "
+"defaults.  Changing the fields after threads have started is not recommended "
+"as it would require thread synchronization to prevent race conditions."
 msgstr ""
 
 #: ../../library/decimal.rst:1012
 msgid ""
-"In single threaded environments, it is preferable to not use this context at"
-" all.  Instead, simply create contexts explicitly as described below."
+"In single threaded environments, it is preferable to not use this context at "
+"all.  Instead, simply create contexts explicitly as described below."
 msgstr ""
 
 #: ../../library/decimal.rst:1015
 msgid ""
-"The default values are :attr:`Context.prec`\\ =\\ ``28``, "
-":attr:`Context.rounding`\\ =\\ :const:`ROUND_HALF_EVEN`, and enabled traps "
-"for :class:`Overflow`, :class:`InvalidOperation`, and "
-":class:`DivisionByZero`."
+"The default values are :attr:`Context.prec`\\ =\\ ``28``, :attr:`Context."
+"rounding`\\ =\\ :const:`ROUND_HALF_EVEN`, and enabled traps for :class:"
+"`Overflow`, :class:`InvalidOperation`, and :class:`DivisionByZero`."
 msgstr ""
 
 #: ../../library/decimal.rst:1020
 msgid ""
-"In addition to the three supplied contexts, new contexts can be created with"
-" the :class:`Context` constructor."
+"In addition to the three supplied contexts, new contexts can be created with "
+"the :class:`Context` constructor."
 msgstr ""
 
 #: ../../library/decimal.rst:1026
 msgid ""
-"Creates a new context.  If a field is not specified or is :const:`None`, the"
-" default values are copied from the :const:`DefaultContext`.  If the *flags*"
-" field is not specified or is :const:`None`, all flags are cleared."
+"Creates a new context.  If a field is not specified or is :const:`None`, the "
+"default values are copied from the :const:`DefaultContext`.  If the *flags* "
+"field is not specified or is :const:`None`, all flags are cleared."
 msgstr ""
 
 #: ../../library/decimal.rst:1030
@@ -1090,13 +1092,13 @@ msgid ""
 "The *clamp* field is either ``0`` (the default) or ``1``. If set to ``1``, "
 "the exponent ``e`` of a :class:`Decimal` instance representable in this "
 "context is strictly limited to the range ``Emin - prec + 1 <= e <= Emax - "
-"prec + 1``.  If *clamp* is ``0`` then a weaker condition holds: the adjusted"
-" exponent of the :class:`Decimal` instance is at most :attr:`~Context.Emax`."
-"  When *clamp* is ``1``, a large normal number will, where possible, have "
-"its exponent reduced and a corresponding number of zeros added to its "
+"prec + 1``.  If *clamp* is ``0`` then a weaker condition holds: the adjusted "
+"exponent of the :class:`Decimal` instance is at most :attr:`~Context.Emax`.  "
+"When *clamp* is ``1``, a large normal number will, where possible, have its "
+"exponent reduced and a corresponding number of zeros added to its "
 "coefficient, in order to fit the exponent constraints; this preserves the "
-"value of the number but loses information about significant trailing zeros."
-"  For example::"
+"value of the number but loses information about significant trailing zeros.  "
+"For example::"
 msgstr ""
 
 #: ../../library/decimal.rst:1062
@@ -1110,12 +1112,12 @@ msgid ""
 "The :class:`Context` class defines several general purpose methods as well "
 "as a large number of methods for doing arithmetic directly in a given "
 "context. In addition, for each of the :class:`Decimal` methods described "
-"above (with the exception of the :meth:`~Decimal.adjusted` and "
-":meth:`~Decimal.as_tuple` methods) there is a corresponding :class:`Context`"
-" method.  For example, for a :class:`Context` instance ``C`` and "
-":class:`Decimal` instance ``x``, ``C.exp(x)`` is equivalent to "
-"``x.exp(context=C)``.  Each :class:`Context` method accepts a Python integer"
-" (an instance of :class:`int`) anywhere that a Decimal instance is accepted."
+"above (with the exception of the :meth:`~Decimal.adjusted` and :meth:"
+"`~Decimal.as_tuple` methods) there is a corresponding :class:`Context` "
+"method.  For example, for a :class:`Context` instance ``C`` and :class:"
+"`Decimal` instance ``x``, ``C.exp(x)`` is equivalent to ``x."
+"exp(context=C)``.  Each :class:`Context` method accepts a Python integer (an "
+"instance of :class:`int`) anywhere that a Decimal instance is accepted."
 msgstr ""
 
 #: ../../library/decimal.rst:1078
@@ -1143,9 +1145,9 @@ msgstr ""
 
 #: ../../library/decimal.rst:1100
 msgid ""
-"This is useful because constants are often given to a greater precision than"
-" is needed by the application.  Another benefit is that rounding immediately"
-" eliminates unintended effects from digits beyond the current precision. In "
+"This is useful because constants are often given to a greater precision than "
+"is needed by the application.  Another benefit is that rounding immediately "
+"eliminates unintended effects from digits beyond the current precision. In "
 "the following example, using unrounded inputs means that adding zero to a "
 "sum can change the result:"
 msgstr ""
@@ -1159,8 +1161,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:1120
 msgid ""
-"Creates a new Decimal instance from a float *f* but rounding using *self* as"
-" the context.  Unlike the :meth:`Decimal.from_float` class method, the "
+"Creates a new Decimal instance from a float *f* but rounding using *self* as "
+"the context.  Unlike the :meth:`Decimal.from_float` class method, the "
 "context precision, rounding method, flags, and traps are applied to the "
 "conversion."
 msgstr ""
@@ -1168,8 +1170,8 @@ msgstr ""
 #: ../../library/decimal.rst:1140
 msgid ""
 "Returns a value equal to ``Emin - prec + 1`` which is the minimum exponent "
-"value for subnormal results.  When underflow occurs, the exponent is set to "
-":const:`Etiny`."
+"value for subnormal results.  When underflow occurs, the exponent is set to :"
+"const:`Etiny`."
 msgstr ""
 
 #: ../../library/decimal.rst:1146
@@ -1260,8 +1262,7 @@ msgid "Returns ``True`` if *x* is infinite; otherwise returns ``False``."
 msgstr ""
 
 #: ../../library/decimal.rst:1248
-msgid ""
-"Returns ``True`` if *x* is a qNaN or sNaN; otherwise returns ``False``."
+msgid "Returns ``True`` if *x* is a qNaN or sNaN; otherwise returns ``False``."
 msgstr ""
 
 #: ../../library/decimal.rst:1253
@@ -1366,8 +1367,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/decimal.rst:1380
-msgid ""
-"Return ``x`` to the power of ``y``, reduced modulo ``modulo`` if given."
+msgid "Return ``x`` to the power of ``y``, reduced modulo ``modulo`` if given."
 msgstr ""
 
 #: ../../library/decimal.rst:1382
@@ -1387,9 +1387,9 @@ msgstr ""
 
 #: ../../library/decimal.rst:1391
 msgid ""
-"The C module computes :meth:`power` in terms of the correctly rounded "
-":meth:`exp` and :meth:`ln` functions. The result is well-defined but only "
-"\"almost always correctly rounded\"."
+"The C module computes :meth:`power` in terms of the correctly rounded :meth:"
+"`exp` and :meth:`ln` functions. The result is well-defined but only \"almost "
+"always correctly rounded\"."
 msgstr ""
 
 #: ../../library/decimal.rst:1396
@@ -1417,9 +1417,9 @@ msgstr ""
 #: ../../library/decimal.rst:1404
 msgid ""
 "The value resulting from ``Context.power(x, y, modulo)`` is equal to the "
-"value that would be obtained by computing ``(x**y) % modulo`` with unbounded"
-" precision, but is computed more efficiently.  The exponent of the result is"
-" zero, regardless of the exponents of ``x``, ``y`` and ``modulo``.  The "
+"value that would be obtained by computing ``(x**y) % modulo`` with unbounded "
+"precision, but is computed more efficiently.  The exponent of the result is "
+"zero, regardless of the exponents of ``x``, ``y`` and ``modulo``.  The "
 "result is always exact."
 msgstr ""
 
@@ -1528,8 +1528,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:1515
 msgid ""
-"The default value is ``True``. If Python is :option:`configured using the "
-"--without-decimal-contextvar option <--without-decimal-contextvar>`, the C "
+"The default value is ``True``. If Python is :option:`configured using the --"
+"without-decimal-contextvar option <--without-decimal-contextvar>`, the C "
 "version uses a thread-local rather than a coroutine-local context and the "
 "value is ``False``.  This is slightly faster in some nested context "
 "scenarios."
@@ -1583,8 +1583,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:1565
 msgid ""
-"Signals represent conditions that arise during computation. Each corresponds"
-" to one context flag and one context trap enabler."
+"Signals represent conditions that arise during computation. Each corresponds "
+"to one context flag and one context trap enabler."
 msgstr ""
 
 #: ../../library/decimal.rst:1568
@@ -1598,9 +1598,9 @@ msgstr ""
 #: ../../library/decimal.rst:1573
 msgid ""
 "If the context's trap enabler is set for the signal, then the condition "
-"causes a Python exception to be raised.  For example, if the "
-":class:`DivisionByZero` trap is set, then a :exc:`DivisionByZero` exception "
-"is raised upon encountering the condition."
+"causes a Python exception to be raised.  For example, if the :class:"
+"`DivisionByZero` trap is set, then a :exc:`DivisionByZero` exception is "
+"raised upon encountering the condition."
 msgstr ""
 
 #: ../../library/decimal.rst:1581
@@ -1609,8 +1609,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:1583
 msgid ""
-"Typically, clamping occurs when an exponent falls outside the context's "
-":attr:`~Context.Emin` and :attr:`~Context.Emax` limits.  If possible, the "
+"Typically, clamping occurs when an exponent falls outside the context's :"
+"attr:`~Context.Emin` and :attr:`~Context.Emax` limits.  If possible, the "
 "exponent is reduced to fit by adding zeros to the coefficient."
 msgstr ""
 
@@ -1625,8 +1625,8 @@ msgstr ""
 #: ../../library/decimal.rst:1597
 msgid ""
 "Can occur with division, modulo division, or when raising a number to a "
-"negative power.  If this signal is not trapped, returns ``Infinity`` or "
-"``-Infinity`` with the sign determined by the inputs to the calculation."
+"negative power.  If this signal is not trapped, returns ``Infinity`` or ``-"
+"Infinity`` with the sign determined by the inputs to the calculation."
 msgstr ""
 
 #: ../../library/decimal.rst:1604
@@ -1658,9 +1658,9 @@ msgstr ""
 msgid ""
 "Indicates the exponent is larger than :attr:`Context.Emax` after rounding "
 "has occurred.  If not trapped, the result depends on the rounding mode, "
-"either pulling inward to the largest representable finite number or rounding"
-" outward to ``Infinity``.  In either case, :class:`Inexact` and "
-":class:`Rounded` are also signaled."
+"either pulling inward to the largest representable finite number or rounding "
+"outward to ``Infinity``.  In either case, :class:`Inexact` and :class:"
+"`Rounded` are also signaled."
 msgstr ""
 
 #: ../../library/decimal.rst:1642
@@ -1680,8 +1680,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:1654
 msgid ""
-"Occurs when an operation result is subnormal (the exponent is too small). If"
-" not trapped, returns the result unchanged."
+"Occurs when an operation result is subnormal (the exponent is too small). If "
+"not trapped, returns the result unchanged."
 msgstr ""
 
 #: ../../library/decimal.rst:1660
@@ -1690,8 +1690,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:1662
 msgid ""
-"Occurs when a subnormal result is pushed to zero by rounding. "
-":class:`Inexact` and :class:`Subnormal` are also signaled."
+"Occurs when a subnormal result is pushed to zero by rounding. :class:"
+"`Inexact` and :class:`Subnormal` are also signaled."
 msgstr ""
 
 #: ../../library/decimal.rst:1668
@@ -1701,19 +1701,19 @@ msgstr ""
 #: ../../library/decimal.rst:1670
 msgid ""
 "If the signal is not trapped (default), mixing floats and Decimals is "
-"permitted in the :class:`~decimal.Decimal` constructor, "
-":meth:`~decimal.Context.create_decimal` and all comparison operators. Both "
-"conversion and comparisons are exact. Any occurrence of a mixed operation is"
-" silently recorded by setting :exc:`FloatOperation` in the context flags. "
-"Explicit conversions with :meth:`~decimal.Decimal.from_float` or "
-":meth:`~decimal.Context.create_decimal_from_float` do not set the flag."
+"permitted in the :class:`~decimal.Decimal` constructor, :meth:`~decimal."
+"Context.create_decimal` and all comparison operators. Both conversion and "
+"comparisons are exact. Any occurrence of a mixed operation is silently "
+"recorded by setting :exc:`FloatOperation` in the context flags. Explicit "
+"conversions with :meth:`~decimal.Decimal.from_float` or :meth:`~decimal."
+"Context.create_decimal_from_float` do not set the flag."
 msgstr ""
 
 #: ../../library/decimal.rst:1678
 msgid ""
 "Otherwise (the signal is trapped), only equality comparisons and explicit "
-"conversions are silent. All other mixed operations raise "
-":exc:`FloatOperation`."
+"conversions are silent. All other mixed operations raise :exc:"
+"`FloatOperation`."
 msgstr ""
 
 #: ../../library/decimal.rst:1682
@@ -1764,8 +1764,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:1763
 msgid ""
-"Infinities can be constructed directly with:  ``Decimal('Infinity')``. Also,"
-" they can arise from dividing by zero when the :exc:`DivisionByZero` signal "
+"Infinities can be constructed directly with:  ``Decimal('Infinity')``. Also, "
+"they can arise from dividing by zero when the :exc:`DivisionByZero` signal "
 "is not trapped.  Likewise, when the :exc:`Overflow` signal is not trapped, "
 "infinity can result from rounding beyond the limits of the largest "
 "representable number."
@@ -1780,9 +1780,9 @@ msgstr ""
 
 #: ../../library/decimal.rst:1772
 msgid ""
-"Some operations are indeterminate and return ``NaN``, or if the "
-":exc:`InvalidOperation` signal is trapped, raise an exception.  For example,"
-" ``0/0`` returns ``NaN`` which means \"not a number\".  This variety of "
+"Some operations are indeterminate and return ``NaN``, or if the :exc:"
+"`InvalidOperation` signal is trapped, raise an exception.  For example, "
+"``0/0`` returns ``NaN`` which means \"not a number\".  This variety of "
 "``NaN`` is quiet and, once created, will flow through other computations "
 "always resulting in another ``NaN``.  This behavior can be useful for a "
 "series of computations that occasionally have missing inputs --- it allows "
@@ -1803,14 +1803,14 @@ msgid ""
 "is a quiet or signaling ``NaN`` always returns :const:`False` (even when "
 "doing ``Decimal('NaN')==Decimal('NaN')``), while a test for inequality "
 "always returns :const:`True`.  An attempt to compare two Decimals using any "
-"of the ``<``, ``<=``, ``>`` or ``>=`` operators will raise the "
-":exc:`InvalidOperation` signal if either operand is a ``NaN``, and return "
-":const:`False` if this signal is not trapped.  Note that the General Decimal"
-" Arithmetic specification does not specify the behavior of direct "
-"comparisons; these rules for comparisons involving a ``NaN`` were taken from"
-" the IEEE 854 standard (see Table 3 in section 5.7).  To ensure strict "
-"standards-compliance, use the :meth:`~Decimal.compare` and "
-":meth:`~Decimal.compare_signal` methods instead."
+"of the ``<``, ``<=``, ``>`` or ``>=`` operators will raise the :exc:"
+"`InvalidOperation` signal if either operand is a ``NaN``, and return :const:"
+"`False` if this signal is not trapped.  Note that the General Decimal "
+"Arithmetic specification does not specify the behavior of direct "
+"comparisons; these rules for comparisons involving a ``NaN`` were taken from "
+"the IEEE 854 standard (see Table 3 in section 5.7).  To ensure strict "
+"standards-compliance, use the :meth:`~Decimal.compare` and :meth:`~Decimal."
+"compare_signal` methods instead."
 msgstr ""
 
 #: ../../library/decimal.rst:1797
@@ -1836,8 +1836,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:1819
 msgid ""
-"The :func:`getcontext` function accesses a different :class:`Context` object"
-" for each thread.  Having separate thread contexts means that threads may "
+"The :func:`getcontext` function accesses a different :class:`Context` object "
+"for each thread.  Having separate thread contexts means that threads may "
 "make changes (such as ``getcontext().prec=10``) without interfering with "
 "other threads."
 msgstr ""
@@ -1850,8 +1850,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:1826
 msgid ""
-"If :func:`setcontext` has not been called before :func:`getcontext`, then "
-":func:`getcontext` will automatically create a new context for use in the "
+"If :func:`setcontext` has not been called before :func:`getcontext`, then :"
+"func:`getcontext` will automatically create a new context for use in the "
 "current thread."
 msgstr ""
 
@@ -1918,8 +1918,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:2066
 msgid ""
-"In developing fixed-point applications, it is convenient to define functions"
-" to handle the :meth:`~Decimal.quantize` step:"
+"In developing fixed-point applications, it is convenient to define functions "
+"to handle the :meth:`~Decimal.quantize` step:"
 msgstr ""
 
 #: ../../library/decimal.rst:2080
@@ -1945,8 +1945,8 @@ msgid ""
 "A. It occurs *after* the computation.  The philosophy of the decimal "
 "specification is that numbers are considered exact and are created "
 "independent of the current context.  They can even have greater precision "
-"than current context.  Computations process with those exact inputs and then"
-" rounding (or other context operations) is applied to the *result* of the "
+"than current context.  Computations process with those exact inputs and then "
+"rounding (or other context operations) is applied to the *result* of the "
 "computation::"
 msgstr ""
 
@@ -1984,15 +1984,15 @@ msgstr ""
 
 #: ../../library/decimal.rst:2141
 msgid ""
-"Q. Within a complex calculation, how can I make sure that I haven't gotten a"
-" spurious result because of insufficient precision or rounding anomalies."
+"Q. Within a complex calculation, how can I make sure that I haven't gotten a "
+"spurious result because of insufficient precision or rounding anomalies."
 msgstr ""
 
 #: ../../library/decimal.rst:2144
 msgid ""
 "A. The decimal module makes it easy to test results.  A best practice is to "
-"re-run calculations using greater precision and with various rounding modes."
-" Widely differing results indicate insufficient precision, rounding mode "
+"re-run calculations using greater precision and with various rounding modes. "
+"Widely differing results indicate insufficient precision, rounding mode "
 "issues, ill-conditioned inputs, or a numerically unstable algorithm."
 msgstr ""
 
@@ -2020,8 +2020,8 @@ msgstr ""
 
 #: ../../library/decimal.rst:2175
 msgid ""
-"Alternatively, inputs can be rounded upon creation using the "
-":meth:`Context.create_decimal` method:"
+"Alternatively, inputs can be rounded upon creation using the :meth:`Context."
+"create_decimal` method:"
 msgstr ""
 
 #: ../../library/decimal.rst:2181
@@ -2031,20 +2031,20 @@ msgstr ""
 #: ../../library/decimal.rst:2183
 msgid ""
 "A. Yes.  In the CPython and PyPy3 implementations, the C/CFFI versions of "
-"the decimal module integrate the high speed `libmpdec "
-"<https://www.bytereef.org/mpdecimal/doc/libmpdec/index.html>`_ library for "
-"arbitrary precision correctly rounded decimal floating point arithmetic "
-"[#]_. ``libmpdec`` uses `Karatsuba multiplication "
-"<https://en.wikipedia.org/wiki/Karatsuba_algorithm>`_ for medium-sized "
-"numbers and the `Number Theoretic Transform "
-"<https://en.wikipedia.org/wiki/Discrete_Fourier_transform_(general)#Number-"
-"theoretic_transform>`_ for very large numbers."
+"the decimal module integrate the high speed `libmpdec <https://www.bytereef."
+"org/mpdecimal/doc/libmpdec/index.html>`_ library for arbitrary precision "
+"correctly rounded decimal floating point arithmetic [#]_. ``libmpdec`` uses "
+"`Karatsuba multiplication <https://en.wikipedia.org/wiki/"
+"Karatsuba_algorithm>`_ for medium-sized numbers and the `Number Theoretic "
+"Transform <https://en.wikipedia.org/wiki/"
+"Discrete_Fourier_transform_(general)#Number-theoretic_transform>`_ for very "
+"large numbers."
 msgstr ""
 
 #: ../../library/decimal.rst:2193
 msgid ""
-"The context must be adapted for exact arbitrary precision arithmetic. "
-":attr:`~Context.Emin` and :attr:`~Context.Emax` should always be set to the "
+"The context must be adapted for exact arbitrary precision arithmetic. :attr:"
+"`~Context.Emin` and :attr:`~Context.Emax` should always be set to the "
 "maximum values, :attr:`~Context.clamp` should always be 0 (the default).  "
 "Setting :attr:`~Context.prec` requires some care."
 msgstr ""
@@ -2065,15 +2065,15 @@ msgstr ""
 msgid ""
 "On systems with overallocation (e.g. Linux), a more sophisticated approach "
 "is to adjust :attr:`~Context.prec` to the amount of available RAM.  Suppose "
-"that you have 8GB of RAM and expect 10 simultaneous operands using a maximum"
-" of 500MB each::"
+"that you have 8GB of RAM and expect 10 simultaneous operands using a maximum "
+"of 500MB each::"
 msgstr ""
 
 #: ../../library/decimal.rst:2238
 msgid ""
 "In general (and especially on systems without overallocation), it is "
-"recommended to estimate even tighter bounds and set the :attr:`Inexact` trap"
-" if all calculations are expected to be exact."
+"recommended to estimate even tighter bounds and set the :attr:`Inexact` trap "
+"if all calculations are expected to be exact."
 msgstr ""
 
 #: ../../library/decimal.rst:2247

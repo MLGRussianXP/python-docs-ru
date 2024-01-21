@@ -2,12 +2,12 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Kristina Mironova, 2022
 # 256c6f581e7306f8fe260875df9dd39f_33ba001, 2022
 # decorator_factory <decorator-factory+transifex@yandex.ru>, 2024
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -15,13 +15,17 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: decorator_factory <decorator-factory+transifex@yandex.ru>, 2024\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Last-Translator: decorator_factory <decorator-factory+transifex@yandex.ru>, "
+"2024\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/re.rst:2
 msgid ":mod:`re` --- Regular expression operations"
@@ -33,18 +37,18 @@ msgstr "**Исходный код:** :source:`Lib/re/`"
 
 #: ../../library/re.rst:14
 msgid ""
-"This module provides regular expression matching operations similar to those"
-" found in Perl."
+"This module provides regular expression matching operations similar to those "
+"found in Perl."
 msgstr ""
 
 #: ../../library/re.rst:17
 msgid ""
-"Both patterns and strings to be searched can be Unicode strings "
-"(:class:`str`) as well as 8-bit strings (:class:`bytes`). However, Unicode "
-"strings and 8-bit strings cannot be mixed: that is, you cannot match a "
-"Unicode string with a bytes pattern or vice-versa; similarly, when asking "
-"for a substitution, the replacement string must be of the same type as both "
-"the pattern and the search string."
+"Both patterns and strings to be searched can be Unicode strings (:class:"
+"`str`) as well as 8-bit strings (:class:`bytes`). However, Unicode strings "
+"and 8-bit strings cannot be mixed: that is, you cannot match a Unicode "
+"string with a bytes pattern or vice-versa; similarly, when asking for a "
+"substitution, the replacement string must be of the same type as both the "
+"pattern and the search string."
 msgstr ""
 
 #: ../../library/re.rst:24
@@ -65,11 +69,11 @@ msgstr ""
 #: ../../library/re.rst:36
 msgid ""
 "The solution is to use Python's raw string notation for regular expression "
-"patterns; backslashes are not handled in any special way in a string literal"
-" prefixed with ``'r'``.  So ``r\"\\n\"`` is a two-character string "
-"containing ``'\\'`` and ``'n'``, while ``\"\\n\"`` is a one-character string"
-" containing a newline.  Usually patterns will be expressed in Python code "
-"using this raw string notation."
+"patterns; backslashes are not handled in any special way in a string literal "
+"prefixed with ``'r'``.  So ``r\"\\n\"`` is a two-character string containing "
+"``'\\'`` and ``'n'``, while ``\"\\n\"`` is a one-character string containing "
+"a newline.  Usually patterns will be expressed in Python code using this raw "
+"string notation."
 msgstr ""
 
 #: ../../library/re.rst:43
@@ -82,8 +86,8 @@ msgstr ""
 
 #: ../../library/re.rst:51
 msgid ""
-"The third-party `regex <https://pypi.org/project/regex/>`_ module, which has"
-" an API compatible with the standard library :mod:`re` module, but offers "
+"The third-party `regex <https://pypi.org/project/regex/>`_ module, which has "
+"an API compatible with the standard library :mod:`re` module, but offers "
 "additional functionality and a more thorough Unicode support."
 msgstr ""
 
@@ -93,8 +97,8 @@ msgstr ""
 
 #: ../../library/re.rst:61
 msgid ""
-"A regular expression (or RE) specifies a set of strings that matches it; the"
-" functions in this module let you check if a particular string matches a "
+"A regular expression (or RE) specifies a set of strings that matches it; the "
+"functions in this module let you check if a particular string matches a "
 "given regular expression (or if a given regular expression matches a "
 "particular string, which comes down to the same thing)."
 msgstr ""
@@ -107,8 +111,8 @@ msgid ""
 "matches *B*, the string *pq* will match AB.  This holds unless *A* or *B* "
 "contain low precedence operations; boundary conditions between *A* and *B*; "
 "or have numbered group references.  Thus, complex expressions can easily be "
-"constructed from simpler primitive expressions like the ones described here."
-"  For details of the theory and implementation of regular expressions, "
+"constructed from simpler primitive expressions like the ones described "
+"here.  For details of the theory and implementation of regular expressions, "
 "consult the Friedl book [Frie09]_, or almost any textbook about compiler "
 "construction."
 msgstr ""
@@ -141,8 +145,8 @@ msgstr ""
 msgid ""
 "Repetition operators or quantifiers (``*``, ``+``, ``?``, ``{m,n}``, etc) "
 "cannot be directly nested. This avoids ambiguity with the non-greedy "
-"modifier suffix ``?``, and with other modifiers in other implementations. To"
-" apply a second repetition to an inner repetition, parentheses may be used. "
+"modifier suffix ``?``, and with other modifiers in other implementations. To "
+"apply a second repetition to an inner repetition, parentheses may be used. "
 "For example, the expression ``(?:a{6})*`` matches any multiple of six "
 "``'a'`` characters."
 msgstr ""
@@ -181,11 +185,11 @@ msgid ""
 "Matches the end of the string or just before the newline at the end of the "
 "string, and in :const:`MULTILINE` mode also matches before a newline.  "
 "``foo`` matches both 'foo' and 'foobar', while the regular expression "
-"``foo$`` matches only 'foo'.  More interestingly, searching for ``foo.$`` in"
-" ``'foo1\\nfoo2\\n'`` matches 'foo2' normally, but 'foo1' in "
-":const:`MULTILINE` mode; searching for a single ``$`` in ``'foo\\n'`` will "
-"find two (empty) matches: one just before the newline, and one at the end of"
-" the string."
+"``foo$`` matches only 'foo'.  More interestingly, searching for ``foo.$`` in "
+"``'foo1\\nfoo2\\n'`` matches 'foo2' normally, but 'foo1' in :const:"
+"`MULTILINE` mode; searching for a single ``$`` in ``'foo\\n'`` will find two "
+"(empty) matches: one just before the newline, and one at the end of the "
+"string."
 msgstr ""
 
 #: ../../library/re.rst:128
@@ -228,9 +232,9 @@ msgstr ""
 msgid ""
 "The ``'*'``, ``'+'``, and ``'?'`` quantifiers are all :dfn:`greedy`; they "
 "match as much text as possible.  Sometimes this behaviour isn't desired; if "
-"the RE ``<.*>`` is matched against ``'<a> b <c>'``, it will match the entire"
-" string, and not just ``'<a>'``.  Adding ``?`` after the quantifier makes it"
-" perform the match in :dfn:`non-greedy` or :dfn:`minimal` fashion; as *few* "
+"the RE ``<.*>`` is matched against ``'<a> b <c>'``, it will match the entire "
+"string, and not just ``'<a>'``.  Adding ``?`` after the quantifier makes it "
+"perform the match in :dfn:`non-greedy` or :dfn:`minimal` fashion; as *few* "
 "characters as possible will be matched.  Using the RE ``<.*?>`` will match "
 "only ``'<a>'``."
 msgstr ""
@@ -247,13 +251,13 @@ msgid ""
 "following it fails to match. These are known as :dfn:`possessive` "
 "quantifiers. For example, ``a*a`` will match ``'aaaa'`` because the ``a*`` "
 "will match all 4 ``'a'``\\ s, but, when the final ``'a'`` is encountered, "
-"the expression is backtracked so that in the end the ``a*`` ends up matching"
-" 3 ``'a'``\\ s total, and the fourth ``'a'`` is matched by the final "
-"``'a'``. However, when ``a*+a`` is used to match ``'aaaa'``, the ``a*+`` "
-"will match all 4 ``'a'``, but when the final ``'a'`` fails to find any more "
-"characters to match, the expression cannot be backtracked and will thus fail"
-" to match. ``x*+``, ``x++`` and ``x?+`` are equivalent to ``(?>x*)``, "
-"``(?>x+)`` and ``(?>x?)`` correspondingly."
+"the expression is backtracked so that in the end the ``a*`` ends up matching "
+"3 ``'a'``\\ s total, and the fourth ``'a'`` is matched by the final ``'a'``. "
+"However, when ``a*+a`` is used to match ``'aaaa'``, the ``a*+`` will match "
+"all 4 ``'a'``, but when the final ``'a'`` fails to find any more characters "
+"to match, the expression cannot be backtracked and will thus fail to match. "
+"``x*+``, ``x++`` and ``x?+`` are equivalent to ``(?>x*)``, ``(?>x+)`` and "
+"``(?>x?)`` correspondingly."
 msgstr ""
 
 #: ../../library/re.rst:187
@@ -275,11 +279,11 @@ msgstr ""
 msgid ""
 "Causes the resulting RE to match from *m* to *n* repetitions of the "
 "preceding RE, attempting to match as many repetitions as possible.  For "
-"example, ``a{3,5}`` will match from 3 to 5 ``'a'`` characters.  Omitting *m*"
-" specifies a lower bound of zero,  and omitting *n* specifies an infinite "
-"upper bound.  As an example, ``a{4,}b`` will match ``'aaaab'`` or a thousand"
-" ``'a'`` characters followed by a ``'b'``, but not ``'aaab'``. The comma may"
-" not be omitted or the modifier would be confused with the previously "
+"example, ``a{3,5}`` will match from 3 to 5 ``'a'`` characters.  Omitting *m* "
+"specifies a lower bound of zero,  and omitting *n* specifies an infinite "
+"upper bound.  As an example, ``a{4,}b`` will match ``'aaaab'`` or a thousand "
+"``'a'`` characters followed by a ``'b'``, but not ``'aaab'``. The comma may "
+"not be omitted or the modifier would be confused with the previously "
 "described form."
 msgstr ""
 
@@ -290,10 +294,10 @@ msgstr ""
 #: ../../library/re.rst:199
 msgid ""
 "Causes the resulting RE to match from *m* to *n* repetitions of the "
-"preceding RE, attempting to match as *few* repetitions as possible.  This is"
-" the non-greedy version of the previous quantifier.  For example, on the "
-"6-character string ``'aaaaaa'``, ``a{3,5}`` will match 5 ``'a'`` characters,"
-" while ``a{3,5}?`` will only match 3 characters."
+"preceding RE, attempting to match as *few* repetitions as possible.  This is "
+"the non-greedy version of the previous quantifier.  For example, on the 6-"
+"character string ``'aaaaaa'``, ``a{3,5}`` will match 5 ``'a'`` characters, "
+"while ``a{3,5}?`` will only match 3 characters."
 msgstr ""
 
 #: ../../library/re.rst:218
@@ -352,8 +356,8 @@ msgstr ""
 #: ../../library/re.rst:246
 msgid ""
 "Ranges of characters can be indicated by giving two characters and "
-"separating them by a ``'-'``, for example ``[a-z]`` will match any lowercase"
-" ASCII letter, ``[0-5][0-9]`` will match all the two-digits numbers from "
+"separating them by a ``'-'``, for example ``[a-z]`` will match any lowercase "
+"ASCII letter, ``[0-5][0-9]`` will match all the two-digits numbers from "
 "``00`` to ``59``, and ``[0-9A-Fa-f]`` will match any hexadecimal digit.  If "
 "``-`` is escaped (e.g. ``[a\\-z]``) or if it's placed as the first or last "
 "character (e.g. ``[-a]`` or ``[a-]``), it will match a literal ``'-'``."
@@ -375,10 +379,10 @@ msgstr ""
 
 #: ../../library/re.rst:264
 msgid ""
-"Characters that are not within a range can be matched by "
-":dfn:`complementing` the set.  If the first character of the set is ``'^'``,"
-" all the characters that are *not* in the set will be matched.  For example,"
-" ``[^5]`` will match any character except ``'5'``, and ``[^^]`` will match "
+"Characters that are not within a range can be matched by :dfn:"
+"`complementing` the set.  If the first character of the set is ``'^'``, all "
+"the characters that are *not* in the set will be matched.  For example, "
+"``[^5]`` will match any character except ``'5'``, and ``[^^]`` will match "
 "any character except ``'^'``.  ``^`` has no special meaning if it's not the "
 "first character in the set."
 msgstr ""
@@ -396,9 +400,9 @@ msgid ""
 "Support of nested sets and set operations as in `Unicode Technical Standard "
 "#18`_ might be added in the future.  This would change the syntax, so to "
 "facilitate this change a :exc:`FutureWarning` will be raised in ambiguous "
-"cases for the time being. That includes sets starting with a literal ``'['``"
-" or containing literal character sequences ``'--'``, ``'&&'``, ``'~~'``, and"
-" ``'||'``.  To avoid a warning escape them with a backslash."
+"cases for the time being. That includes sets starting with a literal ``'['`` "
+"or containing literal character sequences ``'--'``, ``'&&'``, ``'~~'``, and "
+"``'||'``.  To avoid a warning escape them with a backslash."
 msgstr ""
 
 #: ../../library/re.rst:291
@@ -415,8 +419,8 @@ msgstr ""
 msgid ""
 "``A|B``, where *A* and *B* can be arbitrary REs, creates a regular "
 "expression that will match either *A* or *B*.  An arbitrary number of REs "
-"can be separated by the ``'|'`` in this way.  This can be used inside groups"
-" (see below) as well.  As the target string is scanned, REs separated by "
+"can be separated by the ``'|'`` in this way.  This can be used inside groups "
+"(see below) as well.  As the target string is scanned, REs separated by "
 "``'|'`` are tried from left to right. When one pattern completely matches, "
 "that branch is accepted. This means that once *A* matches, *B* will not be "
 "tested further, even if it would produce a longer overall match.  In other "
@@ -430,12 +434,12 @@ msgstr ""
 
 #: ../../library/re.rst:312
 msgid ""
-"Matches whatever regular expression is inside the parentheses, and indicates"
-" the start and end of a group; the contents of a group can be retrieved "
-"after a match has been performed, and can be matched later in the string "
-"with the ``\\number`` special sequence, described below.  To match the "
-"literals ``'('`` or ``')'``, use ``\\(`` or ``\\)``, or enclose them inside "
-"a character class: ``[(]``, ``[)]``."
+"Matches whatever regular expression is inside the parentheses, and indicates "
+"the start and end of a group; the contents of a group can be retrieved after "
+"a match has been performed, and can be matched later in the string with the "
+"``\\number`` special sequence, described below.  To match the literals "
+"``'('`` or ``')'``, use ``\\(`` or ``\\)``, or enclose them inside a "
+"character class: ``[(]``, ``[)]``."
 msgstr ""
 
 #: ../../library/re.rst:325
@@ -492,9 +496,9 @@ msgstr ""
 
 #: ../../library/re.rst:341
 msgid ""
-"(The flags are described in :ref:`contents-of-module-re`.) This is useful if"
-" you wish to include the flags as part of the regular expression, instead of"
-" passing a *flag* argument to the :func:`re.compile` function. Flags should "
+"(The flags are described in :ref:`contents-of-module-re`.) This is useful if "
+"you wish to include the flags as part of the regular expression, instead of "
+"passing a *flag* argument to the :func:`re.compile` function. Flags should "
 "be used first in the expression string."
 msgstr ""
 
@@ -509,8 +513,8 @@ msgstr ""
 #: ../../library/re.rst:353
 msgid ""
 "A non-capturing version of regular parentheses.  Matches whatever regular "
-"expression is inside the parentheses, but the substring matched by the group"
-" *cannot* be retrieved after performing a match or referenced later in the "
+"expression is inside the parentheses, but the substring matched by the group "
+"*cannot* be retrieved after performing a match or referenced later in the "
 "pattern."
 msgstr ""
 
@@ -521,8 +525,8 @@ msgstr ""
 #: ../../library/re.rst:359
 msgid ""
 "(Zero or more letters from the set ``'a'``, ``'i'``, ``'L'``, ``'m'``, "
-"``'s'``, ``'u'``, ``'x'``, optionally followed by ``'-'`` followed by one or"
-" more letters from the ``'i'``, ``'m'``, ``'s'``, ``'x'``.) The letters set "
+"``'s'``, ``'u'``, ``'x'``, optionally followed by ``'-'`` followed by one or "
+"more letters from the ``'i'``, ``'m'``, ``'s'``, ``'x'``.) The letters set "
 "or remove the corresponding flags for the part of the expression:"
 msgstr ""
 
@@ -532,15 +536,15 @@ msgstr ""
 
 #: ../../library/re.rst:375
 msgid ""
-"The letters ``'a'``, ``'L'`` and ``'u'`` are mutually exclusive when used as"
-" inline flags, so they can't be combined or follow ``'-'``.  Instead, when "
+"The letters ``'a'``, ``'L'`` and ``'u'`` are mutually exclusive when used as "
+"inline flags, so they can't be combined or follow ``'-'``.  Instead, when "
 "one of them appears in an inline group, it overrides the matching mode in "
 "the enclosing group.  In Unicode patterns ``(?a:...)`` switches to ASCII-"
 "only matching, and ``(?u:...)`` switches to Unicode matching (default).  In "
-"bytes patterns ``(?L:...)`` switches to locale dependent matching, and "
-"``(?a:...)`` switches to ASCII-only matching (default). This override is "
-"only in effect for the narrow inline group, and the original matching mode "
-"is restored outside of the group."
+"bytes patterns ``(?L:...)`` switches to locale dependent matching, and ``(?"
+"a:...)`` switches to ASCII-only matching (default). This override is only in "
+"effect for the narrow inline group, and the original matching mode is "
+"restored outside of the group."
 msgstr ""
 
 #: ../../library/re.rst:387
@@ -553,14 +557,14 @@ msgstr ""
 
 #: ../../library/re.rst:391
 msgid ""
-"Attempts to match ``...`` as if it was a separate regular expression, and if"
-" successful, continues to match the rest of the pattern following it. If the"
-" subsequent pattern fails to match, the stack can only be unwound to a point"
-" *before* the ``(?>...)`` because once exited, the expression, known as an "
-":dfn:`atomic group`, has thrown away all stack points within itself. Thus, "
+"Attempts to match ``...`` as if it was a separate regular expression, and if "
+"successful, continues to match the rest of the pattern following it. If the "
+"subsequent pattern fails to match, the stack can only be unwound to a point "
+"*before* the ``(?>...)`` because once exited, the expression, known as an :"
+"dfn:`atomic group`, has thrown away all stack points within itself. Thus, "
 "``(?>.*).`` would never match anything because first the ``.*`` would match "
-"all characters possible, then, having nothing left to match, the final ``.``"
-" would fail to match. Since there are no stack points saved in the Atomic "
+"all characters possible, then, having nothing left to match, the final ``.`` "
+"would fail to match. Since there are no stack points saved in the Atomic "
 "Group, and there is no stack point before it, the entire expression would "
 "thus fail to match."
 msgstr ""
@@ -575,15 +579,15 @@ msgid ""
 "accessible via the symbolic group name *name*.  Group names must be valid "
 "Python identifiers, and in :class:`bytes` patterns they can only contain "
 "bytes in the ASCII range.  Each group name must be defined only once within "
-"a regular expression.  A symbolic group is also a numbered group, just as if"
-" the group were not named."
+"a regular expression.  A symbolic group is also a numbered group, just as if "
+"the group were not named."
 msgstr ""
 
 #: ../../library/re.rst:415
 msgid ""
-"Named groups can be referenced in three contexts.  If the pattern is "
-"``(?P<quote>['\"]).*?(?P=quote)`` (i.e. matching a string quoted with either"
-" single or double quotes):"
+"Named groups can be referenced in three contexts.  If the pattern is ``(?"
+"P<quote>['\"]).*?(?P=quote)`` (i.e. matching a string quoted with either "
+"single or double quotes):"
 msgstr ""
 
 #: ../../library/re.rst:420
@@ -632,8 +636,8 @@ msgstr ""
 
 #: ../../library/re.rst:433
 msgid ""
-"In :class:`bytes` patterns, group *name* can only contain bytes in the ASCII"
-" range (``b'\\x00'``-``b'\\x7f'``)."
+"In :class:`bytes` patterns, group *name* can only contain bytes in the ASCII "
+"range (``b'\\x00'``-``b'\\x7f'``)."
 msgstr ""
 
 #: ../../library/re.rst:441
@@ -661,8 +665,8 @@ msgstr ""
 #: ../../library/re.rst:451
 msgid ""
 "Matches if ``...`` matches next, but doesn't consume any of the string.  "
-"This is called a :dfn:`lookahead assertion`.  For example, ``Isaac "
-"(?=Asimov)`` will match ``'Isaac '`` only if it's followed by ``'Asimov'``."
+"This is called a :dfn:`lookahead assertion`.  For example, ``Isaac (?"
+"=Asimov)`` will match ``'Isaac '`` only if it's followed by ``'Asimov'``."
 msgstr ""
 
 #: ../../library/re.rst:460
@@ -686,12 +690,12 @@ msgid ""
 "``...`` that ends at the current position.  This is called a :dfn:`positive "
 "lookbehind assertion`. ``(?<=abc)def`` will find a match in ``'abcdef'``, "
 "since the lookbehind will back up 3 characters and check if the contained "
-"pattern matches. The contained pattern must only match strings of some fixed"
-" length, meaning that ``abc`` or ``a|b`` are allowed, but ``a*`` and "
-"``a{3,4}`` are not.  Note that patterns which start with positive lookbehind"
-" assertions will not match at the beginning of the string being searched; "
-"you will most likely want to use the :func:`search` function rather than the"
-" :func:`match` function:"
+"pattern matches. The contained pattern must only match strings of some fixed "
+"length, meaning that ``abc`` or ``a|b`` are allowed, but ``a*`` and ``a{3,4}"
+"`` are not.  Note that patterns which start with positive lookbehind "
+"assertions will not match at the beginning of the string being searched; you "
+"will most likely want to use the :func:`search` function rather than the :"
+"func:`match` function:"
 msgstr ""
 
 #: ../../library/re.rst:480
@@ -708,11 +712,11 @@ msgstr ""
 
 #: ../../library/re.rst:492
 msgid ""
-"Matches if the current position in the string is not preceded by a match for"
-" ``...``.  This is called a :dfn:`negative lookbehind assertion`.  Similar "
-"to positive lookbehind assertions, the contained pattern must only match "
-"strings of some fixed length.  Patterns which start with negative lookbehind"
-" assertions may match at the beginning of the string being searched."
+"Matches if the current position in the string is not preceded by a match for "
+"``...``.  This is called a :dfn:`negative lookbehind assertion`.  Similar to "
+"positive lookbehind assertions, the contained pattern must only match "
+"strings of some fixed length.  Patterns which start with negative lookbehind "
+"assertions may match at the beginning of the string being searched."
 msgstr ""
 
 #: ../../library/re.rst:513
@@ -723,25 +727,24 @@ msgstr ""
 msgid ""
 "Will try to match with ``yes-pattern`` if the group with given *id* or "
 "*name* exists, and with ``no-pattern`` if it doesn't. ``no-pattern`` is "
-"optional and can be omitted. For example, "
-"``(<)?(\\w+@\\w+(?:\\.\\w+)+)(?(1)>|$)`` is a poor email matching pattern, "
-"which will match with ``'<user@host.com>'`` as well as ``'user@host.com'``, "
-"but not with ``'<user@host.com'`` nor ``'user@host.com>'``."
+"optional and can be omitted. For example, ``(<)?(\\w+@\\w+(?:\\.\\w+)+)(?"
+"(1)>|$)`` is a poor email matching pattern, which will match with "
+"``'<user@host.com>'`` as well as ``'user@host.com'``, but not with "
+"``'<user@host.com'`` nor ``'user@host.com>'``."
 msgstr ""
 
 #: ../../library/re.rst:509
 msgid ""
 "Group *id* can only contain ASCII digits. In :class:`bytes` patterns, group "
-"*name* can only contain bytes in the ASCII range "
-"(``b'\\x00'``-``b'\\x7f'``)."
+"*name* can only contain bytes in the ASCII range (``b'\\x00'``-``b'\\x7f'``)."
 msgstr ""
 
 #: ../../library/re.rst:517
 msgid ""
 "The special sequences consist of ``'\\'`` and a character from the list "
 "below. If the ordinary character is not an ASCII digit or an ASCII letter, "
-"then the resulting RE will match the second character.  For example, ``\\$``"
-" matches the character ``'$'``."
+"then the resulting RE will match the second character.  For example, ``\\$`` "
+"matches the character ``'$'``."
 msgstr ""
 
 #: ../../library/re.rst:532
@@ -753,8 +756,8 @@ msgid ""
 "Matches the contents of the group of the same number.  Groups are numbered "
 "starting from 1.  For example, ``(.+) \\1`` matches ``'the the'`` or ``'55 "
 "55'``, but not ``'thethe'`` (note the space after the group).  This special "
-"sequence can only be used to match one of the first 99 groups.  If the first"
-" digit of *number* is 0, or *number* is 3 octal digits long, it will not be "
+"sequence can only be used to match one of the first 99 groups.  If the first "
+"digit of *number* is 0, or *number* is 3 octal digits long, it will not be "
 "interpreted as a group match, but as the character with octal value "
 "*number*. Inside the ``'['`` and ``']'`` of a character class, all numeric "
 "escapes are treated as characters."
@@ -774,9 +777,9 @@ msgstr ""
 
 #: ../../library/re.rst:542
 msgid ""
-"Matches the empty string, but only at the beginning or end of a word. A word"
-" is defined as a sequence of word characters. Note that formally, ``\\b`` is"
-" defined as the boundary between a ``\\w`` and a ``\\W`` character (or vice "
+"Matches the empty string, but only at the beginning or end of a word. A word "
+"is defined as a sequence of word characters. Note that formally, ``\\b`` is "
+"defined as the boundary between a ``\\w`` and a ``\\W`` character (or vice "
 "versa), or between ``\\w`` and the beginning or end of the string. This "
 "means that ``r'\\bat\\b'`` matches ``'at'``, ``'at.'``, ``'(at)'``, and "
 "``'as at ay'`` but not ``'attempt'`` or ``'atlas'``."
@@ -785,9 +788,9 @@ msgstr ""
 #: ../../library/re.rst:550
 msgid ""
 "The default word characters in Unicode (str) patterns are Unicode "
-"alphanumerics and the underscore, but this can be changed by using the "
-":py:const:`~re.ASCII` flag. Word boundaries are determined by the current "
-"locale if the :py:const:`~re.LOCALE` flag is used."
+"alphanumerics and the underscore, but this can be changed by using the :py:"
+"const:`~re.ASCII` flag. Word boundaries are determined by the current locale "
+"if the :py:const:`~re.LOCALE` flag is used."
 msgstr ""
 
 #: ../../library/re.rst:558
@@ -860,19 +863,20 @@ msgstr ""
 
 #: ../../library/re.rst:603
 msgid ""
-"Matches Unicode whitespace characters (which includes ``[ "
-"\\t\\n\\r\\f\\v]``, and also many other characters, for example the non-"
+"Matches Unicode whitespace characters (which includes "
+"``[ \\t\\n\\r\\f\\v]``, and also many other characters, for example the non-"
 "breaking spaces mandated by typography rules in many languages)."
 msgstr ""
 
 #: ../../library/re.rst:608
-msgid "Matches ``[ \\t\\n\\r\\f\\v]`` if the :py:const:`~re.ASCII` flag is used."
+msgid ""
+"Matches ``[ \\t\\n\\r\\f\\v]`` if the :py:const:`~re.ASCII` flag is used."
 msgstr ""
 
 #: ../../library/re.rst:611
 msgid ""
-"Matches characters considered whitespace in the ASCII character set; this is"
-" equivalent to ``[ \\t\\n\\r\\f\\v]``."
+"Matches characters considered whitespace in the ASCII character set; this is "
+"equivalent to ``[ \\t\\n\\r\\f\\v]``."
 msgstr ""
 
 #: ../../library/re.rst:620
@@ -886,7 +890,8 @@ msgid ""
 msgstr ""
 
 #: ../../library/re.rst:620
-msgid "Matches ``[^ \\t\\n\\r\\f\\v]`` if the :py:const:`~re.ASCII` flag is used."
+msgid ""
+"Matches ``[^ \\t\\n\\r\\f\\v]`` if the :py:const:`~re.ASCII` flag is used."
 msgstr ""
 
 #: ../../library/re.rst:637
@@ -896,8 +901,8 @@ msgstr ""
 #: ../../library/re.rst:626
 msgid ""
 "Matches Unicode word characters; this includes all Unicode alphanumeric "
-"characters (as defined by :py:meth:`str.isalnum`), as well as the underscore"
-" (``_``)."
+"characters (as defined by :py:meth:`str.isalnum`), as well as the underscore "
+"(``_``)."
 msgstr ""
 
 #: ../../library/re.rst:631
@@ -918,9 +923,9 @@ msgstr ""
 
 #: ../../library/re.rst:642
 msgid ""
-"Matches any character which is not a word character. This is the opposite of"
-" ``\\w``. By default, matches non-underscore (``_``) characters for which "
-":py:meth:`str.isalnum` returns ``False``."
+"Matches any character which is not a word character. This is the opposite of "
+"``\\w``. By default, matches non-underscore (``_``) characters for which :py:"
+"meth:`str.isalnum` returns ``False``."
 msgstr ""
 
 #: ../../library/re.rst:647
@@ -962,8 +967,8 @@ msgstr ""
 
 #: ../../library/re.rst:688
 msgid ""
-"Octal escapes are included in a limited form.  If the first digit is a 0, or"
-" if there are three octal digits, it is considered an octal escape. "
+"Octal escapes are included in a limited form.  If the first digit is a 0, or "
+"if there are three octal digits, it is considered an octal escape. "
 "Otherwise, it is a group reference.  As for string literals, octal escapes "
 "are always at most three digits in length."
 msgstr ""
@@ -1031,9 +1036,8 @@ msgstr ""
 msgid ""
 "The :py:const:`~re.U` flag still exists for backward compatibility, but is "
 "redundant in Python 3 since matches are Unicode by default for ``str`` "
-"patterns, and Unicode matching isn't allowed for bytes patterns. "
-":py:const:`~re.UNICODE` and the inline flag ``(?u)`` are similarly "
-"redundant."
+"patterns, and Unicode matching isn't allowed for bytes patterns. :py:const:"
+"`~re.UNICODE` and the inline flag ``(?u)`` are similarly redundant."
 msgstr ""
 
 #: ../../library/re.rst:749
@@ -1062,10 +1066,10 @@ msgid ""
 "Note that when the Unicode patterns ``[a-z]`` or ``[A-Z]`` are used in "
 "combination with the :const:`IGNORECASE` flag, they will match the 52 ASCII "
 "letters and 4 additional non-ASCII letters: 'İ' (U+0130, Latin capital "
-"letter I with dot above), 'ı' (U+0131, Latin small letter dotless i), 'ſ' "
-"(U+017F, Latin small letter long s) and 'K' (U+212A, Kelvin sign). If the "
-":py:const:`~re.ASCII` flag is used, only letters 'a' to 'z' and 'A' to 'Z' "
-"are matched."
+"letter I with dot above), 'ı' (U+0131, Latin small letter dotless i), "
+"'ſ' (U+017F, Latin small letter long s) and 'K' (U+212A, Kelvin sign). If "
+"the :py:const:`~re.ASCII` flag is used, only letters 'a' to 'z' and 'A' to "
+"'Z' are matched."
 msgstr ""
 
 #: ../../library/re.rst:778
@@ -1105,11 +1109,11 @@ msgstr ""
 msgid ""
 "When specified, the pattern character ``'^'`` matches at the beginning of "
 "the string and at the beginning of each line (immediately following each "
-"newline); and the pattern character ``'$'`` matches at the end of the string"
-" and at the end of each line (immediately preceding each newline).  By "
+"newline); and the pattern character ``'$'`` matches at the end of the string "
+"and at the end of each line (immediately preceding each newline).  By "
 "default, ``'^'`` matches only at the beginning of the string, and ``'$'`` "
-"only at the end of the string and immediately before the newline (if any) at"
-" the end of the string."
+"only at the end of the string and immediately before the newline (if any) at "
+"the end of the string."
 msgstr ""
 
 #: ../../library/re.rst:813
@@ -1136,8 +1140,8 @@ msgstr ""
 
 #: ../../library/re.rst:839
 msgid ""
-"In Python 3, Unicode characters are matched by default for ``str`` patterns."
-" This flag is therefore redundant with **no effect** and is only kept for "
+"In Python 3, Unicode characters are matched by default for ``str`` patterns. "
+"This flag is therefore redundant with **no effect** and is only kept for "
 "backward compatibility."
 msgstr ""
 
@@ -1176,16 +1180,15 @@ msgstr "Функции"
 #: ../../library/re.rst:877
 msgid ""
 "Compile a regular expression pattern into a :ref:`regular expression object "
-"<re-objects>`, which can be used for matching using its "
-":func:`~Pattern.match`, :func:`~Pattern.search` and other methods, described"
-" below."
+"<re-objects>`, which can be used for matching using its :func:`~Pattern."
+"match`, :func:`~Pattern.search` and other methods, described below."
 msgstr ""
 
 #: ../../library/re.rst:882
 msgid ""
 "The expression's behaviour can be modified by specifying a *flags* value. "
-"Values can be any of the following variables, combined using bitwise OR (the"
-" ``|`` operator)."
+"Values can be any of the following variables, combined using bitwise OR (the "
+"``|`` operator)."
 msgstr ""
 
 #: ../../library/re.rst:886
@@ -1205,18 +1208,18 @@ msgstr ""
 
 #: ../../library/re.rst:901
 msgid ""
-"The compiled versions of the most recent patterns passed to "
-":func:`re.compile` and the module-level matching functions are cached, so "
-"programs that use only a few regular expressions at a time needn't worry "
-"about compiling regular expressions."
+"The compiled versions of the most recent patterns passed to :func:`re."
+"compile` and the module-level matching functions are cached, so programs "
+"that use only a few regular expressions at a time needn't worry about "
+"compiling regular expressions."
 msgstr ""
 
 #: ../../library/re.rst:909
 msgid ""
 "Scan through *string* looking for the first location where the regular "
-"expression *pattern* produces a match, and return a corresponding "
-":class:`~re.Match`. Return ``None`` if no position in the string matches the"
-" pattern; note that this is different from finding a zero-length match at "
+"expression *pattern* produces a match, and return a corresponding :class:"
+"`~re.Match`. Return ``None`` if no position in the string matches the "
+"pattern; note that this is different from finding a zero-length match at "
 "some point in the string."
 msgstr ""
 
@@ -1265,8 +1268,8 @@ msgstr ""
 
 #: ../../library/re.rst:962
 msgid ""
-"That way, separator components are always found at the same relative indices"
-" within the result list."
+"That way, separator components are always found at the same relative indices "
+"within the result list."
 msgstr ""
 
 #: ../../library/re.rst:965
@@ -1275,8 +1278,7 @@ msgid ""
 "previous empty match."
 msgstr ""
 
-#: ../../library/re.rst:977 ../../library/re.rst:1068
-#: ../../library/re.rst:1097
+#: ../../library/re.rst:977 ../../library/re.rst:1068 ../../library/re.rst:1097
 msgid "Added the optional flags argument."
 msgstr ""
 
@@ -1296,8 +1298,8 @@ msgstr ""
 msgid ""
 "The result depends on the number of capturing groups in the pattern. If "
 "there are no groups, return a list of strings matching the whole pattern.  "
-"If there is exactly one group, return a list of strings matching that group."
-"  If multiple groups are present, return a list of tuples of strings "
+"If there is exactly one group, return a list of strings matching that "
+"group.  If multiple groups are present, return a list of tuples of strings "
 "matching the groups.  Non-capturing groups do not affect the form of the "
 "result."
 msgstr ""
@@ -1318,11 +1320,11 @@ msgstr ""
 msgid ""
 "Return the string obtained by replacing the leftmost non-overlapping "
 "occurrences of *pattern* in *string* by the replacement *repl*.  If the "
-"pattern isn't found, *string* is returned unchanged.  *repl* can be a string"
-" or a function; if it is a string, any backslash escapes in it are "
+"pattern isn't found, *string* is returned unchanged.  *repl* can be a string "
+"or a function; if it is a string, any backslash escapes in it are "
 "processed.  That is, ``\\n`` is converted to a single newline character, "
-"``\\r`` is converted to a carriage return, and so forth.  Unknown escapes of"
-" ASCII letters are reserved for future use and treated as errors.  Other "
+"``\\r`` is converted to a carriage return, and so forth.  Unknown escapes of "
+"ASCII letters are reserved for future use and treated as errors.  Other "
 "unknown escapes such as ``\\&`` are left alone. Backreferences, such as "
 "``\\6``, are replaced with the substring matched by group 6 in the pattern. "
 "For example::"
@@ -1342,19 +1344,19 @@ msgstr ""
 #: ../../library/re.rst:1050
 msgid ""
 "The optional argument *count* is the maximum number of pattern occurrences "
-"to be replaced; *count* must be a non-negative integer.  If omitted or zero,"
-" all occurrences will be replaced. Empty matches for the pattern are "
-"replaced only when not adjacent to a previous empty match, so ``sub('x*', "
-"'-', 'abxd')`` returns ``'-a-b--d-'``."
+"to be replaced; *count* must be a non-negative integer.  If omitted or zero, "
+"all occurrences will be replaced. Empty matches for the pattern are replaced "
+"only when not adjacent to a previous empty match, so ``sub('x*', '-', "
+"'abxd')`` returns ``'-a-b--d-'``."
 msgstr ""
 
 #: ../../library/re.rst:1058
 msgid ""
 "In string-type *repl* arguments, in addition to the character escapes and "
-"backreferences described above, ``\\g<name>`` will use the substring matched"
-" by the group named ``name``, as defined by the ``(?P<name>...)`` syntax. "
-"``\\g<number>`` uses the corresponding group number; ``\\g<2>`` is therefore"
-" equivalent to ``\\2``, but isn't ambiguous in a replacement such as "
+"backreferences described above, ``\\g<name>`` will use the substring matched "
+"by the group named ``name``, as defined by the ``(?P<name>...)`` syntax. "
+"``\\g<number>`` uses the corresponding group number; ``\\g<2>`` is therefore "
+"equivalent to ``\\2``, but isn't ambiguous in a replacement such as "
 "``\\g<2>0``.  ``\\20`` would be interpreted as a reference to group 20, not "
 "a reference to group 2 followed by the literal character ``'0'``.  The "
 "backreference ``\\g<0>`` substitutes in the entire substring matched by the "
@@ -1374,8 +1376,8 @@ msgstr ""
 
 #: ../../library/re.rst:1078
 msgid ""
-"Unknown escapes in *repl* consisting of ``'\\'`` and an ASCII letter now are"
-" errors."
+"Unknown escapes in *repl* consisting of ``'\\'`` and an ASCII letter now are "
+"errors."
 msgstr ""
 
 #: ../../library/re.rst:1082
@@ -1393,8 +1395,8 @@ msgstr ""
 
 #: ../../library/re.rst:1094
 msgid ""
-"Perform the same operation as :func:`sub`, but return a tuple ``(new_string,"
-" number_of_subs_made)``."
+"Perform the same operation as :func:`sub`, but return a tuple ``(new_string, "
+"number_of_subs_made)``."
 msgstr ""
 
 #: ../../library/re.rst:1106
@@ -1406,8 +1408,8 @@ msgstr ""
 
 #: ../../library/re.rst:1121
 msgid ""
-"This function must not be used for the replacement string in :func:`sub` and"
-" :func:`subn`, only backslashes should be escaped.  For example::"
+"This function must not be used for the replacement string in :func:`sub` "
+"and :func:`subn`, only backslashes should be escaped.  For example::"
 msgstr ""
 
 #: ../../library/re.rst:1129
@@ -1418,8 +1420,8 @@ msgstr ""
 msgid ""
 "Only characters that can have special meaning in a regular expression are "
 "escaped. As a result, ``'!'``, ``'\"'``, ``'%'``, ``\"'\"``, ``','``, "
-"``'/'``, ``':'``, ``';'``, ``'<'``, ``'='``, ``'>'``, ``'@'``, and ``\"`\"``"
-" are no longer escaped."
+"``'/'``, ``':'``, ``';'``, ``'<'``, ``'='``, ``'>'``, ``'@'``, and ``\"`\"`` "
+"are no longer escaped."
 msgstr ""
 
 #: ../../library/re.rst:1141
@@ -1434,9 +1436,9 @@ msgstr "Исключения"
 msgid ""
 "Exception raised when a string passed to one of the functions here is not a "
 "valid regular expression (for example, it might contain unmatched "
-"parentheses) or when some other error occurs during compilation or matching."
-"  It is never an error if a string contains no match for a pattern.  The "
-"error instance has the following additional attributes:"
+"parentheses) or when some other error occurs during compilation or "
+"matching.  It is never an error if a string contains no match for a "
+"pattern.  The error instance has the following additional attributes:"
 msgstr ""
 
 #: ../../library/re.rst:1157
@@ -1489,8 +1491,8 @@ msgstr ""
 #: ../../library/re.rst:1198
 msgid ""
 "The optional second parameter *pos* gives an index in the string where the "
-"search is to start; it defaults to ``0``.  This is not completely equivalent"
-" to slicing the string; the ``'^'`` pattern character matches at the real "
+"search is to start; it defaults to ``0``.  This is not completely equivalent "
+"to slicing the string; the ``'^'`` pattern character matches at the real "
 "beginning of the string and at positions just after a newline, but not "
 "necessarily at the index where the search is to start."
 msgstr ""
@@ -1500,29 +1502,29 @@ msgid ""
 "The optional parameter *endpos* limits how far the string will be searched; "
 "it will be as if the string is *endpos* characters long, so only the "
 "characters from *pos* to ``endpos - 1`` will be searched for a match.  If "
-"*endpos* is less than *pos*, no match will be found; otherwise, if *rx* is a"
-" compiled regular expression object, ``rx.search(string, 0, 50)`` is "
+"*endpos* is less than *pos*, no match will be found; otherwise, if *rx* is a "
+"compiled regular expression object, ``rx.search(string, 0, 50)`` is "
 "equivalent to ``rx.search(string[:50], 0)``. ::"
 msgstr ""
 
 #: ../../library/re.rst:1219
 msgid ""
-"If zero or more characters at the *beginning* of *string* match this regular"
-" expression, return a corresponding :class:`~re.Match`. Return ``None`` if "
+"If zero or more characters at the *beginning* of *string* match this regular "
+"expression, return a corresponding :class:`~re.Match`. Return ``None`` if "
 "the string does not match the pattern; note that this is different from a "
 "zero-length match."
 msgstr ""
 
 #: ../../library/re.rst:1224 ../../library/re.rst:1242
 msgid ""
-"The optional *pos* and *endpos* parameters have the same meaning as for the "
-":meth:`~Pattern.search` method. ::"
+"The optional *pos* and *endpos* parameters have the same meaning as for the :"
+"meth:`~Pattern.search` method. ::"
 msgstr ""
 
 #: ../../library/re.rst:1232
 msgid ""
-"If you want to locate a match anywhere in *string*, use "
-":meth:`~Pattern.search` instead (see also :ref:`search-vs-match`)."
+"If you want to locate a match anywhere in *string*, use :meth:`~Pattern."
+"search` instead (see also :ref:`search-vs-match`)."
 msgstr ""
 
 #: ../../library/re.rst:1238
@@ -1560,9 +1562,9 @@ msgstr ""
 
 #: ../../library/re.rst:1285
 msgid ""
-"The regex matching flags.  This is a combination of the flags given to "
-":func:`.compile`, any ``(?...)`` inline flags in the pattern, and implicit "
-"flags such as :py:const:`~re.UNICODE` if the pattern is a Unicode string."
+"The regex matching flags.  This is a combination of the flags given to :func:"
+"`.compile`, any ``(?...)`` inline flags in the pattern, and implicit flags "
+"such as :py:const:`~re.UNICODE` if the pattern is a Unicode string."
 msgstr ""
 
 #: ../../library/re.rst:1292
@@ -1592,10 +1594,9 @@ msgstr ""
 
 #: ../../library/re.rst:1317
 msgid ""
-"Match objects always have a boolean value of ``True``. Since "
-":meth:`~Pattern.match` and :meth:`~Pattern.search` return ``None`` when "
-"there is no match, you can test whether there was a match with a simple "
-"``if`` statement::"
+"Match objects always have a boolean value of ``True``. Since :meth:`~Pattern."
+"match` and :meth:`~Pattern.search` return ``None`` when there is no match, "
+"you can test whether there was a match with a simple ``if`` statement::"
 msgstr ""
 
 #: ../../library/re.rst:1328
@@ -1627,8 +1628,8 @@ msgid ""
 "inclusive range [1..99], it is the string matching the corresponding "
 "parenthesized group.  If a group number is negative or larger than the "
 "number of groups defined in the pattern, an :exc:`IndexError` exception is "
-"raised. If a group is contained in a part of the pattern that did not match,"
-" the corresponding result is ``None``. If a group is contained in a part of "
+"raised. If a group is contained in a part of the pattern that did not match, "
+"the corresponding result is ``None``. If a group is contained in a part of "
 "the pattern that matched multiple times, the last match is returned. ::"
 msgstr ""
 
@@ -1636,8 +1637,8 @@ msgstr ""
 msgid ""
 "If the regular expression uses the ``(?P<name>...)`` syntax, the *groupN* "
 "arguments may also be strings identifying groups by their group name.  If a "
-"string argument is not used as a group name in the pattern, an "
-":exc:`IndexError` exception is raised."
+"string argument is not used as a group name in the pattern, an :exc:"
+"`IndexError` exception is raised."
 msgstr ""
 
 #: ../../library/re.rst:1375
@@ -1682,15 +1683,15 @@ msgstr ""
 
 #: ../../library/re.rst:1446
 msgid ""
-"Return a dictionary containing all the *named* subgroups of the match, keyed"
-" by the subgroup name.  The *default* argument is used for groups that did "
+"Return a dictionary containing all the *named* subgroups of the match, keyed "
+"by the subgroup name.  The *default* argument is used for groups that did "
 "not participate in the match; it defaults to ``None``.  For example::"
 msgstr ""
 
 #: ../../library/re.rst:1458
 msgid ""
-"Return the indices of the start and end of the substring matched by *group*;"
-" *group* defaults to zero (meaning the whole matched substring). Return "
+"Return the indices of the start and end of the substring matched by *group*; "
+"*group* defaults to zero (meaning the whole matched substring). Return "
 "``-1`` if *group* exists but did not contribute to the match.  For a match "
 "object *m*, and a group *g* that did contribute to the match, the substring "
 "matched by group *g* (equivalent to ``m.group(g)``) is ::"
@@ -1699,9 +1700,9 @@ msgstr ""
 #: ../../library/re.rst:1466
 msgid ""
 "Note that ``m.start(group)`` will equal ``m.end(group)`` if *group* matched "
-"a null string.  For example, after ``m = re.search('b(c?)', 'cba')``, "
-"``m.start(0)`` is 1, ``m.end(0)`` is 2, ``m.start(1)`` and ``m.end(1)`` are "
-"both 2, and ``m.start(2)`` raises an :exc:`IndexError` exception."
+"a null string.  For example, after ``m = re.search('b(c?)', 'cba')``, ``m."
+"start(0)`` is 1, ``m.end(0)`` is 2, ``m.start(1)`` and ``m.end(1)`` are both "
+"2, and ``m.start(2)`` raises an :exc:`IndexError` exception."
 msgstr ""
 
 #: ../../library/re.rst:1471
@@ -1710,33 +1711,32 @@ msgstr ""
 
 #: ../../library/re.rst:1481
 msgid ""
-"For a match *m*, return the 2-tuple ``(m.start(group), m.end(group))``. Note"
-" that if *group* did not contribute to the match, this is ``(-1, -1)``. "
+"For a match *m*, return the 2-tuple ``(m.start(group), m.end(group))``. Note "
+"that if *group* did not contribute to the match, this is ``(-1, -1)``. "
 "*group* defaults to zero, the entire match."
 msgstr ""
 
 #: ../../library/re.rst:1488
 msgid ""
-"The value of *pos* which was passed to the :meth:`~Pattern.search` or "
-":meth:`~Pattern.match` method of a :ref:`regex object <re-objects>`.  This "
-"is the index into the string at which the RE engine started looking for a "
-"match."
+"The value of *pos* which was passed to the :meth:`~Pattern.search` or :meth:"
+"`~Pattern.match` method of a :ref:`regex object <re-objects>`.  This is the "
+"index into the string at which the RE engine started looking for a match."
 msgstr ""
 
 #: ../../library/re.rst:1495
 msgid ""
-"The value of *endpos* which was passed to the :meth:`~Pattern.search` or "
-":meth:`~Pattern.match` method of a :ref:`regex object <re-objects>`.  This "
-"is the index into the string beyond which the RE engine will not go."
+"The value of *endpos* which was passed to the :meth:`~Pattern.search` or :"
+"meth:`~Pattern.match` method of a :ref:`regex object <re-objects>`.  This is "
+"the index into the string beyond which the RE engine will not go."
 msgstr ""
 
 #: ../../library/re.rst:1502
 msgid ""
 "The integer index of the last matched capturing group, or ``None`` if no "
-"group was matched at all. For example, the expressions ``(a)b``, "
-"``((a)(b))``, and ``((ab))`` will have ``lastindex == 1`` if applied to the "
-"string ``'ab'``, while the expression ``(a)(b)`` will have ``lastindex == "
-"2``, if applied to the same string."
+"group was matched at all. For example, the expressions ``(a)b``, ``((a)"
+"(b))``, and ``((ab))`` will have ``lastindex == 1`` if applied to the string "
+"``'ab'``, while the expression ``(a)(b)`` will have ``lastindex == 2``, if "
+"applied to the same string."
 msgstr ""
 
 #: ../../library/re.rst:1511
@@ -1747,20 +1747,18 @@ msgstr ""
 
 #: ../../library/re.rst:1517
 msgid ""
-"The :ref:`regular expression object <re-objects>` whose "
-":meth:`~Pattern.match` or :meth:`~Pattern.search` method produced this match"
-" instance."
+"The :ref:`regular expression object <re-objects>` whose :meth:`~Pattern."
+"match` or :meth:`~Pattern.search` method produced this match instance."
 msgstr ""
 
 #: ../../library/re.rst:1523
-msgid ""
-"The string passed to :meth:`~Pattern.match` or :meth:`~Pattern.search`."
+msgid "The string passed to :meth:`~Pattern.match` or :meth:`~Pattern.search`."
 msgstr ""
 
 #: ../../library/re.rst:1526
 msgid ""
-"Added support of :func:`copy.copy` and :func:`copy.deepcopy`.  Match objects"
-" are considered atomic."
+"Added support of :func:`copy.copy` and :func:`copy.deepcopy`.  Match objects "
+"are considered atomic."
 msgstr ""
 
 #: ../../library/re.rst:1534
@@ -1779,8 +1777,8 @@ msgstr ""
 
 #: ../../library/re.rst:1548
 msgid ""
-"Suppose you are writing a poker program where a player's hand is represented"
-" as a 5-character string with each character representing a card, \"a\" for "
+"Suppose you are writing a poker program where a player's hand is represented "
+"as a 5-character string with each character representing a card, \"a\" for "
 "ace, \"k\" for king, \"q\" for queen, \"j\" for jack, \"t\" for 10, and "
 "\"2\" through \"9\" representing the card with that value."
 msgstr ""
@@ -1792,14 +1790,14 @@ msgstr ""
 #: ../../library/re.rst:1563
 msgid ""
 "That last hand, ``\"727ak\"``, contained a pair, or two of the same valued "
-"cards. To match this with a regular expression, one could use backreferences"
-" as such::"
+"cards. To match this with a regular expression, one could use backreferences "
+"as such::"
 msgstr ""
 
 #: ../../library/re.rst:1573
 msgid ""
-"To find out what card the pair consists of, one could use the "
-":meth:`~Match.group` method of the match object in the following manner::"
+"To find out what card the pair consists of, one could use the :meth:`~Match."
+"group` method of the match object in the following manner::"
 msgstr ""
 
 #: ../../library/re.rst:1592
@@ -1809,8 +1807,8 @@ msgstr ""
 #: ../../library/re.rst:1596
 msgid ""
 "Python does not currently have an equivalent to :c:func:`!scanf`.  Regular "
-"expressions are generally more powerful, though also more verbose, than "
-":c:func:`!scanf` format strings.  The table below offers some more-or-less "
+"expressions are generally more powerful, though also more verbose, than :c:"
+"func:`!scanf` format strings.  The table below offers some more-or-less "
 "equivalent mappings between :c:func:`!scanf` format tokens and regular "
 "expressions."
 msgstr ""
@@ -1913,8 +1911,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/re.rst:1646
-msgid ""
-":func:`re.match` checks for a match only at the beginning of the string"
+msgid ":func:`re.match` checks for a match only at the beginning of the string"
 msgstr ""
 
 #: ../../library/re.rst:1647
@@ -1937,8 +1934,8 @@ msgstr ""
 msgid ""
 "Note however that in :const:`MULTILINE` mode :func:`match` only matches at "
 "the beginning of the string, whereas using :func:`search` with a regular "
-"expression beginning with ``'^'`` will match at the beginning of each line. "
-"::"
+"expression beginning with ``'^'`` will match at the beginning of each "
+"line. ::"
 msgstr ""
 
 #: ../../library/re.rst:1679
@@ -1961,8 +1958,8 @@ msgstr ""
 
 #: ../../library/re.rst:1699
 msgid ""
-"The entries are separated by one or more newlines. Now we convert the string"
-" into a list with each nonempty line having its own entry:"
+"The entries are separated by one or more newlines. Now we convert the string "
+"into a list with each nonempty line having its own entry:"
 msgstr ""
 
 #: ../../library/re.rst:1712
@@ -2012,8 +2009,8 @@ msgid ""
 "If one wants more information about all matches of a pattern than the "
 "matched text, :func:`finditer` is useful as it provides :class:`~re.Match` "
 "objects instead of strings.  Continuing with the previous example, if a "
-"writer wanted to find all of the adverbs *and their positions* in some text,"
-" they would use :func:`finditer` in the following manner::"
+"writer wanted to find all of the adverbs *and their positions* in some text, "
+"they would use :func:`finditer` in the following manner::"
 msgstr ""
 
 #: ../../library/re.rst:1789
@@ -2022,8 +2019,8 @@ msgstr ""
 
 #: ../../library/re.rst:1791
 msgid ""
-"Raw string notation (``r\"text\"``) keeps regular expressions sane.  Without"
-" it, every backslash (``'\\'``) in a regular expression would have to be "
+"Raw string notation (``r\"text\"``) keeps regular expressions sane.  Without "
+"it, every backslash (``'\\'``) in a regular expression would have to be "
 "prefixed with another one to escape it.  For example, the two following "
 "lines of code are functionally identical::"
 msgstr ""
@@ -2050,8 +2047,8 @@ msgstr ""
 #: ../../library/re.rst:1819
 msgid ""
 "The text categories are specified with regular expressions.  The technique "
-"is to combine those into a single master regular expression and to loop over"
-" successive matches::"
+"is to combine those into a single master regular expression and to loop over "
+"successive matches::"
 msgstr ""
 
 #: ../../library/re.rst:1875

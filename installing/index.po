@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,12 +10,15 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../installing/index.rst:7
 msgid "Installing Python Modules"
@@ -32,17 +35,16 @@ msgstr ""
 #: ../../installing/index.rst:11
 msgid ""
 "As a popular open source development project, Python has an active "
-"supporting community of contributors and users that also make their software"
-" available for other Python developers to use under open source license "
-"terms."
+"supporting community of contributors and users that also make their software "
+"available for other Python developers to use under open source license terms."
 msgstr ""
 
 #: ../../installing/index.rst:15
 msgid ""
 "This allows Python users to share and collaborate effectively, benefiting "
-"from the solutions others have already created to common (and sometimes even"
-" rare!) problems, as well as potentially contributing their own solutions to"
-" the common pool."
+"from the solutions others have already created to common (and sometimes even "
+"rare!) problems, as well as potentially contributing their own solutions to "
+"the common pool."
 msgstr ""
 
 #: ../../installing/index.rst:20
@@ -111,8 +113,8 @@ msgstr ""
 msgid ""
 "``distutils`` is the original build and distribution system first added to "
 "the Python standard library in 1998. While direct use of ``distutils`` is "
-"being phased out, it still laid the foundation for the current packaging and"
-" distribution infrastructure, and it not only remains part of the standard "
+"being phased out, it still laid the foundation for the current packaging and "
+"distribution infrastructure, and it not only remains part of the standard "
 "library, but its name lives on in other ways (such as the name of the "
 "mailing list used to coordinate Python packaging standards development)."
 msgstr ""
@@ -161,8 +163,8 @@ msgstr ""
 msgid ""
 "It's also possible to specify an exact or minimum version directly on the "
 "command line. When using comparator operators such as ``>``, ``<`` or some "
-"other special character which get interpreted by shell, the package name and"
-" the version should be enclosed within double quotes::"
+"other special character which get interpreted by shell, the package name and "
+"the version should be enclosed within double quotes::"
 msgstr ""
 
 #: ../../installing/index.rst:103
@@ -174,9 +176,8 @@ msgstr ""
 
 #: ../../installing/index.rst:109
 msgid ""
-"More information and resources regarding ``pip`` and its capabilities can be"
-" found in the `Python Packaging User Guide "
-"<https://packaging.python.org>`__."
+"More information and resources regarding ``pip`` and its capabilities can be "
+"found in the `Python Packaging User Guide <https://packaging.python.org>`__."
 msgstr ""
 
 #: ../../installing/index.rst:112
@@ -213,9 +214,8 @@ msgstr ""
 
 #: ../../installing/index.rst:136
 msgid ""
-"`Python Packaging User Guide: Requirements for Installing Packages "
-"<https://packaging.python.org/installing/#requirements-for-installing-"
-"packages>`__"
+"`Python Packaging User Guide: Requirements for Installing Packages <https://"
+"packaging.python.org/installing/#requirements-for-installing-packages>`__"
 msgstr ""
 
 #: ../../installing/index.rst:143
@@ -234,8 +234,8 @@ msgstr ""
 
 #: ../../installing/index.rst:152
 msgid ""
-"A number of scientific Python packages have complex binary dependencies, and"
-" aren't currently easy to install using ``pip`` directly. At this point in "
+"A number of scientific Python packages have complex binary dependencies, and "
+"aren't currently easy to install using ``pip`` directly. At this point in "
 "time, it will often be easier for users to install these packages by `other "
 "means <https://packaging.python.org/science/>`__ rather than attempting to "
 "install them with ``pip``."
@@ -243,8 +243,8 @@ msgstr ""
 
 #: ../../installing/index.rst:160
 msgid ""
-"`Python Packaging User Guide: Installing Scientific Packages "
-"<https://packaging.python.org/science/>`__"
+"`Python Packaging User Guide: Installing Scientific Packages <https://"
+"packaging.python.org/science/>`__"
 msgstr ""
 
 #: ../../installing/index.rst:165
@@ -297,15 +297,15 @@ msgstr ""
 
 #: ../../installing/index.rst:213
 msgid ""
-"It is possible that ``pip`` does not get installed by default. One potential"
-" fix is::"
+"It is possible that ``pip`` does not get installed by default. One potential "
+"fix is::"
 msgstr ""
 
 #: ../../installing/index.rst:217
 msgid ""
-"There are also additional resources for `installing pip. "
-"<https://packaging.python.org/en/latest/tutorials/installing-"
-"packages/#ensure-pip-setuptools-and-wheel-are-up-to-date>`__"
+"There are also additional resources for `installing pip. <https://packaging."
+"python.org/en/latest/tutorials/installing-packages/#ensure-pip-setuptools-"
+"and-wheel-are-up-to-date>`__"
 msgstr ""
 
 #: ../../installing/index.rst:222
@@ -315,8 +315,8 @@ msgstr ""
 #: ../../installing/index.rst:224
 msgid ""
 "Python has typically relied heavily on source based distribution, with end "
-"users being expected to compile extension modules from source as part of the"
-" installation process."
+"users being expected to compile extension modules from source as part of the "
+"installation process."
 msgstr ""
 
 #: ../../installing/index.rst:228
@@ -330,14 +330,14 @@ msgstr ""
 
 #: ../../installing/index.rst:234
 msgid ""
-"Some of the solutions for installing `scientific software "
-"<https://packaging.python.org/science/>`__ that are not yet available as "
-"pre-built ``wheel`` files may also help with obtaining other binary "
-"extensions without needing to build them locally."
+"Some of the solutions for installing `scientific software <https://packaging."
+"python.org/science/>`__ that are not yet available as pre-built ``wheel`` "
+"files may also help with obtaining other binary extensions without needing "
+"to build them locally."
 msgstr ""
 
 #: ../../installing/index.rst:241
 msgid ""
-"`Python Packaging User Guide: Binary Extensions "
-"<https://packaging.python.org/extensions/>`__"
+"`Python Packaging User Guide: Binary Extensions <https://packaging.python."
+"org/extensions/>`__"
 msgstr ""

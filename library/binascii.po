@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,12 +10,15 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:56+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/binascii.rst:2
 msgid ":mod:`binascii` --- Convert between binary and ASCII"
@@ -25,23 +28,22 @@ msgstr ""
 msgid ""
 "The :mod:`binascii` module contains a number of methods to convert between "
 "binary and various ASCII-encoded binary representations. Normally, you will "
-"not use these functions directly but use wrapper modules like :mod:`uu` or "
-":mod:`base64` instead. The :mod:`binascii` module contains low-level "
+"not use these functions directly but use wrapper modules like :mod:`uu` or :"
+"mod:`base64` instead. The :mod:`binascii` module contains low-level "
 "functions written in C for greater speed that are used by the higher-level "
 "modules."
 msgstr ""
 
 #: ../../library/binascii.rst:23
 msgid ""
-"``a2b_*`` functions accept Unicode strings containing only ASCII characters."
-" Other functions only accept :term:`bytes-like objects <bytes-like object>` "
+"``a2b_*`` functions accept Unicode strings containing only ASCII characters. "
+"Other functions only accept :term:`bytes-like objects <bytes-like object>` "
 "(such as :class:`bytes`, :class:`bytearray` and other objects that support "
 "the buffer protocol)."
 msgstr ""
 
 #: ../../library/binascii.rst:28
-msgid ""
-"ASCII-only unicode strings are now accepted by the ``a2b_*`` functions."
+msgid "ASCII-only unicode strings are now accepted by the ``a2b_*`` functions."
 msgstr ""
 
 #: ../../library/binascii.rst:32
@@ -50,8 +52,8 @@ msgstr ""
 
 #: ../../library/binascii.rst:37
 msgid ""
-"Convert a single line of uuencoded data back to binary and return the binary"
-" data. Lines normally contain 45 (binary) bytes, except for the last line. "
+"Convert a single line of uuencoded data back to binary and return the binary "
+"data. Lines normally contain 45 (binary) bytes, except for the last line. "
 "Line data may be followed by whitespace."
 msgstr ""
 
@@ -108,8 +110,8 @@ msgstr ""
 #: ../../library/binascii.rst:73
 msgid ""
 "Convert binary data to a line of ASCII characters in base64 coding. The "
-"return value is the converted line, including a newline char if *newline* is"
-" true.  The output of this function conforms to :rfc:`3548`."
+"return value is the converted line, including a newline char if *newline* is "
+"true.  The output of this function conforms to :rfc:`3548`."
 msgstr ""
 
 #: ../../library/binascii.rst:77
@@ -120,8 +122,7 @@ msgstr ""
 msgid ""
 "Convert a block of quoted-printable data back to binary and return the "
 "binary data. More than one line may be passed at a time. If the optional "
-"argument *header* is present and true, underscores will be decoded as "
-"spaces."
+"argument *header* is present and true, underscores will be decoded as spaces."
 msgstr ""
 
 #: ../../library/binascii.rst:90
@@ -131,8 +132,8 @@ msgid ""
 "argument *quotetabs* is present and true, all tabs and spaces will be "
 "encoded.   If the optional argument *istext* is present and true, newlines "
 "are not encoded but trailing whitespace will be encoded. If the optional "
-"argument *header* is present and true, spaces will be encoded as underscores"
-" per :rfc:`1522`. If the optional argument *header* is present and false, "
+"argument *header* is present and true, spaces will be encoded as underscores "
+"per :rfc:`1522`. If the optional argument *header* is present and false, "
 "newline characters will be encoded as well; otherwise linefeed conversion "
 "might corrupt the binary data stream."
 msgstr ""
@@ -140,9 +141,9 @@ msgstr ""
 #: ../../library/binascii.rst:103
 msgid ""
 "Compute a 16-bit CRC value of *data*, starting with *value* as the initial "
-"CRC, and return the result.  This uses the CRC-CCITT polynomial *x*:sup:`16`"
-" + *x*:sup:`12` + *x*:sup:`5` + 1, often represented as 0x1021.  This CRC is"
-" used in the binhex4 format."
+"CRC, and return the result.  This uses the CRC-CCITT polynomial *x*:sup:`16` "
+"+ *x*:sup:`12` + *x*:sup:`5` + 1, often represented as 0x1021.  This CRC is "
+"used in the binhex4 format."
 msgstr ""
 
 #: ../../library/binascii.rst:111
@@ -173,8 +174,8 @@ msgstr ""
 
 #: ../../library/binascii.rst:136
 msgid ""
-"If *sep* is specified, it must be a single character str or bytes object. It"
-" will be inserted in the output after every *bytes_per_sep* input bytes. "
+"If *sep* is specified, it must be a single character str or bytes object. It "
+"will be inserted in the output after every *bytes_per_sep* input bytes. "
 "Separator placement is counted from the right end of the output by default, "
 "if you wish to count from the left, supply a negative *bytes_per_sep* value."
 msgstr ""
@@ -185,8 +186,8 @@ msgstr ""
 
 #: ../../library/binascii.rst:157
 msgid ""
-"Return the binary data represented by the hexadecimal string *hexstr*.  This"
-" function is the inverse of :func:`b2a_hex`. *hexstr* must contain an even "
+"Return the binary data represented by the hexadecimal string *hexstr*.  This "
+"function is the inverse of :func:`b2a_hex`. *hexstr* must contain an even "
 "number of hexadecimal digits (which can be upper or lower case), otherwise "
 "an :exc:`Error` exception is raised."
 msgstr ""
@@ -194,8 +195,8 @@ msgstr ""
 #: ../../library/binascii.rst:162
 msgid ""
 "Similar functionality (accepting only text string arguments, but more "
-"liberal towards whitespace) is also accessible using the "
-":meth:`bytes.fromhex` class method."
+"liberal towards whitespace) is also accessible using the :meth:`bytes."
+"fromhex` class method."
 msgstr ""
 
 #: ../../library/binascii.rst:168
@@ -233,7 +234,7 @@ msgstr ""
 msgid "Support for quoted-printable encoding used in MIME email messages."
 msgstr ""
 
-#: ../../library/binascii.rst:8 ../../library/binascii.rst:8
+#: ../../library/binascii.rst:8
 msgid "module"
 msgstr ""
 

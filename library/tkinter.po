@@ -2,11 +2,11 @@
 # Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # decorator_factory <decorator-factory+transifex@yandex.ru>, 2021
 # Kristina Mironova, 2021
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -15,12 +15,15 @@ msgstr ""
 "POT-Creation-Date: 2024-01-12 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:15+0000\n"
 "Last-Translator: Kristina Mironova, 2021\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/tkinter.rst:2
 msgid ":mod:`tkinter` --- Python interface to Tcl/Tk"
@@ -41,8 +44,8 @@ msgstr ""
 #: ../../library/tkinter.rst:17
 msgid ""
 "Running ``python -m tkinter`` from the command line should open a window "
-"demonstrating a simple Tk interface, letting you know that :mod:`tkinter` is"
-" properly installed on your system, and also showing what version of Tcl/Tk "
+"demonstrating a simple Tk interface, letting you know that :mod:`tkinter` is "
+"properly installed on your system, and also showing what version of Tcl/Tk "
 "is installed, so you can read the Tcl/Tk documentation specific to that "
 "version."
 msgstr ""
@@ -66,8 +69,8 @@ msgstr ""
 #: ../../library/tkinter.rst:34
 msgid ""
 "Tcl/Tk 8.5 (2007) introduced a modern set of themed user interface "
-"components along with a new API to use them. Both old and new APIs are still"
-" available. Most documentation you will find online still uses the old API "
+"components along with a new API to use them. Both old and new APIs are still "
+"available. Most documentation you will find online still uses the old API "
 "and can be woefully outdated."
 msgstr ""
 
@@ -129,9 +132,8 @@ msgstr ""
 
 #: ../../library/tkinter.rst:62
 msgid ""
-"`Python GUI programming with Tkinter "
-"<https://www.packtpub.com/product/python-gui-programming-with-"
-"tkinter/9781788835886>`_"
+"`Python GUI programming with Tkinter <https://www.packtpub.com/product/"
+"python-gui-programming-with-tkinter/9781788835886>`_"
 msgstr ""
 
 #: ../../library/tkinter.rst:62
@@ -148,8 +150,8 @@ msgstr ""
 
 #: ../../library/tkinter.rst:67
 msgid ""
-"`Tcl and the Tk Toolkit (2nd edition)  "
-"<https://www.amazon.com/exec/obidos/ASIN/032133633X>`_"
+"`Tcl and the Tk Toolkit (2nd edition)  <https://www.amazon.com/exec/obidos/"
+"ASIN/032133633X>`_"
 msgstr ""
 
 #: ../../library/tkinter.rst:68
@@ -179,8 +181,8 @@ msgid ""
 "Tcl is a dynamic interpreted programming language, just like Python. Though "
 "it can be used on its own as a general-purpose programming language, it is "
 "most commonly embedded into C applications as a scripting engine or an "
-"interface to the Tk toolkit. The Tcl library has a C interface to create and"
-" manage one or more instances of a Tcl interpreter, run Tcl commands and "
+"interface to the Tk toolkit. The Tcl library has a C interface to create and "
+"manage one or more instances of a Tcl interpreter, run Tcl commands and "
 "scripts in those instances, and add custom commands implemented in either "
 "Tcl or C. Each interpreter has an event queue, and there are facilities to "
 "send events to it and process them. Unlike Python, Tcl's execution model is "
@@ -189,16 +191,15 @@ msgid ""
 msgstr ""
 
 #: ../../library/tkinter.rst:97 ../../library/tkinter.rst:911
-#: ../../library/tkinter.rst:911
 msgid "Tk"
 msgstr ""
 
 #: ../../library/tkinter.rst:93
 msgid ""
 "Tk is a `Tcl package <https://wiki.tcl-lang.org/37432>`_ implemented in C "
-"that adds custom commands to create and manipulate GUI widgets. Each "
-":class:`Tk` object embeds its own Tcl interpreter instance with Tk loaded "
-"into it. Tk's widgets are very customizable, though at the cost of a dated "
+"that adds custom commands to create and manipulate GUI widgets. Each :class:"
+"`Tk` object embeds its own Tcl interpreter instance with Tk loaded into it. "
+"Tk's widgets are very customizable, though at the cost of a dated "
 "appearance. Tk uses Tcl's event queue to generate and process GUI events."
 msgstr ""
 
@@ -216,8 +217,8 @@ msgstr ""
 
 #: ../../library/tkinter.rst:105
 msgid ""
-"Internally, Tk and Ttk use facilities of the underlying operating system, "
-"i.e., Xlib on Unix/X11, Cocoa on macOS, GDI on Windows."
+"Internally, Tk and Ttk use facilities of the underlying operating system, i."
+"e., Xlib on Unix/X11, Cocoa on macOS, GDI on Windows."
 msgstr ""
 
 #: ../../library/tkinter.rst:108
@@ -236,8 +237,8 @@ msgstr ""
 
 #: ../../library/tkinter.rst:118
 msgid ""
-"Support for Tkinter is spread across several modules. Most applications will"
-" need the main :mod:`tkinter` module, as well as the :mod:`tkinter.ttk` "
+"Support for Tkinter is spread across several modules. Most applications will "
+"need the main :mod:`tkinter` module, as well as the :mod:`tkinter.ttk` "
 "module, which provides the modern themed widget set and API::"
 msgstr ""
 
@@ -300,8 +301,8 @@ msgstr ""
 
 #: ../../library/tkinter.rst:149
 msgid ""
-"If ``True``, execute all X server commands synchronously, so that errors are"
-" reported immediately.  Can be used for debugging. (X11 only)"
+"If ``True``, execute all X server commands synchronously, so that errors are "
+"reported immediately.  Can be used for debugging. (X11 only)"
 msgstr ""
 
 #: ../../library/tkinter.rst:159
@@ -324,20 +325,18 @@ msgstr ""
 
 #: ../../library/tkinter.rst:161
 msgid ""
-":class:`Tk` reads and interprets profile files, named "
-":file:`.{className}.tcl` and :file:`.{baseName}.tcl`, into the Tcl "
-"interpreter and calls :func:`exec` on the contents of "
-":file:`.{className}.py` and :file:`.{baseName}.py`.  The path for the "
-"profile files is the :envvar:`HOME` environment variable or, if that isn't "
-"defined, then :data:`os.curdir`."
+":class:`Tk` reads and interprets profile files, named :file:`.{className}."
+"tcl` and :file:`.{baseName}.tcl`, into the Tcl interpreter and calls :func:"
+"`exec` on the contents of :file:`.{className}.py` and :file:`.{baseName}."
+"py`.  The path for the profile files is the :envvar:`HOME` environment "
+"variable or, if that isn't defined, then :data:`os.curdir`."
 msgstr ""
 
 #: ../../library/tkinter.rst:170
 msgid ""
 "The Tk application object created by instantiating :class:`Tk`.  This "
 "provides access to the Tcl interpreter.  Each widget that is attached the "
-"same instance of :class:`Tk` has the same value for its :attr:`tk` "
-"attribute."
+"same instance of :class:`Tk` has the same value for its :attr:`tk` attribute."
 msgstr ""
 
 #: ../../library/tkinter.rst:177
@@ -361,12 +360,12 @@ msgstr ""
 msgid ""
 "The :func:`Tcl` function is a factory function which creates an object much "
 "like that created by the :class:`Tk` class, except that it does not "
-"initialize the Tk subsystem.  This is most often useful when driving the Tcl"
-" interpreter in an environment where one doesn't want to create extraneous "
-"toplevel windows, or where one cannot (such as Unix/Linux systems without an"
-" X server).  An object created by the :func:`Tcl` object can have a Toplevel"
-" window created (and the Tk subsystem initialized) by calling its "
-":meth:`loadtk` method."
+"initialize the Tk subsystem.  This is most often useful when driving the Tcl "
+"interpreter in an environment where one doesn't want to create extraneous "
+"toplevel windows, or where one cannot (such as Unix/Linux systems without an "
+"X server).  An object created by the :func:`Tcl` object can have a Toplevel "
+"window created (and the Tk subsystem initialized) by calling its :meth:"
+"`loadtk` method."
 msgstr ""
 
 #: ../../library/tkinter.rst:203
@@ -470,8 +469,8 @@ msgstr ""
 
 #: ../../library/tkinter.rst:246
 msgid ""
-"Python's Integrated Development and Learning Environment (IDLE). Based on "
-":mod:`tkinter`."
+"Python's Integrated Development and Learning Environment (IDLE). Based on :"
+"mod:`tkinter`."
 msgstr ""
 
 #: ../../library/tkinter.rst:252
@@ -480,9 +479,9 @@ msgstr ""
 
 #: ../../library/tkinter.rst:250
 msgid ""
-"Symbolic constants that can be used in place of strings when passing various"
-" parameters to Tkinter calls. Automatically imported by the main "
-":mod:`tkinter` module."
+"Symbolic constants that can be used in place of strings when passing various "
+"parameters to Tkinter calls. Automatically imported by the main :mod:"
+"`tkinter` module."
 msgstr ""
 
 #: ../../library/tkinter.rst:256
@@ -555,17 +554,16 @@ msgstr ""
 
 #: ../../library/tkinter.rst:305
 msgid ""
-"The following line creates a frame widget, which in this case will contain a"
-" label and a button we'll create next. The frame is fit inside the root "
+"The following line creates a frame widget, which in this case will contain a "
+"label and a button we'll create next. The frame is fit inside the root "
 "window."
 msgstr ""
 
 #: ../../library/tkinter.rst:309
 msgid ""
-"The next line creates a label widget holding a static text string. The "
-":meth:`grid` method is used to specify the relative layout (position) of the"
-" label within its containing frame widget, similar to how tables in HTML "
-"work."
+"The next line creates a label widget holding a static text string. The :meth:"
+"`grid` method is used to specify the relative layout (position) of the label "
+"within its containing frame widget, similar to how tables in HTML work."
 msgstr ""
 
 #: ../../library/tkinter.rst:313
@@ -595,8 +593,8 @@ msgstr ""
 #: ../../library/tkinter.rst:327
 msgid ""
 "A Tkinter user interface is made up of individual *widgets*. Each widget is "
-"represented as a Python object, instantiated from classes like "
-":class:`ttk.Frame`, :class:`ttk.Label`, and :class:`ttk.Button`."
+"represented as a Python object, instantiated from classes like :class:`ttk."
+"Frame`, :class:`ttk.Label`, and :class:`ttk.Button`."
 msgstr ""
 
 #: ../../library/tkinter.rst:335
@@ -650,8 +648,8 @@ msgstr ""
 
 #: ../../library/tkinter.rst:356
 msgid ""
-"When your application uses Tkinter's classes and methods, internally Tkinter"
-" is assembling strings representing Tcl/Tk commands, and executing those "
+"When your application uses Tkinter's classes and methods, internally Tkinter "
+"is assembling strings representing Tcl/Tk commands, and executing those "
 "commands in the Tcl interpreter attached to your application's :class:`Tk` "
 "instance."
 msgstr ""
@@ -666,14 +664,14 @@ msgstr ""
 
 #: ../../library/tkinter.rst:366
 msgid ""
-"To illustrate, here is the Tcl/Tk equivalent of the main part of the Tkinter"
-" script above."
+"To illustrate, here is the Tcl/Tk equivalent of the main part of the Tkinter "
+"script above."
 msgstr ""
 
 #: ../../library/tkinter.rst:377
 msgid ""
-"Tcl's syntax is similar to many shell languages, where the first word is the"
-" command to be executed, with arguments to that command following it, "
+"Tcl's syntax is similar to many shell languages, where the first word is the "
+"command to be executed, with arguments to that command following it, "
 "separated by spaces. Without getting into too many details, notice the "
 "following:"
 msgstr ""
@@ -699,10 +697,9 @@ msgstr ""
 #: ../../library/tkinter.rst:390
 msgid ""
 "A widget's place in the widget hierarchy is encoded in its (hierarchical) "
-"pathname, which uses a ``.`` (dot) as a path separator. The pathname for the"
-" root window is just ``.`` (dot). In Tkinter, the hierarchy is defined not "
-"by pathname but by specifying the parent widget when creating each child "
-"widget."
+"pathname, which uses a ``.`` (dot) as a path separator. The pathname for the "
+"root window is just ``.`` (dot). In Tkinter, the hierarchy is defined not by "
+"pathname but by specifying the parent widget when creating each child widget."
 msgstr ""
 
 #: ../../library/tkinter.rst:396
@@ -710,8 +707,8 @@ msgid ""
 "Operations which are implemented as separate *commands* in Tcl (like "
 "``grid`` or ``destroy``) are represented as *methods* on Tkinter widget "
 "objects. As you'll see shortly, at other times Tcl uses what appear to be "
-"method calls on widget objects, which more closely mirror what would is used"
-" in Tkinter."
+"method calls on widget objects, which more closely mirror what would is used "
+"in Tkinter."
 msgstr ""
 
 #: ../../library/tkinter.rst:404
@@ -720,9 +717,9 @@ msgstr ""
 
 #: ../../library/tkinter.rst:406
 msgid ""
-"If you're not sure how to do something in Tkinter, and you can't immediately"
-" find it in the tutorial or reference documentation you're using, there are "
-"a few strategies that can be helpful."
+"If you're not sure how to do something in Tkinter, and you can't immediately "
+"find it in the tutorial or reference documentation you're using, there are a "
+"few strategies that can be helpful."
 msgstr ""
 
 #: ../../library/tkinter.rst:410
@@ -735,18 +732,18 @@ msgstr ""
 
 #: ../../library/tkinter.rst:415
 msgid ""
-"When searching for how to use an API, it helps to know the exact name of the"
-" class, option, or method that you're using. Introspection, either in an "
+"When searching for how to use an API, it helps to know the exact name of the "
+"class, option, or method that you're using. Introspection, either in an "
 "interactive Python shell or with :func:`print`, can help you identify what "
 "you need."
 msgstr ""
 
 #: ../../library/tkinter.rst:420
 msgid ""
-"To find out what configuration options are available on any widget, call its"
-" :meth:`configure` method, which returns a dictionary containing a variety "
-"of information about each object, including its default and current values. "
-"Use :meth:`keys` to get just the names of each option."
+"To find out what configuration options are available on any widget, call "
+"its :meth:`configure` method, which returns a dictionary containing a "
+"variety of information about each object, including its default and current "
+"values. Use :meth:`keys` to get just the names of each option."
 msgstr ""
 
 #: ../../library/tkinter.rst:430
@@ -761,8 +758,8 @@ msgstr ""
 msgid ""
 "Similarly, you can find the available methods for a widget object using the "
 "standard :func:`dir` function. If you try it, you'll see there are over 200 "
-"common widget methods, so again identifying those specific to a widget class"
-" is helpful."
+"common widget methods, so again identifying those specific to a widget class "
+"is helpful."
 msgstr ""
 
 #: ../../library/tkinter.rst:451
@@ -771,11 +768,11 @@ msgstr ""
 
 #: ../../library/tkinter.rst:453
 msgid ""
-"As noted, the official `Tk commands "
-"<https://www.tcl.tk/man/tcl8.6/TkCmd/contents.htm>`_ reference manual (man "
-"pages) is often the most accurate description of what specific operations on"
-" widgets do. Even when you know the name of the option or method that you "
-"need, you may still have a few places to look."
+"As noted, the official `Tk commands <https://www.tcl.tk/man/tcl8.6/TkCmd/"
+"contents.htm>`_ reference manual (man pages) is often the most accurate "
+"description of what specific operations on widgets do. Even when you know "
+"the name of the option or method that you need, you may still have a few "
+"places to look."
 msgstr ""
 
 #: ../../library/tkinter.rst:458
@@ -798,26 +795,26 @@ msgstr ""
 msgid ""
 "In the official Tcl/Tk reference documentation, you'll find most operations "
 "that look like method calls on the man page for a specific widget (e.g., "
-"you'll find the :meth:`invoke` method on the `ttk::button "
-"<https://www.tcl.tk/man/tcl8.6/TkCmd/ttk_button.htm>`_ man page), while "
-"functions that take a widget as a parameter often have their own man page "
-"(e.g., `grid <https://www.tcl.tk/man/tcl8.6/TkCmd/grid.htm>`_)."
+"you'll find the :meth:`invoke` method on the `ttk::button <https://www.tcl."
+"tk/man/tcl8.6/TkCmd/ttk_button.htm>`_ man page), while functions that take a "
+"widget as a parameter often have their own man page (e.g., `grid <https://"
+"www.tcl.tk/man/tcl8.6/TkCmd/grid.htm>`_)."
 msgstr ""
 
 #: ../../library/tkinter.rst:487
 msgid ""
-"You'll find many common options and methods in the `options "
-"<https://www.tcl.tk/man/tcl8.6/TkCmd/options.htm>`_ or `ttk::widget "
-"<https://www.tcl.tk/man/tcl8.6/TkCmd/ttk_widget.htm>`_ man pages, while "
-"others are found in the man page for a specific widget class."
+"You'll find many common options and methods in the `options <https://www.tcl."
+"tk/man/tcl8.6/TkCmd/options.htm>`_ or `ttk::widget <https://www.tcl.tk/man/"
+"tcl8.6/TkCmd/ttk_widget.htm>`_ man pages, while others are found in the man "
+"page for a specific widget class."
 msgstr ""
 
 #: ../../library/tkinter.rst:492
 msgid ""
-"You'll also find that many Tkinter methods have compound names, e.g., "
-":func:`winfo_x`, :func:`winfo_height`, :func:`winfo_viewable`. You'd find "
-"documentation for all of these in the `winfo "
-"<https://www.tcl.tk/man/tcl8.6/TkCmd/winfo.htm>`_ man page."
+"You'll also find that many Tkinter methods have compound names, e.g., :func:"
+"`winfo_x`, :func:`winfo_height`, :func:`winfo_viewable`. You'd find "
+"documentation for all of these in the `winfo <https://www.tcl.tk/man/tcl8.6/"
+"TkCmd/winfo.htm>`_ man page."
 msgstr ""
 
 #: ../../library/tkinter.rst:498
@@ -825,8 +822,8 @@ msgid ""
 "Somewhat confusingly, there are also methods on all Tkinter widgets that "
 "don't actually operate on the widget, but operate at a global scope, "
 "independent of any widget. Examples are methods for accessing the clipboard "
-"or the system bell. (They happen to be implemented as methods in the base "
-":class:`Widget` class that all Tkinter widgets inherit from)."
+"or the system bell. (They happen to be implemented as methods in the base :"
+"class:`Widget` class that all Tkinter widgets inherit from)."
 msgstr ""
 
 #: ../../library/tkinter.rst:507
@@ -835,8 +832,8 @@ msgstr ""
 
 #: ../../library/tkinter.rst:509
 msgid ""
-"Python and Tcl/Tk have very different threading models, which :mod:`tkinter`"
-" tries to bridge. If you use threads, you may need to be aware of this."
+"Python and Tcl/Tk have very different threading models, which :mod:`tkinter` "
+"tries to bridge. If you use threads, you may need to be aware of this."
 msgstr ""
 
 #: ../../library/tkinter.rst:512
@@ -852,8 +849,8 @@ msgstr ""
 msgid ""
 "Each :class:`Tk` object created by :mod:`tkinter` contains a Tcl "
 "interpreter. It also keeps track of which thread created that interpreter. "
-"Calls to :mod:`tkinter` can be made from any Python thread. Internally, if a"
-" call comes from a thread other than the one that created the :class:`Tk` "
+"Calls to :mod:`tkinter` can be made from any Python thread. Internally, if a "
+"call comes from a thread other than the one that created the :class:`Tk` "
 "object, an event is posted to the interpreter's event queue, and when "
 "executed, the result is returned to the calling Python thread."
 msgstr ""
@@ -861,14 +858,14 @@ msgstr ""
 #: ../../library/tkinter.rst:524
 msgid ""
 "Tcl/Tk applications are normally event-driven, meaning that after "
-"initialization, the interpreter runs an event loop (i.e. "
-":func:`Tk.mainloop`) and responds to events. Because it is single-threaded, "
-"event handlers must respond quickly, otherwise they will block other events "
-"from being processed. To avoid this, any long-running computations should "
-"not run in an event handler, but are either broken into smaller pieces using"
-" timers, or run in another thread. This is different from many GUI toolkits "
-"where the GUI runs in a completely separate thread from all application code"
-" including event handlers."
+"initialization, the interpreter runs an event loop (i.e. :func:`Tk."
+"mainloop`) and responds to events. Because it is single-threaded, event "
+"handlers must respond quickly, otherwise they will block other events from "
+"being processed. To avoid this, any long-running computations should not run "
+"in an event handler, but are either broken into smaller pieces using timers, "
+"or run in another thread. This is different from many GUI toolkits where the "
+"GUI runs in a completely separate thread from all application code including "
+"event handlers."
 msgstr ""
 
 #: ../../library/tkinter.rst:533
@@ -884,18 +881,18 @@ msgstr ""
 
 #: ../../library/tkinter.rst:539
 msgid ""
-"Tcl/Tk libraries can be built so they are not thread-aware. In this case, "
-":mod:`tkinter` calls the library from the originating Python thread, even if"
-" this is different than the thread that created the Tcl interpreter. A "
-"global lock ensures only one call occurs at a time."
+"Tcl/Tk libraries can be built so they are not thread-aware. In this case, :"
+"mod:`tkinter` calls the library from the originating Python thread, even if "
+"this is different than the thread that created the Tcl interpreter. A global "
+"lock ensures only one call occurs at a time."
 msgstr ""
 
 #: ../../library/tkinter.rst:544
 msgid ""
-"While :mod:`tkinter` allows you to create more than one instance of a "
-":class:`Tk` object (with its own interpreter), all interpreters that are "
-"part of the same thread share a common event queue, which gets ugly fast. In"
-" practice, don't create more than one instance of :class:`Tk` at a time. "
+"While :mod:`tkinter` allows you to create more than one instance of a :class:"
+"`Tk` object (with its own interpreter), all interpreters that are part of "
+"the same thread share a common event queue, which gets ugly fast. In "
+"practice, don't create more than one instance of :class:`Tk` at a time. "
 "Otherwise, it's best to create them in separate threads and ensure you're "
 "running a thread-aware Tcl/Tk build."
 msgstr ""
@@ -933,8 +930,7 @@ msgid "At object creation time, using keyword arguments"
 msgstr ""
 
 #: ../../library/tkinter.rst:580
-msgid ""
-"After object creation, treating the option name like a dictionary index"
+msgid "After object creation, treating the option name like a dictionary index"
 msgstr ""
 
 #: ../../library/tkinter.rst:585
@@ -954,8 +950,8 @@ msgid ""
 "Note that the man pages list \"STANDARD OPTIONS\" and \"WIDGET SPECIFIC "
 "OPTIONS\" for each widget.  The former is a list of options that are common "
 "to many widgets, the latter are the options that are idiosyncratic to that "
-"particular widget.  The Standard Options are documented on the "
-":manpage:`options(3)` man page."
+"particular widget.  The Standard Options are documented on the :manpage:"
+"`options(3)` man page."
 msgstr ""
 
 #: ../../library/tkinter.rst:596
@@ -971,17 +967,16 @@ msgid ""
 "The options supported by a given widget are listed in that widget's man "
 "page, or can be queried at runtime by calling the :meth:`config` method "
 "without arguments, or by calling the :meth:`keys` method on that widget.  "
-"The return value of these calls is a dictionary whose key is the name of the"
-" option as a string (for example, ``'relief'``) and whose values are "
-"5-tuples."
+"The return value of these calls is a dictionary whose key is the name of the "
+"option as a string (for example, ``'relief'``) and whose values are 5-tuples."
 msgstr ""
 
 #: ../../library/tkinter.rst:607
 msgid ""
 "Some options, like ``bg`` are synonyms for common options with long names "
 "(``bg`` is shorthand for \"background\"). Passing the ``config()`` method "
-"the name of a shorthand option will return a 2-tuple, not 5-tuple. The "
-"2-tuple passed back will contain the name of the synonym and the \"real\" "
+"the name of a shorthand option will return a 2-tuple, not 5-tuple. The 2-"
+"tuple passed back will contain the name of the synonym and the \"real\" "
 "option (such as ``('bg', 'background')``)."
 msgstr ""
 
@@ -1059,8 +1054,8 @@ msgstr ""
 
 #: ../../library/tkinter.rst:633
 msgid ""
-"Of course, the dictionary printed will include all the options available and"
-" their values.  This is meant only as an example."
+"Of course, the dictionary printed will include all the options available and "
+"their values.  This is meant only as an example."
 msgstr ""
 
 #: ../../library/tkinter.rst:638
@@ -1071,11 +1066,11 @@ msgstr ""
 msgid ""
 "The packer is one of Tk's geometry-management mechanisms.    Geometry "
 "managers are used to specify the relative positioning of widgets within "
-"their container - their mutual *master*.  In contrast to the more cumbersome"
-" *placer* (which is used less commonly, and we do not cover here), the "
-"packer takes qualitative relationship specification - *above*, *to the left "
-"of*, *filling*, etc - and works everything out to determine the exact "
-"placement coordinates for you."
+"their container - their mutual *master*.  In contrast to the more cumbersome "
+"*placer* (which is used less commonly, and we do not cover here), the packer "
+"takes qualitative relationship specification - *above*, *to the left of*, "
+"*filling*, etc - and works everything out to determine the exact placement "
+"coordinates for you."
 msgstr ""
 
 #: ../../library/tkinter.rst:649
@@ -1083,25 +1078,25 @@ msgid ""
 "The size of any *master* widget is determined by the size of the \"slave "
 "widgets\" inside.  The packer is used to control where slave widgets appear "
 "inside the master into which they are packed.  You can pack widgets into "
-"frames, and frames into other frames, in order to achieve the kind of layout"
-" you desire. Additionally, the arrangement is dynamically adjusted to "
+"frames, and frames into other frames, in order to achieve the kind of layout "
+"you desire. Additionally, the arrangement is dynamically adjusted to "
 "accommodate incremental changes to the configuration, once it is packed."
 msgstr ""
 
 #: ../../library/tkinter.rst:656
 msgid ""
-"Note that widgets do not appear until they have had their geometry specified"
-" with a geometry manager.  It's a common early mistake to leave out the "
-"geometry specification, and then be surprised when the widget is created but"
-" nothing appears.  A widget will appear only after it has had, for example, "
+"Note that widgets do not appear until they have had their geometry specified "
+"with a geometry manager.  It's a common early mistake to leave out the "
+"geometry specification, and then be surprised when the widget is created but "
+"nothing appears.  A widget will appear only after it has had, for example, "
 "the packer's :meth:`pack` method applied to it."
 msgstr ""
 
 #: ../../library/tkinter.rst:662
 msgid ""
-"The pack() method can be called with keyword-option/value pairs that control"
-" where the widget is to appear within its container, and how it is to behave"
-" when the main application window is resized.  Here are some examples::"
+"The pack() method can be called with keyword-option/value pairs that control "
+"where the widget is to appear within its container, and how it is to behave "
+"when the main application window is resized.  Here are some examples::"
 msgstr ""
 
 #: ../../library/tkinter.rst:672
@@ -1172,10 +1167,10 @@ msgstr ""
 #: ../../library/tkinter.rst:699
 msgid ""
 "The current-value setting of some widgets (like text entry widgets) can be "
-"connected directly to application variables by using special options.  These"
-" options are ``variable``, ``textvariable``, ``onvalue``, ``offvalue``, and "
-"``value``.  This connection works both ways: if the variable changes for any"
-" reason, the widget it's connected to will be updated to reflect the new "
+"connected directly to application variables by using special options.  These "
+"options are ``variable``, ``textvariable``, ``onvalue``, ``offvalue``, and "
+"``value``.  This connection works both ways: if the variable changes for any "
+"reason, the widget it's connected to will be updated to reflect the new "
 "value."
 msgstr ""
 
@@ -1190,12 +1185,12 @@ msgstr ""
 
 #: ../../library/tkinter.rst:711
 msgid ""
-"There are many useful subclasses of Variable already defined: "
-":class:`StringVar`, :class:`IntVar`, :class:`DoubleVar`, and "
-":class:`BooleanVar`.  To read the current value of such a variable, call the"
-" :meth:`get` method on it, and to change its value you call the :meth:`!set`"
-" method.  If you follow this protocol, the widget will always track the "
-"value of the variable, with no further intervention on your part."
+"There are many useful subclasses of Variable already defined: :class:"
+"`StringVar`, :class:`IntVar`, :class:`DoubleVar`, and :class:`BooleanVar`.  "
+"To read the current value of such a variable, call the :meth:`get` method on "
+"it, and to change its value you call the :meth:`!set` method.  If you follow "
+"this protocol, the widget will always track the value of the variable, with "
+"no further intervention on your part."
 msgstr ""
 
 #: ../../library/tkinter.rst:718 ../../library/tkinter.rst:898
@@ -1221,8 +1216,8 @@ msgid ""
 "To get at the toplevel window that contains a given widget, you can often "
 "just refer to the widget's master.  Of course if the widget has been packed "
 "inside of a frame, the master won't represent a toplevel window.  To get at "
-"the toplevel window that contains an arbitrary widget, you can call the "
-":meth:`_root` method. This method begins with an underscore to denote the "
+"the toplevel window that contains an arbitrary widget, you can call the :"
+"meth:`_root` method. This method begins with an underscore to denote the "
 "fact that this function is part of the implementation, and not an interface "
 "to Tk functionality."
 msgstr ""
@@ -1347,8 +1342,8 @@ msgstr ""
 #: ../../library/tkinter.rst:850
 msgid ""
 "This is a string with four space-delimited elements, each of which is a "
-"legal distance (see above).  For example: ``\"2 3 4 5\"`` and ``\"3i 2i 4.5i"
-" 2i\"`` and ``\"3c 2c 4c 10.43c\"``  are all legal regions."
+"legal distance (see above).  For example: ``\"2 3 4 5\"`` and ``\"3i 2i 4.5i "
+"2i\"`` and ``\"3c 2c 4c 10.43c\"``  are all legal regions."
 msgstr ""
 
 #: ../../library/tkinter.rst:856
@@ -1387,8 +1382,8 @@ msgstr ""
 #: ../../library/tkinter.rst:874
 msgid ""
 "The bind method from the widget command allows you to watch for certain "
-"events and to have a callback function trigger when that event type occurs."
-"  The form of the bind method is::"
+"events and to have a callback function trigger when that event type occurs.  "
+"The form of the bind method is::"
 msgstr ""
 
 #: ../../library/tkinter.rst:880
@@ -1401,9 +1396,9 @@ msgstr ""
 
 #: ../../library/tkinter.rst:883
 msgid ""
-"is a string that denotes the target kind of event.  (See the "
-":manpage:`bind(3tk)` man page, and page 201 of John Ousterhout's book, "
-":title-reference:`Tcl and the Tk Toolkit (2nd edition)`, for details)."
+"is a string that denotes the target kind of event.  (See the :manpage:"
+"`bind(3tk)` man page, and page 201 of John Ousterhout's book, :title-"
+"reference:`Tcl and the Tk Toolkit (2nd edition)`, for details)."
 msgstr ""
 
 #: ../../library/tkinter.rst:890
@@ -1423,22 +1418,22 @@ msgstr ""
 
 #: ../../library/tkinter.rst:893
 msgid ""
-"is optional, either ``''`` or ``'+'``.  Passing an empty string denotes that"
-" this binding is to replace any other bindings that this event is associated"
-" with.  Passing a ``'+'`` means that this function is to be added to the "
-"list of functions bound to this event type."
+"is optional, either ``''`` or ``'+'``.  Passing an empty string denotes that "
+"this binding is to replace any other bindings that this event is associated "
+"with.  Passing a ``'+'`` means that this function is to be added to the list "
+"of functions bound to this event type."
 msgstr ""
 
 #: ../../library/tkinter.rst:905
 msgid ""
 "Notice how the widget field of the event is being accessed in the "
 "``turn_red()`` callback.  This field contains the widget that caught the X "
-"event.  The following table lists the other event fields you can access, and"
-" how they are denoted in Tk, which can be useful when referring to the Tk "
-"man pages."
+"event.  The following table lists the other event fields you can access, and "
+"how they are denoted in Tk, which can be useful when referring to the Tk man "
+"pages."
 msgstr ""
 
-#: ../../library/tkinter.rst:911 ../../library/tkinter.rst:911
+#: ../../library/tkinter.rst:911
 msgid "Tkinter Event Field"
 msgstr ""
 
@@ -1588,8 +1583,8 @@ msgstr ""
 #: ../../library/tkinter.rst:939
 msgid ""
 "Entry widgets have options that refer to character positions in the text "
-"being displayed.  You can use these :mod:`tkinter` functions to access these"
-" special points in text widgets:"
+"being displayed.  You can use these :mod:`tkinter` functions to access these "
+"special points in text widgets:"
 msgstr ""
 
 #: ../../library/tkinter.rst:945
@@ -1608,8 +1603,8 @@ msgstr ""
 
 #: ../../library/tkinter.rst:948
 msgid ""
-"Some options and methods for menus manipulate specific menu entries. Anytime"
-" a menu index is needed for an option or a parameter, you may pass in:"
+"Some options and methods for menus manipulate specific menu entries. Anytime "
+"a menu index is needed for an option or a parameter, you may pass in:"
 msgstr ""
 
 #: ../../library/tkinter.rst:951
@@ -1630,8 +1625,8 @@ msgstr ""
 
 #: ../../library/tkinter.rst:959
 msgid ""
-"An integer preceded by ``@``, as in ``@6``, where the integer is interpreted"
-" as a y pixel coordinate in the menu's coordinate system;"
+"An integer preceded by ``@``, as in ``@6``, where the integer is interpreted "
+"as a y pixel coordinate in the menu's coordinate system;"
 msgstr ""
 
 #: ../../library/tkinter.rst:962
@@ -1680,8 +1675,8 @@ msgid ""
 "The image object can then be used wherever an ``image`` option is supported "
 "by some widget (e.g. labels, buttons, menus). In these cases, Tk will not "
 "keep a reference to the image. When the last Python reference to the image "
-"object is deleted, the image data is deleted as well, and Tk will display an"
-" empty box wherever the image was used."
+"object is deleted, the image data is deleted as well, and Tk will display an "
+"empty box wherever the image was used."
 msgstr ""
 
 #: ../../library/tkinter.rst:994
@@ -1708,21 +1703,21 @@ msgstr ""
 #: ../../library/tkinter.rst:1015
 msgid ""
 "Since you don't know how many bytes are available for reading, you may not "
-"want to use the :class:`~io.BufferedIOBase` or :class:`~io.TextIOBase` "
-":meth:`~io.BufferedIOBase.read` or :meth:`~io.IOBase.readline` methods, "
-"since these will insist on reading a predefined number of bytes. For "
-"sockets, the :meth:`~socket.socket.recv` or :meth:`~socket.socket.recvfrom` "
-"methods will work fine; for other files, use raw reads or "
-"``os.read(file.fileno(), maxbytecount)``."
+"want to use the :class:`~io.BufferedIOBase` or :class:`~io.TextIOBase` :meth:"
+"`~io.BufferedIOBase.read` or :meth:`~io.IOBase.readline` methods, since "
+"these will insist on reading a predefined number of bytes. For sockets, the :"
+"meth:`~socket.socket.recv` or :meth:`~socket.socket.recvfrom` methods will "
+"work fine; for other files, use raw reads or ``os.read(file.fileno(), "
+"maxbytecount)``."
 msgstr ""
 
 #: ../../library/tkinter.rst:1026
 msgid ""
-"Registers the file handler callback function *func*. The *file* argument may"
-" either be an object with a :meth:`~io.IOBase.fileno` method (such as a file"
-" or socket object), or an integer file descriptor. The *mask* argument is an"
-" ORed combination of any of the three constants below. The callback is "
-"called as follows::"
+"Registers the file handler callback function *func*. The *file* argument may "
+"either be an object with a :meth:`~io.IOBase.fileno` method (such as a file "
+"or socket object), or an integer file descriptor. The *mask* argument is an "
+"ORed combination of any of the three constants below. The callback is called "
+"as follows::"
 msgstr ""
 
 #: ../../library/tkinter.rst:1037

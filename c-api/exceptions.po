@@ -4,16 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Georgij Kozlov <appendix.y.z@gmail.com>, 2023
+# decorator_factory <decorator-factory+transifex@yandex.ru>, 2023
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-05 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
-"Last-Translator: Georgij Kozlov <appendix.y.z@gmail.com>, 2023\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -1620,7 +1621,7 @@ msgstr ""
 #: ../../c-api/exceptions.rst:623 ../../c-api/exceptions.rst:654
 #: ../../c-api/exceptions.rst:669
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../c-api/exceptions.rst:623 ../../c-api/exceptions.rst:654
 #: ../../c-api/exceptions.rst:669

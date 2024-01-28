@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:55+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
@@ -89,7 +89,7 @@ msgid "Added the *ssl_handshake_timeout* parameter."
 msgstr ""
 
 #: ../../library/asyncio-stream.rst:80
-msgid "Added *happy_eyeballs_delay* and *interleave* parameters."
+msgid "Added the *happy_eyeballs_delay* and *interleave* parameters."
 msgstr ""
 
 #: ../../library/asyncio-stream.rst:83 ../../library/asyncio-stream.rst:125

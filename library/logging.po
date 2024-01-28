@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Daniil Kolesnikov, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:09+0000\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -775,15 +779,15 @@ msgid ""
 msgstr ""
 
 #: ../../library/logging.rst:618
-msgid "The *style* parameter."
+msgid "Added the *style* parameter."
 msgstr ""
 
 #: ../../library/logging.rst:621
-msgid "The *validate* parameter."
+msgid "Added the *validate* parameter."
 msgstr ""
 
 #: ../../library/logging.rst:624
-msgid "The *defaults* parameter."
+msgid "Added the *defaults* parameter."
 msgstr ""
 
 #: ../../library/logging.rst:630
@@ -1128,7 +1132,7 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: ../../library/logging.rst:917 ../../library/logging.rst:0
+#: ../../library/logging.rst:0 ../../library/logging.rst:917
 msgid "args"
 msgstr ""
 
@@ -1173,7 +1177,7 @@ msgid ""
 "time`)."
 msgstr ""
 
-#: ../../library/logging.rst:931 ../../library/logging.rst:0
+#: ../../library/logging.rst:0 ../../library/logging.rst:931
 msgid "exc_info"
 msgstr ""
 
@@ -1263,7 +1267,7 @@ msgstr ""
 
 #: ../../library/logging.rst:954
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../library/logging.rst:954
 msgid "``%(module)s``"
@@ -1286,7 +1290,7 @@ msgid ""
 "Millisecond portion of the time when the :class:`LogRecord` was created."
 msgstr ""
 
-#: ../../library/logging.rst:959 ../../library/logging.rst:0
+#: ../../library/logging.rst:0 ../../library/logging.rst:959
 msgid "msg"
 msgstr ""
 
@@ -1297,7 +1301,7 @@ msgid ""
 "messages`)."
 msgstr ""
 
-#: ../../library/logging.rst:964 ../../library/logging.rst:0
+#: ../../library/logging.rst:0 ../../library/logging.rst:964
 msgid "name"
 msgstr ""
 

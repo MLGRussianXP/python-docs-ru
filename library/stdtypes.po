@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -1738,6 +1738,8 @@ msgid ""
 "*reverse* is a boolean value.  If set to ``True``, then the list elements "
 "are sorted as if each comparison were reversed."
 msgstr ""
+"*reverse* - логическое значение. Если установлено значение ``True``, то "
+"элементы списка сортируются так, как если бы каждое сравнение было обратным."
 
 #: ../../library/stdtypes.rst:1313
 msgid ""
@@ -1759,6 +1761,8 @@ msgstr ""
 msgid ""
 "For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`."
 msgstr ""
+"Для примеров сортировки и краткого руководства по сортировке см. :ref:"
+"`sortinghowto`."
 
 #: ../../library/stdtypes.rst:1327
 msgid ""
@@ -6115,7 +6119,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:5681
 msgid "Example::"
-msgstr ""
+msgstr "Пример::"
 
 #: ../../library/stdtypes.rst:5693
 msgid "If you need to disable it entirely, set it to ``0``."
@@ -6169,7 +6173,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:34 ../../library/stdtypes.rst:1154
 #: ../../library/stdtypes.rst:4422
 msgid "statement"
-msgstr ""
+msgstr "инструкция"
 
 #: ../../library/stdtypes.rst:34
 msgid "if"
@@ -6190,7 +6194,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:34 ../../library/stdtypes.rst:81
 #: ../../library/stdtypes.rst:208 ../../library/stdtypes.rst:817
 msgid "Boolean"
-msgstr ""
+msgstr "Логический тип"
 
 #: ../../library/stdtypes.rst:34 ../../library/stdtypes.rst:81
 #: ../../library/stdtypes.rst:393
@@ -6295,7 +6299,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:5155 ../../library/stdtypes.rst:5325
 #: ../../library/stdtypes.rst:5369
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../library/stdtypes.rst:163 ../../library/stdtypes.rst:208
 #: ../../library/stdtypes.rst:229 ../../library/stdtypes.rst:316
@@ -6456,7 +6460,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:335 ../../library/stdtypes.rst:1606
 #: ../../library/stdtypes.rst:2514 ../../library/stdtypes.rst:5405
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../library/stdtypes.rst:335
 msgid "math"
@@ -6634,7 +6638,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:1154 ../../library/stdtypes.rst:4422
 #: ../../library/stdtypes.rst:5155 ../../library/stdtypes.rst:5405
 msgid "type"
-msgstr ""
+msgstr "тип"
 
 #: ../../library/stdtypes.rst:1154
 msgid "assignment"
@@ -6683,7 +6687,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:1504 ../../library/stdtypes.rst:1553
 #: ../../library/stdtypes.rst:1598 ../../library/stdtypes.rst:2317
 msgid "string"
-msgstr ""
+msgstr "строка"
 
 #: ../../library/stdtypes.rst:1504
 msgid "text sequence type"
@@ -6722,7 +6726,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:2125 ../../library/stdtypes.rst:3387
 msgid "universal newlines"
-msgstr ""
+msgstr "универсальные переводы строк"
 
 #: ../../library/stdtypes.rst:2125
 msgid "str.splitlines method"
@@ -6887,7 +6891,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:5390
 msgid "exec"
-msgstr ""
+msgstr "exec"
 
 #: ../../library/stdtypes.rst:5390
 msgid "eval"

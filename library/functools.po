@@ -4,16 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Georgij Kozlov <appendix.y.z@gmail.com>, 2021
+# decorator_factory <decorator-factory+transifex@yandex.ru>, 2021
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-05 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:06+0000\n"
-"Last-Translator: Georgij Kozlov <appendix.y.z@gmail.com>, 2021\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -88,7 +89,7 @@ msgstr ""
 #: ../../library/functools.rst:70 ../../library/functools.rst:142
 #: ../../library/functools.rst:383
 msgid "Example::"
-msgstr ""
+msgstr "Пример::"
 
 #: ../../library/functools.rst:81
 msgid ""
@@ -180,6 +181,8 @@ msgstr ""
 msgid ""
 "For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`."
 msgstr ""
+"Для примеров сортировки и краткого руководства по сортировке см. :ref:"
+"`sortinghowto`."
 
 #: ../../library/functools.rst:154
 msgid ""
@@ -234,7 +237,7 @@ msgstr ""
 
 #: ../../library/functools.rst:197
 msgid ""
-"The wrapped function is instrumented with a :func:`cache_parameters` "
+"The wrapped function is instrumented with a :func:`!cache_parameters` "
 "function that returns a new :class:`dict` showing the values for *maxsize* "
 "and *typed*.  This is for information purposes only.  Mutating the values "
 "has no effect."
@@ -312,7 +315,7 @@ msgid "Added the *user_function* option."
 msgstr ""
 
 #: ../../library/functools.rst:278
-msgid "Added the function :func:`cache_parameters`"
+msgid "Added the function :func:`!cache_parameters`"
 msgstr ""
 
 #: ../../library/functools.rst:283

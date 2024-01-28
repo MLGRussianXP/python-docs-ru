@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:08+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -1607,7 +1607,7 @@ msgstr ""
 
 #: ../../library/io.rst:24
 msgid "file object"
-msgstr ""
+msgstr "файловый объект"
 
 #: ../../library/io.rst:24
 msgid "io module"
@@ -1615,7 +1615,7 @@ msgstr ""
 
 #: ../../library/io.rst:970 ../../library/io.rst:1121
 msgid "universal newlines"
-msgstr ""
+msgstr "универсальные переводы строк"
 
 #: ../../library/io.rst:970
 msgid "io.TextIOWrapper class"

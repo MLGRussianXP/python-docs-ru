@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
@@ -193,7 +193,7 @@ msgstr ""
 msgid "Do not try to reopen an already connected instance."
 msgstr ""
 
-#: ../../library/telnetlib.rst:159
+#: ../../library/telnetlib.rst:161
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``telnetlib.Telnet.open`` with "
 "arguments ``self``, ``host``, ``port``."
@@ -231,7 +231,7 @@ msgid ""
 "connection is closed."
 msgstr ""
 
-#: ../../library/telnetlib.rst:196
+#: ../../library/telnetlib.rst:198
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``telnetlib.Telnet.write`` with "
 "arguments ``self``, ``buffer``."

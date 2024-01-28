@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:19+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -1774,8 +1774,9 @@ msgid ""
 "A class method object, like a static method object, is a wrapper around "
 "another object that alters the way in which that object is retrieved from "
 "classes and class instances. The behaviour of class method objects upon such "
-"retrieval is described above, under \"User-defined methods\". Class method "
-"objects are created by the built-in :func:`classmethod` constructor."
+"retrieval is described above, under :ref:`\"instance methods\" <instance-"
+"methods>`. Class method objects are created by the built-in :func:"
+"`classmethod` constructor."
 msgstr ""
 
 #: ../../reference/datamodel.rst:1534
@@ -3936,7 +3937,7 @@ msgstr ""
 #: ../../reference/datamodel.rst:1299 ../../reference/datamodel.rst:1399
 #: ../../reference/datamodel.rst:1808 ../../reference/datamodel.rst:2823
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../reference/datamodel.rst:14 ../../reference/datamodel.rst:122
 msgid "data"
@@ -3962,7 +3963,7 @@ msgstr ""
 #: ../../reference/datamodel.rst:23 ../../reference/datamodel.rst:122
 #: ../../reference/datamodel.rst:2364
 msgid "type"
-msgstr ""
+msgstr "тип"
 
 #: ../../reference/datamodel.rst:23
 msgid "identity of an object"
@@ -4013,7 +4014,7 @@ msgstr ""
 #: ../../reference/datamodel.rst:856 ../../reference/datamodel.rst:876
 #: ../../reference/datamodel.rst:1053
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../reference/datamodel.rst:122 ../../reference/datamodel.rst:261
 #: ../../reference/datamodel.rst:799
@@ -4062,7 +4063,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:246
 msgid "Boolean"
-msgstr ""
+msgstr "Логический тип"
 
 #: ../../reference/datamodel.rst:246
 msgid "False"
@@ -4125,7 +4126,7 @@ msgstr ""
 #: ../../reference/datamodel.rst:332 ../../reference/datamodel.rst:1697
 #: ../../reference/datamodel.rst:1727
 msgid "string"
-msgstr ""
+msgstr "строка"
 
 #: ../../reference/datamodel.rst:332
 msgid "immutable sequences"
@@ -4184,7 +4185,7 @@ msgstr ""
 #: ../../reference/datamodel.rst:1436 ../../reference/datamodel.rst:1618
 #: ../../reference/datamodel.rst:3112
 msgid "statement"
-msgstr ""
+msgstr "инструкция"
 
 #: ../../reference/datamodel.rst:393
 msgid "array"
@@ -4372,7 +4373,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:856
 msgid "import"
-msgstr ""
+msgstr "импорт"
 
 #: ../../reference/datamodel.rst:876
 msgid "__name__ (module attribute)"
@@ -4760,7 +4761,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:1697
 msgid "format() (built-in function)"
-msgstr ""
+msgstr "format() (встроенная функция)"
 
 #: ../../reference/datamodel.rst:1697
 msgid "print() (built-in function)"

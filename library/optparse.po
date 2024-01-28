@@ -6,15 +6,16 @@
 # Translators:
 # decorator_factory <decorator-factory+transifex@yandex.ru>, 2021
 # 256c6f581e7306f8fe260875df9dd39f_33ba001, 2023
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:10+0000\n"
-"Last-Translator: 256c6f581e7306f8fe260875df9dd39f_33ba001, 2023\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -1359,7 +1360,7 @@ msgstr ""
 #: ../../library/optparse.rst:1163 ../../library/optparse.rst:1181
 #: ../../library/optparse.rst:1220 ../../library/optparse.rst:1258
 msgid "Example::"
-msgstr ""
+msgstr "Пример::"
 
 #: ../../library/optparse.rst:1126
 msgid "As it parses the command line ::"

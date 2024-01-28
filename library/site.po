@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -320,7 +320,7 @@ msgstr ""
 
 #: ../../library/site.rst:16
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../library/site.rst:16
 msgid "search"
@@ -348,11 +348,11 @@ msgstr "комментарий"
 
 #: ../../library/site.rst:52
 msgid "statement"
-msgstr ""
+msgstr "инструкция"
 
 #: ../../library/site.rst:52
 msgid "import"
-msgstr ""
+msgstr "импорт"
 
 #: ../../library/site.rst:77
 msgid "package"
@@ -364,4 +364,4 @@ msgstr ""
 
 #: ../../library/site.rst:77
 msgid "file"
-msgstr ""
+msgstr "файл"

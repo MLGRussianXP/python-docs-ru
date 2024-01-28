@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -1129,7 +1129,7 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:957 ../../reference/simple_stmts.rst:1004
 #: ../../reference/simple_stmts.rst:1034
 msgid "statement"
-msgstr ""
+msgstr "инструкция"
 
 #: ../../reference/simple_stmts.rst:39 ../../reference/simple_stmts.rst:42
 msgid "expression"
@@ -1153,7 +1153,7 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:187 ../../reference/simple_stmts.rst:196
 #: ../../reference/simple_stmts.rst:207 ../../reference/simple_stmts.rst:578
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "None"
@@ -1161,7 +1161,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:56
 msgid "string"
-msgstr ""
+msgstr "строка"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "conversion"
@@ -1520,11 +1520,11 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:741 ../../reference/simple_stmts.rst:844
 msgid "import"
-msgstr ""
+msgstr "импорт"
 
 #: ../../reference/simple_stmts.rst:741
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../reference/simple_stmts.rst:741
 msgid "importing"
@@ -1573,7 +1573,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:985
 msgid "exec"
-msgstr ""
+msgstr "exec"
 
 #: ../../reference/simple_stmts.rst:985
 msgid "eval"
@@ -1589,4 +1589,4 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:1034
 msgid "type"
-msgstr ""
+msgstr "тип"

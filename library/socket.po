@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2024, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
 # 256c6f581e7306f8fe260875df9dd39f_33ba001, 2021
 # Kristina Mironova, 2021
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:13+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: Kristina Mironova, 2021\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -897,7 +898,7 @@ msgstr ""
 msgid "The newly created socket is :ref:`non-inheritable <fd_inheritance>`."
 msgstr ""
 
-#: ../../library/socket.rst:740
+#: ../../library/socket.rst:742
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.__new__`` with arguments "
 "``self``, ``family``, ``type``, ``protocol``."
@@ -1129,7 +1130,7 @@ msgid ""
 "`AF_INET6`), and is meant to be passed to the :meth:`socket.connect` method."
 msgstr ""
 
-#: ../../library/socket.rst:951
+#: ../../library/socket.rst:953
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.getaddrinfo`` with "
 "arguments ``host``, ``port``, ``family``, ``type``, ``protocol``."
@@ -1173,7 +1174,7 @@ msgid ""
 "stack support."
 msgstr ""
 
-#: ../../library/socket.rst:989 ../../library/socket.rst:1005
+#: ../../library/socket.rst:991 ../../library/socket.rst:1007
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.gethostbyname`` with "
 "argument ``hostname``."
@@ -1208,7 +1209,7 @@ msgid ""
 "interpreter is currently executing."
 msgstr ""
 
-#: ../../library/socket.rst:1015
+#: ../../library/socket.rst:1017
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.gethostname`` with no "
 "arguments."
@@ -1231,7 +1232,7 @@ msgid ""
 "`gethostbyaddr` supports both IPv4 and IPv6."
 msgstr ""
 
-#: ../../library/socket.rst:1033
+#: ../../library/socket.rst:1035
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.gethostbyaddr`` with "
 "argument ``ip_address``."
@@ -1256,7 +1257,7 @@ msgid ""
 "For more information about *flags* you can consult :manpage:`getnameinfo(3)`."
 msgstr ""
 
-#: ../../library/socket.rst:1050
+#: ../../library/socket.rst:1052
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.getnameinfo`` with "
 "argument ``sockaddr``."
@@ -1278,7 +1279,7 @@ msgid ""
 "``'udp'``, otherwise any protocol will match."
 msgstr ""
 
-#: ../../library/socket.rst:1072
+#: ../../library/socket.rst:1074
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.getservbyname`` with "
 "arguments ``servicename``, ``protocolname``."
@@ -1291,7 +1292,7 @@ msgid ""
 "``'udp'``, otherwise any protocol will match."
 msgstr ""
 
-#: ../../library/socket.rst:1083
+#: ../../library/socket.rst:1085
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.getservbyport`` with "
 "arguments ``port``, ``protocolname``."
@@ -1480,7 +1481,7 @@ msgid ""
 "you don't have enough rights."
 msgstr ""
 
-#: ../../library/socket.rst:1270
+#: ../../library/socket.rst:1272
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.sethostname`` with "
 "argument ``name``."
@@ -1622,7 +1623,7 @@ msgid ""
 "format of *address* depends on the address family --- see above.)"
 msgstr ""
 
-#: ../../library/socket.rst:1407
+#: ../../library/socket.rst:1409
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.bind`` with arguments "
 "``self``, ``address``."
@@ -1674,7 +1675,7 @@ msgid ""
 "(or the exception raised by the signal handler)."
 msgstr ""
 
-#: ../../library/socket.rst:1448 ../../library/socket.rst:1468
+#: ../../library/socket.rst:1450 ../../library/socket.rst:1470
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.connect`` with arguments "
 "``self``, ``address``."
@@ -1954,7 +1955,7 @@ msgstr ""
 
 #: ../../library/socket.rst:1731
 msgid "Example::"
-msgstr ""
+msgstr "Пример::"
 
 #: ../../library/socket.rst:1754
 msgid ""
@@ -2010,7 +2011,7 @@ msgid ""
 "address family --- see above.)"
 msgstr ""
 
-#: ../../library/socket.rst:1823
+#: ../../library/socket.rst:1825
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.sendto`` with arguments "
 "``self``, ``address``."
@@ -2047,7 +2048,7 @@ msgstr ""
 msgid ":ref:`Availability <availability>`: Unix, not WASI."
 msgstr ""
 
-#: ../../library/socket.rst:1866
+#: ../../library/socket.rst:1868
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``socket.sendmsg`` with arguments "
 "``self``, ``address``."
@@ -2377,7 +2378,7 @@ msgstr ""
 
 #: ../../library/socket.rst:22
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../library/socket.rst:22
 msgid "socket"
@@ -2385,15 +2386,15 @@ msgstr ""
 
 #: ../../library/socket.rst:1582
 msgid "I/O control"
-msgstr ""
+msgstr "управление ввода/вывода"
 
 #: ../../library/socket.rst:1582
 msgid "buffering"
-msgstr ""
+msgstr "буферизация"
 
 #: ../../library/socket.rst:1937
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../library/socket.rst:1937
 msgid "struct"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -35,7 +35,7 @@ msgstr ""
 msgid "**Source code:** :source:`Lib/argparse.py`"
 msgstr ""
 
-#: ../../library/argparse.rstNone
+#: ../../library/argparse.rst-1
 msgid "Tutorial"
 msgstr ""
 
@@ -1079,7 +1079,7 @@ msgstr ""
 
 #: ../../library/argparse.rst:1138
 msgid "type"
-msgstr ""
+msgstr "тип"
 
 #: ../../library/argparse.rst:1140
 msgid ""
@@ -1701,7 +1701,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/argparse.rst:1939
-msgid "The *encodings* and *errors* keyword arguments."
+msgid "Added the *encodings* and *errors* parameters."
 msgstr ""
 
 #: ../../library/argparse.rst:1944

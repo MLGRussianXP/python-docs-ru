@@ -5,15 +5,16 @@
 #
 # Translators:
 # Влад Табаков <vl.tab.kov@gmail.com>, 2021
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: Влад Табаков <vl.tab.kov@gmail.com>, 2021\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -108,7 +109,7 @@ msgstr ""
 
 #: ../../c-api/bytearray.rst:8
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../c-api/bytearray.rst:8
 msgid "bytearray"

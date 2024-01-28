@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -585,7 +585,7 @@ msgstr ""
 
 #: ../../extending/newtypes.rst:56
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../extending/newtypes.rst:56
 msgid "deallocation"
@@ -613,7 +613,7 @@ msgstr ""
 
 #: ../../extending/newtypes.rst:150
 msgid "string"
-msgstr ""
+msgstr "строка"
 
 #: ../../extending/newtypes.rst:150
 msgid "object representation"

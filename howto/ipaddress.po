@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "Nick Coghlan"
 msgstr ""
 
-#: ../../howto/ipaddress.rstNone
+#: ../../howto/ipaddress.rst-1
 msgid "Overview"
 msgstr ""
 

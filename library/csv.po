@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-26 14:13+0000\n"
+"POT-Creation-Date: 2024-02-02 15:40+0000\n"
 "PO-Revision-Date: 2021-06-28 01:03+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -112,20 +112,20 @@ msgstr ""
 msgid ""
 "Return a writer object responsible for converting the user's data into "
 "delimited strings on the given file-like object.  *csvfile* can be any "
-"object with a :func:`write` method.  If *csvfile* is a file object, it "
-"should be opened with ``newline=''`` [1]_.  An optional *dialect* parameter "
-"can be given which is used to define a set of parameters specific to a "
-"particular CSV dialect.  It may be an instance of a subclass of the :class:"
-"`Dialect` class or one of the strings returned by the :func:`list_dialects` "
-"function.  The other optional *fmtparams* keyword arguments can be given to "
-"override individual formatting parameters in the current dialect.  For full "
-"details about dialects and formatting parameters, see the :ref:`csv-fmt-"
-"params` section. To make it as easy as possible to interface with modules "
-"which implement the DB API, the value :const:`None` is written as the empty "
-"string.  While this isn't a reversible transformation, it makes it easier to "
-"dump SQL NULL data values to CSV files without preprocessing the data "
-"returned from a ``cursor.fetch*`` call. All other non-string data are "
-"stringified with :func:`str` before being written."
+"object with a :meth:`~io.TextIOBase.write` method.  If *csvfile* is a file "
+"object, it should be opened with ``newline=''`` [1]_.  An optional *dialect* "
+"parameter can be given which is used to define a set of parameters specific "
+"to a particular CSV dialect.  It may be an instance of a subclass of the :"
+"class:`Dialect` class or one of the strings returned by the :func:"
+"`list_dialects` function.  The other optional *fmtparams* keyword arguments "
+"can be given to override individual formatting parameters in the current "
+"dialect.  For full details about dialects and formatting parameters, see "
+"the :ref:`csv-fmt-params` section. To make it as easy as possible to "
+"interface with modules which implement the DB API, the value :const:`None` "
+"is written as the empty string.  While this isn't a reversible "
+"transformation, it makes it easier to dump SQL NULL data values to CSV files "
+"without preprocessing the data returned from a ``cursor.fetch*`` call. All "
+"other non-string data are stringified with :func:`str` before being written."
 msgstr ""
 
 #: ../../library/csv.rst:118
@@ -213,15 +213,15 @@ msgid ""
 "Create an object which operates like a regular writer but maps dictionaries "
 "onto output rows.  The *fieldnames* parameter is a :mod:`sequence "
 "<collections.abc>` of keys that identify the order in which values in the "
-"dictionary passed to the :meth:`writerow` method are written to file *f*.  "
-"The optional *restval* parameter specifies the value to be written if the "
-"dictionary is missing a key in *fieldnames*.  If the dictionary passed to "
-"the :meth:`writerow` method contains a key not found in *fieldnames*, the "
-"optional *extrasaction* parameter indicates what action to take. If it is "
-"set to ``'raise'``, the default value, a :exc:`ValueError` is raised. If it "
-"is set to ``'ignore'``, extra values in the dictionary are ignored. Any "
-"other optional or keyword arguments are passed to the underlying :class:"
-"`writer` instance."
+"dictionary passed to the :meth:`~csvwriter.writerow` method are written to "
+"file *f*.  The optional *restval* parameter specifies the value to be "
+"written if the dictionary is missing a key in *fieldnames*.  If the "
+"dictionary passed to the :meth:`~csvwriter.writerow` method contains a key "
+"not found in *fieldnames*, the optional *extrasaction* parameter indicates "
+"what action to take. If it is set to ``'raise'``, the default value, a :exc:"
+"`ValueError` is raised. If it is set to ``'ignore'``, extra values in the "
+"dictionary are ignored. Any other optional or keyword arguments are passed "
+"to the underlying :class:`writer` instance."
 msgstr ""
 
 #: ../../library/csv.rst:212
@@ -367,54 +367,54 @@ msgid ""
 "None and to otherwise behave as :data:`QUOTE_ALL`."
 msgstr ""
 
-#: ../../library/csv.rst:356
+#: ../../library/csv.rst:358
 msgid ""
 "Instructs :class:`writer` objects to always place quotes around fields which "
 "are strings.  This is similar to :data:`QUOTE_NONNUMERIC`, except that if a "
 "field value is ``None`` an empty (unquoted) string is written."
 msgstr ""
 
-#: ../../library/csv.rst:360
+#: ../../library/csv.rst:362
 msgid ""
 "Instructs :class:`reader` objects to interpret an empty (unquoted) string as "
 "``None`` and to otherwise behave as :data:`QUOTE_NONNUMERIC`."
 msgstr ""
 
-#: ../../library/csv.rst:363
+#: ../../library/csv.rst:367
 msgid "The :mod:`csv` module defines the following exception:"
 msgstr ""
 
-#: ../../library/csv.rst:368
+#: ../../library/csv.rst:372
 msgid "Raised by any of the functions when an error is detected."
 msgstr ""
 
-#: ../../library/csv.rst:373
+#: ../../library/csv.rst:377
 msgid "Dialects and Formatting Parameters"
 msgstr ""
 
-#: ../../library/csv.rst:375
+#: ../../library/csv.rst:379
 msgid ""
 "To make it easier to specify the format of input and output records, "
 "specific formatting parameters are grouped together into dialects.  A "
-"dialect is a subclass of the :class:`Dialect` class having a set of specific "
-"methods and a single :meth:`validate` method.  When creating :class:`reader` "
-"or :class:`writer` objects, the programmer can specify a string or a "
-"subclass of the :class:`Dialect` class as the dialect parameter.  In "
+"dialect is a subclass of the :class:`Dialect` class containing various "
+"attributes describing the format of the CSV file.  When creating :class:"
+"`reader` or :class:`writer` objects, the programmer can specify a string or "
+"a subclass of the :class:`Dialect` class as the dialect parameter.  In "
 "addition to, or instead of, the *dialect* parameter, the programmer can also "
 "specify individual formatting parameters, which have the same names as the "
 "attributes defined below for the :class:`Dialect` class."
 msgstr ""
 
-#: ../../library/csv.rst:385
+#: ../../library/csv.rst:389
 msgid "Dialects support the following attributes:"
 msgstr ""
 
-#: ../../library/csv.rst:390
+#: ../../library/csv.rst:394
 msgid ""
 "A one-character string used to separate fields.  It defaults to ``','``."
 msgstr ""
 
-#: ../../library/csv.rst:395
+#: ../../library/csv.rst:399
 msgid ""
 "Controls how instances of *quotechar* appearing inside a field should "
 "themselves be quoted.  When :const:`True`, the character is doubled. When :"
@@ -422,13 +422,13 @@ msgid ""
 "defaults to :const:`True`."
 msgstr ""
 
-#: ../../library/csv.rst:400
+#: ../../library/csv.rst:404
 msgid ""
 "On output, if *doublequote* is :const:`False` and no *escapechar* is set, :"
 "exc:`Error` is raised if a *quotechar* is found in a field."
 msgstr ""
 
-#: ../../library/csv.rst:406
+#: ../../library/csv.rst:410
 msgid ""
 "A one-character string used by the writer to escape the *delimiter* if "
 "*quoting* is set to :const:`QUOTE_NONE` and the *quotechar* if *doublequote* "
@@ -437,64 +437,64 @@ msgid ""
 "escaping."
 msgstr ""
 
-#: ../../library/csv.rst:411
+#: ../../library/csv.rst:415
 msgid "An empty *escapechar* is not allowed."
 msgstr ""
 
-#: ../../library/csv.rst:416
+#: ../../library/csv.rst:420
 msgid ""
 "The string used to terminate lines produced by the :class:`writer`. It "
 "defaults to ``'\\r\\n'``."
 msgstr ""
 
-#: ../../library/csv.rst:421
+#: ../../library/csv.rst:425
 msgid ""
 "The :class:`reader` is hard-coded to recognise either ``'\\r'`` or ``'\\n'`` "
 "as end-of-line, and ignores *lineterminator*. This behavior may change in "
 "the future."
 msgstr ""
 
-#: ../../library/csv.rst:428
+#: ../../library/csv.rst:432
 msgid ""
 "A one-character string used to quote fields containing special characters, "
 "such as the *delimiter* or *quotechar*, or which contain new-line "
 "characters.  It defaults to ``'\"'``."
 msgstr ""
 
-#: ../../library/csv.rst:432
+#: ../../library/csv.rst:436
 msgid "An empty *quotechar* is not allowed."
 msgstr ""
 
-#: ../../library/csv.rst:437
+#: ../../library/csv.rst:441
 msgid ""
 "Controls when quotes should be generated by the writer and recognised by the "
 "reader.  It can take on any of the :ref:`QUOTE_\\* constants <csv-"
 "constants>` and defaults to :const:`QUOTE_MINIMAL`."
 msgstr ""
 
-#: ../../library/csv.rst:444
+#: ../../library/csv.rst:448
 msgid ""
 "When :const:`True`, spaces immediately following the *delimiter* are "
 "ignored. The default is :const:`False`."
 msgstr ""
 
-#: ../../library/csv.rst:450
+#: ../../library/csv.rst:454
 msgid ""
 "When ``True``, raise exception :exc:`Error` on bad CSV input. The default is "
 "``False``."
 msgstr ""
 
-#: ../../library/csv.rst:456
+#: ../../library/csv.rst:460
 msgid "Reader Objects"
 msgstr ""
 
-#: ../../library/csv.rst:458
+#: ../../library/csv.rst:462
 msgid ""
 "Reader objects (:class:`DictReader` instances and objects returned by the :"
 "func:`reader` function) have the following public methods:"
 msgstr ""
 
-#: ../../library/csv.rst:463
+#: ../../library/csv.rst:467
 msgid ""
 "Return the next row of the reader's iterable object as a list (if the object "
 "was returned from :func:`reader`) or a dict (if it is a :class:`DictReader` "
@@ -502,39 +502,39 @@ msgid ""
 "should call this as ``next(reader)``."
 msgstr ""
 
-#: ../../library/csv.rst:469
+#: ../../library/csv.rst:473
 msgid "Reader objects have the following public attributes:"
 msgstr ""
 
-#: ../../library/csv.rst:473
+#: ../../library/csv.rst:477
 msgid "A read-only description of the dialect in use by the parser."
 msgstr ""
 
-#: ../../library/csv.rst:478
+#: ../../library/csv.rst:482
 msgid ""
 "The number of lines read from the source iterator. This is not the same as "
 "the number of records returned, as records can span multiple lines."
 msgstr ""
 
-#: ../../library/csv.rst:482
+#: ../../library/csv.rst:486
 msgid "DictReader objects have the following public attribute:"
 msgstr ""
 
-#: ../../library/csv.rst:486
+#: ../../library/csv.rst:490
 msgid ""
 "If not passed as a parameter when creating the object, this attribute is "
 "initialized upon first access or when the first record is read from the file."
 msgstr ""
 
-#: ../../library/csv.rst:493
+#: ../../library/csv.rst:497
 msgid "Writer Objects"
 msgstr ""
 
-#: ../../library/csv.rst:495
+#: ../../library/csv.rst:499
 msgid ""
-":class:`Writer` objects (:class:`DictWriter` instances and objects returned "
+":class:`writer` objects (:class:`DictWriter` instances and objects returned "
 "by the :func:`writer` function) have the following public methods.  A *row* "
-"must be an iterable of strings or numbers for :class:`Writer` objects and a "
+"must be an iterable of strings or numbers for :class:`writer` objects and a "
 "dictionary mapping fieldnames to strings or numbers (by passing them "
 "through :func:`str` first) for :class:`DictWriter` objects.  Note that "
 "complex numbers are written out surrounded by parens. This may cause some "
@@ -542,66 +542,66 @@ msgid ""
 "complex numbers at all)."
 msgstr ""
 
-#: ../../library/csv.rst:506
+#: ../../library/csv.rst:510
 msgid ""
 "Write the *row* parameter to the writer's file object, formatted according "
 "to the current :class:`Dialect`. Return the return value of the call to the "
 "*write* method of the underlying file object."
 msgstr ""
 
-#: ../../library/csv.rst:510
+#: ../../library/csv.rst:514
 msgid "Added support of arbitrary iterables."
 msgstr ""
 
-#: ../../library/csv.rst:515
+#: ../../library/csv.rst:519
 msgid ""
 "Write all elements in *rows* (an iterable of *row* objects as described "
 "above) to the writer's file object, formatted according to the current "
 "dialect."
 msgstr ""
 
-#: ../../library/csv.rst:519
+#: ../../library/csv.rst:523
 msgid "Writer objects have the following public attribute:"
 msgstr ""
 
-#: ../../library/csv.rst:524
+#: ../../library/csv.rst:528
 msgid "A read-only description of the dialect in use by the writer."
 msgstr ""
 
-#: ../../library/csv.rst:527
+#: ../../library/csv.rst:531
 msgid "DictWriter objects have the following public method:"
 msgstr ""
 
-#: ../../library/csv.rst:532
+#: ../../library/csv.rst:536
 msgid ""
 "Write a row with the field names (as specified in the constructor) to the "
 "writer's file object, formatted according to the current dialect. Return the "
 "return value of the :meth:`csvwriter.writerow` call used internally."
 msgstr ""
 
-#: ../../library/csv.rst:537
+#: ../../library/csv.rst:541
 msgid ""
 ":meth:`writeheader` now also returns the value returned by the :meth:"
 "`csvwriter.writerow` method it uses internally."
 msgstr ""
 
-#: ../../library/csv.rst:545
+#: ../../library/csv.rst:549
 msgid "Examples"
 msgstr ""
 
-#: ../../library/csv.rst:547
+#: ../../library/csv.rst:551
 msgid "The simplest example of reading a CSV file::"
 msgstr ""
 
-#: ../../library/csv.rst:555
+#: ../../library/csv.rst:559
 msgid "Reading a file with an alternate format::"
 msgstr ""
 
-#: ../../library/csv.rst:563
+#: ../../library/csv.rst:567
 msgid "The corresponding simplest possible writing example is::"
 msgstr ""
 
-#: ../../library/csv.rst:570
+#: ../../library/csv.rst:574
 msgid ""
 "Since :func:`open` is used to open a CSV file for reading, the file will by "
 "default be decoded into unicode using the system default encoding (see :func:"
@@ -609,33 +609,33 @@ msgid ""
 "``encoding`` argument of open::"
 msgstr ""
 
-#: ../../library/csv.rst:581
+#: ../../library/csv.rst:585
 msgid ""
 "The same applies to writing in something other than the system default "
 "encoding: specify the encoding argument when opening the output file."
 msgstr ""
 
-#: ../../library/csv.rst:584
+#: ../../library/csv.rst:588
 msgid "Registering a new dialect::"
 msgstr ""
 
-#: ../../library/csv.rst:591
+#: ../../library/csv.rst:595
 msgid ""
 "A slightly more advanced use of the reader --- catching and reporting "
 "errors::"
 msgstr ""
 
-#: ../../library/csv.rst:603
+#: ../../library/csv.rst:607
 msgid ""
 "And while the module doesn't directly support parsing strings, it can easily "
 "be done::"
 msgstr ""
 
-#: ../../library/csv.rst:612
+#: ../../library/csv.rst:616
 msgid "Footnotes"
 msgstr "Сноски"
 
-#: ../../library/csv.rst:613
+#: ../../library/csv.rst:617
 msgid ""
 "If ``newline=''`` is not specified, newlines embedded inside quoted fields "
 "will not be interpreted correctly, and on platforms that use ``\\r\\n`` "

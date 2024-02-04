@@ -6,15 +6,16 @@
 # Translators:
 # Kristina Mironova, 2021
 # alex alev <alex.alev@bk.ru>, 2021
+# Daniil Kolesnikov, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 14:14+0000\n"
+"POT-Creation-Date: 2024-02-02 15:40+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: alex alev <alex.alev@bk.ru>, 2021\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -78,34 +79,30 @@ msgid ""
 "Remove the first item from the list whose value is equal to *x*.  It raises "
 "a :exc:`ValueError` if there is no such item."
 msgstr ""
+"Удаление первого элемента списка, чье значение равно *x*.  Возбуждает :exc:"
+"`ValueError` если такого элемента нет."
 
 #: ../../tutorial/datastructures.rst:50
 msgid ""
 "Remove the item at the given position in the list, and return it.  If no "
 "index is specified, ``a.pop()`` removes and returns the last item in the "
-"list.  (The square brackets around the *i* in the method signature denote "
-"that the parameter is optional, not that you should type square brackets at "
-"that position.  You will see this notation frequently in the Python Library "
-"Reference.)"
+"list. It raises an :exc:`IndexError` if the list is empty or the index is "
+"outside the list range."
 msgstr ""
-"Удаляет элемент из выбранной позиции в списке и возвращает его. Если индекс "
-"не указан, ``a.pop()`` удаляет и возвращает послежний элемент списка. "
-"(Квадратные скобки в напиании метода вокруг *i* означают, что данный "
-"парамент необязательный, а не то, что необходимо печатать квадратные скобки "
-"в этом месте. Вы часто будете видеть такое обозначение в Справочнике языка "
-"Python.)"
 
-#: ../../tutorial/datastructures.rst:60
+#: ../../tutorial/datastructures.rst:59
 msgid "Remove all items from the list.  Equivalent to ``del a[:]``."
 msgstr "Удаление всех элементов списка. Эквивалентно ``del a[:]``."
 
-#: ../../tutorial/datastructures.rst:66
+#: ../../tutorial/datastructures.rst:65
 msgid ""
 "Return zero-based index in the list of the first item whose value is equal "
 "to *x*. Raises a :exc:`ValueError` if there is no such item."
 msgstr ""
+"Возвращает отсчитываемый от нуля индекс первого элемента списка, чье "
+"значение равно *x*. Возбуждает :exc:`ValueError` если такого элемента нет."
 
-#: ../../tutorial/datastructures.rst:69
+#: ../../tutorial/datastructures.rst:68
 msgid ""
 "The optional arguments *start* and *end* are interpreted as in the slice "
 "notation and are used to limit the search to a particular subsequence of the "
@@ -117,11 +114,11 @@ msgstr ""
 "подпоследовательностью списка. Возвращаемый индекс рассчитывается "
 "относительно начала полной последовательности, а не аргумента *start*."
 
-#: ../../tutorial/datastructures.rst:78
+#: ../../tutorial/datastructures.rst:77
 msgid "Return the number of times *x* appears in the list."
 msgstr "Возвращает количество раз, которое *x* появляется в списке."
 
-#: ../../tutorial/datastructures.rst:84
+#: ../../tutorial/datastructures.rst:83
 msgid ""
 "Sort the items of the list in place (the arguments can be used for sort "
 "customization, see :func:`sorted` for their explanation)."
@@ -129,27 +126,31 @@ msgstr ""
 "Сортировка элементов списка на месте (аргументы могут использоваться для "
 "настройки сортировки, смотри :func:`sorted` для их пояснения)."
 
-#: ../../tutorial/datastructures.rst:91
+#: ../../tutorial/datastructures.rst:90
 msgid "Reverse the elements of the list in place."
 msgstr "Переворачивает элементы списка на месте."
 
-#: ../../tutorial/datastructures.rst:97
+#: ../../tutorial/datastructures.rst:96
 msgid "Return a shallow copy of the list.  Equivalent to ``a[:]``."
 msgstr "Возвращает уменьшенную копию списка. Эквивалентно ``a[:]``."
 
-#: ../../tutorial/datastructures.rst:100
+#: ../../tutorial/datastructures.rst:99
 msgid "An example that uses most of the list methods::"
 msgstr "Пример, который использует большиство методов списка::"
 
-#: ../../tutorial/datastructures.rst:123
+#: ../../tutorial/datastructures.rst:122
 msgid ""
 "You might have noticed that methods like ``insert``, ``remove`` or ``sort`` "
 "that only modify the list have no return value printed -- they return the "
 "default ``None``. [#]_  This is a design principle for all mutable data "
 "structures in Python."
 msgstr ""
+"Вы могли заметить, что методы, как ``insert``, ``remove`` или ``sort``, "
+"которые только изменяют список, не возвращают значений на экран - они "
+"возвращают значение по умолчанию ``None``. [#]_  Это принцип работы для всех "
+"изменяемых структур данных в Python."
 
-#: ../../tutorial/datastructures.rst:128
+#: ../../tutorial/datastructures.rst:127
 msgid ""
 "Another thing you might notice is that not all data can be sorted or "
 "compared.  For instance, ``[None, 'hello', 10]`` doesn't sort because "
@@ -157,12 +158,18 @@ msgid ""
 "types.  Also, there are some types that don't have a defined ordering "
 "relation.  For example, ``3+4j < 5+7j`` isn't a valid comparison."
 msgstr ""
+"Другое, что вы можете заметить, это то, что не все данные могут быть "
+"отсортированы или сравнены. Например, ``[None, 'hello', 10]`` не "
+"сортируется, потому что целые числа не могут быть сравнены со строками, а "
+"*None* не может быть сравнен с другими типами. Также есть некоторые типы, у "
+"которых нет определенного порядка. Например, ``3+4j < 5+7j`` не является "
+"верным сравнением."
 
-#: ../../tutorial/datastructures.rst:139
+#: ../../tutorial/datastructures.rst:138
 msgid "Using Lists as Stacks"
 msgstr "Использование списка в качестве стека"
 
-#: ../../tutorial/datastructures.rst:144
+#: ../../tutorial/datastructures.rst:143
 msgid ""
 "The list methods make it very easy to use a list as a stack, where the last "
 "element added is the first element retrieved (\"last-in, first-out\").  To "
@@ -170,12 +177,17 @@ msgid ""
 "an item from the top of the stack, use :meth:`~list.pop` without an explicit "
 "index.  For example::"
 msgstr ""
+"Методы списка делают очень простым использование списка как стека, где "
+"добавленный последний элемент это первый запрашиваемый  элемент (\"последним "
+"пришел, первым ушел\"). Для добавления элемента в стек используйте :meth:"
+"`~list.append`. Чтобы получить элемент с вершины стека, используйте :meth:"
+"`~list.pop` без явного указания индекса. Например::"
 
-#: ../../tutorial/datastructures.rst:169
+#: ../../tutorial/datastructures.rst:168
 msgid "Using Lists as Queues"
 msgstr "Использование списка в качестве очереди"
 
-#: ../../tutorial/datastructures.rst:173
+#: ../../tutorial/datastructures.rst:172
 msgid ""
 "It is also possible to use a list as a queue, where the first element added "
 "is the first element retrieved (\"first-in, first-out\"); however, lists are "
@@ -190,7 +202,7 @@ msgstr ""
 "начала списка является медленным (потому что все остальные элементы должны "
 "быть сдвинуты на один)."
 
-#: ../../tutorial/datastructures.rst:179
+#: ../../tutorial/datastructures.rst:178
 msgid ""
 "To implement a queue, use :class:`collections.deque` which was designed to "
 "have fast appends and pops from both ends.  For example::"
@@ -199,11 +211,11 @@ msgstr ""
 "создан для быстрого добавления и извлечения элементов с обоих концов. "
 "Например::"
 
-#: ../../tutorial/datastructures.rst:197
+#: ../../tutorial/datastructures.rst:196
 msgid "List Comprehensions"
 msgstr "Компоновка списка"
 
-#: ../../tutorial/datastructures.rst:199
+#: ../../tutorial/datastructures.rst:198
 msgid ""
 "List comprehensions provide a concise way to create lists. Common "
 "applications are to make new lists where each element is the result of some "
@@ -216,12 +228,12 @@ msgstr ""
 "или итерируемого объекта, или создать подпоследовательность этих элементов, "
 "которые удовлетворяют определенному условию."
 
-#: ../../tutorial/datastructures.rst:204
+#: ../../tutorial/datastructures.rst:203
 msgid "For example, assume we want to create a list of squares, like::"
 msgstr ""
 "Например, предположим, мы хотим создать список из квадратов элементов, как::"
 
-#: ../../tutorial/datastructures.rst:213
+#: ../../tutorial/datastructures.rst:212
 msgid ""
 "Note that this creates (or overwrites) a variable named ``x`` that still "
 "exists after the loop completes.  We can calculate the list of squares "
@@ -231,15 +243,15 @@ msgstr ""
 "которая продолжает существовать после того, как цикл завершится. Мы можем "
 "рассчитать список квадратов без каких-либо побочных эффектов, используя::"
 
-#: ../../tutorial/datastructures.rst:219
+#: ../../tutorial/datastructures.rst:218
 msgid "or, equivalently::"
 msgstr "или, эквивалентно::"
 
-#: ../../tutorial/datastructures.rst:223
+#: ../../tutorial/datastructures.rst:222
 msgid "which is more concise and readable."
 msgstr "что выглядит более лаконично и читабельно."
 
-#: ../../tutorial/datastructures.rst:225
+#: ../../tutorial/datastructures.rst:224
 msgid ""
 "A list comprehension consists of brackets containing an expression followed "
 "by a :keyword:`!for` clause, then zero or more :keyword:`!for` or :keyword:`!"
@@ -248,12 +260,18 @@ msgid ""
 "which follow it. For example, this listcomp combines the elements of two "
 "lists if they are not equal::"
 msgstr ""
+"Списковое включение состоит из скобок, содержащих выражение, за которым "
+"следует фраза :keyword:`!for`, затем ноль или более фраз :keyword:`!for` "
+"или :keyword:`!if`. Результатом будет новый список, полученный вычислением "
+"выражения в контексте фраз :keyword:`!for` и :keyword:`!if`, следующих за "
+"ним. Например, это списковое включение комбинирует элементы из двух списков, "
+"если они не равны::"
 
-#: ../../tutorial/datastructures.rst:235
+#: ../../tutorial/datastructures.rst:234
 msgid "and it's equivalent to::"
 msgstr "и это эквивалетно::"
 
-#: ../../tutorial/datastructures.rst:246
+#: ../../tutorial/datastructures.rst:245
 msgid ""
 "Note how the order of the :keyword:`for` and :keyword:`if` statements is the "
 "same in both these snippets."
@@ -261,7 +279,7 @@ msgstr ""
 "Обратите внимание, что порядок ключевых слов :keyword:`for` и :keyword:`if` "
 "выражения одинаковый для обоих фрагментов."
 
-#: ../../tutorial/datastructures.rst:249
+#: ../../tutorial/datastructures.rst:248
 msgid ""
 "If the expression is a tuple (e.g. the ``(x, y)`` in the previous example), "
 "it must be parenthesized. ::"
@@ -269,17 +287,17 @@ msgstr ""
 "Если выражение является кортежем (то есть ``(x, y)``, как в предыдущем "
 "примере), оно должно заключаться в скобки. ::"
 
-#: ../../tutorial/datastructures.rst:280
+#: ../../tutorial/datastructures.rst:279
 msgid ""
 "List comprehensions can contain complex expressions and nested functions::"
 msgstr ""
 "Компоновка списка может содержать сложные выражения и вложенные функции::"
 
-#: ../../tutorial/datastructures.rst:287
+#: ../../tutorial/datastructures.rst:286
 msgid "Nested List Comprehensions"
 msgstr "Компоновка вложенных списков"
 
-#: ../../tutorial/datastructures.rst:289
+#: ../../tutorial/datastructures.rst:288
 msgid ""
 "The initial expression in a list comprehension can be any arbitrary "
 "expression, including another list comprehension."
@@ -287,7 +305,7 @@ msgstr ""
 "Исходным выражением компоновки может быть любое произвольное выражение, "
 "включая другое списочное включение."
 
-#: ../../tutorial/datastructures.rst:292
+#: ../../tutorial/datastructures.rst:291
 msgid ""
 "Consider the following example of a 3x4 matrix implemented as a list of 3 "
 "lists of length 4::"
@@ -295,22 +313,24 @@ msgstr ""
 "Рассмотрим следующий пример матрицы 3x4, реализованной в виде списка из 3 "
 "списков длины 4::"
 
-#: ../../tutorial/datastructures.rst:301
+#: ../../tutorial/datastructures.rst:300
 msgid "The following list comprehension will transpose rows and columns::"
 msgstr "Следующая компоновка списка транспонирует ряды и столбцы::"
 
-#: ../../tutorial/datastructures.rst:306
+#: ../../tutorial/datastructures.rst:305
 msgid ""
 "As we saw in the previous section, the inner list comprehension is evaluated "
 "in the context of the :keyword:`for` that follows it, so this example is "
 "equivalent to::"
 msgstr ""
+"Как мы видели в предыдущей секции, вложенное списковое включение вычисляется "
+"для содержимого :keyword:`for`, которое за ним следует, и это эквивалентно::"
 
-#: ../../tutorial/datastructures.rst:317
+#: ../../tutorial/datastructures.rst:316
 msgid "which, in turn, is the same as::"
 msgstr "что, в свою очередь, тоже самое, что::"
 
-#: ../../tutorial/datastructures.rst:330
+#: ../../tutorial/datastructures.rst:329
 msgid ""
 "In the real world, you should prefer built-in functions to complex flow "
 "statements. The :func:`zip` function would do a great job for this use case::"
@@ -318,17 +338,17 @@ msgstr ""
 "В реальном мире вы должны предпочесть встроенные функции сложным операторам "
 "потока. Функция :func:`zip` отлично подойдет для этого случая использования::"
 
-#: ../../tutorial/datastructures.rst:336
+#: ../../tutorial/datastructures.rst:335
 msgid ""
 "See :ref:`tut-unpacking-arguments` for details on the asterisk in this line."
 msgstr ""
 "Смотри :ref:`tut-unpacking-arguments` для информации о сноске в этой строке."
 
-#: ../../tutorial/datastructures.rst:341
+#: ../../tutorial/datastructures.rst:340
 msgid "The :keyword:`!del` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!del`"
 
-#: ../../tutorial/datastructures.rst:343
+#: ../../tutorial/datastructures.rst:342
 msgid ""
 "There is a way to remove an item from a list given its index instead of its "
 "value: the :keyword:`del` statement.  This differs from the :meth:`~list."
@@ -336,13 +356,18 @@ msgid ""
 "be used to remove slices from a list or clear the entire list (which we did "
 "earlier by assignment of an empty list to the slice).  For example::"
 msgstr ""
+"Есть способ удалить элемент из списка по его индексу вместо значения: "
+"инструкция :keyword:`del`. Это отличается от метода :meth:`~list.pop`, "
+"который возвращает значение. Инструкция :keyword:`!del` также может "
+"использоваться для удаления срезов из списка или очистки всего списка (что "
+"мы сделали ранее, присвоив пустой список срезу). Например::"
 
-#: ../../tutorial/datastructures.rst:360
+#: ../../tutorial/datastructures.rst:359
 msgid ":keyword:`del` can also be used to delete entire variables::"
 msgstr ""
 ":keyword:`del` может также быть использовано для удаления целых переменных::"
 
-#: ../../tutorial/datastructures.rst:364
+#: ../../tutorial/datastructures.rst:363
 msgid ""
 "Referencing the name ``a`` hereafter is an error (at least until another "
 "value is assigned to it).  We'll find other uses for :keyword:`del` later."
@@ -351,11 +376,11 @@ msgstr ""
 "будет присвоено другое значение). Мы найдем другие примеры использования :"
 "keyword:`del` позже."
 
-#: ../../tutorial/datastructures.rst:371
+#: ../../tutorial/datastructures.rst:370
 msgid "Tuples and Sequences"
 msgstr "Кортежи и последовательности"
 
-#: ../../tutorial/datastructures.rst:373
+#: ../../tutorial/datastructures.rst:372
 msgid ""
 "We saw that lists and strings have many common properties, such as indexing "
 "and slicing operations.  They are two examples of *sequence* data types "
@@ -370,12 +395,12 @@ msgstr ""
 "последовательности. Существует также еще один стандартный тип данных "
 "последовательности: *кортеж*."
 
-#: ../../tutorial/datastructures.rst:379
+#: ../../tutorial/datastructures.rst:378
 msgid ""
 "A tuple consists of a number of values separated by commas, for instance::"
 msgstr "Кортеж состоит из числа переменных, разделенных запятой, например::"
 
-#: ../../tutorial/datastructures.rst:401
+#: ../../tutorial/datastructures.rst:400
 msgid ""
 "As you see, on output tuples are always enclosed in parentheses, so that "
 "nested tuples are interpreted correctly; they may be input with or without "
@@ -391,7 +416,7 @@ msgstr ""
 "кортежа, однако возможно создавать кортежи, содержащие изменяемые объекты, "
 "как списки."
 
-#: ../../tutorial/datastructures.rst:408
+#: ../../tutorial/datastructures.rst:407
 msgid ""
 "Though tuples may seem similar to lists, they are often used in different "
 "situations and for different purposes. Tuples are :term:`immutable`, and "
@@ -409,7 +434,7 @@ msgstr ""
 "term:`mutable`, и их лементы обычно гомогенные и доступны через итерирование "
 "по списку."
 
-#: ../../tutorial/datastructures.rst:416
+#: ../../tutorial/datastructures.rst:415
 msgid ""
 "A special problem is the construction of tuples containing 0 or 1 items: the "
 "syntax has some extra quirks to accommodate these.  Empty tuples are "
@@ -423,7 +448,7 @@ msgstr ""
 "элементом строится, следуя за значением с запятой (недостаточно заключить "
 "одно значение в скобки). Некрасиво, но эффективно. Например::"
 
-#: ../../tutorial/datastructures.rst:431
+#: ../../tutorial/datastructures.rst:430
 msgid ""
 "The statement ``t = 12345, 54321, 'hello!'`` is an example of *tuple "
 "packing*: the values ``12345``, ``54321`` and ``'hello!'`` are packed "
@@ -433,7 +458,7 @@ msgstr ""
 "значения ``12345``, ``54321`` and ``'hello!'`` упакованы в кортеж. Обратная "
 "операция тоже возможна::"
 
-#: ../../tutorial/datastructures.rst:437
+#: ../../tutorial/datastructures.rst:436
 msgid ""
 "This is called, appropriately enough, *sequence unpacking* and works for any "
 "sequence on the right-hand side.  Sequence unpacking requires that there are "
@@ -448,11 +473,11 @@ msgstr ""
 "назначение - это просто комбинация упаковки кортежей и распаковки "
 "последовательности."
 
-#: ../../tutorial/datastructures.rst:447
+#: ../../tutorial/datastructures.rst:446
 msgid "Sets"
 msgstr "Множества"
 
-#: ../../tutorial/datastructures.rst:449
+#: ../../tutorial/datastructures.rst:448
 msgid ""
 "Python also includes a data type for *sets*.  A set is an unordered "
 "collection with no duplicate elements.  Basic uses include membership "
@@ -466,7 +491,7 @@ msgstr ""
 "записей. Объекты множеств также поддерживают математические операции, такие "
 "как объединение, пересечение, разность и симметричная разность."
 
-#: ../../tutorial/datastructures.rst:454
+#: ../../tutorial/datastructures.rst:453
 msgid ""
 "Curly braces or the :func:`set` function can be used to create sets.  Note: "
 "to create an empty set you have to use ``set()``, not ``{}``; the latter "
@@ -478,11 +503,11 @@ msgstr ""
 "``set()``, а не ``{}``; последний создает пустой словарь, структуру данных, "
 "которую мы обсудим в следующем разделе."
 
-#: ../../tutorial/datastructures.rst:458
+#: ../../tutorial/datastructures.rst:457
 msgid "Here is a brief demonstration::"
 msgstr "Вот краткая демонстрация::"
 
-#: ../../tutorial/datastructures.rst:483
+#: ../../tutorial/datastructures.rst:482
 msgid ""
 "Similarly to :ref:`list comprehensions <tut-listcomps>`, set comprehensions "
 "are also supported::"
@@ -490,11 +515,11 @@ msgstr ""
 "Аналогично с компоновкой списка :ref:`list comprehensions <tut-listcomps>`, "
 "компоновка множеств также поддерживается::"
 
-#: ../../tutorial/datastructures.rst:494
+#: ../../tutorial/datastructures.rst:493
 msgid "Dictionaries"
 msgstr "Словари"
 
-#: ../../tutorial/datastructures.rst:496
+#: ../../tutorial/datastructures.rst:495
 msgid ""
 "Another useful data type built into Python is the *dictionary* (see :ref:"
 "`typesmapping`). Dictionaries are sometimes found in other languages as "
@@ -507,8 +532,19 @@ msgid ""
 "in place using index assignments, slice assignments, or methods like :meth:"
 "`~list.append` and :meth:`~list.extend`."
 msgstr ""
+"Другой полезной структурой данных, встроенной в Python, являются *словари* "
+"(см. :ref:`typesmapping`). В других языках словари иногда можно встретить "
+"как \"ассоциативную память\" или \"ассоциативные массивы\".  В отличие от "
+"последовательностей, которые индексированы диапазоном чисел, словари "
+"индексируются по *ключам*, которыми могут быть любые неизменяемые типы; "
+"строки и числа всегда могут быть ключами. Кортежи могут быть ключами, только "
+"если они содержат только строки, числа или кортежи; если кортеж содержит "
+"любой изменяемый объект прямо или косвенно, он не может использоваться как "
+"ключ. Вы не можете использовать списки в качестве ключей, так как списки "
+"могут быть изменены на месте с помощью присваиваний индексов, присваиваний "
+"срезов или таких методов, как :meth:`~list.append` и :meth:`~list.extend`."
 
-#: ../../tutorial/datastructures.rst:507
+#: ../../tutorial/datastructures.rst:506
 msgid ""
 "It is best to think of a dictionary as a set of *key: value* pairs, with the "
 "requirement that the keys are unique (within one dictionary). A pair of "
@@ -516,8 +552,14 @@ msgid ""
 "of key:value pairs within the braces adds initial key:value pairs to the "
 "dictionary; this is also the way dictionaries are written on output."
 msgstr ""
+"Лучше всего рассматривать словарь как неупорядоченное множество пар *ключ: "
+"значение*, с требованием, чтобы ключи были уникальными (внутри одного "
+"словаря). Пара скобок создает пустой словарь: ``{}``. Размещение "
+"разделенного запятыми списка пар ключ:значение в фигурных скобках добавляет "
+"в словарь начальные пары ключ:значение; это также способ отображения "
+"словарей на выходе."
 
-#: ../../tutorial/datastructures.rst:513
+#: ../../tutorial/datastructures.rst:512
 msgid ""
 "The main operations on a dictionary are storing a value with some key and "
 "extracting the value given the key.  It is also possible to delete a key:"
@@ -531,19 +573,23 @@ msgstr ""
 "существующий ключ, старое значение, связанное с этим ключом, будет заменено "
 "новым. Использование несуществующего ключа приведет к ошибке."
 
-#: ../../tutorial/datastructures.rst:519
+#: ../../tutorial/datastructures.rst:518
 msgid ""
 "Performing ``list(d)`` on a dictionary returns a list of all the keys used "
 "in the dictionary, in insertion order (if you want it sorted, just use "
 "``sorted(d)`` instead). To check whether a single key is in the dictionary, "
 "use the :keyword:`in` keyword."
 msgstr ""
+"Выполнение ``list(d)`` на словаре возвращает список всех ключей, "
+"используемых в словаре, в порядке добавления (если вы хотите его "
+"отсортировать, просто используйте ``sorted(d)``). Чтобы проверить, находится "
+"ли конкретный ключ в словаре, используйте ключевое слово :keyword:`in`."
 
-#: ../../tutorial/datastructures.rst:524
+#: ../../tutorial/datastructures.rst:523
 msgid "Here is a small example using a dictionary::"
 msgstr "Вот небольшой пример использования словаря::"
 
-#: ../../tutorial/datastructures.rst:545
+#: ../../tutorial/datastructures.rst:544
 msgid ""
 "The :func:`dict` constructor builds dictionaries directly from sequences of "
 "key-value pairs::"
@@ -551,7 +597,7 @@ msgstr ""
 "Конструктор :func:`dict` построит словарь прямо из последовательности пар "
 "ключ-значение::"
 
-#: ../../tutorial/datastructures.rst:551
+#: ../../tutorial/datastructures.rst:550
 msgid ""
 "In addition, dict comprehensions can be used to create dictionaries from "
 "arbitrary key and value expressions::"
@@ -559,7 +605,7 @@ msgstr ""
 "В дополнение, для создания словарей может быть использована компоновка, "
 "используя произвольные ключ и значение в выражении::"
 
-#: ../../tutorial/datastructures.rst:557
+#: ../../tutorial/datastructures.rst:556
 msgid ""
 "When the keys are simple strings, it is sometimes easier to specify pairs "
 "using keyword arguments::"
@@ -567,17 +613,19 @@ msgstr ""
 "Когда ключи являются обычными строками, иногда проще обозначить пары "
 "используя ключевые аргументы::"
 
-#: ../../tutorial/datastructures.rst:567
+#: ../../tutorial/datastructures.rst:566
 msgid "Looping Techniques"
-msgstr ""
+msgstr "Техники зацикливания"
 
-#: ../../tutorial/datastructures.rst:569
+#: ../../tutorial/datastructures.rst:568
 msgid ""
 "When looping through dictionaries, the key and corresponding value can be "
 "retrieved at the same time using the :meth:`~dict.items` method. ::"
 msgstr ""
+"При циклическом просмотре словарей ключ и соответствующее значение могут "
+"быть получены одновременно с помощью метода :meth:`~dict.items`. ::"
 
-#: ../../tutorial/datastructures.rst:579
+#: ../../tutorial/datastructures.rst:578
 msgid ""
 "When looping through a sequence, the position index and corresponding value "
 "can be retrieved at the same time using the :func:`enumerate` function. ::"
@@ -586,49 +634,65 @@ msgstr ""
 "соответствующее значение могут быть получены одновременно с помощью функции :"
 "func:`enumerate` function. ::"
 
-#: ../../tutorial/datastructures.rst:589
+#: ../../tutorial/datastructures.rst:588
 msgid ""
 "To loop over two or more sequences at the same time, the entries can be "
 "paired with the :func:`zip` function. ::"
 msgstr ""
+"Для перебора двух или более последовательностей одновременно, записи могут "
+"быть сопоставлены с помощью функции :func:`zip`. ::"
 
-#: ../../tutorial/datastructures.rst:601
+#: ../../tutorial/datastructures.rst:600
 msgid ""
 "To loop over a sequence in reverse, first specify the sequence in a forward "
 "direction and then call the :func:`reversed` function. ::"
 msgstr ""
+"Для перебора последовательности в обратном порядке сначала укажите "
+"последовательность в прямом направлении, а затем вызовите функцию :func:"
+"`reversed`. ::"
 
-#: ../../tutorial/datastructures.rst:613
+#: ../../tutorial/datastructures.rst:612
 msgid ""
 "To loop over a sequence in sorted order, use the :func:`sorted` function "
 "which returns a new sorted list while leaving the source unaltered. ::"
 msgstr ""
+"Для перебора последовательности в отсортированном порядке используйте "
+"функцию :func:`sorted`, которая возвращает новый отсортированный список, "
+"оставляя исходную последовательность неизменной. ::"
 
-#: ../../tutorial/datastructures.rst:627
+#: ../../tutorial/datastructures.rst:626
 msgid ""
 "Using :func:`set` on a sequence eliminates duplicate elements. The use of :"
 "func:`sorted` in combination with :func:`set` over a sequence is an "
 "idiomatic way to loop over unique elements of the sequence in sorted "
 "order. ::"
 msgstr ""
+"Использование :func:`set` в последовательности удаляет повторяющиеся "
+"элементы. Использование :func:`sorted` в сочетании с :func:`set` над "
+"последовательностью является идиоматическим способом обхода уникальных "
+"элементов последовательности в отсортированном порядке. ::"
 
-#: ../../tutorial/datastructures.rst:640
+#: ../../tutorial/datastructures.rst:639
 msgid ""
 "It is sometimes tempting to change a list while you are looping over it; "
 "however, it is often simpler and safer to create a new list instead. ::"
 msgstr ""
+"Иногда хочется изменить список во время его обхода; однако часто проще и "
+"безопаснее вместо этого создать новый список. ::"
 
-#: ../../tutorial/datastructures.rst:657
+#: ../../tutorial/datastructures.rst:656
 msgid "More on Conditions"
-msgstr ""
+msgstr "Больше о условиях"
 
-#: ../../tutorial/datastructures.rst:659
+#: ../../tutorial/datastructures.rst:658
 msgid ""
 "The conditions used in ``while`` and ``if`` statements can contain any "
 "operators, not just comparisons."
 msgstr ""
+"Условия, используемые в инструкциях ``while`` и ``if``, могут содержать "
+"любые операторы, а не только сравнения."
 
-#: ../../tutorial/datastructures.rst:663
+#: ../../tutorial/datastructures.rst:662
 msgid ""
 "The comparison operators ``in`` and ``not in`` are membership tests that "
 "determine whether a value is in (or not in) a container.  The operators "
@@ -636,14 +700,21 @@ msgid ""
 "object.  All comparison operators have the same priority, which is lower "
 "than that of all numerical operators."
 msgstr ""
+"Операторы сравнения ``in`` и ``not in`` являются проверками принадлежности, "
+"которые определяют, находится ли значение в (или не в) контейнере. Операторы "
+"``is`` и ``is not`` сравнивают, являются ли два объекта действительно одним "
+"и тем же объектом. Все операторы сравнения имеют одинаковый приоритет, "
+"который ниже, чем у всех числовых операторов."
 
-#: ../../tutorial/datastructures.rst:669
+#: ../../tutorial/datastructures.rst:668
 msgid ""
 "Comparisons can be chained.  For example, ``a < b == c`` tests whether ``a`` "
 "is less than ``b`` and moreover ``b`` equals ``c``."
 msgstr ""
+"Сравнения можно объединять в цепочки. Например, ``a < b == c`` проверяет, "
+"является ли ``a`` меньше ``b`` и, кроме того, равно ли ``b`` ``c``."
 
-#: ../../tutorial/datastructures.rst:672
+#: ../../tutorial/datastructures.rst:671
 msgid ""
 "Comparisons may be combined using the Boolean operators ``and`` and ``or``, "
 "and the outcome of a comparison (or of any other Boolean expression) may be "
@@ -652,8 +723,15 @@ msgid ""
 "lowest, so that ``A and not B or C`` is equivalent to ``(A and (not B)) or "
 "C``. As always, parentheses can be used to express the desired composition."
 msgstr ""
+"Сравнения могут быть объединены с использованием логических операторов "
+"``and`` и ``or``, и результат сравнения (или любого другого логического "
+"выражения) можно отрицать с помощью ``not``. Они имеют более низкий "
+"приоритет, чем операторы сравнения; среди них ``not`` имеет наивысший "
+"приоритет, а ``or`` - наименьший, так что ``A and not B or C`` эквивалентно "
+"``(A and (not B)) or C``. Как всегда, скобки могут быть использованы для "
+"выражения желаемой композиции."
 
-#: ../../tutorial/datastructures.rst:679
+#: ../../tutorial/datastructures.rst:678
 msgid ""
 "The Boolean operators ``and`` and ``or`` are so-called *short-circuit* "
 "operators: their arguments are evaluated from left to right, and evaluation "
@@ -663,13 +741,13 @@ msgid ""
 "return value of a short-circuit operator is the last evaluated argument."
 msgstr ""
 
-#: ../../tutorial/datastructures.rst:686
+#: ../../tutorial/datastructures.rst:685
 msgid ""
 "It is possible to assign the result of a comparison or other Boolean "
 "expression to a variable.  For example, ::"
 msgstr ""
 
-#: ../../tutorial/datastructures.rst:694
+#: ../../tutorial/datastructures.rst:693
 msgid ""
 "Note that in Python, unlike C, assignment inside expressions must be done "
 "explicitly with the :ref:`walrus operator <why-can-t-i-use-an-assignment-in-"
@@ -677,11 +755,11 @@ msgid ""
 "in C programs: typing ``=`` in an expression when ``==`` was intended."
 msgstr ""
 
-#: ../../tutorial/datastructures.rst:704
+#: ../../tutorial/datastructures.rst:703
 msgid "Comparing Sequences and Other Types"
 msgstr ""
 
-#: ../../tutorial/datastructures.rst:705
+#: ../../tutorial/datastructures.rst:704
 msgid ""
 "Sequence objects typically may be compared to other objects with the same "
 "sequence type. The comparison uses *lexicographical* ordering: first the "
@@ -697,7 +775,7 @@ msgid ""
 "of the same type::"
 msgstr ""
 
-#: ../../tutorial/datastructures.rst:725
+#: ../../tutorial/datastructures.rst:724
 msgid ""
 "Note that comparing objects of different types with ``<`` or ``>`` is legal "
 "provided that the objects have appropriate comparison methods.  For example, "
@@ -706,11 +784,11 @@ msgid ""
 "the interpreter will raise a :exc:`TypeError` exception."
 msgstr ""
 
-#: ../../tutorial/datastructures.rst:733
+#: ../../tutorial/datastructures.rst:732
 msgid "Footnotes"
 msgstr "Сноски"
 
-#: ../../tutorial/datastructures.rst:734
+#: ../../tutorial/datastructures.rst:733
 msgid ""
 "Other languages may return the mutated object, which allows method chaining, "
 "such as ``d->insert(\"a\")->remove(\"b\")->sort();``."

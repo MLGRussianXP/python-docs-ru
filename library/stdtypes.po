@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-02 15:40+0000\n"
+"POT-Creation-Date: 2024-03-01 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -5829,12 +5829,12 @@ msgstr ""
 msgid ""
 "This object is returned from comparisons and binary operations when they are "
 "asked to operate on types they don't support. See :ref:`comparisons` for "
-"more information.  There is exactly one ``NotImplemented`` object. "
-"``type(NotImplemented)()`` produces the singleton instance."
+"more information.  There is exactly one :data:`NotImplemented` object. :code:"
+"`type(NotImplemented)()` produces the singleton instance."
 msgstr ""
 
 #: ../../library/stdtypes.rst:5453
-msgid "It is written as ``NotImplemented``."
+msgid "It is written as :code:`NotImplemented`."
 msgstr ""
 
 #: ../../library/stdtypes.rst:5459
@@ -6871,7 +6871,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:5325
 msgid "method"
-msgstr ""
+msgstr "метод"
 
 #: ../../library/stdtypes.rst:5369
 msgid "code"

@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Daniil Kolesnikov, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 14:14+0000\n"
+"POT-Creation-Date: 2024-03-01 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
+"Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
 "ru/)\n"
 "MIME-Version: 1.0\n"
@@ -22,23 +26,28 @@ msgstr ""
 
 #: ../../tutorial/stdlib2.rst:5
 msgid "Brief Tour of the Standard Library --- Part II"
-msgstr ""
+msgstr "Краткий обзор стандартной библиотеки - часть II"
 
 #: ../../tutorial/stdlib2.rst:7
 msgid ""
 "This second tour covers more advanced modules that support professional "
 "programming needs.  These modules rarely occur in small scripts."
 msgstr ""
+"Второй тур охватывает более продвинутые модули, которые поддерживают "
+"профессиональные потребности программирования. Эти модули редко встречаются "
+"в небольших скриптах."
 
 #: ../../tutorial/stdlib2.rst:14
 msgid "Output Formatting"
-msgstr ""
+msgstr "Форматирование вывода"
 
 #: ../../tutorial/stdlib2.rst:16
 msgid ""
 "The :mod:`reprlib` module provides a version of :func:`repr` customized for "
 "abbreviated displays of large or deeply nested containers::"
 msgstr ""
+"Модуль :mod:`reprlib` предоставляет версию :func:`repr`, настроенную для "
+"сокращенного отображения больших или глубоко вложенных контейнеров::"
 
 #: ../../tutorial/stdlib2.rst:23
 msgid ""
@@ -47,12 +56,19 @@ msgid ""
 "interpreter. When the result is longer than one line, the \"pretty printer\" "
 "adds line breaks and indentation to more clearly reveal data structure::"
 msgstr ""
+"Модуль :mod:`pprint` предлагает более сложный контроль над выводом "
+"встроенных и пользовательских объектов таким образом, чтобы они были "
+"читаемыми для интерпретатора. Когда результат занимает более одной строки, "
+"\"красивый принтер\" добавляет переносы строк и отступы, чтобы более ясно "
+"показать структуру данных::"
 
 #: ../../tutorial/stdlib2.rst:39
 msgid ""
 "The :mod:`textwrap` module formats paragraphs of text to fit a given screen "
 "width::"
 msgstr ""
+"Модуль :mod:`textwrap` форматирует абзацы текста, чтобы они помещались в "
+"заданную ширину экрана::"
 
 #: ../../tutorial/stdlib2.rst:53
 msgid ""
@@ -60,10 +76,13 @@ msgid ""
 "formats. The grouping attribute of locale's format function provides a "
 "direct way of formatting numbers with group separators::"
 msgstr ""
+"Модуль :mod:`locale` обращается к базе данных форматов, специфичных для "
+"определённой культуры. Атрибут группировки функции форматирования модуля "
+"предоставляет прямой способ форматирования чисел с разделителями группы::"
 
 #: ../../tutorial/stdlib2.rst:72
 msgid "Templating"
-msgstr ""
+msgstr "Шаблонизация"
 
 #: ../../tutorial/stdlib2.rst:74
 msgid ""
@@ -72,6 +91,10 @@ msgid ""
 "allows users to customize their applications without having to alter the "
 "application."
 msgstr ""
+"Модуль :mod:`string` включает в себя универсальный класс :class:`~string."
+"Template` с упрощенным синтаксисом, подходящим для редактирования конечными "
+"пользователями. Это позволяет пользователям настраивать свои приложения, не "
+"изменяя само приложение."
 
 #: ../../tutorial/stdlib2.rst:78
 msgid ""

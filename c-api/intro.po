@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-26 14:13+0000\n"
+"POT-Creation-Date: 2024-02-16 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:49+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -203,8 +203,9 @@ msgstr ""
 
 #: ../../c-api/intro.rst:151
 msgid ""
-"If Python is :ref:`built in debug mode <debug-build>` (if the ``Py_DEBUG`` "
-"macro is defined), the :c:macro:`Py_ALWAYS_INLINE` macro does nothing."
+"If Python is :ref:`built in debug mode <debug-build>` (if the :c:macro:"
+"`Py_DEBUG` macro is defined), the :c:macro:`Py_ALWAYS_INLINE` macro does "
+"nothing."
 msgstr ""
 
 #: ../../c-api/intro.rst:154
@@ -773,24 +774,24 @@ msgid ""
 "section."
 msgstr ""
 
-#: ../../c-api/intro.rst:815
+#: ../../c-api/intro.rst:817
 msgid ""
-"Compiling the interpreter with the :c:macro:`Py_DEBUG` macro defined "
+"Compiling the interpreter with the :c:macro:`!Py_DEBUG` macro defined "
 "produces what is generally meant by :ref:`a debug build of Python <debug-"
-"build>`. :c:macro:`Py_DEBUG` is enabled in the Unix build by adding :option:"
+"build>`. :c:macro:`!Py_DEBUG` is enabled in the Unix build by adding :option:"
 "`--with-pydebug` to the :file:`./configure` command. It is also implied by "
-"the presence of the not-Python-specific :c:macro:`_DEBUG` macro.  When :c:"
-"macro:`Py_DEBUG` is enabled in the Unix build, compiler optimization is "
+"the presence of the not-Python-specific :c:macro:`!_DEBUG` macro.  When :c:"
+"macro:`!Py_DEBUG` is enabled in the Unix build, compiler optimization is "
 "disabled."
 msgstr ""
 
-#: ../../c-api/intro.rst:823
+#: ../../c-api/intro.rst:825
 msgid ""
 "In addition to the reference count debugging described below, extra checks "
 "are performed, see :ref:`Python Debug Build <debug-build>`."
 msgstr ""
 
-#: ../../c-api/intro.rst:826
+#: ../../c-api/intro.rst:828
 msgid ""
 "Defining :c:macro:`Py_TRACE_REFS` enables reference tracing (see the :option:"
 "`configure --with-trace-refs option <--with-trace-refs>`). When defined, a "
@@ -800,7 +801,7 @@ msgid ""
 "this happens after every statement run by the interpreter.)"
 msgstr ""
 
-#: ../../c-api/intro.rst:833
+#: ../../c-api/intro.rst:835
 msgid ""
 "Please refer to :file:`Misc/SpecialBuilds.txt` in the Python source "
 "distribution for more detailed information."
@@ -815,19 +816,19 @@ msgid "type"
 msgstr "тип"
 
 #: ../../c-api/intro.rst:327
-msgid "Py_INCREF()"
+msgid "Py_INCREF (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:327
-msgid "Py_DECREF()"
+msgid "Py_DECREF (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:403
-msgid "PyList_SetItem()"
+msgid "PyList_SetItem (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:403
-msgid "PyTuple_SetItem()"
+msgid "PyTuple_SetItem (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:474
@@ -835,11 +836,11 @@ msgid "set_all()"
 msgstr ""
 
 #: ../../c-api/intro.rst:493
-msgid "PyList_GetItem()"
+msgid "PyList_GetItem (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:493
-msgid "PySequence_GetItem()"
+msgid "PySequence_GetItem (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:523
@@ -851,19 +852,19 @@ msgid "sum_sequence()"
 msgstr ""
 
 #: ../../c-api/intro.rst:590
-msgid "PyErr_Occurred()"
+msgid "PyErr_Occurred (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:603
-msgid "PyErr_SetString()"
+msgid "PyErr_SetString (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:603 ../../c-api/intro.rst:711
-msgid "PyErr_Clear()"
+msgid "PyErr_Clear (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:627
-msgid "exc_info() (in module sys)"
+msgid "exc_info (in module sys)"
 msgstr ""
 
 #: ../../c-api/intro.rst:662 ../../c-api/intro.rst:709
@@ -871,15 +872,15 @@ msgid "incr_item()"
 msgstr ""
 
 #: ../../c-api/intro.rst:711
-msgid "PyErr_ExceptionMatches()"
+msgid "PyErr_ExceptionMatches (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:711
-msgid "Py_XDECREF()"
+msgid "Py_XDECREF (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:737
-msgid "Py_Initialize()"
+msgid "Py_Initialize (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:737
@@ -911,25 +912,25 @@ msgid "path (in module sys)"
 msgstr ""
 
 #: ../../c-api/intro.rst:772
-msgid "Py_SetProgramName()"
+msgid "Py_SetProgramName (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:772
-msgid "Py_GetPath()"
+msgid "Py_GetPath (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:772
-msgid "Py_GetPrefix()"
+msgid "Py_GetPrefix (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:772
-msgid "Py_GetExecPrefix()"
+msgid "Py_GetExecPrefix (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:772
-msgid "Py_GetProgramFullPath()"
+msgid "Py_GetProgramFullPath (C function)"
 msgstr ""
 
 #: ../../c-api/intro.rst:787
-msgid "Py_IsInitialized()"
+msgid "Py_IsInitialized (C function)"
 msgstr ""

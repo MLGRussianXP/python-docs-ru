@@ -33,7 +33,7 @@ FILTER_PATTERN = re.compile(
 
 def name_replacer(match: re.Match[str]):
     prefix, resource = match.group("prefix", "resource")
-    override_prefix = prefix.replace("file_filter", "trans.zh_CN")
+    override_prefix = prefix.replace("file_filter", "trans.ru")
     pattern = (
         resource.replace("trans/<lang>/", "")
         .replace("glossary_", "glossary")

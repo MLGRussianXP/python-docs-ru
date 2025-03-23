@@ -1,0 +1,4404 @@
+[main]
+host = https://app.transifex.com
+
+[o:python-doc:p:python-39:r:about]
+file_filter   = trans/<lang>/about.po
+trans.ru   = about.po
+source_file   = trans/en/about.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = about
+
+[o:python-doc:p:python-39:r:bugs]
+file_filter   = trans/<lang>/bugs.po
+trans.ru   = bugs.po
+source_file   = trans/en/bugs.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = bugs
+
+[o:python-doc:p:python-39:r:c-api--abstract]
+file_filter   = trans/<lang>/c-api--abstract.po
+trans.ru   = c-api/abstract.po
+source_file   = trans/en/c-api--abstract.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--abstract
+
+[o:python-doc:p:python-39:r:c-api--allocation]
+file_filter   = trans/<lang>/c-api--allocation.po
+trans.ru   = c-api/allocation.po
+source_file   = trans/en/c-api--allocation.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--allocation
+
+[o:python-doc:p:python-39:r:c-api--apiabiversion]
+file_filter   = trans/<lang>/c-api--apiabiversion.po
+trans.ru   = c-api/apiabiversion.po
+source_file   = trans/en/c-api--apiabiversion.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--apiabiversion
+
+[o:python-doc:p:python-39:r:c-api--arg]
+file_filter   = trans/<lang>/c-api--arg.po
+trans.ru   = c-api/arg.po
+source_file   = trans/en/c-api--arg.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--arg
+
+[o:python-doc:p:python-39:r:c-api--bool]
+file_filter   = trans/<lang>/c-api--bool.po
+trans.ru   = c-api/bool.po
+source_file   = trans/en/c-api--bool.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--bool
+
+[o:python-doc:p:python-39:r:c-api--buffer]
+file_filter   = trans/<lang>/c-api--buffer.po
+trans.ru   = c-api/buffer.po
+source_file   = trans/en/c-api--buffer.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--buffer
+
+[o:python-doc:p:python-39:r:c-api--bytearray]
+file_filter   = trans/<lang>/c-api--bytearray.po
+trans.ru   = c-api/bytearray.po
+source_file   = trans/en/c-api--bytearray.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--bytearray
+
+[o:python-doc:p:python-39:r:c-api--bytes]
+file_filter   = trans/<lang>/c-api--bytes.po
+trans.ru   = c-api/bytes.po
+source_file   = trans/en/c-api--bytes.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--bytes
+
+[o:python-doc:p:python-39:r:c-api--call]
+file_filter   = trans/<lang>/c-api--call.po
+trans.ru   = c-api/call.po
+source_file   = trans/en/c-api--call.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--call
+
+[o:python-doc:p:python-39:r:c-api--capsule]
+file_filter   = trans/<lang>/c-api--capsule.po
+trans.ru   = c-api/capsule.po
+source_file   = trans/en/c-api--capsule.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--capsule
+
+[o:python-doc:p:python-39:r:c-api--cell]
+file_filter   = trans/<lang>/c-api--cell.po
+trans.ru   = c-api/cell.po
+source_file   = trans/en/c-api--cell.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--cell
+
+[o:python-doc:p:python-39:r:c-api--code]
+file_filter   = trans/<lang>/c-api--code.po
+trans.ru   = c-api/code.po
+source_file   = trans/en/c-api--code.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--code
+
+[o:python-doc:p:python-39:r:c-api--codec]
+file_filter   = trans/<lang>/c-api--codec.po
+trans.ru   = c-api/codec.po
+source_file   = trans/en/c-api--codec.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--codec
+
+[o:python-doc:p:python-39:r:c-api--complex]
+file_filter   = trans/<lang>/c-api--complex.po
+trans.ru   = c-api/complex.po
+source_file   = trans/en/c-api--complex.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--complex
+
+[o:python-doc:p:python-39:r:c-api--concrete]
+file_filter   = trans/<lang>/c-api--concrete.po
+trans.ru   = c-api/concrete.po
+source_file   = trans/en/c-api--concrete.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--concrete
+
+[o:python-doc:p:python-39:r:c-api--contextvars]
+file_filter   = trans/<lang>/c-api--contextvars.po
+trans.ru   = c-api/contextvars.po
+source_file   = trans/en/c-api--contextvars.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--contextvars
+
+[o:python-doc:p:python-39:r:c-api--conversion]
+file_filter   = trans/<lang>/c-api--conversion.po
+trans.ru   = c-api/conversion.po
+source_file   = trans/en/c-api--conversion.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--conversion
+
+[o:python-doc:p:python-39:r:c-api--coro]
+file_filter   = trans/<lang>/c-api--coro.po
+trans.ru   = c-api/coro.po
+source_file   = trans/en/c-api--coro.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--coro
+
+[o:python-doc:p:python-39:r:c-api--datetime]
+file_filter   = trans/<lang>/c-api--datetime.po
+trans.ru   = c-api/datetime.po
+source_file   = trans/en/c-api--datetime.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--datetime
+
+[o:python-doc:p:python-39:r:c-api--descriptor]
+file_filter   = trans/<lang>/c-api--descriptor.po
+trans.ru   = c-api/descriptor.po
+source_file   = trans/en/c-api--descriptor.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--descriptor
+
+[o:python-doc:p:python-39:r:c-api--dict]
+file_filter   = trans/<lang>/c-api--dict.po
+trans.ru   = c-api/dict.po
+source_file   = trans/en/c-api--dict.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--dict
+
+[o:python-doc:p:python-39:r:c-api--exceptions]
+file_filter   = trans/<lang>/c-api--exceptions.po
+trans.ru   = c-api/exceptions.po
+source_file   = trans/en/c-api--exceptions.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--exceptions
+
+[o:python-doc:p:python-39:r:c-api--file]
+file_filter   = trans/<lang>/c-api--file.po
+trans.ru   = c-api/file.po
+source_file   = trans/en/c-api--file.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--file
+
+[o:python-doc:p:python-39:r:c-api--float]
+file_filter   = trans/<lang>/c-api--float.po
+trans.ru   = c-api/float.po
+source_file   = trans/en/c-api--float.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--float
+
+[o:python-doc:p:python-39:r:c-api--function]
+file_filter   = trans/<lang>/c-api--function.po
+trans.ru   = c-api/function.po
+source_file   = trans/en/c-api--function.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--function
+
+[o:python-doc:p:python-39:r:c-api--gcsupport]
+file_filter   = trans/<lang>/c-api--gcsupport.po
+trans.ru   = c-api/gcsupport.po
+source_file   = trans/en/c-api--gcsupport.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--gcsupport
+
+[o:python-doc:p:python-39:r:c-api--gen]
+file_filter   = trans/<lang>/c-api--gen.po
+trans.ru   = c-api/gen.po
+source_file   = trans/en/c-api--gen.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--gen
+
+[o:python-doc:p:python-39:r:c-api--import]
+file_filter   = trans/<lang>/c-api--import.po
+trans.ru   = c-api/import.po
+source_file   = trans/en/c-api--import.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--import
+
+[o:python-doc:p:python-39:r:c-api--index]
+file_filter   = trans/<lang>/c-api--index.po
+trans.ru   = c-api/index.po
+source_file   = trans/en/c-api--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--index
+
+[o:python-doc:p:python-39:r:c-api--init]
+file_filter   = trans/<lang>/c-api--init.po
+trans.ru   = c-api/init.po
+source_file   = trans/en/c-api--init.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--init
+
+[o:python-doc:p:python-39:r:c-api--init_config]
+file_filter   = trans/<lang>/c-api--init_config.po
+trans.ru   = c-api/init_config.po
+source_file   = trans/en/c-api--init_config.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--init_config
+
+[o:python-doc:p:python-39:r:c-api--intro]
+file_filter   = trans/<lang>/c-api--intro.po
+trans.ru   = c-api/intro.po
+source_file   = trans/en/c-api--intro.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--intro
+
+[o:python-doc:p:python-39:r:c-api--iter]
+file_filter   = trans/<lang>/c-api--iter.po
+trans.ru   = c-api/iter.po
+source_file   = trans/en/c-api--iter.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--iter
+
+[o:python-doc:p:python-39:r:c-api--iterator]
+file_filter   = trans/<lang>/c-api--iterator.po
+trans.ru   = c-api/iterator.po
+source_file   = trans/en/c-api--iterator.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--iterator
+
+[o:python-doc:p:python-39:r:c-api--list]
+file_filter   = trans/<lang>/c-api--list.po
+trans.ru   = c-api/list.po
+source_file   = trans/en/c-api--list.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--list
+
+[o:python-doc:p:python-39:r:c-api--long]
+file_filter   = trans/<lang>/c-api--long.po
+trans.ru   = c-api/long.po
+source_file   = trans/en/c-api--long.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--long
+
+[o:python-doc:p:python-39:r:c-api--mapping]
+file_filter   = trans/<lang>/c-api--mapping.po
+trans.ru   = c-api/mapping.po
+source_file   = trans/en/c-api--mapping.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--mapping
+
+[o:python-doc:p:python-39:r:c-api--marshal]
+file_filter   = trans/<lang>/c-api--marshal.po
+trans.ru   = c-api/marshal.po
+source_file   = trans/en/c-api--marshal.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--marshal
+
+[o:python-doc:p:python-39:r:c-api--memory]
+file_filter   = trans/<lang>/c-api--memory.po
+trans.ru   = c-api/memory.po
+source_file   = trans/en/c-api--memory.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--memory
+
+[o:python-doc:p:python-39:r:c-api--memoryview]
+file_filter   = trans/<lang>/c-api--memoryview.po
+trans.ru   = c-api/memoryview.po
+source_file   = trans/en/c-api--memoryview.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--memoryview
+
+[o:python-doc:p:python-39:r:c-api--method]
+file_filter   = trans/<lang>/c-api--method.po
+trans.ru   = c-api/method.po
+source_file   = trans/en/c-api--method.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--method
+
+[o:python-doc:p:python-39:r:c-api--module]
+file_filter   = trans/<lang>/c-api--module.po
+trans.ru   = c-api/module.po
+source_file   = trans/en/c-api--module.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--module
+
+[o:python-doc:p:python-39:r:c-api--none]
+file_filter   = trans/<lang>/c-api--none.po
+trans.ru   = c-api/none.po
+source_file   = trans/en/c-api--none.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--none
+
+[o:python-doc:p:python-39:r:c-api--number]
+file_filter   = trans/<lang>/c-api--number.po
+trans.ru   = c-api/number.po
+source_file   = trans/en/c-api--number.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--number
+
+[o:python-doc:p:python-39:r:c-api--objbuffer]
+file_filter   = trans/<lang>/c-api--objbuffer.po
+trans.ru   = c-api/objbuffer.po
+source_file   = trans/en/c-api--objbuffer.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--objbuffer
+
+[o:python-doc:p:python-39:r:c-api--object]
+file_filter   = trans/<lang>/c-api--object.po
+trans.ru   = c-api/object.po
+source_file   = trans/en/c-api--object.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--object
+
+[o:python-doc:p:python-39:r:c-api--objimpl]
+file_filter   = trans/<lang>/c-api--objimpl.po
+trans.ru   = c-api/objimpl.po
+source_file   = trans/en/c-api--objimpl.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--objimpl
+
+[o:python-doc:p:python-39:r:c-api--refcounting]
+file_filter   = trans/<lang>/c-api--refcounting.po
+trans.ru   = c-api/refcounting.po
+source_file   = trans/en/c-api--refcounting.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--refcounting
+
+[o:python-doc:p:python-39:r:c-api--reflection]
+file_filter   = trans/<lang>/c-api--reflection.po
+trans.ru   = c-api/reflection.po
+source_file   = trans/en/c-api--reflection.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--reflection
+
+[o:python-doc:p:python-39:r:c-api--sequence]
+file_filter   = trans/<lang>/c-api--sequence.po
+trans.ru   = c-api/sequence.po
+source_file   = trans/en/c-api--sequence.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--sequence
+
+[o:python-doc:p:python-39:r:c-api--set]
+file_filter   = trans/<lang>/c-api--set.po
+trans.ru   = c-api/set.po
+source_file   = trans/en/c-api--set.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--set
+
+[o:python-doc:p:python-39:r:c-api--slice]
+file_filter   = trans/<lang>/c-api--slice.po
+trans.ru   = c-api/slice.po
+source_file   = trans/en/c-api--slice.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--slice
+
+[o:python-doc:p:python-39:r:c-api--stable]
+file_filter   = trans/<lang>/c-api--stable.po
+trans.ru   = c-api/stable.po
+source_file   = trans/en/c-api--stable.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--stable
+
+[o:python-doc:p:python-39:r:c-api--structures]
+file_filter   = trans/<lang>/c-api--structures.po
+trans.ru   = c-api/structures.po
+source_file   = trans/en/c-api--structures.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--structures
+
+[o:python-doc:p:python-39:r:c-api--sys]
+file_filter   = trans/<lang>/c-api--sys.po
+trans.ru   = c-api/sys.po
+source_file   = trans/en/c-api--sys.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--sys
+
+[o:python-doc:p:python-39:r:c-api--tuple]
+file_filter   = trans/<lang>/c-api--tuple.po
+trans.ru   = c-api/tuple.po
+source_file   = trans/en/c-api--tuple.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--tuple
+
+[o:python-doc:p:python-39:r:c-api--type]
+file_filter   = trans/<lang>/c-api--type.po
+trans.ru   = c-api/type.po
+source_file   = trans/en/c-api--type.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--type
+
+[o:python-doc:p:python-39:r:c-api--typehints]
+file_filter   = trans/<lang>/c-api--typehints.po
+trans.ru   = c-api/typehints.po
+source_file   = trans/en/c-api--typehints.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--typehints
+
+[o:python-doc:p:python-39:r:c-api--typeobj]
+file_filter   = trans/<lang>/c-api--typeobj.po
+trans.ru   = c-api/typeobj.po
+source_file   = trans/en/c-api--typeobj.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--typeobj
+
+[o:python-doc:p:python-39:r:c-api--unicode]
+file_filter   = trans/<lang>/c-api--unicode.po
+trans.ru   = c-api/unicode.po
+source_file   = trans/en/c-api--unicode.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--unicode
+
+[o:python-doc:p:python-39:r:c-api--utilities]
+file_filter   = trans/<lang>/c-api--utilities.po
+trans.ru   = c-api/utilities.po
+source_file   = trans/en/c-api--utilities.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--utilities
+
+[o:python-doc:p:python-39:r:c-api--veryhigh]
+file_filter   = trans/<lang>/c-api--veryhigh.po
+trans.ru   = c-api/veryhigh.po
+source_file   = trans/en/c-api--veryhigh.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--veryhigh
+
+[o:python-doc:p:python-39:r:c-api--weakref]
+file_filter   = trans/<lang>/c-api--weakref.po
+trans.ru   = c-api/weakref.po
+source_file   = trans/en/c-api--weakref.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = c-api--weakref
+
+[o:python-doc:p:python-39:r:contents]
+file_filter   = trans/<lang>/contents.po
+trans.ru   = contents.po
+source_file   = trans/en/contents.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = contents
+
+[o:python-doc:p:python-39:r:copyright]
+file_filter   = trans/<lang>/copyright.po
+trans.ru   = copyright.po
+source_file   = trans/en/copyright.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = copyright
+
+[o:python-doc:p:python-39:r:distributing--index]
+file_filter   = trans/<lang>/distributing--index.po
+trans.ru   = distributing/index.po
+source_file   = trans/en/distributing--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distributing--index
+
+[o:python-doc:p:python-39:r:distutils--apiref]
+file_filter   = trans/<lang>/distutils--apiref.po
+trans.ru   = distutils/apiref.po
+source_file   = trans/en/distutils--apiref.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--apiref
+
+[o:python-doc:p:python-39:r:distutils--builtdist]
+file_filter   = trans/<lang>/distutils--builtdist.po
+trans.ru   = distutils/builtdist.po
+source_file   = trans/en/distutils--builtdist.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--builtdist
+
+[o:python-doc:p:python-39:r:distutils--commandref]
+file_filter   = trans/<lang>/distutils--commandref.po
+trans.ru   = distutils/commandref.po
+source_file   = trans/en/distutils--commandref.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--commandref
+
+[o:python-doc:p:python-39:r:distutils--configfile]
+file_filter   = trans/<lang>/distutils--configfile.po
+trans.ru   = distutils/configfile.po
+source_file   = trans/en/distutils--configfile.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--configfile
+
+[o:python-doc:p:python-39:r:distutils--examples]
+file_filter   = trans/<lang>/distutils--examples.po
+trans.ru   = distutils/examples.po
+source_file   = trans/en/distutils--examples.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--examples
+
+[o:python-doc:p:python-39:r:distutils--extending]
+file_filter   = trans/<lang>/distutils--extending.po
+trans.ru   = distutils/extending.po
+source_file   = trans/en/distutils--extending.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--extending
+
+[o:python-doc:p:python-39:r:distutils--index]
+file_filter   = trans/<lang>/distutils--index.po
+trans.ru   = distutils/index.po
+source_file   = trans/en/distutils--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--index
+
+[o:python-doc:p:python-39:r:distutils--introduction]
+file_filter   = trans/<lang>/distutils--introduction.po
+trans.ru   = distutils/introduction.po
+source_file   = trans/en/distutils--introduction.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--introduction
+
+[o:python-doc:p:python-39:r:distutils--packageindex]
+file_filter   = trans/<lang>/distutils--packageindex.po
+trans.ru   = distutils/packageindex.po
+source_file   = trans/en/distutils--packageindex.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--packageindex
+
+[o:python-doc:p:python-39:r:distutils--setupscript]
+file_filter   = trans/<lang>/distutils--setupscript.po
+trans.ru   = distutils/setupscript.po
+source_file   = trans/en/distutils--setupscript.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--setupscript
+
+[o:python-doc:p:python-39:r:distutils--_setuptools_disclaimer]
+file_filter   = trans/<lang>/distutils--_setuptools_disclaimer.po
+trans.ru   = distutils/_setuptools_disclaimer.po
+source_file   = trans/en/distutils--_setuptools_disclaimer.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--_setuptools_disclaimer
+
+[o:python-doc:p:python-39:r:distutils--sourcedist]
+file_filter   = trans/<lang>/distutils--sourcedist.po
+trans.ru   = distutils/sourcedist.po
+source_file   = trans/en/distutils--sourcedist.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--sourcedist
+
+[o:python-doc:p:python-39:r:distutils--uploading]
+file_filter   = trans/<lang>/distutils--uploading.po
+trans.ru   = distutils/uploading.po
+source_file   = trans/en/distutils--uploading.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = distutils--uploading
+
+[o:python-doc:p:python-39:r:extending--building]
+file_filter   = trans/<lang>/extending--building.po
+trans.ru   = extending/building.po
+source_file   = trans/en/extending--building.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = extending--building
+
+[o:python-doc:p:python-39:r:extending--embedding]
+file_filter   = trans/<lang>/extending--embedding.po
+trans.ru   = extending/embedding.po
+source_file   = trans/en/extending--embedding.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = extending--embedding
+
+[o:python-doc:p:python-39:r:extending--extending]
+file_filter   = trans/<lang>/extending--extending.po
+trans.ru   = extending/extending.po
+source_file   = trans/en/extending--extending.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = extending--extending
+
+[o:python-doc:p:python-39:r:extending--index]
+file_filter   = trans/<lang>/extending--index.po
+trans.ru   = extending/index.po
+source_file   = trans/en/extending--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = extending--index
+
+[o:python-doc:p:python-39:r:extending--newtypes]
+file_filter   = trans/<lang>/extending--newtypes.po
+trans.ru   = extending/newtypes.po
+source_file   = trans/en/extending--newtypes.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = extending--newtypes
+
+[o:python-doc:p:python-39:r:extending--newtypes_tutorial]
+file_filter   = trans/<lang>/extending--newtypes_tutorial.po
+trans.ru   = extending/newtypes_tutorial.po
+source_file   = trans/en/extending--newtypes_tutorial.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = extending--newtypes_tutorial
+
+[o:python-doc:p:python-39:r:extending--windows]
+file_filter   = trans/<lang>/extending--windows.po
+trans.ru   = extending/windows.po
+source_file   = trans/en/extending--windows.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = extending--windows
+
+[o:python-doc:p:python-39:r:faq--design]
+file_filter   = trans/<lang>/faq--design.po
+trans.ru   = faq/design.po
+source_file   = trans/en/faq--design.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = faq--design
+
+[o:python-doc:p:python-39:r:faq--extending]
+file_filter   = trans/<lang>/faq--extending.po
+trans.ru   = faq/extending.po
+source_file   = trans/en/faq--extending.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = faq--extending
+
+[o:python-doc:p:python-39:r:faq--general]
+file_filter   = trans/<lang>/faq--general.po
+trans.ru   = faq/general.po
+source_file   = trans/en/faq--general.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = faq--general
+
+[o:python-doc:p:python-39:r:faq--gui]
+file_filter   = trans/<lang>/faq--gui.po
+trans.ru   = faq/gui.po
+source_file   = trans/en/faq--gui.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = faq--gui
+
+[o:python-doc:p:python-39:r:faq--index]
+file_filter   = trans/<lang>/faq--index.po
+trans.ru   = faq/index.po
+source_file   = trans/en/faq--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = faq--index
+
+[o:python-doc:p:python-39:r:faq--installed]
+file_filter   = trans/<lang>/faq--installed.po
+trans.ru   = faq/installed.po
+source_file   = trans/en/faq--installed.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = faq--installed
+
+[o:python-doc:p:python-39:r:faq--library]
+file_filter   = trans/<lang>/faq--library.po
+trans.ru   = faq/library.po
+source_file   = trans/en/faq--library.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = faq--library
+
+[o:python-doc:p:python-39:r:faq--programming]
+file_filter   = trans/<lang>/faq--programming.po
+trans.ru   = faq/programming.po
+source_file   = trans/en/faq--programming.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = faq--programming
+
+[o:python-doc:p:python-39:r:faq--windows]
+file_filter   = trans/<lang>/faq--windows.po
+trans.ru   = faq/windows.po
+source_file   = trans/en/faq--windows.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = faq--windows
+
+[o:python-doc:p:python-39:r:glossary_]
+file_filter   = trans/<lang>/glossary_.po
+trans.ru   = glossary.po
+source_file   = trans/en/glossary_.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = glossary_
+
+[o:python-doc:p:python-39:r:howto--argparse]
+file_filter   = trans/<lang>/howto--argparse.po
+trans.ru   = howto/argparse.po
+source_file   = trans/en/howto--argparse.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--argparse
+
+[o:python-doc:p:python-39:r:howto--clinic]
+file_filter   = trans/<lang>/howto--clinic.po
+trans.ru   = howto/clinic.po
+source_file   = trans/en/howto--clinic.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--clinic
+
+[o:python-doc:p:python-39:r:howto--cporting]
+file_filter   = trans/<lang>/howto--cporting.po
+trans.ru   = howto/cporting.po
+source_file   = trans/en/howto--cporting.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--cporting
+
+[o:python-doc:p:python-39:r:howto--curses]
+file_filter   = trans/<lang>/howto--curses.po
+trans.ru   = howto/curses.po
+source_file   = trans/en/howto--curses.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--curses
+
+[o:python-doc:p:python-39:r:howto--descriptor]
+file_filter   = trans/<lang>/howto--descriptor.po
+trans.ru   = howto/descriptor.po
+source_file   = trans/en/howto--descriptor.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--descriptor
+
+[o:python-doc:p:python-39:r:howto--functional]
+file_filter   = trans/<lang>/howto--functional.po
+trans.ru   = howto/functional.po
+source_file   = trans/en/howto--functional.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--functional
+
+[o:python-doc:p:python-39:r:howto--index]
+file_filter   = trans/<lang>/howto--index.po
+trans.ru   = howto/index.po
+source_file   = trans/en/howto--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--index
+
+[o:python-doc:p:python-39:r:howto--instrumentation]
+file_filter   = trans/<lang>/howto--instrumentation.po
+trans.ru   = howto/instrumentation.po
+source_file   = trans/en/howto--instrumentation.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--instrumentation
+
+[o:python-doc:p:python-39:r:howto--ipaddress]
+file_filter   = trans/<lang>/howto--ipaddress.po
+trans.ru   = howto/ipaddress.po
+source_file   = trans/en/howto--ipaddress.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--ipaddress
+
+[o:python-doc:p:python-39:r:howto--logging]
+file_filter   = trans/<lang>/howto--logging.po
+trans.ru   = howto/logging.po
+source_file   = trans/en/howto--logging.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--logging
+
+[o:python-doc:p:python-39:r:howto--logging-cookbook]
+file_filter   = trans/<lang>/howto--logging-cookbook.po
+trans.ru   = howto/logging-cookbook.po
+source_file   = trans/en/howto--logging-cookbook.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--logging-cookbook
+
+[o:python-doc:p:python-39:r:howto--pyporting]
+file_filter   = trans/<lang>/howto--pyporting.po
+trans.ru   = howto/pyporting.po
+source_file   = trans/en/howto--pyporting.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--pyporting
+
+[o:python-doc:p:python-39:r:howto--regex]
+file_filter   = trans/<lang>/howto--regex.po
+trans.ru   = howto/regex.po
+source_file   = trans/en/howto--regex.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--regex
+
+[o:python-doc:p:python-39:r:howto--sockets]
+file_filter   = trans/<lang>/howto--sockets.po
+trans.ru   = howto/sockets.po
+source_file   = trans/en/howto--sockets.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--sockets
+
+[o:python-doc:p:python-39:r:howto--sorting]
+file_filter   = trans/<lang>/howto--sorting.po
+trans.ru   = howto/sorting.po
+source_file   = trans/en/howto--sorting.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--sorting
+
+[o:python-doc:p:python-39:r:howto--unicode]
+file_filter   = trans/<lang>/howto--unicode.po
+trans.ru   = howto/unicode.po
+source_file   = trans/en/howto--unicode.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--unicode
+
+[o:python-doc:p:python-39:r:howto--urllib2]
+file_filter   = trans/<lang>/howto--urllib2.po
+trans.ru   = howto/urllib2.po
+source_file   = trans/en/howto--urllib2.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = howto--urllib2
+
+[o:python-doc:p:python-39:r:install--index]
+file_filter   = trans/<lang>/install--index.po
+trans.ru   = install/index.po
+source_file   = trans/en/install--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = install--index
+
+[o:python-doc:p:python-39:r:installing--index]
+file_filter   = trans/<lang>/installing--index.po
+trans.ru   = installing/index.po
+source_file   = trans/en/installing--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = installing--index
+
+[o:python-doc:p:python-39:r:library--2to3]
+file_filter   = trans/<lang>/library--2to3.po
+trans.ru   = library/2to3.po
+source_file   = trans/en/library--2to3.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--2to3
+
+[o:python-doc:p:python-39:r:library--abc]
+file_filter   = trans/<lang>/library--abc.po
+trans.ru   = library/abc.po
+source_file   = trans/en/library--abc.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--abc
+
+[o:python-doc:p:python-39:r:library--aifc]
+file_filter   = trans/<lang>/library--aifc.po
+trans.ru   = library/aifc.po
+source_file   = trans/en/library--aifc.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--aifc
+
+[o:python-doc:p:python-39:r:library--allos]
+file_filter   = trans/<lang>/library--allos.po
+trans.ru   = library/allos.po
+source_file   = trans/en/library--allos.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--allos
+
+[o:python-doc:p:python-39:r:library--archiving]
+file_filter   = trans/<lang>/library--archiving.po
+trans.ru   = library/archiving.po
+source_file   = trans/en/library--archiving.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--archiving
+
+[o:python-doc:p:python-39:r:library--argparse]
+file_filter   = trans/<lang>/library--argparse.po
+trans.ru   = library/argparse.po
+source_file   = trans/en/library--argparse.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--argparse
+
+[o:python-doc:p:python-39:r:library--array]
+file_filter   = trans/<lang>/library--array.po
+trans.ru   = library/array.po
+source_file   = trans/en/library--array.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--array
+
+[o:python-doc:p:python-39:r:library--ast]
+file_filter   = trans/<lang>/library--ast.po
+trans.ru   = library/ast.po
+source_file   = trans/en/library--ast.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--ast
+
+[o:python-doc:p:python-39:r:library--asynchat]
+file_filter   = trans/<lang>/library--asynchat.po
+trans.ru   = library/asynchat.po
+source_file   = trans/en/library--asynchat.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asynchat
+
+[o:python-doc:p:python-39:r:library--asyncio]
+file_filter   = trans/<lang>/library--asyncio.po
+trans.ru   = library/asyncio.po
+source_file   = trans/en/library--asyncio.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio
+
+[o:python-doc:p:python-39:r:library--asyncio-api-index]
+file_filter   = trans/<lang>/library--asyncio-api-index.po
+trans.ru   = library/asyncio-api-index.po
+source_file   = trans/en/library--asyncio-api-index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-api-index
+
+[o:python-doc:p:python-39:r:library--asyncio-dev]
+file_filter   = trans/<lang>/library--asyncio-dev.po
+trans.ru   = library/asyncio-dev.po
+source_file   = trans/en/library--asyncio-dev.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-dev
+
+[o:python-doc:p:python-39:r:library--asyncio-eventloop]
+file_filter   = trans/<lang>/library--asyncio-eventloop.po
+trans.ru   = library/asyncio-eventloop.po
+source_file   = trans/en/library--asyncio-eventloop.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-eventloop
+
+[o:python-doc:p:python-39:r:library--asyncio-exceptions]
+file_filter   = trans/<lang>/library--asyncio-exceptions.po
+trans.ru   = library/asyncio-exceptions.po
+source_file   = trans/en/library--asyncio-exceptions.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-exceptions
+
+[o:python-doc:p:python-39:r:library--asyncio-future]
+file_filter   = trans/<lang>/library--asyncio-future.po
+trans.ru   = library/asyncio-future.po
+source_file   = trans/en/library--asyncio-future.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-future
+
+[o:python-doc:p:python-39:r:library--asyncio-llapi-index]
+file_filter   = trans/<lang>/library--asyncio-llapi-index.po
+trans.ru   = library/asyncio-llapi-index.po
+source_file   = trans/en/library--asyncio-llapi-index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-llapi-index
+
+[o:python-doc:p:python-39:r:library--asyncio-platforms]
+file_filter   = trans/<lang>/library--asyncio-platforms.po
+trans.ru   = library/asyncio-platforms.po
+source_file   = trans/en/library--asyncio-platforms.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-platforms
+
+[o:python-doc:p:python-39:r:library--asyncio-policy]
+file_filter   = trans/<lang>/library--asyncio-policy.po
+trans.ru   = library/asyncio-policy.po
+source_file   = trans/en/library--asyncio-policy.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-policy
+
+[o:python-doc:p:python-39:r:library--asyncio-protocol]
+file_filter   = trans/<lang>/library--asyncio-protocol.po
+trans.ru   = library/asyncio-protocol.po
+source_file   = trans/en/library--asyncio-protocol.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-protocol
+
+[o:python-doc:p:python-39:r:library--asyncio-queue]
+file_filter   = trans/<lang>/library--asyncio-queue.po
+trans.ru   = library/asyncio-queue.po
+source_file   = trans/en/library--asyncio-queue.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-queue
+
+[o:python-doc:p:python-39:r:library--asyncio-stream]
+file_filter   = trans/<lang>/library--asyncio-stream.po
+trans.ru   = library/asyncio-stream.po
+source_file   = trans/en/library--asyncio-stream.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-stream
+
+[o:python-doc:p:python-39:r:library--asyncio-subprocess]
+file_filter   = trans/<lang>/library--asyncio-subprocess.po
+trans.ru   = library/asyncio-subprocess.po
+source_file   = trans/en/library--asyncio-subprocess.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-subprocess
+
+[o:python-doc:p:python-39:r:library--asyncio-sync]
+file_filter   = trans/<lang>/library--asyncio-sync.po
+trans.ru   = library/asyncio-sync.po
+source_file   = trans/en/library--asyncio-sync.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-sync
+
+[o:python-doc:p:python-39:r:library--asyncio-task]
+file_filter   = trans/<lang>/library--asyncio-task.po
+trans.ru   = library/asyncio-task.po
+source_file   = trans/en/library--asyncio-task.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncio-task
+
+[o:python-doc:p:python-39:r:library--asyncore]
+file_filter   = trans/<lang>/library--asyncore.po
+trans.ru   = library/asyncore.po
+source_file   = trans/en/library--asyncore.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--asyncore
+
+[o:python-doc:p:python-39:r:library--atexit]
+file_filter   = trans/<lang>/library--atexit.po
+trans.ru   = library/atexit.po
+source_file   = trans/en/library--atexit.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--atexit
+
+[o:python-doc:p:python-39:r:library--audioop]
+file_filter   = trans/<lang>/library--audioop.po
+trans.ru   = library/audioop.po
+source_file   = trans/en/library--audioop.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--audioop
+
+[o:python-doc:p:python-39:r:library--audit_events]
+file_filter   = trans/<lang>/library--audit_events.po
+trans.ru   = library/audit_events.po
+source_file   = trans/en/library--audit_events.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--audit_events
+
+[o:python-doc:p:python-39:r:library--base64]
+file_filter   = trans/<lang>/library--base64.po
+trans.ru   = library/base64.po
+source_file   = trans/en/library--base64.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--base64
+
+[o:python-doc:p:python-39:r:library--bdb]
+file_filter   = trans/<lang>/library--bdb.po
+trans.ru   = library/bdb.po
+source_file   = trans/en/library--bdb.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--bdb
+
+[o:python-doc:p:python-39:r:library--binary]
+file_filter   = trans/<lang>/library--binary.po
+trans.ru   = library/binary.po
+source_file   = trans/en/library--binary.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--binary
+
+[o:python-doc:p:python-39:r:library--binascii]
+file_filter   = trans/<lang>/library--binascii.po
+trans.ru   = library/binascii.po
+source_file   = trans/en/library--binascii.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--binascii
+
+[o:python-doc:p:python-39:r:library--binhex]
+file_filter   = trans/<lang>/library--binhex.po
+trans.ru   = library/binhex.po
+source_file   = trans/en/library--binhex.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--binhex
+
+[o:python-doc:p:python-39:r:library--bisect]
+file_filter   = trans/<lang>/library--bisect.po
+trans.ru   = library/bisect.po
+source_file   = trans/en/library--bisect.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--bisect
+
+[o:python-doc:p:python-39:r:library--builtins]
+file_filter   = trans/<lang>/library--builtins.po
+trans.ru   = library/builtins.po
+source_file   = trans/en/library--builtins.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--builtins
+
+[o:python-doc:p:python-39:r:library--bz2]
+file_filter   = trans/<lang>/library--bz2.po
+trans.ru   = library/bz2.po
+source_file   = trans/en/library--bz2.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--bz2
+
+[o:python-doc:p:python-39:r:library--calendar]
+file_filter   = trans/<lang>/library--calendar.po
+trans.ru   = library/calendar.po
+source_file   = trans/en/library--calendar.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--calendar
+
+[o:python-doc:p:python-39:r:library--cgi]
+file_filter   = trans/<lang>/library--cgi.po
+trans.ru   = library/cgi.po
+source_file   = trans/en/library--cgi.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--cgi
+
+[o:python-doc:p:python-39:r:library--cgitb]
+file_filter   = trans/<lang>/library--cgitb.po
+trans.ru   = library/cgitb.po
+source_file   = trans/en/library--cgitb.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--cgitb
+
+[o:python-doc:p:python-39:r:library--chunk]
+file_filter   = trans/<lang>/library--chunk.po
+trans.ru   = library/chunk.po
+source_file   = trans/en/library--chunk.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--chunk
+
+[o:python-doc:p:python-39:r:library--cmath]
+file_filter   = trans/<lang>/library--cmath.po
+trans.ru   = library/cmath.po
+source_file   = trans/en/library--cmath.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--cmath
+
+[o:python-doc:p:python-39:r:library--cmd]
+file_filter   = trans/<lang>/library--cmd.po
+trans.ru   = library/cmd.po
+source_file   = trans/en/library--cmd.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--cmd
+
+[o:python-doc:p:python-39:r:library--code]
+file_filter   = trans/<lang>/library--code.po
+trans.ru   = library/code.po
+source_file   = trans/en/library--code.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--code
+
+[o:python-doc:p:python-39:r:library--codecs]
+file_filter   = trans/<lang>/library--codecs.po
+trans.ru   = library/codecs.po
+source_file   = trans/en/library--codecs.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--codecs
+
+[o:python-doc:p:python-39:r:library--codeop]
+file_filter   = trans/<lang>/library--codeop.po
+trans.ru   = library/codeop.po
+source_file   = trans/en/library--codeop.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--codeop
+
+[o:python-doc:p:python-39:r:library--collections]
+file_filter   = trans/<lang>/library--collections.po
+trans.ru   = library/collections.po
+source_file   = trans/en/library--collections.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--collections
+
+[o:python-doc:p:python-39:r:library--collections_abc]
+file_filter   = trans/<lang>/library--collections_abc.po
+trans.ru   = library/collections.abc.po
+source_file   = trans/en/library--collections_abc.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--collections_abc
+
+[o:python-doc:p:python-39:r:library--colorsys]
+file_filter   = trans/<lang>/library--colorsys.po
+trans.ru   = library/colorsys.po
+source_file   = trans/en/library--colorsys.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--colorsys
+
+[o:python-doc:p:python-39:r:library--compileall]
+file_filter   = trans/<lang>/library--compileall.po
+trans.ru   = library/compileall.po
+source_file   = trans/en/library--compileall.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--compileall
+
+[o:python-doc:p:python-39:r:library--concurrency]
+file_filter   = trans/<lang>/library--concurrency.po
+trans.ru   = library/concurrency.po
+source_file   = trans/en/library--concurrency.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--concurrency
+
+[o:python-doc:p:python-39:r:library--concurrent]
+file_filter   = trans/<lang>/library--concurrent.po
+trans.ru   = library/concurrent.po
+source_file   = trans/en/library--concurrent.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--concurrent
+
+[o:python-doc:p:python-39:r:library--concurrent_futures]
+file_filter   = trans/<lang>/library--concurrent_futures.po
+trans.ru   = library/concurrent.futures.po
+source_file   = trans/en/library--concurrent_futures.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--concurrent_futures
+
+[o:python-doc:p:python-39:r:library--configparser]
+file_filter   = trans/<lang>/library--configparser.po
+trans.ru   = library/configparser.po
+source_file   = trans/en/library--configparser.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--configparser
+
+[o:python-doc:p:python-39:r:library--constants]
+file_filter   = trans/<lang>/library--constants.po
+trans.ru   = library/constants.po
+source_file   = trans/en/library--constants.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--constants
+
+[o:python-doc:p:python-39:r:library--contextlib]
+file_filter   = trans/<lang>/library--contextlib.po
+trans.ru   = library/contextlib.po
+source_file   = trans/en/library--contextlib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--contextlib
+
+[o:python-doc:p:python-39:r:library--contextvars]
+file_filter   = trans/<lang>/library--contextvars.po
+trans.ru   = library/contextvars.po
+source_file   = trans/en/library--contextvars.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--contextvars
+
+[o:python-doc:p:python-39:r:library--copy]
+file_filter   = trans/<lang>/library--copy.po
+trans.ru   = library/copy.po
+source_file   = trans/en/library--copy.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--copy
+
+[o:python-doc:p:python-39:r:library--copyreg]
+file_filter   = trans/<lang>/library--copyreg.po
+trans.ru   = library/copyreg.po
+source_file   = trans/en/library--copyreg.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--copyreg
+
+[o:python-doc:p:python-39:r:library--crypt]
+file_filter   = trans/<lang>/library--crypt.po
+trans.ru   = library/crypt.po
+source_file   = trans/en/library--crypt.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--crypt
+
+[o:python-doc:p:python-39:r:library--crypto]
+file_filter   = trans/<lang>/library--crypto.po
+trans.ru   = library/crypto.po
+source_file   = trans/en/library--crypto.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--crypto
+
+[o:python-doc:p:python-39:r:library--csv]
+file_filter   = trans/<lang>/library--csv.po
+trans.ru   = library/csv.po
+source_file   = trans/en/library--csv.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--csv
+
+[o:python-doc:p:python-39:r:library--ctypes]
+file_filter   = trans/<lang>/library--ctypes.po
+trans.ru   = library/ctypes.po
+source_file   = trans/en/library--ctypes.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--ctypes
+
+[o:python-doc:p:python-39:r:library--curses]
+file_filter   = trans/<lang>/library--curses.po
+trans.ru   = library/curses.po
+source_file   = trans/en/library--curses.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--curses
+
+[o:python-doc:p:python-39:r:library--curses_ascii]
+file_filter   = trans/<lang>/library--curses_ascii.po
+trans.ru   = library/curses.ascii.po
+source_file   = trans/en/library--curses_ascii.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--curses_ascii
+
+[o:python-doc:p:python-39:r:library--curses_panel]
+file_filter   = trans/<lang>/library--curses_panel.po
+trans.ru   = library/curses.panel.po
+source_file   = trans/en/library--curses_panel.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--curses_panel
+
+[o:python-doc:p:python-39:r:library--custominterp]
+file_filter   = trans/<lang>/library--custominterp.po
+trans.ru   = library/custominterp.po
+source_file   = trans/en/library--custominterp.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--custominterp
+
+[o:python-doc:p:python-39:r:library--dataclasses]
+file_filter   = trans/<lang>/library--dataclasses.po
+trans.ru   = library/dataclasses.po
+source_file   = trans/en/library--dataclasses.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--dataclasses
+
+[o:python-doc:p:python-39:r:library--datatypes]
+file_filter   = trans/<lang>/library--datatypes.po
+trans.ru   = library/datatypes.po
+source_file   = trans/en/library--datatypes.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--datatypes
+
+[o:python-doc:p:python-39:r:library--datetime]
+file_filter   = trans/<lang>/library--datetime.po
+trans.ru   = library/datetime.po
+source_file   = trans/en/library--datetime.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--datetime
+
+[o:python-doc:p:python-39:r:library--dbm]
+file_filter   = trans/<lang>/library--dbm.po
+trans.ru   = library/dbm.po
+source_file   = trans/en/library--dbm.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--dbm
+
+[o:python-doc:p:python-39:r:library--debug]
+file_filter   = trans/<lang>/library--debug.po
+trans.ru   = library/debug.po
+source_file   = trans/en/library--debug.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--debug
+
+[o:python-doc:p:python-39:r:library--decimal]
+file_filter   = trans/<lang>/library--decimal.po
+trans.ru   = library/decimal.po
+source_file   = trans/en/library--decimal.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--decimal
+
+[o:python-doc:p:python-39:r:library--development]
+file_filter   = trans/<lang>/library--development.po
+trans.ru   = library/development.po
+source_file   = trans/en/library--development.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--development
+
+[o:python-doc:p:python-39:r:library--devmode]
+file_filter   = trans/<lang>/library--devmode.po
+trans.ru   = library/devmode.po
+source_file   = trans/en/library--devmode.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--devmode
+
+[o:python-doc:p:python-39:r:library--dialog]
+file_filter   = trans/<lang>/library--dialog.po
+trans.ru   = library/dialog.po
+source_file   = trans/en/library--dialog.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--dialog
+
+[o:python-doc:p:python-39:r:library--difflib]
+file_filter   = trans/<lang>/library--difflib.po
+trans.ru   = library/difflib.po
+source_file   = trans/en/library--difflib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--difflib
+
+[o:python-doc:p:python-39:r:library--dis]
+file_filter   = trans/<lang>/library--dis.po
+trans.ru   = library/dis.po
+source_file   = trans/en/library--dis.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--dis
+
+[o:python-doc:p:python-39:r:library--distribution]
+file_filter   = trans/<lang>/library--distribution.po
+trans.ru   = library/distribution.po
+source_file   = trans/en/library--distribution.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--distribution
+
+[o:python-doc:p:python-39:r:library--distutils]
+file_filter   = trans/<lang>/library--distutils.po
+trans.ru   = library/distutils.po
+source_file   = trans/en/library--distutils.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--distutils
+
+[o:python-doc:p:python-39:r:library--doctest]
+file_filter   = trans/<lang>/library--doctest.po
+trans.ru   = library/doctest.po
+source_file   = trans/en/library--doctest.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--doctest
+
+[o:python-doc:p:python-39:r:library--email]
+file_filter   = trans/<lang>/library--email.po
+trans.ru   = library/email.po
+source_file   = trans/en/library--email.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email
+
+[o:python-doc:p:python-39:r:library--email_charset]
+file_filter   = trans/<lang>/library--email_charset.po
+trans.ru   = library/email.charset.po
+source_file   = trans/en/library--email_charset.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_charset
+
+[o:python-doc:p:python-39:r:library--email_compat32-message]
+file_filter   = trans/<lang>/library--email_compat32-message.po
+trans.ru   = library/email.compat32-message.po
+source_file   = trans/en/library--email_compat32-message.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_compat32-message
+
+[o:python-doc:p:python-39:r:library--email_contentmanager]
+file_filter   = trans/<lang>/library--email_contentmanager.po
+trans.ru   = library/email.contentmanager.po
+source_file   = trans/en/library--email_contentmanager.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_contentmanager
+
+[o:python-doc:p:python-39:r:library--email_encoders]
+file_filter   = trans/<lang>/library--email_encoders.po
+trans.ru   = library/email.encoders.po
+source_file   = trans/en/library--email_encoders.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_encoders
+
+[o:python-doc:p:python-39:r:library--email_errors]
+file_filter   = trans/<lang>/library--email_errors.po
+trans.ru   = library/email.errors.po
+source_file   = trans/en/library--email_errors.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_errors
+
+[o:python-doc:p:python-39:r:library--email_examples]
+file_filter   = trans/<lang>/library--email_examples.po
+trans.ru   = library/email.examples.po
+source_file   = trans/en/library--email_examples.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_examples
+
+[o:python-doc:p:python-39:r:library--email_generator]
+file_filter   = trans/<lang>/library--email_generator.po
+trans.ru   = library/email.generator.po
+source_file   = trans/en/library--email_generator.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_generator
+
+[o:python-doc:p:python-39:r:library--email_header]
+file_filter   = trans/<lang>/library--email_header.po
+trans.ru   = library/email.header.po
+source_file   = trans/en/library--email_header.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_header
+
+[o:python-doc:p:python-39:r:library--email_headerregistry]
+file_filter   = trans/<lang>/library--email_headerregistry.po
+trans.ru   = library/email.headerregistry.po
+source_file   = trans/en/library--email_headerregistry.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_headerregistry
+
+[o:python-doc:p:python-39:r:library--email_iterators]
+file_filter   = trans/<lang>/library--email_iterators.po
+trans.ru   = library/email.iterators.po
+source_file   = trans/en/library--email_iterators.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_iterators
+
+[o:python-doc:p:python-39:r:library--email_message]
+file_filter   = trans/<lang>/library--email_message.po
+trans.ru   = library/email.message.po
+source_file   = trans/en/library--email_message.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_message
+
+[o:python-doc:p:python-39:r:library--email_mime]
+file_filter   = trans/<lang>/library--email_mime.po
+trans.ru   = library/email.mime.po
+source_file   = trans/en/library--email_mime.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_mime
+
+[o:python-doc:p:python-39:r:library--email_parser]
+file_filter   = trans/<lang>/library--email_parser.po
+trans.ru   = library/email.parser.po
+source_file   = trans/en/library--email_parser.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_parser
+
+[o:python-doc:p:python-39:r:library--email_policy]
+file_filter   = trans/<lang>/library--email_policy.po
+trans.ru   = library/email.policy.po
+source_file   = trans/en/library--email_policy.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_policy
+
+[o:python-doc:p:python-39:r:library--email_utils]
+file_filter   = trans/<lang>/library--email_utils.po
+trans.ru   = library/email.utils.po
+source_file   = trans/en/library--email_utils.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--email_utils
+
+[o:python-doc:p:python-39:r:library--ensurepip]
+file_filter   = trans/<lang>/library--ensurepip.po
+trans.ru   = library/ensurepip.po
+source_file   = trans/en/library--ensurepip.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--ensurepip
+
+[o:python-doc:p:python-39:r:library--enum]
+file_filter   = trans/<lang>/library--enum.po
+trans.ru   = library/enum.po
+source_file   = trans/en/library--enum.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--enum
+
+[o:python-doc:p:python-39:r:library--errno]
+file_filter   = trans/<lang>/library--errno.po
+trans.ru   = library/errno.po
+source_file   = trans/en/library--errno.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--errno
+
+[o:python-doc:p:python-39:r:library--exceptions]
+file_filter   = trans/<lang>/library--exceptions.po
+trans.ru   = library/exceptions.po
+source_file   = trans/en/library--exceptions.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--exceptions
+
+[o:python-doc:p:python-39:r:library--faulthandler]
+file_filter   = trans/<lang>/library--faulthandler.po
+trans.ru   = library/faulthandler.po
+source_file   = trans/en/library--faulthandler.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--faulthandler
+
+[o:python-doc:p:python-39:r:library--fcntl]
+file_filter   = trans/<lang>/library--fcntl.po
+trans.ru   = library/fcntl.po
+source_file   = trans/en/library--fcntl.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--fcntl
+
+[o:python-doc:p:python-39:r:library--filecmp]
+file_filter   = trans/<lang>/library--filecmp.po
+trans.ru   = library/filecmp.po
+source_file   = trans/en/library--filecmp.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--filecmp
+
+[o:python-doc:p:python-39:r:library--fileformats]
+file_filter   = trans/<lang>/library--fileformats.po
+trans.ru   = library/fileformats.po
+source_file   = trans/en/library--fileformats.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--fileformats
+
+[o:python-doc:p:python-39:r:library--fileinput]
+file_filter   = trans/<lang>/library--fileinput.po
+trans.ru   = library/fileinput.po
+source_file   = trans/en/library--fileinput.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--fileinput
+
+[o:python-doc:p:python-39:r:library--filesys]
+file_filter   = trans/<lang>/library--filesys.po
+trans.ru   = library/filesys.po
+source_file   = trans/en/library--filesys.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--filesys
+
+[o:python-doc:p:python-39:r:library--fnmatch]
+file_filter   = trans/<lang>/library--fnmatch.po
+trans.ru   = library/fnmatch.po
+source_file   = trans/en/library--fnmatch.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--fnmatch
+
+[o:python-doc:p:python-39:r:library--formatter]
+file_filter   = trans/<lang>/library--formatter.po
+trans.ru   = library/formatter.po
+source_file   = trans/en/library--formatter.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--formatter
+
+[o:python-doc:p:python-39:r:library--fractions]
+file_filter   = trans/<lang>/library--fractions.po
+trans.ru   = library/fractions.po
+source_file   = trans/en/library--fractions.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--fractions
+
+[o:python-doc:p:python-39:r:library--frameworks]
+file_filter   = trans/<lang>/library--frameworks.po
+trans.ru   = library/frameworks.po
+source_file   = trans/en/library--frameworks.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--frameworks
+
+[o:python-doc:p:python-39:r:library--ftplib]
+file_filter   = trans/<lang>/library--ftplib.po
+trans.ru   = library/ftplib.po
+source_file   = trans/en/library--ftplib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--ftplib
+
+[o:python-doc:p:python-39:r:library--functional]
+file_filter   = trans/<lang>/library--functional.po
+trans.ru   = library/functional.po
+source_file   = trans/en/library--functional.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--functional
+
+[o:python-doc:p:python-39:r:library--functions]
+file_filter   = trans/<lang>/library--functions.po
+trans.ru   = library/functions.po
+source_file   = trans/en/library--functions.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--functions
+
+[o:python-doc:p:python-39:r:library--functools]
+file_filter   = trans/<lang>/library--functools.po
+trans.ru   = library/functools.po
+source_file   = trans/en/library--functools.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--functools
+
+[o:python-doc:p:python-39:r:library--__future__]
+file_filter   = trans/<lang>/library--__future__.po
+trans.ru   = library/__future__.po
+source_file   = trans/en/library--__future__.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--__future__
+
+[o:python-doc:p:python-39:r:library--gc]
+file_filter   = trans/<lang>/library--gc.po
+trans.ru   = library/gc.po
+source_file   = trans/en/library--gc.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--gc
+
+[o:python-doc:p:python-39:r:library--getopt]
+file_filter   = trans/<lang>/library--getopt.po
+trans.ru   = library/getopt.po
+source_file   = trans/en/library--getopt.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--getopt
+
+[o:python-doc:p:python-39:r:library--getpass]
+file_filter   = trans/<lang>/library--getpass.po
+trans.ru   = library/getpass.po
+source_file   = trans/en/library--getpass.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--getpass
+
+[o:python-doc:p:python-39:r:library--gettext]
+file_filter   = trans/<lang>/library--gettext.po
+trans.ru   = library/gettext.po
+source_file   = trans/en/library--gettext.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--gettext
+
+[o:python-doc:p:python-39:r:library--glob]
+file_filter   = trans/<lang>/library--glob.po
+trans.ru   = library/glob.po
+source_file   = trans/en/library--glob.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--glob
+
+[o:python-doc:p:python-39:r:library--graphlib]
+file_filter   = trans/<lang>/library--graphlib.po
+trans.ru   = library/graphlib.po
+source_file   = trans/en/library--graphlib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--graphlib
+
+[o:python-doc:p:python-39:r:library--grp]
+file_filter   = trans/<lang>/library--grp.po
+trans.ru   = library/grp.po
+source_file   = trans/en/library--grp.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--grp
+
+[o:python-doc:p:python-39:r:library--gzip]
+file_filter   = trans/<lang>/library--gzip.po
+trans.ru   = library/gzip.po
+source_file   = trans/en/library--gzip.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--gzip
+
+[o:python-doc:p:python-39:r:library--hashlib]
+file_filter   = trans/<lang>/library--hashlib.po
+trans.ru   = library/hashlib.po
+source_file   = trans/en/library--hashlib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--hashlib
+
+[o:python-doc:p:python-39:r:library--heapq]
+file_filter   = trans/<lang>/library--heapq.po
+trans.ru   = library/heapq.po
+source_file   = trans/en/library--heapq.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--heapq
+
+[o:python-doc:p:python-39:r:library--hmac]
+file_filter   = trans/<lang>/library--hmac.po
+trans.ru   = library/hmac.po
+source_file   = trans/en/library--hmac.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--hmac
+
+[o:python-doc:p:python-39:r:library--html]
+file_filter   = trans/<lang>/library--html.po
+trans.ru   = library/html.po
+source_file   = trans/en/library--html.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--html
+
+[o:python-doc:p:python-39:r:library--html_entities]
+file_filter   = trans/<lang>/library--html_entities.po
+trans.ru   = library/html.entities.po
+source_file   = trans/en/library--html_entities.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--html_entities
+
+[o:python-doc:p:python-39:r:library--html_parser]
+file_filter   = trans/<lang>/library--html_parser.po
+trans.ru   = library/html.parser.po
+source_file   = trans/en/library--html_parser.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--html_parser
+
+[o:python-doc:p:python-39:r:library--http]
+file_filter   = trans/<lang>/library--http.po
+trans.ru   = library/http.po
+source_file   = trans/en/library--http.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--http
+
+[o:python-doc:p:python-39:r:library--http_client]
+file_filter   = trans/<lang>/library--http_client.po
+trans.ru   = library/http.client.po
+source_file   = trans/en/library--http_client.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--http_client
+
+[o:python-doc:p:python-39:r:library--http_cookiejar]
+file_filter   = trans/<lang>/library--http_cookiejar.po
+trans.ru   = library/http.cookiejar.po
+source_file   = trans/en/library--http_cookiejar.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--http_cookiejar
+
+[o:python-doc:p:python-39:r:library--http_cookies]
+file_filter   = trans/<lang>/library--http_cookies.po
+trans.ru   = library/http.cookies.po
+source_file   = trans/en/library--http_cookies.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--http_cookies
+
+[o:python-doc:p:python-39:r:library--http_server]
+file_filter   = trans/<lang>/library--http_server.po
+trans.ru   = library/http.server.po
+source_file   = trans/en/library--http_server.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--http_server
+
+[o:python-doc:p:python-39:r:library--i18n]
+file_filter   = trans/<lang>/library--i18n.po
+trans.ru   = library/i18n.po
+source_file   = trans/en/library--i18n.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--i18n
+
+[o:python-doc:p:python-39:r:library--idle]
+file_filter   = trans/<lang>/library--idle.po
+trans.ru   = library/idle.po
+source_file   = trans/en/library--idle.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--idle
+
+[o:python-doc:p:python-39:r:library--imaplib]
+file_filter   = trans/<lang>/library--imaplib.po
+trans.ru   = library/imaplib.po
+source_file   = trans/en/library--imaplib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--imaplib
+
+[o:python-doc:p:python-39:r:library--imghdr]
+file_filter   = trans/<lang>/library--imghdr.po
+trans.ru   = library/imghdr.po
+source_file   = trans/en/library--imghdr.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--imghdr
+
+[o:python-doc:p:python-39:r:library--imp]
+file_filter   = trans/<lang>/library--imp.po
+trans.ru   = library/imp.po
+source_file   = trans/en/library--imp.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--imp
+
+[o:python-doc:p:python-39:r:library--importlib]
+file_filter   = trans/<lang>/library--importlib.po
+trans.ru   = library/importlib.po
+source_file   = trans/en/library--importlib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--importlib
+
+[o:python-doc:p:python-39:r:library--importlib_metadata]
+file_filter   = trans/<lang>/library--importlib_metadata.po
+trans.ru   = library/importlib.metadata.po
+source_file   = trans/en/library--importlib_metadata.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--importlib_metadata
+
+[o:python-doc:p:python-39:r:library--index]
+file_filter   = trans/<lang>/library--index.po
+trans.ru   = library/index.po
+source_file   = trans/en/library--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--index
+
+[o:python-doc:p:python-39:r:library--inspect]
+file_filter   = trans/<lang>/library--inspect.po
+trans.ru   = library/inspect.po
+source_file   = trans/en/library--inspect.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--inspect
+
+[o:python-doc:p:python-39:r:library--internet]
+file_filter   = trans/<lang>/library--internet.po
+trans.ru   = library/internet.po
+source_file   = trans/en/library--internet.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--internet
+
+[o:python-doc:p:python-39:r:library--intro]
+file_filter   = trans/<lang>/library--intro.po
+trans.ru   = library/intro.po
+source_file   = trans/en/library--intro.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--intro
+
+[o:python-doc:p:python-39:r:library--io]
+file_filter   = trans/<lang>/library--io.po
+trans.ru   = library/io.po
+source_file   = trans/en/library--io.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--io
+
+[o:python-doc:p:python-39:r:library--ipaddress]
+file_filter   = trans/<lang>/library--ipaddress.po
+trans.ru   = library/ipaddress.po
+source_file   = trans/en/library--ipaddress.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--ipaddress
+
+[o:python-doc:p:python-39:r:library--ipc]
+file_filter   = trans/<lang>/library--ipc.po
+trans.ru   = library/ipc.po
+source_file   = trans/en/library--ipc.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--ipc
+
+[o:python-doc:p:python-39:r:library--itertools]
+file_filter   = trans/<lang>/library--itertools.po
+trans.ru   = library/itertools.po
+source_file   = trans/en/library--itertools.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--itertools
+
+[o:python-doc:p:python-39:r:library--json]
+file_filter   = trans/<lang>/library--json.po
+trans.ru   = library/json.po
+source_file   = trans/en/library--json.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--json
+
+[o:python-doc:p:python-39:r:library--keyword]
+file_filter   = trans/<lang>/library--keyword.po
+trans.ru   = library/keyword.po
+source_file   = trans/en/library--keyword.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--keyword
+
+[o:python-doc:p:python-39:r:library--language]
+file_filter   = trans/<lang>/library--language.po
+trans.ru   = library/language.po
+source_file   = trans/en/library--language.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--language
+
+[o:python-doc:p:python-39:r:library--linecache]
+file_filter   = trans/<lang>/library--linecache.po
+trans.ru   = library/linecache.po
+source_file   = trans/en/library--linecache.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--linecache
+
+[o:python-doc:p:python-39:r:library--locale]
+file_filter   = trans/<lang>/library--locale.po
+trans.ru   = library/locale.po
+source_file   = trans/en/library--locale.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--locale
+
+[o:python-doc:p:python-39:r:library--logging]
+file_filter   = trans/<lang>/library--logging.po
+trans.ru   = library/logging.po
+source_file   = trans/en/library--logging.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--logging
+
+[o:python-doc:p:python-39:r:library--logging_config]
+file_filter   = trans/<lang>/library--logging_config.po
+trans.ru   = library/logging.config.po
+source_file   = trans/en/library--logging_config.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--logging_config
+
+[o:python-doc:p:python-39:r:library--logging_handlers]
+file_filter   = trans/<lang>/library--logging_handlers.po
+trans.ru   = library/logging.handlers.po
+source_file   = trans/en/library--logging_handlers.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--logging_handlers
+
+[o:python-doc:p:python-39:r:library--lzma]
+file_filter   = trans/<lang>/library--lzma.po
+trans.ru   = library/lzma.po
+source_file   = trans/en/library--lzma.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--lzma
+
+[o:python-doc:p:python-39:r:library--mailbox]
+file_filter   = trans/<lang>/library--mailbox.po
+trans.ru   = library/mailbox.po
+source_file   = trans/en/library--mailbox.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--mailbox
+
+[o:python-doc:p:python-39:r:library--mailcap]
+file_filter   = trans/<lang>/library--mailcap.po
+trans.ru   = library/mailcap.po
+source_file   = trans/en/library--mailcap.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--mailcap
+
+[o:python-doc:p:python-39:r:library--__main__]
+file_filter   = trans/<lang>/library--__main__.po
+trans.ru   = library/__main__.po
+source_file   = trans/en/library--__main__.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--__main__
+
+[o:python-doc:p:python-39:r:library--markup]
+file_filter   = trans/<lang>/library--markup.po
+trans.ru   = library/markup.po
+source_file   = trans/en/library--markup.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--markup
+
+[o:python-doc:p:python-39:r:library--marshal]
+file_filter   = trans/<lang>/library--marshal.po
+trans.ru   = library/marshal.po
+source_file   = trans/en/library--marshal.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--marshal
+
+[o:python-doc:p:python-39:r:library--math]
+file_filter   = trans/<lang>/library--math.po
+trans.ru   = library/math.po
+source_file   = trans/en/library--math.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--math
+
+[o:python-doc:p:python-39:r:library--mimetypes]
+file_filter   = trans/<lang>/library--mimetypes.po
+trans.ru   = library/mimetypes.po
+source_file   = trans/en/library--mimetypes.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--mimetypes
+
+[o:python-doc:p:python-39:r:library--misc]
+file_filter   = trans/<lang>/library--misc.po
+trans.ru   = library/misc.po
+source_file   = trans/en/library--misc.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--misc
+
+[o:python-doc:p:python-39:r:library--mm]
+file_filter   = trans/<lang>/library--mm.po
+trans.ru   = library/mm.po
+source_file   = trans/en/library--mm.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--mm
+
+[o:python-doc:p:python-39:r:library--mmap]
+file_filter   = trans/<lang>/library--mmap.po
+trans.ru   = library/mmap.po
+source_file   = trans/en/library--mmap.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--mmap
+
+[o:python-doc:p:python-39:r:library--modulefinder]
+file_filter   = trans/<lang>/library--modulefinder.po
+trans.ru   = library/modulefinder.po
+source_file   = trans/en/library--modulefinder.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--modulefinder
+
+[o:python-doc:p:python-39:r:library--modules]
+file_filter   = trans/<lang>/library--modules.po
+trans.ru   = library/modules.po
+source_file   = trans/en/library--modules.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--modules
+
+[o:python-doc:p:python-39:r:library--msilib]
+file_filter   = trans/<lang>/library--msilib.po
+trans.ru   = library/msilib.po
+source_file   = trans/en/library--msilib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--msilib
+
+[o:python-doc:p:python-39:r:library--msvcrt]
+file_filter   = trans/<lang>/library--msvcrt.po
+trans.ru   = library/msvcrt.po
+source_file   = trans/en/library--msvcrt.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--msvcrt
+
+[o:python-doc:p:python-39:r:library--multiprocessing]
+file_filter   = trans/<lang>/library--multiprocessing.po
+trans.ru   = library/multiprocessing.po
+source_file   = trans/en/library--multiprocessing.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--multiprocessing
+
+[o:python-doc:p:python-39:r:library--multiprocessing_shared_memory]
+file_filter   = trans/<lang>/library--multiprocessing_shared_memory.po
+trans.ru   = library/multiprocessing.shared_memory.po
+source_file   = trans/en/library--multiprocessing_shared_memory.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--multiprocessing_shared_memory
+
+[o:python-doc:p:python-39:r:library--netdata]
+file_filter   = trans/<lang>/library--netdata.po
+trans.ru   = library/netdata.po
+source_file   = trans/en/library--netdata.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--netdata
+
+[o:python-doc:p:python-39:r:library--netrc]
+file_filter   = trans/<lang>/library--netrc.po
+trans.ru   = library/netrc.po
+source_file   = trans/en/library--netrc.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--netrc
+
+[o:python-doc:p:python-39:r:library--nis]
+file_filter   = trans/<lang>/library--nis.po
+trans.ru   = library/nis.po
+source_file   = trans/en/library--nis.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--nis
+
+[o:python-doc:p:python-39:r:library--nntplib]
+file_filter   = trans/<lang>/library--nntplib.po
+trans.ru   = library/nntplib.po
+source_file   = trans/en/library--nntplib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--nntplib
+
+[o:python-doc:p:python-39:r:library--numbers]
+file_filter   = trans/<lang>/library--numbers.po
+trans.ru   = library/numbers.po
+source_file   = trans/en/library--numbers.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--numbers
+
+[o:python-doc:p:python-39:r:library--numeric]
+file_filter   = trans/<lang>/library--numeric.po
+trans.ru   = library/numeric.po
+source_file   = trans/en/library--numeric.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--numeric
+
+[o:python-doc:p:python-39:r:library--operator]
+file_filter   = trans/<lang>/library--operator.po
+trans.ru   = library/operator.po
+source_file   = trans/en/library--operator.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--operator
+
+[o:python-doc:p:python-39:r:library--optparse]
+file_filter   = trans/<lang>/library--optparse.po
+trans.ru   = library/optparse.po
+source_file   = trans/en/library--optparse.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--optparse
+
+[o:python-doc:p:python-39:r:library--os]
+file_filter   = trans/<lang>/library--os.po
+trans.ru   = library/os.po
+source_file   = trans/en/library--os.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--os
+
+[o:python-doc:p:python-39:r:library--os_path]
+file_filter   = trans/<lang>/library--os_path.po
+trans.ru   = library/os.path.po
+source_file   = trans/en/library--os_path.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--os_path
+
+[o:python-doc:p:python-39:r:library--ossaudiodev]
+file_filter   = trans/<lang>/library--ossaudiodev.po
+trans.ru   = library/ossaudiodev.po
+source_file   = trans/en/library--ossaudiodev.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--ossaudiodev
+
+[o:python-doc:p:python-39:r:library--parser]
+file_filter   = trans/<lang>/library--parser.po
+trans.ru   = library/parser.po
+source_file   = trans/en/library--parser.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--parser
+
+[o:python-doc:p:python-39:r:library--pathlib]
+file_filter   = trans/<lang>/library--pathlib.po
+trans.ru   = library/pathlib.po
+source_file   = trans/en/library--pathlib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pathlib
+
+[o:python-doc:p:python-39:r:library--pdb]
+file_filter   = trans/<lang>/library--pdb.po
+trans.ru   = library/pdb.po
+source_file   = trans/en/library--pdb.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pdb
+
+[o:python-doc:p:python-39:r:library--persistence]
+file_filter   = trans/<lang>/library--persistence.po
+trans.ru   = library/persistence.po
+source_file   = trans/en/library--persistence.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--persistence
+
+[o:python-doc:p:python-39:r:library--pickle]
+file_filter   = trans/<lang>/library--pickle.po
+trans.ru   = library/pickle.po
+source_file   = trans/en/library--pickle.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pickle
+
+[o:python-doc:p:python-39:r:library--pickletools]
+file_filter   = trans/<lang>/library--pickletools.po
+trans.ru   = library/pickletools.po
+source_file   = trans/en/library--pickletools.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pickletools
+
+[o:python-doc:p:python-39:r:library--pipes]
+file_filter   = trans/<lang>/library--pipes.po
+trans.ru   = library/pipes.po
+source_file   = trans/en/library--pipes.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pipes
+
+[o:python-doc:p:python-39:r:library--pkgutil]
+file_filter   = trans/<lang>/library--pkgutil.po
+trans.ru   = library/pkgutil.po
+source_file   = trans/en/library--pkgutil.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pkgutil
+
+[o:python-doc:p:python-39:r:library--platform]
+file_filter   = trans/<lang>/library--platform.po
+trans.ru   = library/platform.po
+source_file   = trans/en/library--platform.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--platform
+
+[o:python-doc:p:python-39:r:library--plistlib]
+file_filter   = trans/<lang>/library--plistlib.po
+trans.ru   = library/plistlib.po
+source_file   = trans/en/library--plistlib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--plistlib
+
+[o:python-doc:p:python-39:r:library--poplib]
+file_filter   = trans/<lang>/library--poplib.po
+trans.ru   = library/poplib.po
+source_file   = trans/en/library--poplib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--poplib
+
+[o:python-doc:p:python-39:r:library--posix]
+file_filter   = trans/<lang>/library--posix.po
+trans.ru   = library/posix.po
+source_file   = trans/en/library--posix.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--posix
+
+[o:python-doc:p:python-39:r:library--pprint]
+file_filter   = trans/<lang>/library--pprint.po
+trans.ru   = library/pprint.po
+source_file   = trans/en/library--pprint.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pprint
+
+[o:python-doc:p:python-39:r:library--profile]
+file_filter   = trans/<lang>/library--profile.po
+trans.ru   = library/profile.po
+source_file   = trans/en/library--profile.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--profile
+
+[o:python-doc:p:python-39:r:library--pty]
+file_filter   = trans/<lang>/library--pty.po
+trans.ru   = library/pty.po
+source_file   = trans/en/library--pty.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pty
+
+[o:python-doc:p:python-39:r:library--pwd]
+file_filter   = trans/<lang>/library--pwd.po
+trans.ru   = library/pwd.po
+source_file   = trans/en/library--pwd.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pwd
+
+[o:python-doc:p:python-39:r:library--pyclbr]
+file_filter   = trans/<lang>/library--pyclbr.po
+trans.ru   = library/pyclbr.po
+source_file   = trans/en/library--pyclbr.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pyclbr
+
+[o:python-doc:p:python-39:r:library--py_compile]
+file_filter   = trans/<lang>/library--py_compile.po
+trans.ru   = library/py_compile.po
+source_file   = trans/en/library--py_compile.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--py_compile
+
+[o:python-doc:p:python-39:r:library--pydoc]
+file_filter   = trans/<lang>/library--pydoc.po
+trans.ru   = library/pydoc.po
+source_file   = trans/en/library--pydoc.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pydoc
+
+[o:python-doc:p:python-39:r:library--pyexpat]
+file_filter   = trans/<lang>/library--pyexpat.po
+trans.ru   = library/pyexpat.po
+source_file   = trans/en/library--pyexpat.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--pyexpat
+
+[o:python-doc:p:python-39:r:library--python]
+file_filter   = trans/<lang>/library--python.po
+trans.ru   = library/python.po
+source_file   = trans/en/library--python.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--python
+
+[o:python-doc:p:python-39:r:library--queue]
+file_filter   = trans/<lang>/library--queue.po
+trans.ru   = library/queue.po
+source_file   = trans/en/library--queue.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--queue
+
+[o:python-doc:p:python-39:r:library--quopri]
+file_filter   = trans/<lang>/library--quopri.po
+trans.ru   = library/quopri.po
+source_file   = trans/en/library--quopri.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--quopri
+
+[o:python-doc:p:python-39:r:library--random]
+file_filter   = trans/<lang>/library--random.po
+trans.ru   = library/random.po
+source_file   = trans/en/library--random.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--random
+
+[o:python-doc:p:python-39:r:library--re]
+file_filter   = trans/<lang>/library--re.po
+trans.ru   = library/re.po
+source_file   = trans/en/library--re.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--re
+
+[o:python-doc:p:python-39:r:library--readline]
+file_filter   = trans/<lang>/library--readline.po
+trans.ru   = library/readline.po
+source_file   = trans/en/library--readline.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--readline
+
+[o:python-doc:p:python-39:r:library--reprlib]
+file_filter   = trans/<lang>/library--reprlib.po
+trans.ru   = library/reprlib.po
+source_file   = trans/en/library--reprlib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--reprlib
+
+[o:python-doc:p:python-39:r:library--resource]
+file_filter   = trans/<lang>/library--resource.po
+trans.ru   = library/resource.po
+source_file   = trans/en/library--resource.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--resource
+
+[o:python-doc:p:python-39:r:library--rlcompleter]
+file_filter   = trans/<lang>/library--rlcompleter.po
+trans.ru   = library/rlcompleter.po
+source_file   = trans/en/library--rlcompleter.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--rlcompleter
+
+[o:python-doc:p:python-39:r:library--runpy]
+file_filter   = trans/<lang>/library--runpy.po
+trans.ru   = library/runpy.po
+source_file   = trans/en/library--runpy.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--runpy
+
+[o:python-doc:p:python-39:r:library--sched]
+file_filter   = trans/<lang>/library--sched.po
+trans.ru   = library/sched.po
+source_file   = trans/en/library--sched.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--sched
+
+[o:python-doc:p:python-39:r:library--secrets]
+file_filter   = trans/<lang>/library--secrets.po
+trans.ru   = library/secrets.po
+source_file   = trans/en/library--secrets.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--secrets
+
+[o:python-doc:p:python-39:r:library--security_warnings]
+file_filter   = trans/<lang>/library--security_warnings.po
+trans.ru   = library/security_warnings.po
+source_file   = trans/en/library--security_warnings.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--security_warnings
+
+[o:python-doc:p:python-39:r:library--select]
+file_filter   = trans/<lang>/library--select.po
+trans.ru   = library/select.po
+source_file   = trans/en/library--select.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--select
+
+[o:python-doc:p:python-39:r:library--selectors]
+file_filter   = trans/<lang>/library--selectors.po
+trans.ru   = library/selectors.po
+source_file   = trans/en/library--selectors.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--selectors
+
+[o:python-doc:p:python-39:r:library--shelve]
+file_filter   = trans/<lang>/library--shelve.po
+trans.ru   = library/shelve.po
+source_file   = trans/en/library--shelve.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--shelve
+
+[o:python-doc:p:python-39:r:library--shlex]
+file_filter   = trans/<lang>/library--shlex.po
+trans.ru   = library/shlex.po
+source_file   = trans/en/library--shlex.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--shlex
+
+[o:python-doc:p:python-39:r:library--shutil]
+file_filter   = trans/<lang>/library--shutil.po
+trans.ru   = library/shutil.po
+source_file   = trans/en/library--shutil.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--shutil
+
+[o:python-doc:p:python-39:r:library--signal]
+file_filter   = trans/<lang>/library--signal.po
+trans.ru   = library/signal.po
+source_file   = trans/en/library--signal.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--signal
+
+[o:python-doc:p:python-39:r:library--site]
+file_filter   = trans/<lang>/library--site.po
+trans.ru   = library/site.po
+source_file   = trans/en/library--site.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--site
+
+[o:python-doc:p:python-39:r:library--smtpd]
+file_filter   = trans/<lang>/library--smtpd.po
+trans.ru   = library/smtpd.po
+source_file   = trans/en/library--smtpd.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--smtpd
+
+[o:python-doc:p:python-39:r:library--smtplib]
+file_filter   = trans/<lang>/library--smtplib.po
+trans.ru   = library/smtplib.po
+source_file   = trans/en/library--smtplib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--smtplib
+
+[o:python-doc:p:python-39:r:library--sndhdr]
+file_filter   = trans/<lang>/library--sndhdr.po
+trans.ru   = library/sndhdr.po
+source_file   = trans/en/library--sndhdr.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--sndhdr
+
+[o:python-doc:p:python-39:r:library--socket]
+file_filter   = trans/<lang>/library--socket.po
+trans.ru   = library/socket.po
+source_file   = trans/en/library--socket.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--socket
+
+[o:python-doc:p:python-39:r:library--socketserver]
+file_filter   = trans/<lang>/library--socketserver.po
+trans.ru   = library/socketserver.po
+source_file   = trans/en/library--socketserver.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--socketserver
+
+[o:python-doc:p:python-39:r:library--spwd]
+file_filter   = trans/<lang>/library--spwd.po
+trans.ru   = library/spwd.po
+source_file   = trans/en/library--spwd.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--spwd
+
+[o:python-doc:p:python-39:r:library--sqlite3]
+file_filter   = trans/<lang>/library--sqlite3.po
+trans.ru   = library/sqlite3.po
+source_file   = trans/en/library--sqlite3.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--sqlite3
+
+[o:python-doc:p:python-39:r:library--ssl]
+file_filter   = trans/<lang>/library--ssl.po
+trans.ru   = library/ssl.po
+source_file   = trans/en/library--ssl.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--ssl
+
+[o:python-doc:p:python-39:r:library--stat]
+file_filter   = trans/<lang>/library--stat.po
+trans.ru   = library/stat.po
+source_file   = trans/en/library--stat.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--stat
+
+[o:python-doc:p:python-39:r:library--statistics]
+file_filter   = trans/<lang>/library--statistics.po
+trans.ru   = library/statistics.po
+source_file   = trans/en/library--statistics.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--statistics
+
+[o:python-doc:p:python-39:r:library--stdtypes]
+file_filter   = trans/<lang>/library--stdtypes.po
+trans.ru   = library/stdtypes.po
+source_file   = trans/en/library--stdtypes.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--stdtypes
+
+[o:python-doc:p:python-39:r:library--string]
+file_filter   = trans/<lang>/library--string.po
+trans.ru   = library/string.po
+source_file   = trans/en/library--string.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--string
+
+[o:python-doc:p:python-39:r:library--stringprep]
+file_filter   = trans/<lang>/library--stringprep.po
+trans.ru   = library/stringprep.po
+source_file   = trans/en/library--stringprep.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--stringprep
+
+[o:python-doc:p:python-39:r:library--struct]
+file_filter   = trans/<lang>/library--struct.po
+trans.ru   = library/struct.po
+source_file   = trans/en/library--struct.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--struct
+
+[o:python-doc:p:python-39:r:library--subprocess]
+file_filter   = trans/<lang>/library--subprocess.po
+trans.ru   = library/subprocess.po
+source_file   = trans/en/library--subprocess.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--subprocess
+
+[o:python-doc:p:python-39:r:library--sunau]
+file_filter   = trans/<lang>/library--sunau.po
+trans.ru   = library/sunau.po
+source_file   = trans/en/library--sunau.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--sunau
+
+[o:python-doc:p:python-39:r:library--superseded]
+file_filter   = trans/<lang>/library--superseded.po
+trans.ru   = library/superseded.po
+source_file   = trans/en/library--superseded.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--superseded
+
+[o:python-doc:p:python-39:r:library--symbol]
+file_filter   = trans/<lang>/library--symbol.po
+trans.ru   = library/symbol.po
+source_file   = trans/en/library--symbol.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--symbol
+
+[o:python-doc:p:python-39:r:library--symtable]
+file_filter   = trans/<lang>/library--symtable.po
+trans.ru   = library/symtable.po
+source_file   = trans/en/library--symtable.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--symtable
+
+[o:python-doc:p:python-39:r:library--sys]
+file_filter   = trans/<lang>/library--sys.po
+trans.ru   = library/sys.po
+source_file   = trans/en/library--sys.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--sys
+
+[o:python-doc:p:python-39:r:library--sysconfig]
+file_filter   = trans/<lang>/library--sysconfig.po
+trans.ru   = library/sysconfig.po
+source_file   = trans/en/library--sysconfig.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--sysconfig
+
+[o:python-doc:p:python-39:r:library--syslog]
+file_filter   = trans/<lang>/library--syslog.po
+trans.ru   = library/syslog.po
+source_file   = trans/en/library--syslog.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--syslog
+
+[o:python-doc:p:python-39:r:library--tabnanny]
+file_filter   = trans/<lang>/library--tabnanny.po
+trans.ru   = library/tabnanny.po
+source_file   = trans/en/library--tabnanny.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tabnanny
+
+[o:python-doc:p:python-39:r:library--tarfile]
+file_filter   = trans/<lang>/library--tarfile.po
+trans.ru   = library/tarfile.po
+source_file   = trans/en/library--tarfile.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tarfile
+
+[o:python-doc:p:python-39:r:library--telnetlib]
+file_filter   = trans/<lang>/library--telnetlib.po
+trans.ru   = library/telnetlib.po
+source_file   = trans/en/library--telnetlib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--telnetlib
+
+[o:python-doc:p:python-39:r:library--tempfile]
+file_filter   = trans/<lang>/library--tempfile.po
+trans.ru   = library/tempfile.po
+source_file   = trans/en/library--tempfile.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tempfile
+
+[o:python-doc:p:python-39:r:library--termios]
+file_filter   = trans/<lang>/library--termios.po
+trans.ru   = library/termios.po
+source_file   = trans/en/library--termios.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--termios
+
+[o:python-doc:p:python-39:r:library--test]
+file_filter   = trans/<lang>/library--test.po
+trans.ru   = library/test.po
+source_file   = trans/en/library--test.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--test
+
+[o:python-doc:p:python-39:r:library--text]
+file_filter   = trans/<lang>/library--text.po
+trans.ru   = library/text.po
+source_file   = trans/en/library--text.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--text
+
+[o:python-doc:p:python-39:r:library--textwrap]
+file_filter   = trans/<lang>/library--textwrap.po
+trans.ru   = library/textwrap.po
+source_file   = trans/en/library--textwrap.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--textwrap
+
+[o:python-doc:p:python-39:r:library--_thread]
+file_filter   = trans/<lang>/library--_thread.po
+trans.ru   = library/_thread.po
+source_file   = trans/en/library--_thread.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--_thread
+
+[o:python-doc:p:python-39:r:library--threading]
+file_filter   = trans/<lang>/library--threading.po
+trans.ru   = library/threading.po
+source_file   = trans/en/library--threading.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--threading
+
+[o:python-doc:p:python-39:r:library--time]
+file_filter   = trans/<lang>/library--time.po
+trans.ru   = library/time.po
+source_file   = trans/en/library--time.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--time
+
+[o:python-doc:p:python-39:r:library--timeit]
+file_filter   = trans/<lang>/library--timeit.po
+trans.ru   = library/timeit.po
+source_file   = trans/en/library--timeit.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--timeit
+
+[o:python-doc:p:python-39:r:library--tk]
+file_filter   = trans/<lang>/library--tk.po
+trans.ru   = library/tk.po
+source_file   = trans/en/library--tk.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tk
+
+[o:python-doc:p:python-39:r:library--tkinter]
+file_filter   = trans/<lang>/library--tkinter.po
+trans.ru   = library/tkinter.po
+source_file   = trans/en/library--tkinter.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tkinter
+
+[o:python-doc:p:python-39:r:library--tkinter_colorchooser]
+file_filter   = trans/<lang>/library--tkinter_colorchooser.po
+trans.ru   = library/tkinter.colorchooser.po
+source_file   = trans/en/library--tkinter_colorchooser.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tkinter_colorchooser
+
+[o:python-doc:p:python-39:r:library--tkinter_dnd]
+file_filter   = trans/<lang>/library--tkinter_dnd.po
+trans.ru   = library/tkinter.dnd.po
+source_file   = trans/en/library--tkinter_dnd.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tkinter_dnd
+
+[o:python-doc:p:python-39:r:library--tkinter_font]
+file_filter   = trans/<lang>/library--tkinter_font.po
+trans.ru   = library/tkinter.font.po
+source_file   = trans/en/library--tkinter_font.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tkinter_font
+
+[o:python-doc:p:python-39:r:library--tkinter_messagebox]
+file_filter   = trans/<lang>/library--tkinter_messagebox.po
+trans.ru   = library/tkinter.messagebox.po
+source_file   = trans/en/library--tkinter_messagebox.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tkinter_messagebox
+
+[o:python-doc:p:python-39:r:library--tkinter_scrolledtext]
+file_filter   = trans/<lang>/library--tkinter_scrolledtext.po
+trans.ru   = library/tkinter.scrolledtext.po
+source_file   = trans/en/library--tkinter_scrolledtext.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tkinter_scrolledtext
+
+[o:python-doc:p:python-39:r:library--tkinter_tix]
+file_filter   = trans/<lang>/library--tkinter_tix.po
+trans.ru   = library/tkinter.tix.po
+source_file   = trans/en/library--tkinter_tix.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tkinter_tix
+
+[o:python-doc:p:python-39:r:library--tkinter_ttk]
+file_filter   = trans/<lang>/library--tkinter_ttk.po
+trans.ru   = library/tkinter.ttk.po
+source_file   = trans/en/library--tkinter_ttk.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tkinter_ttk
+
+[o:python-doc:p:python-39:r:library--token]
+file_filter   = trans/<lang>/library--token.po
+trans.ru   = library/token.po
+source_file   = trans/en/library--token.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--token
+
+[o:python-doc:p:python-39:r:library--tokenize]
+file_filter   = trans/<lang>/library--tokenize.po
+trans.ru   = library/tokenize.po
+source_file   = trans/en/library--tokenize.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tokenize
+
+[o:python-doc:p:python-39:r:library--trace]
+file_filter   = trans/<lang>/library--trace.po
+trans.ru   = library/trace.po
+source_file   = trans/en/library--trace.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--trace
+
+[o:python-doc:p:python-39:r:library--traceback]
+file_filter   = trans/<lang>/library--traceback.po
+trans.ru   = library/traceback.po
+source_file   = trans/en/library--traceback.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--traceback
+
+[o:python-doc:p:python-39:r:library--tracemalloc]
+file_filter   = trans/<lang>/library--tracemalloc.po
+trans.ru   = library/tracemalloc.po
+source_file   = trans/en/library--tracemalloc.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tracemalloc
+
+[o:python-doc:p:python-39:r:library--tty]
+file_filter   = trans/<lang>/library--tty.po
+trans.ru   = library/tty.po
+source_file   = trans/en/library--tty.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--tty
+
+[o:python-doc:p:python-39:r:library--turtle]
+file_filter   = trans/<lang>/library--turtle.po
+trans.ru   = library/turtle.po
+source_file   = trans/en/library--turtle.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--turtle
+
+[o:python-doc:p:python-39:r:library--types]
+file_filter   = trans/<lang>/library--types.po
+trans.ru   = library/types.po
+source_file   = trans/en/library--types.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--types
+
+[o:python-doc:p:python-39:r:library--typing]
+file_filter   = trans/<lang>/library--typing.po
+trans.ru   = library/typing.po
+source_file   = trans/en/library--typing.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--typing
+
+[o:python-doc:p:python-39:r:library--unicodedata]
+file_filter   = trans/<lang>/library--unicodedata.po
+trans.ru   = library/unicodedata.po
+source_file   = trans/en/library--unicodedata.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--unicodedata
+
+[o:python-doc:p:python-39:r:library--unittest]
+file_filter   = trans/<lang>/library--unittest.po
+trans.ru   = library/unittest.po
+source_file   = trans/en/library--unittest.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--unittest
+
+[o:python-doc:p:python-39:r:library--unittest_mock]
+file_filter   = trans/<lang>/library--unittest_mock.po
+trans.ru   = library/unittest.mock.po
+source_file   = trans/en/library--unittest_mock.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--unittest_mock
+
+[o:python-doc:p:python-39:r:library--unittest_mock-examples]
+file_filter   = trans/<lang>/library--unittest_mock-examples.po
+trans.ru   = library/unittest.mock-examples.po
+source_file   = trans/en/library--unittest_mock-examples.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--unittest_mock-examples
+
+[o:python-doc:p:python-39:r:library--unix]
+file_filter   = trans/<lang>/library--unix.po
+trans.ru   = library/unix.po
+source_file   = trans/en/library--unix.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--unix
+
+[o:python-doc:p:python-39:r:library--urllib]
+file_filter   = trans/<lang>/library--urllib.po
+trans.ru   = library/urllib.po
+source_file   = trans/en/library--urllib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--urllib
+
+[o:python-doc:p:python-39:r:library--urllib_error]
+file_filter   = trans/<lang>/library--urllib_error.po
+trans.ru   = library/urllib.error.po
+source_file   = trans/en/library--urllib_error.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--urllib_error
+
+[o:python-doc:p:python-39:r:library--urllib_parse]
+file_filter   = trans/<lang>/library--urllib_parse.po
+trans.ru   = library/urllib.parse.po
+source_file   = trans/en/library--urllib_parse.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--urllib_parse
+
+[o:python-doc:p:python-39:r:library--urllib_request]
+file_filter   = trans/<lang>/library--urllib_request.po
+trans.ru   = library/urllib.request.po
+source_file   = trans/en/library--urllib_request.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--urllib_request
+
+[o:python-doc:p:python-39:r:library--urllib_robotparser]
+file_filter   = trans/<lang>/library--urllib_robotparser.po
+trans.ru   = library/urllib.robotparser.po
+source_file   = trans/en/library--urllib_robotparser.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--urllib_robotparser
+
+[o:python-doc:p:python-39:r:library--uu]
+file_filter   = trans/<lang>/library--uu.po
+trans.ru   = library/uu.po
+source_file   = trans/en/library--uu.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--uu
+
+[o:python-doc:p:python-39:r:library--uuid]
+file_filter   = trans/<lang>/library--uuid.po
+trans.ru   = library/uuid.po
+source_file   = trans/en/library--uuid.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--uuid
+
+[o:python-doc:p:python-39:r:library--venv]
+file_filter   = trans/<lang>/library--venv.po
+trans.ru   = library/venv.po
+source_file   = trans/en/library--venv.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--venv
+
+[o:python-doc:p:python-39:r:library--warnings]
+file_filter   = trans/<lang>/library--warnings.po
+trans.ru   = library/warnings.po
+source_file   = trans/en/library--warnings.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--warnings
+
+[o:python-doc:p:python-39:r:library--wave]
+file_filter   = trans/<lang>/library--wave.po
+trans.ru   = library/wave.po
+source_file   = trans/en/library--wave.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--wave
+
+[o:python-doc:p:python-39:r:library--weakref]
+file_filter   = trans/<lang>/library--weakref.po
+trans.ru   = library/weakref.po
+source_file   = trans/en/library--weakref.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--weakref
+
+[o:python-doc:p:python-39:r:library--webbrowser]
+file_filter   = trans/<lang>/library--webbrowser.po
+trans.ru   = library/webbrowser.po
+source_file   = trans/en/library--webbrowser.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--webbrowser
+
+[o:python-doc:p:python-39:r:library--windows]
+file_filter   = trans/<lang>/library--windows.po
+trans.ru   = library/windows.po
+source_file   = trans/en/library--windows.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--windows
+
+[o:python-doc:p:python-39:r:library--winreg]
+file_filter   = trans/<lang>/library--winreg.po
+trans.ru   = library/winreg.po
+source_file   = trans/en/library--winreg.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--winreg
+
+[o:python-doc:p:python-39:r:library--winsound]
+file_filter   = trans/<lang>/library--winsound.po
+trans.ru   = library/winsound.po
+source_file   = trans/en/library--winsound.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--winsound
+
+[o:python-doc:p:python-39:r:library--wsgiref]
+file_filter   = trans/<lang>/library--wsgiref.po
+trans.ru   = library/wsgiref.po
+source_file   = trans/en/library--wsgiref.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--wsgiref
+
+[o:python-doc:p:python-39:r:library--xdrlib]
+file_filter   = trans/<lang>/library--xdrlib.po
+trans.ru   = library/xdrlib.po
+source_file   = trans/en/library--xdrlib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xdrlib
+
+[o:python-doc:p:python-39:r:library--xml]
+file_filter   = trans/<lang>/library--xml.po
+trans.ru   = library/xml.po
+source_file   = trans/en/library--xml.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xml
+
+[o:python-doc:p:python-39:r:library--xml_dom]
+file_filter   = trans/<lang>/library--xml_dom.po
+trans.ru   = library/xml.dom.po
+source_file   = trans/en/library--xml_dom.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xml_dom
+
+[o:python-doc:p:python-39:r:library--xml_dom_minidom]
+file_filter   = trans/<lang>/library--xml_dom_minidom.po
+trans.ru   = library/xml.dom.minidom.po
+source_file   = trans/en/library--xml_dom_minidom.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xml_dom_minidom
+
+[o:python-doc:p:python-39:r:library--xml_dom_pulldom]
+file_filter   = trans/<lang>/library--xml_dom_pulldom.po
+trans.ru   = library/xml.dom.pulldom.po
+source_file   = trans/en/library--xml_dom_pulldom.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xml_dom_pulldom
+
+[o:python-doc:p:python-39:r:library--xml_etree_elementtree]
+file_filter   = trans/<lang>/library--xml_etree_elementtree.po
+trans.ru   = library/xml.etree.elementtree.po
+source_file   = trans/en/library--xml_etree_elementtree.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xml_etree_elementtree
+
+[o:python-doc:p:python-39:r:library--xmlrpc]
+file_filter   = trans/<lang>/library--xmlrpc.po
+trans.ru   = library/xmlrpc.po
+source_file   = trans/en/library--xmlrpc.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xmlrpc
+
+[o:python-doc:p:python-39:r:library--xmlrpc_client]
+file_filter   = trans/<lang>/library--xmlrpc_client.po
+trans.ru   = library/xmlrpc.client.po
+source_file   = trans/en/library--xmlrpc_client.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xmlrpc_client
+
+[o:python-doc:p:python-39:r:library--xmlrpc_server]
+file_filter   = trans/<lang>/library--xmlrpc_server.po
+trans.ru   = library/xmlrpc.server.po
+source_file   = trans/en/library--xmlrpc_server.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xmlrpc_server
+
+[o:python-doc:p:python-39:r:library--xml_sax]
+file_filter   = trans/<lang>/library--xml_sax.po
+trans.ru   = library/xml.sax.po
+source_file   = trans/en/library--xml_sax.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xml_sax
+
+[o:python-doc:p:python-39:r:library--xml_sax_handler]
+file_filter   = trans/<lang>/library--xml_sax_handler.po
+trans.ru   = library/xml.sax.handler.po
+source_file   = trans/en/library--xml_sax_handler.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xml_sax_handler
+
+[o:python-doc:p:python-39:r:library--xml_sax_reader]
+file_filter   = trans/<lang>/library--xml_sax_reader.po
+trans.ru   = library/xml.sax.reader.po
+source_file   = trans/en/library--xml_sax_reader.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xml_sax_reader
+
+[o:python-doc:p:python-39:r:library--xml_sax_utils]
+file_filter   = trans/<lang>/library--xml_sax_utils.po
+trans.ru   = library/xml.sax.utils.po
+source_file   = trans/en/library--xml_sax_utils.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--xml_sax_utils
+
+[o:python-doc:p:python-39:r:library--zipapp]
+file_filter   = trans/<lang>/library--zipapp.po
+trans.ru   = library/zipapp.po
+source_file   = trans/en/library--zipapp.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--zipapp
+
+[o:python-doc:p:python-39:r:library--zipfile]
+file_filter   = trans/<lang>/library--zipfile.po
+trans.ru   = library/zipfile.po
+source_file   = trans/en/library--zipfile.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--zipfile
+
+[o:python-doc:p:python-39:r:library--zipimport]
+file_filter   = trans/<lang>/library--zipimport.po
+trans.ru   = library/zipimport.po
+source_file   = trans/en/library--zipimport.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--zipimport
+
+[o:python-doc:p:python-39:r:library--zlib]
+file_filter   = trans/<lang>/library--zlib.po
+trans.ru   = library/zlib.po
+source_file   = trans/en/library--zlib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--zlib
+
+[o:python-doc:p:python-39:r:library--zoneinfo]
+file_filter   = trans/<lang>/library--zoneinfo.po
+trans.ru   = library/zoneinfo.po
+source_file   = trans/en/library--zoneinfo.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = library--zoneinfo
+
+[o:python-doc:p:python-39:r:license]
+file_filter   = trans/<lang>/license.po
+trans.ru   = license.po
+source_file   = trans/en/license.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = license
+
+[o:python-doc:p:python-39:r:reference--compound_stmts]
+file_filter   = trans/<lang>/reference--compound_stmts.po
+trans.ru   = reference/compound_stmts.po
+source_file   = trans/en/reference--compound_stmts.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = reference--compound_stmts
+
+[o:python-doc:p:python-39:r:reference--datamodel]
+file_filter   = trans/<lang>/reference--datamodel.po
+trans.ru   = reference/datamodel.po
+source_file   = trans/en/reference--datamodel.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = reference--datamodel
+
+[o:python-doc:p:python-39:r:reference--executionmodel]
+file_filter   = trans/<lang>/reference--executionmodel.po
+trans.ru   = reference/executionmodel.po
+source_file   = trans/en/reference--executionmodel.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = reference--executionmodel
+
+[o:python-doc:p:python-39:r:reference--expressions]
+file_filter   = trans/<lang>/reference--expressions.po
+trans.ru   = reference/expressions.po
+source_file   = trans/en/reference--expressions.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = reference--expressions
+
+[o:python-doc:p:python-39:r:reference--grammar]
+file_filter   = trans/<lang>/reference--grammar.po
+trans.ru   = reference/grammar.po
+source_file   = trans/en/reference--grammar.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = reference--grammar
+
+[o:python-doc:p:python-39:r:reference--import]
+file_filter   = trans/<lang>/reference--import.po
+trans.ru   = reference/import.po
+source_file   = trans/en/reference--import.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = reference--import
+
+[o:python-doc:p:python-39:r:reference--index]
+file_filter   = trans/<lang>/reference--index.po
+trans.ru   = reference/index.po
+source_file   = trans/en/reference--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = reference--index
+
+[o:python-doc:p:python-39:r:reference--introduction]
+file_filter   = trans/<lang>/reference--introduction.po
+trans.ru   = reference/introduction.po
+source_file   = trans/en/reference--introduction.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = reference--introduction
+
+[o:python-doc:p:python-39:r:reference--lexical_analysis]
+file_filter   = trans/<lang>/reference--lexical_analysis.po
+trans.ru   = reference/lexical_analysis.po
+source_file   = trans/en/reference--lexical_analysis.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = reference--lexical_analysis
+
+[o:python-doc:p:python-39:r:reference--simple_stmts]
+file_filter   = trans/<lang>/reference--simple_stmts.po
+trans.ru   = reference/simple_stmts.po
+source_file   = trans/en/reference--simple_stmts.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = reference--simple_stmts
+
+[o:python-doc:p:python-39:r:reference--toplevel_components]
+file_filter   = trans/<lang>/reference--toplevel_components.po
+trans.ru   = reference/toplevel_components.po
+source_file   = trans/en/reference--toplevel_components.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = reference--toplevel_components
+
+[o:python-doc:p:python-39:r:sphinx]
+file_filter   = trans/<lang>/sphinx.po
+trans.ru   = sphinx.po
+source_file   = trans/en/sphinx.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = sphinx
+
+[o:python-doc:p:python-39:r:tutorial--appendix]
+file_filter   = trans/<lang>/tutorial--appendix.po
+trans.ru   = tutorial/appendix.po
+source_file   = trans/en/tutorial--appendix.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--appendix
+
+[o:python-doc:p:python-39:r:tutorial--appetite]
+file_filter   = trans/<lang>/tutorial--appetite.po
+trans.ru   = tutorial/appetite.po
+source_file   = trans/en/tutorial--appetite.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--appetite
+
+[o:python-doc:p:python-39:r:tutorial--classes]
+file_filter   = trans/<lang>/tutorial--classes.po
+trans.ru   = tutorial/classes.po
+source_file   = trans/en/tutorial--classes.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--classes
+
+[o:python-doc:p:python-39:r:tutorial--controlflow]
+file_filter   = trans/<lang>/tutorial--controlflow.po
+trans.ru   = tutorial/controlflow.po
+source_file   = trans/en/tutorial--controlflow.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--controlflow
+
+[o:python-doc:p:python-39:r:tutorial--datastructures]
+file_filter   = trans/<lang>/tutorial--datastructures.po
+trans.ru   = tutorial/datastructures.po
+source_file   = trans/en/tutorial--datastructures.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--datastructures
+
+[o:python-doc:p:python-39:r:tutorial--errors]
+file_filter   = trans/<lang>/tutorial--errors.po
+trans.ru   = tutorial/errors.po
+source_file   = trans/en/tutorial--errors.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--errors
+
+[o:python-doc:p:python-39:r:tutorial--floatingpoint]
+file_filter   = trans/<lang>/tutorial--floatingpoint.po
+trans.ru   = tutorial/floatingpoint.po
+source_file   = trans/en/tutorial--floatingpoint.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--floatingpoint
+
+[o:python-doc:p:python-39:r:tutorial--index]
+file_filter   = trans/<lang>/tutorial--index.po
+trans.ru   = tutorial/index.po
+source_file   = trans/en/tutorial--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--index
+
+[o:python-doc:p:python-39:r:tutorial--inputoutput]
+file_filter   = trans/<lang>/tutorial--inputoutput.po
+trans.ru   = tutorial/inputoutput.po
+source_file   = trans/en/tutorial--inputoutput.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--inputoutput
+
+[o:python-doc:p:python-39:r:tutorial--interactive]
+file_filter   = trans/<lang>/tutorial--interactive.po
+trans.ru   = tutorial/interactive.po
+source_file   = trans/en/tutorial--interactive.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--interactive
+
+[o:python-doc:p:python-39:r:tutorial--interpreter]
+file_filter   = trans/<lang>/tutorial--interpreter.po
+trans.ru   = tutorial/interpreter.po
+source_file   = trans/en/tutorial--interpreter.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--interpreter
+
+[o:python-doc:p:python-39:r:tutorial--introduction]
+file_filter   = trans/<lang>/tutorial--introduction.po
+trans.ru   = tutorial/introduction.po
+source_file   = trans/en/tutorial--introduction.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--introduction
+
+[o:python-doc:p:python-39:r:tutorial--modules]
+file_filter   = trans/<lang>/tutorial--modules.po
+trans.ru   = tutorial/modules.po
+source_file   = trans/en/tutorial--modules.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--modules
+
+[o:python-doc:p:python-39:r:tutorial--stdlib]
+file_filter   = trans/<lang>/tutorial--stdlib.po
+trans.ru   = tutorial/stdlib.po
+source_file   = trans/en/tutorial--stdlib.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--stdlib
+
+[o:python-doc:p:python-39:r:tutorial--stdlib2]
+file_filter   = trans/<lang>/tutorial--stdlib2.po
+trans.ru   = tutorial/stdlib2.po
+source_file   = trans/en/tutorial--stdlib2.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--stdlib2
+
+[o:python-doc:p:python-39:r:tutorial--venv]
+file_filter   = trans/<lang>/tutorial--venv.po
+trans.ru   = tutorial/venv.po
+source_file   = trans/en/tutorial--venv.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--venv
+
+[o:python-doc:p:python-39:r:tutorial--whatnow]
+file_filter   = trans/<lang>/tutorial--whatnow.po
+trans.ru   = tutorial/whatnow.po
+source_file   = trans/en/tutorial--whatnow.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = tutorial--whatnow
+
+[o:python-doc:p:python-39:r:using--cmdline]
+file_filter   = trans/<lang>/using--cmdline.po
+trans.ru   = using/cmdline.po
+source_file   = trans/en/using--cmdline.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = using--cmdline
+
+[o:python-doc:p:python-39:r:using--editors]
+file_filter   = trans/<lang>/using--editors.po
+trans.ru   = using/editors.po
+source_file   = trans/en/using--editors.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = using--editors
+
+[o:python-doc:p:python-39:r:using--index]
+file_filter   = trans/<lang>/using--index.po
+trans.ru   = using/index.po
+source_file   = trans/en/using--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = using--index
+
+[o:python-doc:p:python-39:r:using--mac]
+file_filter   = trans/<lang>/using--mac.po
+trans.ru   = using/mac.po
+source_file   = trans/en/using--mac.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = using--mac
+
+[o:python-doc:p:python-39:r:using--unix]
+file_filter   = trans/<lang>/using--unix.po
+trans.ru   = using/unix.po
+source_file   = trans/en/using--unix.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = using--unix
+
+[o:python-doc:p:python-39:r:using--windows]
+file_filter   = trans/<lang>/using--windows.po
+trans.ru   = using/windows.po
+source_file   = trans/en/using--windows.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = using--windows
+
+[o:python-doc:p:python-39:r:whatsnew--2_0]
+file_filter   = trans/<lang>/whatsnew--2_0.po
+trans.ru   = whatsnew/2.0.po
+source_file   = trans/en/whatsnew--2_0.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--2_0
+
+[o:python-doc:p:python-39:r:whatsnew--2_1]
+file_filter   = trans/<lang>/whatsnew--2_1.po
+trans.ru   = whatsnew/2.1.po
+source_file   = trans/en/whatsnew--2_1.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--2_1
+
+[o:python-doc:p:python-39:r:whatsnew--2_2]
+file_filter   = trans/<lang>/whatsnew--2_2.po
+trans.ru   = whatsnew/2.2.po
+source_file   = trans/en/whatsnew--2_2.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--2_2
+
+[o:python-doc:p:python-39:r:whatsnew--2_3]
+file_filter   = trans/<lang>/whatsnew--2_3.po
+trans.ru   = whatsnew/2.3.po
+source_file   = trans/en/whatsnew--2_3.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--2_3
+
+[o:python-doc:p:python-39:r:whatsnew--2_4]
+file_filter   = trans/<lang>/whatsnew--2_4.po
+trans.ru   = whatsnew/2.4.po
+source_file   = trans/en/whatsnew--2_4.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--2_4
+
+[o:python-doc:p:python-39:r:whatsnew--2_5]
+file_filter   = trans/<lang>/whatsnew--2_5.po
+trans.ru   = whatsnew/2.5.po
+source_file   = trans/en/whatsnew--2_5.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--2_5
+
+[o:python-doc:p:python-39:r:whatsnew--2_6]
+file_filter   = trans/<lang>/whatsnew--2_6.po
+trans.ru   = whatsnew/2.6.po
+source_file   = trans/en/whatsnew--2_6.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--2_6
+
+[o:python-doc:p:python-39:r:whatsnew--2_7]
+file_filter   = trans/<lang>/whatsnew--2_7.po
+trans.ru   = whatsnew/2.7.po
+source_file   = trans/en/whatsnew--2_7.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--2_7
+
+[o:python-doc:p:python-39:r:whatsnew--3_0]
+file_filter   = trans/<lang>/whatsnew--3_0.po
+trans.ru   = whatsnew/3.0.po
+source_file   = trans/en/whatsnew--3_0.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--3_0
+
+[o:python-doc:p:python-39:r:whatsnew--3_1]
+file_filter   = trans/<lang>/whatsnew--3_1.po
+trans.ru   = whatsnew/3.1.po
+source_file   = trans/en/whatsnew--3_1.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--3_1
+
+[o:python-doc:p:python-39:r:whatsnew--3_2]
+file_filter   = trans/<lang>/whatsnew--3_2.po
+trans.ru   = whatsnew/3.2.po
+source_file   = trans/en/whatsnew--3_2.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--3_2
+
+[o:python-doc:p:python-39:r:whatsnew--3_3]
+file_filter   = trans/<lang>/whatsnew--3_3.po
+trans.ru   = whatsnew/3.3.po
+source_file   = trans/en/whatsnew--3_3.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--3_3
+
+[o:python-doc:p:python-39:r:whatsnew--3_4]
+file_filter   = trans/<lang>/whatsnew--3_4.po
+trans.ru   = whatsnew/3.4.po
+source_file   = trans/en/whatsnew--3_4.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--3_4
+
+[o:python-doc:p:python-39:r:whatsnew--3_5]
+file_filter   = trans/<lang>/whatsnew--3_5.po
+trans.ru   = whatsnew/3.5.po
+source_file   = trans/en/whatsnew--3_5.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--3_5
+
+[o:python-doc:p:python-39:r:whatsnew--3_6]
+file_filter   = trans/<lang>/whatsnew--3_6.po
+trans.ru   = whatsnew/3.6.po
+source_file   = trans/en/whatsnew--3_6.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--3_6
+
+[o:python-doc:p:python-39:r:whatsnew--3_7]
+file_filter   = trans/<lang>/whatsnew--3_7.po
+trans.ru   = whatsnew/3.7.po
+source_file   = trans/en/whatsnew--3_7.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--3_7
+
+[o:python-doc:p:python-39:r:whatsnew--3_8]
+file_filter   = trans/<lang>/whatsnew--3_8.po
+trans.ru   = whatsnew/3.8.po
+source_file   = trans/en/whatsnew--3_8.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--3_8
+
+[o:python-doc:p:python-39:r:whatsnew--3_9]
+file_filter   = trans/<lang>/whatsnew--3_9.po
+trans.ru   = whatsnew/3.9.po
+source_file   = trans/en/whatsnew--3_9.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--3_9
+
+[o:python-doc:p:python-39:r:whatsnew--changelog]
+file_filter   = trans/<lang>/whatsnew--changelog.po
+trans.ru   = whatsnew/changelog.po
+source_file   = trans/en/whatsnew--changelog.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--changelog
+
+[o:python-doc:p:python-39:r:whatsnew--index]
+file_filter   = trans/<lang>/whatsnew--index.po
+trans.ru   = whatsnew/index.po
+source_file   = trans/en/whatsnew--index.po
+source_lang   = en
+type          = PO
+minimum_perc  = 0
+resource_name = whatsnew--index
+

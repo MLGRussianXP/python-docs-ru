@@ -1,0 +1,68 @@
+name: Reusable workflow example
+
+on:
+  workflow_call:
+    inputs:
+      version:
+        required: true
+        type: string
+      tx_project:
+        required: true
+        type: string
+    secrets:
+      TRANSIFEX_APIKEY:
+        required: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      LOCALE: ru
+      VERSION: ${{ inputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout CPython
+        uses: actions/checkout@v4
+        with:
+          repository: 'python/cpython'
+          ref: ${{env.VERSION}}
+          path: cpython
+      - uses: actions/cache/restore@v4
+        with:
+          path: |
+            cpython/Doc/build
+            docs
+          key: cache-${{ inputs.version }}-${{ github.run_id }}
+          restore-keys: cache-${{ inputs.version }}-
+      - name: Checkout Current Branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{env.VERSION}}
+          path: docs
+          clean: false
+      - name: prepare
+        run: .github/scripts/prepare.sh
+      - name: update
+        run: .github/scripts/update.sh
+        env:
+          TX_TOKEN: ${{ secrets.TRANSIFEX_APIKEY }}
+      - uses: actions/cache/restore@v4
+        with:
+          path: cpython/Doc/build
+          key: cache-${{ inputs.version }}-${{ github.run_id }}
+          restore-keys: cache-${{ inputs.version }}-
+      - name: build
+        run: .github/scripts/build.sh
+      - uses: actions/cache/save@v4
+        with:
+          path: |
+            cpython/Doc/build
+            docs
+          key: cache-${{ inputs.version }}-${{ github.run_id }}
+      - name: stat
+        run: python .github/scripts/tx_stat.py > ./docs/.stat.json
+        env:
+          TX_TOKEN: ${{ secrets.TRANSIFEX_APIKEY }}
+          TX_PROJECT: ${{ inputs.tx_project }}
+      - name: commit
+        run: .github/scripts/commit.sh

@@ -1,0 +1,18 @@
+name: python-310
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "22 * * * *"
+
+jobs:
+  sync:
+    uses: ./.github/workflows/sync.yml
+    with:
+      version: "3.10"
+      tx_project: "python-310"
+    secrets: inherit
+    

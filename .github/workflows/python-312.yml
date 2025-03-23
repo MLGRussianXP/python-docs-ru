@@ -1,0 +1,17 @@
+name: python-312
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "42 * * * *"
+
+jobs:
+  sync:
+    uses: ./.github/workflows/sync.yml
+    with:
+      version: "3.12"
+      tx_project: "python-312"
+    secrets: inherit

@@ -1,0 +1,18 @@
+name: python-39
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "12 * * * *"
+
+jobs:
+  sync:
+    uses: ./.github/workflows/sync.yml
+    with:
+      version: "3.9"
+      tx_project: "python-39"
+    secrets: inherit
+    

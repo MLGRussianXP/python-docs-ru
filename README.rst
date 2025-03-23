@@ -12,30 +12,30 @@ Maintained versions:
    * - Version
      - Sync status
      - Translation progress
-   * - `3.13 <https://github.com/python/python-docs-ru/tree/3.13>`_
-     - .. image:: https://github.com/python/python-docs-ru/workflows/python-313/badge.svg
-          :target: https://github.com/python/python-docs-ru/actions?workflow=python-313
-     - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpython%2Fpython-docs-ru%2F3.13%2F.stat.json&query=%24.translation&label=ru
+   * - `3.13 <https://github.com/MLGRussianXP/python-docs-ru/tree/3.13>`_
+     - .. image:: https://github.com/MLGRussianXP/python-docs-ru/workflows/python-313/badge.svg
+          :target: https://github.com/MLGRussianXP/python-docs-ru/actions?workflow=python-313
+     - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2MLGRussianXP%2Fpython-docs-ru%2F3.13%2F.stat.json&query=%24.translation&label=ru
           :target: https://app.transifex.com/python-doc/python-newest/
-   * - `3.12 <https://github.com/python/python-docs-ru/tree/3.12>`_
-     - .. image:: https://github.com/python/python-docs-ru/workflows/python-312/badge.svg
-          :target: https://github.com/python/python-docs-ru/actions?workflow=python-312
-     - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpython%2Fpython-docs-ru%2F3.12%2F.stat.json&query=%24.translation&label=ru
+   * - `3.12 <https://github.com/MLGRussianXP/python-docs-ru/tree/3.12>`_
+     - .. image:: https://github.com/MLGRussianXP/python-docs-ru/workflows/python-312/badge.svg
+          :target: https://github.com/MLGRussianXP/python-docs-ru/actions?workflow=python-312
+     - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2MLGRussianXP%2Fpython-docs-ru%2F3.12%2F.stat.json&query=%24.translation&label=ru
           :target: https://app.transifex.com/python-doc/python-312/
-   * - `3.11 <https://github.com/python/python-docs-ru/tree/3.11>`_
-     - .. image:: https://github.com/python/python-docs-ru/workflows/python-311/badge.svg
-          :target: https://github.com/python/python-docs-ru/actions?workflow=python-311
-     - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpython%2Fpython-docs-ru%2F3.11%2F.stat.json&query=%24.translation&label=ru
+   * - `3.11 <https://github.com/MLGRussianXP/python-docs-ru/tree/3.11>`_
+     - .. image:: https://github.com/MLGRussianXP/python-docs-ru/workflows/python-311/badge.svg
+          :target: https://github.com/MLGRussianXP/python-docs-ru/actions?workflow=python-311
+     - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2MLGRussianXP%2Fpython-docs-ru%2F3.11%2F.stat.json&query=%24.translation&label=ru
           :target: https://app.transifex.com/python-doc/python-311/
-   * - `3.10 <https://github.com/python/python-docs-ru/tree/3.10>`_
-     - .. image:: https://github.com/python/python-docs-ru/workflows/python-310/badge.svg
-          :target: https://github.com/python/python-docs-ru/actions?workflow=python-310
-     - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpython%2Fpython-docs-ru%2F3.10%2F.stat.json&query=%24.translation&label=ru
+   * - `3.10 <https://github.com/MLGRussianXP/python-docs-ru/tree/3.10>`_
+     - .. image:: https://github.com/MLGRussianXP/python-docs-ru/workflows/python-310/badge.svg
+          :target: https://github.com/MLGRussianXP/python-docs-ru/actions?workflow=python-310
+     - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2MLGRussianXP%2Fpython-docs-ru%2F3.10%2F.stat.json&query=%24.translation&label=ru
           :target: https://app.transifex.com/python-doc/python-310/
-   * - `3.9 <https://github.com/python/python-docs-ru/tree/3.9>`_
-     - .. image:: https://github.com/python/python-docs-ru/workflows/python-39/badge.svg
-          :target: https://github.com/python/python-docs-ru/actions?workflow=python-39
-     - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpython%2Fpython-docs-ru%2F3.9%2F.stat.json&query=%24.translation&label=ru
+   * - `3.9 <https://github.com/MLGRussianXP/python-docs-ru/tree/3.9>`_
+     - .. image:: https://github.com/MLGRussianXP/python-docs-ru/workflows/python-39/badge.svg
+          :target: https://github.com/MLGRussianXP/python-docs-ru/actions?workflow=python-39
+     - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2MLGRussianXP%2Fpython-docs-ru%2F3.9%2F.stat.json&query=%24.translation&label=ru
           :target: https://app.transifex.com/python-doc/python-39/
 
 Documentation Contribution Agreement

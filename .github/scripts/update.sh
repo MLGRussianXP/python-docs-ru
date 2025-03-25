@@ -19,4 +19,4 @@ for f in $(git ls-tree -r -t --full-name --name-only "$rev") ; do
     touch -d $(git log --pretty=format:%cI -1 "$rev" -- "$f") "$f";
 done
 
-$(realpath ../tx) pull --languages "$LOCALE" -t --use-git-timestamps --workers 25 --silent
+$(realpath ../tx) pull --languages "$LOCALE" --mode reviewed --use-git-timestamps --workers 25 --silent

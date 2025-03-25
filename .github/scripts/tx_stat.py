@@ -14,20 +14,20 @@ headers = {
 }
 
 total = 0
-translated = 0
+reviewed = 0
 
-while(url):
-    request = urllib.request.Request(url=url,headers=headers)
-
+while url:
+    request = urllib.request.Request(url=url, headers=headers)
+    
     with urllib.request.urlopen(request) as response:
         data = json.loads(response.read().decode("utf-8"))
         url = data['links'].get('next')
-        for resourse in data['data']:
-            translated = translated + resourse['attributes']['translated_strings']
-            total =  total + resourse['attributes']['total_strings']
+        for resource in data['data']:
+            reviewed += resource['attributes']['reviewed_strings']
+            total += resource['attributes']['total_strings']
 
-p = '{:.2%}'.format(translated/total)
+p = '{:.2%}'.format(reviewed / total if total > 0 else 0)
 print(json.dumps({
-    'translation':p,
-    'updated_at':datetime.utcnow().isoformat(timespec='seconds') + 'Z',
-    }))
+    'translation': p,
+    'updated_at': datetime.utcnow().isoformat(timespec='seconds') + 'Z',
+}))

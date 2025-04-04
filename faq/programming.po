@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 14:18+0000\n"
+"POT-Creation-Date: 2025-04-04 14:18+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
 "Last-Translator: Roustam Khamidoulline, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -1487,8 +1487,8 @@ msgstr ""
 
 #: ../../faq/programming.rst:990
 msgid ""
-"Is there an equivalent to Perl's chomp() for removing trailing newlines from"
-" strings?"
+"Is there an equivalent to Perl's ``chomp()`` for removing trailing newlines "
+"from strings?"
 msgstr ""
 
 #: ../../faq/programming.rst:992
@@ -1516,7 +1516,7 @@ msgid ""
 msgstr ""
 
 #: ../../faq/programming.rst:1009
-msgid "Is there a scanf() or sscanf() equivalent?"
+msgid "Is there a ``scanf()`` or ``sscanf()`` equivalent?"
 msgstr ""
 
 #: ../../faq/programming.rst:1011
@@ -1540,7 +1540,7 @@ msgid ""
 msgstr ""
 
 #: ../../faq/programming.rst:1024
-msgid "What does 'UnicodeDecodeError' or 'UnicodeEncodeError' error  mean?"
+msgid "What does ``UnicodeDecodeError`` or ``UnicodeEncodeError`` error mean?"
 msgstr ""
 
 #: ../../faq/programming.rst:1026
@@ -1562,7 +1562,7 @@ msgid ""
 ">>> r'C:\\this\\will\\not\\work\\'\n"
 "  File \"<stdin>\", line 1\n"
 "    r'C:\\this\\will\\not\\work\\'\n"
-"         ^\n"
+"    ^\n"
 "SyntaxError: unterminated string literal (detected at line 1)"
 msgstr ""
 

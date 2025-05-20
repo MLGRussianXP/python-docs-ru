@@ -12,11 +12,16 @@ Maintained versions:
    * - Version
      - Sync status
      - Translation progress
+   * - `3.14 <https://github.com/MLGRussianXP/python-docs-ru/tree/3.14>`_
+    - .. image:: https://github.com/MLGRussianXP/python-docs-ru/workflows/python-314/badge.svg
+        :target: https://github.com/MLGRussianXP/python-docs-ru/actions?workflow=python-314
+    - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FMLGRussianXP%2Fpython-docs-ru%2F3.14%2F.stat.json&query=%24.translation&label=ru
+        :target: https://app.transifex.com/python-doc/python-newest/
    * - `3.13 <https://github.com/MLGRussianXP/python-docs-ru/tree/3.13>`_
      - .. image:: https://github.com/MLGRussianXP/python-docs-ru/workflows/python-313/badge.svg
           :target: https://github.com/MLGRussianXP/python-docs-ru/actions?workflow=python-313
      - .. image:: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FMLGRussianXP%2Fpython-docs-ru%2F3.13%2F.stat.json&query=%24.translation&label=ru
-          :target: https://app.transifex.com/python-doc/python-newest/
+          :target: https://app.transifex.com/python-doc/python-313/
    * - `3.12 <https://github.com/MLGRussianXP/python-docs-ru/tree/3.12>`_
      - .. image:: https://github.com/MLGRussianXP/python-docs-ru/workflows/python-312/badge.svg
           :target: https://github.com/MLGRussianXP/python-docs-ru/actions?workflow=python-312

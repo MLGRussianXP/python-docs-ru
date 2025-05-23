@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-16 14:19+0000\n"
+"POT-Creation-Date: 2025-05-23 14:20+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
 "Last-Translator: Илья Панфилов, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -205,10 +205,10 @@ msgstr ""
 
 #: ../../library/unittest.rst:112
 msgid ""
-"A testcase is created by subclassing :class:`unittest.TestCase`.  The three "
-"individual tests are defined with methods whose names start with the letters"
-" ``test``.  This naming convention informs the test runner about which "
-"methods represent tests."
+"A test case is created by subclassing :class:`unittest.TestCase`.  The three"
+" individual tests are defined with methods whose names start with the "
+"letters ``test``.  This naming convention informs the test runner about "
+"which methods represent tests."
 msgstr ""
 
 #: ../../library/unittest.rst:117

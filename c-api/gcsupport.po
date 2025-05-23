@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Илья Панфилов, 2024
-# Roustam Khamidoulline, 2025
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-18 14:18+0000\n"
-"PO-Revision-Date: 2021-06-28 00:48+0000\n"
-"Last-Translator: Roustam Khamidoulline, 2025\n"
+"POT-Creation-Date: 2025-05-23 14:55+0000\n"
+"PO-Revision-Date: 2025-05-08 05:08+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -259,9 +258,10 @@ msgstr ""
 
 #: ../../c-api/gcsupport.rst:185
 msgid ""
-"If *o* is not ``NULL``, call the *visit* callback, with arguments *o* and "
-"*arg*.  If *visit* returns a non-zero value, then return it. Using this "
-"macro, :c:member:`~PyTypeObject.tp_traverse` handlers look like::"
+"If the :c:expr:`PyObject *` *o* is not ``NULL``, call the *visit* callback, "
+"with arguments *o* and *arg*.  If *visit* returns a non-zero value, then "
+"return it. Using this macro, :c:member:`~PyTypeObject.tp_traverse` handlers "
+"look like::"
 msgstr ""
 
 #: ../../c-api/gcsupport.rst:190

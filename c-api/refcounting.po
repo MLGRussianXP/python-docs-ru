@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# decorator_factory <decorator-factory+transifex@yandex.ru>, 2021
+# decorator-factory, 2021
 # Илья Панфилов, 2024
 # Roustam Khamidoulline, 2024
 # 
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-16 14:19+0000\n"
+"POT-Creation-Date: 2025-06-20 14:21+0000\n"
 "PO-Revision-Date: 2021-06-28 00:50+0000\n"
 "Last-Translator: Roustam Khamidoulline, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -293,7 +293,7 @@ msgstr ""
 
 #: ../../c-api/refcounting.rst:213
 msgid ""
-"That arranges to set *dst* to *src* _before_ releasing the reference to the "
+"That arranges to set *dst* to *src* *before* releasing the reference to the "
 "old value of *dst*, so that any code triggered as a side-effect of *dst* "
 "getting torn down no longer believes *dst* points to a valid object."
 msgstr ""

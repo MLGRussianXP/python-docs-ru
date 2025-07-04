@@ -4,19 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Daniil Kolesnikov, 2024
-# Илья Панфилов, 2024
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2025
-# Roustam Khamidoulline, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-02 14:19+0000\n"
-"PO-Revision-Date: 2023-05-24 13:08+0000\n"
-"Last-Translator: Roustam Khamidoulline, 2025\n"
+"POT-Creation-Date: 2025-07-04 15:01+0000\n"
+"PO-Revision-Date: 2025-05-08 05:10+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2450,16 +2447,25 @@ msgstr ""
 
 #: ../../deprecations/pending-removal-in-3.15.rst:88
 msgid ""
+"When using the functional syntax of :class:`~typing.TypedDict`\\s, failing "
+"to pass a value to the *fields* parameter (``TD = TypedDict(\"TD\")``) or "
+"passing ``None`` (``TD = TypedDict(\"TD\", None)``) has been deprecated "
+"since Python 3.13. Use ``class TD(TypedDict): pass`` or ``TD = "
+"TypedDict(\"TD\", {})`` to create a TypedDict with zero field."
+msgstr ""
+
+#: ../../deprecations/pending-removal-in-3.15.rst:95
+msgid ""
 "The :func:`typing.no_type_check_decorator` decorator function has been "
 "deprecated since Python 3.13. After eight years in the :mod:`typing` module,"
 " it has yet to be supported by any major type checker."
 msgstr ""
 
-#: ../../deprecations/pending-removal-in-3.15.rst:93
+#: ../../deprecations/pending-removal-in-3.15.rst:100
 msgid ":mod:`wave`:"
 msgstr ""
 
-#: ../../deprecations/pending-removal-in-3.15.rst:95
+#: ../../deprecations/pending-removal-in-3.15.rst:102
 msgid ""
 "The :meth:`~wave.Wave_read.getmark`, :meth:`!setmark`, and "
 ":meth:`~wave.Wave_read.getmarkers` methods of the :class:`~wave.Wave_read` "
@@ -2467,6 +2473,7 @@ msgid ""
 "3.13."
 msgstr ""
 
+#: ../../deprecations/c-api-pending-removal-in-3.16.rst:2
 #: ../../deprecations/pending-removal-in-3.16.rst:2
 msgid "Pending removal in Python 3.16"
 msgstr ""
@@ -2889,7 +2896,7 @@ msgid ""
 ":meth:`~zipimport.zipimporter.exec_module` instead."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:1355 ../../whatsnew/3.12.rst:2237
+#: ../../whatsnew/3.12.rst:1355 ../../whatsnew/3.12.rst:2239
 msgid "Removed"
 msgstr ""
 
@@ -4727,65 +4734,65 @@ msgid ""
 msgstr ""
 
 #: ../../deprecations/c-api-pending-removal-in-3.15.rst:4
-msgid "The bundled copy of ``libmpdecimal``."
-msgstr ""
-
-#: ../../deprecations/c-api-pending-removal-in-3.15.rst:5
 msgid ""
 "The :c:func:`PyImport_ImportModuleNoBlock`: Use "
 ":c:func:`PyImport_ImportModule` instead."
 msgstr ""
 
-#: ../../deprecations/c-api-pending-removal-in-3.15.rst:7
+#: ../../deprecations/c-api-pending-removal-in-3.15.rst:6
 msgid ""
 ":c:func:`PyWeakref_GetObject` and :c:func:`PyWeakref_GET_OBJECT`: Use "
 ":c:func:`PyWeakref_GetRef` instead."
 msgstr ""
 
-#: ../../deprecations/c-api-pending-removal-in-3.15.rst:9
+#: ../../deprecations/c-api-pending-removal-in-3.15.rst:8
 msgid ""
 ":c:type:`Py_UNICODE` type and the :c:macro:`!Py_UNICODE_WIDE` macro: Use "
 ":c:type:`wchar_t` instead."
 msgstr ""
 
-#: ../../deprecations/c-api-pending-removal-in-3.15.rst:11
+#: ../../deprecations/c-api-pending-removal-in-3.15.rst:10
 msgid "Python initialization functions:"
 msgstr ""
 
-#: ../../deprecations/c-api-pending-removal-in-3.15.rst:13
+#: ../../deprecations/c-api-pending-removal-in-3.15.rst:12
 msgid ""
 ":c:func:`PySys_ResetWarnOptions`: Clear :data:`sys.warnoptions` and "
 ":data:`!warnings.filters` instead."
 msgstr ""
 
-#: ../../deprecations/c-api-pending-removal-in-3.15.rst:15
+#: ../../deprecations/c-api-pending-removal-in-3.15.rst:14
 msgid ""
 ":c:func:`Py_GetExecPrefix`: Get :data:`sys.base_exec_prefix` and "
 ":data:`sys.exec_prefix` instead."
 msgstr ""
 
-#: ../../deprecations/c-api-pending-removal-in-3.15.rst:17
+#: ../../deprecations/c-api-pending-removal-in-3.15.rst:16
 msgid ":c:func:`Py_GetPath`: Get :data:`sys.path` instead."
 msgstr ""
 
-#: ../../deprecations/c-api-pending-removal-in-3.15.rst:19
+#: ../../deprecations/c-api-pending-removal-in-3.15.rst:18
 msgid ""
 ":c:func:`Py_GetPrefix`: Get :data:`sys.base_prefix` and :data:`sys.prefix` "
 "instead."
 msgstr ""
 
-#: ../../deprecations/c-api-pending-removal-in-3.15.rst:21
+#: ../../deprecations/c-api-pending-removal-in-3.15.rst:20
 msgid ":c:func:`Py_GetProgramFullPath`: Get :data:`sys.executable` instead."
 msgstr ""
 
-#: ../../deprecations/c-api-pending-removal-in-3.15.rst:23
+#: ../../deprecations/c-api-pending-removal-in-3.15.rst:22
 msgid ":c:func:`Py_GetProgramName`: Get :data:`sys.executable` instead."
 msgstr ""
 
-#: ../../deprecations/c-api-pending-removal-in-3.15.rst:25
+#: ../../deprecations/c-api-pending-removal-in-3.15.rst:24
 msgid ""
 ":c:func:`Py_GetPythonHome`: Get :c:member:`PyConfig.home` or the "
 ":envvar:`PYTHONHOME` environment variable instead."
+msgstr ""
+
+#: ../../deprecations/c-api-pending-removal-in-3.16.rst:4
+msgid "The bundled copy of ``libmpdec``."
 msgstr ""
 
 #: ../../deprecations/c-api-pending-removal-in-future.rst:4
@@ -4908,54 +4915,54 @@ msgstr ""
 msgid ":c:func:`PyThread_ReInitTLS`: Unneeded since Python 3.7."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2239
+#: ../../whatsnew/3.12.rst:2241
 msgid ""
 "Remove the :file:`token.h` header file. There was never any public tokenizer"
 " C API. The :file:`token.h` header file was only designed to be used by "
 "Python internals. (Contributed by Victor Stinner in :gh:`92651`.)"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2244
+#: ../../whatsnew/3.12.rst:2246
 msgid "Legacy Unicode APIs have been removed. See :pep:`623` for detail."
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2246
+#: ../../whatsnew/3.12.rst:2248
 msgid ":c:macro:`!PyUnicode_WCHAR_KIND`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2247
+#: ../../whatsnew/3.12.rst:2249
 msgid ":c:func:`!PyUnicode_AS_UNICODE`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2248
+#: ../../whatsnew/3.12.rst:2250
 msgid ":c:func:`!PyUnicode_AsUnicode`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2249
+#: ../../whatsnew/3.12.rst:2251
 msgid ":c:func:`!PyUnicode_AsUnicodeAndSize`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2250
+#: ../../whatsnew/3.12.rst:2252
 msgid ":c:func:`!PyUnicode_AS_DATA`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2251
+#: ../../whatsnew/3.12.rst:2253
 msgid ":c:func:`!PyUnicode_FromUnicode`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2252
+#: ../../whatsnew/3.12.rst:2254
 msgid ":c:func:`!PyUnicode_GET_SIZE`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2253
+#: ../../whatsnew/3.12.rst:2255
 msgid ":c:func:`!PyUnicode_GetSize`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2254
+#: ../../whatsnew/3.12.rst:2256
 msgid ":c:func:`!PyUnicode_GET_DATA_SIZE`"
 msgstr ""
 
-#: ../../whatsnew/3.12.rst:2256
+#: ../../whatsnew/3.12.rst:2258
 msgid ""
 "Remove the ``PyUnicode_InternImmortal()`` function macro. (Contributed by "
 "Victor Stinner in :gh:`85858`.)"

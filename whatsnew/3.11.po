@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# decorator_factory <decorator-factory+transifex@yandex.ru>, 2022
+# decorator-factory, 2022
 # Daniil Kolesnikov, 2024
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2024
 # Илья Панфилов, 2024
@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-16 14:19+0000\n"
+"POT-Creation-Date: 2025-07-11 14:21+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
 "Last-Translator: Roustam Khamidoulline, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -1698,7 +1698,7 @@ msgstr ""
 #: ../../whatsnew/3.11.rst:1294
 msgid ""
 "Resizing lists is streamlined for the common case, speeding up "
-":meth:`list.append` by ≈15% and simple :term:`list comprehension`\\s by up "
+":meth:`!list.append` by ≈15% and simple :term:`list comprehension`\\s by up "
 "to 20-30% (Contributed by Dennis Sweeney in :gh:`91165`.)"
 msgstr ""
 

@@ -4,18 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2024
-# Илья Панфилов, 2024
-# Roustam Khamidoulline, 2025
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-11 14:19+0000\n"
-"PO-Revision-Date: 2021-06-28 01:17+0000\n"
-"Last-Translator: Roustam Khamidoulline, 2025\n"
+"POT-Creation-Date: 2025-07-11 15:02+0000\n"
+"PO-Revision-Date: 2025-05-08 05:10+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1239,7 +1237,7 @@ msgstr ""
 #: ../../library/urllib.request.rst:1078
 msgid ""
 "Send an HTTP request, which can be either GET or POST, depending on "
-"``req.has_data()``."
+"``req.data``."
 msgstr ""
 
 #: ../../library/urllib.request.rst:1085
@@ -1249,7 +1247,7 @@ msgstr ""
 #: ../../library/urllib.request.rst:1090
 msgid ""
 "Send an HTTPS request, which can be either GET or POST, depending on "
-"``req.has_data()``."
+"``req.data``."
 msgstr ""
 
 #: ../../library/urllib.request.rst:1097

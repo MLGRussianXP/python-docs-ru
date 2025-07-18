@@ -3,18 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Илья Панфилов, 2024
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
-# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-11 17:51+0000\n"
-"PO-Revision-Date: 2020-05-31 09:28+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
+"POT-Creation-Date: 2025-01-03 16:35+0000\n"
+"PO-Revision-Date: 2025-07-18 19:17+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -308,10 +303,9 @@ msgstr ""
 msgid ":c:func:`PyObject_CallNoArgs`"
 msgstr ""
 
-#: ../../c-api/call.rst:199 ../../c-api/call.rst:199 ../../c-api/call.rst:201
-#: ../../c-api/call.rst:203 ../../c-api/call.rst:205 ../../c-api/call.rst:207
-#: ../../c-api/call.rst:209 ../../c-api/call.rst:211 ../../c-api/call.rst:213
-#: ../../c-api/call.rst:213 ../../c-api/call.rst:215
+#: ../../c-api/call.rst:199 ../../c-api/call.rst:201 ../../c-api/call.rst:203
+#: ../../c-api/call.rst:205 ../../c-api/call.rst:207 ../../c-api/call.rst:209
+#: ../../c-api/call.rst:211 ../../c-api/call.rst:213 ../../c-api/call.rst:215
 msgid "---"
 msgstr ""
 
@@ -375,8 +369,7 @@ msgstr ""
 msgid ":c:func:`PyObject_Vectorcall`"
 msgstr ""
 
-#: ../../c-api/call.rst:217 ../../c-api/call.rst:217 ../../c-api/call.rst:219
-#: ../../c-api/call.rst:221 ../../c-api/call.rst:221
+#: ../../c-api/call.rst:217 ../../c-api/call.rst:219 ../../c-api/call.rst:221
 msgid "vectorcall"
 msgstr ""
 

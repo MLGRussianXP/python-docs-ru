@@ -3,18 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Илья Панфилов, 2024
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
-# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-11 17:51+0000\n"
-"PO-Revision-Date: 2017-02-16 17:33+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
+"POT-Creation-Date: 2025-01-03 16:35+0000\n"
+"PO-Revision-Date: 2025-07-18 19:17+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -409,21 +404,14 @@ msgstr ""
 msgid "suboffsets"
 msgstr ""
 
-#: ../../c-api/buffer.rst:274 ../../c-api/buffer.rst:274
-#: ../../c-api/buffer.rst:276 ../../c-api/buffer.rst:276
+#: ../../c-api/buffer.rst:274 ../../c-api/buffer.rst:276
 #: ../../c-api/buffer.rst:278 ../../c-api/buffer.rst:298
-#: ../../c-api/buffer.rst:298 ../../c-api/buffer.rst:300
 #: ../../c-api/buffer.rst:300 ../../c-api/buffer.rst:302
-#: ../../c-api/buffer.rst:302 ../../c-api/buffer.rst:304
-#: ../../c-api/buffer.rst:323 ../../c-api/buffer.rst:323
-#: ../../c-api/buffer.rst:323 ../../c-api/buffer.rst:325
-#: ../../c-api/buffer.rst:325 ../../c-api/buffer.rst:325
-#: ../../c-api/buffer.rst:327 ../../c-api/buffer.rst:327
-#: ../../c-api/buffer.rst:327 ../../c-api/buffer.rst:329
-#: ../../c-api/buffer.rst:329 ../../c-api/buffer.rst:329
-#: ../../c-api/buffer.rst:331 ../../c-api/buffer.rst:331
-#: ../../c-api/buffer.rst:333 ../../c-api/buffer.rst:333
-#: ../../c-api/buffer.rst:335 ../../c-api/buffer.rst:337
+#: ../../c-api/buffer.rst:304 ../../c-api/buffer.rst:323
+#: ../../c-api/buffer.rst:325 ../../c-api/buffer.rst:327
+#: ../../c-api/buffer.rst:329 ../../c-api/buffer.rst:331
+#: ../../c-api/buffer.rst:333 ../../c-api/buffer.rst:335
+#: ../../c-api/buffer.rst:337
 msgid "yes"
 msgstr ""
 
@@ -433,16 +421,11 @@ msgid "if needed"
 msgstr ""
 
 #: ../../c-api/buffer.rst:276 ../../c-api/buffer.rst:278
-#: ../../c-api/buffer.rst:278 ../../c-api/buffer.rst:280
-#: ../../c-api/buffer.rst:280 ../../c-api/buffer.rst:280
-#: ../../c-api/buffer.rst:298 ../../c-api/buffer.rst:300
-#: ../../c-api/buffer.rst:302 ../../c-api/buffer.rst:304
+#: ../../c-api/buffer.rst:280 ../../c-api/buffer.rst:298
+#: ../../c-api/buffer.rst:300 ../../c-api/buffer.rst:302
 #: ../../c-api/buffer.rst:304 ../../c-api/buffer.rst:327
 #: ../../c-api/buffer.rst:329 ../../c-api/buffer.rst:331
-#: ../../c-api/buffer.rst:331 ../../c-api/buffer.rst:333
 #: ../../c-api/buffer.rst:333 ../../c-api/buffer.rst:335
-#: ../../c-api/buffer.rst:335 ../../c-api/buffer.rst:335
-#: ../../c-api/buffer.rst:337 ../../c-api/buffer.rst:337
 #: ../../c-api/buffer.rst:337
 msgid "NULL"
 msgstr ""

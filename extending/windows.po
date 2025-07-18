@@ -3,17 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Roustam Khamidoulline, 2024
-# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-16 14:19+0000\n"
-"PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: Roustam Khamidoulline, 2024\n"
+"POT-Creation-Date: 2025-06-06 14:20+0000\n"
+"PO-Revision-Date: 2025-07-18 18:48+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -171,7 +167,7 @@ msgid ""
 ":file:`Python.h` triggers an implicit, configure-aware link with the "
 "library.  The header file chooses :file:`pythonXY_d.lib` for Debug, "
 ":file:`pythonXY.lib` for Release, and :file:`pythonX.lib` for Release with "
-"the `Limited API <stable-application-binary-interface>`_ enabled."
+"the :ref:`Limited API <stable-application-binary-interface>` enabled."
 msgstr ""
 
 #: ../../extending/windows.rst:126 ../../extending/windows.rst:144

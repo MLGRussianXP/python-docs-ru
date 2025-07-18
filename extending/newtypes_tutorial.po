@@ -3,19 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# alex alev <alex.alev@bk.ru>, 2021
-# Илья Панфилов, 2024
-# Roustam Khamidoulline, 2024
-# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-30 14:22+0000\n"
-"PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: Roustam Khamidoulline, 2024\n"
+"POT-Creation-Date: 2025-06-27 14:20+0000\n"
+"PO-Revision-Date: 2025-07-18 18:48+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -653,9 +647,9 @@ msgid ""
 "The explicit cast to ``CustomObject *`` above is needed because we defined "
 "``Custom_dealloc`` to take a ``PyObject *`` argument, as the ``tp_dealloc`` "
 "function pointer expects to receive a ``PyObject *`` argument. By assigning "
-"to the the ``tp_dealloc`` slot of a type, we declare that it can only be "
-"called with instances of our ``CustomObject`` class, so the cast to "
-"``(CustomObject *)`` is safe. This is object-oriented polymorphism, in C!"
+"to the ``tp_dealloc`` slot of a type, we declare that it can only be called "
+"with instances of our ``CustomObject`` class, so the cast to ``(CustomObject"
+" *)`` is safe. This is object-oriented polymorphism, in C!"
 msgstr ""
 
 #: ../../extending/newtypes_tutorial.rst:285

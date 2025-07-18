@@ -3,20 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Daniil Kolesnikov, 2024
-# Илья Панфилов, 2024
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2024
-# Roustam Khamidoulline, 2025
-# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-13 14:21+0000\n"
-"PO-Revision-Date: 2021-06-28 00:49+0000\n"
-"Last-Translator: Roustam Khamidoulline, 2025\n"
+"POT-Creation-Date: 2025-06-27 14:20+0000\n"
+"PO-Revision-Date: 2025-07-18 18:48+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1778,7 +1771,7 @@ msgstr ""
 #: ../../c-api/init.rst:1416
 msgid ""
 "Reset all information in an interpreter state object.  There must be an "
-":term:`attached thread state` for the the interpreter."
+":term:`attached thread state` for the interpreter."
 msgstr ""
 
 #: ../../c-api/init.rst:1419

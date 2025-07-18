@@ -3,19 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Илья Панфилов, 2024
-# f194d5f9acd7002ec4eceb5e69b5834f_d091d3b, 2024
-# Roustam Khamidoulline, 2024
-# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-16 14:19+0000\n"
-"PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: Roustam Khamidoulline, 2024\n"
+"POT-Creation-Date: 2025-05-23 14:20+0000\n"
+"PO-Revision-Date: 2025-07-18 18:48+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -382,6 +376,15 @@ msgid ""
 "using :func:`annotationlib.get_annotations` on Python 3.14+ or "
 ":func:`inspect.get_annotations` on Python 3.10+. On earlier versions of "
 "Python, you can avoid these bugs by accessing the annotations from the "
-"class's :attr:`~type.__dict__` (e.g., ``cls.__dict__.get('__annotations__', "
-"None)``)."
+"class's :attr:`~type.__dict__` (for example, "
+"``cls.__dict__.get('__annotations__', None)``)."
+msgstr ""
+
+#: ../../howto/annotations.rst:253
+msgid ""
+"In some versions of Python, instances of classes may have an "
+"``__annotations__`` attribute. However, this is not supported functionality."
+" If you need the annotations of an instance, you can use :func:`type` to "
+"access its class (for example, "
+"``annotationlib.get_annotations(type(myinstance))`` on Python 3.14+)."
 msgstr ""

@@ -3,22 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Pavel Karateev <lancelote.du.lac@gmail.com>, 2021
-# Kristina Mironova, 2021
-# alex alev <alex.alev@bk.ru>, 2021
-# myoldloverock, 2023
-# Daniil Kolesnikov, 2024
-# Roustam Khamidoulline, 2024
-# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-16 14:19+0000\n"
-"PO-Revision-Date: 2021-06-28 01:49+0000\n"
-"Last-Translator: Roustam Khamidoulline, 2024\n"
+"POT-Creation-Date: 2025-05-09 14:19+0000\n"
+"PO-Revision-Date: 2025-07-18 18:50+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,11 +19,11 @@ msgstr ""
 
 #: ../../tutorial/appendix.rst:5
 msgid "Appendix"
-msgstr "Приложение"
+msgstr ""
 
 #: ../../tutorial/appendix.rst:11
 msgid "Interactive Mode"
-msgstr "Интерактивный режим"
+msgstr ""
 
 #: ../../tutorial/appendix.rst:13
 msgid ""
@@ -69,7 +60,7 @@ msgstr ""
 
 #: ../../tutorial/appendix.rst:38
 msgid "Error Handling"
-msgstr "Обработка ошибок"
+msgstr ""
 
 #: ../../tutorial/appendix.rst:40
 msgid ""
@@ -92,24 +83,16 @@ msgid ""
 " the :exc:`KeyboardInterrupt` exception, which may be handled by a "
 ":keyword:`try` statement."
 msgstr ""
-"Ввод символа прерывания (обычно :kbd:`Control-C` или :kbd:`Delete`) в "
-"основном или вторичном запросе отменяет ввод и возвращает к основному "
-"запросу. [#]_ Ввод прерывания во время выполнения команды вызывает "
-"исключение :exc:`KeyboardInterrupt`, которое может быть обработано "
-"инструкцией :keyword:`try`."
 
 #: ../../tutorial/appendix.rst:60
 msgid "Executable Python Scripts"
-msgstr "Исполняемые Python скрипты"
+msgstr ""
 
 #: ../../tutorial/appendix.rst:62
 msgid ""
 "On BSD'ish Unix systems, Python scripts can be made directly executable, "
 "like shell scripts, by putting the line ::"
 msgstr ""
-"На BSD-подобных Unix-системах скрипты Python могут быть сделаны "
-"непосредственно исполняемыми, как скрипты командной оболочки, добавив строку"
-" ::"
 
 #: ../../tutorial/appendix.rst:65
 msgid "#!/usr/bin/env python3"
@@ -124,20 +107,12 @@ msgid ""
 "(``'\\r\\n'``) line ending.  Note that the hash, or pound, character, "
 "``'#'``, is used to start a comment in Python."
 msgstr ""
-"(предполагается, что интерпретатор находится в :envvar:`PATH`) в начало "
-"скрипта и дав файлу режим исполнения. ``#!`` должны быть первыми двумя "
-"символами файла. На некоторых платформах первая строка должна заканчиваться "
-"символом новой строки в стиле Unix (``'\\n'``), а не символом новой строки "
-"Windows (``'\\r\\n'``). Обратите внимание, что символ хэша или решетки, "
-"``'#'``, используется для начала комментария в Python."
 
 #: ../../tutorial/appendix.rst:74
 msgid ""
 "The script can be given an executable mode, or permission, using the "
 ":program:`chmod` command."
 msgstr ""
-"Скрипту можно назначить режим исполнения или права доступа с помощью команды"
-" :program:`chmod`."
 
 #: ../../tutorial/appendix.rst:77
 msgid "$ chmod +x myscript.py"
@@ -151,11 +126,6 @@ msgid ""
 "extension can also be ``.pyw``, in that case, the console window that "
 "normally appears is suppressed."
 msgstr ""
-"На системах Windows нет понятия \"режима исполнения\". Установщик Python "
-"автоматически ассоциирует файлы с расширением ``.py`` с ``python.exe``, так "
-"что двойной щелчок по файлу Python запустит его как скрипт. Расширение также"
-" может быть ``.pyw``, в этом случае окно консоли, которое обычно появляется,"
-" будет скрыто."
 
 #: ../../tutorial/appendix.rst:91
 msgid "The Interactive Startup File"

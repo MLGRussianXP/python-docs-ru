@@ -3,21 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# 256c6f581e7306f8fe260875df9dd39f_33ba001, 2024
-# Kristina Mironova, 2024
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2024
-# Roustam Khamidoulline, 2024
-# Илья Панфилов, 2025
-# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 14:20+0000\n"
-"PO-Revision-Date: 2021-06-28 01:11+0000\n"
-"Last-Translator: Илья Панфилов, 2025\n"
+"POT-Creation-Date: 2025-06-27 14:20+0000\n"
+"PO-Revision-Date: 2025-07-18 18:49+0000\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2808,7 +2800,7 @@ msgstr ""
 msgid ""
 "If *follow_symlinks* is ``False``, return ``True`` only if the path is a "
 "file (without following symlinks); return ``False`` if the path is a "
-"directory or other other non-file, or if it doesn't exist."
+"directory or other non-file, or if it doesn't exist."
 msgstr ""
 
 #: ../../library/pathlib.rst:1992

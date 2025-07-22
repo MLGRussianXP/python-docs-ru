@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../whatsnew/changelog.rst:7
 msgid "Changelog"
-msgstr ""
+msgstr "Список изменений"
 
 #: ../NEWS:3
 msgid "Python next"

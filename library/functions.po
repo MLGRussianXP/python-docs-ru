@@ -23,377 +23,379 @@ msgstr ""
 
 #: ../../library/functions.rst:5 ../../library/functions.rst:11
 msgid "Built-in Functions"
-msgstr ""
+msgstr "Встроенные функции"
 
 #: ../../library/functions.rst:7
 msgid ""
 "The Python interpreter has a number of functions and types built into it "
 "that are always available.  They are listed here in alphabetical order."
 msgstr ""
+"Интерпретатор Python имеет ряд встроенных функций и типов, которые доступны "
+"всегда. Они перечислены здесь в алфавитном порядке."
 
 #: ../../library/functions.rst:0
 msgid "**A**"
-msgstr ""
+msgstr "**A**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`abs`"
-msgstr ""
+msgstr ":func:`abs`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`aiter`"
-msgstr ""
+msgstr ":func:`aiter`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`all`"
-msgstr ""
+msgstr ":func:`all`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`anext`"
-msgstr ""
+msgstr ":func:`anext`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`any`"
-msgstr ""
+msgstr ":func:`any`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`ascii`"
-msgstr ""
+msgstr ":func:`ascii`"
 
 #: ../../library/functions.rst:0
 msgid "**B**"
-msgstr ""
+msgstr "**B**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`bin`"
-msgstr ""
+msgstr ":func:`bin`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`bool`"
-msgstr ""
+msgstr ":func:`bool`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`breakpoint`"
-msgstr ""
+msgstr ":func:`breakpoint`"
 
 #: ../../library/functions.rst:0
 msgid "|func-bytearray|_"
-msgstr ""
+msgstr "|func-bytearray|_"
 
 #: ../../library/functions.rst:0
 msgid "|func-bytes|_"
-msgstr ""
+msgstr "|func-bytes|_"
 
 #: ../../library/functions.rst:0
 msgid "**C**"
-msgstr ""
+msgstr "**C**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`callable`"
-msgstr ""
+msgstr ":func:`callable`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`chr`"
-msgstr ""
+msgstr ":func:`chr`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`classmethod`"
-msgstr ""
+msgstr ":func:`classmethod`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`compile`"
-msgstr ""
+msgstr ":func:`compile`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`complex`"
-msgstr ""
+msgstr ":func:`complex`"
 
 #: ../../library/functions.rst:0
 msgid "**D**"
-msgstr ""
+msgstr "**D**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`delattr`"
-msgstr ""
+msgstr ":func:`delattr`"
 
 #: ../../library/functions.rst:0
 msgid "|func-dict|_"
-msgstr ""
+msgstr "|func-dict|_"
 
 #: ../../library/functions.rst:0
 msgid ":func:`dir`"
-msgstr ""
+msgstr ":func:`dir`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`divmod`"
-msgstr ""
+msgstr ":func:`divmod`"
 
 #: ../../library/functions.rst:0
 msgid "**E**"
-msgstr ""
+msgstr "**E**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`enumerate`"
-msgstr ""
+msgstr ":func:`enumerate`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`eval`"
-msgstr ""
+msgstr ":func:`eval`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`exec`"
-msgstr ""
+msgstr ":func:`exec`"
 
 #: ../../library/functions.rst:0
 msgid "**F**"
-msgstr ""
+msgstr "**F**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`filter`"
-msgstr ""
+msgstr ":func:`filter`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`float`"
-msgstr ""
+msgstr ":func:`float`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`format`"
-msgstr ""
+msgstr ":func:`format`"
 
 #: ../../library/functions.rst:0
 msgid "|func-frozenset|_"
-msgstr ""
+msgstr "|func-frozenset|_"
 
 #: ../../library/functions.rst:0
 msgid "**G**"
-msgstr ""
+msgstr "**G**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`getattr`"
-msgstr ""
+msgstr ":func:`getattr`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`globals`"
-msgstr ""
+msgstr ":func:`globals`"
 
 #: ../../library/functions.rst:0
 msgid "**H**"
-msgstr ""
+msgstr "**H**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`hasattr`"
-msgstr ""
+msgstr ":func:`hasattr`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`hash`"
-msgstr ""
+msgstr ":func:`hash`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`help`"
-msgstr ""
+msgstr ":func:`help`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`hex`"
-msgstr ""
+msgstr ":func:`hex`"
 
 #: ../../library/functions.rst:0
 msgid "**I**"
-msgstr ""
+msgstr "**I**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`id`"
-msgstr ""
+msgstr ":func:`id`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`input`"
-msgstr ""
+msgstr ":func:`input`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`int`"
-msgstr ""
+msgstr ":func:`int`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`isinstance`"
-msgstr ""
+msgstr ":func:`isinstance`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`issubclass`"
-msgstr ""
+msgstr ":func:`issubclass`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`iter`"
-msgstr ""
+msgstr ":func:`iter`"
 
 #: ../../library/functions.rst:0
 msgid "**L**"
-msgstr ""
+msgstr "**L**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`len`"
-msgstr ""
+msgstr ":func:`len`"
 
 #: ../../library/functions.rst:0
 msgid "|func-list|_"
-msgstr ""
+msgstr "|func-list|_"
 
 #: ../../library/functions.rst:0
 msgid ":func:`locals`"
-msgstr ""
+msgstr ":func:`locals`"
 
 #: ../../library/functions.rst:0
 msgid "**M**"
-msgstr ""
+msgstr "**M**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`map`"
-msgstr ""
+msgstr ":func:`map`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`max`"
-msgstr ""
+msgstr ":func:`max`"
 
 #: ../../library/functions.rst:0
 msgid "|func-memoryview|_"
-msgstr ""
+msgstr "|func-memoryview|_"
 
 #: ../../library/functions.rst:0
 msgid ":func:`min`"
-msgstr ""
+msgstr ":func:`min`"
 
 #: ../../library/functions.rst:0
 msgid "**N**"
-msgstr ""
+msgstr "**N**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`next`"
-msgstr ""
+msgstr ":func:`next`"
 
 #: ../../library/functions.rst:0
 msgid "**O**"
-msgstr ""
+msgstr "**O**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`object`"
-msgstr ""
+msgstr ":func:`object`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`oct`"
-msgstr ""
+msgstr ":func:`oct`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`open`"
-msgstr ""
+msgstr ":func:`open`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`ord`"
-msgstr ""
+msgstr ":func:`ord`"
 
 #: ../../library/functions.rst:0
 msgid "**P**"
-msgstr ""
+msgstr "**P**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`pow`"
-msgstr ""
+msgstr ":func:`pow`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`print`"
-msgstr ""
+msgstr ":func:`print`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`property`"
-msgstr ""
+msgstr ":func:`property`"
 
 #: ../../library/functions.rst:0
 msgid "**R**"
-msgstr ""
+msgstr "**R**"
 
 #: ../../library/functions.rst:0
 msgid "|func-range|_"
-msgstr ""
+msgstr "|func-range|_"
 
 #: ../../library/functions.rst:0
 msgid ":func:`repr`"
-msgstr ""
+msgstr ":func:`repr`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`reversed`"
-msgstr ""
+msgstr ":func:`reversed`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`round`"
-msgstr ""
+msgstr ":func:`round`"
 
 #: ../../library/functions.rst:0
 msgid "**S**"
-msgstr ""
+msgstr "**S**"
 
 #: ../../library/functions.rst:0
 msgid "|func-set|_"
-msgstr ""
+msgstr "|func-set|_"
 
 #: ../../library/functions.rst:0
 msgid ":func:`setattr`"
-msgstr ""
+msgstr ":func:`setattr`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`slice`"
-msgstr ""
+msgstr ":func:`slice`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`sorted`"
-msgstr ""
+msgstr ":func:`sorted`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`staticmethod`"
-msgstr ""
+msgstr ":func:`staticmethod`"
 
 #: ../../library/functions.rst:0
 msgid "|func-str|_"
-msgstr ""
+msgstr "|func-str|_"
 
 #: ../../library/functions.rst:0
 msgid ":func:`sum`"
-msgstr ""
+msgstr ":func:`sum`"
 
 #: ../../library/functions.rst:0
 msgid ":func:`super`"
-msgstr ""
+msgstr ":func:`super`"
 
 #: ../../library/functions.rst:0
 msgid "**T**"
-msgstr ""
+msgstr "**T**"
 
 #: ../../library/functions.rst:0
 msgid "|func-tuple|_"
-msgstr ""
+msgstr "|func-tuple|_"
 
 #: ../../library/functions.rst:0
 msgid ":func:`type`"
-msgstr ""
+msgstr ":func:`type`"
 
 #: ../../library/functions.rst:0
 msgid "**V**"
-msgstr ""
+msgstr "**V**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`vars`"
-msgstr ""
+msgstr ":func:`vars`"
 
 #: ../../library/functions.rst:0
 msgid "**Z**"
-msgstr ""
+msgstr "**Z**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`zip`"
-msgstr ""
+msgstr ":func:`zip`"
 
 #: ../../library/functions.rst:0
 msgid "**_**"
-msgstr ""
+msgstr "**_**"
 
 #: ../../library/functions.rst:0
 msgid ":func:`__import__`"
-msgstr ""
+msgstr ":func:`__import__`"
 
 #: ../../library/functions.rst:59
 msgid ""
@@ -407,16 +409,22 @@ msgid ""
 "Return an :term:`asynchronous iterator` for an :term:`asynchronous "
 "iterable`. Equivalent to calling ``x.__aiter__()``."
 msgstr ""
+"Возвращает :term:`asynchronous iterator` для :term:`asynchronous iterable`. "
+"Эквивалент вызова ``x.__aiter__()``."
 
 #: ../../library/functions.rst:70
 msgid "Note: Unlike :func:`iter`, :func:`aiter` has no 2-argument variant."
 msgstr ""
+"Примечание: В отличие от :func:`iter`, у :func:`aiter` нет варианта с двумя "
+"аргументами."
 
 #: ../../library/functions.rst:76
 msgid ""
 "Return ``True`` if all elements of the *iterable* are true (or if the "
 "iterable is empty).  Equivalent to::"
 msgstr ""
+"Возвращает ``True``, если все элементы *iterable* истинны (или если "
+"итерируемый объект пуст). Эквивалентно::"
 
 #: ../../library/functions.rst:79
 msgid ""
@@ -438,6 +446,8 @@ msgid ""
 "This is the async variant of the :func:`next` builtin, and behaves "
 "similarly."
 msgstr ""
+"Это асинхронный вариант встроенной функции :func:`next`, и ведёт себя "
+"аналогично."
 
 #: ../../library/functions.rst:95
 msgid ""
@@ -452,6 +462,8 @@ msgid ""
 "Return ``True`` if any element of the *iterable* is true.  If the iterable "
 "is empty, return ``False``.  Equivalent to::"
 msgstr ""
+"Возвращает ``True``, если любой элемент *итерируемого объекта* истинный. "
+"Если итерируемый объект пуст, возвращает ``False``. Эквивалентно::"
 
 #: ../../library/functions.rst:107
 msgid ""
@@ -469,6 +481,10 @@ msgid ""
 ":func:`repr` using ``\\x``, ``\\u``, or ``\\U`` escapes.  This generates a "
 "string similar to that returned by :func:`repr` in Python 2."
 msgstr ""
+"Как :func:`repr`, возвращает строку, содержащую печатное представление "
+"объекта, но экранирует не-ASCII символы в строке, возвращаемой :func:`repr`,"
+" используя экранирование ``\\x``, ``\\u`` или ``\\U`` . Это генерирует "
+"строку, аналогичную той, которую возвращает :func:`repr` в Python 2."
 
 #: ../../library/functions.rst:124
 msgid ""
@@ -477,17 +493,23 @@ msgid ""
 "object, it has to define an :meth:`~object.__index__` method that returns an"
 " integer. Some examples:"
 msgstr ""
+"Преобразует целое число в двоичную строку с префиксом \"0b\". Результат "
+"является допустимым выражением Python. Если *x* не является объектом Python "
+":class:`int`, он должен определить метод :meth:`~object.__index__`, который "
+"возвращает целое число. Некоторые примеры:"
 
 #: ../../library/functions.rst:134
 msgid ""
 "If the prefix \"0b\" is desired or not, you can use either of the following "
 "ways."
 msgstr ""
+"В зависимости от необходимости префикса \"0b\", вы можете использовать любой"
+" из следующих способов."
 
 #: ../../library/functions.rst:141 ../../library/functions.rst:950
 #: ../../library/functions.rst:1335
 msgid "See also :func:`format` for more information."
-msgstr ""
+msgstr "См. также :func:`format` для получения дополнительной информации."
 
 #: ../../library/functions.rst:146
 msgid ""

@@ -517,7 +517,7 @@ msgstr ""
 
 #: ../../library/asyncio-llapi-index.rst:250
 msgid "Error Handling"
-msgstr ""
+msgstr "Обработка ошибок"
 
 #: ../../library/asyncio-llapi-index.rst:255
 msgid ":meth:`loop.call_exception_handler`"

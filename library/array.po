@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../library/array.rst:21
 msgid "``'b'``"
-msgstr ""
+msgstr "``'b'``"
 
 #: ../../library/array.rst:21
 msgid "signed char"

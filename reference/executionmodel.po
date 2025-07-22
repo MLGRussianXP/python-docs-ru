@@ -662,7 +662,7 @@ msgstr ""
 
 #: ../../reference/executionmodel.rst:351
 msgid "error handling"
-msgstr ""
+msgstr "обработка ошибок"
 
 #: ../../reference/executionmodel.rst:372
 msgid "termination model"

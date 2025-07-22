@@ -1751,7 +1751,7 @@ msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1414
 msgid "Error Handling API"
-msgstr ""
+msgstr "API для обработки ошибок"
 
 #: ../../library/asyncio-eventloop.rst:1416
 msgid "Allows customizing how exceptions are handled in the event loop."

@@ -39,10 +39,14 @@ msgid ""
 "look at the :ref:`reporting-bugs` page for information on how to do so.  New"
 " volunteers are always welcome!"
 msgstr ""
+"Разработка и совершенствование данной документации и ее инструментов, как и "
+"весь проект Python поддерживается добровольцами. Вся информация о том как "
+"внести свой вклад в развитие проекта находится на странице :ref:`reporting-"
+"bugs`. Мы всегда рады новым людям!"
 
 #: ../../about.rst:21
 msgid "Many thanks go to:"
-msgstr ""
+msgstr " Мы благодарны:"
 
 #: ../../about.rst:23
 msgid ""
@@ -55,12 +59,16 @@ msgid ""
 "the `Docutils <https://docutils.sourceforge.io/>`_ project for creating "
 "reStructuredText and the Docutils suite;"
 msgstr ""
+"проекту `Docutils <https://docutils.sourceforge.io/>`_ за создание "
+"reStructuredText и библиотеки Docutils;"
 
 #: ../../about.rst:27
 msgid ""
 "Fredrik Lundh for his Alternative Python Reference project from which Sphinx"
 " got many good ideas."
 msgstr ""
+"Fredrik Lundh за его проект Alternative Python Reference, из которого Sphinx"
+" получил много хороших идей."
 
 #: ../../about.rst:32
 msgid "Contributors to the Python documentation"
@@ -72,9 +80,14 @@ msgid ""
 "library, and the Python documentation.  See :source:`Misc/ACKS` in the "
 "Python source distribution for a partial list of contributors."
 msgstr ""
+"Множество людей внесли свой вклад в развитие языка Python, стандартной "
+"библиотеки и документации Python. Частичный список контрибьюторов можно "
+"найти здесь: :source:`Misc/ACKS`."
 
 #: ../../about.rst:38
 msgid ""
 "It is only with the input and contributions of the Python community that "
 "Python has such wonderful documentation -- Thank You!"
 msgstr ""
+"Только благодаря вкладу и участию сообщества у Python есть такая "
+"замечательная документация - Спасибо Вам!"

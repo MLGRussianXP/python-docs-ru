@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../tutorial/classes.rst:5
 msgid "Classes"
-msgstr ""
+msgstr "Классы"
 
 #: ../../tutorial/classes.rst:7
 msgid ""
@@ -1250,7 +1250,7 @@ msgstr ""
 
 #: ../../tutorial/classes.rst:911
 msgid "Examples::"
-msgstr ""
+msgstr "Примеры::"
 
 #: ../../tutorial/classes.rst:913
 msgid ""
@@ -1287,15 +1287,15 @@ msgstr ""
 
 #: ../../tutorial/classes.rst:343
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../tutorial/classes.rst:343
 msgid "method"
-msgstr ""
+msgstr "метод"
 
 #: ../../tutorial/classes.rst:679
 msgid "name"
-msgstr ""
+msgstr "имя"
 
 #: ../../tutorial/classes.rst:679
 msgid "mangling"

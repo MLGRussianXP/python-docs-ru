@@ -217,7 +217,7 @@ msgstr ""
 
 #: ../../tutorial/introduction.rst:141
 msgid "Text"
-msgstr ""
+msgstr "Текст"
 
 #: ../../tutorial/introduction.rst:143
 msgid ""

@@ -150,7 +150,7 @@ msgstr ""
 
 #: ../../reference/toplevel_components.rst:39
 msgid "interactive mode"
-msgstr ""
+msgstr "интерактивный режим"
 
 #: ../../reference/toplevel_components.rst:49
 msgid "UNIX"

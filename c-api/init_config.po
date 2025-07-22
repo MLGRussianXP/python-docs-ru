@@ -127,7 +127,7 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:96
 msgid "Error Handling"
-msgstr ""
+msgstr "Обработка ошибок"
 
 #: ../../c-api/init_config.rst:100
 msgid "Get the *config* error message."

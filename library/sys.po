@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-11 14:21+0000\n"
+"POT-Creation-Date: 2025-07-25 14:21+0000\n"
 "PO-Revision-Date: 2025-07-18 18:49+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -51,7 +51,7 @@ msgstr ""
 #: ../../library/sys.rst:1662 ../../library/sys.rst:1905
 #: ../../library/sys.rst:1920 ../../library/sys.rst:1928
 #: ../../library/sys.rst:1966 ../../library/sys.rst:1982
-#: ../../library/sys.rst:2226
+#: ../../library/sys.rst:2229
 msgid "Availability"
 msgstr ""
 
@@ -2810,11 +2810,17 @@ msgstr ""
 
 #: ../../library/sys.rst:2194
 msgid ""
-"The C API version for this interpreter.  Programmers may find this useful "
-"when debugging version conflicts between Python and extension modules."
+"The C API version, equivalent to the C macro :c:macro:`PYTHON_API_VERSION`. "
+"Defined for backwards compatibility."
 msgstr ""
 
-#: ../../library/sys.rst:2200
+#: ../../library/sys.rst:2197
+msgid ""
+"Currently, this constant is not updated in new Python versions, and is not "
+"useful for versioning. This may change in the future."
+msgstr ""
+
+#: ../../library/sys.rst:2203
 msgid ""
 "A tuple containing the five components of the version number: *major*, "
 "*minor*, *micro*, *releaselevel*, and *serial*.  All values except "
@@ -2825,18 +2831,18 @@ msgid ""
 "``sys.version_info.major`` and so on."
 msgstr ""
 
-#: ../../library/sys.rst:2208
+#: ../../library/sys.rst:2211
 msgid "Added named component attributes."
 msgstr ""
 
-#: ../../library/sys.rst:2213
+#: ../../library/sys.rst:2216
 msgid ""
 "This is an implementation detail of the warnings framework; do not modify "
 "this value.  Refer to the :mod:`warnings` module for more information on the"
 " warnings framework."
 msgstr ""
 
-#: ../../library/sys.rst:2220
+#: ../../library/sys.rst:2223
 msgid ""
 "The version number used to form registry keys on Windows platforms. This is "
 "stored as string resource 1000 in the Python DLL.  The value is normally the"
@@ -2845,20 +2851,20 @@ msgid ""
 "has no effect on the registry keys used by Python."
 msgstr ""
 
-#: ../../library/sys.rst:2232
+#: ../../library/sys.rst:2235
 msgid ""
 "Namespace containing functions and constants for register callbacks and "
 "controlling monitoring events. See  :mod:`sys.monitoring` for details."
 msgstr ""
 
-#: ../../library/sys.rst:2238
+#: ../../library/sys.rst:2241
 msgid ""
 "A dictionary of the various implementation-specific flags passed through the"
 " :option:`-X` command-line option.  Option names are either mapped to their "
 "values, if given explicitly, or to :const:`True`.  Example:"
 msgstr ""
 
-#: ../../library/sys.rst:2242
+#: ../../library/sys.rst:2245
 msgid ""
 "$ ./python -Xa=b -Xc\n"
 "Python 3.2a3+ (py3k, Oct 16 2010, 20:14:50)\n"
@@ -2869,18 +2875,18 @@ msgid ""
 "{'a': 'b', 'c': True}"
 msgstr ""
 
-#: ../../library/sys.rst:2254
+#: ../../library/sys.rst:2257
 msgid ""
 "This is a CPython-specific way of accessing options passed through "
 ":option:`-X`.  Other implementations may export them through other means, or"
 " not at all."
 msgstr ""
 
-#: ../../library/sys.rst:2262
+#: ../../library/sys.rst:2265
 msgid "Citations"
 msgstr ""
 
-#: ../../library/sys.rst:2263
+#: ../../library/sys.rst:2266
 msgid ""
 "ISO/IEC 9899:1999.  \"Programming languages -- C.\"  A public draft of this "
 "standard is available at https://www.open-"

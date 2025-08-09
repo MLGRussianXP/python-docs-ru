@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-08 03:57+0000\n"
+"POT-Creation-Date: 2025-08-09 15:09+0000\n"
 "PO-Revision-Date: 2025-07-18 19:22+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../library/typing.rst:48
 msgid ""
-"`\"Typing cheat sheet\" "
+"`Typing cheat sheet "
 "<https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html>`_"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 
 #: ../../library/typing.rst:51
 msgid ""
-"\"Type System Reference\" section of `the mypy docs "
+"Type System Reference section of `the mypy docs "
 "<https://mypy.readthedocs.io/en/stable/index.html>`_"
 msgstr ""
 
@@ -96,7 +96,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/typing.rst:56
-msgid "`\"Static Typing with Python\" <https://typing.python.org/en/latest/>`_"
+msgid "`Static Typing with Python <https://typing.python.org/en/latest/>`_"
 msgstr ""
 
 #: ../../library/typing.rst:57
@@ -112,7 +112,7 @@ msgstr ""
 #: ../../library/typing.rst:66
 msgid ""
 "The canonical, up-to-date specification of the Python type system can be "
-"found at `\"Specification for the Python type system\" "
+"found at `Specification for the Python type system "
 "<https://typing.python.org/en/latest/spec/index.html>`_."
 msgstr ""
 
@@ -3444,8 +3444,7 @@ msgid ""
 " runtime as soon as the class has been created. Monkey-patching attributes "
 "onto a runtime-checkable protocol will still work, but will have no impact "
 "on :func:`isinstance` checks comparing objects to the protocol. See "
-":ref:`\"What's new in Python 3.12\" <whatsnew-typing-py312>` for more "
-"details."
+":ref:`What's new in Python 3.12 <whatsnew-typing-py312>` for more details."
 msgstr ""
 
 #: ../../library/typing.rst:2480

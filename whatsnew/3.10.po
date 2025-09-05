@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 14:55+0000\n"
+"POT-Creation-Date: 2025-09-05 15:15+0000\n"
 "PO-Revision-Date: 2025-07-18 19:22+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -1338,8 +1338,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:904
 msgid ""
-"Add missing "
-":meth:`~asyncio.events.AbstractEventLoop.connect_accepted_socket` method. "
+"Add missing :meth:`~asyncio.loop.connect_accepted_socket` method. "
 "(Contributed by Alex Grönholm in :issue:`41332`.)"
 msgstr ""
 
@@ -1392,8 +1391,8 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:936
 msgid ""
-"Add :meth:`~bdb.Breakpoint.clearBreakpoints` to reset all set breakpoints. "
-"(Contributed by Irit Katriel in :issue:`24160`.)"
+"Add :meth:`!clearBreakpoints` to reset all set breakpoints. (Contributed by "
+"Irit Katriel in :issue:`24160`.)"
 msgstr ""
 
 #: ../../whatsnew/3.10.rst:940
@@ -2096,7 +2095,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1401
 msgid ""
-"Add audit events for :func:`~sqlite3.connect/handle`, "
+"Add audit events for :func:`~sqlite3.connect`, "
 ":meth:`~sqlite3.Connection.enable_load_extension`, and "
 ":meth:`~sqlite3.Connection.load_extension`. (Contributed by Erlend E. "
 "Aasland in :issue:`43762`.)"

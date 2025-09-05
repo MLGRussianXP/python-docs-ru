@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
+# python-doc bot, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 14:19+0000\n"
-"PO-Revision-Date: 2025-07-18 18:48+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
+"POT-Creation-Date: 2025-09-05 14:17+0000\n"
+"PO-Revision-Date: 2025-08-02 17:33+0000\n"
+"Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -561,37 +561,51 @@ msgid ""
 "overridden."
 msgstr ""
 
-#: ../../library/collections.abc.rst:275
-msgid "The index() method added support for *stop* and *start* arguments."
+#: ../../library/collections.abc.rst:277
+msgid "Return first index of *value*."
 msgstr ""
 
-#: ../../library/collections.abc.rst:282
+#: ../../library/collections.abc.rst:279
+msgid "Raises :exc:`ValueError` if the value is not present."
+msgstr ""
+
+#: ../../library/collections.abc.rst:281
+msgid ""
+"Supporting the *start* and *stop* arguments is optional, but recommended."
+msgstr ""
+
+#: ../../library/collections.abc.rst:283
+msgid ""
+"The :meth:`!index` method added support for *stop* and *start* arguments."
+msgstr ""
+
+#: ../../library/collections.abc.rst:290
 msgid "ABCs for read-only and mutable :ref:`sets <types-set>`."
 msgstr ""
 
-#: ../../library/collections.abc.rst:287
+#: ../../library/collections.abc.rst:295
 msgid "ABCs for read-only and mutable :term:`mappings <mapping>`."
 msgstr ""
 
-#: ../../library/collections.abc.rst:294
+#: ../../library/collections.abc.rst:302
 msgid ""
 "ABCs for mapping, items, keys, and values :term:`views <dictionary view>`."
 msgstr ""
 
-#: ../../library/collections.abc.rst:298
+#: ../../library/collections.abc.rst:306
 msgid ""
 "ABC for :term:`awaitable` objects, which can be used in :keyword:`await` "
 "expressions.  Custom implementations must provide the "
 ":meth:`~object.__await__` method."
 msgstr ""
 
-#: ../../library/collections.abc.rst:302
+#: ../../library/collections.abc.rst:310
 msgid ""
 ":term:`Coroutine <coroutine>` objects and instances of the "
 ":class:`~collections.abc.Coroutine` ABC are all instances of this ABC."
 msgstr ""
 
-#: ../../library/collections.abc.rst:306
+#: ../../library/collections.abc.rst:314
 msgid ""
 "In CPython, generator-based coroutines (:term:`generators <generator>` "
 "decorated with :func:`@types.coroutine <types.coroutine>`) are *awaitables*,"
@@ -600,7 +614,7 @@ msgid ""
 ":func:`inspect.isawaitable` to detect them."
 msgstr ""
 
-#: ../../library/collections.abc.rst:316
+#: ../../library/collections.abc.rst:324
 msgid ""
 "ABC for :term:`coroutine` compatible classes.  These implement the following"
 " methods, defined in :ref:`coroutine-objects`: :meth:`~coroutine.send`, "
@@ -609,7 +623,7 @@ msgid ""
 ":class:`Coroutine` instances are also instances of :class:`Awaitable`."
 msgstr ""
 
-#: ../../library/collections.abc.rst:324
+#: ../../library/collections.abc.rst:332
 msgid ""
 "In CPython, generator-based coroutines (:term:`generators <generator>` "
 "decorated with :func:`@types.coroutine <types.coroutine>`) are *awaitables*,"
@@ -618,61 +632,61 @@ msgid ""
 ":func:`inspect.isawaitable` to detect them."
 msgstr ""
 
-#: ../../library/collections.abc.rst:330
+#: ../../library/collections.abc.rst:338
 msgid ""
 "See :ref:`annotating-generators-and-coroutines` for details on using "
 ":class:`!Coroutine` in type annotations. The variance and order of type "
 "parameters correspond to those of :class:`Generator`."
 msgstr ""
 
-#: ../../library/collections.abc.rst:339
+#: ../../library/collections.abc.rst:347
 msgid ""
 "ABC for classes that provide an ``__aiter__`` method.  See also the "
 "definition of :term:`asynchronous iterable`."
 msgstr ""
 
-#: ../../library/collections.abc.rst:346
+#: ../../library/collections.abc.rst:354
 msgid ""
 "ABC for classes that provide ``__aiter__`` and ``__anext__`` methods.  See "
 "also the definition of :term:`asynchronous iterator`."
 msgstr ""
 
-#: ../../library/collections.abc.rst:353
+#: ../../library/collections.abc.rst:361
 msgid ""
 "ABC for :term:`asynchronous generator` classes that implement the protocol "
 "defined in :pep:`525` and :pep:`492`."
 msgstr ""
 
-#: ../../library/collections.abc.rst:356
+#: ../../library/collections.abc.rst:364
 msgid ""
 "See :ref:`annotating-generators-and-coroutines` for details on using "
 ":class:`!AsyncGenerator` in type annotations."
 msgstr ""
 
-#: ../../library/collections.abc.rst:363
+#: ../../library/collections.abc.rst:371
 msgid ""
 "ABC for classes that provide the :meth:`~object.__buffer__` method, "
 "implementing the :ref:`buffer protocol <bufferobjects>`. See :pep:`688`."
 msgstr ""
 
-#: ../../library/collections.abc.rst:369
+#: ../../library/collections.abc.rst:377
 msgid "Examples and Recipes"
 msgstr ""
 
-#: ../../library/collections.abc.rst:371
+#: ../../library/collections.abc.rst:379
 msgid ""
 "ABCs allow us to ask classes or instances if they provide particular "
 "functionality, for example::"
 msgstr ""
 
-#: ../../library/collections.abc.rst:374
+#: ../../library/collections.abc.rst:382
 msgid ""
 "size = None\n"
 "if isinstance(myvar, collections.abc.Sized):\n"
 "    size = len(myvar)"
 msgstr ""
 
-#: ../../library/collections.abc.rst:378
+#: ../../library/collections.abc.rst:386
 msgid ""
 "Several of the ABCs are also useful as mixins that make it easier to develop"
 " classes supporting container APIs.  For example, to write a class "
@@ -683,7 +697,7 @@ msgid ""
 ":meth:`~frozenset.isdisjoint`::"
 msgstr ""
 
-#: ../../library/collections.abc.rst:385
+#: ../../library/collections.abc.rst:393
 msgid ""
 "class ListBasedSet(collections.abc.Set):\n"
 "    ''' Alternate set implementation favoring space over speed\n"
@@ -708,11 +722,11 @@ msgid ""
 "overlap = s1 & s2            # The __and__() method is supported automatically"
 msgstr ""
 
-#: ../../library/collections.abc.rst:407
+#: ../../library/collections.abc.rst:415
 msgid "Notes on using :class:`Set` and :class:`MutableSet` as a mixin:"
 msgstr ""
 
-#: ../../library/collections.abc.rst:410
+#: ../../library/collections.abc.rst:418
 msgid ""
 "Since some set operations create new sets, the default mixin methods need a "
 "way to create new instances from an :term:`iterable`. The class constructor "
@@ -725,14 +739,14 @@ msgid ""
 "an iterable argument."
 msgstr ""
 
-#: ../../library/collections.abc.rst:421
+#: ../../library/collections.abc.rst:429
 msgid ""
 "To override the comparisons (presumably for speed, as the semantics are "
 "fixed), redefine :meth:`~object.__le__` and :meth:`~object.__ge__`, then the"
 " other operations will automatically follow suit."
 msgstr ""
 
-#: ../../library/collections.abc.rst:427
+#: ../../library/collections.abc.rst:435
 msgid ""
 "The :class:`Set` mixin provides a :meth:`!_hash` method to compute a hash "
 "value for the set; however, :meth:`~object.__hash__` is not defined because "
@@ -741,12 +755,12 @@ msgid ""
 "define ``__hash__ = Set._hash``."
 msgstr ""
 
-#: ../../library/collections.abc.rst:435
+#: ../../library/collections.abc.rst:443
 msgid ""
 "`OrderedSet recipe <https://code.activestate.com/recipes/576694/>`_ for an "
 "example built on :class:`MutableSet`."
 msgstr ""
 
-#: ../../library/collections.abc.rst:438
+#: ../../library/collections.abc.rst:446
 msgid "For more about ABCs, see the :mod:`abc` module and :pep:`3119`."
 msgstr ""

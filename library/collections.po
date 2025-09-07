@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
+# python-doc bot, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 14:19+0000\n"
-"PO-Revision-Date: 2025-07-18 18:48+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
+"POT-Creation-Date: 2025-09-07 14:14+0000\n"
+"PO-Revision-Date: 2025-08-02 17:33+0000\n"
+"Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1028,9 +1028,9 @@ msgid ""
 "When each key is encountered for the first time, it is not already in the "
 "mapping; so an entry is automatically created using the "
 ":attr:`~defaultdict.default_factory` function which returns an empty "
-":class:`list`.  The :meth:`!list.append` operation then attaches the value "
-"to the new list.  When keys are encountered again, the look-up proceeds "
-"normally (returning the list for that key) and the :meth:`!list.append` "
+":class:`list`.  The :meth:`list.append` operation then attaches the value to"
+" the new list.  When keys are encountered again, the look-up proceeds "
+"normally (returning the list for that key) and the :meth:`list.append` "
 "operation adds another value to the list. This technique is simpler and "
 "faster than an equivalent technique using :meth:`dict.setdefault`:"
 msgstr ""

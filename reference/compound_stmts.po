@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08 14:49-0300\n"
+"POT-Creation-Date: 2025-09-11 14:18+0000\n"
 "PO-Revision-Date: 2025-08-15 19:01+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -409,8 +409,8 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:387
 msgid ""
 "It is not possible to mix :keyword:`except` and :keyword:`!except*` in the "
-"same :keyword:`try`. :keyword:`break`, :keyword:`continue` and "
-":keyword:`return` cannot appear in an :keyword:`!except*` clause."
+"same :keyword:`try`. The :keyword:`break`, :keyword:`continue`, and "
+":keyword:`return` statements cannot appear in an :keyword:`!except*` clause."
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:402
@@ -1214,8 +1214,8 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:1017
 msgid ""
 "The length of the subject sequence is obtained via :func:`len` (i.e. via the"
-" :meth:`__len__` protocol).  This length may be cached by the interpreter in"
-" a similar manner as :ref:`value patterns <value-patterns>`."
+" :meth:`~object.__len__` protocol). This length may be cached by the "
+"interpreter in a similar manner as :ref:`value patterns <value-patterns>`."
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1023
@@ -1297,8 +1297,8 @@ msgstr ""
 msgid ""
 "Key-value pairs are matched using the two-argument form of the mapping "
 "subject's ``get()`` method.  Matched key-value pairs must already be present"
-" in the mapping, and not created on-the-fly via :meth:`__missing__` or "
-":meth:`~object.__getitem__`."
+" in the mapping, and not created on-the-fly via :meth:`~object.__missing__` "
+"or :meth:`~object.__getitem__`."
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1073

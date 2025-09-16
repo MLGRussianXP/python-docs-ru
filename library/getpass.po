@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08 14:49-0300\n"
-"PO-Revision-Date: 2025-08-15 19:00+0000\n"
+"POT-Creation-Date: 2025-09-09 14:15+0000\n"
+"PO-Revision-Date: 2025-09-16 00:01+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -75,20 +75,29 @@ msgid ""
 "you launched IDLE from rather than the idle window itself."
 msgstr ""
 
-#: ../../library/getpass.rst:42
+#: ../../library/getpass.rst:43
+msgid ""
+"On Unix systems, when *echo_char* is set, the terminal will be configured to"
+" operate in :manpage:`noncanonical mode "
+"<termios(3)#Canonical_and_noncanonical_mode>`. In particular, this means "
+"that line editing shortcuts such as :kbd:`Ctrl+U` will not work and may "
+"insert unexpected characters into the input."
+msgstr ""
+
+#: ../../library/getpass.rst:50
 msgid "Added the *echo_char* parameter for keyboard feedback."
 msgstr ""
 
-#: ../../library/getpass.rst:47
+#: ../../library/getpass.rst:55
 msgid ""
 "A :exc:`UserWarning` subclass issued when password input may be echoed."
 msgstr ""
 
-#: ../../library/getpass.rst:52
+#: ../../library/getpass.rst:60
 msgid "Return the \"login name\" of the user."
 msgstr ""
 
-#: ../../library/getpass.rst:54
+#: ../../library/getpass.rst:62
 msgid ""
 "This function checks the environment variables :envvar:`LOGNAME`, "
 ":envvar:`USER`, :envvar:`!LNAME` and :envvar:`USERNAME`, in order, and "
@@ -98,11 +107,11 @@ msgid ""
 " raised."
 msgstr ""
 
-#: ../../library/getpass.rst:61
+#: ../../library/getpass.rst:69
 msgid ""
 "In general, this function should be preferred over :func:`os.getlogin`."
 msgstr ""
 
-#: ../../library/getpass.rst:63
+#: ../../library/getpass.rst:71
 msgid "Previously, various exceptions beyond just :exc:`OSError` were raised."
 msgstr ""

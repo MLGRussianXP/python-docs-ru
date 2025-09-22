@@ -4,16 +4,19 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Gennady Kotov <gena.web@gmail.com>, 2025
+# decorator-factory, 2025
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2025
+# python-doc bot, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-13 17:35+0000\n"
+"POT-Creation-Date: 2025-09-22 03:26+0000\n"
 "PO-Revision-Date: 2025-07-18 19:18+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
+"Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

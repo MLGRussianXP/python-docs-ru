@@ -4,6 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Илья Панфилов, 2025
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy

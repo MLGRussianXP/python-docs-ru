@@ -5,6 +5,7 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Илья Панфилов, 2025
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy

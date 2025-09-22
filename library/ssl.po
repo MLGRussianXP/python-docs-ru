@@ -4,9 +4,6 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
-# Roustam Khamidoulline, 2025
-# Илья Панфилов, 2025
 # python-doc bot, 2025
 # 
 #, fuzzy
@@ -14,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-22 03:26+0000\n"
-"PO-Revision-Date: 2025-07-18 19:17+0000\n"
+"POT-Creation-Date: 2025-01-03 16:35+0000\n"
+"PO-Revision-Date: 2025-09-22 11:26+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -1593,24 +1590,14 @@ msgid "*SSLv2*"
 msgstr ""
 
 #: ../../library/ssl.rst:1444 ../../library/ssl.rst:1445
-#: ../../library/ssl.rst:1446 ../../library/ssl.rst:1446
-#: ../../library/ssl.rst:1446 ../../library/ssl.rst:1446
-#: ../../library/ssl.rst:1447 ../../library/ssl.rst:1447
-#: ../../library/ssl.rst:1448 ../../library/ssl.rst:1448
-#: ../../library/ssl.rst:1449 ../../library/ssl.rst:1449
+#: ../../library/ssl.rst:1446 ../../library/ssl.rst:1447
+#: ../../library/ssl.rst:1448 ../../library/ssl.rst:1449
 msgid "yes"
 msgstr ""
 
-#: ../../library/ssl.rst:1444 ../../library/ssl.rst:1444
-#: ../../library/ssl.rst:1444 ../../library/ssl.rst:1444
-#: ../../library/ssl.rst:1445 ../../library/ssl.rst:1445
-#: ../../library/ssl.rst:1445 ../../library/ssl.rst:1445
-#: ../../library/ssl.rst:1447 ../../library/ssl.rst:1447
-#: ../../library/ssl.rst:1447 ../../library/ssl.rst:1447
-#: ../../library/ssl.rst:1448 ../../library/ssl.rst:1448
-#: ../../library/ssl.rst:1448 ../../library/ssl.rst:1448
-#: ../../library/ssl.rst:1449 ../../library/ssl.rst:1449
-#: ../../library/ssl.rst:1449 ../../library/ssl.rst:1449
+#: ../../library/ssl.rst:1444 ../../library/ssl.rst:1445
+#: ../../library/ssl.rst:1447 ../../library/ssl.rst:1448
+#: ../../library/ssl.rst:1449
 msgid "no"
 msgstr ""
 

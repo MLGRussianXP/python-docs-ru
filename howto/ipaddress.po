@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-03 16:35+0000\n"
+"POT-Creation-Date: 2025-09-22 21:56+0000\n"
 "PO-Revision-Date: 2025-09-22 17:54+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "An introduction to the ipaddress module"
 msgstr ""
 
-#: ../../howto/ipaddress.rst:0
+#: ../../howto/ipaddress.rst:0 ../../howto/ipaddress.rst:0
 msgid "author"
 msgstr ""
 

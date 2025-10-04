@@ -343,7 +343,7 @@ msgstr ""
 
 #: ../../library/enum.rst:0
 msgid "cls"
-msgstr ""
+msgstr "cls"
 
 #: ../../library/enum.rst:188 ../../library/enum.rst:194
 msgid "The enum class being called."
@@ -351,7 +351,7 @@ msgstr ""
 
 #: ../../library/enum.rst:0
 msgid "value"
-msgstr ""
+msgstr "значение"
 
 #: ../../library/enum.rst:189
 msgid "The value to lookup."
@@ -369,7 +369,7 @@ msgstr ""
 
 #: ../../library/enum.rst:0
 msgid "names"
-msgstr ""
+msgstr "имена"
 
 #: ../../library/enum.rst:196
 msgid "The names/values of the members for the new Enum."
@@ -377,7 +377,7 @@ msgstr ""
 
 #: ../../library/enum.rst:0
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../library/enum.rst:197
 msgid "The name of the module the new Enum is created in."
@@ -385,7 +385,7 @@ msgstr ""
 
 #: ../../library/enum.rst:0
 msgid "qualname"
-msgstr ""
+msgstr "qualname"
 
 #: ../../library/enum.rst:198
 msgid "The actual location in the module where this Enum can be found."
@@ -393,7 +393,7 @@ msgstr ""
 
 #: ../../library/enum.rst:0
 msgid "type"
-msgstr ""
+msgstr "тип"
 
 #: ../../library/enum.rst:199
 msgid "A mix-in type for the new Enum."
@@ -401,7 +401,7 @@ msgstr ""
 
 #: ../../library/enum.rst:0
 msgid "start"
-msgstr ""
+msgstr "начало"
 
 #: ../../library/enum.rst:200
 msgid "The first integer value for the Enum (used by :class:`auto`)."
@@ -409,7 +409,7 @@ msgstr ""
 
 #: ../../library/enum.rst:0
 msgid "boundary"
-msgstr ""
+msgstr "граница"
 
 #: ../../library/enum.rst:201
 msgid ""
@@ -592,7 +592,7 @@ msgstr ""
 
 #: ../../library/enum.rst:0
 msgid "name"
-msgstr ""
+msgstr "имя"
 
 #: ../../library/enum.rst:337
 msgid "The name of the member being defined (e.g. 'RED')."
@@ -604,7 +604,7 @@ msgstr ""
 
 #: ../../library/enum.rst:0
 msgid "count"
-msgstr ""
+msgstr "count"
 
 #: ../../library/enum.rst:339
 msgid "The number of members currently defined, not including this one."
@@ -612,7 +612,7 @@ msgstr ""
 
 #: ../../library/enum.rst:0
 msgid "last_values"
-msgstr ""
+msgstr "last_values"
 
 #: ../../library/enum.rst:340
 msgid "A list of the previous values."

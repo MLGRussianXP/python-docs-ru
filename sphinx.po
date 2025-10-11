@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-09 15:03+0000\n"
+"POT-Creation-Date: 2025-10-11 14:58+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -144,30 +144,11 @@ msgid ""
 "for file sizes."
 msgstr ""
 
-#: ../../tools/templates/download.html:81
-msgid "Unpacking"
-msgstr ""
-
-#: ../../tools/templates/download.html:83
-msgid ""
-"Unix users should download the .tar.bz2 archives; these are bzipped tar\n"
-"archives and can be handled in the usual way using tar and the bzip2\n"
-"program. The <a href=\"https://infozip.sourceforge.net\">Info-ZIP</a> unzip program can be\n"
-"used to handle the ZIP archives if desired. The .tar.bz2 archives provide the\n"
-"best compression and fastest download times."
-msgstr ""
-
-#: ../../tools/templates/download.html:89
-msgid ""
-"Windows users can use the ZIP archives since those are customary on that\n"
-"platform. These are created on Unix using the Info-ZIP zip program."
-msgstr ""
-
-#: ../../tools/templates/download.html:92
+#: ../../tools/templates/download.html:82
 msgid "Problems"
 msgstr ""
 
-#: ../../tools/templates/download.html:94
+#: ../../tools/templates/download.html:84
 msgid ""
 "<a href=\"%(bugs)s\">Open an issue</a>\n"
 "if you have comments or suggestions for the Python documentation."

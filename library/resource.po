@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-09 15:03+0000\n"
+"POT-Creation-Date: 2025-10-21 15:05+0000\n"
 "PO-Revision-Date: 2025-09-15 01:04+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -184,9 +184,10 @@ msgstr ""
 #: ../../library/resource.rst:129
 msgid ""
 "The maximum amount of processor time (in seconds) that a process can use. If"
-" this limit is exceeded, a :const:`SIGXCPU` signal is sent to the process. "
-"(See the :mod:`signal` module documentation for information about how to "
-"catch this signal and do something useful, e.g. flush open files to disk.)"
+" this limit is exceeded, a :const:`~signal.SIGXCPU` signal is sent to the "
+"process. (See the :mod:`signal` module documentation for information about "
+"how to catch this signal and do something useful, e.g. flush open files to "
+"disk.)"
 msgstr ""
 
 #: ../../library/resource.rst:137
@@ -335,7 +336,7 @@ msgstr ""
 
 #: ../../library/resource.rst:313
 msgid ""
-"The fields :attr:`ru_utime` and :attr:`ru_stime` of the return value are "
+"The fields :attr:`!ru_utime` and :attr:`!ru_stime` of the return value are "
 "floating-point values representing the amount of time spent executing in "
 "user mode and the amount of time spent executing in system mode, "
 "respectively. The remaining values are integers. Consult the "
@@ -360,7 +361,7 @@ msgid "``0``"
 msgstr ""
 
 #: ../../library/resource.rst:322
-msgid ":attr:`ru_utime`"
+msgid ":attr:`!ru_utime`"
 msgstr ""
 
 #: ../../library/resource.rst:322
@@ -372,7 +373,7 @@ msgid "``1``"
 msgstr ""
 
 #: ../../library/resource.rst:324
-msgid ":attr:`ru_stime`"
+msgid ":attr:`!ru_stime`"
 msgstr ""
 
 #: ../../library/resource.rst:324
@@ -384,7 +385,7 @@ msgid "``2``"
 msgstr ""
 
 #: ../../library/resource.rst:326
-msgid ":attr:`ru_maxrss`"
+msgid ":attr:`!ru_maxrss`"
 msgstr ""
 
 #: ../../library/resource.rst:326
@@ -396,7 +397,7 @@ msgid "``3``"
 msgstr ""
 
 #: ../../library/resource.rst:328
-msgid ":attr:`ru_ixrss`"
+msgid ":attr:`!ru_ixrss`"
 msgstr ""
 
 #: ../../library/resource.rst:328
@@ -408,7 +409,7 @@ msgid "``4``"
 msgstr ""
 
 #: ../../library/resource.rst:330
-msgid ":attr:`ru_idrss`"
+msgid ":attr:`!ru_idrss`"
 msgstr ""
 
 #: ../../library/resource.rst:330
@@ -420,7 +421,7 @@ msgid "``5``"
 msgstr ""
 
 #: ../../library/resource.rst:332
-msgid ":attr:`ru_isrss`"
+msgid ":attr:`!ru_isrss`"
 msgstr ""
 
 #: ../../library/resource.rst:332
@@ -432,7 +433,7 @@ msgid "``6``"
 msgstr ""
 
 #: ../../library/resource.rst:334
-msgid ":attr:`ru_minflt`"
+msgid ":attr:`!ru_minflt`"
 msgstr ""
 
 #: ../../library/resource.rst:334
@@ -444,7 +445,7 @@ msgid "``7``"
 msgstr ""
 
 #: ../../library/resource.rst:336
-msgid ":attr:`ru_majflt`"
+msgid ":attr:`!ru_majflt`"
 msgstr ""
 
 #: ../../library/resource.rst:336
@@ -456,7 +457,7 @@ msgid "``8``"
 msgstr ""
 
 #: ../../library/resource.rst:338
-msgid ":attr:`ru_nswap`"
+msgid ":attr:`!ru_nswap`"
 msgstr ""
 
 #: ../../library/resource.rst:338
@@ -468,7 +469,7 @@ msgid "``9``"
 msgstr ""
 
 #: ../../library/resource.rst:340
-msgid ":attr:`ru_inblock`"
+msgid ":attr:`!ru_inblock`"
 msgstr ""
 
 #: ../../library/resource.rst:340
@@ -480,7 +481,7 @@ msgid "``10``"
 msgstr ""
 
 #: ../../library/resource.rst:342
-msgid ":attr:`ru_oublock`"
+msgid ":attr:`!ru_oublock`"
 msgstr ""
 
 #: ../../library/resource.rst:342
@@ -492,7 +493,7 @@ msgid "``11``"
 msgstr ""
 
 #: ../../library/resource.rst:344
-msgid ":attr:`ru_msgsnd`"
+msgid ":attr:`!ru_msgsnd`"
 msgstr ""
 
 #: ../../library/resource.rst:344
@@ -504,7 +505,7 @@ msgid "``12``"
 msgstr ""
 
 #: ../../library/resource.rst:346
-msgid ":attr:`ru_msgrcv`"
+msgid ":attr:`!ru_msgrcv`"
 msgstr ""
 
 #: ../../library/resource.rst:346
@@ -516,7 +517,7 @@ msgid "``13``"
 msgstr ""
 
 #: ../../library/resource.rst:348
-msgid ":attr:`ru_nsignals`"
+msgid ":attr:`!ru_nsignals`"
 msgstr ""
 
 #: ../../library/resource.rst:348
@@ -528,7 +529,7 @@ msgid "``14``"
 msgstr ""
 
 #: ../../library/resource.rst:350
-msgid ":attr:`ru_nvcsw`"
+msgid ":attr:`!ru_nvcsw`"
 msgstr ""
 
 #: ../../library/resource.rst:350
@@ -540,7 +541,7 @@ msgid "``15``"
 msgstr ""
 
 #: ../../library/resource.rst:352
-msgid ":attr:`ru_nivcsw`"
+msgid ":attr:`!ru_nivcsw`"
 msgstr ""
 
 #: ../../library/resource.rst:352

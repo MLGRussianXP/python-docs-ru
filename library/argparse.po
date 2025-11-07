@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-19 15:02+0000\n"
+"POT-Creation-Date: 2025-11-07 15:30+0000\n"
 "PO-Revision-Date: 2025-09-15 01:03+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -2713,10 +2713,13 @@ msgstr ""
 
 #: ../../library/argparse.rst:1968
 msgid ""
-"Note that parser-level defaults always override argument-level defaults::"
+"Note that defaults can be set at both the parser level using "
+":meth:`set_defaults` and at the argument level using :meth:`add_argument`. "
+"If both are called for the same argument, the last default set for an "
+"argument is used::"
 msgstr ""
 
-#: ../../library/argparse.rst:1970
+#: ../../library/argparse.rst:1972
 msgid ""
 ">>> parser = argparse.ArgumentParser()\n"
 ">>> parser.add_argument('--foo', default='bar')\n"
@@ -2725,21 +2728,21 @@ msgid ""
 "Namespace(foo='spam')"
 msgstr ""
 
-#: ../../library/argparse.rst:1976
+#: ../../library/argparse.rst:1978
 msgid ""
 "Parser-level defaults can be particularly useful when working with multiple "
 "parsers.  See the :meth:`~ArgumentParser.add_subparsers` method for an "
 "example of this type."
 msgstr ""
 
-#: ../../library/argparse.rst:1982
+#: ../../library/argparse.rst:1984
 msgid ""
 "Get the default value for a namespace attribute, as set by either "
 ":meth:`~ArgumentParser.add_argument` or by "
 ":meth:`~ArgumentParser.set_defaults`::"
 msgstr ""
 
-#: ../../library/argparse.rst:1986
+#: ../../library/argparse.rst:1988
 msgid ""
 ">>> parser = argparse.ArgumentParser()\n"
 ">>> parser.add_argument('--foo', default='badger')\n"
@@ -2747,54 +2750,54 @@ msgid ""
 "'badger'"
 msgstr ""
 
-#: ../../library/argparse.rst:1993
+#: ../../library/argparse.rst:1995
 msgid "Printing help"
 msgstr ""
 
-#: ../../library/argparse.rst:1995
+#: ../../library/argparse.rst:1997
 msgid ""
 "In most typical applications, :meth:`~ArgumentParser.parse_args` will take "
 "care of formatting and printing any usage or error messages.  However, "
 "several formatting methods are available:"
 msgstr ""
 
-#: ../../library/argparse.rst:2001
+#: ../../library/argparse.rst:2003
 msgid ""
 "Print a brief description of how the :class:`ArgumentParser` should be "
 "invoked on the command line.  If *file* is ``None``, :data:`sys.stdout` is "
 "assumed."
 msgstr ""
 
-#: ../../library/argparse.rst:2007
+#: ../../library/argparse.rst:2009
 msgid ""
 "Print a help message, including the program usage and information about the "
 "arguments registered with the :class:`ArgumentParser`.  If *file* is "
 "``None``, :data:`sys.stdout` is assumed."
 msgstr ""
 
-#: ../../library/argparse.rst:2011
+#: ../../library/argparse.rst:2013
 msgid ""
 "There are also variants of these methods that simply return a string instead"
 " of printing it:"
 msgstr ""
 
-#: ../../library/argparse.rst:2016
+#: ../../library/argparse.rst:2018
 msgid ""
 "Return a string containing a brief description of how the "
 ":class:`ArgumentParser` should be invoked on the command line."
 msgstr ""
 
-#: ../../library/argparse.rst:2021
+#: ../../library/argparse.rst:2023
 msgid ""
 "Return a string containing a help message, including the program usage and "
 "information about the arguments registered with the :class:`ArgumentParser`."
 msgstr ""
 
-#: ../../library/argparse.rst:2026
+#: ../../library/argparse.rst:2028
 msgid "Partial parsing"
 msgstr ""
 
-#: ../../library/argparse.rst:2030
+#: ../../library/argparse.rst:2032
 msgid ""
 "Sometimes a script only needs to handle a specific set of command-line "
 "arguments, leaving any unrecognized arguments for another script or program."
@@ -2802,7 +2805,7 @@ msgid ""
 "useful."
 msgstr ""
 
-#: ../../library/argparse.rst:2035
+#: ../../library/argparse.rst:2037
 msgid ""
 "This method works similarly to :meth:`~ArgumentParser.parse_args`, but it "
 "does not raise an error for extra, unrecognized arguments. Instead, it "
@@ -2810,7 +2813,7 @@ msgid ""
 "populated namespace and the list of any unrecognized arguments."
 msgstr ""
 
-#: ../../library/argparse.rst:2042
+#: ../../library/argparse.rst:2044
 msgid ""
 ">>> parser = argparse.ArgumentParser()\n"
 ">>> parser.add_argument('--foo', action='store_true')\n"
@@ -2819,7 +2822,7 @@ msgid ""
 "(Namespace(bar='BAR', foo=True), ['--badger', 'spam'])"
 msgstr ""
 
-#: ../../library/argparse.rst:2049
+#: ../../library/argparse.rst:2051
 msgid ""
 ":ref:`Prefix matching <prefix-matching>` rules apply to "
 ":meth:`~ArgumentParser.parse_known_args`. The parser may consume an option "
@@ -2827,11 +2830,11 @@ msgid ""
 "it in the remaining arguments list."
 msgstr ""
 
-#: ../../library/argparse.rst:2056
+#: ../../library/argparse.rst:2058
 msgid "Customizing file parsing"
 msgstr ""
 
-#: ../../library/argparse.rst:2060
+#: ../../library/argparse.rst:2062
 msgid ""
 "Arguments that are read from a file (see the *fromfile_prefix_chars* keyword"
 " argument to the :class:`ArgumentParser` constructor) are read one argument "
@@ -2839,38 +2842,38 @@ msgid ""
 "reading."
 msgstr ""
 
-#: ../../library/argparse.rst:2065
+#: ../../library/argparse.rst:2067
 msgid ""
 "This method takes a single argument *arg_line* which is a string read from "
 "the argument file.  It returns a list of arguments parsed from this string. "
 "The method is called once per line read from the argument file, in order."
 msgstr ""
 
-#: ../../library/argparse.rst:2069
+#: ../../library/argparse.rst:2071
 msgid ""
 "A useful override of this method is one that treats each space-separated "
 "word as an argument.  The following example demonstrates how to do this::"
 msgstr ""
 
-#: ../../library/argparse.rst:2072
+#: ../../library/argparse.rst:2074
 msgid ""
 "class MyArgumentParser(argparse.ArgumentParser):\n"
 "    def convert_arg_line_to_args(self, arg_line):\n"
 "        return arg_line.split()"
 msgstr ""
 
-#: ../../library/argparse.rst:2078
+#: ../../library/argparse.rst:2080
 msgid "Exiting methods"
 msgstr ""
 
-#: ../../library/argparse.rst:2082
+#: ../../library/argparse.rst:2084
 msgid ""
 "This method terminates the program, exiting with the specified *status* and,"
 " if given, it prints a *message* to :data:`sys.stderr` before that. The user"
 " can override this method to handle these steps differently::"
 msgstr ""
 
-#: ../../library/argparse.rst:2086
+#: ../../library/argparse.rst:2088
 msgid ""
 "class ErrorCatchingArgumentParser(argparse.ArgumentParser):\n"
 "    def exit(self, status=0, message=None):\n"
@@ -2879,17 +2882,17 @@ msgid ""
 "        exit(status)"
 msgstr ""
 
-#: ../../library/argparse.rst:2094
+#: ../../library/argparse.rst:2096
 msgid ""
 "This method prints a usage message, including the *message*, to "
 ":data:`sys.stderr` and terminates the program with a status code of 2."
 msgstr ""
 
-#: ../../library/argparse.rst:2099
+#: ../../library/argparse.rst:2101
 msgid "Intermixed parsing"
 msgstr ""
 
-#: ../../library/argparse.rst:2104
+#: ../../library/argparse.rst:2106
 msgid ""
 "A number of Unix commands allow the user to intermix optional arguments with"
 " positional arguments.  The :meth:`~ArgumentParser.parse_intermixed_args` "
@@ -2897,7 +2900,7 @@ msgid ""
 " parsing style."
 msgstr ""
 
-#: ../../library/argparse.rst:2109
+#: ../../library/argparse.rst:2111
 msgid ""
 "These parsers do not support all the :mod:`!argparse` features, and will "
 "raise exceptions if unsupported features are used.  In particular, "
@@ -2905,7 +2908,7 @@ msgid ""
 "positionals are not supported."
 msgstr ""
 
-#: ../../library/argparse.rst:2114
+#: ../../library/argparse.rst:2116
 msgid ""
 "The following example shows the difference between "
 ":meth:`~ArgumentParser.parse_known_args` and "
@@ -2914,7 +2917,7 @@ msgid ""
 "into ``rest``.  ::"
 msgstr ""
 
-#: ../../library/argparse.rst:2120
+#: ../../library/argparse.rst:2122
 msgid ""
 ">>> parser = argparse.ArgumentParser()\n"
 ">>> parser.add_argument('--foo')\n"
@@ -2926,7 +2929,7 @@ msgid ""
 "Namespace(cmd='doit', foo='bar', rest=[1, 2, 3])"
 msgstr ""
 
-#: ../../library/argparse.rst:2129
+#: ../../library/argparse.rst:2131
 msgid ""
 ":meth:`~ArgumentParser.parse_known_intermixed_args` returns a two item tuple"
 " containing the populated namespace and the list of remaining argument "
@@ -2934,11 +2937,11 @@ msgid ""
 "there are any remaining unparsed argument strings."
 msgstr ""
 
-#: ../../library/argparse.rst:2138
+#: ../../library/argparse.rst:2140
 msgid "Registering custom types or actions"
 msgstr ""
 
-#: ../../library/argparse.rst:2142
+#: ../../library/argparse.rst:2144
 msgid ""
 "Sometimes it's desirable to use a custom string in error messages to provide"
 " more user-friendly output. In these cases, :meth:`!register` can be used to"
@@ -2946,7 +2949,7 @@ msgid ""
 "the type by their registered name instead of their callable name."
 msgstr ""
 
-#: ../../library/argparse.rst:2147
+#: ../../library/argparse.rst:2149
 msgid ""
 "The :meth:`!register` method accepts three arguments - a *registry_name*, "
 "specifying the internal registry where the object will be stored (e.g., "
@@ -2954,12 +2957,12 @@ msgid ""
 " be registered, and object, the callable to be registered."
 msgstr ""
 
-#: ../../library/argparse.rst:2152
+#: ../../library/argparse.rst:2154
 msgid ""
 "The following example shows how to register a custom type with a parser::"
 msgstr ""
 
-#: ../../library/argparse.rst:2154
+#: ../../library/argparse.rst:2156
 msgid ""
 ">>> import argparse\n"
 ">>> parser = argparse.ArgumentParser()\n"
@@ -2973,26 +2976,26 @@ msgid ""
 "PROG: error: argument --foo: invalid 'hexadecimal integer' value: '1.2'"
 msgstr ""
 
-#: ../../library/argparse.rst:2166
+#: ../../library/argparse.rst:2168
 msgid "Exceptions"
 msgstr ""
 
-#: ../../library/argparse.rst:2170
+#: ../../library/argparse.rst:2172
 msgid "An error from creating or using an argument (optional or positional)."
 msgstr ""
 
-#: ../../library/argparse.rst:2172
+#: ../../library/argparse.rst:2174
 msgid ""
 "The string value of this exception is the message, augmented with "
 "information about the argument that caused it."
 msgstr ""
 
-#: ../../library/argparse.rst:2177
+#: ../../library/argparse.rst:2179
 msgid ""
 "Raised when something goes wrong converting a command line string to a type."
 msgstr ""
 
-#: ../../library/argparse.rst:2181
+#: ../../library/argparse.rst:2183
 msgid "Guides and Tutorials"
 msgstr ""
 

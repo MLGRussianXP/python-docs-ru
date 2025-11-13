@@ -520,6 +520,12 @@ msgid ""
 " If the condition is ever true, a ``break`` will happen. If the condition is"
 " never true, the ``else`` clause outside the loop will execute."
 msgstr ""
+"Один из способов понять ветвь else в цикле — представить её в паре с "
+"инструкцией ``if`` внутри цикла. По мере выполнения цикла будет выполняться "
+"последовательность действий типа if/if/if/else. ``if`` находится внутри "
+"цикла и встречается несколько раз. Если условие когда-либо будет истинным, "
+"произойдет прерывание цикла с помощью ``break``. Если условие никогда не "
+"будет истинным, то будет выполнена ветвь ``else`` вне цикла."
 
 #: ../../tutorial/controlflow.rst:248
 msgid ""
@@ -530,16 +536,25 @@ msgid ""
 "occurs. For more on the ``try`` statement and exceptions, see :ref:`tut-"
 "handling`."
 msgstr ""
+"При использовании с циклом ветвь ``else`` имеет больше общего с ветвью "
+"``else`` инструкции :keyword:`try`, чем с инструкцией ``if``. Ветвь ``else``"
+" инструкции ``try`` выполняется, когда не возникло исключение, а ветвь "
+"``else`` цикла выполняется, когда не произошло ``break``. Дополнительную "
+"информацию об инструкции ``try`` и исключениях см. в разделе :ref:`tut-"
+"handling`."
 
 #: ../../tutorial/controlflow.rst:258
 msgid ":keyword:`!pass` Statements"
-msgstr ""
+msgstr "Инструкция :keyword:`!pass`"
 
 #: ../../tutorial/controlflow.rst:260
 msgid ""
 "The :keyword:`pass` statement does nothing. It can be used when a statement "
 "is required syntactically but the program requires no action. For example::"
 msgstr ""
+"Инструкция :keyword:`pass` ничего не делает. Её можно использовть, когда "
+"инструкция требуется в соответствии с синтаксисом, но программа при этом не "
+"должна ничего делать. Например::"
 
 #: ../../tutorial/controlflow.rst:263
 msgid ""
@@ -547,10 +562,14 @@ msgid ""
 "...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n"
 "..."
 msgstr ""
+">>> while True:\n"
+"...     pass  #  Ожидание прерывания с клавиатуры (Ctrl+C)\n"
+"..."
 
 #: ../../tutorial/controlflow.rst:267
 msgid "This is commonly used for creating minimal classes::"
 msgstr ""
+"Обычно :keyword:`pass` используется при создании минимальных классов::"
 
 #: ../../tutorial/controlflow.rst:269
 msgid ""
@@ -558,6 +577,9 @@ msgid ""
 "...     pass\n"
 "..."
 msgstr ""
+">>> class MyEmptyClass:\n"
+"...     pass\n"
+"..."
 
 #: ../../tutorial/controlflow.rst:273
 msgid ""
@@ -566,6 +588,10 @@ msgid ""
 "to keep thinking at a more abstract level.  The :keyword:`!pass` is silently"
 " ignored::"
 msgstr ""
+"Другое применение инструкции :keyword:`pass` — заглушка для тела функции или"
+" ветки условной инструкции, когда вы работаете над новым кодом. Это "
+"позволяет думаю о коде на более высоком, абстрактном уровне. Инструкция "
+":keyword:`!pass` просто игнорируется::"
 
 #: ../../tutorial/controlflow.rst:277
 msgid ""
@@ -573,6 +599,9 @@ msgid ""
 "...     pass   # Remember to implement this!\n"
 "..."
 msgstr ""
+">>> def initlog(*args):\n"
+"...     pass   # Не забыть реализовать это!\n"
+"..."
 
 #: ../../tutorial/controlflow.rst:281
 msgid ""
@@ -582,6 +611,11 @@ msgid ""
 "but :code:`...` is used conventionally as a placeholder body as well. See "
 ":ref:`bltin-ellipsis-object`."
 msgstr ""
+"В таких случаях многие используют литерал многоточия :code:`...` вместо "
+":code:`pass`. Это использование не имеет особого значения для Python, и не "
+"является частью определения языка (здесь можно использовать любое "
+"константное выражение), но :code:`...` принято использовать как заглушку "
+"вместо реального блока кода. См. :ref:`bltin-ellipsis-object`."
 
 #: ../../tutorial/controlflow.rst:291
 msgid ":keyword:`!match` Statements"

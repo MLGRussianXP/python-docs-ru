@@ -1267,13 +1267,15 @@ msgstr ""
 
 #: ../../tutorial/controlflow.rst:579
 msgid "More on Defining Functions"
-msgstr ""
+msgstr "Подробнее об определении функций"
 
 #: ../../tutorial/controlflow.rst:581
 msgid ""
 "It is also possible to define functions with a variable number of arguments."
 " There are three forms, which can be combined."
 msgstr ""
+"Также возможно определять функции с переменным количеством аргументов. Есть "
+"три формы, которые можно комбинировать."
 
 #: ../../tutorial/controlflow.rst:588
 msgid "Default Argument Values"

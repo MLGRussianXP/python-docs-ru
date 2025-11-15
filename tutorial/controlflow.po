@@ -893,6 +893,10 @@ msgid ""
 "guard is false, ``match`` goes on to try the next case block.  Note that "
 "value capture happens before the guard is evaluated::"
 msgstr ""
+"Мы можем добавить в шаблон выражение if, известное как «охранное условие». "
+"Если это условие ложно, ``match`` переходит к следующему блоку case. "
+"Обратите внимание, что захват значения происходит до  проверки охранного "
+"условия::"
 
 #: ../../tutorial/controlflow.rst:411
 msgid ""
@@ -902,10 +906,15 @@ msgid ""
 "    case Point(x, y):\n"
 "        print(f\"Not on the diagonal\")"
 msgstr ""
+"match point:\n"
+"    case Point(x, y) if x == y:\n"
+"        print(f\"Точка на диагонали: Y = X = {x}\")\n"
+"    case Point(x, y):\n"
+"        print(f\"Не на диагонали\")"
 
 #: ../../tutorial/controlflow.rst:417
 msgid "Several other key features of this statement:"
-msgstr ""
+msgstr "Несколько других ключевых особенностей этой инструкции:"
 
 #: ../../tutorial/controlflow.rst:419
 msgid ""
@@ -913,6 +922,9 @@ msgid ""
 "meaning and actually match arbitrary sequences.  An important exception is "
 "that they don't match iterators or strings."
 msgstr ""
+"Как и при распаковке, шаблоны кортежей и списков имеют одинаковую семантику "
+"и сопоставляются с любыми последовательностями. Однако строки и итераторы "
+"под такие шаблоны не подходят."
 
 #: ../../tutorial/controlflow.rst:423
 msgid ""

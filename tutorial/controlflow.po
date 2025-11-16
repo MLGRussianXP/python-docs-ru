@@ -2391,10 +2391,14 @@ msgid ""
 " Python developer should read it at some point; here are the most important "
 "points extracted for you:"
 msgstr ""
+"Для Python :pep:`8` стал руководством по стилю, которого придерживается "
+"большинство проектов; он способствует очень читабельному и приятному для "
+"глаз стилю кодирования. Каждый разработчик Python должен когда-нибудь "
+"прочитать его. Ниже приведены самые важные моменты:"
 
 #: ../../tutorial/controlflow.rst:1122
 msgid "Use 4-space indentation, and no tabs."
-msgstr ""
+msgstr "Используйте отступы в 4 пробела и не используйте табуляцию."
 
 #: ../../tutorial/controlflow.rst:1124
 msgid ""
@@ -2402,36 +2406,45 @@ msgid ""
 "nesting depth) and large indentation (easier to read).  Tabs introduce "
 "confusion, and are best left out."
 msgstr ""
+"4 пробела — хороший компромисс между небольшим отступом (позволяет увеличить"
+" глубину вложенности) и большим отступом (облегчает чтение). Табуляция "
+"вносит путаницу, поэтому её лучше не использовать."
 
 #: ../../tutorial/controlflow.rst:1128
 msgid "Wrap lines so that they don't exceed 79 characters."
-msgstr ""
+msgstr "Переносите строки так, чтобы они не превышали 79 символов."
 
 #: ../../tutorial/controlflow.rst:1130
 msgid ""
 "This helps users with small displays and makes it possible to have several "
 "code files side-by-side on larger displays."
 msgstr ""
+"Это помогает пользователям с небольшими дисплеями и позволяет размещать "
+"несколько файлов кода рядом на больших дисплеях."
 
 #: ../../tutorial/controlflow.rst:1133
 msgid ""
 "Use blank lines to separate functions and classes, and larger blocks of code"
 " inside functions."
 msgstr ""
+"Используйте пустые строки для разделения функций и классов, а также более "
+"крупных блоков кода внутри функций."
 
 #: ../../tutorial/controlflow.rst:1136
 msgid "When possible, put comments on a line of their own."
-msgstr ""
+msgstr "По возможности пишите комментарии в отдельных строках."
 
 #: ../../tutorial/controlflow.rst:1138
 msgid "Use docstrings."
-msgstr ""
+msgstr "Используйте строки документации."
 
 #: ../../tutorial/controlflow.rst:1140
 msgid ""
 "Use spaces around operators and after commas, but not directly inside "
 "bracketing constructs: ``a = f(1, 2) + g(3, 4)``."
 msgstr ""
+"Используйте пробелы вокруг операторов и после запятых, но не отделяйте ими "
+"непосредственно скобки: ``a = f(1, 2) + g(3, 4)``."
 
 #: ../../tutorial/controlflow.rst:1143
 msgid ""
@@ -2440,6 +2453,11 @@ msgid ""
 "functions and methods.  Always use ``self`` as the name for the first method"
 " argument (see :ref:`tut-firstclasses` for more on classes and methods)."
 msgstr ""
+"Называйте свои классы и функции единообразно; соглашение заключается в "
+"использовании ``UpperCamelCase`` для классов и "
+"``lowercase_with_underscores`` — для функций и методов. Всегда используйте "
+"``self`` в качестве имени первого аргумента метода (подробнее о классах и "
+"методах см. :ref:`tut-firstclasses`)."
 
 #: ../../tutorial/controlflow.rst:1148
 msgid ""
@@ -2447,6 +2465,9 @@ msgid ""
 "environments.  Python's default, UTF-8, or even plain ASCII work best in any"
 " case."
 msgstr ""
+"Не используйте нестандартные кодировки, если ваш код предназначен для "
+"использования в международной среде. Значения по умолчанию для Python — "
+"UTF-8 или даже обычный ASCII — подходят лучше всего."
 
 #: ../../tutorial/controlflow.rst:1152
 msgid ""
@@ -2454,6 +2475,9 @@ msgid ""
 " slightest chance people speaking a different language will read or maintain"
 " the code."
 msgstr ""
+"Аналогично, не используйте в идентификаторах символы, отличные от ASCII, "
+"если есть лишь малейшая вероятность того, что люди, говорящие на другом "
+"языке, будут читать или поддерживать код."
 
 #: ../../tutorial/controlflow.rst:1158
 msgid "Footnotes"
@@ -2465,6 +2489,9 @@ msgid ""
 " a mutable object is passed, the caller will see any changes the callee "
 "makes to it (items inserted into a list)."
 msgstr ""
+"Точнее было бы назвать это *передачей по ссылке на объект*, поскольку если "
+"передаётся изменяемый объект, вызывающая сторона увидит все изменения, "
+"которые делает функция (например, вставку элементов в список)."
 
 #: ../../tutorial/controlflow.rst:48
 msgid "statement"

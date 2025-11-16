@@ -1585,10 +1585,18 @@ msgid ""
 "    for kw in keywords:\n"
 "        print(kw, \":\", keywords[kw])"
 msgstr ""
+"def cheeseshop(kind, *arguments, **keywords):\n"
+"    print(\"-- У вас есть\", kind, \"?\")\n"
+"    print(\"-- Извините, у нас закончился весь\", kind)\n"
+"    for arg in arguments:\n"
+"        print(arg)\n"
+"    print(\"-\" * 40)\n"
+"    for kw in keywords:\n"
+"        print(kw, \":\", keywords[kw])"
 
 #: ../../tutorial/controlflow.rst:725
 msgid "It could be called like this::"
-msgstr ""
+msgstr "Это можно было бы вызвать так::"
 
 #: ../../tutorial/controlflow.rst:727
 msgid ""
@@ -1598,10 +1606,15 @@ msgid ""
 "           client=\"John Cleese\",\n"
 "           sketch=\"Cheese Shop Sketch\")"
 msgstr ""
+"cheeseshop(\"Лимбургер\", \"Он очень жидкий, сэр.\",\n"
+"           \"Он действительно ОЧЕНЬ, ОЧЕНЬ жидкий, сэр.\",\n"
+"           shopkeeper=\"Майкл Пэйлин\",\n"
+"           client=\"Джон Клиз\",\n"
+"           sketch=\"Скетч «Сырная лавка»\")"
 
 #: ../../tutorial/controlflow.rst:733
 msgid "and of course it would print:"
-msgstr ""
+msgstr "и, конечно же, он напечатает:"
 
 #: ../../tutorial/controlflow.rst:735
 msgid ""
@@ -1614,16 +1627,27 @@ msgid ""
 "client : John Cleese\n"
 "sketch : Cheese Shop Sketch"
 msgstr ""
+"-- У вас есть Лимбургер ?\n"
+"-- Извините, у нас закончился весь Лимбургер\n"
+"Он очень жидкий, сэр.\n"
+"Он действительно ОЧЕНЬ, ОЧЕНЬ жидкий, сэр.\n"
+"----------------------------------------\n"
+"shopkeeper : Майкл Пэйлин\n"
+"client : Джон Клиз\n"
+"sketch : Скетч «Сырная лавка»"
 
 #: ../../tutorial/controlflow.rst:746
 msgid ""
 "Note that the order in which the keyword arguments are printed is guaranteed"
 " to match the order in which they were provided in the function call."
 msgstr ""
+"Обратите внимание, что порядок, в котором выводятся именованные аргументы, "
+"гарантированно совпадают с порядком, в котором они были указаны при вызове "
+"функции."
 
 #: ../../tutorial/controlflow.rst:750
 msgid "Special parameters"
-msgstr ""
+msgstr "Специальные параметры"
 
 #: ../../tutorial/controlflow.rst:752
 msgid ""
@@ -1633,10 +1657,15 @@ msgid ""
 " at the function definition to determine if items are passed by position, by"
 " position or keyword, or by keyword."
 msgstr ""
+"По умолчанию аргументы в Python можно передавать либо по позиции, либо явно "
+"по имени. В целях читаемости и эффективности бывает полезно ограничить "
+"способы передачи аргументов, чтобы разработчику было достаточно взглянуть на"
+" определение функции и понять, как именно должны передаваться параметры: "
+"только по позиции, по позиции или имени, или только по имени."
 
 #: ../../tutorial/controlflow.rst:758
 msgid "A function definition may look like:"
-msgstr ""
+msgstr "Определение функции может выглядеть так:"
 
 #: ../../tutorial/controlflow.rst:760
 msgid ""
@@ -1647,6 +1676,12 @@ msgid ""
 "        |                                - Keyword only\n"
 "         -- Positional only"
 msgstr ""
+"def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n"
+"      -----------    ----------     ----------\n"
+"        |             |                  |\n"
+"        |        Позиционные или именованные   |\n"
+"        |                                - Только именованные\n"
+"         -- Только позиционные"
 
 #: ../../tutorial/controlflow.rst:769
 msgid ""
@@ -1655,20 +1690,26 @@ msgid ""
 "positional-only, positional-or-keyword, and keyword-only. Keyword parameters"
 " are also referred to as named parameters."
 msgstr ""
+"где ``/`` и ``*`` являются необязательными. Если они используются, эти "
+"символы указывают тип параметров — по тому, как аргументы могут передаваться"
+" функции: только позиционно, позиционно или по имени, либо только по имени. "
+"Именованные параметры также называют параметрами, передаваемыми по ключу."
 
 #: ../../tutorial/controlflow.rst:776
 msgid "Positional-or-Keyword Arguments"
-msgstr ""
+msgstr "Позиционные или именованные аргументы"
 
 #: ../../tutorial/controlflow.rst:778
 msgid ""
 "If ``/`` and ``*`` are not present in the function definition, arguments may"
 " be passed to a function by position or by keyword."
 msgstr ""
+"Если ``/`` и ``*`` отсутствуют в определении функции, аргументы можно "
+"передавать как по позиции, так и по имени."
 
 #: ../../tutorial/controlflow.rst:783
 msgid "Positional-Only Parameters"
-msgstr ""
+msgstr "Только позиционные параметры"
 
 #: ../../tutorial/controlflow.rst:785
 msgid ""
@@ -1680,16 +1721,25 @@ msgid ""
 "parameters. If there is no ``/`` in the function definition, there are no "
 "positional-only parameters."
 msgstr ""
+"Можно подробнее рассмотреть этот механизм: некоторые параметры можно "
+"пометить как только позиционные. Если параметр только позиционный, порядок "
+"его передачи имеет значение, и его нельзя передать как именованный аргумент."
+" Такие параметры указываются в определении функции перед символом ``/`` "
+"(слэш). Символ ``/`` логически отделяет только позиционные параметры от "
+"остальных. Если в определении функции нет ``/``, значит, только позиционных "
+"параметров нет."
 
 #: ../../tutorial/controlflow.rst:793
 msgid ""
 "Parameters following the ``/`` may be *positional-or-keyword* or *keyword-"
 "only*."
 msgstr ""
+"Параметры, следующие за ``/``, могут быть *позиционными или именованными* "
+"или *только именованными*."
 
 #: ../../tutorial/controlflow.rst:797
 msgid "Keyword-Only Arguments"
-msgstr ""
+msgstr "Только именованные аргументы"
 
 #: ../../tutorial/controlflow.rst:799
 msgid ""

@@ -2116,12 +2116,19 @@ msgid ""
 ">>> list(range(*args))            # call with arguments unpacked from a list\n"
 "[3, 4, 5]"
 msgstr ""
+">>> list(range(3, 6))            # обычный вызов с отдельными аргументами\n"
+"[3, 4, 5]\n"
+">>> args = [3, 6]\n"
+">>> list(range(*args))            # вызов с распаковкой аргументов из списка\n"
+"[3, 4, 5]"
 
 #: ../../tutorial/controlflow.rst:973
 msgid ""
 "In the same fashion, dictionaries can deliver keyword arguments with the "
 "``**``\\ -operator::"
 msgstr ""
+"Точно также словари могут передавать именованные аргументы с помощью "
+"оператора ``**``::"
 
 #: ../../tutorial/controlflow.rst:976
 msgid ""
@@ -2134,10 +2141,18 @@ msgid ""
 ">>> parrot(**d)\n"
 "-- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin' demised !"
 msgstr ""
+">>> def parrot(voltage, state='жёсткий', action='вжух'):\n"
+"...     print(\"-- Этот попугай бы не\", action, end=' ')\n"
+"...     print(\"если бы вы пропустили\", voltage, \"вольт через него.\", end=' ')\n"
+"...     print(\"Он\", state, \"!\")\n"
+"...\n"
+">>> d = {\"voltage\": \"четыре миллиона\", \"state\": \"совсем окочурился\", \"action\": \"ВЖУХ\"}\n"
+">>> parrot(**d)\n"
+"-- Этот попугай бы не ВЖУХ если бы вы пропустили четыре миллиона вольт через него. Он совсем окочурился !"
 
 #: ../../tutorial/controlflow.rst:989
 msgid "Lambda Expressions"
-msgstr ""
+msgstr "Лямбда-выражения"
 
 #: ../../tutorial/controlflow.rst:991
 msgid ""

@@ -1279,7 +1279,7 @@ msgstr ""
 
 #: ../../tutorial/controlflow.rst:588
 msgid "Default Argument Values"
-msgstr ""
+msgstr "Значения аргументов по умолчанию"
 
 #: ../../tutorial/controlflow.rst:590
 msgid ""
@@ -1287,6 +1287,9 @@ msgid ""
 "arguments. This creates a function that can be called with fewer arguments "
 "than it is defined to allow.  For example::"
 msgstr ""
+"Наиболее полезная форма — указать значение по умолчанию для одного или "
+"нескольких аргументов. Это создаёт функцию, которую можно вызвать с меньшим "
+"количеством аргументов,  чем предусмотрено её определением. Например::"
 
 #: ../../tutorial/controlflow.rst:594
 msgid ""
@@ -1302,40 +1305,61 @@ msgid ""
 "            raise ValueError('invalid user response')\n"
 "        print(reminder)"
 msgstr ""
+"def ask_ok(prompt, retries=4, reminder='Пожалуйста, попробуйте ещё раз!'):\n"
+"    while True:\n"
+"        reply = input(prompt)\n"
+"        if reply in {'y', 'ye', 'yes'}:\n"
+"            return True\n"
+"        if reply in {'n', 'no', 'nop', 'nope'}:\n"
+"            return False\n"
+"        retries = retries - 1\n"
+"        if retries < 0:\n"
+"            raise ValueError('некорректный ответ пользователя')\n"
+"        print(reminder)"
 
 #: ../../tutorial/controlflow.rst:606
 msgid "This function can be called in several ways:"
-msgstr ""
+msgstr "Эту функцию можно вызвать несколькими способами:"
 
 #: ../../tutorial/controlflow.rst:608
 msgid ""
 "giving only the mandatory argument: ``ask_ok('Do you really want to "
 "quit?')``"
 msgstr ""
+"давая только обязательный аргумент: ``ask_ok('Вы действительно хотите "
+"выйти?')``"
 
 #: ../../tutorial/controlflow.rst:610
 msgid ""
 "giving one of the optional arguments: ``ask_ok('OK to overwrite the file?', "
 "2)``"
 msgstr ""
+"передавая один из необязательных аргументов: ``ask_ok('ОК, чтобы "
+"перезаписать файл?', 2)``"
 
 #: ../../tutorial/controlflow.rst:612
 msgid ""
 "or even giving all arguments: ``ask_ok('OK to overwrite the file?', 2, 'Come"
 " on, only yes or no!')``"
 msgstr ""
+"или даже приведя все аргументы: ``ask_ok('ОК перезаписать файл?', 2, 'Давай,"
+" только да или нет!')``"
 
 #: ../../tutorial/controlflow.rst:615
 msgid ""
 "This example also introduces the :keyword:`in` keyword. This tests whether "
 "or not a sequence contains a certain value."
 msgstr ""
+"В этом примере также представлено ключевое слово :keyword:`in`. Это "
+"проверяет, содержит ли последовательность определенное значение."
 
 #: ../../tutorial/controlflow.rst:618
 msgid ""
 "The default values are evaluated at the point of function definition in the "
 "*defining* scope, so that ::"
 msgstr ""
+"Значения по умолчанию вычисляются в момент создания функции в области её "
+"*определения*, так что::"
 
 #: ../../tutorial/controlflow.rst:621
 msgid ""
@@ -1347,10 +1371,17 @@ msgid ""
 "i = 6\n"
 "f()"
 msgstr ""
+"i = 5\n"
+"\n"
+"def f(arg=i):\n"
+"    print(arg)\n"
+"\n"
+"i = 6\n"
+"f()"
 
 #: ../../tutorial/controlflow.rst:629
 msgid "will print ``5``."
-msgstr ""
+msgstr "напечатает ``5``."
 
 #: ../../tutorial/controlflow.rst:631
 msgid ""
@@ -1359,6 +1390,11 @@ msgid ""
 "dictionary, or instances of most classes.  For example, the following "
 "function accumulates the arguments passed to it on subsequent calls::"
 msgstr ""
+"**Важное предупреждение:** Значение параметра по умолчанию вычисляется "
+"только один раз. Это имеет значение, когда значением по умолчанию является "
+"изменяемый объект, такой как список, словарь или экземпляры большинства "
+"классов. Например, следующая функция аккумулирует аргументы, передаваемые ей"
+" при последующих вызовах:"
 
 #: ../../tutorial/controlflow.rst:636
 msgid ""
@@ -1370,10 +1406,17 @@ msgid ""
 "print(f(2))\n"
 "print(f(3))"
 msgstr ""
+"def f(a, L=[]):\n"
+"    L.append(a)\n"
+"    return L\n"
+"\n"
+"print(f(1))\n"
+"print(f(2))\n"
+"print(f(3))"
 
 #: ../../tutorial/controlflow.rst:644
 msgid "This will print ::"
-msgstr ""
+msgstr "будет напечатано ::"
 
 #: ../../tutorial/controlflow.rst:646
 msgid ""
@@ -1381,12 +1424,17 @@ msgid ""
 "[1, 2]\n"
 "[1, 2, 3]"
 msgstr ""
+"[1]\n"
+"[1, 2]\n"
+"[1, 2, 3]"
 
 #: ../../tutorial/controlflow.rst:650
 msgid ""
 "If you don't want the default to be shared between subsequent calls, you can"
 " write the function like this instead::"
 msgstr ""
+"Если вы не хотите, чтобы значение по умолчанию сохранялось между вызовами, "
+"вы можете писать функцию так:"
 
 #: ../../tutorial/controlflow.rst:653
 msgid ""
@@ -1396,10 +1444,15 @@ msgid ""
 "    L.append(a)\n"
 "    return L"
 msgstr ""
+"def f(a, L=None):\n"
+"    if L is None:\n"
+"        L = []\n"
+"    L.append(a)\n"
+"    return L"
 
 #: ../../tutorial/controlflow.rst:663
 msgid "Keyword Arguments"
-msgstr ""
+msgstr "Именованные аргументы"
 
 #: ../../tutorial/controlflow.rst:665
 msgid ""
@@ -1407,6 +1460,8 @@ msgid ""
 "argument>` of the form ``kwarg=value``.  For instance, the following "
 "function::"
 msgstr ""
+"Функции также можно вызывать с использованием :term:`именованных аргументов "
+"<keyword argument>` вида ``kwarg=value``. Например, следующая функция::"
 
 #: ../../tutorial/controlflow.rst:668
 msgid ""
@@ -1416,6 +1471,11 @@ msgid ""
 "    print(\"-- Lovely plumage, the\", type)\n"
 "    print(\"-- It's\", state, \"!\")"
 msgstr ""
+"def parrot(voltage, state='окоченевший', action='вжух', type='норвежский голубой'):\n"
+"    print(\"-- Этот попугай бы не\", action, end=' ')\n"
+"    print(\"если пропустить через него\", voltage, \"вольт.\")\n"
+"    print(\"-- Прекрасное оперение у\", type)\n"
+"    print(\"-- Он\", state, \"!\")"
 
 #: ../../tutorial/controlflow.rst:674
 msgid ""
@@ -1423,6 +1483,9 @@ msgid ""
 "(``state``, ``action``, and ``type``).  This function can be called in any "
 "of the following ways::"
 msgstr ""
+"принимает один обязательный аргумент (``voltage``) и три дополнительных "
+"аргумента (``state``, ``action`` и ``type``). Эту функцию можно вызвать "
+"любым из следующих способов:"
 
 #: ../../tutorial/controlflow.rst:678
 msgid ""
@@ -1433,10 +1496,16 @@ msgid ""
 "parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments\n"
 "parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword"
 msgstr ""
+"parrot(1000)                                          # 1 позиционный аргумент\n"
+"parrot(voltage=1000)                                  # 1 именованный аргумент\n"
+"parrot(voltage=1000000, action='ВЖУУУУХ')             # 2 именованных аргумента\n"
+"parrot(action='ВЖУУУУХ', voltage=1000000)             # 2 именованных аргумента\n"
+"parrot('миллион', 'лишён жизни', 'прыжок')         # 3 позиционных аргумента\n"
+"parrot('тысяча', state='протянул ноги')  # 1 позиционный, 1 именованный"
 
 #: ../../tutorial/controlflow.rst:685
 msgid "but all the following calls would be invalid::"
-msgstr ""
+msgstr "но все следующие вызовы будут недействительны::"
 
 #: ../../tutorial/controlflow.rst:687
 msgid ""
@@ -1445,6 +1514,10 @@ msgid ""
 "parrot(110, voltage=220)     # duplicate value for the same argument\n"
 "parrot(actor='John Cleese')  # unknown keyword argument"
 msgstr ""
+"parrot()                     # отсутствует обязательный аргумент\n"
+"parrot(voltage=5.0, 'мёртв')  # позиционный аргумент после именованного\n"
+"parrot(110, voltage=220)     # повторяющееся значение для одного аргумента\n"
+"parrot(actor='John Cleese')  # неизвестный именованный аргумент"
 
 #: ../../tutorial/controlflow.rst:692
 msgid ""
@@ -1456,6 +1529,13 @@ msgid ""
 " may receive a value more than once. Here's an example that fails due to "
 "this restriction::"
 msgstr ""
+"При вызове функции именованные аргументы должны следовать за позиционными "
+"аргументами. Все передаваемые именованные аргументы должны соответствовать "
+"одному из аргументов, принимаемых функцией (например, ``actor`` не является "
+"допустимым аргументом для функции ``parrot``), и их порядок не важен. Это "
+"относится и к обязательным параметрам (например, ``parrot(напряжение=1000)``"
+" тоже допустимо). Ни один аргумент не может принимать значение более одного "
+"раза. Вот пример, который не работает из-за этого ограничения:"
 
 #: ../../tutorial/controlflow.rst:700
 msgid ""
@@ -1467,6 +1547,13 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "TypeError: function() got multiple values for argument 'a'"
 msgstr ""
+">>> def function(a):\n"
+"...     pass\n"
+"...\n"
+">>> function(0, a=0)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: function() got multiple values for argument 'a'"
 
 #: ../../tutorial/controlflow.rst:708
 msgid ""

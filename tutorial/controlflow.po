@@ -1982,21 +1982,23 @@ msgstr ""
 
 #: ../../tutorial/controlflow.rst:902
 msgid "Recap"
-msgstr ""
+msgstr "Краткое повторение"
 
 #: ../../tutorial/controlflow.rst:904
 msgid ""
 "The use case will determine which parameters to use in the function "
 "definition::"
 msgstr ""
+"Набор параметров, которые стоит использовать в определении функции, зависит "
+"от её назначения::"
 
 #: ../../tutorial/controlflow.rst:906
 msgid "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):"
-msgstr ""
+msgstr "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):"
 
 #: ../../tutorial/controlflow.rst:908
 msgid "As guidance:"
-msgstr ""
+msgstr "В качестве руководства:"
 
 #: ../../tutorial/controlflow.rst:910
 msgid ""
@@ -2006,6 +2008,11 @@ msgid ""
 " is called or if you need to take some positional parameters and arbitrary "
 "keywords."
 msgstr ""
+"Используйте только позиционный параметры, если вы хотите, чтобы имена "
+"параметров были недоступны пользователю. Это полезно, когда имена параметров"
+" не имеют реального значения, если вы хотите обеспечить соблюдение порядка "
+"аргументов при вызове функции или если вам нужно принимать часть аргументов "
+"как позиционные, а часть — как произвольные именованные."
 
 #: ../../tutorial/controlflow.rst:915
 msgid ""
@@ -2013,16 +2020,21 @@ msgid ""
 " understandable by being explicit with names or you want to prevent users "
 "relying on the position of the argument being passed."
 msgstr ""
+"Используйте только именованные параметры, когда имена имеют значение, а "
+"определение функции более понятно, если имена указаны явно, или если вы "
+"хотите, чтобы пользователи не полагались на порядок передаваемых аргументов."
 
 #: ../../tutorial/controlflow.rst:918
 msgid ""
 "For an API, use positional-only to prevent breaking API changes if the "
 "parameter's name is modified in the future."
 msgstr ""
+"Для API используйте только позиционные параметры, чтобы предотвратить "
+"несовместимые изменения API, если имя параметра будет изменено в будущем."
 
 #: ../../tutorial/controlflow.rst:924
 msgid "Arbitrary Argument Lists"
-msgstr ""
+msgstr "Произвольные списки аргументов"
 
 #: ../../tutorial/controlflow.rst:929
 msgid ""
@@ -2031,12 +2043,18 @@ msgid ""
 "wrapped up in a tuple (see :ref:`tut-tuples`).  Before the variable number "
 "of arguments, zero or more normal arguments may occur. ::"
 msgstr ""
+"Наконец, самый редко используемый вариант — указать, что функция может быть "
+"вызвана с произвольным числом аргументов. Эти аргументы будут собраны в "
+"кортеж (см. :ref:`tut-tuples`). Перед переменным числом аргументов могут "
+"встречаться ноль или более обычных аргументов. ::"
 
 #: ../../tutorial/controlflow.rst:934
 msgid ""
 "def write_multiple_items(file, separator, *args):\n"
 "    file.write(separator.join(args))"
 msgstr ""
+"def write_multiple_items(file, separator, *args):\n"
+"    file.write(separator.join(args))"
 
 #: ../../tutorial/controlflow.rst:938
 msgid ""
@@ -2046,6 +2064,11 @@ msgid ""
 "``*args`` parameter are 'keyword-only' arguments, meaning that they can only"
 " be used as keywords rather than positional arguments. ::"
 msgstr ""
+"Обычно такие *вариативные* аргументы стоят последними в списке формальных "
+"параметров, потому что они собирают все оставшиеся аргументы, переданные "
+"функции. Любые формальные параметры, расположенные после параметра "
+"``*args``, являются только именованными — их можно передавать только по "
+"ключу, а не как позиционные. ::"
 
 #: ../../tutorial/controlflow.rst:944
 msgid ""
@@ -2057,10 +2080,17 @@ msgid ""
 ">>> concat(\"earth\", \"mars\", \"venus\", sep=\".\")\n"
 "'earth.mars.venus'"
 msgstr ""
+">>> def concat(*args, sep=\"/\"):\n"
+"...     return sep.join(args)\n"
+"...\n"
+">>> concat(\"земля\", \"марс\", \"венера\")\n"
+"'земля/марс/венера'\n"
+">>> concat(\"земля\", \"марс\", \"венера\", sep=\".\")\n"
+"'земля.марс.венера'"
 
 #: ../../tutorial/controlflow.rst:955
 msgid "Unpacking Argument Lists"
-msgstr ""
+msgstr "Распаковка списков аргументов"
 
 #: ../../tutorial/controlflow.rst:957
 msgid ""
@@ -2071,6 +2101,12 @@ msgid ""
 "separately, write the function call with the  ``*``\\ -operator to unpack "
 "the arguments out of a list or tuple::"
 msgstr ""
+"Обратная ситуация возникает, когда аргументы уже находятся в списке или "
+"кортеже, но их необходимо распаковать для вызова функции, требующей "
+"отдельных позиционных аргументов. Например, встроенная функция :func:`range`"
+" ожидает отдельные аргументы *start* и *stop*. Если они недоступны отдельно,"
+" напишите вызов функции с оператором ``*``, чтобы распаковать аргументы из "
+"списка или кортежа::"
 
 #: ../../tutorial/controlflow.rst:964
 msgid ""
@@ -2326,7 +2362,7 @@ msgstr ""
 
 #: ../../tutorial/controlflow.rst:1158
 msgid "Footnotes"
-msgstr ""
+msgstr "Сноски"
 
 #: ../../tutorial/controlflow.rst:1159
 msgid ""
@@ -2337,68 +2373,68 @@ msgstr ""
 
 #: ../../tutorial/controlflow.rst:48
 msgid "statement"
-msgstr ""
+msgstr "инструкция"
 
 #: ../../tutorial/controlflow.rst:48
 msgid "for"
-msgstr ""
+msgstr "for"
 
 #: ../../tutorial/controlflow.rst:254
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: ../../tutorial/controlflow.rst:254
 msgid "ellipsis literal"
-msgstr ""
+msgstr "литерал-многоточие"
 
 #: ../../tutorial/controlflow.rst:485 ../../tutorial/controlflow.rst:1023
 msgid "documentation strings"
-msgstr ""
+msgstr "строки документации"
 
 #: ../../tutorial/controlflow.rst:485 ../../tutorial/controlflow.rst:1023
 msgid "docstrings"
-msgstr ""
+msgstr "docstrings"
 
 #: ../../tutorial/controlflow.rst:485 ../../tutorial/controlflow.rst:1023
 msgid "strings, documentation"
-msgstr ""
+msgstr "строки, документация"
 
 #: ../../tutorial/controlflow.rst:926
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (звёздочка)"
 
 #: ../../tutorial/controlflow.rst:926 ../../tutorial/controlflow.rst:970
 msgid "in function calls"
-msgstr ""
+msgstr "в вызовах функций"
 
 #: ../../tutorial/controlflow.rst:970
 msgid "**"
-msgstr ""
+msgstr "**"
 
 #: ../../tutorial/controlflow.rst:1075
 msgid "function"
-msgstr ""
+msgstr "функция"
 
 #: ../../tutorial/controlflow.rst:1075
 msgid "annotations"
-msgstr ""
+msgstr "аннотации"
 
 #: ../../tutorial/controlflow.rst:1075
 msgid "->"
-msgstr ""
+msgstr "->"
 
 #: ../../tutorial/controlflow.rst:1075
 msgid "function annotations"
-msgstr ""
+msgstr "аннотации функции"
 
 #: ../../tutorial/controlflow.rst:1075
 msgid ": (colon)"
-msgstr ""
+msgstr ": (двоеточие)"
 
 #: ../../tutorial/controlflow.rst:1109
 msgid "coding"
-msgstr ""
+msgstr "кодирование"
 
 #: ../../tutorial/controlflow.rst:1109
 msgid "style"
-msgstr ""
+msgstr "стиль"

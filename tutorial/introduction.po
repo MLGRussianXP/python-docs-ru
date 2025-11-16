@@ -35,6 +35,13 @@ msgid ""
 " that a secondary prompt on a line by itself in an example means you must "
 "type a blank line; this is used to end a multi-line command."
 msgstr ""
+"В следующих примерах ввод и вывод отличаются по наличию или отсутствию "
+"приглашений  (:term:`>>>` и :term:`...`). Чтобы повторить пример, вы должны "
+"ввести всё, что в нём написано после приглашения, когда оно появится. "
+"Строки, которые не начинаются с приглашения, — это вывод интерпретатора. "
+"Обратите внимание, что вторичное приглашение, стоящее в примере на отдельной"
+" строке, означает, что вы должны ввести пустую строку. Это используется для "
+"завершения многострочной команды."
 
 #: ../../tutorial/introduction.rst:16
 msgid ""
@@ -42,6 +49,10 @@ msgid ""
 "hovering over or tapping a code example), which strips prompts and omits "
 "output, to copy and paste the input lines into your interpreter."
 msgstr ""
+"Вы можете использовать кнопку \"Копировать\" (она появляется в правом "
+"верхнем углу при наведении или нажатии на пример кода), которая убирает "
+"подсказки и опускает вывод, чтобы скопировать и вставить исходные строки "
+"кода в свой интерпретатор."
 
 #: ../../tutorial/introduction.rst:22
 msgid ""
@@ -53,10 +64,17 @@ msgid ""
 "character. Since comments are to clarify code and are not interpreted by "
 "Python, they may be omitted when typing in examples."
 msgstr ""
+"Многие примеры в этом руководстве, даже те, что вводятся в интерактивной "
+"оболочке, содержат комментарии. Комментарии в Python начинаются со знака "
+"решётки, ``#``, и продолжаются до конца физической строки. Комментарий может"
+" стоять в начале строки или после пробелов или кода, но не внутри строкового"
+" литерала. Знак решётки внутри строкового литерала — это просто символ "
+"решётки. Поскольку комментарии предназначены для пояснения кода и не "
+"интерпретируются Python, их можно опускать при наборе примеров."
 
 #: ../../tutorial/introduction.rst:30
 msgid "Some examples::"
-msgstr ""
+msgstr "Несколько примеров::"
 
 #: ../../tutorial/introduction.rst:32
 msgid ""
@@ -65,20 +83,27 @@ msgid ""
 "          # ... and now a third!\n"
 "text = \"# This is not a comment because it's inside quotes.\""
 msgstr ""
+"# это первый комментарий\n"
+"spam = 1  # а это второй комментарий\n"
+"          # ... и теперь третий!\n"
+"text = \"# Это не комментарий, потому что он внутри кавычек.\""
 
 #: ../../tutorial/introduction.rst:41
 msgid "Using Python as a Calculator"
-msgstr ""
+msgstr "Использование Python как калькулятор"
 
 #: ../../tutorial/introduction.rst:43
 msgid ""
 "Let's try some simple Python commands.  Start the interpreter and wait for "
 "the primary prompt, ``>>>``.  (It shouldn't take long.)"
 msgstr ""
+"Давайте попробуем несколько простых команд Python. Запустите интерпретатор и"
+" дождитесь основного приглашения, ``>>>``. (Это не должно занять много "
+"времени.)"
 
 #: ../../tutorial/introduction.rst:50
 msgid "Numbers"
-msgstr ""
+msgstr "Числа"
 
 #: ../../tutorial/introduction.rst:52
 msgid ""
@@ -87,6 +112,10 @@ msgid ""
 "operators ``+``, ``-``, ``*`` and ``/`` can be used to perform arithmetic; "
 "parentheses (``()``) can be used for grouping. For example::"
 msgstr ""
+"Интерпретатор работает как простой калькулятор: вы можете ввести выражение, "
+"и он выведет его значение. Синтаксис выражений прост: операторы ``+``, "
+"``-``, ``*`` и ``/`` используются для выполнения арифметических действий; "
+"круглые скобки (``()``) можно использовать для группировки. Например::"
 
 #: ../../tutorial/introduction.rst:58
 msgid ""
@@ -99,6 +128,14 @@ msgid ""
 ">>> 8 / 5  # division always returns a floating-point number\n"
 "1.6"
 msgstr ""
+">>> 2 + 2\n"
+"4\n"
+">>> 50 - 5*6\n"
+"20\n"
+">>> (50 - 5*6) / 4\n"
+"5.0\n"
+">>> 8 / 5 # деление всегда возвращает число с плавающей точкой\n"
+"1.6"
 
 #: ../../tutorial/introduction.rst:67
 msgid ""

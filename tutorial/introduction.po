@@ -640,6 +640,9 @@ msgid ""
 "used to obtain individual characters, *slicing* allows you to obtain a "
 "substring::"
 msgstr ""
+"В дополнение к индексации поддерживаются и *срезы*. В то время как "
+"индексация используется для получения отдельных символов, *срез* позволяет "
+"получить подстроку::"
 
 #: ../../tutorial/introduction.rst:278
 msgid ""
@@ -648,12 +651,18 @@ msgid ""
 ">>> word[2:5]  # characters from position 2 (included) to 5 (excluded)\n"
 "'tho'"
 msgstr ""
+">>> word[0:2]  # символы с позиции 0 (включительно) по 2 (не включая)\n"
+"'Py'\n"
+">>> word[2:5]  # символы с позиции 2 (включительно) по 5 (не включая)\n"
+"'tho'"
 
 #: ../../tutorial/introduction.rst:283
 msgid ""
 "Slice indices have useful defaults; an omitted first index defaults to zero,"
 " an omitted second index defaults to the size of the string being sliced. ::"
 msgstr ""
+"У срезов есть удобные значения по умолчанию: пропущенный первый индекс "
+"принимается равным нулю, пропущенный второй — длине разрезаемой строки. ::"
 
 #: ../../tutorial/introduction.rst:286
 msgid ""
@@ -664,12 +673,21 @@ msgid ""
 ">>> word[-2:]  # characters from the second-last (included) to the end\n"
 "'on'"
 msgstr ""
+">>> word[:2]   # символы с начала до позиции 2 (не включая)\n"
+"'Py'\n"
+">>> word[4:]   # символы с позиции 4 (включительно) до конца\n"
+"'on'\n"
+">>> word[-2:]  # символы со второго с конца (включительно) до конца\n"
+"'on'"
 
 #: ../../tutorial/introduction.rst:293
 msgid ""
 "Note how the start is always included, and the end always excluded.  This "
 "makes sure that ``s[:i] + s[i:]`` is always equal to ``s``::"
 msgstr ""
+"Обратите внимание, что начало среза всегда включается, а конец — всегда "
+"исключается. Это гарантирует, что выражение ``s[:i] + s[i:]`` всегда равно "
+"``s``::"
 
 #: ../../tutorial/introduction.rst:296
 msgid ""
@@ -678,6 +696,10 @@ msgid ""
 ">>> word[:4] + word[4:]\n"
 "'Python'"
 msgstr ""
+">>> word[:2] + word[2:]\n"
+"'Python'\n"
+">>> word[:4] + word[4:]\n"
+"'Python'"
 
 #: ../../tutorial/introduction.rst:301
 msgid ""
@@ -686,6 +708,10 @@ msgid ""
 "Then the right edge of the last character of a string of *n* characters has "
 "index *n*, for example::"
 msgstr ""
+"Один из способов запомнить, как работают срезы, — представить, что индексы "
+"указывают *между* символами, и левая граница первого символа имеет индекс 0."
+" Тогда правая граница последнего символа строки длины *n* имеет индекс *n*, "
+"например::"
 
 #: ../../tutorial/introduction.rst:306
 msgid ""
@@ -695,6 +721,11 @@ msgid ""
 " 0   1   2   3   4   5   6\n"
 "-6  -5  -4  -3  -2  -1"
 msgstr ""
+" +---+---+---+---+---+---+\n"
+" | P | y | t | h | o | n |\n"
+" +---+---+---+---+---+---+\n"
+" 0   1   2   3   4   5   6\n"
+"-6  -5  -4  -3  -2  -1"
 
 #: ../../tutorial/introduction.rst:312
 msgid ""
@@ -703,6 +734,9 @@ msgid ""
 "from *i* to *j* consists of all characters between the edges labeled *i* and"
 " *j*, respectively."
 msgstr ""
+"Верхняя строка чисел показывает позиции индексов 0…6 в строке; нижняя строка"
+" — соответствующие отрицательные индексы. Срез от *i* до *j* состоит из всех"
+" символов между границами, помеченными *i* и *j* соответственно."
 
 #: ../../tutorial/introduction.rst:317
 msgid ""
@@ -710,10 +744,12 @@ msgid ""
 "indices, if both are within bounds.  For example, the length of "
 "``word[1:3]`` is 2."
 msgstr ""
+"Для неотрицательных индексов длина среза равна разности индексов, если оба "
+"они находятся в допустимых пределах. Например, длина ``word[1:3]`` равна 2."
 
 #: ../../tutorial/introduction.rst:321
 msgid "Attempting to use an index that is too large will result in an error::"
-msgstr ""
+msgstr "Попытка использовать слишком большой индекс приведёт к ошибке::"
 
 #: ../../tutorial/introduction.rst:323
 msgid ""
@@ -722,12 +758,18 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "IndexError: string index out of range"
 msgstr ""
+">>> word[42]  # слово содержит всего 6 символов\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"IndexError: string index out of range"
 
 #: ../../tutorial/introduction.rst:328
 msgid ""
 "However, out of range slice indexes are handled gracefully when used for "
 "slicing::"
 msgstr ""
+"Однако выход за границы допустимого диапазона индексов в случае срезов "
+"обрабатывается корректно::"
 
 #: ../../tutorial/introduction.rst:331
 msgid ""
@@ -736,12 +778,18 @@ msgid ""
 ">>> word[42:]\n"
 "''"
 msgstr ""
+">>> word[4:42]\n"
+"'on'\n"
+">>> word[42:]\n"
+"''"
 
 #: ../../tutorial/introduction.rst:336
 msgid ""
 "Python strings cannot be changed --- they are :term:`immutable`. Therefore, "
 "assigning to an indexed position in the string results in an error::"
 msgstr ""
+"Строки в Python нельзя изменять — они :term:`immutable`. Поэтому попытка "
+"присвоить значение элементу по индексу приводит к ошибке::"
 
 #: ../../tutorial/introduction.rst:339
 msgid ""
@@ -754,10 +802,18 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "TypeError: 'str' object does not support item assignment"
 msgstr ""
+">>> word[0] = 'J'\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: 'str' object does not support item assignment\n"
+">>> word[2:] = 'py'\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: 'str' object does not support item assignment"
 
 #: ../../tutorial/introduction.rst:348
 msgid "If you need a different string, you should create a new one::"
-msgstr ""
+msgstr "Если вам нужна другая строка, вам следует создать новую::"
 
 #: ../../tutorial/introduction.rst:350
 msgid ""
@@ -766,10 +822,14 @@ msgid ""
 ">>> word[:2] + 'py'\n"
 "'Pypy'"
 msgstr ""
+">>> 'J' + word[1:]\n"
+"'Jython'\n"
+">>> word[:2] + 'py'\n"
+"'Pypy'"
 
 #: ../../tutorial/introduction.rst:355
 msgid "The built-in function :func:`len` returns the length of a string::"
-msgstr ""
+msgstr "Встроенная функция :func:`len` возвращает длину строки::"
 
 #: ../../tutorial/introduction.rst:357
 msgid ""
@@ -777,56 +837,64 @@ msgid ""
 ">>> len(s)\n"
 "34"
 msgstr ""
+">>> s = 'суперкалифрагилистикэкспиалидоушес'\n"
+">>> len(s)\n"
+"34"
 
 #: ../../tutorial/introduction.rst:364
 msgid ":ref:`textseq`"
-msgstr ""
+msgstr ":ref:`textseq`"
 
 #: ../../tutorial/introduction.rst:365
 msgid ""
 "Strings are examples of *sequence types*, and support the common operations "
 "supported by such types."
 msgstr ""
+"Строки являются примером *типа последовательностей* и поддерживают общие для"
+" них операции."
 
 #: ../../tutorial/introduction.rst:368
 msgid ":ref:`string-methods`"
-msgstr ""
+msgstr ":ref:`string-methods`"
 
 #: ../../tutorial/introduction.rst:369
 msgid ""
 "Strings support a large number of methods for basic transformations and "
 "searching."
 msgstr ""
+"Строки поддерживают множество методов для простых преобразований и поиска."
 
 #: ../../tutorial/introduction.rst:372
 msgid ":ref:`f-strings`"
-msgstr ""
+msgstr ":ref:`f-strings`"
 
 #: ../../tutorial/introduction.rst:373
 msgid "String literals that have embedded expressions."
-msgstr ""
+msgstr "Строковые литералы со встроенными выражениями."
 
 #: ../../tutorial/introduction.rst:375
 msgid ":ref:`formatstrings`"
-msgstr ""
+msgstr ":ref:`formatstrings`"
 
 #: ../../tutorial/introduction.rst:376
 msgid "Information about string formatting with :meth:`str.format`."
-msgstr ""
+msgstr "Информацию о форматировании строк методом :meth:`str.format`."
 
 #: ../../tutorial/introduction.rst:378
 msgid ":ref:`old-string-formatting`"
-msgstr ""
+msgstr ":ref:`old-string-formatting`"
 
 #: ../../tutorial/introduction.rst:379
 msgid ""
 "The old formatting operations invoked when strings are the left operand of "
 "the ``%`` operator are described in more detail here."
 msgstr ""
+"Старые операции форматирования, которые выполняются при применении оператора"
+" ``%`` к строке, описаны здесь подробнее."
 
 #: ../../tutorial/introduction.rst:386
 msgid "Lists"
-msgstr ""
+msgstr "Списки"
 
 #: ../../tutorial/introduction.rst:388
 msgid ""

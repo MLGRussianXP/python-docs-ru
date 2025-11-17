@@ -425,6 +425,11 @@ msgid ""
 ">>> print(r'C:\\some\\name')  # note the r before the quote\n"
 "C:\\some\\name"
 msgstr ""
+">>> print('C:\\some\\name')  # здесь \\n означает перевод строки!\n"
+"C:\\some\n"
+"ame\n"
+">>> print(r'C:\\some\\name')  # обратите внимание на r перед кавычкой\n"
+"C:\\some\\name"
 
 #: ../../tutorial/introduction.rst:193
 msgid ""
@@ -432,6 +437,10 @@ msgid ""
 "odd number of ``\\`` characters; see :ref:`the FAQ entry <faq-programming-"
 "raw-string-backslash>` for more information and workarounds."
 msgstr ""
+"У сырых строк есть одна тонкая особенность: сырая строка не может "
+"заканчиваться нечётным количеством символов ``\\``. Подробнее об этом, а "
+"также о возможных обходных путях см. :ref:` соответствующий пункт FAQ <faq-"
+"programming-raw-string-backslash>`."
 
 #: ../../tutorial/introduction.rst:198
 msgid ""
@@ -441,6 +450,11 @@ msgid ""
 "adding a ``\\`` at the end of the line.  In the following example, the "
 "initial newline is not included::"
 msgstr ""
+"Строковые литералы могут занимать несколько строк. Один из способов — "
+"использовать тройные кавычки: ``\"\"\"...\"\"\"`` или ``'''...'''``. Символы"
+" конца строки автоматически включаются в строку, но их можно предотвратить, "
+"добавив ``\\`` в конце строки. В следующем примере начальный перевод строки "
+"не включён::"
 
 #: ../../tutorial/introduction.rst:204
 msgid ""
@@ -455,12 +469,24 @@ msgid ""
 "\n"
 ">>>"
 msgstr ""
+">>> print(\"\"\"\\\n"
+"... Usage: thingy [OPTIONS]\n"
+"...      -h                        Показать это сообщение о применении\n"
+"...      -H hostname               Имя хоста для подключения\n"
+"... \"\"\")\n"
+"Usage: thingy [OPTIONS]\n"
+"     -h                        Показать это сообщение о применении\n"
+"     -H hostname               Имя хоста для подключения\n"
+"\n"
+">>>"
 
 #: ../../tutorial/introduction.rst:215
 msgid ""
 "Strings can be concatenated (glued together) with the ``+`` operator, and "
 "repeated with ``*``::"
 msgstr ""
+"Строки можно конкатенировать (склеивать) с помощью оператора ``+`` и "
+"повторять с помощью ``*``::"
 
 #: ../../tutorial/introduction.rst:218
 msgid ""
@@ -468,23 +494,31 @@ msgid ""
 ">>> 3 * 'un' + 'ium'\n"
 "'unununium'"
 msgstr ""
+">>> # три раза 'un', затем 'ium'\n"
+">>> 3 * 'un' + 'ium'\n"
+"'unununium'"
 
 #: ../../tutorial/introduction.rst:222
 msgid ""
 "Two or more *string literals* (i.e. the ones enclosed between quotes) next "
 "to each other are automatically concatenated. ::"
 msgstr ""
+"Два или более *строковых литерала* (то есть заключённых в кавычки) подряд "
+"автоматически объединяются. ::"
 
 #: ../../tutorial/introduction.rst:225
 msgid ""
 ">>> 'Py' 'thon'\n"
 "'Python'"
 msgstr ""
+">>> 'Py' 'thon'\n"
+"'Python'"
 
 #: ../../tutorial/introduction.rst:228
 msgid ""
 "This feature is particularly useful when you want to break long strings::"
 msgstr ""
+"Эта возможность особенно полезна, когда вы хотите разбить длинную строку::"
 
 #: ../../tutorial/introduction.rst:230
 msgid ""
@@ -493,12 +527,17 @@ msgid ""
 ">>> text\n"
 "'Put several strings within parentheses to have them joined together.'"
 msgstr ""
+">>> text = ('Поместите несколько строк в круглые скобки,  '\n"
+"...         'чтобы они были объединены вместе.')\n"
+">>> text\n"
+"'Поместите несколько строк в круглые скобки, чтобы они были объединены вместе.'"
 
 #: ../../tutorial/introduction.rst:235
 msgid ""
 "This only works with two literals though, not with variables or "
 "expressions::"
 msgstr ""
+"Это работает только с литералами, но не с переменными или выражениями::"
 
 #: ../../tutorial/introduction.rst:237
 msgid ""
@@ -514,18 +553,33 @@ msgid ""
 "               ^^^^^\n"
 "SyntaxError: invalid syntax"
 msgstr ""
+">>> prefix = 'Py'\n"
+">>> prefix 'thon'  # нельзя объединять переменную и строковый литерал\n"
+"  File \"<stdin>\", line 1\n"
+"    prefix 'thon'\n"
+"           ^^^^^^\n"
+"SyntaxError: invalid syntax\n"
+">>> ('un' * 3) 'ium'\n"
+"  File \"<stdin>\", line 1\n"
+"    ('un' * 3) 'ium'\n"
+"               ^^^^^\n"
+"SyntaxError: invalid syntax"
 
 #: ../../tutorial/introduction.rst:249
 msgid ""
 "If you want to concatenate variables or a variable and a literal, use "
 "``+``::"
 msgstr ""
+"Если вы хотите объединить переменные или переменную и литерал, используйте "
+"``+``::"
 
 #: ../../tutorial/introduction.rst:251
 msgid ""
 ">>> prefix + 'thon'\n"
 "'Python'"
 msgstr ""
+">>> prefix + 'thon'\n"
+"'Python'"
 
 #: ../../tutorial/introduction.rst:254
 msgid ""
@@ -533,6 +587,9 @@ msgid ""
 "index 0. There is no separate character type; a character is simply a string"
 " of size one::"
 msgstr ""
+"Строки можно *индексировать* (обращаться к символу по индексу), при этом "
+"первый символ имеет индекс 0. Отдельного символьного типа в Python нет — "
+"символом считается строка длины один::"
 
 #: ../../tutorial/introduction.rst:258
 msgid ""
@@ -542,11 +599,18 @@ msgid ""
 ">>> word[5]  # character in position 5\n"
 "'n'"
 msgstr ""
+">>> word = 'Python'\n"
+">>> word[0]  # символ на позиции 0\n"
+"'P'\n"
+">>> word[5]  # символ на позиции 5\n"
+"'n'"
 
 #: ../../tutorial/introduction.rst:264
 msgid ""
 "Indices may also be negative numbers, to start counting from the right::"
 msgstr ""
+"Индексы могут также иметь отрицательные значения и начинают отсчитываться "
+"справа::"
 
 #: ../../tutorial/introduction.rst:266
 msgid ""
@@ -557,10 +621,18 @@ msgid ""
 ">>> word[-6]\n"
 "'P'"
 msgstr ""
+">>> word[-1]  # последний символ\n"
+"'n'\n"
+">>> word[-2]  # предпоследний символ\n"
+"'o'\n"
+">>> word[-6]\n"
+"'P'"
 
 #: ../../tutorial/introduction.rst:273
 msgid "Note that since -0 is the same as 0, negative indices start from -1."
 msgstr ""
+"Обратите внимание, что поскольку -0 равно 0, отрицательные индексы "
+"начинаются с -1."
 
 #: ../../tutorial/introduction.rst:275
 msgid ""

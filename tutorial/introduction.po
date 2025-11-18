@@ -904,6 +904,11 @@ msgid ""
 "contain items of different types, but usually the items all have the same "
 "type. ::"
 msgstr ""
+"Python поддерживает ряд *составных* типов данных, которые используются для "
+"объединения других значений. Наиболее универсальный из них — *список*. Он "
+"записывается как набор значений (элементов), разделённых запятыми, "
+"заключённых в квадратные скобки. Списки могут содержать элементы разных "
+"типов, но обычно элементы имеют один и тот же тип. ::"
 
 #: ../../tutorial/introduction.rst:393
 msgid ""
@@ -911,12 +916,17 @@ msgid ""
 ">>> squares\n"
 "[1, 4, 9, 16, 25]"
 msgstr ""
+">>> squares = [1, 4, 9, 16, 25]\n"
+">>> squares\n"
+"[1, 4, 9, 16, 25]"
 
 #: ../../tutorial/introduction.rst:397
 msgid ""
 "Like strings (and all other built-in :term:`sequence` types), lists can be "
 "indexed and sliced::"
 msgstr ""
+"Подобно строкам (и всем другим встроенным типам :term:`sequence`), списки "
+"можно индексировать и брать из них срезы::"
 
 #: ../../tutorial/introduction.rst:400
 msgid ""
@@ -927,22 +937,32 @@ msgid ""
 ">>> squares[-3:]  # slicing returns a new list\n"
 "[9, 16, 25]"
 msgstr ""
+">>> squares[0]  # индексация возвращает элемент\n"
+"1\n"
+">>> squares[-1]\n"
+"25\n"
+">>> squares[-3:]  # срез возвращает новый список\n"
+"[9, 16, 25]"
 
 #: ../../tutorial/introduction.rst:407
 msgid "Lists also support operations like concatenation::"
-msgstr ""
+msgstr "Списки также поддерживают такие операции, как конкатенация::"
 
 #: ../../tutorial/introduction.rst:409
 msgid ""
 ">>> squares + [36, 49, 64, 81, 100]\n"
 "[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]"
 msgstr ""
+">>> squares + [36, 49, 64, 81, 100]\n"
+"[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]"
 
 #: ../../tutorial/introduction.rst:412
 msgid ""
 "Unlike strings, which are :term:`immutable`, lists are a :term:`mutable` "
 "type, i.e. it is possible to change their content::"
 msgstr ""
+"В отличие от строк, которые являются :term:`immutable`, списки — это "
+":term:`mutable` тип данных. Это значит, что их содержимое можно изменить.::"
 
 #: ../../tutorial/introduction.rst:415
 msgid ""
@@ -953,6 +973,12 @@ msgid ""
 ">>> cubes\n"
 "[1, 8, 27, 64, 125]"
 msgstr ""
+">>> cubes = [1, 8, 27, 65, 125]  # здесь есть ошибка\n"
+">>> 4 ** 3  # куб числа 4 равен 64, а не 65!\n"
+"64\n"
+">>> cubes[3] = 64  # заменяем неверное значение\n"
+">>> cubes\n"
+"[1, 8, 27, 64, 125]"
 
 #: ../../tutorial/introduction.rst:422
 msgid ""

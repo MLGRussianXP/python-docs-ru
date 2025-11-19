@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-08 03:57+0000\n"
+"POT-Creation-Date: 2025-11-19 15:26+0000\n"
 "PO-Revision-Date: 2025-09-15 01:04+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -74,7 +74,7 @@ msgid ":mod:`!encodings.rot_13`"
 msgstr ""
 
 #: ../../library/cmdline.rst:18
-msgid ":mod:`ensurepip`"
+msgid ":ref:`ensurepip <ensurepip-cli>`"
 msgstr ""
 
 #: ../../library/cmdline.rst:19
@@ -98,7 +98,7 @@ msgid ":ref:`http.server <http-server-cli>`"
 msgstr ""
 
 #: ../../library/cmdline.rst:24
-msgid ":mod:`!idlelib`"
+msgid ":ref:`idlelib <idlelib-cli>`"
 msgstr ""
 
 #: ../../library/cmdline.rst:25
@@ -114,7 +114,7 @@ msgid ":mod:`mimetypes`"
 msgstr ""
 
 #: ../../library/cmdline.rst:28
-msgid ":mod:`pdb`"
+msgid ":ref:`pdb <pdb-cli>`"
 msgstr ""
 
 #: ../../library/cmdline.rst:29
@@ -218,11 +218,11 @@ msgid ":ref:`uuid <uuid-cli>`"
 msgstr ""
 
 #: ../../library/cmdline.rst:54
-msgid ":mod:`venv`"
+msgid ":ref:`venv <venv-cli>`"
 msgstr ""
 
 #: ../../library/cmdline.rst:55
-msgid ":mod:`webbrowser`"
+msgid ":ref:`webbrowser <webbrowser-cli>`"
 msgstr ""
 
 #: ../../library/cmdline.rst:56

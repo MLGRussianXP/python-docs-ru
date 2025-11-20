@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 14:15+0000\n"
+"POT-Creation-Date: 2025-11-19 19:26+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,33 +24,39 @@ msgstr ""
 
 #: ../../tutorial/datastructures.rst:5
 msgid "Data Structures"
-msgstr ""
+msgstr "Структуры данных"
 
 #: ../../tutorial/datastructures.rst:7
 msgid ""
 "This chapter describes some things you've learned about already in more "
 "detail, and adds some new things as well."
 msgstr ""
+"Данная глава описывает некоторые вещи, которые вы уже изучили, более "
+"детально, и добавляет кое-что новое."
 
 #: ../../tutorial/datastructures.rst:13
 msgid "More on Lists"
-msgstr ""
+msgstr "Подробнее о списках"
 
 #: ../../tutorial/datastructures.rst:15
 msgid ""
 "The :ref:`list <typesseq-list>` data type has some more methods. Here are "
 "all of the methods of list objects:"
 msgstr ""
+"Тип данных :ref:`list <typesseq-list>` имеет ещё несколько методов. Здесь "
+"перечислены все методы списков:"
 
 #: ../../tutorial/datastructures.rst:21
 msgid "Add an item to the end of the list.  Similar to ``a[len(a):] = [x]``."
-msgstr ""
+msgstr "Добавить элемент в конец списка. Аналогично ``a[len(a):] = [x]``."
 
 #: ../../tutorial/datastructures.rst:27
 msgid ""
 "Extend the list by appending all the items from the iterable.  Similar to "
 "``a[len(a):] = iterable``."
 msgstr ""
+"Расширить список, добавив все элементы из итерируемого объекта. Аналогично "
+"``a[len(a):] = iterable``."
 
 #: ../../tutorial/datastructures.rst:34
 msgid ""
@@ -57,12 +64,18 @@ msgid ""
 "element before which to insert, so ``a.insert(0, x)`` inserts at the front "
 "of the list, and ``a.insert(len(a), x)`` is equivalent to ``a.append(x)``."
 msgstr ""
+"Вставить элемент на определенную позицию. Первый аргумент — это индекс "
+"элемента, перед которым происходит вставка, таким образом ``a.insert(0, x)``"
+" поместит элемент в начало списка, а ``a.insert(len(a), x)`` эквивалентно  "
+"``a.append(x)``."
 
 #: ../../tutorial/datastructures.rst:42
 msgid ""
 "Remove the first item from the list whose value is equal to *x*.  It raises "
 "a :exc:`ValueError` if there is no such item."
 msgstr ""
+"Удалить первый элемент из списка, чьё значение равно *x*.  Возбуждает "
+":exc:`ValueError` если такого элемента нет."
 
 #: ../../tutorial/datastructures.rst:49
 msgid ""
@@ -71,16 +84,22 @@ msgid ""
 "list. It raises an :exc:`IndexError` if the list is empty or the index is "
 "outside the list range."
 msgstr ""
+"Удалить элемент в заданной позиции списка и вернуть его. Если индекс не "
+"указан, ``a.pop()`` удаляет и возвращает последний элемент списка. "
+"Возбуждает :exc:`IndexError`, если список пуст или индекс находится за "
+"пределами допустимого диапазона."
 
 #: ../../tutorial/datastructures.rst:58
 msgid "Remove all items from the list.  Similar to ``del a[:]``."
-msgstr ""
+msgstr "Удалить все элементы из списка. Аналогично ``del a[:]``."
 
 #: ../../tutorial/datastructures.rst:64
 msgid ""
 "Return zero-based index of the first occurrence of *x* in the list. Raises a"
 " :exc:`ValueError` if there is no such item."
 msgstr ""
+"Вернуть индекс (при нумерации с нуля) первого вхождения *x* в список. "
+"Возбуждает :exc:`ValueError`, если такого элемента в списке нет."
 
 #: ../../tutorial/datastructures.rst:67
 msgid ""
@@ -89,28 +108,34 @@ msgid ""
 " list.  The returned index is computed relative to the beginning of the full"
 " sequence rather than the *start* argument."
 msgstr ""
+"Необязательные аргументы *start* и *end* интерпретируются так же, как в "
+"срезах, и используются чтобы ограничить поиск конкретной "
+"подпоследовательностью списка. Возвращаемый индекс рассчитывается "
+"относительно начала полной последовательности, а не аргумента *start*."
 
 #: ../../tutorial/datastructures.rst:76
 msgid "Return the number of times *x* appears in the list."
-msgstr ""
+msgstr "Вернуть количество раз, которое *x* появляется в списке."
 
 #: ../../tutorial/datastructures.rst:82
 msgid ""
 "Sort the items of the list in place (the arguments can be used for sort "
 "customization, see :func:`sorted` for their explanation)."
 msgstr ""
+"Отсортировать элементы списка на месте (аргументы можно использовать для "
+"настройки сортировки, смотри :func:`sorted` для их пояснения)."
 
 #: ../../tutorial/datastructures.rst:89
 msgid "Reverse the elements of the list in place."
-msgstr ""
+msgstr "Развернуть элементы списка на месте."
 
 #: ../../tutorial/datastructures.rst:95
 msgid "Return a shallow copy of the list.  Similar to ``a[:]``."
-msgstr ""
+msgstr "Вернуть неглубокую копию списка. Аналогично ``a[:]``."
 
 #: ../../tutorial/datastructures.rst:98
 msgid "An example that uses most of the list methods::"
-msgstr ""
+msgstr "Пример, который использует большинство методов списка::"
 
 #: ../../tutorial/datastructures.rst:100
 msgid ""
@@ -135,6 +160,26 @@ msgid ""
 ">>> fruits.pop()\n"
 "'pear'"
 msgstr ""
+">>> fruits = ['апельсин', 'яблоко', 'груша', 'банан', 'киви', 'яблоко', 'банан']\n"
+">>> fruits.count('яблоко')\n"
+"2\n"
+">>> fruits.count('мандарин')\n"
+"0\n"
+">>> fruits.index('банан')\n"
+"3\n"
+">>> fruits.index('банан', 4)  # Найти следующий 'банан', начиная с позиции 4\n"
+"6\n"
+">>> fruits.reverse()\n"
+">>> fruits\n"
+"['банан', 'яблоко', 'киви', 'банан', 'груша', 'яблоко', 'апельсин']\n"
+">>> fruits.append('виноград')\n"
+">>> fruits\n"
+"['банан', 'яблоко', 'киви', 'банан', 'груша', 'яблоко', 'апельсин', 'виноград']\n"
+">>> fruits.sort()\n"
+">>> fruits\n"
+"['апельсин', 'банан', 'банан', 'виноград', 'груша', 'киви', 'яблоко', 'яблоко']\n"
+">>> fruits.pop()\n"
+"'яблоко'"
 
 #: ../../tutorial/datastructures.rst:121
 msgid ""
@@ -143,6 +188,10 @@ msgid ""
 "default ``None``. [#]_  This is a design principle for all mutable data "
 "structures in Python."
 msgstr ""
+"Вы могли заметить, что методы вроде ``insert``, ``remove`` или ``sort``, "
+"которые изменяют список, не выводят возвращаемого значения — они возвращают "
+"значение по умолчанию ``None``. [#]_ Такой принцип использовался при "
+"проектировании всех изменяемых структур данных в Python."
 
 #: ../../tutorial/datastructures.rst:126
 msgid ""
@@ -152,10 +201,16 @@ msgid ""
 "other types.  Also, there are some types that don't have a defined ordering "
 "relation.  For example, ``3+4j < 5+7j`` isn't a valid comparison."
 msgstr ""
+"Еще одна вещь, на которую стоит обратить внимание — не все данные можно "
+"отсортировать или сравнить. Например, ``[None, 'hello', 10]`` невозможно "
+"отсортировать, поскольку целые числа нельзя сравнивать со строками, а "
+"``None`` нельзя сравнивать с другими типами. Кроме того, существуют типы "
+"данных, которые не имеют определённого отношения порядка. Например, ``3+4j <"
+" 5+7j`` не является допустимым сравнением."
 
 #: ../../tutorial/datastructures.rst:137
 msgid "Using Lists as Stacks"
-msgstr ""
+msgstr "Использование списка в качестве стека"
 
 #: ../../tutorial/datastructures.rst:142
 msgid ""

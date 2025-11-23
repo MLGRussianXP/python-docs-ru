@@ -5,6 +5,7 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-21 14:14+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,6 +37,15 @@ msgid ""
 "  You may also want to use a handy function that you've written in several "
 "programs without copying its definition into each program."
 msgstr ""
+"Если вы выйдете из интерпретатора Python и войдёте в него снова, сделанные "
+"вами определения (функции и переменные) будут потеряны. Поэтому, если вы "
+"хотите написать более длинную программу, вам лучше использовать текстовый "
+"редактор, чтобы подготовить ввод для интерпретатора, и запустить его с этим "
+"файлом в качестве входных данных. Это называется созданием *скрипта*. По "
+"мере того, как ваша программа становится длиннее, вы можете разделить ее на "
+"несколько файлов для упрощения обслуживания. Вы также можете использовать "
+"удобную функцию, которую вы написали в нескольких программах, не копируя ее "
+"определение в каждую программу."
 
 #: ../../tutorial/modules.rst:16
 msgid ""
@@ -45,6 +55,12 @@ msgid ""
 "modules or into the *main* module (the collection of variables that you have"
 " access to in a script executed at the top level and in calculator mode)."
 msgstr ""
+"Чтобы поддержать это, в Python есть способ поместить определения в файл и "
+"использовать их в скрипте или в интерактивном экземпляре интерпретатора. "
+"Такой файл называется *модулем*; определения из модуля могут быть "
+"*импортированы* в другие модули или в *главный* модуль (набор переменных, к "
+"которым у вас есть доступ в скрипте, выполняемом на верхнем уровне и в "
+"режиме калькулятора)."
 
 #: ../../tutorial/modules.rst:22
 msgid ""
@@ -55,6 +71,11 @@ msgid ""
 "to create a file called :file:`fibo.py` in the current directory with the "
 "following contents::"
 msgstr ""
+"Модуль — это файл, содержащий определения и инструкции Python. Имя файла — "
+"это имя модуля с суффиксом :file:`.py`. Внутри модуля его имя (в виде "
+"строки) доступно как значение глобальной переменной ``__name__``. Например, "
+"используйте ваш любимый текстовый редактор, чтобы создать файл с именем "
+":file:`fibo.py` в текущем каталоге со следующим содержимым:"
 
 #: ../../tutorial/modules.rst:28
 msgid ""
@@ -77,16 +98,36 @@ msgid ""
 "        a, b = b, a+b\n"
 "    return result"
 msgstr ""
+"# Модуль чисел Фибоначчи\n"
+"\n"
+"def fib(n):\n"
+"    \"\"\"Вывести ряд Фибоначчи до n.\"\"\"\n"
+"    a, b = 0, 1\n"
+"    while a < n:\n"
+"        print(a, end=' ')\n"
+"        a, b = b, a+b\n"
+"    print()\n"
+"\n"
+"def fib2(n):\n"
+"    \"\"\"Вернуть ряд Фибоначчи до n.\"\"\"\n"
+"    result = []\n"
+"    a, b = 0, 1\n"
+"    while a < n:\n"
+"        result.append(a)\n"
+"        a, b = b, a+b\n"
+"    return result"
 
 #: ../../tutorial/modules.rst:47
 msgid ""
 "Now enter the Python interpreter and import this module with the following "
 "command::"
 msgstr ""
+"Теперь запустите интерпретатор Python и импортируйте этот модуль с помощью "
+"следующей команды:"
 
 #: ../../tutorial/modules.rst:50
 msgid ">>> import fibo"
-msgstr ""
+msgstr ">>> import fibo"
 
 #: ../../tutorial/modules.rst:52
 msgid ""
@@ -95,6 +136,10 @@ msgid ""
 "it only adds the module name ``fibo`` there. Using the module name you can "
 "access the functions::"
 msgstr ""
+"Эта команда не добавляет имена функций, определенных в ``fibo``, "
+"непосредственно в текущее :term:`пространство имён` (подробности см. "
+":ref:`tut-scopes`) — она лишь добавляет туда имя модуля ``fibo``. Используя "
+"имя модуля, вы можете получить доступ к функциям::"
 
 #: ../../tutorial/modules.rst:57
 msgid ""
@@ -105,11 +150,19 @@ msgid ""
 ">>> fibo.__name__\n"
 "'fibo'"
 msgstr ""
+">>> fibo.fib(1000)\n"
+"0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987\n"
+">>> fibo.fib2(100)\n"
+"[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\n"
+">>> fibo.__name__\n"
+"'fibo'"
 
 #: ../../tutorial/modules.rst:64
 msgid ""
 "If you intend to use a function often you can assign it to a local name::"
 msgstr ""
+"Если вы собираетесь часто использовать функцию, вы можете присвоить её "
+"локальному имени:"
 
 #: ../../tutorial/modules.rst:66
 msgid ""
@@ -117,6 +170,9 @@ msgid ""
 ">>> fib(500)\n"
 "0 1 1 2 3 5 8 13 21 34 55 89 144 233 377"
 msgstr ""
+">>> fib = fibo.fib\n"
+">>> fib(500)\n"
+"0 1 1 2 3 5 8 13 21 34 55 89 144 233 377"
 
 #: ../../tutorial/modules.rst:74
 msgid "More on Modules"

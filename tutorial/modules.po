@@ -489,7 +489,7 @@ msgstr ""
 
 #: ../../tutorial/modules.rst:221
 msgid "\"Compiled\" Python files"
-msgstr ""
+msgstr "«Скомпилированные» файлы Python"
 
 #: ../../tutorial/modules.rst:223
 msgid ""

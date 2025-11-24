@@ -313,6 +313,8 @@ msgstr ""
 msgid ""
 "It can also be used when utilising :keyword:`from` with similar effects::"
 msgstr ""
+"Это также можно использовать с :keyword:`from`, что даёт аналогичный "
+"эффект::"
 
 #: ../../tutorial/modules.rst:132
 msgid ""
@@ -332,18 +334,24 @@ msgid ""
 "use :func:`importlib.reload`, e.g. ``import importlib; "
 "importlib.reload(modulename)``."
 msgstr ""
+"По соображениям эффективности каждый модуль импортируется только один раз за"
+" сеанс интерпретатора. Поэтому, если вы меняете свои модули, вы должны "
+"перезапустить интерпретатор — или, если вы хотите протестировать в "
+"интерактивном режиме только один модуль, использовать "
+":func:`importlib.reload`, например ``import importlib; importlib.reload(имя "
+"модуля)``."
 
 #: ../../tutorial/modules.rst:149
 msgid "Executing modules as scripts"
-msgstr ""
+msgstr "Выполнение модулей как скриптов"
 
 #: ../../tutorial/modules.rst:151
 msgid "When you run a Python module with ::"
-msgstr ""
+msgstr "Когда вы запускаете модуль Python с помощью ::"
 
 #: ../../tutorial/modules.rst:153
 msgid "python fibo.py <arguments>"
-msgstr ""
+msgstr "python fibo.py <arguments>"
 
 #: ../../tutorial/modules.rst:155
 msgid ""
@@ -351,6 +359,9 @@ msgid ""
 "with the ``__name__`` set to ``\"__main__\"``.  That means that by adding "
 "this code at the end of your module::"
 msgstr ""
+"код в модуле будет выполнен так же, как если бы вы его импортировали, но с "
+"параметром ``__name__``, установленным в ``\"__main__\"``. Это означает, что"
+" добавив этот код в конец вашего модуля:"
 
 #: ../../tutorial/modules.rst:159
 msgid ""
@@ -358,6 +369,9 @@ msgid ""
 "    import sys\n"
 "    fib(int(sys.argv[1]))"
 msgstr ""
+"if __name__ == \"__main__\":\n"
+"    import sys\n"
+"    fib(int(sys.argv[1]))"
 
 #: ../../tutorial/modules.rst:163
 msgid ""
@@ -365,22 +379,29 @@ msgid ""
 "because the code that parses the command line only runs if the module is "
 "executed as the \"main\" file:"
 msgstr ""
+"вы можете сделать файл пригодным как в качестве скрипта, так и в качестве "
+"импортируемого модуля, поскольку код, анализирующий аргументы командной "
+"строки, запускается только если модуль выполняется как «основной» файл:"
 
 #: ../../tutorial/modules.rst:167
 msgid ""
 "$ python fibo.py 50\n"
 "0 1 1 2 3 5 8 13 21 34"
 msgstr ""
+"$ python fibo.py 50\n"
+"0 1 1 2 3 5 8 13 21 34"
 
 #: ../../tutorial/modules.rst:172
 msgid "If the module is imported, the code is not run::"
-msgstr ""
+msgstr "Если модуль импортирован, этот код не выполняется::"
 
 #: ../../tutorial/modules.rst:174
 msgid ""
 ">>> import fibo\n"
 ">>>"
 msgstr ""
+">>> import fibo\n"
+">>>"
 
 #: ../../tutorial/modules.rst:177
 msgid ""
@@ -388,10 +409,13 @@ msgid ""
 "module, or for testing purposes (running the module as a script executes a "
 "test suite)."
 msgstr ""
+"Это часто используется либо для предоставления удобного пользовательского "
+"интерфейса к модулю, либо для целей тестирования (запуск модуля как скрипта "
+"запускает набор тестов)."
 
 #: ../../tutorial/modules.rst:184
 msgid "The Module Search Path"
-msgstr ""
+msgstr "Путь поиска модулей"
 
 #: ../../tutorial/modules.rst:188
 msgid ""
@@ -401,24 +425,36 @@ msgid ""
 "named :file:`spam.py` in a list of directories given by the variable "
 ":data:`sys.path`.  :data:`sys.path` is initialized from these locations:"
 msgstr ""
+"Когда импортируется модуль с именем :mod:`!spam`, интерпретатор сначала ищет"
+" встроенный модуль с таким именем. Имена этих модулей перечислены в "
+":data:`sys.builtin_module_names`. Если его там нет, интерпретатор ищет файл "
+"с именем :file:`spam.py` в каталогах, список которых задаётся переменной "
+":data:`sys.path`. :data:`sys.path` инициализируется из следующих источников:"
 
 #: ../../tutorial/modules.rst:194
 msgid ""
 "The directory containing the input script (or the current directory when no "
 "file is specified)."
 msgstr ""
+"Каталог, содержащий входной скрипт (или текущий каталог, если файл не "
+"указан)."
 
 #: ../../tutorial/modules.rst:196
 msgid ""
 ":envvar:`PYTHONPATH` (a list of directory names, with the same syntax as the"
 " shell variable :envvar:`PATH`)."
 msgstr ""
+":envvar:`PYTHONPATH` (список имён каталогов с тем же синтаксисом, что и "
+"переменная окружения :envvar:`PATH`)."
 
 #: ../../tutorial/modules.rst:198
 msgid ""
 "The installation-dependent default (by convention including a ``site-"
 "packages`` directory, handled by the :mod:`site` module)."
 msgstr ""
+"Значение по умолчанию, определяемое способом установки Python (обычно "
+"включает каталог ``site-packages``, который обрабатывается модулем "
+":mod:`site`)."
 
 #: ../../tutorial/modules.rst:201
 msgid "More details are at :ref:`sys-path-init`."

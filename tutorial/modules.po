@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-21 14:14+0000\n"
+"POT-Creation-Date: 2025-11-23 14:12+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -176,7 +176,7 @@ msgstr ""
 
 #: ../../tutorial/modules.rst:74
 msgid "More on Modules"
-msgstr ""
+msgstr "Подробнее о модулях"
 
 #: ../../tutorial/modules.rst:76
 msgid ""
@@ -185,6 +185,10 @@ msgid ""
 "only the *first* time the module name is encountered in an import statement."
 " [#]_ (They are also run if the file is executed as a script.)"
 msgstr ""
+"Модуль может содержать исполняемые инструкции, а также определения функций. "
+"Эти инструкции предназначены для инициализации модуля. Они выполняются "
+"только в *первый* раз, когда имя модуля встречается в инструкции импорта. "
+"[#]_ (Они также выполняются, если файл выполняется как скрипт.)"
 
 #: ../../tutorial/modules.rst:81
 msgid ""

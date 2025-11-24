@@ -458,7 +458,7 @@ msgstr ""
 
 #: ../../tutorial/modules.rst:201
 msgid "More details are at :ref:`sys-path-init`."
-msgstr ""
+msgstr "Более подробная информация приведена в :ref:`sys-path-init`."
 
 #: ../../tutorial/modules.rst:204
 msgid ""
@@ -466,6 +466,10 @@ msgid ""
 "script is calculated after the symlink is followed. In other words the "
 "directory containing the symlink is **not** added to the module search path."
 msgstr ""
+"В файловых системах, поддерживающих символические ссылки, каталог, "
+"содержащий входной скрипт, определяется после перехода по символической "
+"ссылке. Другими словами, каталог, содержащий символическую ссылку, **не** "
+"добавляется в путь поиска модулей."
 
 #: ../../tutorial/modules.rst:208
 msgid ""
@@ -476,6 +480,12 @@ msgid ""
 "library directory. This is an error unless the replacement is intended.  See"
 " section :ref:`tut-standardmodules` for more information."
 msgstr ""
+"После инициализации Python-программы могут изменять :data:`sys.path` "
+"вручную. Кроме того, каталог, содержащий выполняемый скрипт, помещается в "
+"начало пути поиска модулей — перед путями стандартной библиотеки. Из-за "
+"этого файлы из этого каталога будут загружаться вместо библиотечных модулей "
+"с тем же именем. Такая подмена считается ошибкой, если она не была "
+"намеренной. Подробнее см. раздел :ref:`tut-standardmodules`."
 
 #: ../../tutorial/modules.rst:221
 msgid "\"Compiled\" Python files"

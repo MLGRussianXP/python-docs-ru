@@ -502,6 +502,14 @@ msgid ""
 "allows compiled modules from different releases and different versions of "
 "Python to coexist."
 msgstr ""
+"Чтобы ускорить загрузку модулей, Python кэширует скомпилированную версию "
+"каждого модуля в каталоге ``__pycache__`` под именем "
+":file:`module.{version}.pyc`, где версия кодирует формат скомпилированного "
+"файла. Обычно она содержит номер версии Python. Например, в CPython 3.3 "
+"скомпилированная версия spam.py будет закэширована как "
+"``__pycache__/spam.cpython-33.pyc``. Такое соглашение об именах позволяет "
+"скомпилированным модулям из разных выпусков и разных версий Python "
+"существовать вместе."
 
 #: ../../tutorial/modules.rst:231
 msgid ""
@@ -511,6 +519,11 @@ msgid ""
 "independent, so the same library can be shared among systems with different "
 "architectures."
 msgstr ""
+"Python сверяет даты изменения исходного файла и его скомпилированной версии,"
+" чтобы понять, устарела ли она и нужно ли её перекомпилировать. Это "
+"полностью автоматический процесс. Скомпилированные модули также не зависят "
+"от платформы, поэтому одну и ту же библиотеку можно использовать на системах"
+" с разной архитектурой."
 
 #: ../../tutorial/modules.rst:236
 msgid ""
@@ -521,10 +534,16 @@ msgid ""
 "distribution, the compiled module must be in the source directory, and there"
 " must not be a source module."
 msgstr ""
+"Python не проверяет кэш в двух случаях. Во-первых, он всегда перекомпилирует"
+" модуль, загруженный напрямую из командной строки, и не сохраняет результат."
+" Во-вторых, он не проверяет кэш, если отсутствует исходный файл. Чтобы "
+"поддерживать распространение без исходников (только в виде скомпилированных "
+"файлов), скомпилированный модуль должен находиться в каталоге исходников, и "
+"при этом исходного файла быть не должно."
 
 #: ../../tutorial/modules.rst:243
 msgid "Some tips for experts:"
-msgstr ""
+msgstr "Несколько советов для экспертов:"
 
 #: ../../tutorial/modules.rst:245
 msgid ""
@@ -536,6 +555,13 @@ msgid ""
 "have an ``opt-`` tag and are usually smaller.  Future releases may change "
 "the effects of optimization."
 msgstr ""
+"Вы можете использовать опции :option:`-O` или :option:`-OO` при запуске "
+"Python, чтобы уменьшить размер скомпилированного модуля. Опция ``-O`` "
+"удаляет инструкции assert, а ``-OO`` удаляет и assert, и строки __doc__. "
+"Поскольку некоторые программы могут полагаться на их наличие, использовать "
+"эти опции стоит только если вы точно понимаете последствия. "
+"«Оптимизированные» модули имеют тег ``opt-`` и обычно меньше по размеру. В "
+"будущих выпусках поведение оптимизации может измениться."
 
 #: ../../tutorial/modules.rst:253
 msgid ""
@@ -543,22 +569,28 @@ msgid ""
 "when it is read from a ``.py`` file; the only thing that's faster about "
 "``.pyc`` files is the speed with which they are loaded."
 msgstr ""
+"Программа не работает быстрее при запуске из файла ``.pyc``, чем при запуске"
+" из ``.py``. Отличие только в том, что файлы ``.pyc`` загружаются быстрее."
 
 #: ../../tutorial/modules.rst:257
 msgid ""
 "The module :mod:`compileall` can create .pyc files for all modules in a "
 "directory."
 msgstr ""
+"Модуль :mod:`compileall` может создать файлы .pyc для всех модулей в "
+"каталоге."
 
 #: ../../tutorial/modules.rst:260
 msgid ""
 "There is more detail on this process, including a flow chart of the "
 "decisions, in :pep:`3147`."
 msgstr ""
+"Подробности этого процесса, включая блок-схему принятия решений, приведены в"
+" :pep:`3147`."
 
 #: ../../tutorial/modules.rst:267
 msgid "Standard Modules"
-msgstr ""
+msgstr "Стандартные модули"
 
 #: ../../tutorial/modules.rst:271
 msgid ""

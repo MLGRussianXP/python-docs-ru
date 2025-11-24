@@ -215,12 +215,19 @@ msgid ""
 "a module (outside any functions or classes), are added to the module's "
 "global namespace."
 msgstr ""
+"Модули могут импортировать другие модули. Обычно принято, но не обязательно,"
+" размещать все инструкции :keyword:`import` в начале модуля (или скрипта, "
+"если на то пошло). Имена модулей, которые были импортированы на верхнем "
+"уровне модуля (вне каких-либо функций или классов), добавляются в его "
+"глобальное пространство имён."
 
 #: ../../tutorial/modules.rst:93
 msgid ""
 "There is a variant of the :keyword:`import` statement that imports names "
 "from a module directly into the importing module's namespace.  For example::"
 msgstr ""
+"Существует вариант инструкции :keyword:`import`, который импортирует имена "
+"из модуля прямо в пространство имён импортирующего модуля. Например::"
 
 #: ../../tutorial/modules.rst:96
 msgid ""
@@ -228,16 +235,21 @@ msgid ""
 ">>> fib(500)\n"
 "0 1 1 2 3 5 8 13 21 34 55 89 144 233 377"
 msgstr ""
+">>> from fibo import fib, fib2\n"
+">>> fib(500)\n"
+"0 1 1 2 3 5 8 13 21 34 55 89 144 233 377"
 
 #: ../../tutorial/modules.rst:100
 msgid ""
 "This does not introduce the module name from which the imports are taken in "
 "the local namespace (so in the example, ``fibo`` is not defined)."
 msgstr ""
+"Это не добавляет имя модуля, из которого осуществляется импорт, в локальном "
+"пространстве имён (поэтому в примере ``fibo`` не определено)."
 
 #: ../../tutorial/modules.rst:103
 msgid "There is even a variant to import all names that a module defines::"
-msgstr ""
+msgstr "Есть даже вариант импортировать все имена, определённые в модуле:"
 
 #: ../../tutorial/modules.rst:105
 msgid ""
@@ -245,6 +257,9 @@ msgid ""
 ">>> fib(500)\n"
 "0 1 1 2 3 5 8 13 21 34 55 89 144 233 377"
 msgstr ""
+">>> from fibo import *\n"
+">>> fib(500)\n"
+"0 1 1 2 3 5 8 13 21 34 55 89 144 233 377"
 
 #: ../../tutorial/modules.rst:109
 msgid ""
@@ -253,6 +268,10 @@ msgid ""
 "an unknown set of names into the interpreter, possibly hiding some things "
 "you have already defined."
 msgstr ""
+"При этом будут импортированы все имена, кроме тех, которые начинаются с "
+"подчеркивания (``_``). В большинстве случаев Python-программисты не "
+"используют эту возможность, поскольку она добавляет в интерпретатор "
+"неизвестный набор имён и может скрыть те, что вы уже определили."
 
 #: ../../tutorial/modules.rst:114
 msgid ""
@@ -260,12 +279,17 @@ msgid ""
 "package is frowned upon, since it often causes poorly readable code. "
 "However, it is okay to use it to save typing in interactive sessions."
 msgstr ""
+"Обратите внимание, что в целом практика импорта ``*`` из модуля или пакета "
+"не одобряется, поскольку часто приводит к плохо читаемому коду. Однако в "
+"интерактивных сеансах это допустимо, чтобы сократить объём ввода."
 
 #: ../../tutorial/modules.rst:118
 msgid ""
 "If the module name is followed by :keyword:`!as`, then the name following "
 ":keyword:`!as` is bound directly to the imported module."
 msgstr ""
+"Если после имени модуля указано :keyword:`!as`, то имя, следующее за "
+":keyword:`!as`, привязывается непосредственно к импортированному модулю."
 
 #: ../../tutorial/modules.rst:123
 msgid ""
@@ -273,12 +297,17 @@ msgid ""
 ">>> fib.fib(500)\n"
 "0 1 1 2 3 5 8 13 21 34 55 89 144 233 377"
 msgstr ""
+">>> import fibo as fib\n"
+">>> fib.fib(500)\n"
+"0 1 1 2 3 5 8 13 21 34 55 89 144 233 377"
 
 #: ../../tutorial/modules.rst:127
 msgid ""
 "This is effectively importing the module in the same way that ``import "
 "fibo`` will do, with the only difference of it being available as ``fib``."
 msgstr ""
+"Это фактически импортирует модуль так же, как и ``import fibo``, с той лишь "
+"разницей, что он доступен как ``fib``."
 
 #: ../../tutorial/modules.rst:130
 msgid ""
@@ -291,6 +320,9 @@ msgid ""
 ">>> fibonacci(500)\n"
 "0 1 1 2 3 5 8 13 21 34 55 89 144 233 377"
 msgstr ""
+">>> from fibo import fib as fibonacci\n"
+">>> fibonacci(500)\n"
+"0 1 1 2 3 5 8 13 21 34 55 89 144 233 377"
 
 #: ../../tutorial/modules.rst:139
 msgid ""

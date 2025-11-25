@@ -1200,6 +1200,9 @@ msgid ""
 "certain patterns when you use ``import *``, it is still considered bad "
 "practice in production code."
 msgstr ""
+"Хотя некоторые модули спроектированы так, чтобы экспортировать только имена,"
+" соответствующие определённым шаблонам при использовании ``import *``, это "
+"всё ещё считается плохой практикой в промышленном коде."
 
 #: ../../tutorial/modules.rst:556
 msgid ""
@@ -1208,10 +1211,14 @@ msgid ""
 "importing module needs to use submodules with the same name from different "
 "packages."
 msgstr ""
+"Помните, нет ничего плохого в использовании ``from package import "
+"specific_submodule``! Фактически, это рекомендуемая нотация, если только "
+"импортирующему модулю не требуется использовать подмодули с одинаковыми "
+"именами из разных пакетов."
 
 #: ../../tutorial/modules.rst:565
 msgid "Intra-package References"
-msgstr ""
+msgstr "Внутрипакетные ссылки"
 
 #: ../../tutorial/modules.rst:567
 msgid ""
@@ -1222,6 +1229,12 @@ msgid ""
 ":mod:`!sound.effects` package, it can use ``from sound.effects import "
 "echo``."
 msgstr ""
+"Когда пакеты структурированы в подпакеты (как в примере с пакетом "
+":mod:`!sound`), вы можете использовать абсолютный импорт для ссылки на "
+"подмодули соседних пакетов. Например, если модулю "
+":mod:`!sound.filters.vocoder` необходимо использовать модуль :mod:`!echo` в "
+"пакете :mod:`!sound.effects`, он может использовать ``from sound.effects "
+"import echo``."
 
 #: ../../tutorial/modules.rst:573
 msgid ""
@@ -1230,6 +1243,10 @@ msgid ""
 "current and parent packages involved in the relative import.  From the "
 ":mod:`!surround` module for example, you might use::"
 msgstr ""
+"Также вы можете использовать относительные импорты с инструкцией в форме "
+"``from module import name``. Такие импорты используют ведущие точки для "
+"указания текущего и родительских пакетов, участвующих в относительном "
+"импорте. Например, в модуле :mod:`!surround` вы можете написать::"
 
 #: ../../tutorial/modules.rst:578
 msgid ""
@@ -1237,6 +1254,9 @@ msgid ""
 "from .. import formats\n"
 "from ..filters import equalizer"
 msgstr ""
+"from . import echo\n"
+"from .. import formats\n"
+"from ..filters import equalizer"
 
 #: ../../tutorial/modules.rst:582
 msgid ""
@@ -1245,10 +1265,14 @@ msgid ""
 " use as the main module of a Python application must always use absolute "
 "imports."
 msgstr ""
+"Обратите внимание, что относительные импорты основываются на имени пакета "
+"текущего модуля. Поскольку у главного модуля нет пакета, модули, "
+"предназначенные для использования в качестве главного модуля Python-"
+"приложения, всегда должны использовать абсолютные импорты."
 
 #: ../../tutorial/modules.rst:588
 msgid "Packages in Multiple Directories"
-msgstr ""
+msgstr "Пакеты в нескольких каталогах"
 
 #: ../../tutorial/modules.rst:590
 msgid ""

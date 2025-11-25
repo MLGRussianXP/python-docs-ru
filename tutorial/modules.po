@@ -1189,6 +1189,10 @@ msgid ""
 ":mod:`!sound.effects` package when the ``from...import`` statement is "
 "executed.  (This also works when ``__all__`` is defined.)"
 msgstr ""
+"В этом примере модули :mod:`!echo` и :mod:`!surround` импортируются в "
+"текущее пространство имён, потому что они определены в пакете "
+":mod:`!sound.effects` на момент выполнения инструкции ``from...import``. "
+"(Это работает и в том случае, если ``__all__`` определён.)"
 
 #: ../../tutorial/modules.rst:552
 msgid ""

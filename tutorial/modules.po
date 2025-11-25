@@ -1282,16 +1282,23 @@ msgid ""
 "that file is executed.  This variable can be modified; doing so affects "
 "future searches for modules and subpackages contained in the package."
 msgstr ""
+"Пакеты поддерживают ещё один специальный атрибут: :attr:`~module.__path__`. "
+"Он инициализируется как :term:`последовательность` строк, содержащих имя "
+"каталога, в котором находится файл :file:`__init__.py` пакета, прежде чем "
+"код в этом файле будет выполнен. Эту переменную можно изменить; это повлияет"
+" на будущий поиск модулей и подпакетов, содержащихся в пакете."
 
 #: ../../tutorial/modules.rst:597
 msgid ""
 "While this feature is not often needed, it can be used to extend the set of "
 "modules found in a package."
 msgstr ""
+"Хотя эта возможность требуется нечасто, она может быть использована для "
+"расширения набора модулей, доступных в пакете."
 
 #: ../../tutorial/modules.rst:602
 msgid "Footnotes"
-msgstr ""
+msgstr "Сноски"
 
 #: ../../tutorial/modules.rst:603
 msgid ""
@@ -1299,28 +1306,31 @@ msgid ""
 "execution of a module-level function definition adds the function name to "
 "the module's global namespace."
 msgstr ""
+"На самом деле, определения функций также являются «инструкциями», которые "
+"«выполняются»; выполнение определения функции на уровне модуля добавляет имя"
+" функции в глобальное пространство имён модуля."
 
 #: ../../tutorial/modules.rst:186 ../../tutorial/modules.rst:269
 #: ../../tutorial/modules.rst:350
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../tutorial/modules.rst:186
 msgid "search"
-msgstr ""
+msgstr "поиск"
 
 #: ../../tutorial/modules.rst:186
 msgid "path"
-msgstr ""
+msgstr "путь"
 
 #: ../../tutorial/modules.rst:269
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 #: ../../tutorial/modules.rst:350
 msgid "builtins"
-msgstr ""
+msgstr "встроенные"
 
 #: ../../tutorial/modules.rst:495
 msgid "__all__"
-msgstr ""
+msgstr "__all__"

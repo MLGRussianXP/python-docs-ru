@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-23 14:12+0000\n"
+"POT-Creation-Date: 2025-11-25 14:15+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -943,6 +943,8 @@ msgid ""
 "When importing the package, Python searches through the directories on "
 "``sys.path`` looking for the package subdirectory."
 msgstr ""
+"При импорте пакета Python просматривает каталоги из ``sys.path`` в поисках "
+"подкаталога пакета."
 
 #: ../../tutorial/modules.rst:441
 msgid ""
@@ -954,64 +956,81 @@ msgid ""
 "can just be an empty file, but it can also execute initialization code for "
 "the package or set the ``__all__`` variable, described later."
 msgstr ""
+"Файлы :file:`__init__.py` нужны для того, чтобы Python рассматривал "
+"каталоги, содержащие этот файл, как пакеты (если только не используется "
+":term:`пакет пространства имён`, что является относительно продвинутой "
+"возможностью). Это предотвращает ситуацию, когда каталог с обычным именем, "
+"например ``string``, случайно скрывает настоящие модули, находящиеся дальше "
+"в пути поиска модулей. В простейшем случае :file:`__init__.py` может быть "
+"просто пустым файлом, но он также может выполнять код инициализации пакета "
+"или задавать переменную ``__all__``, которая будет описана позже."
 
 #: ../../tutorial/modules.rst:449
 msgid ""
 "Users of the package can import individual modules from the package, for "
 "example::"
 msgstr ""
+"Пользователи пакета могут импортировать отдельные модули из пакета, "
+"например:"
 
 #: ../../tutorial/modules.rst:452
 msgid "import sound.effects.echo"
-msgstr ""
+msgstr "import sound.effects.echo"
 
 #: ../../tutorial/modules.rst:454
 msgid ""
 "This loads the submodule :mod:`!sound.effects.echo`.  It must be referenced "
 "with its full name. ::"
 msgstr ""
+"Это загружает подмодуль :mod:`!sound.effects.echo`. Обращаться к нему нужно "
+"по его полному имени. ::"
 
 #: ../../tutorial/modules.rst:457
 msgid "sound.effects.echo.echofilter(input, output, delay=0.7, atten=4)"
-msgstr ""
+msgstr "sound.effects.echo.echofilter(input, output, delay=0.7, atten=4)"
 
 #: ../../tutorial/modules.rst:459
 msgid "An alternative way of importing the submodule is::"
-msgstr ""
+msgstr "Альтернативный способ импорта подмодуля:"
 
 #: ../../tutorial/modules.rst:461
 msgid "from sound.effects import echo"
-msgstr ""
+msgstr "from sound.effects import echo"
 
 #: ../../tutorial/modules.rst:463
 msgid ""
 "This also loads the submodule :mod:`!echo`, and makes it available without "
 "its package prefix, so it can be used as follows::"
 msgstr ""
+"Это также загружает подмодуль :mod:`!echo` и делает его доступным без "
+"префикса пакета, поэтому его можно использовать следующим образом::"
 
 #: ../../tutorial/modules.rst:466
 msgid "echo.echofilter(input, output, delay=0.7, atten=4)"
-msgstr ""
+msgstr "echo.echofilter(input, output, delay=0.7, atten=4)"
 
 #: ../../tutorial/modules.rst:468
 msgid ""
 "Yet another variation is to import the desired function or variable "
 "directly::"
 msgstr ""
+"Еще один вариант — импортировать нужную функцию или переменную напрямую::"
 
 #: ../../tutorial/modules.rst:470
 msgid "from sound.effects.echo import echofilter"
-msgstr ""
+msgstr "from sound.effects.echo import echofilter"
 
 #: ../../tutorial/modules.rst:472
 msgid ""
 "Again, this loads the submodule :mod:`!echo`, but this makes its function "
 ":func:`!echofilter` directly available::"
 msgstr ""
+"Опять же, это загружает подмодуль :mod:`!echo`, но при этом делает его "
+"функцию :func:`!echofilter` доступной напрямую::"
 
 #: ../../tutorial/modules.rst:475
 msgid "echofilter(input, output, delay=0.7, atten=4)"
-msgstr ""
+msgstr "echofilter(input, output, delay=0.7, atten=4)"
 
 #: ../../tutorial/modules.rst:477
 msgid ""
@@ -1022,6 +1041,12 @@ msgid ""
 "it is a module and attempts to load it.  If it fails to find it, an "
 ":exc:`ImportError` exception is raised."
 msgstr ""
+"Обратите внимание, что при использовании ``from package import item`` этот "
+"item может быть либо подмодулем (или подпакетом) пакета, либо каким-либо "
+"другим именем, определённым в пакете, например, функцией, классом или "
+"переменной. Инструкция ``import`` сначала проверяет, определено ли это имя в"
+" пакете; в противном случае она предполагает, что это модуль, и пытается его"
+" загрузить. Если это не удаётся, возникает исключение :exc:`ImportError`."
 
 #: ../../tutorial/modules.rst:484
 msgid ""
@@ -1030,10 +1055,14 @@ msgid ""
 " a package but can't be a class or function or variable defined in the "
 "previous item."
 msgstr ""
+"Напротив, при использовании синтаксиса типа ``import "
+"item.subitem.subsubitem``, каждый элемент, кроме последнего, должен быть "
+"пакетом. Последний элемент может быть модулем или пакетом, но не может быть "
+"классом, функцией или переменной, определённой в предыдущем элементе."
 
 #: ../../tutorial/modules.rst:493
 msgid "Importing \\* From a Package"
-msgstr ""
+msgstr "Импорт \\* из пакета"
 
 #: ../../tutorial/modules.rst:497
 msgid ""

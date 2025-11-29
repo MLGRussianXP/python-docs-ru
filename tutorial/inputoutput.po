@@ -236,7 +236,7 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:115
 msgid "Formatted String Literals"
-msgstr ""
+msgstr "Форматированные строковые литералы"
 
 #: ../../tutorial/inputoutput.rst:117
 msgid ""
@@ -245,6 +245,9 @@ msgid ""
 "prefixing the string with ``f`` or ``F`` and writing expressions as "
 "``{expression}``."
 msgstr ""
+":ref:`Форматированные строковые литералы <f-strings>` (также называемые "
+"f-строками) позволяют включать значения любых выражений Python в строку, "
+"предваряя её ``f`` или ``F`` и записывая выражение как ``{expression}``."
 
 #: ../../tutorial/inputoutput.rst:122
 msgid ""
@@ -259,6 +262,9 @@ msgid ""
 ">>> print(f'The value of pi is approximately {math.pi:.3f}.')\n"
 "The value of pi is approximately 3.142."
 msgstr ""
+">>> import math\n"
+">>> print(f'Значение π приблизительно равно {math.pi:.3f}.')\n"
+"Значение π приблизительно равно 3.142."
 
 #: ../../tutorial/inputoutput.rst:130
 msgid ""

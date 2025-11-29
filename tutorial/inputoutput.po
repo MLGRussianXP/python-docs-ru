@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:15+0000\n"
+"POT-Creation-Date: 2025-11-29 14:13+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,10 +32,14 @@ msgid ""
 "printed in a human-readable form, or written to a file for future use. This "
 "chapter will discuss some of the possibilities."
 msgstr ""
+"Есть несколько способов представить вывод программы. Данные могут быть "
+"напечатаны в удобочитаемом для человека виде или записаны в файл для "
+"дальнейшего использования. В этой главе рассматриваются разные возможности "
+"ввода и вывода."
 
 #: ../../tutorial/inputoutput.rst:15
 msgid "Fancier Output Formatting"
-msgstr ""
+msgstr "Продвинутое форматирование вывода"
 
 #: ../../tutorial/inputoutput.rst:17
 msgid ""
@@ -44,6 +49,11 @@ msgid ""
 "file can be referenced as ``sys.stdout``. See the Library Reference for more"
 " information on this.)"
 msgstr ""
+"До сих пор мы встречались с двумя способами вывода значений: *инструкциями "
+"выражений* и функцией :func:`print`. (Третий способ — использование метода "
+":meth:`~io.TextIOBase.write` объектов файлов; на стандартный выходной файл "
+"можно ссылаться как на ``sys.stdout``. См. Справочник по библиотеке для "
+"получения дополнительной информации об этом.)"
 
 #: ../../tutorial/inputoutput.rst:22
 msgid ""
@@ -51,6 +61,9 @@ msgid ""
 "simply printing space-separated values. There are several ways to format "
 "output."
 msgstr ""
+"Часто вам захочется иметь больше контроля над выводом, а не просто выводить "
+"значения, разделённые пробелами. Существует несколько способов форматировать"
+" вывод."
 
 #: ../../tutorial/inputoutput.rst:25
 msgid ""
@@ -59,6 +72,11 @@ msgid ""
 "Inside this string, you can write a Python expression between ``{`` and "
 "``}`` characters that can refer to variables or literal values."
 msgstr ""
+"Чтобы использовать :ref:`форматированные строковые литералы <tut-f-"
+"strings>`, поставьте ``f`` или ``F`` перед открывающей одинарной или тройной"
+" кавычкой у строкового литерала. Внутри такой строки можно писать выражение "
+"Python между символами ``{`` и ``}``. Оно может содержать переменные и "
+"другие литералы."
 
 #: ../../tutorial/inputoutput.rst:32
 msgid ""
@@ -67,6 +85,10 @@ msgid ""
 ">>> f'Results of the {year} {event}'\n"
 "'Results of the 2016 Referendum'"
 msgstr ""
+">>> year = 2016\n"
+">>> event = 'Референдум'\n"
+">>> f'Результаты {event} {year}'\n"
+"'Результаты Референдум 2016'"
 
 #: ../../tutorial/inputoutput.rst:37
 msgid ""
@@ -76,6 +98,11 @@ msgid ""
 "need to provide the information to be formatted. In the following code block"
 " there are two examples of how to format variables:"
 msgstr ""
+"Метод строк :meth:`str.format` требует больше ручной работы. Вы по-прежнему "
+"будете использовать ``{`` и ``}``, для обозначения места подстановки "
+"значения, и сможете предоставить подробные директивы форматирования, но вам "
+"также необходимо будет предоставить сами данные для форматирования. В "
+"следующем блоке кода приведены два примера форматирования переменных:"
 
 #: ../../tutorial/inputoutput.rst:46
 msgid ""
@@ -85,6 +112,11 @@ msgid ""
 ">>> '{:-9} YES votes  {:2.2%}'.format(yes_votes, percentage)\n"
 "' 42572654 YES votes  49.67%'"
 msgstr ""
+">>> yes_votes = 42_572_654\n"
+">>> total_votes = 85_705_149\n"
+">>> percentage = yes_votes / total_votes\n"
+">>> '{:-9} голосов ЗА {:2.2%}'.format(yes_votes, percentage)\n"
+"' 42572654 голосов ЗА 49.67%'"
 
 #: ../../tutorial/inputoutput.rst:52
 msgid ""

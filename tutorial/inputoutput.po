@@ -326,6 +326,8 @@ msgid ""
 "expression, an equal sign, then the representation of the evaluated "
 "expression:"
 msgstr ""
+"Спецификатор ``=`` может быть использован для расширения выражения до текста"
+" самого выражения, знака равенства и представления вычисленного выражения."
 
 #: ../../tutorial/inputoutput.rst:160
 msgid ""
@@ -333,20 +335,25 @@ msgid ""
 "information on the ``=`` specifier. For a reference on these format "
 "specifications, see the reference guide for the :ref:`formatspec`."
 msgstr ""
+"См. :ref:`самодокументирующиеся выражения <bpo-36817-whatsnew>` для "
+"получения дополнительной информации о спецификаторе ``=``. Для ссылки на эти"
+" спецификации формата см. руководство по :ref:`formatspec`."
 
 #: ../../tutorial/inputoutput.rst:167
 msgid "The String format() Method"
-msgstr ""
+msgstr "Строковой метод format()"
 
 #: ../../tutorial/inputoutput.rst:169
 msgid "Basic usage of the :meth:`str.format` method looks like this::"
-msgstr ""
+msgstr "Простое использование метода :meth:`str.format` выглядит так::"
 
 #: ../../tutorial/inputoutput.rst:171
 msgid ""
 ">>> print('We are the {} who say \"{}!\"'.format('knights', 'Ni'))\n"
 "We are the knights who say \"Ni!\""
 msgstr ""
+">>> print('Мы — те {}, кто говорит \"{}!\"'.format('рыцари', 'Нет'))\n"
+"Мы — те рыцари, кто говорит \"Нет!\""
 
 #: ../../tutorial/inputoutput.rst:174
 msgid ""
@@ -355,6 +362,10 @@ msgid ""
 " brackets can be used to refer to the position of the object passed into the"
 " :meth:`str.format` method. ::"
 msgstr ""
+"Фигурные скобки и символы внутри них (называемые форматными полями) "
+"заменяются объектами, которые были переданы в метод :meth:`str.format`. "
+"Число в скобках может использоваться для ссылки на позицию объекта, "
+"переданного в метод :meth:`str.format`. ::"
 
 #: ../../tutorial/inputoutput.rst:179
 msgid ""
@@ -363,12 +374,18 @@ msgid ""
 ">>> print('{1} and {0}'.format('spam', 'eggs'))\n"
 "eggs and spam"
 msgstr ""
+">>> print('{0} и {1}'.format('спам', 'яйца'))\n"
+"спам и яйца\n"
+">>> print('{1} и {0}'.format('спам', 'яйца'))\n"
+"яйца и спам"
 
 #: ../../tutorial/inputoutput.rst:184
 msgid ""
 "If keyword arguments are used in the :meth:`str.format` method, their values"
 " are referred to by using the name of the argument. ::"
 msgstr ""
+"Если в метод :meth:`str.format` переданы именованные аргументы, их значения "
+"можно использовать по имени. ::"
 
 #: ../../tutorial/inputoutput.rst:187
 msgid ""
@@ -376,10 +393,15 @@ msgid ""
 "...       food='spam', adjective='absolutely horrible'))\n"
 "This spam is absolutely horrible."
 msgstr ""
+">>> print('Этот {food} просто {adjective}.'.format(\n"
+"...       food='спам', adjective='абсолютно ужасен'))\n"
+"Этот спам просто абсолютно ужасен."
 
 #: ../../tutorial/inputoutput.rst:191
 msgid "Positional and keyword arguments can be arbitrarily combined::"
 msgstr ""
+"Позиционные и именованные аргументы могут быть использованы вместе "
+"произвольным образом::"
 
 #: ../../tutorial/inputoutput.rst:193
 msgid ""
@@ -387,6 +409,9 @@ msgid ""
 "...                                                    other='Georg'))\n"
 "The story of Bill, Manfred, and Georg."
 msgstr ""
+">>> print('В истории оказались {0}, {1} и {other}.'.format('Билл', 'Мэнфред',\n"
+"...                                                    other='Георг'))\n"
+"В истории оказались Билл, Мэнфред и Георг."
 
 #: ../../tutorial/inputoutput.rst:197
 msgid ""
@@ -395,6 +420,10 @@ msgid ""
 "instead of by position.  This can be done by simply passing the dict and "
 "using square brackets ``'[]'`` to access the keys. ::"
 msgstr ""
+"Если у вас очень длинная форматная строка, которую не хочется разбивать, "
+"можно ссылаться на переменные, используемые в форматировании, по имени "
+"вместо позиции. Для этого достаточно передать словарь и использовать "
+"квадратные скобки ``'[]'`` для доступа по ключам. ::"
 
 #: ../../tutorial/inputoutput.rst:202
 msgid ""
@@ -403,12 +432,18 @@ msgid ""
 "...       'Dcab: {0[Dcab]:d}'.format(table))\n"
 "Jack: 4098; Sjoerd: 4127; Dcab: 8637678"
 msgstr ""
+">>> table = {'Шоэрд': 4127, 'Джэк': 4098, 'Дкаб': 8637678}\n"
+">>> print('Джэк: {0[Джэк]:d}; Шоэрд: {0[Шоэрд]:d}; '\n"
+"...       'Дкаб: {0[Дкаб]:d}'.format(table))\n"
+"Джэк: 4098; Шоэрд: 4127; Дкаб: 8637678"
 
 #: ../../tutorial/inputoutput.rst:207
 msgid ""
 "This could also be done by passing the ``table`` dictionary as keyword "
 "arguments with the ``**`` notation. ::"
 msgstr ""
+"Это также можно сделать, передавая словарь ``table`` в качестве именованных "
+"аргументов с помощью нотации ``**``. ::"
 
 #: ../../tutorial/inputoutput.rst:210
 msgid ""
@@ -416,12 +451,17 @@ msgid ""
 ">>> print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table))\n"
 "Jack: 4098; Sjoerd: 4127; Dcab: 8637678"
 msgstr ""
+">>> table = {'Шоэрд': 4127, 'Джэк': 4098, 'Дкаб': 8637678}\n"
+">>> print('Джэк: {Джэк:d}; Шоэрд: {Шоэрд:d}; Дкаб: {Дкаб:d}'.format(**table))\n"
+"Джэк: 4098; Шоэрд: 4127; Дкаб: 8637678"
 
 #: ../../tutorial/inputoutput.rst:214
 msgid ""
 "This is particularly useful in combination with the built-in function "
 ":func:`vars`, which returns a dictionary containing all local variables::"
 msgstr ""
+"Особенно удобно это сочетать со встроенной функцией :func:`vars`, которая "
+"возвращает словарь, содержащий все локальные переменные::"
 
 #: ../../tutorial/inputoutput.rst:217
 msgid ""

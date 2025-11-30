@@ -697,6 +697,15 @@ msgid ""
 ":dfn:`binary mode`. Binary mode data is read and written as :class:`bytes` "
 "objects. You can not specify *encoding* when opening file in binary mode."
 msgstr ""
+"Обычно файлы открываются в :dfn:`текстовом режиме`, что означает, что вы "
+"читаете и записываете строки из файла, которые закодированы в определенной "
+"*кодировке*. Если *кодировка* не указана, то значение по умолчанию зависит "
+"от платформы (см. :func:`open`). Поскольку UTF-8 является современным "
+"стандартом де-факто, рекомендуется использовать ``encoding=\"utf-8\"``, если"
+" вы не уверены, что вам нужно использовать другую кодировку. Добавление "
+"``'b'`` к атрибуту *mode* открывает файл в :dfn:`бинарном режиме`. Данные в "
+"бинарном режиме читаются и записываются в виде объектов :class:`bytes`. Вы "
+"не можете указывать *кодировку* при открытии файла в бинарном режиме."
 
 #: ../../tutorial/inputoutput.rst:345
 msgid ""
@@ -1159,52 +1168,52 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "formatted string literal"
-msgstr ""
+msgstr "форматированный строковый литерал"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "interpolated string literal"
-msgstr ""
+msgstr "интерполированный строковый литерал"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "string"
-msgstr ""
+msgstr "строка"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "formatted literal"
-msgstr ""
+msgstr "форматированный литерал"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "interpolated literal"
-msgstr ""
+msgstr "интерполированный литерал"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "f-string"
-msgstr ""
+msgstr "f-строка"
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "fstring"
-msgstr ""
+msgstr "f-строка"
 
 #: ../../tutorial/inputoutput.rst:309
 msgid "built-in function"
-msgstr ""
+msgstr "встроенная функция"
 
 #: ../../tutorial/inputoutput.rst:309
 msgid "open"
-msgstr ""
+msgstr "открыть"
 
 #: ../../tutorial/inputoutput.rst:309
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../tutorial/inputoutput.rst:309
 msgid "file"
-msgstr ""
+msgstr "файл"
 
 #: ../../tutorial/inputoutput.rst:491
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../tutorial/inputoutput.rst:491
 msgid "json"
-msgstr ""
+msgstr "json"

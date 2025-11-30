@@ -845,6 +845,12 @@ msgid ""
 "end of the file has been reached, while a blank line is represented by "
 "``'\\n'``, a string containing only a single newline.  ::"
 msgstr ""
+"Функция ``f.readline()`` считывает одну строку из файла; символ перевода "
+"строки (``\\n``) остаётся в конце строки и отсутствует только у последней "
+"строки, если она не кончается символом перевода строки. Это делает "
+"возвращаемое значение однозначным: если метод ``f.readline()`` вернул пустую"
+" строку, достигнут конец файла, а пустая строка, содержащая только символ "
+"перевода строки, представлена как ``'\\n'``. ::"
 
 #: ../../tutorial/inputoutput.rst:419
 msgid ""
@@ -855,12 +861,20 @@ msgid ""
 ">>> f.readline()\n"
 "''"
 msgstr ""
+">>> f.readline()\n"
+"'Это первая строка файла.\\n'\n"
+">>> f.readline()\n"
+"'Вторая строка файла\\n'\n"
+">>> f.readline()\n"
+"''"
 
 #: ../../tutorial/inputoutput.rst:426
 msgid ""
 "For reading lines from a file, you can loop over the file object. This is "
 "memory efficient, fast, and leads to simple code::"
 msgstr ""
+"Для чтения строк из файла можно пройтись циклом по файловому объекту. Это "
+"эффективно с точки зрения памяти, быстро и делает код проще::"
 
 #: ../../tutorial/inputoutput.rst:429
 msgid ""
@@ -870,30 +884,43 @@ msgid ""
 "This is the first line of the file.\n"
 "Second line of the file"
 msgstr ""
+">>> for line in f:\n"
+"...     print(line, end='')\n"
+"...\n"
+"Это первая строка файла.\n"
+"Вторая строка файла"
 
 #: ../../tutorial/inputoutput.rst:435
 msgid ""
 "If you want to read all the lines of a file in a list you can also use "
 "``list(f)`` or ``f.readlines()``."
 msgstr ""
+"Если вы хотите прочитать все строки файла в список, можете использовать "
+"``list(f)`` или ``f.readlines()``."
 
 #: ../../tutorial/inputoutput.rst:438
 msgid ""
 "``f.write(string)`` writes the contents of *string* to the file, returning "
 "the number of characters written. ::"
 msgstr ""
+"``f.write(string)`` записывает содержимое *string* в файл и возвращает "
+"количество записанных символов. ::"
 
 #: ../../tutorial/inputoutput.rst:441
 msgid ""
 ">>> f.write('This is a test\\n')\n"
 "15"
 msgstr ""
+">>> f.write('Это такой тест\\n')\n"
+"15"
 
 #: ../../tutorial/inputoutput.rst:444
 msgid ""
 "Other types of objects need to be converted -- either to a string (in text "
 "mode) or a bytes object (in binary mode) -- before writing them::"
 msgstr ""
+"Другие типы объектов нуждаются в преобразовании — либо в строку (в текстовом"
+" режиме), либо в объект байтов (в двоичном режиме) — перед записью::"
 
 #: ../../tutorial/inputoutput.rst:447
 msgid ""
@@ -902,6 +929,10 @@ msgid ""
 ">>> f.write(s)\n"
 "18"
 msgstr ""
+">>> value = ('the answer', 42)\n"
+">>> s = str(value)  # преобразование кортежа в строку\n"
+">>> f.write(s)\n"
+"18"
 
 #: ../../tutorial/inputoutput.rst:452
 msgid ""
@@ -909,6 +940,9 @@ msgid ""
 " the file represented as number of bytes from the beginning of the file when"
 " in binary mode and an opaque number when in text mode."
 msgstr ""
+"Метод ``f.tell()`` возвращает целое число, указывающее текущую позицию в "
+"файле — в байтах от начала файла в бинарном режиме и в виде внутреннего "
+"условного числа в текстовом режиме."
 
 #: ../../tutorial/inputoutput.rst:456
 msgid ""

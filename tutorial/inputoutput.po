@@ -650,7 +650,7 @@ msgstr "Больше информации можно найти в раздел�
 
 #: ../../tutorial/inputoutput.rst:307
 msgid "Reading and Writing Files"
-msgstr ""
+msgstr "Чтение и запись файлов"
 
 #: ../../tutorial/inputoutput.rst:313
 msgid ""
@@ -658,10 +658,13 @@ msgid ""
 "two positional arguments and one keyword argument: ``open(filename, mode, "
 "encoding=None)``"
 msgstr ""
+"Функция :func:`open` возвращает :term:`файловый объект` и чаще всего "
+"вызывается с двумя позиционными аргументами и одним именованным: "
+"``open(filename, mode, encoding=None)``"
 
 #: ../../tutorial/inputoutput.rst:319
 msgid ">>> f = open('workfile', 'w', encoding=\"utf-8\")"
-msgstr ""
+msgstr ">>> f = open('workfile', 'w', encoding=\"utf-8\")"
 
 #: ../../tutorial/inputoutput.rst:326
 msgid ""
@@ -674,6 +677,14 @@ msgid ""
 "reading and writing. The *mode* argument is optional; ``'r'`` will be "
 "assumed if it's omitted."
 msgstr ""
+"Первый аргумент --- строка, содержащая имя файла. Второй аргумент --- "
+"строка, содержащая несколько символов, которые описывают, каким образом файл"
+" будет использован. *mode* может быть ``'r'`` для чтения (от английского "
+"*read*), ``'w'`` для записи (от английского *write*) (существующий файл с "
+"этим именем будет удалён), и ``'a'`` для добавления информации в конец файла"
+" (от английского *append*). ``r+`` открывает файл для чтения и записи "
+"одновременно. Аргумент *mode* необязательный, если режим не указан, он "
+"считается равным ``'r'``."
 
 #: ../../tutorial/inputoutput.rst:335
 msgid ""
@@ -697,6 +708,13 @@ msgid ""
 ":file:`JPEG` or :file:`EXE` files.  Be very careful to use binary mode when "
 "reading and writing such files."
 msgstr ""
+"В текстовом режиме поведение по умолчанию --- преобразовывать специфичные "
+"для платформы окончания строк (``\\n`` на Unix, ``\\r\\n`` на Windows) в "
+"просто ``\\n``. При записи в текстовом режиме происходит обратное --- "
+"``\\n`` превращаются в специфичные для платформы окончания строк. Такие "
+"изменения подходят для текстовых файлов, но испортят двоичные данные, "
+"например, :file:`JPEG` или :file:`EXE`. Будьте осторожны и используйте "
+"только двоичный режим при чтении и записи таких файлов."
 
 #: ../../tutorial/inputoutput.rst:353
 msgid ""
@@ -706,6 +724,11 @@ msgid ""
 ":keyword:`!with` is also much shorter than writing equivalent "
 ":keyword:`try`\\ -\\ :keyword:`finally` blocks::"
 msgstr ""
+"При работе с файлами использование конструкции :keyword:`with` --- хорошая "
+"практика. Преимущество в том, что файл точно будет закрыт после того, как "
+"его обработка завершена, даже если в какой-то момент было порождено "
+"исключение. Также код, использующий :keyword:`!with`, получается короче, чем"
+" эквивалентные блоки :keyword:`try`\\ -\\ :keyword:`finally` ::"
 
 #: ../../tutorial/inputoutput.rst:359
 msgid ""
@@ -716,6 +739,12 @@ msgid ""
 ">>> f.closed\n"
 "True"
 msgstr ""
+">>> with open('workfile', encoding=\"utf-8\") as f:\n"
+"...     read_data = f.read()\n"
+"\n"
+">>> # Мы можем проверить, что файл был автоматически закрыт.\n"
+">>> f.closed\n"
+"True"
 
 #: ../../tutorial/inputoutput.rst:366
 msgid ""
@@ -723,6 +752,9 @@ msgid ""
 "``f.close()`` to close the file and immediately free up any system resources"
 " used by it."
 msgstr ""
+"Если вы не используете конструкцию :keyword:`with`, вам придётся вызвать "
+"``f.close()``, чтобы закрыть файл и вернуть системные ресурсы, которые он "
+"использовал."
 
 #: ../../tutorial/inputoutput.rst:371
 msgid ""
@@ -730,6 +762,10 @@ msgid ""
 "``f.close()`` **might** result in the arguments of ``f.write()`` not being "
 "completely written to the disk, even if the program exits successfully."
 msgstr ""
+"Вызов ``f.write()`` без использования конструкции :keyword:`!with` или без "
+"вызова ``f.close()`` **может** привести к тому, что данные, переданные в "
+"``f.write()``, будут записаны на диск не полностью, даже если программа "
+"завершится успешно."
 
 #: ../../tutorial/inputoutput.rst:379
 msgid ""
@@ -737,6 +773,9 @@ msgid ""
 "calling ``f.close()``, attempts to use the file object will automatically "
 "fail. ::"
 msgstr ""
+"После того, как файловый объект закрыт — либо с помощью инструкции "
+":keyword:`with`, либо с помощью вызова ``f.close()`` — любая попытка "
+"использовать его автоматически завершится ошибкой. ::"
 
 #: ../../tutorial/inputoutput.rst:383
 msgid ""
@@ -746,16 +785,23 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "ValueError: I/O operation on closed file."
 msgstr ""
+">>> f.close()\n"
+">>> f.read()\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"ValueError: I/O operation on closed file."
 
 #: ../../tutorial/inputoutput.rst:393
 msgid "Methods of File Objects"
-msgstr ""
+msgstr "Методы файловых объектов"
 
 #: ../../tutorial/inputoutput.rst:395
 msgid ""
 "The rest of the examples in this section will assume that a file object "
 "called ``f`` has already been created."
 msgstr ""
+"Оставшиеся примеры в данном разделе предполагают, что файловый объект ``f`` "
+"уже был создан."
 
 #: ../../tutorial/inputoutput.rst:398
 msgid ""
@@ -768,6 +814,15 @@ msgid ""
 "binary mode) are read and returned. If the end of the file has been reached,"
 " ``f.read()`` will return an empty string (``''``).  ::"
 msgstr ""
+"Чтобы прочитать содержимое файла, можно вызвать ``f.read(size)``, что "
+"прочтёт некоторое количество данных и вернёт их в виде строки (в текстовом "
+"режими) или объекта байтов (в двоичном режиме). *size* --- необязательный "
+"числовой аргумент. Если *size* опущен или отрицательный, всё содержимое "
+"файла будет прочитано и возвращено. К этому надо относиться осторожно, "
+"особенно если файл большой и может не поместиться в оперативную память. В "
+"противном случае не более *size* символов (в текстовом режиме) или *size* "
+"байтов (в двоичном режиме) будет прочитано и возвращено. Если достигнут "
+"конец файла, ``f.read()`` вернёт пустую строку (``''``). ::)"
 
 #: ../../tutorial/inputoutput.rst:407
 msgid ""
@@ -776,6 +831,10 @@ msgid ""
 ">>> f.read()\n"
 "''"
 msgstr ""
+">>> f.read()\n"
+"'Это целый файл.\\n'\n"
+">>> f.read()\n"
+"''"
 
 #: ../../tutorial/inputoutput.rst:412
 msgid ""

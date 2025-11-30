@@ -1025,6 +1025,13 @@ msgid ""
 "want to save more complex data types like nested lists and dictionaries, "
 "parsing and serializing by hand becomes complicated."
 msgstr ""
+"Строки могут быть легко записаны в файл и считаны из него. Числа требуют "
+"немного больше усилий, так как метод :meth:`~io.TextIOBase.read` возвращает "
+"только строки, которые должны быть переданы в функцию, такую как "
+":func:`int`, которая принимает строку, например, ``'123'``, и возвращает её "
+"числовое значение 123. Когда вы хотите сохранить более сложные типы данных, "
+"такие как вложенные списки и словари, парсинг и сериализация вручную "
+"становятся сложными."
 
 #: ../../tutorial/inputoutput.rst:500
 msgid ""
@@ -1039,6 +1046,17 @@ msgid ""
 "in a file or data, or sent over a network connection to some distant "
 "machine."
 msgstr ""
+"Вместо того, чтобы заставлять пользователей постоянно писать и отлаживать "
+"код для сохранения сложных типов данных в файлах, Python позволяет "
+"использовать популярный формат обмена данными, называемый `JSON (JavaScript "
+"Object Notation) <https://json.org>`_. Стандартный модуль под названием "
+":mod:`json` может принимать иерархические структуры данных Python и "
+"преобразовывать их в строковые представления; этот процесс называется "
+":dfn:`сериализацией`. Восстановление данных из строкового представления "
+"называется :dfn:`десериализацией`. Между сериализацией и десериализацией "
+"строка, представляющая объект, могла быть сохранена в файле или в другом "
+"хранилище данных либо отправлена по сетевому соединению на какой-либо "
+"удаленный компьютер."
 
 #: ../../tutorial/inputoutput.rst:511
 msgid ""
@@ -1046,12 +1064,17 @@ msgid ""
 "exchange.  Many programmers are already familiar with it, which makes it a "
 "good choice for interoperability."
 msgstr ""
+"Формат JSON часто используется современными приложениями для передачи "
+"данных. Многие программисты уже знакомы с ним, что делает его хорошим "
+"форматом для взаимодействия с другими системами."
 
 #: ../../tutorial/inputoutput.rst:515
 msgid ""
 "If you have an object ``x``, you can view its JSON string representation "
 "with a simple line of code::"
 msgstr ""
+"Если у вас есть объект ``x``, вы можете получить его строковое представление"
+" в формате JSON с помощью простой строки кода::"
 
 #: ../../tutorial/inputoutput.rst:518
 msgid ""
@@ -1060,6 +1083,10 @@ msgid ""
 ">>> json.dumps(x)\n"
 "'[1, \"simple\", \"list\"]'"
 msgstr ""
+">>> import json\n"
+">>> x = [1, 'простой', 'список']\n"
+">>> json.dumps(x)\n"
+"'[1, \"простой\", \"список\"]'"
 
 #: ../../tutorial/inputoutput.rst:523
 msgid ""
@@ -1067,26 +1094,35 @@ msgid ""
 ":func:`~json.dump`, simply serializes the object to a :term:`text file`.  So"
 " if ``f`` is a :term:`text file` object opened for writing, we can do this::"
 msgstr ""
+"Другой вариант функции :func:`~json.dumps` — :func:`~json.dump` — "
+"сериализует объект прямо в :term:`текстовый файл`. Так, если ``f`` — объект "
+":term:`текстового файла`, открытый для записи, можно сделать следующее::"
 
 #: ../../tutorial/inputoutput.rst:527
 msgid "json.dump(x, f)"
-msgstr ""
+msgstr "json.dump(x, f)"
 
 #: ../../tutorial/inputoutput.rst:529
 msgid ""
 "To decode the object again, if ``f`` is a :term:`binary file` or :term:`text"
 " file` object which has been opened for reading::"
 msgstr ""
+"Чтобы снова декодировать объект, если ``f`` — это объект :term:`бинарного "
+"файла` или :term:`текстового файла`, который был открыт для чтения, "
+"выполните::"
 
 #: ../../tutorial/inputoutput.rst:532
 msgid "x = json.load(f)"
-msgstr ""
+msgstr "x = json.load(f)"
 
 #: ../../tutorial/inputoutput.rst:535
 msgid ""
 "JSON files must be encoded in UTF-8. Use ``encoding=\"utf-8\"`` when opening"
 " JSON file as a :term:`text file` for both of reading and writing."
 msgstr ""
+"Файлы JSON должны быть закодированы в UTF-8. Используйте "
+"``encoding=\"utf-8\"`` при открытии файла JSON в виде :term:`текстового "
+"файла` как для чтения, так и для записи."
 
 #: ../../tutorial/inputoutput.rst:538
 msgid ""
@@ -1095,10 +1131,14 @@ msgid ""
 "effort. The reference for the :mod:`json` module contains an explanation of "
 "this."
 msgstr ""
+"Такой простой способ сериализации работает со списками и словарями, но чтобы"
+" сериализовывать экземпляры произвольных классов в формате JSON, требуется "
+"чуть больше работы. Справка по модулю :mod:`json` расскажет, как это "
+"сделать."
 
 #: ../../tutorial/inputoutput.rst:544
 msgid ":mod:`pickle` - the pickle module"
-msgstr ""
+msgstr ":mod:`pickle` — модуль консервирования объектов"
 
 #: ../../tutorial/inputoutput.rst:546
 msgid ""
@@ -1109,6 +1149,13 @@ msgid ""
 "pickle data coming from an untrusted source can execute arbitrary code, if "
 "the data was crafted by a skilled attacker."
 msgstr ""
+"В отличие от :ref:`JSON <tut-json>`, *pickle* — это протокол, который "
+"позволяет сериализовать объекты Python любой сложности. Он специфичен для "
+"Python и не может быть использован для взаимодействия с приложениями, "
+"написанными на других языках. Ещё он небезопасен по умолчанию: "
+"десериализация данных в формате *pickle* из недоверенного источника может "
+"привести к выполнению произвольного кода, если данные были подготовлены "
+"опытным злоумышленником."
 
 #: ../../tutorial/inputoutput.rst:104
 msgid "formatted string literal"

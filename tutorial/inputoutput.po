@@ -1014,7 +1014,7 @@ msgstr ""
 
 #: ../../tutorial/inputoutput.rst:489
 msgid "Saving structured data with :mod:`json`"
-msgstr ""
+msgstr "Сохранение структурированных данных с :mod:`json`"
 
 #: ../../tutorial/inputoutput.rst:493
 msgid ""

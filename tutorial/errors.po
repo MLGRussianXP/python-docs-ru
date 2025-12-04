@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-29 14:13+0000\n"
+"POT-Creation-Date: 2025-12-03 14:17+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,16 +32,22 @@ msgid ""
 "tried out the examples you have probably seen some.  There are (at least) "
 "two distinguishable kinds of errors: *syntax errors* and *exceptions*."
 msgstr ""
+"До настоящего момента сообщения об ошибках упоминались лишь вскользь, но "
+"если вы пробовали запускать примеры с кодом, вы, вероятно, их встречали. "
+"Существует (по крайней мере) два различных типа ошибок: *синтаксические "
+"ошибки* и *исключения*"
 
 #: ../../tutorial/errors.rst:15
 msgid "Syntax Errors"
-msgstr ""
+msgstr "Синтаксические ошибки"
 
 #: ../../tutorial/errors.rst:17
 msgid ""
 "Syntax errors, also known as parsing errors, are perhaps the most common "
 "kind of complaint you get while you are still learning Python::"
 msgstr ""
+"Пока вы только изучаете Python, чаще всего вам будут попадаться "
+"синтаксически ошибки, или ошибки разбора (парсинга)::"
 
 #: ../../tutorial/errors.rst:20
 msgid ""
@@ -50,6 +57,11 @@ msgid ""
 "               ^^^^^\n"
 "SyntaxError: invalid syntax"
 msgstr ""
+">>> while True print('Hello world')\n"
+"  File \"<stdin>\", line 1\n"
+"    while True print('Hello world')\n"
+"               ^^^^^\n"
+"SyntaxError: invalid syntax"
 
 #: ../../tutorial/errors.rst:26
 msgid ""
@@ -58,16 +70,23 @@ msgid ""
 "place that needs to be fixed.  In the example, the error is detected at the "
 "function :func:`print`, since a colon (``':'``) is missing just before it."
 msgstr ""
+"Анализатор повторяет строку с ошибкой и отображает маленькие стрелки, "
+"указывающие на место, где была обнаружена ошибка. Обратите внимание, что это"
+" не всегда то место, которое нужно исправить. В примере ошибка обнаружена в "
+"функции :func:`print`, поскольку двоеточие (``':'``) отсутствует "
+"непосредственно перед ней."
 
 #: ../../tutorial/errors.rst:31
 msgid ""
 "The file name (``<stdin>`` in our example) and line number are printed so "
 "you know where to look in case the input came from a file."
 msgstr ""
+"Имя файла (``<stdin>`` в нашем примере) и номер строки выводятся для того, "
+"чтобы вы знали, где искать ошибку, если ввод поступал из файла."
 
 #: ../../tutorial/errors.rst:38
 msgid "Exceptions"
-msgstr ""
+msgstr "Исключения"
 
 #: ../../tutorial/errors.rst:40
 msgid ""

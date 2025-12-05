@@ -1114,6 +1114,11 @@ msgid ""
 " to be used in a way that ensures they are always cleaned up promptly and "
 "correctly. ::"
 msgstr ""
+"Проблема этого кода в том, что файл остаётся открытым неопределённое время "
+"после завершения этой части кода. В небольших скриптах это не вызывает "
+"проблем, но в крупных приложениях может привести к неприятностям. Инструкция"
+" :keyword:`with` позволяет использовать объекты таким образом, чтобы они "
+"всегда очищали свои ресурсы незамедлительно и корректно."
 
 #: ../../tutorial/errors.rst:508
 msgid ""
@@ -1132,10 +1137,13 @@ msgid ""
 "files, provide predefined clean-up actions will indicate this in their "
 "documentation."
 msgstr ""
+"После выполнения этой инструкции файл *f* всегда будет закрыт, даже если при"
+" обработке строк возникла ошибка. Объекты, которые, как файлы, предоставляют"
+" предопределённые действия по очистке, указывают это в своей документации."
 
 #: ../../tutorial/errors.rst:520
 msgid "Raising and Handling Multiple Unrelated Exceptions"
-msgstr ""
+msgstr "Выбрасывание и обработка нескольких несвязанных исключений"
 
 #: ../../tutorial/errors.rst:522
 msgid ""

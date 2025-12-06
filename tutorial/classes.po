@@ -263,6 +263,10 @@ msgid ""
 "directly accessible.  \"Directly accessible\" here means that an unqualified"
 " reference to a name attempts to find the name in the namespace."
 msgstr ""
+"*Область видимости* — это текстовая область программы Python, в которой "
+"пространство имён доступно напрямую. \"Доступно напрямую\" здесь означает, "
+"что обращение к имени без префикса пытается найти его в этом пространстве "
+"имён."
 
 #: ../../tutorial/classes.rst:116
 msgid ""
@@ -270,26 +274,36 @@ msgid ""
 " time during execution, there are 3 or 4 nested scopes whose namespaces are "
 "directly accessible:"
 msgstr ""
+"Хотя области видимости определяются статически, но используются они "
+"динамически. В любой момент исполнения программы у неё есть 3 или 4 "
+"вложенные области видимости, чьи пространства имён доступны напрямую:"
 
 #: ../../tutorial/classes.rst:120
 msgid "the innermost scope, which is searched first, contains the local names"
 msgstr ""
+"самая внутренняя область видимости, которая просматривается в первую "
+"очередь, содержит локальные имена"
 
 #: ../../tutorial/classes.rst:121
 msgid ""
 "the scopes of any enclosing functions, which are searched starting with the "
 "nearest enclosing scope, contain non-local, but also non-global names"
 msgstr ""
+"области видимости любых внешних функций, которые просматриваются, начиная с "
+"ближайшей, содержат не локальные, но и не глобальные имена"
 
 #: ../../tutorial/classes.rst:123
 msgid "the next-to-last scope contains the current module's global names"
 msgstr ""
+"предпоследняя область видимости включает глобальные имена текущего модуля"
 
 #: ../../tutorial/classes.rst:124
 msgid ""
 "the outermost scope (searched last) is the namespace containing built-in "
 "names"
 msgstr ""
+"самая внешняя областью видимости (просматривается последней) является "
+"пространством имён, содержащим встроенные имена"
 
 #: ../../tutorial/classes.rst:126
 msgid ""

@@ -391,7 +391,7 @@ msgstr ""
 
 #: ../../tutorial/classes.rst:162
 msgid "Scopes and Namespaces Example"
-msgstr ""
+msgstr "Пример областей видимости и пространств имён"
 
 #: ../../tutorial/classes.rst:164
 msgid ""
@@ -399,6 +399,9 @@ msgid ""
 "namespaces, and how :keyword:`global` and :keyword:`nonlocal` affect "
 "variable binding::"
 msgstr ""
+"Вот демонстрация того, как обращаться к разным областям видимости и "
+"пространствам имён, и как :keyword:`global` и :keyword:`nonlocal` влияют на "
+"привязку переменных::"
 
 #: ../../tutorial/classes.rst:168
 msgid ""

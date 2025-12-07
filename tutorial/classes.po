@@ -574,16 +574,25 @@ msgid ""
 "here to the class name given in the class definition header "
 "(:class:`!ClassName` in the example)."
 msgstr ""
+"Когда определение класса заканчивается (обычным завершением блока), "
+"создается *объект класса*. По сути, это обёртка вокруг содержимого "
+"пространства имён, созданного определением класса. Мы узнаем больше об "
+"объектах классов в следующем разделе. Исходная локальная область видимости "
+"(которая действовала непосредственно перед входом в определение класса) "
+"восстанавливается, и объект класса привязывается здесь к имени, указанному в"
+" заголовке определения класса (:class:`!ClassName` в примере)."
 
 #: ../../tutorial/classes.rst:259
 msgid "Class Objects"
-msgstr ""
+msgstr "Объекты классов"
 
 #: ../../tutorial/classes.rst:261
 msgid ""
 "Class objects support two kinds of operations: attribute references and "
 "instantiation."
 msgstr ""
+"Объекты классов поддерживают два вида операций: обращение к атрибутам и "
+"создание экземпляров."
 
 #: ../../tutorial/classes.rst:264
 msgid ""
@@ -592,6 +601,10 @@ msgid ""
 " that were in the class's namespace when the class object was created.  So, "
 "if the class definition looked like this::"
 msgstr ""
+"*Обращение к атрибуту* использует стандартный в Python синтаксис для "
+"получения доступа к любым атрибутам: ``obj.name``. Допустимыми именами "
+"атрибутов считаются те имена, которые находились в пространстве имён класса "
+"во время его создания. Таким образом, если определение класса выглядит так::"
 
 #: ../../tutorial/classes.rst:269
 msgid ""
@@ -602,6 +615,12 @@ msgid ""
 "    def f(self):\n"
 "        return 'hello world'"
 msgstr ""
+"class MyClass:\n"
+"    \"\"\"A simple example class\"\"\"\n"
+"    i = 12345\n"
+"\n"
+"    def f(self):\n"
+"        return 'привет мир'"
 
 #: ../../tutorial/classes.rst:276
 msgid ""
@@ -611,6 +630,12 @@ msgid ""
 "assignment. :attr:`~type.__doc__` is also a valid attribute, returning the "
 "docstring belonging to the class: ``\"A simple example class\"``."
 msgstr ""
+"то ``MyClass.i`` и ``MyClass.f`` являются корректными обращениями к "
+"атрибутам, возвращающими соответственно целое число и объект функции. "
+"Атрибутам класса также можно присваивать, поэтому вы можете изменить "
+"значение ``MyClass.i``. Также существует атрибут :attr:`~type.__doc__`, "
+"возвращающий строку документации, принадлежащую классу: ``\"A simple example"
+" class\"``."
 
 #: ../../tutorial/classes.rst:282
 msgid ""
@@ -618,16 +643,22 @@ msgid ""
 "object is a parameterless function that returns a new instance of the class."
 " For example (assuming the above class)::"
 msgstr ""
+"*Создание экземпляра* класса использует синтаксис вызова функции. Достаточно"
+" представить, что объект класса — это функция без параметров, которая "
+"возвращает новый экземпляр этого класса. Например (используя определённый "
+"выше класс)::"
 
 #: ../../tutorial/classes.rst:286 ../../tutorial/classes.rst:303
 msgid "x = MyClass()"
-msgstr ""
+msgstr "x = MyClass()"
 
 #: ../../tutorial/classes.rst:288
 msgid ""
 "creates a new *instance* of the class and assigns this object to the local "
 "variable ``x``."
 msgstr ""
+"создаёт новый *экземпляр* класса и сохраняет этот объект в локальную "
+"переменную ``x``."
 
 #: ../../tutorial/classes.rst:291
 msgid ""
@@ -636,12 +667,18 @@ msgid ""
 "specific initial state. Therefore a class may define a special method named "
 ":meth:`~object.__init__`, like this::"
 msgstr ""
+"Операция создания экземпляра («вызов» объекта класса) создаёт пустой объект."
+" Многим классам нравится создавать объекты, инициализированные определённым "
+"начальным состоянием. Поэтому класс может определить специальный метод с "
+"именем :meth:`~object.__init__`, например:"
 
 #: ../../tutorial/classes.rst:296
 msgid ""
 "def __init__(self):\n"
 "    self.data = []"
 msgstr ""
+"def __init__(self):\n"
+"    self.data = []"
 
 #: ../../tutorial/classes.rst:299
 msgid ""

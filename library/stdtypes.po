@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-05 14:15+0000\n"
+"POT-Creation-Date: 2025-12-07 14:13+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -6189,12 +6189,12 @@ msgstr ""
 msgid ""
 "There are currently two built-in set types, :class:`set` and "
 ":class:`frozenset`. The :class:`set` type is mutable --- the contents can be"
-" changed using methods like :meth:`add <frozenset.add>` and :meth:`remove "
-"<frozenset.add>`. Since it is mutable, it has no hash value and cannot be "
-"used as either a dictionary key or as an element of another set. The "
-":class:`frozenset` type is immutable and :term:`hashable` --- its contents "
-"cannot be altered after it is created; it can therefore be used as a "
-"dictionary key or as an element of another set."
+" changed using methods like :meth:`~set.add` and :meth:`~set.remove`. Since "
+"it is mutable, it has no hash value and cannot be used as either a "
+"dictionary key or as an element of another set. The :class:`frozenset` type "
+"is immutable and :term:`hashable` --- its contents cannot be altered after "
+"it is created; it can therefore be used as a dictionary key or as an element"
+" of another set."
 msgstr ""
 
 #: ../../library/stdtypes.rst:4812
@@ -6254,64 +6254,66 @@ msgstr ""
 msgid "Test *x* for non-membership in *s*."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4850
+#: ../../library/stdtypes.rst:4851
 msgid ""
 "Return ``True`` if the set has no elements in common with *other*.  Sets are"
 " disjoint if and only if their intersection is the empty set."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4856
+#: ../../library/stdtypes.rst:4858
 msgid "Test whether every element in the set is in *other*."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4860
+#: ../../library/stdtypes.rst:4862
 msgid ""
 "Test whether the set is a proper subset of *other*, that is, ``set <= other "
 "and set != other``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4866
+#: ../../library/stdtypes.rst:4869
 msgid "Test whether every element in *other* is in the set."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4870
+#: ../../library/stdtypes.rst:4873
 msgid ""
 "Test whether the set is a proper superset of *other*, that is, ``set >= "
 "other and set != other``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4876
+#: ../../library/stdtypes.rst:4880
 msgid "Return a new set with elements from the set and all others."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4881
+#: ../../library/stdtypes.rst:4886
 msgid "Return a new set with elements common to the set and all others."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4886
+#: ../../library/stdtypes.rst:4892
 msgid "Return a new set with elements in the set that are not in the others."
-msgstr ""
-
-#: ../../library/stdtypes.rst:4891
-msgid ""
-"Return a new set with elements in either the set or *other* but not both."
-msgstr ""
-
-#: ../../library/stdtypes.rst:4895
-msgid "Return a shallow copy of the set."
 msgstr ""
 
 #: ../../library/stdtypes.rst:4898
 msgid ""
-"Note, the non-operator versions of :meth:`union`, :meth:`intersection`, "
-":meth:`difference`, :meth:`symmetric_difference`, :meth:`issubset`, and "
-":meth:`issuperset` methods will accept any iterable as an argument.  In "
-"contrast, their operator based counterparts require their arguments to be "
-"sets.  This precludes error-prone constructions like ``set('abc') & 'cbs'`` "
-"in favor of the more readable ``set('abc').intersection('cbs')``."
+"Return a new set with elements in either the set or *other* but not both."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4905
+#: ../../library/stdtypes.rst:4903
+msgid "Return a shallow copy of the set."
+msgstr ""
+
+#: ../../library/stdtypes.rst:4906
+msgid ""
+"Note, the non-operator versions of :meth:`~frozenset.union`, "
+":meth:`~frozenset.intersection`, :meth:`~frozenset.difference`, "
+":meth:`~frozenset.symmetric_difference`, :meth:`~frozenset.issubset`, and "
+":meth:`~frozenset.issuperset` methods will accept any iterable as an "
+"argument.  In contrast, their operator based counterparts require their "
+"arguments to be sets.  This precludes error-prone constructions like "
+"``set('abc') & 'cbs'`` in favor of the more readable "
+"``set('abc').intersection('cbs')``."
+msgstr ""
+
+#: ../../library/stdtypes.rst:4913
 msgid ""
 "Both :class:`set` and :class:`frozenset` support set to set comparisons. Two"
 " sets are equal if and only if every element of each set is contained in the"
@@ -6322,14 +6324,14 @@ msgid ""
 "equal)."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4912
+#: ../../library/stdtypes.rst:4920
 msgid ""
 "Instances of :class:`set` are compared to instances of :class:`frozenset` "
 "based on their members.  For example, ``set('abc') == frozenset('abc')`` "
 "returns ``True`` and so does ``set('abc') in set([frozenset('abc')])``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4916
+#: ../../library/stdtypes.rst:4924
 msgid ""
 "The subset and equality comparisons do not generalize to a total ordering "
 "function.  For example, any two nonempty disjoint sets are not equal and are"
@@ -6337,91 +6339,91 @@ msgid ""
 "``a<b``, ``a==b``, or ``a>b``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4921
+#: ../../library/stdtypes.rst:4929
 msgid ""
 "Since sets only define partial ordering (subset relationships), the output "
 "of the :meth:`list.sort` method is undefined for lists of sets."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4924
+#: ../../library/stdtypes.rst:4932
 msgid "Set elements, like dictionary keys, must be :term:`hashable`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4926
+#: ../../library/stdtypes.rst:4934
 msgid ""
 "Binary operations that mix :class:`set` instances with :class:`frozenset` "
 "return the type of the first operand.  For example: ``frozenset('ab') | "
 "set('bc')`` returns an instance of :class:`frozenset`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4930
+#: ../../library/stdtypes.rst:4938
 msgid ""
 "The following table lists operations available for :class:`set` that do not "
 "apply to immutable instances of :class:`frozenset`:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:4936
+#: ../../library/stdtypes.rst:4944
 msgid "Update the set, adding elements from all others."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4941
+#: ../../library/stdtypes.rst:4949
 msgid "Update the set, keeping only elements found in it and all others."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4946
+#: ../../library/stdtypes.rst:4954
 msgid "Update the set, removing elements found in others."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4951
+#: ../../library/stdtypes.rst:4959
 msgid ""
 "Update the set, keeping only elements found in either set, but not in both."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4955
+#: ../../library/stdtypes.rst:4963
 msgid "Add element *elem* to the set."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4959
+#: ../../library/stdtypes.rst:4967
 msgid ""
 "Remove element *elem* from the set.  Raises :exc:`KeyError` if *elem* is not"
 " contained in the set."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4964
+#: ../../library/stdtypes.rst:4972
 msgid "Remove element *elem* from the set if it is present."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4968
+#: ../../library/stdtypes.rst:4976
 msgid ""
 "Remove and return an arbitrary element from the set.  Raises :exc:`KeyError`"
 " if the set is empty."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4973
+#: ../../library/stdtypes.rst:4981
 msgid "Remove all elements from the set."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4976
+#: ../../library/stdtypes.rst:4984
 msgid ""
-"Note, the non-operator versions of the :meth:`update`, "
-":meth:`intersection_update`, :meth:`difference_update`, and "
-":meth:`symmetric_difference_update` methods will accept any iterable as an "
-"argument."
+"Note, the non-operator versions of the :meth:`~set.update`, "
+":meth:`~set.intersection_update`, :meth:`~set.difference_update`, and "
+":meth:`~set.symmetric_difference_update` methods will accept any iterable as"
+" an argument."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4981
+#: ../../library/stdtypes.rst:4989
 msgid ""
 "Note, the *elem* argument to the :meth:`~object.__contains__`, "
-":meth:`remove`, and :meth:`discard` methods may be a set.  To support "
-"searching for an equivalent frozenset, a temporary one is created from "
-"*elem*."
+":meth:`~set.remove`, and :meth:`~set.discard` methods may be a set.  To "
+"support searching for an equivalent frozenset, a temporary one is created "
+"from *elem*."
 msgstr ""
 
-#: ../../library/stdtypes.rst:4990
+#: ../../library/stdtypes.rst:4998
 msgid "Mapping Types --- :class:`dict`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5000
+#: ../../library/stdtypes.rst:5008
 msgid ""
 "A :term:`mapping` object maps :term:`hashable` values to arbitrary objects. "
 "Mappings are mutable objects.  There is currently only one standard mapping "
@@ -6430,7 +6432,7 @@ msgid ""
 ":mod:`collections` module.)"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5006
+#: ../../library/stdtypes.rst:5014
 msgid ""
 "A dictionary's keys are *almost* arbitrary values.  Values that are not "
 ":term:`hashable`, that is, values containing lists, dictionaries or other "
@@ -6440,33 +6442,33 @@ msgid ""
 "entry."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5017
+#: ../../library/stdtypes.rst:5025
 msgid ""
 "Return a new dictionary initialized from an optional positional argument and"
 " a possibly empty set of keyword arguments."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5020
+#: ../../library/stdtypes.rst:5028
 msgid "Dictionaries can be created by several means:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5022
+#: ../../library/stdtypes.rst:5030
 msgid ""
 "Use a comma-separated list of ``key: value`` pairs within braces: ``{'jack':"
 " 4098, 'sjoerd': 4127}`` or ``{4098: 'jack', 4127: 'sjoerd'}``"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5024
+#: ../../library/stdtypes.rst:5032
 msgid "Use a dict comprehension: ``{}``, ``{x: x ** 2 for x in range(10)}``"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5025
+#: ../../library/stdtypes.rst:5033
 msgid ""
 "Use the type constructor: ``dict()``, ``dict([('foo', 100), ('bar', "
 "200)])``, ``dict(foo=100, bar=200)``"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5028
+#: ../../library/stdtypes.rst:5036
 msgid ""
 "If no positional argument is given, an empty dictionary is created. If a "
 "positional argument is given and it defines a ``keys()`` method, a "
@@ -6479,7 +6481,7 @@ msgid ""
 "that key becomes the corresponding value in the new dictionary."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5038
+#: ../../library/stdtypes.rst:5046
 msgid ""
 "If keyword arguments are given, the keyword arguments and their values are "
 "added to the dictionary created from the positional argument.  If a key "
@@ -6487,13 +6489,13 @@ msgid ""
 " the value from the positional argument."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5043 ../../library/stdtypes.rst:5061
+#: ../../library/stdtypes.rst:5051 ../../library/stdtypes.rst:5069
 msgid ""
 "Providing keyword arguments as in the first example only works for keys that"
 " are valid Python identifiers.  Otherwise, any valid keys can be used."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5046
+#: ../../library/stdtypes.rst:5054
 msgid ""
 "Dictionaries compare equal if and only if they have the same ``(key, "
 "value)`` pairs (regardless of ordering). Order comparisons ('<', '<=', '>=',"
@@ -6502,7 +6504,7 @@ msgid ""
 "``{\"one\": 1, \"two\": 2, \"three\": 3}``::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5052
+#: ../../library/stdtypes.rst:5060
 msgid ""
 ">>> a = dict(one=1, two=2, three=3)\n"
 ">>> b = {'one': 1, 'two': 2, 'three': 3}\n"
@@ -6514,13 +6516,13 @@ msgid ""
 "True"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5064
+#: ../../library/stdtypes.rst:5072
 msgid ""
 "Dictionaries preserve insertion order.  Note that updating a key does not "
 "affect the order.  Keys added after deletion are inserted at the end. ::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5067
+#: ../../library/stdtypes.rst:5075
 msgid ""
 ">>> d = {\"one\": 1, \"two\": 2, \"three\": 3, \"four\": 4}\n"
 ">>> d\n"
@@ -6538,33 +6540,33 @@ msgid ""
 "{'one': 42, 'three': 3, 'four': 4, 'two': None}"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5082
+#: ../../library/stdtypes.rst:5090
 msgid ""
 "Dictionary order is guaranteed to be insertion order.  This behavior was an "
 "implementation detail of CPython from 3.6."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5086
+#: ../../library/stdtypes.rst:5094
 msgid ""
 "These are the operations that dictionaries support (and therefore, custom "
 "mapping types should support too):"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5091
+#: ../../library/stdtypes.rst:5099
 msgid "Return a list of all the keys used in the dictionary *d*."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5095
+#: ../../library/stdtypes.rst:5103
 msgid "Return the number of items in the dictionary *d*."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5099
+#: ../../library/stdtypes.rst:5107
 msgid ""
 "Return the item of *d* with key *key*.  Raises a :exc:`KeyError` if *key* is"
 " not in the map."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5104
+#: ../../library/stdtypes.rst:5112
 msgid ""
 "If a subclass of dict defines a method :meth:`~object.__missing__` and *key*"
 " is not present, the ``d[key]`` operation calls that method with the key "
@@ -6576,7 +6578,7 @@ msgid ""
 "variable::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5112
+#: ../../library/stdtypes.rst:5120
 msgid ""
 ">>> class Counter(dict):\n"
 "...     def __missing__(self, key):\n"
@@ -6590,51 +6592,51 @@ msgid ""
 "1"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5123
+#: ../../library/stdtypes.rst:5131
 msgid ""
 "The example above shows part of the implementation of "
 ":class:`collections.Counter`. A different :meth:`!__missing__` method is "
 "used by :class:`collections.defaultdict`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5130
+#: ../../library/stdtypes.rst:5138
 msgid "Set ``d[key]`` to *value*."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5134
+#: ../../library/stdtypes.rst:5142
 msgid ""
 "Remove ``d[key]`` from *d*.  Raises a :exc:`KeyError` if *key* is not in the"
 " map."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5139
+#: ../../library/stdtypes.rst:5147
 msgid "Return ``True`` if *d* has a key *key*, else ``False``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5143
+#: ../../library/stdtypes.rst:5151
 msgid "Equivalent to ``not key in d``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5147
+#: ../../library/stdtypes.rst:5155
 msgid ""
 "Return an iterator over the keys of the dictionary.  This is a shortcut for "
 "``iter(d.keys())``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5152
+#: ../../library/stdtypes.rst:5160
 msgid "Remove all items from the dictionary."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5156
+#: ../../library/stdtypes.rst:5164
 msgid "Return a shallow copy of the dictionary."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5160
+#: ../../library/stdtypes.rst:5168
 msgid ""
 "Create a new dictionary with keys from *iterable* and values set to *value*."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5162
+#: ../../library/stdtypes.rst:5170
 msgid ""
 ":meth:`fromkeys` is a class method that returns a new dictionary. *value* "
 "defaults to ``None``.  All of the values refer to just a single instance, so"
@@ -6643,70 +6645,70 @@ msgid ""
 "<dict>` instead."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5170
+#: ../../library/stdtypes.rst:5178
 msgid ""
 "Return the value for *key* if *key* is in the dictionary, else *default*. If"
 " *default* is not given, it defaults to ``None``, so that this method never "
 "raises a :exc:`KeyError`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5176
+#: ../../library/stdtypes.rst:5184
 msgid ""
 "Return a new view of the dictionary's items (``(key, value)`` pairs). See "
 "the :ref:`documentation of view objects <dict-views>`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5181
+#: ../../library/stdtypes.rst:5189
 msgid ""
 "Return a new view of the dictionary's keys.  See the :ref:`documentation of "
 "view objects <dict-views>`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5187
+#: ../../library/stdtypes.rst:5195
 msgid ""
 "If *key* is in the dictionary, remove it and return its value, else return "
 "*default*.  If *default* is not given and *key* is not in the dictionary, a "
 ":exc:`KeyError` is raised."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5193
+#: ../../library/stdtypes.rst:5201
 msgid ""
 "Remove and return a ``(key, value)`` pair from the dictionary. Pairs are "
 "returned in :abbr:`LIFO (last-in, first-out)` order."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5196
+#: ../../library/stdtypes.rst:5204
 msgid ""
 ":meth:`popitem` is useful to destructively iterate over a dictionary, as "
 "often used in set algorithms.  If the dictionary is empty, calling "
 ":meth:`popitem` raises a :exc:`KeyError`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5200
+#: ../../library/stdtypes.rst:5208
 msgid ""
 "LIFO order is now guaranteed. In prior versions, :meth:`popitem` would "
 "return an arbitrary key/value pair."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5206
+#: ../../library/stdtypes.rst:5214
 msgid ""
 "Return a reverse iterator over the keys of the dictionary. This is a "
 "shortcut for ``reversed(d.keys())``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5213
+#: ../../library/stdtypes.rst:5221
 msgid ""
 "If *key* is in the dictionary, return its value.  If not, insert *key* with "
 "a value of *default* and return *default*.  *default* defaults to ``None``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5221
+#: ../../library/stdtypes.rst:5229
 msgid ""
 "Update the dictionary with the key/value pairs from *mapping* or *iterable* "
 "and *kwargs*, overwriting existing keys.  Return ``None``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5224
+#: ../../library/stdtypes.rst:5232
 msgid ""
 ":meth:`update` accepts either another object with a ``keys()`` method (in "
 "which case :meth:`~object.__getitem__` is called with every key returned "
@@ -6715,45 +6717,45 @@ msgid ""
 " is then updated with those key/value pairs: ``d.update(red=1, blue=2)``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5232
+#: ../../library/stdtypes.rst:5240
 msgid ""
 "Return a new view of the dictionary's values.  See the :ref:`documentation "
 "of view objects <dict-views>`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5235
+#: ../../library/stdtypes.rst:5243
 msgid ""
 "An equality comparison between one ``dict.values()`` view and another will "
 "always return ``False``. This also applies when comparing ``dict.values()`` "
 "to itself::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5239
+#: ../../library/stdtypes.rst:5247
 msgid ""
 ">>> d = {'a': 1}\n"
 ">>> d.values() == d.values()\n"
 "False"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5245
+#: ../../library/stdtypes.rst:5253
 msgid ""
 "Create a new dictionary with the merged keys and values of *d* and *other*, "
 "which must both be dictionaries. The values of *other* take priority when "
 "*d* and *other* share keys."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5253
+#: ../../library/stdtypes.rst:5261
 msgid ""
 "Update the dictionary *d* with keys and values from *other*, which may be "
 "either a :term:`mapping` or an :term:`iterable` of key/value pairs. The "
 "values of *other* take priority when *d* and *other* share keys."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5259
+#: ../../library/stdtypes.rst:5267
 msgid "Dictionaries and dictionary views are reversible. ::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5261
+#: ../../library/stdtypes.rst:5269
 msgid ""
 ">>> d = {\"one\": 1, \"two\": 2, \"three\": 3, \"four\": 4}\n"
 ">>> d\n"
@@ -6766,21 +6768,21 @@ msgid ""
 "[('four', 4), ('three', 3), ('two', 2), ('one', 1)]"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5271
+#: ../../library/stdtypes.rst:5279
 msgid "Dictionaries are now reversible."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5276
+#: ../../library/stdtypes.rst:5284
 msgid ""
 ":class:`types.MappingProxyType` can be used to create a read-only view of a "
 ":class:`dict`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5283
+#: ../../library/stdtypes.rst:5291
 msgid "Dictionary view objects"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5285
+#: ../../library/stdtypes.rst:5293
 msgid ""
 "The objects returned by :meth:`dict.keys`, :meth:`dict.values` and "
 ":meth:`dict.items` are *view objects*.  They provide a dynamic view on the "
@@ -6788,23 +6790,23 @@ msgid ""
 " reflects these changes."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5290
+#: ../../library/stdtypes.rst:5298
 msgid ""
 "Dictionary views can be iterated over to yield their respective data, and "
 "support membership tests:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5295
+#: ../../library/stdtypes.rst:5303
 msgid "Return the number of entries in the dictionary."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5299
+#: ../../library/stdtypes.rst:5307
 msgid ""
 "Return an iterator over the keys, values or items (represented as tuples of "
 "``(key, value)``) in the dictionary."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5302
+#: ../../library/stdtypes.rst:5310
 msgid ""
 "Keys and values are iterated over in insertion order. This allows the "
 "creation of ``(value, key)`` pairs using :func:`zip`: ``pairs = "
@@ -6812,39 +6814,39 @@ msgid ""
 " = [(v, k) for (k, v) in d.items()]``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5307
+#: ../../library/stdtypes.rst:5315
 msgid ""
 "Iterating views while adding or deleting entries in the dictionary may raise"
 " a :exc:`RuntimeError` or fail to iterate over all entries."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5310
+#: ../../library/stdtypes.rst:5318
 msgid "Dictionary order is guaranteed to be insertion order."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5315
+#: ../../library/stdtypes.rst:5323
 msgid ""
 "Return ``True`` if *x* is in the underlying dictionary's keys, values or "
 "items (in the latter case, *x* should be a ``(key, value)`` tuple)."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5320
+#: ../../library/stdtypes.rst:5328
 msgid ""
 "Return a reverse iterator over the keys, values or items of the dictionary. "
 "The view will be iterated in reverse order of the insertion."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5323
+#: ../../library/stdtypes.rst:5331
 msgid "Dictionary views are now reversible."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5328
+#: ../../library/stdtypes.rst:5336
 msgid ""
 "Return a :class:`types.MappingProxyType` that wraps the original dictionary "
 "to which the view refers."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5333
+#: ../../library/stdtypes.rst:5341
 msgid ""
 "Keys views are set-like since their entries are unique and :term:`hashable`."
 " Items views also have set-like operations since the (key, value) pairs are "
@@ -6858,11 +6860,11 @@ msgid ""
 "the input."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5345
+#: ../../library/stdtypes.rst:5353
 msgid "An example of dictionary view usage::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5347
+#: ../../library/stdtypes.rst:5355
 msgid ""
 ">>> dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}\n"
 ">>> keys = dishes.keys()\n"
@@ -6903,11 +6905,11 @@ msgid ""
 "500"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5389
+#: ../../library/stdtypes.rst:5397
 msgid "Context Manager Types"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5396
+#: ../../library/stdtypes.rst:5404
 msgid ""
 "Python's :keyword:`with` statement supports the concept of a runtime context"
 " defined by a context manager.  This is implemented using a pair of methods "
@@ -6915,7 +6917,7 @@ msgid ""
 "before the statement body is executed and exited when the statement ends:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5404
+#: ../../library/stdtypes.rst:5412
 msgid ""
 "Enter the runtime context and return either this object or another object "
 "related to the runtime context. The value returned by this method is bound "
@@ -6923,7 +6925,7 @@ msgid ""
 " using this context manager."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5409
+#: ../../library/stdtypes.rst:5417
 msgid ""
 "An example of a context manager that returns itself is a :term:`file "
 "object`. File objects return themselves from __enter__() to allow "
@@ -6931,7 +6933,7 @@ msgid ""
 "statement."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5413
+#: ../../library/stdtypes.rst:5421
 msgid ""
 "An example of a context manager that returns a related object is the one "
 "returned by :func:`decimal.localcontext`. These managers set the active "
@@ -6941,7 +6943,7 @@ msgid ""
 " :keyword:`!with` statement."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5423
+#: ../../library/stdtypes.rst:5431
 msgid ""
 "Exit the runtime context and return a Boolean flag indicating if any "
 "exception that occurred should be suppressed. If an exception occurred while"
@@ -6950,7 +6952,7 @@ msgid ""
 "arguments are ``None``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5428
+#: ../../library/stdtypes.rst:5436
 msgid ""
 "Returning a true value from this method will cause the :keyword:`with` "
 "statement to suppress the exception and continue execution with the "
@@ -6961,7 +6963,7 @@ msgid ""
 "statement."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5435
+#: ../../library/stdtypes.rst:5443
 msgid ""
 "The exception passed in should never be reraised explicitly - instead, this "
 "method should return a false value to indicate that the method completed "
@@ -6970,7 +6972,7 @@ msgid ""
 ":meth:`~object.__exit__` method has actually failed."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5441
+#: ../../library/stdtypes.rst:5449
 msgid ""
 "Python defines several context managers to support easy thread "
 "synchronisation, prompt closure of files or other objects, and simpler "
@@ -6979,7 +6981,7 @@ msgid ""
 "management protocol. See the :mod:`contextlib` module for some examples."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5447
+#: ../../library/stdtypes.rst:5455
 msgid ""
 "Python's :term:`generator`\\s and the :class:`contextlib.contextmanager` "
 "decorator provide a convenient way to implement these protocols.  If a "
@@ -6990,7 +6992,7 @@ msgid ""
 "function."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5454
+#: ../../library/stdtypes.rst:5462
 msgid ""
 "Note that there is no specific slot for any of these methods in the type "
 "structure for Python objects in the Python/C API. Extension types wanting to"
@@ -6999,23 +7001,23 @@ msgid ""
 "overhead of a single class dictionary lookup is negligible."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5462
+#: ../../library/stdtypes.rst:5470
 msgid ""
 "Type Annotation Types --- :ref:`Generic Alias <types-genericalias>`, "
 ":ref:`Union <types-union>`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5467
+#: ../../library/stdtypes.rst:5475
 msgid ""
 "The core built-in types for :term:`type annotations <annotation>` are "
 ":ref:`Generic Alias <types-genericalias>` and :ref:`Union <types-union>`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5474
+#: ../../library/stdtypes.rst:5482
 msgid "Generic Alias Type"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5480
+#: ../../library/stdtypes.rst:5488
 msgid ""
 "``GenericAlias`` objects are generally created by :ref:`subscripting "
 "<subscriptions>` a class. They are most often used with :ref:`container "
@@ -7025,19 +7027,19 @@ msgid ""
 "are intended primarily for use with :term:`type annotations <annotation>`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5490
+#: ../../library/stdtypes.rst:5498
 msgid ""
 "It is generally only possible to subscript a class if the class implements "
 "the special method :meth:`~object.__class_getitem__`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5493
+#: ../../library/stdtypes.rst:5501
 msgid ""
 "A ``GenericAlias`` object acts as a proxy for a :term:`generic type`, "
 "implementing *parameterized generics*."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5496
+#: ../../library/stdtypes.rst:5504
 msgid ""
 "For a container class, the argument(s) supplied to a :ref:`subscription "
 "<subscriptions>` of the class may indicate the type(s) of the elements an "
@@ -7046,7 +7048,7 @@ msgid ""
 ":class:`bytes`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5502
+#: ../../library/stdtypes.rst:5510
 msgid ""
 "For a class which defines :meth:`~object.__class_getitem__` but is not a "
 "container, the argument(s) supplied to a subscription of the class will "
@@ -7055,7 +7057,7 @@ msgid ""
 " :class:`str` data type and the :class:`bytes` data type:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5508
+#: ../../library/stdtypes.rst:5516
 msgid ""
 "If ``x = re.search('foo', 'foo')``, ``x`` will be a :ref:`re.Match <match-"
 "objects>` object where the return values of ``x.group(0)`` and ``x[0]`` will"
@@ -7063,7 +7065,7 @@ msgid ""
 "annotations with the ``GenericAlias`` ``re.Match[str]``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5514
+#: ../../library/stdtypes.rst:5522
 msgid ""
 "If ``y = re.search(b'bar', b'bar')``, (note the ``b`` for :class:`bytes`), "
 "``y`` will also be an instance of ``re.Match``, but the return values of "
@@ -7072,27 +7074,27 @@ msgid ""
 "objects>` objects with ``re.Match[bytes]``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5520
+#: ../../library/stdtypes.rst:5528
 msgid ""
 "``GenericAlias`` objects are instances of the class "
 ":class:`types.GenericAlias`, which can also be used to create "
 "``GenericAlias`` objects directly."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5526
+#: ../../library/stdtypes.rst:5534
 msgid ""
 "Creates a ``GenericAlias`` representing a type ``T`` parameterized by types "
 "*X*, *Y*, and more depending on the ``T`` used. For example, a function "
 "expecting a :class:`list` containing :class:`float` elements::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5531
+#: ../../library/stdtypes.rst:5539
 msgid ""
 "def average(values: list[float]) -> float:\n"
 "    return sum(values) / len(values)"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5534
+#: ../../library/stdtypes.rst:5542
 msgid ""
 "Another example for :term:`mapping` objects, using a :class:`dict`, which is"
 " a generic type expecting two type parameters representing the key type and "
@@ -7100,19 +7102,19 @@ msgid ""
 "of type :class:`str` and values of type :class:`int`::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5539
+#: ../../library/stdtypes.rst:5547
 msgid ""
 "def send_post_request(url: str, body: dict[str, int]) -> None:\n"
 "    ..."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5542
+#: ../../library/stdtypes.rst:5550
 msgid ""
 "The builtin functions :func:`isinstance` and :func:`issubclass` do not "
 "accept ``GenericAlias`` types for their second argument::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5545
+#: ../../library/stdtypes.rst:5553
 msgid ""
 ">>> isinstance([1, 2], list[str])\n"
 "Traceback (most recent call last):\n"
@@ -7120,7 +7122,7 @@ msgid ""
 "TypeError: isinstance() argument 2 cannot be a parameterized generic"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5550
+#: ../../library/stdtypes.rst:5558
 msgid ""
 "The Python runtime does not enforce :term:`type annotations <annotation>`. "
 "This extends to generic types and their type parameters. When creating a "
@@ -7129,20 +7131,20 @@ msgid ""
 "discouraged, but will run without errors::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5556
+#: ../../library/stdtypes.rst:5564
 msgid ""
 ">>> t = list[str]\n"
 ">>> t([1, 2, 3])\n"
 "[1, 2, 3]"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5560
+#: ../../library/stdtypes.rst:5568
 msgid ""
 "Furthermore, parameterized generics erase type parameters during object "
 "creation::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5563
+#: ../../library/stdtypes.rst:5571
 msgid ""
 ">>> t = list[str]\n"
 ">>> type(t)\n"
@@ -7153,13 +7155,13 @@ msgid ""
 "<class 'list'>"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5571
+#: ../../library/stdtypes.rst:5579
 msgid ""
 "Calling :func:`repr` or :func:`str` on a generic shows the parameterized "
 "type::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5573
+#: ../../library/stdtypes.rst:5581
 msgid ""
 ">>> repr(list[int])\n"
 "'list[int]'\n"
@@ -7168,13 +7170,13 @@ msgid ""
 "'list[int]'"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5579
+#: ../../library/stdtypes.rst:5587
 msgid ""
 "The :meth:`~object.__getitem__` method of generic containers will raise an "
 "exception to disallow mistakes like ``dict[str][str]``::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5582
+#: ../../library/stdtypes.rst:5590
 msgid ""
 ">>> dict[str][str]\n"
 "Traceback (most recent call last):\n"
@@ -7182,14 +7184,14 @@ msgid ""
 "TypeError: dict[str] is not a generic class"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5587
+#: ../../library/stdtypes.rst:5595
 msgid ""
 "However, such expressions are valid when :ref:`type variables <generics>` "
 "are used.  The index must have as many elements as there are type variable "
 "items in the ``GenericAlias`` object's :attr:`~genericalias.__args__`. ::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5591
+#: ../../library/stdtypes.rst:5599
 msgid ""
 ">>> from typing import TypeVar\n"
 ">>> Y = TypeVar('Y')\n"
@@ -7197,278 +7199,278 @@ msgid ""
 "dict[str, int]"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5598
+#: ../../library/stdtypes.rst:5606
 msgid "Standard Generic Classes"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5600
+#: ../../library/stdtypes.rst:5608
 msgid ""
 "The following standard library classes support parameterized generics. This "
 "list is non-exhaustive."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5603
+#: ../../library/stdtypes.rst:5611
 msgid ":class:`tuple`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5604
+#: ../../library/stdtypes.rst:5612
 msgid ":class:`list`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5605
+#: ../../library/stdtypes.rst:5613
 msgid ":class:`dict`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5606
+#: ../../library/stdtypes.rst:5614
 msgid ":class:`set`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5607
+#: ../../library/stdtypes.rst:5615
 msgid ":class:`frozenset`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5608
+#: ../../library/stdtypes.rst:5616
 msgid ":class:`type`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5609
+#: ../../library/stdtypes.rst:5617
 msgid ":class:`asyncio.Future`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5610
+#: ../../library/stdtypes.rst:5618
 msgid ":class:`asyncio.Task`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5611
+#: ../../library/stdtypes.rst:5619
 msgid ":class:`collections.deque`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5612
+#: ../../library/stdtypes.rst:5620
 msgid ":class:`collections.defaultdict`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5613
+#: ../../library/stdtypes.rst:5621
 msgid ":class:`collections.OrderedDict`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5614
+#: ../../library/stdtypes.rst:5622
 msgid ":class:`collections.Counter`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5615
+#: ../../library/stdtypes.rst:5623
 msgid ":class:`collections.ChainMap`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5616
+#: ../../library/stdtypes.rst:5624
 msgid ":class:`collections.abc.Awaitable`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5617
+#: ../../library/stdtypes.rst:5625
 msgid ":class:`collections.abc.Coroutine`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5618
+#: ../../library/stdtypes.rst:5626
 msgid ":class:`collections.abc.AsyncIterable`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5619
+#: ../../library/stdtypes.rst:5627
 msgid ":class:`collections.abc.AsyncIterator`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5620
+#: ../../library/stdtypes.rst:5628
 msgid ":class:`collections.abc.AsyncGenerator`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5621
+#: ../../library/stdtypes.rst:5629
 msgid ":class:`collections.abc.Iterable`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5622
+#: ../../library/stdtypes.rst:5630
 msgid ":class:`collections.abc.Iterator`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5623
+#: ../../library/stdtypes.rst:5631
 msgid ":class:`collections.abc.Generator`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5624
+#: ../../library/stdtypes.rst:5632
 msgid ":class:`collections.abc.Reversible`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5625
+#: ../../library/stdtypes.rst:5633
 msgid ":class:`collections.abc.Container`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5626
+#: ../../library/stdtypes.rst:5634
 msgid ":class:`collections.abc.Collection`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5627
+#: ../../library/stdtypes.rst:5635
 msgid ":class:`collections.abc.Callable`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5628
+#: ../../library/stdtypes.rst:5636
 msgid ":class:`collections.abc.Set`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5629
+#: ../../library/stdtypes.rst:5637
 msgid ":class:`collections.abc.MutableSet`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5630
+#: ../../library/stdtypes.rst:5638
 msgid ":class:`collections.abc.Mapping`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5631
+#: ../../library/stdtypes.rst:5639
 msgid ":class:`collections.abc.MutableMapping`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5632
+#: ../../library/stdtypes.rst:5640
 msgid ":class:`collections.abc.Sequence`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5633
+#: ../../library/stdtypes.rst:5641
 msgid ":class:`collections.abc.MutableSequence`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5634
+#: ../../library/stdtypes.rst:5642
 msgid ":class:`collections.abc.ByteString`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5635
+#: ../../library/stdtypes.rst:5643
 msgid ":class:`collections.abc.MappingView`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5636
+#: ../../library/stdtypes.rst:5644
 msgid ":class:`collections.abc.KeysView`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5637
+#: ../../library/stdtypes.rst:5645
 msgid ":class:`collections.abc.ItemsView`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5638
+#: ../../library/stdtypes.rst:5646
 msgid ":class:`collections.abc.ValuesView`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5639
+#: ../../library/stdtypes.rst:5647
 msgid ":class:`contextlib.AbstractContextManager`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5640
+#: ../../library/stdtypes.rst:5648
 msgid ":class:`contextlib.AbstractAsyncContextManager`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5641
+#: ../../library/stdtypes.rst:5649
 msgid ":class:`dataclasses.Field`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5642
+#: ../../library/stdtypes.rst:5650
 msgid ":class:`functools.cached_property`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5643
+#: ../../library/stdtypes.rst:5651
 msgid ":class:`functools.partialmethod`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5644
+#: ../../library/stdtypes.rst:5652
 msgid ":class:`os.PathLike`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5645
+#: ../../library/stdtypes.rst:5653
 msgid ":class:`queue.LifoQueue`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5646
+#: ../../library/stdtypes.rst:5654
 msgid ":class:`queue.Queue`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5647
+#: ../../library/stdtypes.rst:5655
 msgid ":class:`queue.PriorityQueue`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5648
+#: ../../library/stdtypes.rst:5656
 msgid ":class:`queue.SimpleQueue`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5649
+#: ../../library/stdtypes.rst:5657
 msgid ":ref:`re.Pattern <re-objects>`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5650
+#: ../../library/stdtypes.rst:5658
 msgid ":ref:`re.Match <match-objects>`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5651
+#: ../../library/stdtypes.rst:5659
 msgid ":class:`shelve.BsdDbShelf`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5652
+#: ../../library/stdtypes.rst:5660
 msgid ":class:`shelve.DbfilenameShelf`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5653
+#: ../../library/stdtypes.rst:5661
 msgid ":class:`shelve.Shelf`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5654
+#: ../../library/stdtypes.rst:5662
 msgid ":class:`types.MappingProxyType`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5655
+#: ../../library/stdtypes.rst:5663
 msgid ":class:`weakref.WeakKeyDictionary`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5656
+#: ../../library/stdtypes.rst:5664
 msgid ":class:`weakref.WeakMethod`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5657
+#: ../../library/stdtypes.rst:5665
 msgid ":class:`weakref.WeakSet`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5658
+#: ../../library/stdtypes.rst:5666
 msgid ":class:`weakref.WeakValueDictionary`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5663
+#: ../../library/stdtypes.rst:5671
 msgid "Special Attributes of ``GenericAlias`` objects"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5665
+#: ../../library/stdtypes.rst:5673
 msgid "All parameterized generics implement special read-only attributes."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5669
+#: ../../library/stdtypes.rst:5677
 msgid "This attribute points at the non-parameterized generic class::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5671
+#: ../../library/stdtypes.rst:5679
 msgid ""
 ">>> list[int].__origin__\n"
 "<class 'list'>"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5677
+#: ../../library/stdtypes.rst:5685
 msgid ""
 "This attribute is a :class:`tuple` (possibly of length 1) of generic types "
 "passed to the original :meth:`~object.__class_getitem__` of the generic "
 "class::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5681
+#: ../../library/stdtypes.rst:5689
 msgid ""
 ">>> dict[str, list[int]].__args__\n"
 "(<class 'str'>, list[int])"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5687
+#: ../../library/stdtypes.rst:5695
 msgid ""
 "This attribute is a lazily computed tuple (possibly empty) of unique type "
 "variables found in ``__args__``::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5690
+#: ../../library/stdtypes.rst:5698
 msgid ""
 ">>> from typing import TypeVar\n"
 "\n"
@@ -7477,55 +7479,55 @@ msgid ""
 "(~T,)"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5698
+#: ../../library/stdtypes.rst:5706
 msgid ""
 "A ``GenericAlias`` object with :class:`typing.ParamSpec` parameters may not "
 "have correct ``__parameters__`` after substitution because "
 ":class:`typing.ParamSpec` is intended primarily for static type checking."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5705
+#: ../../library/stdtypes.rst:5713
 msgid ""
 "A boolean that is true if the alias has been unpacked using the ``*`` "
 "operator (see :data:`~typing.TypeVarTuple`)."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5713
+#: ../../library/stdtypes.rst:5721
 msgid ":pep:`484` - Type Hints"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5714
+#: ../../library/stdtypes.rst:5722
 msgid "Introducing Python's framework for type annotations."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5716
+#: ../../library/stdtypes.rst:5724
 msgid ":pep:`585` - Type Hinting Generics In Standard Collections"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5717
+#: ../../library/stdtypes.rst:5725
 msgid ""
 "Introducing the ability to natively parameterize standard-library classes, "
 "provided they implement the special class method "
 ":meth:`~object.__class_getitem__`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5721
+#: ../../library/stdtypes.rst:5729
 msgid ""
 ":ref:`Generics`, :ref:`user-defined generics <user-defined-generics>` and "
 ":class:`typing.Generic`"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5722
+#: ../../library/stdtypes.rst:5730
 msgid ""
 "Documentation on how to implement generic classes that can be parameterized "
 "at runtime and understood by static type-checkers."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5731
+#: ../../library/stdtypes.rst:5739
 msgid "Union Type"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5737
+#: ../../library/stdtypes.rst:5745
 msgid ""
 "A union object holds the value of the ``|`` (bitwise or) operation on "
 "multiple :ref:`type objects <bltin-type-objects>`.  These types are intended"
@@ -7534,7 +7536,7 @@ msgid ""
 ":class:`typing.Union`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5744
+#: ../../library/stdtypes.rst:5752
 msgid ""
 "Defines a union object which holds types *X*, *Y*, and so forth. ``X | Y`` "
 "means either X or Y.  It is equivalent to ``typing.Union[X, Y]``. For "
@@ -7542,13 +7544,13 @@ msgid ""
 ":class:`float`::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5749
+#: ../../library/stdtypes.rst:5757
 msgid ""
 "def square(number: int | float) -> int | float:\n"
 "    return number ** 2"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5754
+#: ../../library/stdtypes.rst:5762
 msgid ""
 "The ``|`` operand cannot be used at runtime to define unions where one or "
 "more members is a forward reference. For example, ``int | \"Foo\"``, where "
@@ -7557,72 +7559,72 @@ msgid ""
 "as a string, e.g. ``\"int | Foo\"``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5762
+#: ../../library/stdtypes.rst:5770
 msgid ""
 "Union objects can be tested for equality with other union objects.  Details:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5764
+#: ../../library/stdtypes.rst:5772
 msgid "Unions of unions are flattened::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5766
+#: ../../library/stdtypes.rst:5774
 msgid "(int | str) | float == int | str | float"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5768
+#: ../../library/stdtypes.rst:5776
 msgid "Redundant types are removed::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5770
+#: ../../library/stdtypes.rst:5778
 msgid "int | str | int == int | str"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5772
+#: ../../library/stdtypes.rst:5780
 msgid "When comparing unions, the order is ignored::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5774
+#: ../../library/stdtypes.rst:5782
 msgid "int | str == str | int"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5776
+#: ../../library/stdtypes.rst:5784
 msgid "It creates instances of :class:`typing.Union`::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5778
+#: ../../library/stdtypes.rst:5786
 msgid ""
 "int | str == typing.Union[int, str]\n"
 "type(int | str) is typing.Union"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5781
+#: ../../library/stdtypes.rst:5789
 msgid "Optional types can be spelled as a union with ``None``::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5783
+#: ../../library/stdtypes.rst:5791
 msgid "str | None == typing.Optional[str]"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5788
+#: ../../library/stdtypes.rst:5796
 msgid ""
 "Calls to :func:`isinstance` and :func:`issubclass` are also supported with a"
 " union object::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5791
+#: ../../library/stdtypes.rst:5799
 msgid ""
 ">>> isinstance(\"\", int | str)\n"
 "True"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5794
+#: ../../library/stdtypes.rst:5802
 msgid ""
 "However, :ref:`parameterized generics <types-genericalias>` in union objects"
 " cannot be checked::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5797
+#: ../../library/stdtypes.rst:5805
 msgid ""
 ">>> isinstance(1, int | list[int])  # short-circuit evaluation\n"
 "True\n"
@@ -7632,13 +7634,13 @@ msgid ""
 "TypeError: isinstance() argument 2 cannot be a parameterized generic"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5804
+#: ../../library/stdtypes.rst:5812
 msgid ""
 "The user-exposed type for the union object can be accessed from "
 ":class:`typing.Union` and used for :func:`isinstance` checks::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5807
+#: ../../library/stdtypes.rst:5815
 msgid ""
 ">>> import typing\n"
 ">>> isinstance(int | str, typing.Union)\n"
@@ -7649,14 +7651,14 @@ msgid ""
 "TypeError: cannot create 'typing.Union' instances"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5816
+#: ../../library/stdtypes.rst:5824
 msgid ""
 "The :meth:`!__or__` method for type objects was added to support the syntax "
 "``X | Y``.  If a metaclass implements :meth:`!__or__`, the Union may "
 "override it:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5820
+#: ../../library/stdtypes.rst:5828
 msgid ""
 ">>> class M(type):\n"
 "...     def __or__(self, other):\n"
@@ -7671,32 +7673,32 @@ msgid ""
 "int | C"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5836
+#: ../../library/stdtypes.rst:5844
 msgid ":pep:`604` -- PEP proposing the ``X | Y`` syntax and the Union type."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5842
+#: ../../library/stdtypes.rst:5850
 msgid ""
 "Union objects are now instances of :class:`typing.Union`. Previously, they "
 "were instances of :class:`types.UnionType`, which remains an alias for "
 ":class:`typing.Union`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5849
+#: ../../library/stdtypes.rst:5857
 msgid "Other Built-in Types"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5851
+#: ../../library/stdtypes.rst:5859
 msgid ""
 "The interpreter supports several other kinds of objects. Most of these "
 "support only one or two operations."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5858
+#: ../../library/stdtypes.rst:5866
 msgid "Modules"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5860
+#: ../../library/stdtypes.rst:5868
 msgid ""
 "The only special operation on a module is attribute access: ``m.name``, "
 "where *m* is a module and *name* accesses a name defined in *m*'s symbol "
@@ -7707,7 +7709,7 @@ msgid ""
 "*foo* somewhere.)"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5867
+#: ../../library/stdtypes.rst:5875
 msgid ""
 "A special attribute of every module is :attr:`~object.__dict__`. This is the"
 " dictionary containing the module's symbol table. Modifying this dictionary "
@@ -7718,32 +7720,32 @@ msgid ""
 "not recommended."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5875
+#: ../../library/stdtypes.rst:5883
 msgid ""
 "Modules built into the interpreter are written like this: ``<module 'sys' "
 "(built-in)>``.  If loaded from a file, they are written as ``<module 'os' "
 "from '/usr/local/lib/pythonX.Y/os.pyc'>``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5883
+#: ../../library/stdtypes.rst:5891
 msgid "Classes and Class Instances"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5885
+#: ../../library/stdtypes.rst:5893
 msgid "See :ref:`objects` and :ref:`class` for these."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5891
+#: ../../library/stdtypes.rst:5899
 msgid "Functions"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5893
+#: ../../library/stdtypes.rst:5901
 msgid ""
 "Function objects are created by function definitions.  The only operation on"
 " a function object is to call it: ``func(argument-list)``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5896
+#: ../../library/stdtypes.rst:5904
 msgid ""
 "There are really two flavors of function objects: built-in functions and "
 "user-defined functions.  Both support the same operation (to call the "
@@ -7751,15 +7753,15 @@ msgid ""
 "types."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5900
+#: ../../library/stdtypes.rst:5908
 msgid "See :ref:`function` for more information."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5906
+#: ../../library/stdtypes.rst:5914
 msgid "Methods"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5910
+#: ../../library/stdtypes.rst:5918
 msgid ""
 "Methods are functions that are called using the attribute notation. There "
 "are two flavors: :ref:`built-in methods <builtin-methods>` (such as "
@@ -7767,7 +7769,7 @@ msgid ""
 "methods>`. Built-in methods are described with the types that support them."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5916
+#: ../../library/stdtypes.rst:5924
 msgid ""
 "If you access a method (a function defined in a class namespace) through an "
 "instance, you get a special object: a :dfn:`bound method` (also called "
@@ -7780,7 +7782,7 @@ msgid ""
 "..., arg-n)``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5927
+#: ../../library/stdtypes.rst:5935
 msgid ""
 "Like :ref:`function objects <user-defined-funcs>`, bound method objects "
 "support getting arbitrary attributes.  However, since method attributes are "
@@ -7791,7 +7793,7 @@ msgid ""
 "on the underlying function object:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5935
+#: ../../library/stdtypes.rst:5943
 msgid ""
 ">>> class C:\n"
 "...     def method(self):\n"
@@ -7807,15 +7809,15 @@ msgid ""
 "'my name is method'"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5950
+#: ../../library/stdtypes.rst:5958
 msgid "See :ref:`instance-methods` for more information."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5958
+#: ../../library/stdtypes.rst:5966
 msgid "Code Objects"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5964
+#: ../../library/stdtypes.rst:5972
 msgid ""
 "Code objects are used by the implementation to represent \"pseudo-compiled\""
 " executable Python code such as a function body. They differ from function "
@@ -7825,28 +7827,28 @@ msgid ""
 ":attr:`~function.__code__` attribute. See also the :mod:`code` module."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5971
+#: ../../library/stdtypes.rst:5979
 msgid ""
 "Accessing :attr:`~function.__code__` raises an :ref:`auditing event "
 "<auditing>` ``object.__getattr__`` with arguments ``obj`` and "
 "``\"__code__\"``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5978
+#: ../../library/stdtypes.rst:5986
 msgid ""
 "A code object can be executed or evaluated by passing it (instead of a "
 "source string) to the :func:`exec` or :func:`eval`  built-in functions."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5981
+#: ../../library/stdtypes.rst:5989
 msgid "See :ref:`types` for more information."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5987
+#: ../../library/stdtypes.rst:5995
 msgid "Type Objects"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5993
+#: ../../library/stdtypes.rst:6001
 msgid ""
 "Type objects represent the various object types.  An object's type is "
 "accessed by the built-in function :func:`type`.  There are no special "
@@ -7854,30 +7856,30 @@ msgid ""
 " standard built-in types."
 msgstr ""
 
-#: ../../library/stdtypes.rst:5998
+#: ../../library/stdtypes.rst:6006
 msgid "Types are written like this: ``<class 'int'>``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6004
+#: ../../library/stdtypes.rst:6012
 msgid "The Null Object"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6006
+#: ../../library/stdtypes.rst:6014
 msgid ""
 "This object is returned by functions that don't explicitly return a value.  "
 "It supports no special operations.  There is exactly one null object, named "
 "``None`` (a built-in name).  ``type(None)()`` produces the same singleton."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6010
+#: ../../library/stdtypes.rst:6018
 msgid "It is written as ``None``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6017
+#: ../../library/stdtypes.rst:6025
 msgid "The Ellipsis Object"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6019
+#: ../../library/stdtypes.rst:6027
 msgid ""
 "This object is commonly used to indicate that something is omitted. It "
 "supports no special operations.  There is exactly one ellipsis object, named"
@@ -7885,64 +7887,64 @@ msgid ""
 ":const:`Ellipsis` singleton."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6024
+#: ../../library/stdtypes.rst:6032
 msgid "It is written as ``Ellipsis`` or ``...``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6026
+#: ../../library/stdtypes.rst:6034
 msgid ""
 "In typical use, ``...`` as the ``Ellipsis`` object appears in a few "
 "different places, for instance:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6029
+#: ../../library/stdtypes.rst:6037
 msgid ""
 "In type annotations, such as :ref:`callable arguments <annotating-"
 "callables>` or :ref:`tuple elements <annotating-tuples>`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6032
+#: ../../library/stdtypes.rst:6040
 msgid ""
 "As the body of a function instead of a :ref:`pass statement <tut-pass>`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6034
+#: ../../library/stdtypes.rst:6042
 msgid ""
 "In third-party libraries, such as `Numpy's slicing and striding "
 "<https://numpy.org/doc/stable/user/basics.indexing.html#slicing-and-"
 "striding>`_."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6037
+#: ../../library/stdtypes.rst:6045
 msgid ""
 "Python also uses three dots in ways that are not ``Ellipsis`` objects, for "
 "instance:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6039
+#: ../../library/stdtypes.rst:6047
 msgid ""
 "Doctest's :const:`ELLIPSIS <doctest.ELLIPSIS>`, as a pattern for missing "
 "content."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6041
+#: ../../library/stdtypes.rst:6049
 msgid ""
 "The default Python prompt of the :term:`interactive` shell when partial "
 "input is incomplete."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6043
+#: ../../library/stdtypes.rst:6051
 msgid ""
 "Lastly, the Python documentation often uses three dots in conventional "
 "English usage to mean omitted content, even in code examples that also use "
 "them as the ``Ellipsis``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6051
+#: ../../library/stdtypes.rst:6059
 msgid "The NotImplemented Object"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6053
+#: ../../library/stdtypes.rst:6061
 msgid ""
 "This object is returned from comparisons and binary operations when they are"
 " asked to operate on types they don't support. See :ref:`comparisons` for "
@@ -7950,64 +7952,64 @@ msgid ""
 ":code:`type(NotImplemented)()` produces the singleton instance."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6058
+#: ../../library/stdtypes.rst:6066
 msgid "It is written as :code:`NotImplemented`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6064
+#: ../../library/stdtypes.rst:6072
 msgid "Internal Objects"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6066
+#: ../../library/stdtypes.rst:6074
 msgid ""
 "See :ref:`types` for this information.  It describes :ref:`stack frame "
 "objects <frame-objects>`, :ref:`traceback objects <traceback-objects>`, and "
 "slice objects."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6074
+#: ../../library/stdtypes.rst:6082
 msgid "Special Attributes"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6076
+#: ../../library/stdtypes.rst:6084
 msgid ""
 "The implementation adds a few special read-only attributes to several object"
 " types, where they are relevant.  Some of these are not reported by the "
 ":func:`dir` built-in function."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6083
+#: ../../library/stdtypes.rst:6091
 msgid ""
 "The name of the class, function, method, descriptor, or generator instance."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6089
+#: ../../library/stdtypes.rst:6097
 msgid ""
 "The :term:`qualified name` of the class, function, method, descriptor, or "
 "generator instance."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6097
+#: ../../library/stdtypes.rst:6105
 msgid "The name of the module in which a class or function was defined."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6102
+#: ../../library/stdtypes.rst:6110
 msgid ""
 "The documentation string of a class or function, or ``None`` if undefined."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6107
+#: ../../library/stdtypes.rst:6115
 msgid ""
 "The :ref:`type parameters <type-params>` of generic classes, functions, and "
 ":ref:`type aliases <type-aliases>`. For classes and functions that are not "
 "generic, this will be an empty tuple."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6117
+#: ../../library/stdtypes.rst:6125
 msgid "Integer string conversion length limitation"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6119
+#: ../../library/stdtypes.rst:6127
 msgid ""
 "CPython has a global limit for converting between :class:`int` and "
 ":class:`str` to mitigate denial of service attacks. This limit *only* "
@@ -8015,7 +8017,7 @@ msgid ""
 "octal, and binary conversions are unlimited. The limit can be configured."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6124
+#: ../../library/stdtypes.rst:6132
 msgid ""
 "The :class:`int` type in CPython is an arbitrary length number stored in "
 "binary form (commonly known as a \"bignum\"). There exists no algorithm that"
@@ -8025,24 +8027,24 @@ msgid ""
 "value such as ``int('1' * 500_000)`` can take over a second on a fast CPU."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6131
+#: ../../library/stdtypes.rst:6139
 msgid ""
 "Limiting conversion size offers a practical way to avoid :cve:`2020-10735`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6133
+#: ../../library/stdtypes.rst:6141
 msgid ""
 "The limit is applied to the number of digit characters in the input or "
 "output string when a non-linear conversion algorithm would be involved.  "
 "Underscores and the sign are not counted towards the limit."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6137
+#: ../../library/stdtypes.rst:6145
 msgid ""
 "When an operation would exceed the limit, a :exc:`ValueError` is raised:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6139
+#: ../../library/stdtypes.rst:6147
 msgid ""
 ">>> import sys\n"
 ">>> sys.set_int_max_str_digits(4300)  # Illustrative, this is the default.\n"
@@ -8063,7 +8065,7 @@ msgid ""
 ">>> assert int(hex(i_squared), base=16) == i*i  # Hexadecimal is unlimited."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6159
+#: ../../library/stdtypes.rst:6167
 msgid ""
 "The default limit is 4300 digits as provided in "
 ":data:`sys.int_info.default_max_str_digits <sys.int_info>`. The lowest limit"
@@ -8071,11 +8073,11 @@ msgid ""
 ":data:`sys.int_info.str_digits_check_threshold <sys.int_info>`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6164
+#: ../../library/stdtypes.rst:6172
 msgid "Verification:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6166
+#: ../../library/stdtypes.rst:6174
 msgid ""
 ">>> import sys\n"
 ">>> assert sys.int_info.default_max_str_digits == 4300, sys.int_info\n"
@@ -8086,90 +8088,90 @@ msgid ""
 "..."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6179
+#: ../../library/stdtypes.rst:6187
 msgid "Affected APIs"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6181
+#: ../../library/stdtypes.rst:6189
 msgid ""
 "The limitation only applies to potentially slow conversions between "
 ":class:`int` and :class:`str` or :class:`bytes`:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6184
+#: ../../library/stdtypes.rst:6192
 msgid "``int(string)`` with default base 10."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6185
+#: ../../library/stdtypes.rst:6193
 msgid "``int(string, base)`` for all bases that are not a power of 2."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6186
+#: ../../library/stdtypes.rst:6194
 msgid "``str(integer)``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6187
+#: ../../library/stdtypes.rst:6195
 msgid "``repr(integer)``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6188
+#: ../../library/stdtypes.rst:6196
 msgid ""
 "any other string conversion to base 10, for example ``f\"{integer}\"``, "
 "``\"{}\".format(integer)``, or ``b\"%d\" % integer``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6191
+#: ../../library/stdtypes.rst:6199
 msgid "The limitations do not apply to functions with a linear algorithm:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6193
+#: ../../library/stdtypes.rst:6201
 msgid "``int(string, base)`` with base 2, 4, 8, 16, or 32."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6194
+#: ../../library/stdtypes.rst:6202
 msgid ":func:`int.from_bytes` and :func:`int.to_bytes`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6195
+#: ../../library/stdtypes.rst:6203
 msgid ":func:`hex`, :func:`oct`, :func:`bin`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6196
+#: ../../library/stdtypes.rst:6204
 msgid ":ref:`formatspec` for hex, octal, and binary numbers."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6197
+#: ../../library/stdtypes.rst:6205
 msgid ":class:`str` to :class:`float`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6198
+#: ../../library/stdtypes.rst:6206
 msgid ":class:`str` to :class:`decimal.Decimal`."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6201
+#: ../../library/stdtypes.rst:6209
 msgid "Configuring the limit"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6203
+#: ../../library/stdtypes.rst:6211
 msgid ""
 "Before Python starts up you can use an environment variable or an "
 "interpreter command line flag to configure the limit:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6206
+#: ../../library/stdtypes.rst:6214
 msgid ""
 ":envvar:`PYTHONINTMAXSTRDIGITS`, e.g. ``PYTHONINTMAXSTRDIGITS=640 python3`` "
 "to set the limit to 640 or ``PYTHONINTMAXSTRDIGITS=0 python3`` to disable "
 "the limitation."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6209
+#: ../../library/stdtypes.rst:6217
 msgid ""
 ":option:`-X int_max_str_digits <-X>`, e.g. ``python3 -X "
 "int_max_str_digits=640``"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6211
+#: ../../library/stdtypes.rst:6219
 msgid ""
 ":data:`sys.flags.int_max_str_digits` contains the value of "
 ":envvar:`PYTHONINTMAXSTRDIGITS` or :option:`-X int_max_str_digits <-X>`. If "
@@ -8178,38 +8180,38 @@ msgid ""
 ":data:`sys.int_info.default_max_str_digits` was used during initialization."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6217
+#: ../../library/stdtypes.rst:6225
 msgid ""
 "From code, you can inspect the current limit and set a new one using these "
 ":mod:`sys` APIs:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6220
+#: ../../library/stdtypes.rst:6228
 msgid ""
 ":func:`sys.get_int_max_str_digits` and :func:`sys.set_int_max_str_digits` "
 "are a getter and setter for the interpreter-wide limit. Subinterpreters have"
 " their own limit."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6224
+#: ../../library/stdtypes.rst:6232
 msgid ""
 "Information about the default and minimum can be found in "
 ":data:`sys.int_info`:"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6226
+#: ../../library/stdtypes.rst:6234
 msgid ""
 ":data:`sys.int_info.default_max_str_digits <sys.int_info>` is the compiled-"
 "in default limit."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6228
+#: ../../library/stdtypes.rst:6236
 msgid ""
 ":data:`sys.int_info.str_digits_check_threshold <sys.int_info>` is the lowest"
 " accepted value for the limit (other than 0 which disables it)."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6235
+#: ../../library/stdtypes.rst:6243
 msgid ""
 "Setting a low limit *can* lead to problems. While rare, code exists that "
 "contains integer constants in decimal in their source that exceed the "
@@ -8221,7 +8223,7 @@ msgid ""
 "constants is to convert them to ``0x`` hexadecimal form as it has no limit."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6244
+#: ../../library/stdtypes.rst:6252
 msgid ""
 "Test your application thoroughly if you use a low limit. Ensure your tests "
 "run with the limit set early via the environment or flag so that it applies "
@@ -8229,11 +8231,11 @@ msgid ""
 "to precompile ``.py`` sources to ``.pyc`` files."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6250
+#: ../../library/stdtypes.rst:6258
 msgid "Recommended configuration"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6252
+#: ../../library/stdtypes.rst:6260
 msgid ""
 "The default :data:`sys.int_info.default_max_str_digits` is expected to be "
 "reasonable for most applications. If your application requires a different "
@@ -8241,11 +8243,11 @@ msgid ""
 "as these APIs were added in security patch releases in versions before 3.12."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6257
+#: ../../library/stdtypes.rst:6265
 msgid "Example::"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6259
+#: ../../library/stdtypes.rst:6267
 msgid ""
 ">>> import sys\n"
 ">>> if hasattr(sys, \"set_int_max_str_digits\"):\n"
@@ -8258,38 +8260,38 @@ msgid ""
 "...         sys.set_int_max_str_digits(lower_bound)"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6269
+#: ../../library/stdtypes.rst:6277
 msgid "If you need to disable it entirely, set it to ``0``."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6273
+#: ../../library/stdtypes.rst:6281
 msgid "Footnotes"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6274
+#: ../../library/stdtypes.rst:6282
 msgid ""
 "Additional information on these special methods may be found in the Python "
 "Reference Manual (:ref:`customization`)."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6277
+#: ../../library/stdtypes.rst:6285
 msgid ""
 "As a consequence, the list ``[1, 2]`` is considered equal to ``[1.0, 2.0]``,"
 " and similarly for tuples."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6280
+#: ../../library/stdtypes.rst:6288
 msgid "They must have since the parser can't tell the type of the operands."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6282
+#: ../../library/stdtypes.rst:6290
 msgid ""
 "Cased characters are those with general category property being one of "
 "\"Lu\" (Letter, uppercase), \"Ll\" (Letter, lowercase), or \"Lt\" (Letter, "
 "titlecase)."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6285
+#: ../../library/stdtypes.rst:6293
 msgid ""
 "To format only a tuple you should therefore provide a singleton tuple whose "
 "only element is the tuple to be formatted."
@@ -8302,13 +8304,13 @@ msgstr ""
 #: ../../library/stdtypes.rst:13 ../../library/stdtypes.rst:322
 #: ../../library/stdtypes.rst:399 ../../library/stdtypes.rst:992
 #: ../../library/stdtypes.rst:1179 ../../library/stdtypes.rst:1201
-#: ../../library/stdtypes.rst:1216 ../../library/stdtypes.rst:4992
-#: ../../library/stdtypes.rst:5989
+#: ../../library/stdtypes.rst:1216 ../../library/stdtypes.rst:5000
+#: ../../library/stdtypes.rst:5997
 msgid "types"
 msgstr ""
 
 #: ../../library/stdtypes.rst:34 ../../library/stdtypes.rst:1216
-#: ../../library/stdtypes.rst:4992
+#: ../../library/stdtypes.rst:5000
 msgid "statement"
 msgstr ""
 
@@ -8432,9 +8434,9 @@ msgstr ""
 #: ../../library/stdtypes.rst:1610 ../../library/stdtypes.rst:1740
 #: ../../library/stdtypes.rst:3021 ../../library/stdtypes.rst:3040
 #: ../../library/stdtypes.rst:3153 ../../library/stdtypes.rst:4789
-#: ../../library/stdtypes.rst:4992 ../../library/stdtypes.rst:5476
-#: ../../library/stdtypes.rst:5733 ../../library/stdtypes.rst:5908
-#: ../../library/stdtypes.rst:5953
+#: ../../library/stdtypes.rst:5000 ../../library/stdtypes.rst:5484
+#: ../../library/stdtypes.rst:5741 ../../library/stdtypes.rst:5916
+#: ../../library/stdtypes.rst:5961
 msgid "object"
 msgstr ""
 
@@ -8526,9 +8528,9 @@ msgid "arithmetic"
 msgstr ""
 
 #: ../../library/stdtypes.rst:249 ../../library/stdtypes.rst:992
-#: ../../library/stdtypes.rst:1179 ../../library/stdtypes.rst:4992
-#: ../../library/stdtypes.rst:5960 ../../library/stdtypes.rst:5974
-#: ../../library/stdtypes.rst:5989
+#: ../../library/stdtypes.rst:1179 ../../library/stdtypes.rst:5000
+#: ../../library/stdtypes.rst:5968 ../../library/stdtypes.rst:5982
+#: ../../library/stdtypes.rst:5997
 msgid "built-in function"
 msgstr ""
 
@@ -8586,7 +8588,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:322 ../../library/stdtypes.rst:399
 #: ../../library/stdtypes.rst:992 ../../library/stdtypes.rst:1216
-#: ../../library/stdtypes.rst:4992
+#: ../../library/stdtypes.rst:5000
 msgid "operations on"
 msgstr ""
 
@@ -8595,7 +8597,7 @@ msgid "conjugate() (complex number method)"
 msgstr ""
 
 #: ../../library/stdtypes.rst:341 ../../library/stdtypes.rst:1808
-#: ../../library/stdtypes.rst:3021 ../../library/stdtypes.rst:5989
+#: ../../library/stdtypes.rst:3021 ../../library/stdtypes.rst:5997
 msgid "module"
 msgstr ""
 
@@ -8663,7 +8665,7 @@ msgstr ""
 msgid "iterator protocol"
 msgstr ""
 
-#: ../../library/stdtypes.rst:889 ../../library/stdtypes.rst:5391
+#: ../../library/stdtypes.rst:889 ../../library/stdtypes.rst:5399
 msgid "protocol"
 msgstr ""
 
@@ -8689,7 +8691,7 @@ msgstr ""
 msgid "iteration over"
 msgstr ""
 
-#: ../../library/stdtypes.rst:992 ../../library/stdtypes.rst:4992
+#: ../../library/stdtypes.rst:992 ../../library/stdtypes.rst:5000
 msgid "len"
 msgstr ""
 
@@ -8764,8 +8766,8 @@ msgstr ""
 msgid "bytearray"
 msgstr ""
 
-#: ../../library/stdtypes.rst:1216 ../../library/stdtypes.rst:4992
-#: ../../library/stdtypes.rst:5733 ../../library/stdtypes.rst:5989
+#: ../../library/stdtypes.rst:1216 ../../library/stdtypes.rst:5000
+#: ../../library/stdtypes.rst:5741 ../../library/stdtypes.rst:5997
 msgid "type"
 msgstr ""
 
@@ -8773,7 +8775,7 @@ msgstr ""
 msgid "assignment"
 msgstr ""
 
-#: ../../library/stdtypes.rst:1216 ../../library/stdtypes.rst:4992
+#: ../../library/stdtypes.rst:1216 ../../library/stdtypes.rst:5000
 msgid "del"
 msgstr ""
 
@@ -8971,90 +8973,90 @@ msgstr ""
 msgid "set"
 msgstr ""
 
-#: ../../library/stdtypes.rst:4992
+#: ../../library/stdtypes.rst:5000
 msgid "mapping"
 msgstr ""
 
-#: ../../library/stdtypes.rst:4992
+#: ../../library/stdtypes.rst:5000
 msgid "dictionary"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5102
+#: ../../library/stdtypes.rst:5110
 msgid "__missing__()"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5391
+#: ../../library/stdtypes.rst:5399
 msgid "context manager"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5391
+#: ../../library/stdtypes.rst:5399
 msgid "context management protocol"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5391
+#: ../../library/stdtypes.rst:5399
 msgid "context management"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5464
+#: ../../library/stdtypes.rst:5472
 msgid "annotation"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5464
+#: ../../library/stdtypes.rst:5472
 msgid "type annotation; type hint"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5476
+#: ../../library/stdtypes.rst:5484
 msgid "GenericAlias"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5476
+#: ../../library/stdtypes.rst:5484
 msgid "Generic"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5476
+#: ../../library/stdtypes.rst:5484
 msgid "Alias"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5733
+#: ../../library/stdtypes.rst:5741
 msgid "Union"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5733
+#: ../../library/stdtypes.rst:5741
 msgid "union"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5908
+#: ../../library/stdtypes.rst:5916
 msgid "method"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5953
+#: ../../library/stdtypes.rst:5961
 msgid "code"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5953
+#: ../../library/stdtypes.rst:5961
 msgid "code object"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5960
+#: ../../library/stdtypes.rst:5968
 msgid "compile"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5960
+#: ../../library/stdtypes.rst:5968
 msgid "__code__ (function object attribute)"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5974
+#: ../../library/stdtypes.rst:5982
 msgid "exec"
 msgstr ""
 
-#: ../../library/stdtypes.rst:5974
+#: ../../library/stdtypes.rst:5982
 msgid "eval"
 msgstr ""
 
-#: ../../library/stdtypes.rst:6013
+#: ../../library/stdtypes.rst:6021
 msgid "..."
 msgstr ""
 
-#: ../../library/stdtypes.rst:6013
+#: ../../library/stdtypes.rst:6021
 msgid "ellipsis literal"
 msgstr ""

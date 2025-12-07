@@ -1316,6 +1316,12 @@ msgid ""
 "class may end up calling a method of a derived class that overrides it.  "
 "(For C++ programmers: all methods in Python are effectively ``virtual``.)"
 msgstr ""
+"Производные классы могут переопределять методы своих базовых классов. "
+"Поскольку методы не имеют специальных привилегий при вызове других методов "
+"того же объекта, метод базового класса, который вызывает другой метод, "
+"определённый в том же базовом классе, может в конечном итоге вызвать метод "
+"производного класса, который переопределяет его. (Для программистов C++: все"
+" методы Python фактически являются ``virtual``.)"
 
 #: ../../tutorial/classes.rst:605
 msgid ""
@@ -1326,10 +1332,18 @@ msgid ""
 "to clients as well.  (Note that this only works if the base class is "
 "accessible as ``BaseClassName`` in the global scope.)"
 msgstr ""
+"На самом деле переопределённый метод в производном классе может расширять, а"
+" не просто заменять одноименный метод базового класса. Есть простой способ "
+"вызвать метод базового класса напрямую: просто вызовите "
+"``BaseClassName.methodname(self, arguments)``. Иногда это бывает полезно и "
+"для клиентов. (Обратите внимание, что это работает только в том случае, если"
+" базовый класс доступен как ``BaseClassName`` в глобальной области "
+"видимости.)"
 
 #: ../../tutorial/classes.rst:612
 msgid "Python has two built-in functions that work with inheritance:"
 msgstr ""
+"Python имеет две встроенные функции, которые работают с наследованием:"
 
 #: ../../tutorial/classes.rst:614
 msgid ""
@@ -1337,6 +1351,9 @@ msgid ""
 " will be ``True`` only if ``obj.__class__`` is :class:`int` or some class "
 "derived from :class:`int`."
 msgstr ""
+"Используйте :func:`isinstance` для проверки типа экземпляра: "
+"``isinstance(obj, int)`` будет ``True``, только если ``obj.__class__`` имеет"
+" значение :class:`int` или какой-либо производный от :class:`int` класс."
 
 #: ../../tutorial/classes.rst:618
 msgid ""
@@ -1345,16 +1362,23 @@ msgid ""
 "``issubclass(float, int)`` is ``False`` since :class:`float` is not a "
 "subclass of :class:`int`."
 msgstr ""
+"Используйте :func:`issubclass` для проверки наследования классов: "
+"``issubclass(bool, int)`` имеет значение ``True``, поскольку :class:`bool` "
+"является подклассом :class:`int`. Однако ``issubclass(float, int)`` имеет "
+"значение ``False``, поскольку :class:`float` не является подклассом "
+":class:`int`."
 
 #: ../../tutorial/classes.rst:628
 msgid "Multiple Inheritance"
-msgstr ""
+msgstr "Множественное наследование"
 
 #: ../../tutorial/classes.rst:630
 msgid ""
 "Python supports a form of multiple inheritance as well.  A class definition "
 "with multiple base classes looks like this::"
 msgstr ""
+"Python также поддерживает форму множественного наследования. Определение "
+"класса с несколькими базовыми классами выглядит следующим образом:"
 
 #: ../../tutorial/classes.rst:633
 msgid ""
@@ -1365,6 +1389,12 @@ msgid ""
 "    .\n"
 "    <statement-N>"
 msgstr ""
+"class DerivedClassName(Base1, Base2, Base3):\n"
+"    <statement-1>\n"
+"    .\n"
+"    .\n"
+"    .\n"
+"    <statement-N>"
 
 #: ../../tutorial/classes.rst:640
 msgid ""

@@ -620,7 +620,7 @@ msgstr ""
 "    i = 12345\n"
 "\n"
 "    def f(self):\n"
-"        return 'привет мир'"
+"        return 'hello world'"
 
 #: ../../tutorial/classes.rst:276
 msgid ""
@@ -783,18 +783,24 @@ msgid ""
 "not, since ``MyClass.i`` is not.  But ``x.f`` is not the same thing as "
 "``MyClass.f`` --- it is a *method object*, not a function object."
 msgstr ""
+"Методы, доступные у объекту-экземпляру, зависят от его класса. По "
+"определению, все атрибуты класса, которые являются функциями, создают "
+"соответствующие методы у его экземпляров. В нашем примере ``x.f`` — ссылка "
+"на метод, потому что ``MyClass.f`` — это функция; в отличие от ``x.i``, "
+"потому что ``MyClass.i`` не является функцией. Но ``x.f`` — не то же самое, "
+"что ``MyClass.f`` — это *объект метода*, а не объект функции."
 
 #: ../../tutorial/classes.rst:356
 msgid "Method Objects"
-msgstr ""
+msgstr "Объекта методов"
 
 #: ../../tutorial/classes.rst:358
 msgid "Usually, a method is called right after it is bound::"
-msgstr ""
+msgstr "Обычно метод вызывается сразу после обращения к нему::"
 
 #: ../../tutorial/classes.rst:360
 msgid "x.f()"
-msgstr ""
+msgstr "x.f()"
 
 #: ../../tutorial/classes.rst:362
 msgid ""
@@ -803,6 +809,9 @@ msgid ""
 "is a method object, and can be stored away and called at a later time.  For "
 "example::"
 msgstr ""
+"Если ``x = MyClass()``, как указано выше, этот вызов вернёт строку ``'hello "
+"world'``. Однако вызывать метод сразу необязательно: ``x.f`` — это объект-"
+"метод, его можно сохранить и вызвать позже. Например::"
 
 #: ../../tutorial/classes.rst:366
 msgid ""
@@ -810,10 +819,13 @@ msgid ""
 "while True:\n"
 "    print(xf())"
 msgstr ""
+"xf = x.f\n"
+"while True:\n"
+"    print(xf())"
 
 #: ../../tutorial/classes.rst:370
 msgid "will continue to print ``hello world`` until the end of time."
-msgstr ""
+msgstr "будет продолжать печатать ``hello world`` до конца времён."
 
 #: ../../tutorial/classes.rst:372
 msgid ""
@@ -824,6 +836,11 @@ msgid ""
 " argument is called without any --- even if the argument isn't actually "
 "used..."
 msgstr ""
+"Что же именно происходит при вызове метода? Вы могли заметить, что ``x.f()``"
+" был вызван без аргумента, хотя в определении функции :meth:`!f` указан "
+"аргумент. Куда же он подевался? Разумеется, Python должен выбросить "
+"исключение, если вызвать функцию, которой нужен аргумент, без него — даже "
+"если аргумент на самом деле не используется…"
 
 #: ../../tutorial/classes.rst:378
 msgid ""
@@ -835,6 +852,12 @@ msgid ""
 "that is created by inserting the method's instance object before the first "
 "argument."
 msgstr ""
+"На самом деле, вы, вероятно, уже догадались: особенность методов в том, что "
+"объект-экземпляр передаётся в функцию как первый аргумент. В нашем примере "
+"вызов ``x.f()`` полностью совпадает с ``MyClass.f(x)``. Вообще, вызов метода"
+" со списком из *n* аргументов эквивалентен вызову соответствующей функции со"
+" списком аргументов, полученным вставкой объекта-экземпляра метода перед "
+"первым аргументом."
 
 #: ../../tutorial/classes.rst:385
 msgid ""

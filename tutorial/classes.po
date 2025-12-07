@@ -687,6 +687,10 @@ msgid ""
 "instance.  So in this example, a new, initialized instance can be obtained "
 "by::"
 msgstr ""
+"Когда класс определяет метод :meth:`~object.__init__`, создание экземпляра "
+"класса автоматически вызывает :meth:`!__init__` для вновь созданного "
+"экземпляра класса. Итак, в этом примере новый инициализированный экземпляр "
+"можно получить следующим образом:"
 
 #: ../../tutorial/classes.rst:305
 msgid ""
@@ -694,6 +698,9 @@ msgid ""
 "greater flexibility.  In that case, arguments given to the class "
 "instantiation operator are passed on to :meth:`!__init__`.  For example, ::"
 msgstr ""
+"Конечно, метод :meth:`~object.__init__` может иметь аргументы для большей "
+"гибкости. В этом случае аргументы, переданные оператору создания экземпляра "
+"класса, передаются в :meth:`!__init__`. Например, ::"
 
 #: ../../tutorial/classes.rst:309
 msgid ""
@@ -706,10 +713,18 @@ msgid ""
 ">>> x.r, x.i\n"
 "(3.0, -4.5)"
 msgstr ""
+">>> class Complex:\n"
+"...     def __init__(self, realpart, imagpart):\n"
+"...         self.r = realpart\n"
+"...         self.i = imagpart\n"
+"...\n"
+">>> x = Complex(3.0, -4.5)\n"
+">>> x.r, x.i\n"
+"(3.0, -4.5)"
 
 #: ../../tutorial/classes.rst:322
 msgid "Instance Objects"
-msgstr ""
+msgstr "Объекты экземпляров"
 
 #: ../../tutorial/classes.rst:324
 msgid ""
@@ -717,6 +732,9 @@ msgid ""
 " instance objects are attribute references.  There are two kinds of valid "
 "attribute names: data attributes and methods."
 msgstr ""
+"Что мы можем делать с объектами-экземплярами? Единственная операция, которую"
+" понимают экземпляры — обращение к атрибутам. Есть два вида допустимых имён "
+"атрибутов: данные и методы."
 
 #: ../../tutorial/classes.rst:328
 msgid ""
@@ -727,6 +745,12 @@ msgid ""
 "following piece of code will print the value ``16``, without leaving a "
 "trace::"
 msgstr ""
+"*Атрибуты-данные* соответствуют «переменным экземпляра» в Smalltalk и "
+"«членам данных» в C++. Атрибуты данных не нужно объявлять; как и локальные "
+"переменные, они возникают, когда им впервые присваиваются значения. "
+"Например, если ``x`` является экземпляром :class:`!MyClass`, созданным выше,"
+" следующий фрагмент кода напечатает значение ``16``, не оставив после себя "
+"никаких следов::"
 
 #: ../../tutorial/classes.rst:334
 msgid ""
@@ -736,12 +760,19 @@ msgid ""
 "print(x.counter)\n"
 "del x.counter"
 msgstr ""
+"x.counter = 1\n"
+"while x.counter < 10:\n"
+"    x.counter = x.counter * 2\n"
+"print(x.counter)\n"
+"del x.counter"
 
 #: ../../tutorial/classes.rst:340
 msgid ""
 "The other kind of instance attribute reference is a *method*. A method is a "
 "function that \"belongs to\" an object."
 msgstr ""
+"Другой вид атрибута экземпляра — *метод*. Метод — это функция, которая "
+"«принадлежит» объекту."
 
 #: ../../tutorial/classes.rst:345
 msgid ""

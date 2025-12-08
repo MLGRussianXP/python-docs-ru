@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-13 14:15+0000\n"
+"POT-Creation-Date: 2025-12-07 14:13+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,17 +24,19 @@ msgstr ""
 
 #: ../../tutorial/stdlib.rst:5
 msgid "Brief Tour of the Standard Library"
-msgstr ""
+msgstr "Краткий обзор стандартной библиотеки"
 
 #: ../../tutorial/stdlib.rst:11
 msgid "Operating System Interface"
-msgstr ""
+msgstr "Интерфейс операционной системы"
 
 #: ../../tutorial/stdlib.rst:13
 msgid ""
 "The :mod:`os` module provides dozens of functions for interacting with the "
 "operating system::"
 msgstr ""
+"Модуль :mod:`os` предоставляет десятки функций для взаимодействия с "
+"операционной системой::"
 
 #: ../../tutorial/stdlib.rst:16
 msgid ""
@@ -44,6 +47,12 @@ msgid ""
 ">>> os.system('mkdir today')   # Run the command mkdir in the system shell\n"
 "0"
 msgstr ""
+">>> import os\n"
+">>> os.getcwd()      # Вернуть текущий рабочий каталог\n"
+"'C:\\\\Python314'\n"
+">>> os.chdir('/server/accesslogs')   # Изменить текущий рабочий каталог\n"
+">>> os.system('mkdir today')   # Выполнить команду mkdir в системном shell\n"
+"0"
 
 #: ../../tutorial/stdlib.rst:23
 msgid ""

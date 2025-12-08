@@ -60,12 +60,17 @@ msgid ""
 "This will keep :func:`os.open` from shadowing the built-in :func:`open` "
 "function which operates much differently."
 msgstr ""
+"Для импорта этого модуля используйте стиль ``import os``, а не ``from os "
+"import *``. В противном случае :func:`os.open` затенит встроенную функцию "
+":func:`open`, а они работают по-разному."
 
 #: ../../tutorial/stdlib.rst:29
 msgid ""
 "The built-in :func:`dir` and :func:`help` functions are useful as "
 "interactive aids for working with large modules like :mod:`os`::"
 msgstr ""
+"Встроенные функции :func:`dir` и :func:`help` полезны как интерактивные "
+"помощники при работе с большими модулями, вроде:mod:`os`::"
 
 #: ../../tutorial/stdlib.rst:32
 msgid ""
@@ -75,6 +80,11 @@ msgid ""
 ">>> help(os)\n"
 "<returns an extensive manual page created from the module's docstrings>"
 msgstr ""
+">>> import os\n"
+">>> dir(os)\n"
+"<возвращает список всех функций модуля>\n"
+">>> help(os)\n"
+"<возвращает подробную справку, собранную из docstring’ов модуля>"
 
 #: ../../tutorial/stdlib.rst:38
 msgid ""

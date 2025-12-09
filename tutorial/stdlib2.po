@@ -24,23 +24,28 @@ msgstr ""
 
 #: ../../tutorial/stdlib2.rst:5
 msgid "Brief Tour of the Standard Library --- Part II"
-msgstr ""
+msgstr "Краткий обзор стандартной библиотеки — часть II"
 
 #: ../../tutorial/stdlib2.rst:7
 msgid ""
 "This second tour covers more advanced modules that support professional "
 "programming needs.  These modules rarely occur in small scripts."
 msgstr ""
+"Вторая часть обзора охватывает более продвинутые модули, ориентированные на "
+"профессиональную разработку. Эти модули редко встречаются в небольших "
+"скриптах."
 
 #: ../../tutorial/stdlib2.rst:14
 msgid "Output Formatting"
-msgstr ""
+msgstr "Форматирование вывода"
 
 #: ../../tutorial/stdlib2.rst:16
 msgid ""
 "The :mod:`reprlib` module provides a version of :func:`repr` customized for "
 "abbreviated displays of large or deeply nested containers::"
 msgstr ""
+"Модуль :mod:`reprlib` предоставляет версию функции :func:`repr`, настроенную"
+" для сокращенного отображения больших или глубоко вложенных контейнеров::"
 
 #: ../../tutorial/stdlib2.rst:19
 msgid ""
@@ -48,6 +53,9 @@ msgid ""
 ">>> reprlib.repr(set('supercalifragilisticexpialidocious'))\n"
 "\"{'a', 'c', 'd', 'e', 'f', 'g', ...}\""
 msgstr ""
+">>> import reprlib\n"
+">>> reprlib.repr(set('суперкалифрагилистикэкспиалидошес'))\n"
+"\"{'а', 'г', 'д', 'е', 'и', 'к', ...}\""
 
 #: ../../tutorial/stdlib2.rst:23
 msgid ""
@@ -56,6 +64,10 @@ msgid ""
 "interpreter. When the result is longer than one line, the \"pretty printer\""
 " adds line breaks and indentation to more clearly reveal data structure::"
 msgstr ""
+"Модуль :mod:`pprint` предлагает более тонкий контроль над печатью встроенных"
+" и пользовательских объектов в виде, удобном для чтения интерпретатором. "
+"Когда результат занимает более одной строки, «красивый принтер» добавляет "
+"переносы строк и отступы, делая структуру данных более наглядной::"
 
 #: ../../tutorial/stdlib2.rst:28
 msgid ""
@@ -70,12 +82,24 @@ msgid ""
 "  [['magenta', 'yellow'],\n"
 "   'blue']]]"
 msgstr ""
+">>> import pprint\n"
+">>> t = [[[['чёрный', 'бирюзовый'], 'белый', ['зелёный', 'красный']], [['пурпурный',\n"
+"...     'жёлтый'], 'синий']]]\n"
+"...\n"
+">>> pprint.pprint(t, width=30)\n"
+"[[[['чёрный', 'бирюзовый'],\n"
+"   'белый',\n"
+"   ['зелёный', 'красный']],\n"
+"  [['пурпурный', 'жёлтый'],\n"
+"   'синий']]]"
 
 #: ../../tutorial/stdlib2.rst:39
 msgid ""
 "The :mod:`textwrap` module formats paragraphs of text to fit a given screen "
 "width::"
 msgstr ""
+"Модуль :mod:`textwrap` форматирует абзацы текста, чтобы они помещались в "
+"заданную ширину экрана::"
 
 #: ../../tutorial/stdlib2.rst:42
 msgid ""
@@ -90,6 +114,16 @@ msgid ""
 "instead of one big string with newlines\n"
 "to separate the wrapped lines."
 msgstr ""
+">>> import textwrap\n"
+">>> doc = \"\"\"Метод wrap() работает почти так же, как fill(),\n"
+"... только возвращает список строк вместо одной длинной\n"
+"... строки с переводами строки между частями текста.\"\"\"\n"
+"...\n"
+">>> print(textwrap.fill(doc, width=40))\n"
+"Метод wrap() работает почти так же, как\n"
+"fill(), только возвращает список строк\n"
+"вместо одной длинной строки с переводами\n"
+"строки между частями текста."
 
 #: ../../tutorial/stdlib2.rst:53
 msgid ""

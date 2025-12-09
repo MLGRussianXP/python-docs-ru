@@ -472,6 +472,9 @@ msgid ""
 "system. At its simplest, log messages are sent to a file or to "
 "``sys.stderr``::"
 msgstr ""
+"Модуль :mod:`logging` предлагает полнофункциональную и гибкую систему "
+"журналирования. В самом простом случае сообщения журнала отправляются в файл"
+" или в ``sys.stderr``::"
 
 #: ../../tutorial/stdlib2.rst:219
 msgid ""
@@ -482,10 +485,16 @@ msgid ""
 "logging.error('Error occurred')\n"
 "logging.critical('Critical error -- shutting down')"
 msgstr ""
+"import logging\n"
+"logging.debug('Отладочная информация')\n"
+"logging.info('Информационное сообщение')\n"
+"logging.warning('Предупреждение: файл конфигурации %s не найден', 'server.conf')\n"
+"logging.error('Произошла ошибка')\n"
+"logging.critical('Критическая ошибка — завершение работы')"
 
 #: ../../tutorial/stdlib2.rst:226
 msgid "This produces the following output:"
-msgstr ""
+msgstr "Это приводит к следующему выводу:"
 
 #: ../../tutorial/stdlib2.rst:228
 msgid ""
@@ -493,6 +502,9 @@ msgid ""
 "ERROR:root:Error occurred\n"
 "CRITICAL:root:Critical error -- shutting down"
 msgstr ""
+"WARNING:root:Предупреждение: файл конфигурации server.conf не найден\n"
+"ERROR:root:Произошла ошибка\n"
+"CRITICAL:root:Критическая ошибка — завершение работы"
 
 #: ../../tutorial/stdlib2.rst:234
 msgid ""
@@ -503,6 +515,13 @@ msgid ""
 ":const:`~logging.DEBUG`, :const:`~logging.INFO`, :const:`~logging.WARNING`, "
 ":const:`~logging.ERROR`, and :const:`~logging.CRITICAL`."
 msgstr ""
+"По умолчанию информационные и отладочные сообщения подавляются, а вывод "
+"отправляется в стандартный поток ошибок. Другие варианты вывода включают "
+"отправку сообщений через электронную почту, датаграммамы, сокеты или на "
+"HTTP-сервер. Новые фильтры могут выбирать разную маршрутизацию в зависимости"
+" от приоритета сообщения: :const:`~logging.DEBUG`, :const:`~logging.INFO`, "
+":const:`~logging.WARNING`, :const:`~logging.ERROR` и "
+":const:`~logging.CRITICAL`."
 
 #: ../../tutorial/stdlib2.rst:241
 msgid ""
@@ -510,6 +529,9 @@ msgid ""
 "from a user editable configuration file for customized logging without "
 "altering the application."
 msgstr ""
+"Систему логирования можно настраивать непосредственно из Python или "
+"загружать из конфигурационного файла, редактируемого пользователем, для её "
+"конфигурации без изменения приложения."
 
 #: ../../tutorial/stdlib2.rst:249
 msgid "Weak References"

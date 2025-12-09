@@ -184,6 +184,11 @@ msgid ""
 "letters with no intervening spaces.  Writing ``$$`` creates a single escaped"
 " ``$``::"
 msgstr ""
+"Формат использует имена заполнителей, начинающихся с ``$`` и представляющие "
+"допустимые идентификаторы Python (буквы, цифры и подчёркивания). Окружение "
+"заполнителя фигурными скобками позволяет использовать алфавитно-цифровые "
+"символы сразу после него, без дополнительных пробелов. Написание ``$$`` "
+"создает одиночный экранированный ``$``::"
 
 #: ../../tutorial/stdlib2.rst:83
 msgid ""
@@ -192,6 +197,10 @@ msgid ""
 ">>> t.substitute(village='Nottingham', cause='the ditch fund')\n"
 "'Nottinghamfolk send $10 to the ditch fund.'"
 msgstr ""
+">>> from string import Template\n"
+">>> t = Template('${village}цы шлют $$10 в $cause.')\n"
+">>> t.substitute(village='Ноттингем', cause='фонд канавы')\n"
+"'Ноттингемцы шлют $10 в фонд канавы.'"
 
 #: ../../tutorial/stdlib2.rst:88
 msgid ""

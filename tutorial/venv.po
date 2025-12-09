@@ -5,6 +5,7 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-09 14:17+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgstr ""
 
 #: ../../tutorial/venv.rst:6
 msgid "Virtual Environments and Packages"
-msgstr "Виртуальное окружение и пакеты"
+msgstr "Виртуальные окружения и пакеты"
 
 #: ../../tutorial/venv.rst:9
 msgid "Introduction"
@@ -37,6 +38,10 @@ msgid ""
 "bug has been fixed or the application may be written using an obsolete "
 "version of the library's interface."
 msgstr ""
+"Приложения Python часто используют пакеты и модули, не входящие в "
+"стандартную библиотеку. Иногда приложению необходима конкретная версия "
+"библиотеки, в которой устранена определенная ошибка, или же приложение "
+"написано с помощью устаревшей версии библиотечного интерфейса."
 
 #: ../../tutorial/venv.rst:17
 msgid ""
@@ -46,6 +51,11 @@ msgid ""
 " are in conflict and installing either version 1.0 or 2.0 will leave one "
 "application unable to run."
 msgstr ""
+"Это означает, что конкретная установка Python может быть непригодной "
+"одновременно для каждого приложения. Например, приложению А нужна версия 1.0"
+" конкретного модуля, а приложению B нужна версия 2.0. Эти требования "
+"противоречат друг другу, и установка любой из версий 1.0 или 2.0 оставит "
+"одно из приложений не работоспособным."
 
 #: ../../tutorial/venv.rst:23
 msgid ""
@@ -53,6 +63,9 @@ msgid ""
 "self-contained directory tree that contains a Python installation for a "
 "particular version of Python, plus a number of additional packages."
 msgstr ""
+"Решением этой проблемы является создание :term:`виртуального окружения` — "
+"автономного дерева каталогов, содержащего установку Python конкретной "
+"версии, а также набор дополнительных пакетов."
 
 #: ../../tutorial/venv.rst:27
 msgid ""
@@ -63,10 +76,16 @@ msgid ""
 "application B requires a library be upgraded to version 3.0, this will not "
 "affect application A's environment."
 msgstr ""
+"Разные приложения могут использовать разные виртуальные окружения. В примере"
+" с конфликтующими требованиями приложение А может использовать созданное для"
+" него виртуальное окружение с версией 1.0 нужного модуля, а приложение В "
+"исполняться в другом виртуальном окружении с версией 2.0 того же модуля. "
+"Если позднее приложению В потребуется обновить библиотеку до версии 3.0, то "
+"это никак не повлияет на виртуальное окружение приложения А."
 
 #: ../../tutorial/venv.rst:36
 msgid "Creating Virtual Environments"
-msgstr ""
+msgstr "Создание виртуального окружения"
 
 #: ../../tutorial/venv.rst:38
 msgid ""
@@ -76,6 +95,10 @@ msgid ""
 "instance, executing the command with ``python3.12`` will install version "
 "3.12."
 msgstr ""
+"Модуль, используемый для создания и управления виртуальными окружениями, "
+"называется :mod:`venv`. :mod:`venv` установит ту версию Python, из которой "
+"была запущена команда (определяется опцией :option:`--version`). Например, "
+"выполнение команды с помощью ``python3.12`` установит версию 3.12."
 
 #: ../../tutorial/venv.rst:44
 msgid ""
@@ -83,10 +106,13 @@ msgid ""
 "place it, and run the :mod:`venv` module as a script with the directory "
 "path::"
 msgstr ""
+"Чтобы создать виртуальное окружение, определитесь с каталогом, где оно "
+"должно находиться, и запустите модуль :mod:`venv` в виде скрипта, указав "
+"путь::"
 
 #: ../../tutorial/venv.rst:47
 msgid "python -m venv tutorial-env"
-msgstr ""
+msgstr "python -m venv tutorial-env"
 
 #: ../../tutorial/venv.rst:49
 msgid ""
@@ -94,6 +120,8 @@ msgid ""
 "also create directories inside it containing a copy of the Python "
 "interpreter and various supporting files."
 msgstr ""
+"Это создаст каталог ``tutorial-env``, если он ещё не существует, а внутри — "
+"копию интерпретатора Python и необходимые служебные файлы."
 
 #: ../../tutorial/venv.rst:53
 msgid ""
@@ -103,26 +131,30 @@ msgid ""
 "prevents clashing with ``.env`` environment variable definition files that "
 "some tooling supports."
 msgstr ""
+"Общепринятым расположением каталога для виртуального окружения является "
+"``.venv``. Это имя скрывает каталог в оболочке и не мешает работе, при этом "
+"объясняет его предназначение. Кроме того, оно не конфликтует с файлами "
+"``.env``, которые некоторые инструменты используют для переменных окружения."
 
 #: ../../tutorial/venv.rst:59
 msgid "Once you've created a virtual environment, you may activate it."
-msgstr ""
+msgstr "После создания виртуального окружения его можно активировать."
 
 #: ../../tutorial/venv.rst:61
 msgid "On Windows, run::"
-msgstr ""
+msgstr "В Windows запустите::"
 
 #: ../../tutorial/venv.rst:63
 msgid "tutorial-env\\Scripts\\activate"
-msgstr ""
+msgstr "tutorial-env\\Scripts\\activate"
 
 #: ../../tutorial/venv.rst:65
 msgid "On Unix or MacOS, run::"
-msgstr ""
+msgstr "В Unix или MacOS выполните::"
 
 #: ../../tutorial/venv.rst:67
 msgid "source tutorial-env/bin/activate"
-msgstr ""
+msgstr "source tutorial-env/bin/activate"
 
 #: ../../tutorial/venv.rst:69
 msgid ""

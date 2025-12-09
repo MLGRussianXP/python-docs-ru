@@ -131,6 +131,10 @@ msgid ""
 "formats. The grouping attribute of locale's format function provides a "
 "direct way of formatting numbers with group separators::"
 msgstr ""
+"Модуль :mod:`locale` предоставляет доступ к базе данных региональных "
+"форматов, специфичных для определённой культуры. У функции форматирования "
+"этого модуля есть специальный параметр для добавления разделителей групп в "
+"числах::"
 
 #: ../../tutorial/stdlib2.rst:57
 msgid ""
@@ -145,10 +149,20 @@ msgid ""
 "...                      conv['frac_digits'], x), grouping=True)\n"
 "'$1,234,567.80'"
 msgstr ""
+">>> import locale\n"
+">>> locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')\n"
+"'ru_RU.UTF-8'\n"
+">>> conv = locale.localeconv()          # получить таблицу настроек\n"
+">>> x = 1234567.8\n"
+">>> locale.format_string(\"%d\", x, grouping=True)\n"
+"'1\\xa0234\\xa0567'\n"
+">>> locale.format_string(\"%.*f %s\", (conv['frac_digits'],\n"
+"...                      x, conv['currency_symbol']), grouping=True)\n"
+"'1\\xa0234\\xa0567,80\\xa0₽'"
 
 #: ../../tutorial/stdlib2.rst:72
 msgid "Templating"
-msgstr ""
+msgstr "Шаблоны"
 
 #: ../../tutorial/stdlib2.rst:74
 msgid ""
@@ -157,6 +171,10 @@ msgid ""
 "allows users to customize their applications without having to alter the "
 "application."
 msgstr ""
+"Модуль :mod:`string` включает в себя универсальный класс "
+":class:`~string.Template` с упрощенным синтаксисом, подходящим для "
+"редактирования конечными пользователями. Это позволяет пользователям "
+"настраивать свои приложения, без изменения кода программы."
 
 #: ../../tutorial/stdlib2.rst:78
 msgid ""

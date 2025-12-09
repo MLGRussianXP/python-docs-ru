@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../../tutorial/stdlib.rst:51
 msgid "File Wildcards"
-msgstr ""
+msgstr "Шаблоны файлов"
 
 #: ../../tutorial/stdlib.rst:53
 msgid ""
@@ -678,6 +678,9 @@ msgid ""
 "remote procedure calls into an almost trivial task.  Despite the modules' "
 "names, no direct knowledge or handling of XML is needed."
 msgstr ""
+"Модули :mod:`xmlrpc.client` и :mod:`xmlrpc.server` делают реализацию "
+"удалённого вызова процедур почти тривиальной задачей. Несмотря на название "
+"модулей, не требуется прямых знаний или обработки XML."
 
 #: ../../tutorial/stdlib.rst:337
 msgid ""
@@ -688,6 +691,13 @@ msgid ""
 "structures (including attachments) and for implementing internet encoding "
 "and header protocols."
 msgstr ""
+"Пакет :mod:`email` — библиотека для управления сообщениями электронной "
+"почты, включая MIME и другие документы сообщений, основанные на :rfc:`5322`."
+" В отличие от модулей :mod:`smtplib` и :mod:`poplib`, которые предназначены "
+"именно для отправки и получения сообщений, в пакете email содержится полный "
+"набор инструментов для создания и декодирования сообщений со сложной "
+"структурой (включая вложения), а также для работы с интернет-кодировками и "
+"заголовками."
 
 #: ../../tutorial/stdlib.rst:344
 msgid ""
@@ -699,6 +709,13 @@ msgid ""
 "Together, these modules and packages greatly simplify data interchange "
 "between Python applications and other tools."
 msgstr ""
+"Пакет :mod:`json` предоставляет надёжные средства для работы с этим "
+"популярным форматом обмена данными. Модуль :mod:`csv` поддерживает прямое "
+"чтение и запись файлов в формате CSV (Comma-Separated Value), широко "
+"используемом в базах данных и электронных таблицах. Обработка XML "
+"осуществляется пакетами :mod:`xml.etree.ElementTree`, :mod:`xml.dom` и "
+":mod:`xml.sax`. Вместе эти модули и пакеты значительно упрощают обмен "
+"данными между приложениями Python и другими инструментами."
 
 #: ../../tutorial/stdlib.rst:353
 msgid ""
@@ -706,17 +723,22 @@ msgid ""
 "providing a persistent database that can be updated and accessed using "
 "slightly nonstandard SQL syntax."
 msgstr ""
+"Модуль :mod:`sqlite3` является обёрткой для библиотеки базы данных SQLite, "
+"предоставляя постоянное хранилище, которое можно обновлять и использовать со"
+" слегка нестандартным синтаксисом SQL."
 
 #: ../../tutorial/stdlib.rst:357
 msgid ""
 "Internationalization is supported by a number of modules including "
 ":mod:`gettext`, :mod:`locale`, and the :mod:`codecs` package."
 msgstr ""
+"Поддержка интернационализации обеспечивается рядом модулей, включая "
+":mod:`gettext`, :mod:`locale`, и пакетом :mod:`codecs`."
 
 #: ../../tutorial/stdlib.rst:27
 msgid "built-in function"
-msgstr ""
+msgstr "встроенная функция"
 
 #: ../../tutorial/stdlib.rst:27
 msgid "help"
-msgstr ""
+msgstr "помощь"

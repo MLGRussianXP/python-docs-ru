@@ -757,7 +757,7 @@ msgstr ""
 
 #: ../../tutorial/stdlib2.rst:356
 msgid "Decimal Floating-Point Arithmetic"
-msgstr ""
+msgstr "Десятичная арифметика с плавающей точкой"
 
 #: ../../tutorial/stdlib2.rst:358
 msgid ""
@@ -765,30 +765,40 @@ msgid ""
 "decimal floating-point arithmetic.  Compared to the built-in :class:`float` "
 "implementation of binary floating point, the class is especially helpful for"
 msgstr ""
+"Модуль :mod:`decimal` предлагает тип данных :class:`~decimal.Decimal` для "
+"десятичной арифметики с плавающей точкой. По сравнению со встроенным типом "
+":class:`float`, реализующим двоичные числа с плавающей точкой, этот класс "
+"особенно полезен для"
 
 #: ../../tutorial/stdlib2.rst:362
 msgid ""
 "financial applications and other uses which require exact decimal "
 "representation,"
 msgstr ""
+"финансовых приложений и других случаев, требующих точного десятичного "
+"представления,"
 
 #: ../../tutorial/stdlib2.rst:364
 msgid "control over precision,"
-msgstr ""
+msgstr "контроля точности,"
 
 #: ../../tutorial/stdlib2.rst:365
 msgid "control over rounding to meet legal or regulatory requirements,"
 msgstr ""
+"контроля округления для соответствия законодательным или нормативным "
+"требованиям,"
 
 #: ../../tutorial/stdlib2.rst:366
 msgid "tracking of significant decimal places, or"
-msgstr ""
+msgstr "отслеживания значащих десятичных разрядов или"
 
 #: ../../tutorial/stdlib2.rst:367
 msgid ""
 "applications where the user expects the results to match calculations done "
 "by hand."
 msgstr ""
+"приложений, в которых пользователь ожидает, что результаты совпадут с "
+"расчётами, выполненными вручную."
 
 #: ../../tutorial/stdlib2.rst:370
 msgid ""
@@ -796,6 +806,9 @@ msgid ""
 "results in decimal floating point and binary floating point. The difference "
 "becomes significant if the results are rounded to the nearest cent::"
 msgstr ""
+"Например, расчёт налога в размере 5% от счёта за телефон на 70 центов даёт "
+"разные результаты в десятичном и двоичном представлении чисел с плавающей "
+"точкой. Разница становится значимой, если результаты округлить до цента:"
 
 #: ../../tutorial/stdlib2.rst:374
 msgid ""
@@ -805,6 +818,11 @@ msgid ""
 ">>> round(.70 * 1.05, 2)\n"
 "0.73"
 msgstr ""
+">>> from decimal import *\n"
+">>> round(Decimal('0.70') * Decimal('1.05'), 2)\n"
+"Decimal('0.74')\n"
+">>> round(.70 * 1.05, 2)\n"
+"0.73"
 
 #: ../../tutorial/stdlib2.rst:380
 msgid ""
@@ -814,6 +832,12 @@ msgid ""
 "issues that can arise when binary floating point cannot exactly represent "
 "decimal quantities."
 msgstr ""
+"Результат :class:`~decimal.Decimal` сохраняет конечный ноль, автоматически "
+"выводя точность до четырёх значащих цифр в дробной части на основе "
+"множителей с двумя знаками в дробной части. Класс Decimal воспроизводит "
+"математику так, как она выполняется вручную, и позволяет избежать проблем, "
+"которые могут возникнуть, когда двоичные числа с плавающей точкой не могут "
+"точно представить десятичные величины."
 
 #: ../../tutorial/stdlib2.rst:386
 msgid ""
@@ -821,6 +845,9 @@ msgid ""
 "modulo calculations and equality tests that are unsuitable for binary "
 "floating point::"
 msgstr ""
+"Точное представление позволяет классу :class:`~decimal.Decimal` выполнять "
+"вычисления по модулю и проверки равенства, которые непригодны для двоичных "
+"чисел с плавающей точкой::"
 
 #: ../../tutorial/stdlib2.rst:390
 msgid ""
@@ -834,12 +861,23 @@ msgid ""
 ">>> 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 == 1.0\n"
 "False"
 msgstr ""
+">>> Decimal('1.00') % Decimal('.10')\n"
+"Decimal('0.00')\n"
+">>> 1.00 % 0.10\n"
+"0.09999999999999995\n"
+"\n"
+">>> sum([Decimal('0.1')]*10) == Decimal('1.0')\n"
+"True\n"
+">>> 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 == 1.0\n"
+"False"
 
 #: ../../tutorial/stdlib2.rst:400
 msgid ""
 "The :mod:`decimal` module provides arithmetic with as much precision as "
 "needed::"
 msgstr ""
+"Модуль :mod:`decimal` обеспечивает арифметические операции с необходимой "
+"точностью::"
 
 #: ../../tutorial/stdlib2.rst:402
 msgid ""
@@ -847,3 +885,6 @@ msgid ""
 ">>> Decimal(1) / Decimal(7)\n"
 "Decimal('0.142857142857142857142857142857142857')"
 msgstr ""
+">>> getcontext().prec = 36\n"
+">>> Decimal(1) / Decimal(7)\n"
+"Decimal('0.142857142857142857142857142857142857')"

@@ -393,6 +393,10 @@ msgid ""
 "statistical operations supplied by the SciPy project. See "
 "<https://scipy.org>."
 msgstr ""
+"Если вы активно пользуетесь вычислениями с плавающей точкой, вам следует "
+"взглянуть на пакет NumPy и многие другие пакеты для математических и "
+"статистических операций, поставляемые проектом SciPy. См. "
+"<https://scipy.org>."
 
 #: ../../tutorial/floatingpoint.rst:181
 msgid ""
@@ -401,6 +405,10 @@ msgid ""
 ":meth:`float.as_integer_ratio` method expresses the value of a float as a "
 "fraction:"
 msgstr ""
+"Python предоставляет инструменты, которые могут помочь в тех редких случаях,"
+" когда вы *действительно* хотите узнать точное значение числа с плавающей "
+"точкой. Метод :meth:`float.as_integer_ratio` выражает значение float в виде "
+"дроби:"
 
 #: ../../tutorial/floatingpoint.rst:186
 msgid ""
@@ -408,42 +416,58 @@ msgid ""
 ">>> x.as_integer_ratio()\n"
 "(3537115888337719, 1125899906842624)"
 msgstr ""
+">>> x = 3.14159\n"
+">>> x.as_integer_ratio()\n"
+"(3537115888337719, 1125899906842624)"
 
 #: ../../tutorial/floatingpoint.rst:192
 msgid ""
 "Since the ratio is exact, it can be used to losslessly recreate the original"
 " value:"
 msgstr ""
+"Поскольку это отношение точное, его можно использовать для воссоздания "
+"исходного значения без потерь:"
 
 #: ../../tutorial/floatingpoint.rst:195
 msgid ""
 ">>> x == 3537115888337719 / 1125899906842624\n"
 "True"
 msgstr ""
+">>> x == 3537115888337719 / 1125899906842624\n"
+"True"
 
 #: ../../tutorial/floatingpoint.rst:200
 msgid ""
 "The :meth:`float.hex` method expresses a float in hexadecimal (base 16), "
 "again giving the exact value stored by your computer:"
 msgstr ""
+"Метод :meth:`float.hex` выражает число с плавающей точкой в "
+"шестнадцатеричном виде (по основанию 16), снова предоставляя точное "
+"значение, сохраненное на вашем компьютере:"
 
 #: ../../tutorial/floatingpoint.rst:203
 msgid ""
 ">>> x.hex()\n"
 "'0x1.921f9f01b866ep+1'"
 msgstr ""
+">>> x.hex()\n"
+"'0x1.921f9f01b866ep+1'"
 
 #: ../../tutorial/floatingpoint.rst:208
 msgid ""
 "This precise hexadecimal representation can be used to reconstruct the float"
 " value exactly:"
 msgstr ""
+"Это точное шестнадцатеричное представление можно использовать для "
+"восстановления значения float в точности:"
 
 #: ../../tutorial/floatingpoint.rst:211
 msgid ""
 ">>> x == float.fromhex('0x1.921f9f01b866ep+1')\n"
 "True"
 msgstr ""
+">>> x == float.fromhex('0x1.921f9f01b866ep+1')\n"
+"True"
 
 #: ../../tutorial/floatingpoint.rst:216
 msgid ""
@@ -452,6 +476,10 @@ msgid ""
 "data with other languages that support the same format (such as Java and "
 "C99)."
 msgstr ""
+"Поскольку представление является точным, оно полезно для надежного переноса "
+"значений между разными версиями Python (независимость от платформы) и обмена"
+" данными с другими языками, поддерживающими тот же формат (например, Java и "
+"C99)."
 
 #: ../../tutorial/floatingpoint.rst:220
 msgid ""
@@ -461,6 +489,11 @@ msgid ""
 "difference in overall accuracy so that the errors do not accumulate to the "
 "point where they affect the final total:"
 msgstr ""
+"Ещё одним полезным инструментом является функция :func:`sum`, которая "
+"помогает уменьшить потерю точности во время суммирования. Она использует "
+"расширенную точность для промежуточных шагов округления по мере добавления "
+"значений к сумме. Это может повлиять на общую точность, предотвращая "
+"накопление ошибок до уровня, когда они влияют на итоговый результат:"
 
 #: ../../tutorial/floatingpoint.rst:226
 msgid ""
@@ -469,6 +502,10 @@ msgid ""
 ">>> sum([0.1] * 10) == 1.0\n"
 "True"
 msgstr ""
+">>> 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 == 1.0\n"
+"False\n"
+">>> sum([0.1] * 10) == 1.0\n"
+"True"
 
 #: ../../tutorial/floatingpoint.rst:233
 msgid ""
@@ -478,6 +515,11 @@ msgid ""
 "uncommon cases where large magnitude inputs mostly cancel each other out "
 "leaving a final sum near zero:"
 msgstr ""
+"Функция :func:`math.fsum` идёт дальше и отслеживает все «потерянные цифры» "
+"при добавлении значений к сумме, так что результат подвергается только "
+"одному округлению. Это медленнее, чем :func:`sum`, но даёт большую точность "
+"в редких случаях, когда слагаемые большой величины в основном взаимно "
+"компенсируют друг друга, оставляя итоговую сумму близкой к нулю:"
 
 #: ../../tutorial/floatingpoint.rst:239
 msgid ""
@@ -496,10 +538,24 @@ msgid ""
 ">>> total                            # Straight addition has no correct digits!\n"
 "-0.0051575902860057365"
 msgstr ""
+">>> arr = [-0.10430216751806065, -266310978.67179024, 143401161448607.16,\n"
+"...        -143401161400469.7, 266262841.31058735, -0.003244936839808227]\n"
+">>> float(sum(map(Fraction, arr)))   # Точное суммирование с одним округлением\n"
+"8.042173697819788e-13\n"
+">>> math.fsum(arr)                   # Одно округление\n"
+"8.042173697819788e-13\n"
+">>> sum(arr)                         # Многократное округление с расширенной точностью\n"
+"8.042178034628478e-13\n"
+">>> total = 0.0\n"
+">>> for x in arr:\n"
+"...     total += x                   # Многократное округление со стандартной точностью\n"
+"...\n"
+">>> total                            # Прямое сложение не даёт корректный результат!\n"
+"-0.0051575902860057365"
 
 #: ../../tutorial/floatingpoint.rst:260
 msgid "Representation Error"
-msgstr ""
+msgstr "Ошибка представления"
 
 #: ../../tutorial/floatingpoint.rst:262
 msgid ""
@@ -507,6 +563,9 @@ msgid ""
 "perform an exact analysis of cases like this yourself.  Basic familiarity "
 "with binary floating-point representation is assumed."
 msgstr ""
+"В этом разделе подробно объясняется пример «0.1» и показывается, как можно "
+"самостоятельно выполнить точный анализ подобных случаев. Предполагается "
+"базовое знакомство с двоичным представлением чисел с плавающей точкой."
 
 #: ../../tutorial/floatingpoint.rst:266
 msgid ""
@@ -516,6 +575,11 @@ msgid ""
 "Fortran, and many others) often won't display the exact decimal number you "
 "expect."
 msgstr ""
+":dfn:`Ошибка представления` относится к тому факту, что некоторые (на самом "
+"деле большинство) десятичные дроби не могут быть представлены точно как "
+"двоичные дроби (по основанию 2). Это основная причина, по которой Python "
+"(или Perl, C, C++, Java, Fortran и многие другие) часто не отображает точное"
+" десятичное число, которое вы ожидаете."
 
 #: ../../tutorial/floatingpoint.rst:271
 msgid ""
@@ -527,36 +591,49 @@ msgid ""
 "fraction it can of the form *J*/2**\\ *N* where *J* is an integer containing"
 " exactly 53 bits. Rewriting ::"
 msgstr ""
+"Почему так происходит? Число 1/10 нельзя точно представить как двоичную "
+"дробь. По крайней мере, с 2000 года почти все машины используют двоичную "
+"арифметику с плавающей точкой стандарта IEEE 754, и почти все платформы "
+"сопоставляют числа float в Python со значениями IEEE 754 binary64 «двойной "
+"точности». Эти значения имеют точность 53 бита, поэтому при вводе компьютер "
+"стремится преобразовать 0.1 в ближайшую дробь вида *J*/2**\\ *N*, где *J* — "
+"целое число, содержащее ровно 53 бита. Переписав ::"
 
 #: ../../tutorial/floatingpoint.rst:280
 msgid "1 / 10 ~= J / (2**N)"
-msgstr ""
+msgstr "1 / 10 ~= J / (2**N)"
 
 #: ../../tutorial/floatingpoint.rst:282
 msgid "as ::"
-msgstr ""
+msgstr "как ::"
 
 #: ../../tutorial/floatingpoint.rst:284
 msgid "J ~= 2**N / 10"
-msgstr ""
+msgstr "J ~= 2**N / 10"
 
 #: ../../tutorial/floatingpoint.rst:286
 msgid ""
 "and recalling that *J* has exactly 53 bits (is ``>= 2**52`` but ``< "
 "2**53``), the best value for *N* is 56:"
 msgstr ""
+"и учитывая, что *J* имеет ровно 53 бита (оно ``>= 2**52``, но ``< 2**53``), "
+"лучшее значение для *N* — это 56:"
 
 #: ../../tutorial/floatingpoint.rst:289
 msgid ""
 ">>> 2**52 <=  2**56 // 10  < 2**53\n"
 "True"
 msgstr ""
+">>> 2**52 <=  2**56 // 10  < 2**53\n"
+"True"
 
 #: ../../tutorial/floatingpoint.rst:294
 msgid ""
 "That is, 56 is the only value for *N* that leaves *J* with exactly 53 bits."
 "  The best possible value for *J* is then that quotient rounded:"
 msgstr ""
+"То есть 56 — единственное значение для *N*, при котором в *J* остаётся ровно"
+" 53 бита. Наилучшее возможное значение для *J* — это округленное частное:"
 
 #: ../../tutorial/floatingpoint.rst:297
 msgid ""
@@ -564,37 +641,44 @@ msgid ""
 ">>> r\n"
 "6"
 msgstr ""
+">>> q, r = divmod(2**56, 10)\n"
+">>> r\n"
+"6"
 
 #: ../../tutorial/floatingpoint.rst:303
 msgid ""
 "Since the remainder is more than half of 10, the best approximation is "
 "obtained by rounding up:"
 msgstr ""
+"Поскольку остаток больше половины от 10, наилучшее приближение получается "
+"округлением в большую сторону:"
 
 #: ../../tutorial/floatingpoint.rst:306
 msgid ""
 ">>> q+1\n"
 "7205759403792794"
 msgstr ""
+">>> q+1\n"
+"7205759403792794"
 
 #: ../../tutorial/floatingpoint.rst:313
 msgid ""
 "Therefore the best possible approximation to 1/10 in IEEE 754 double "
 "precision is::"
-msgstr ""
+msgstr "Поэтому наилучшее приближение к 1/10 в двойной точности IEEE 754:"
 
 #: ../../tutorial/floatingpoint.rst:316
 msgid "7205759403792794 / 2 ** 56"
-msgstr ""
+msgstr "7205759403792794 / 2 ** 56"
 
 #: ../../tutorial/floatingpoint.rst:318
 msgid ""
 "Dividing both the numerator and denominator by two reduces the fraction to::"
-msgstr ""
+msgstr "Деление числителя и знаменателя на два уменьшает дробь до:"
 
 #: ../../tutorial/floatingpoint.rst:320
 msgid "3602879701896397 / 2 ** 55"
-msgstr ""
+msgstr "3602879701896397 / 2 ** 55"
 
 #: ../../tutorial/floatingpoint.rst:322
 msgid ""
@@ -602,6 +686,10 @@ msgid ""
 "1/10; if we had not rounded up, the quotient would have been a little bit "
 "smaller than 1/10.  But in no case can it be *exactly* 1/10!"
 msgstr ""
+"Обратите внимание: поскольку мы округлили в большую сторону, на самом деле "
+"это немного больше, чем 1/10; если бы мы не округляли в большую сторону, "
+"частное было бы немного меньше 1/10. Но ни в коем случае оно не может быть "
+"*ровно* 1/10!"
 
 #: ../../tutorial/floatingpoint.rst:326
 msgid ""
@@ -614,6 +702,8 @@ msgid ""
 ">>> 0.1 * 2 ** 55\n"
 "3602879701896397.0"
 msgstr ""
+">>> 0.1 * 2 ** 55\n"
+"3602879701896397.0"
 
 #: ../../tutorial/floatingpoint.rst:334
 msgid ""

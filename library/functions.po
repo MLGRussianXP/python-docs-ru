@@ -737,10 +737,13 @@ msgid ""
 "The valid range for the argument is from 0 through 1,114,111 (0x10FFFF in "
 "base 16).  :exc:`ValueError` will be raised if it is outside that range."
 msgstr ""
+"Допустимый диапазон для аргумента составляет от 0 до 1 114 111 (0x10FFFF в "
+"шестнадцатеричной системе счисления). Если значение вне этого диапазона, "
+"выбрасывается исключение :exc:`ValueError`."
 
 #: ../../library/functions.rst:257
 msgid "Transform a method into a class method."
-msgstr ""
+msgstr "Преобразует метод в метод класса."
 
 #: ../../library/functions.rst:259
 msgid ""
@@ -748,6 +751,9 @@ msgid ""
 "an instance method receives the instance. To declare a class method, use "
 "this idiom::"
 msgstr ""
+"Метод класса получает класс в качестве неявного первого аргумента, так же "
+"как метод экземпляра получает экземпляр. Чтобы объявить метод класса, "
+"используйте эту идиому::"
 
 #: ../../library/functions.rst:263
 msgid ""
@@ -755,12 +761,17 @@ msgid ""
 "    @classmethod\n"
 "    def f(cls, arg1, arg2): ..."
 msgstr ""
+"class C:\n"
+"    @classmethod\n"
+"    def f(cls, arg1, arg2): ..."
 
 #: ../../library/functions.rst:267
 msgid ""
 "The ``@classmethod`` form is a function :term:`decorator` -- see "
 ":ref:`function` for details."
 msgstr ""
+"Конутрукция ``@classmethod`` является формой вызова :term:`декоратора` — см."
+" :ref:`function` для подробностей."
 
 #: ../../library/functions.rst:270
 msgid ""
@@ -769,6 +780,11 @@ msgid ""
 "class. If a class method is called for a derived class, the derived class "
 "object is passed as the implied first argument."
 msgstr ""
+"Метод класса можно вызвать как на самом классе (например, ``C.f()``), так и "
+"на его экземпляре (например, ``C().f()``). Во втором случае экземпляр "
+"игнорируется — используется только его класс. Если метод класса вызывается "
+"для производного класса, в качестве неявного первого аргумента передаётся "
+"объект производного класса."
 
 #: ../../library/functions.rst:275
 msgid ""
@@ -776,12 +792,17 @@ msgid ""
 "those, see :func:`staticmethod` in this section. For more information on "
 "class methods, see :ref:`types`."
 msgstr ""
+"Методы класса отличаются от статических методов C++ или Java. Если вам нужны"
+" последние, см. :func:`staticmethod` в этом разделе. Дополнительную "
+"информацию о методах класса см. в :ref:`types`."
 
 #: ../../library/functions.rst:279
 msgid ""
 "Class methods can now wrap other :term:`descriptors <descriptor>` such as "
 ":func:`property`."
 msgstr ""
+"Методы класса теперь могут оборачивать другие :term:`дескрипторы "
+"<descriptor>`, такие как :func:`property`."
 
 #: ../../library/functions.rst:283
 msgid ""

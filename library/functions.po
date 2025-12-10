@@ -514,6 +514,10 @@ msgid ""
 ":class:`int` object, it has to define an :meth:`~object.__index__` method "
 "that returns an integer. Some examples:"
 msgstr ""
+"Преобразует целое число в строку с его двоичным представлением и префиксом "
+"\"0b\". Результат является корректным выражение Python. Если *integer* не "
+"является :class:`int`, он должен определять метод :meth:`~object.__index__`,"
+" возвращающий целое число. Примеры:"
 
 #: ../../library/functions.rst:134
 msgid ""
@@ -537,10 +541,18 @@ msgid ""
 ":ref:`typesnumeric`). It cannot be subclassed further.  Its only instances "
 "are ``False`` and ``True`` (see :ref:`typebool`)."
 msgstr ""
+"Возвращает логическое значение, т. е. одно из значений — ``True`` или "
+"``False``. Аргумент преобразуется с использованием стандартной "
+":ref:`процедуры проверки истинности <truth>`. Если аргумент ложный или "
+"опущен, возвращается ``False``; в противном случае возвращается ``True``. "
+"Класс :class:`bool` является подклассом :class:`int` (см. "
+":ref:`typesnumeric`). От него нельзя создавать производные классы дальше. "
+"Его единственными экземплярами являются ``False`` и ``True`` (см. "
+":ref:`typebool`)."
 
 #: ../../library/functions.rst:156 ../../library/functions.rst:813
 msgid "The parameter is now positional-only."
-msgstr ""
+msgstr "Параметр теперь является только позиционным."
 
 #: ../../library/functions.rst:161
 msgid ""
@@ -554,6 +566,16 @@ msgid ""
 " you to drop into the debugger of choice. If :func:`sys.breakpointhook` is "
 "not accessible, this function will raise :exc:`RuntimeError`."
 msgstr ""
+"Эта функция останавливает выполнение и переводит вас в отладчик в месте "
+"вызова. Точнее, вызывается :func:`sys.breakpointhook`, которому передаются "
+"без изменений ``args`` и ``kws``. По умолчанию ``sys.breakpointhook()`` "
+"вызывает :func:`pdb.set_trace`, не ожидая никаких аргументов. В этом случае "
+"функция служит удобным сокращением, чтобы не импортировать :mod:`pdb` и не "
+"писать больше кода для входа в отладчик. Однако :func:`sys.breakpointhook` "
+"можно связать с какой-либо другой функцией, и тогда :func:`breakpoint` "
+"автоматически вызовет её, позволяя вам перейти в выбранный отладчик. Если "
+":func:`sys.breakpointhook` недоступна, возбудится исключение "
+":exc:`RuntimeError`."
 
 #: ../../library/functions.rst:173
 msgid ""
@@ -561,18 +583,25 @@ msgid ""
 ":envvar:`PYTHONBREAKPOINT` environment variable. See "
 ":func:`sys.breakpointhook` for usage details."
 msgstr ""
+"По умолчанию поведение функции :func:`breakpoint` может быть изменено с "
+"помощью переменной окружения :envvar:`PYTHONBREAKPOINT`. См. подробности "
+"использования в :func:`sys.breakpointhook`."
 
 #: ../../library/functions.rst:177
 msgid ""
 "Note that this is not guaranteed if :func:`sys.breakpointhook` has been "
 "replaced."
 msgstr ""
+"Обратите внимание, что это не гарантируется, если :func:`sys.breakpointhook`"
+" была заменена."
 
 #: ../../library/functions.rst:180
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.breakpoint`` with "
 "argument ``breakpointhook``."
 msgstr ""
+"Возбуждает :ref:`событие аудита <auditing>` ``builtins.breakpoint`` с "
+"аргументом ``breakpointhook``."
 
 #: ../../library/functions.rst:189
 msgid ""
@@ -581,12 +610,19 @@ msgid ""
 "methods of mutable sequences, described in :ref:`typesseq-mutable`, as well "
 "as most methods that the :class:`bytes` type has, see :ref:`bytes-methods`."
 msgstr ""
+"Возвращает новый массив байтов. Класс :class:`bytearray` является изменяемой"
+" последовательностью целых чисел в диапазоне 0 <= x < 256. Он имеет "
+"большинство обычных методов изменяемых последовательностей, описанных в "
+":ref:`typesseq-mutable`, а также большинство методов, которые имеет тип "
+":class:`bytes`, см. :ref:`bytes-methods`."
 
 #: ../../library/functions.rst:194
 msgid ""
 "The optional *source* parameter can be used to initialize the array in a few"
 " different ways:"
 msgstr ""
+"Необязательный параметр *source* может быть использован для инициализации "
+"массива несколькими различными способами:"
 
 #: ../../library/functions.rst:197
 msgid ""
@@ -594,12 +630,17 @@ msgid ""
 "*errors*) parameters; :func:`bytearray` then converts the string to bytes "
 "using :meth:`str.encode`."
 msgstr ""
+"Если это *строка*, вы также должны указать параметр *encoding* (и, при "
+"необходимости, *errors*); затем :func:`bytearray` преобразует строку в байты"
+" с использованием :meth:`str.encode`."
 
 #: ../../library/functions.rst:201
 msgid ""
 "If it is an *integer*, the array will have that size and will be initialized"
 " with null bytes."
 msgstr ""
+"Если это *целое число*, массив будет иметь такой размер и будет "
+"инициализирован нулевыми байтами."
 
 #: ../../library/functions.rst:204
 msgid ""
@@ -607,20 +648,26 @@ msgid ""
 "<bufferobjects>`, a read-only buffer of the object will be used to "
 "initialize the bytes array."
 msgstr ""
+"Если это объект, соответствующий :ref:`интерфейсу буфера <bufferobjects>`, "
+"для инициализации массива будет использован буфер объекта в режиме только-"
+"для-чтения."
 
 #: ../../library/functions.rst:207
 msgid ""
 "If it is an *iterable*, it must be an iterable of integers in the range ``0 "
 "<= x < 256``, which are used as the initial contents of the array."
 msgstr ""
+"Если это *итерируемый объект*, он должен содержать целые числа в диапазоне "
+"``0 <= x < 256``, которые используются в качестве начального содержимого "
+"массива."
 
 #: ../../library/functions.rst:210
 msgid "Without an argument, an array of size 0 is created."
-msgstr ""
+msgstr "Если аргумент не задан, создаётся массив размером 0."
 
 #: ../../library/functions.rst:212
 msgid "See also :ref:`binaryseq` and :ref:`typebytearray`."
-msgstr ""
+msgstr "Смотрите также :ref:`binaryseq` и :ref:`typebytearray`."
 
 #: ../../library/functions.rst:220
 msgid ""
@@ -629,19 +676,27 @@ msgid ""
 ":class:`bytearray` -- it has the same non-mutating methods and the same "
 "indexing and slicing behavior."
 msgstr ""
+"Возвращает новый объект \"bytes\", который является неизменяемой "
+"последовательностью целых чисел в диапазоне ``0 <= x < 256``. :class:`bytes`"
+" — это неизменяемая версия :class:`bytearray`. Ему присущи те же методы, не "
+"изменяющие содержимое, и то же поведение при индексировании и срезах."
 
 #: ../../library/functions.rst:225
 msgid ""
 "Accordingly, constructor arguments are interpreted as for :func:`bytearray`."
 msgstr ""
+"Соответственно, аргументы конструктора интерпретируются так же, как и для "
+":func:`bytearray`."
 
 #: ../../library/functions.rst:227
 msgid "Bytes objects can also be created with literals, see :ref:`strings`."
 msgstr ""
+"Объекты байтов также могут быть созданы с помощью литералов, см. "
+":ref:`strings`."
 
 #: ../../library/functions.rst:229
 msgid "See also :ref:`binaryseq`, :ref:`typebytes`, and :ref:`bytes-methods`."
-msgstr ""
+msgstr "См. также :ref:`binaryseq`, :ref:`typebytes` и :ref:`bytes-methods`."
 
 #: ../../library/functions.rst:234
 msgid ""
@@ -651,12 +706,20 @@ msgid ""
 "Note that classes are callable (calling a class returns a new instance); "
 "instances are callable if their class has a :meth:`~object.__call__` method."
 msgstr ""
+"Возвращает :const:`True`, если аргумент *object* является вызываемым, "
+":const:`False`, если нет. Если это возвращает ``True``, всё равно возможно, "
+"что вызов завершится неудачей, но если это ``False``, вызов *object* никогда"
+" не будет успешным. Обратите внимание, что классы являются вызываемыми "
+"(вызов класса возвращает новый экземпляр); экземпляры являются вызываемыми, "
+"если их класс имеет метод :meth:`~object.__call__`."
 
 #: ../../library/functions.rst:240
 msgid ""
 "This function was first removed in Python 3.0 and then brought back in "
 "Python 3.2."
 msgstr ""
+"Эта функция была сперва удалена в Python 3.0, а затем восстановлена в Python"
+" 3.2."
 
 #: ../../library/functions.rst:247
 msgid ""
@@ -665,6 +728,9 @@ msgid ""
 "``chr(8364)`` returns the string ``'€'``. This is the inverse of "
 ":func:`ord`."
 msgstr ""
+"Возвращает строку, представляющую символ с указанной кодовой позицией "
+"Unicode. Например, ``chr(97)`` возвращает строку ``'a'``, а ``chr(8364)`` — "
+"строку ``'€'``. Это обратная функция к :func:`ord`."
 
 #: ../../library/functions.rst:251
 msgid ""

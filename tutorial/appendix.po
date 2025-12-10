@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-15 14:18+0000\n"
+"POT-Creation-Date: 2025-12-09 14:17+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,6 +36,9 @@ msgid ""
 "interpreter is supported on all platforms with minimal line control "
 "capabilities."
 msgstr ""
+"Существует два варианта интерактивного :term:`REPL`. Классический базовый "
+"интерпретатор поддерживается на всех платформах и имеет минимальные "
+"возможности редактирования строк."
 
 #: ../../tutorial/appendix.rst:17
 msgid ""
@@ -48,6 +52,16 @@ msgid ""
 "enters \"paste mode\", which makes pasting larger blocks of code easier. "
 "Press :kbd:`F3` to return to the regular prompt."
 msgstr ""
+"В Windows или Unix-подобных системах с поддержкой :mod:`curses`, начиная с "
+"Python 3.13 по умолчанию используется новая интерактивная оболочка. Она "
+"поддерживает цветовое оформление, многострочное редактирование, просмотр "
+"истории и режим вставки. Чтобы отключить цвета, см. :ref:`using-on-"
+"controlling-color`. Функциональные клавиши предоставляют дополнительные "
+"возможности. Клавиша :kbd:`F1`включает интерактивный просмотр справки "
+":mod:`pydoc`. Клавиша :kbd:`F2` позволяет просматривать историю команд без "
+"вывода и без приглашений :term:`>>>` и :term:`...`. Клавиша :kbd:`F3` "
+"включает «режим вставки», упрощающий вставку больших блоков кода. Для выхода"
+" из него и возврата к обычному режиму снова нажмите :kbd:`F3`."
 
 #: ../../tutorial/appendix.rst:28
 msgid ""
@@ -55,12 +69,17 @@ msgid ""
 "or :kbd:`quit`. Adding call parentheses after those commands is not "
 "required."
 msgstr ""
+"При использовании новой интерактивной оболочки выйти из неё можно, набрав "
+":kbd:`exit` или :kbd:`quit`. Добавлять скобки для вызова этих команд не "
+"обязательно."
 
 #: ../../tutorial/appendix.rst:32
 msgid ""
 "If the new interactive shell is not desired, it can be disabled via the "
 ":envvar:`PYTHON_BASIC_REPL` environment variable."
 msgstr ""
+"Если новая интерактивная оболочка нежелательна, её можно отключить с помощью"
+" переменной окружения :envvar:`PYTHON_BASIC_REPL`."
 
 #: ../../tutorial/appendix.rst:38
 msgid "Error Handling"
@@ -78,6 +97,16 @@ msgid ""
 "  All error messages are written to the standard error stream; normal output"
 " from executed commands is written to standard output."
 msgstr ""
+"Когда возникает ошибка, интерпретатор выводит сообщение об ошибке и "
+"трассировку стека. В интерактивном режиме он затем возвращается к основному "
+"приглашению. Если ввод осуществляется из файла, интерпретатор завершает "
+"работу с ненулевым кодом возврата после вывода трассировки стека. "
+"(Исключения, обрабатываемые блоком :keyword:`except` в инструкции "
+":keyword:`try`, не являются ошибками в этом контексте.) Некоторые ошибки "
+"являются фатальными и приводят к завершению работы с ненулевым кодом "
+"возврата. Это относится к внутренним несоответствиям и некоторым случаям "
+"исчерпания памяти. Все сообщения об ошибках выводятся в стандартный поток "
+"ошибок, а нормальный вывод команд — в стандартный поток вывода."
 
 #: ../../tutorial/appendix.rst:50
 msgid ""
@@ -88,8 +117,8 @@ msgid ""
 ":keyword:`try` statement."
 msgstr ""
 "Ввод символа прерывания (обычно :kbd:`Control-C` или :kbd:`Delete`) в "
-"основном или вторичном запросе отменяет ввод и возвращает к основному "
-"запросу. [#]_ Ввод прерывания во время выполнения команды вызывает "
+"основном или вторичном приглашении отменяет ввод и возвращает к основному "
+"приглашению. [#]_ Ввод прерывания во время выполнения команды вызывает "
 "исключение :exc:`KeyboardInterrupt`, которое может быть обработано "
 "инструкцией :keyword:`try`."
 

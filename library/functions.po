@@ -2226,18 +2226,27 @@ msgid ""
 " sequence (such as a string, bytes, tuple, list, or range) or a collection "
 "(such as a dictionary, set, or frozen set)."
 msgstr ""
+"Возвращает длину (количество элементов) объекта. Аргумент может быть "
+"последовательностью (например, строкой, байтами, кортежем, списком или "
+"диапазоном) или коллекцией (например, словарем, множеством или неизменяемым "
+"множеством)."
 
 #: ../../library/functions.rst:1140
 msgid ""
 "``len`` raises :exc:`OverflowError` on lengths larger than "
 ":data:`sys.maxsize`, such as :class:`range(2 ** 100) <range>`."
 msgstr ""
+"Функция ``len`` выбрасывает исключение :exc:`OverflowError` на длинах, "
+"превышающих :data:`sys.maxsize`, таких как :class:`range(2 ** 100) <range>`."
 
 #: ../../library/functions.rst:1148
 msgid ""
 "Rather than being a function, :class:`list` is actually a mutable sequence "
 "type, as documented in :ref:`typesseq-list` and :ref:`typesseq`."
 msgstr ""
+"Вместо того чтобы быть функцией, :class:`list` на самом деле является "
+"изменяемым типом последовательности, как указано в :ref:`typesseq-list` и "
+":ref:`typesseq`."
 
 #: ../../library/functions.rst:1154
 msgid ""
@@ -2245,6 +2254,9 @@ msgid ""
 "variable names as the keys, and their currently bound references as the "
 "values."
 msgstr ""
+"Возвращает объект отображения, представляющий текущую локальную таблицу "
+"символов, с именами переменных в качестве ключей и объекты, к которым сейчас"
+" привязаны эти имена, в качестве значений."
 
 #: ../../library/functions.rst:1158
 msgid ""
@@ -2252,18 +2264,26 @@ msgid ""
 "single namespace, this function returns the same namespace as "
 ":func:`globals`."
 msgstr ""
+"В области видимости модуля, а также при использовании :func:`exec` или "
+":func:`eval` с одним пространством имён, эта функция возвращает то же "
+"пространство имён, что и :func:`globals`."
 
 #: ../../library/functions.rst:1162
 msgid ""
 "At class scope, it returns the namespace that will be passed to the "
 "metaclass constructor."
 msgstr ""
+"В области видимости класса она возвращает пространство имён, которое будет "
+"передано метаклассу при создании класса."
 
 #: ../../library/functions.rst:1165
 msgid ""
 "When using ``exec()`` or ``eval()`` with separate local and global "
 "arguments, it returns the local namespace passed in to the function call."
 msgstr ""
+"При использовании ``exec()`` или ``eval()`` с отдельными локальными и "
+"глобальными аргументами, функция возвращает локальное пространство имён, "
+"переданное при вызове функции."
 
 #: ../../library/functions.rst:1168
 msgid ""

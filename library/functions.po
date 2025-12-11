@@ -1372,10 +1372,25 @@ msgid ""
 "environment if they are already referenced in the scope that is calling "
 ":func:`eval` (e.g. via a :keyword:`nonlocal` statement)."
 msgstr ""
+"Аргумент *expression* анализируется и вычисляется как выражение Python "
+"(строго говоря, список условий) с использованием отображений *globals* и "
+"*locals* в качестве глобального и локального пространства имён. Если словарь"
+" *globals* передан и не содержит ключа ``__builtins__``, ссылка на словарь "
+"встроенного модуля :mod:`builtins` вставляется под этим ключом перед "
+"разбором *expression*. Таким образом, вы можете контролировать, какие "
+"встроенные объекты доступны для исполняемого кода, вставляя свой собственный"
+" словарь ``__builtins__`` в *globals* перед передачей его в :func:`eval`. "
+"Если *locals* опущен, по умолчанию используется словарь *globals*. Если оба "
+"отображения опущены, выражение выполняется с *globals* и *locals* из "
+"окружения, где вызывается :func:`eval`. Обратите внимание, что *eval()* "
+"будет иметь доступ к объектам :term:`вложенных областей видимости <nested "
+"scope>` (не локальным) из внешнего окружения, только если на них уже есть "
+"ссылки в той области видимости, где вызывается :func:`eval` (например, с "
+"помощью инструкции :keyword:`nonlocal`)."
 
 #: ../../library/functions.rst:616
 msgid "Example:"
-msgstr ""
+msgstr "Пример:"
 
 #: ../../library/functions.rst:622
 msgid ""
@@ -1384,6 +1399,11 @@ msgid ""
 " of a string.  If the code object has been compiled with ``'exec'`` as the "
 "*mode* argument, :func:`eval`\\'s return value will be ``None``."
 msgstr ""
+"Эта функция также может использоваться для выполнения произвольных объектов "
+"кода (таких, как созданные с помощью :func:`compile`). В этом случае вместо "
+"строки нужно передать объект кода. Если объект кода был скомпилирован с "
+"аргументом *mode* равным ``'exec'``, возвращаемое значение :func:`eval` "
+"будет ``None``."
 
 #: ../../library/functions.rst:627
 msgid ""
@@ -1392,18 +1412,26 @@ msgid ""
 "current global and local dictionary, respectively, which may be useful to "
 "pass around for use by :func:`eval` or :func:`exec`."
 msgstr ""
+"Подсказки: динамическое выполнение инструкций поддерживается функцией "
+":func:`exec`. Функции :func:`globals` и :func:`locals` возвращают текущие "
+"глобальный и локальный пространства имён соответственно, которые могут быть "
+"полезны для передачи в :func:`eval` или :func:`exec`."
 
 #: ../../library/functions.rst:632
 msgid ""
 "If the given source is a string, then leading and trailing spaces and tabs "
 "are stripped."
 msgstr ""
+"Если заданный источник кода является строкой, то ведущие и завершающие "
+"пробелы и табуляции удаляются из неё."
 
 #: ../../library/functions.rst:635
 msgid ""
 "See :func:`ast.literal_eval` for a function that can safely evaluate strings"
 " with expressions containing only literals."
 msgstr ""
+"См. также функцию :func:`ast.literal_eval`, которая может безопасно "
+"вычислять строки с выражениями, содержащими только литералы."
 
 #: ../../library/functions.rst:638 ../../library/functions.rst:640
 #: ../../library/functions.rst:700 ../../library/functions.rst:702
@@ -1411,16 +1439,21 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``exec`` with the code object as "
 "the argument. Code compilation events may also be raised."
 msgstr ""
+"Возбуждает :ref:`событие аудита <auditing>` ``exec`` с объектом кода в "
+"качестве аргумента. Также могут произойти события компиляции кода."
 
 #: ../../library/functions.rst:645 ../../library/functions.rst:722
 msgid "The *globals* and *locals* arguments can now be passed as keywords."
 msgstr ""
+"Аргументы *globals* и *locals* теперь можно передавать как именованные."
 
 #: ../../library/functions.rst:649 ../../library/functions.rst:726
 msgid ""
 "The semantics of the default *locals* namespace have been adjusted as "
 "described for the :func:`locals` builtin."
 msgstr ""
+"Семантика пространства имён *locals* по умолчанию была скорректирована, как "
+"описано для встроенной функции :func:`locals`."
 
 #: ../../library/functions.rst:661
 msgid ""

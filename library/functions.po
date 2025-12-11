@@ -1075,9 +1075,9 @@ msgid ""
 "falls back to :meth:`~object.__index__`."
 msgstr ""
 "Если аргументом является число, конструктор выполняет числовое "
-"преобразование, аналогично :class:`int` и :class:`float`. Для общего объекта"
-" Python ``x``, вызов ``complex(x)`` обращается к ``x.__complex__()``. Если "
-":meth:`~object.__complex__` не определён, то вызов передаётся к "
+"преобразование, аналогично :class:`int` и :class:`float`. Для произвольного "
+"объекта Python ``x``, вызов ``complex(x)`` обращается к ``x.__complex__()``."
+" Если :meth:`~object.__complex__` не определён, то вызов передаётся к "
 ":meth:`~object.__float__`. Если :meth:`!__float__` не определён, то вызов "
 "передётся к :meth:`~object.__index__`."
 
@@ -1634,12 +1634,21 @@ msgid ""
 "conform to the :token:`~float:floatvalue` production rule in the following "
 "grammar, after leading and trailing whitespace characters are removed:"
 msgstr ""
+"Если аргумент является строкой, оно должна содержать десятичное число, "
+"опционально с предшествующим знаком и окружённое пробелами. Необязательный "
+"знак может быть ``'+'`` или ``'-'``; знак ``'+'`` не влияет на результат. "
+"Аргумент также может быть строкой, представляющей NaN (не число), а также "
+"положительную или отрицательную бесконечности. Более точно, входная строка, "
+"после удаления начальных и конечных пробелов, должна соответствовать правилу"
+" :token:`~float:floatvalue` следующей грамматики:"
 
 #: ../../library/functions.rst:792
 msgid ""
 "Case is not significant, so, for example, \"inf\", \"Inf\", \"INFINITY\", "
 "and \"iNfINity\" are all acceptable spellings for positive infinity."
 msgstr ""
+"Регистр не имеет значения, поэтому, например, \"inf\", \"Inf\", \"INFINITY\""
+" и \"iNfINity\" - все допустимые написания для положительной бесконечности."
 
 #: ../../library/functions.rst:795
 msgid ""
@@ -1648,6 +1657,11 @@ msgid ""
 "precision) is returned.  If the argument is outside the range of a Python "
 "float, an :exc:`OverflowError` will be raised."
 msgstr ""
+"В противном случае, если аргумент является целым числом или числом с "
+"плавающей точкой, возвращается число с плавающей точкой с тем же значением "
+"(в учётом точности Python). Если аргумент находится за пределами диапазона "
+"чисел с плавающей точкой Python, будет выброшено исключение "
+":exc:`OverflowError`."
 
 #: ../../library/functions.rst:800
 msgid ""
@@ -1655,25 +1669,32 @@ msgid ""
 "``x.__float__()``.  If :meth:`~object.__float__` is not defined then it "
 "falls back to :meth:`~object.__index__`."
 msgstr ""
+"Для произвольного объекта Python ``x``, ``float(x)`` делегирует вызов методу"
+" ``x.__float__()``. Если :meth:`~object.__float__` не определён, то "
+"вызывается :meth:`~object.__index__`."
 
 #: ../../library/functions.rst:804
 msgid ""
 "See also :meth:`float.from_number` which only accepts a numeric argument."
 msgstr ""
+"См. также метод :meth:`float.from_number`, который принимает только числовой"
+" аргумент."
 
 #: ../../library/functions.rst:806
 msgid "If no argument is given, ``0.0`` is returned."
-msgstr ""
+msgstr "Если аргумент не задан, возвращается ``0.0``."
 
 #: ../../library/functions.rst:808
 msgid "The float type is described in :ref:`typesnumeric`."
-msgstr ""
+msgstr "Тип float описан в :ref:`typesnumeric`."
 
 #: ../../library/functions.rst:816
 msgid ""
 "Falls back to :meth:`~object.__index__` if :meth:`~object.__float__` is not "
 "defined."
 msgstr ""
+"Используется метод :meth:`~object.__index__`, если :meth:`~object.__float__`"
+" не определён."
 
 #: ../../library/functions.rst:826
 msgid ""

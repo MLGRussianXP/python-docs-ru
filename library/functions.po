@@ -1053,6 +1053,17 @@ msgid ""
 ":token:`~float:complexvalue` production rule in the following grammar, after"
 " parentheses and leading and trailing whitespace characters are removed:"
 msgstr ""
+"Если аргумент является строкой, он должен содержать либо действительную "
+"часть (в том же формате, что и для :func:`float`), либо мнимую часть (в том "
+"же формате, но с суфиксом ``'j'`` или ``'J'``), либо как действительную, так"
+" и мнимую части (знак мнимой части в этом случае обязателен). При желании "
+"строка может быть окружена пробелами и круглыми скобками ``'('`` и ``')'``, "
+"которые игнорируются. Строка не должна содержать пробелов между ``'+'``, "
+"``'-'``, суффиксом ``'j'`` или ``'J'`` и десятичным числом. Например, "
+"``complex('1+2j')`` подходит, но ``complex('1 + 2j')`` возбуждает исключение"
+" :exc:`ValueError`. Точнее, после удаления скобок и пробелов с обоих концов,"
+" строка должна соответствовать правилам :token:`~float:complexvalue` "
+"следующей грамматики:"
 
 #: ../../library/functions.rst:422
 msgid ""
@@ -1063,6 +1074,12 @@ msgid ""
 ":meth:`~object.__float__`. If :meth:`!__float__` is not defined then it "
 "falls back to :meth:`~object.__index__`."
 msgstr ""
+"Если аргументом является число, конструктор выполняет числовое "
+"преобразование, аналогично :class:`int` и :class:`float`. Для общего объекта"
+" Python ``x``, вызов ``complex(x)`` обращается к ``x.__complex__()``. Если "
+":meth:`~object.__complex__` не определён, то вызов передаётся к "
+":meth:`~object.__float__`. Если :meth:`!__float__` не определён, то вызов "
+"передётся к :meth:`~object.__index__`."
 
 #: ../../library/functions.rst:431
 msgid ""
@@ -1074,37 +1091,54 @@ msgid ""
 "imaginary component ``real.imag+imag.real``. If one of arguments is a real "
 "number, only its real component is used in the above expressions."
 msgstr ""
+"Если переданы два аргумента или используются именованные аргументы, каждый "
+"из них может иметь любым числовым типом (включая комплексный). Если оба "
+"аргумента являются действительными числами, вернётся комплексное число с "
+"вещественным компонентом *real* и мнимым компонентом *imag*. Если оба "
+"аргумента являются комплексными числами, вернётся комплексное число с "
+"действительным компонентом ``real.real-imag.imag`` и мнимым компонентом "
+"``real.imag+imag.real``. Если один из аргументов является действительным "
+"числом, в приведенных выше выражениях используется только его действительная"
+" составляющая."
 
 #: ../../library/functions.rst:441
 msgid ""
 "See also :meth:`complex.from_number` which only accepts a single numeric "
 "argument."
 msgstr ""
+"См. также :meth:`complex.from_number`, который принимает только один "
+"числовой аргумент."
 
 #: ../../library/functions.rst:443
 msgid "If all arguments are omitted, returns ``0j``."
-msgstr ""
+msgstr "Если все аргументы опущены, возвращается ``0j``."
 
 #: ../../library/functions.rst:445
 msgid "The complex type is described in :ref:`typesnumeric`."
-msgstr ""
+msgstr "Описание комплексного типа приведено в :ref:`typesnumeric`."
 
 #: ../../library/functions.rst:447 ../../library/functions.rst:810
 #: ../../library/functions.rst:1052
 msgid "Grouping digits with underscores as in code literals is allowed."
 msgstr ""
+"Разрешена группировка цифр с использованием подчеркивания, как в коде "
+"литералов."
 
 #: ../../library/functions.rst:450
 msgid ""
 "Falls back to :meth:`~object.__index__` if :meth:`~object.__complex__` and "
 ":meth:`~object.__float__` are not defined."
 msgstr ""
+"Использование :meth:`~object.__index__`, если :meth:`~object.__complex__` и "
+":meth:`~object.__float__` не определены."
 
 #: ../../library/functions.rst:454
 msgid ""
 "Passing a complex number as the *real* or *imag* argument is now deprecated;"
 " it should only be passed as a single positional argument."
 msgstr ""
+"Передача комплексного числа в качестве аргументов *real* или *imag* "
+"устарела. Оно должно передаваться только как один позиционный аргумент."
 
 #: ../../library/functions.rst:461
 msgid ""
@@ -1114,6 +1148,11 @@ msgid ""
 "example, ``delattr(x, 'foobar')`` is equivalent to ``del x.foobar``. *name* "
 "need not be a Python identifier (see :func:`setattr`)."
 msgstr ""
+"Это родственник функции :func:`setattr`. Аргументы — это объект и строка. "
+"Строка должна быть именем одного из атрибутов объекта. Функция удаляет "
+"указанный атрибут, если объект это позволяет. Например, ``delattr(x, "
+"'foobar')`` эквивалентно ``del x.foobar``. *name* не обязательно должно быть"
+" идентификатором Python (см. :func:`setattr`)."
 
 #: ../../library/functions.rst:474
 msgid ""
@@ -1121,12 +1160,17 @@ msgid ""
 "See :class:`dict` and :ref:`typesmapping` for documentation about this "
 "class."
 msgstr ""
+"Создаёт новый словарь. Объект :class:`dict` является классом словаря. См. "
+":class:`dict` и :ref:`typesmapping` для получения документации по этому "
+"классу."
 
 #: ../../library/functions.rst:477
 msgid ""
 "For other containers see the built-in :class:`list`, :class:`set`, and "
 ":class:`tuple` classes, as well as the :mod:`collections` module."
 msgstr ""
+"Для других контейнеров см. встроенные классы :class:`list`, :class:`set` и "
+":class:`tuple`, а также модуль :mod:`collections`."
 
 #: ../../library/functions.rst:484
 msgid ""
@@ -1134,6 +1178,9 @@ msgid ""
 "With an argument, attempt to return a list of valid attributes for that "
 "object."
 msgstr ""
+"Без аргументов возвращает список имён в текущей локальной области видимости."
+" С аргументом попытается вернуть список допустимых атрибутов для этого "
+"объекта."
 
 #: ../../library/functions.rst:487
 msgid ""
@@ -1143,6 +1190,11 @@ msgid ""
 ":func:`~object.__getattribute__` function to customize the way :func:`dir` "
 "reports their attributes."
 msgstr ""
+"Если объект имеет метод с именем :meth:`~object.__dir__`, этот метод будет "
+"вызван и должен вернуть список атрибутов. Это позволяет объектам, которые "
+"реализуют пользовательские функции :func:`~object.__getattr__` или "
+":func:`~object.__getattribute__`, настраивать способ отображения их "
+"атрибутов в функции :func:`dir`."
 
 #: ../../library/functions.rst:494
 msgid ""
@@ -1152,6 +1204,11 @@ msgid ""
 "necessarily complete and may be inaccurate when the object has a custom "
 ":func:`~object.__getattr__`."
 msgstr ""
+"Если объект не предоставляет :meth:`~object.__dir__`, функция пытается "
+"собрать информацию из атрибута :attr:`~object.__dict__` объекта, если он "
+"определён, и из его типа объекта. Полученный список не обязательно является "
+"полным и может быть неточным, когда у объекта есть пользовательская "
+":func:`~object.__getattr__`."
 
 #: ../../library/functions.rst:500
 msgid ""
@@ -1159,18 +1216,23 @@ msgid ""
 "of objects, as it attempts to produce the most relevant, rather than "
 "complete, information:"
 msgstr ""
+"Стандартный механизм :func:`dir` ведет себя по-разному с различными типами "
+"объектов, поскольку он пытается предоставить наиболее актуальную, а не "
+"полную информацию:"
 
 #: ../../library/functions.rst:504
 msgid ""
 "If the object is a module object, the list contains the names of the "
 "module's attributes."
-msgstr ""
+msgstr "Если объект является модулем, список содержит имена атрибутов модуля."
 
 #: ../../library/functions.rst:507
 msgid ""
 "If the object is a type or class object, the list contains the names of its "
 "attributes, and recursively of the attributes of its bases."
 msgstr ""
+"Если объект является типом или классом, список содержит имена его атрибутов "
+"и рекурсивно атрибуты его базовых классов."
 
 #: ../../library/functions.rst:510
 msgid ""
@@ -1178,10 +1240,12 @@ msgid ""
 "its class's attributes, and recursively of the attributes of its class's "
 "base classes."
 msgstr ""
+"В противном случае, список содержит имена атрибутов объекта, имена атрибутов"
+" его класса и рекурсивно атрибуты базовых классов его класса."
 
 #: ../../library/functions.rst:514
 msgid "The resulting list is sorted alphabetically.  For example:"
-msgstr ""
+msgstr "Результирующий список отсортирован в алфавитном порядке.  Например:"
 
 #: ../../library/functions.rst:534
 msgid ""
@@ -1191,6 +1255,11 @@ msgid ""
 "its detailed behavior may change across releases.  For example, metaclass "
 "attributes are not in the result list when the argument is a class."
 msgstr ""
+"Поскольку :func:`dir` предназначена прежде всего для удобства при "
+"интерактивной работе, она старается показать интересный набор имён, а не "
+"строго или последовательно определённый. Точное её поведение может меняться "
+"между версиями. Например, атрибуты метаклассов не включаются в список "
+"результатов, когда аргументом является класс."
 
 #: ../../library/functions.rst:544
 msgid ""
@@ -1203,6 +1272,15 @@ msgid ""
 "% b`` is very close to *a*, if ``a % b`` is non-zero it has the same sign as"
 " *b*, and ``0 <= abs(a % b) < abs(b)``."
 msgstr ""
+"Принимает два (не комплексных) числа в качестве аргументов и возвращает пару"
+" чисел: частное и остаток от целочисленного деления. При смешанных типах "
+"операндов применяются правила для бинарных арифметических операторов. Для "
+"целых чисел результат совпадает с ``(a // b, a % b)``. Для чисел с плавающей"
+" точкой результатом будет ``(q, a % b)``, где *q* обычно равно "
+"``math.floor(a / b)``, но может быть на 1 меньше этого значения. В любом "
+"случае ``q * b + a % b`` очень близко к *a*. Если ``a % b`` не равно нулю, "
+"оно имеет тот же знак, что и *b*, и выполняется условие ``0 <= abs(a % b) < "
+"abs(b)``."
 
 #: ../../library/functions.rst:556
 msgid ""

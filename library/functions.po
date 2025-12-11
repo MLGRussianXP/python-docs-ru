@@ -1290,10 +1290,15 @@ msgid ""
 ":func:`enumerate` returns a tuple containing a count (from *start* which "
 "defaults to 0) and the values obtained from iterating over *iterable*."
 msgstr ""
+"Возвращает объект перечисления. *iterable* должен быть последовательностью, "
+":term:`итератором` или другим объектом, поддерживающим итерацию. Метод "
+":meth:`~iterator.__next__` итератора, возвращаемого функцией "
+":func:`enumerate`, возвращает кортеж, содержащий счётчик (начиная с *start*,"
+" по умолчанию 0) и значения, полученные при итерации по *iterable*."
 
 #: ../../library/functions.rst:568
 msgid "Equivalent to::"
-msgstr ""
+msgstr "Эквивалентно::"
 
 #: ../../library/functions.rst:570
 msgid ""
@@ -1303,44 +1308,51 @@ msgid ""
 "        yield n, elem\n"
 "        n += 1"
 msgstr ""
+"def enumerate(iterable, start=0):\n"
+"    n = start\n"
+"    for elem in iterable:\n"
+"        yield n, elem\n"
+"        n += 1"
 
 #: ../../library/functions.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "Параметры"
 
 #: ../../library/functions.rst:580
 msgid "A Python expression."
-msgstr ""
+msgstr "Выражение Python."
 
 #: ../../library/functions.rst:584
 msgid "The global namespace (default: ``None``)."
-msgstr ""
+msgstr "Глобальное пространство имён (по умолчанию: ``None``)."
 
 #: ../../library/functions.rst:588
 msgid "The local namespace (default: ``None``)."
-msgstr ""
+msgstr "Локальное пространство имён (по умолчанию: ``None``)."
 
 #: ../../library/functions.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "Возвращает"
 
 #: ../../library/functions.rst:592
 msgid "The result of the evaluated expression."
-msgstr ""
+msgstr "Результат вычисленного выражения."
 
 #: ../../library/functions.rst:0
 msgid "raises"
-msgstr ""
+msgstr "выбрасывает исключение"
 
 #: ../../library/functions.rst:593
 msgid "Syntax errors are reported as exceptions."
-msgstr ""
+msgstr "Синтаксические ошибки сообщаются как исключения."
 
 #: ../../library/functions.rst:597 ../../library/functions.rst:658
 msgid ""
 "This function executes arbitrary code. Calling it with user-supplied input "
 "may lead to security vulnerabilities."
 msgstr ""
+"Эта функция выполняет произвольный код. Вызов её с данными, полученными от "
+"пользователя, может привести к уязвимостям в безопасности."
 
 #: ../../library/functions.rst:600
 msgid ""

@@ -1996,6 +1996,8 @@ msgid ""
 "Return an integer object constructed from a number or a string, or return "
 "``0`` if no arguments are given."
 msgstr ""
+"Возвращает целочисленный объект, созданный из числа или строки, или "
+"возвращает ``0``, если аргументы не указаны."
 
 #: ../../library/functions.rst:1006
 msgid ""
@@ -2012,6 +2014,18 @@ msgid ""
 ">>> int('01110011', base=2)\n"
 "115"
 msgstr ""
+">>> int(123.45)\n"
+"123\n"
+">>> int('123')\n"
+"123\n"
+">>> int('   -12_345\\n')\n"
+"-12345\n"
+">>> int('FACE', 16)\n"
+"64206\n"
+">>> int('0xface', 0)\n"
+"64206\n"
+">>> int('01110011', base=2)\n"
+"115"
 
 #: ../../library/functions.rst:1021
 msgid ""
@@ -2020,6 +2034,10 @@ msgid ""
 "returns ``x.__index__()``. For floating-point numbers, this truncates "
 "towards zero."
 msgstr ""
+"Если аргумент определяет :meth:`~object.__int__`, ``int(x)`` возвращает "
+"``x.__int__()``. Если аргумент определяет :meth:`~object.__index__`, "
+"возаращается ``x.__index__()``. Для чисел с плавающей точкой происходит "
+"усечение к нулю."
 
 #: ../../library/functions.rst:1026
 msgid ""
@@ -2029,6 +2047,12 @@ msgid ""
 " ``-`` (with no space in between), have leading zeros, be surrounded by "
 "whitespace, and have single underscores interspersed between digits."
 msgstr ""
+"Если аргумент не является числом или задано *base*, то он должен быть "
+"строкой, или экземпляром :class:`bytes` или :class:`bytearray`, "
+"представляющим целое число в системе счисления по основанию *base*. "
+"Дополнительно строка может начинаться с ``+`` или ``-`` (без пробела после "
+"них), содержать ведущие нули, быть окружённой пробелами и иметь одиночные "
+"подчеркивания между цифрами."
 
 #: ../../library/functions.rst:1032
 msgid ""
@@ -2043,10 +2067,12 @@ msgid ""
 " prefix. Base 0 also disallows leading zeros: ``int('010', 0)`` is not "
 "legal, while ``int('010')`` and ``int('010', 8)`` are."
 msgstr ""
+"Запись целого числа в системе счисления с основанием n содержит цифры, каждая из которых представляет значение от 0 до n-1. Значения 0–9 могут быть представлены любыми десятичными цифрами Юникода. Значения 10–35 могут быть представлены символами от ``a`` до ``z`` (или от ``A`` до ``Z``). По умолчанию *base* равно 10. Допустимые основания: 0 и 2–36. Записи чисел в системах счисления с основаниями 2, 8 и 16 могут дополнительно иметь префиксы ``0b``/``0B``, ``0o``/``0O`` или ``0x``/``0X``, как литералы целых чисел в коде. Для основания 0 строка интерпретируется аналогично :ref:`целочисленному литералу в коде <integers>`, то есть фактическим основанием является 2, 8, 10 или 16 в зависимости от\n"
+"префикса. Основание 0 также запрещает ведущие нули: ``int('010', 0)`` недопустимо, в то время как ``int('010')`` и ``int('010', 8)`` допустимы."
 
 #: ../../library/functions.rst:1043
 msgid "The integer type is described in :ref:`typesnumeric`."
-msgstr ""
+msgstr "Тип целого числа описан в :ref:`typesnumeric`."
 
 #: ../../library/functions.rst:1045
 msgid ""
@@ -2055,16 +2081,23 @@ msgid ""
 "obtain an integer for the base.  Previous versions used :meth:`base.__int__ "
 "<object.__int__>` instead of :meth:`base.__index__ <object.__index__>`."
 msgstr ""
+"Если *base* не является экземпляром класса :class:`int` и у объекта *base* "
+"есть метод :meth:`base.__index__ <object.__index__>`, этот метод вызывается "
+"для получения целого числа для *base*. В предыдущих версиях вместо "
+":meth:`base.__index__ <object.__index__>` использовался метод "
+":meth:`base.__int__ <object.__int__>`."
 
 #: ../../library/functions.rst:1055
 msgid "The first parameter is now positional-only."
-msgstr ""
+msgstr "Первый параметр теперь только позиционный."
 
 #: ../../library/functions.rst:1058
 msgid ""
 "Falls back to :meth:`~object.__index__` if :meth:`~object.__int__` is not "
 "defined."
 msgstr ""
+"Используется :meth:`~object.__index__`, если :meth:`~object.__int__` не "
+"определён."
 
 #: ../../library/functions.rst:1061
 msgid ""

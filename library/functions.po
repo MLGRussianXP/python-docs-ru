@@ -2542,6 +2542,10 @@ msgid ""
 "cannot be opened, an :exc:`OSError` is raised. See :ref:`tut-files` for more"
 " examples of how to use this function."
 msgstr ""
+"Открывает *file* и возвращает соответствующий :term:`файловый объект`. Если "
+"файл не удаётся открыть, возбуждается исключение :exc:`OSError`. См. "
+":ref:`tut-files` для получения дополнительных примеров использования этой "
+"функции."
 
 #: ../../library/functions.rst:1343
 msgid ""
@@ -2551,6 +2555,12 @@ msgid ""
 " given, it is closed when the returned I/O object is closed unless *closefd*"
 " is set to ``False``.)"
 msgstr ""
+"Аргумент *file* — это :term:`путеподобный объект`, задающий путь (абсолютный"
+" или относительный от текущего рабочего каталога) к файлу, который должен "
+"быть открыт, или целочисленный дескриптор файла, который должен быть "
+"обёрнут. (Если задан файловый дескриптор, он закрывается при закрытии "
+"возвращаемого объекта ввода/вывода, если *closefd* не установлено в "
+"``False``.)"
 
 #: ../../library/functions.rst:1349
 msgid ""
@@ -2565,70 +2575,81 @@ msgid ""
 "(For reading and writing raw bytes use binary mode and leave *encoding* "
 "unspecified.)  The available modes are:"
 msgstr ""
+"Аргумент *mode* — необязательная строка, определяющая режим открытия файла. "
+"По умолчанию установлено значение ``'r'``, что означает «открытие для чтения"
+" в текстовом режиме». Другими распространенными значениями являются ``'w'`` "
+"для записи (очистив файл, если он уже существует), ``'x'`` для эксклюзивного"
+" создания и ``'a'`` для добавления (что в *некоторых* Unix системах это "
+"означает, что *все* записи добавляются в конец файла независимо от текущей "
+"позиции указателя). В текстовом режиме, если аргумент *encoding* не указан, "
+"используемая кодировка зависит от платформы: вызывается "
+":func:`locale.getencoding` для получения текущей локальной кодировки. (Для "
+"чтения и записи необработанных байтов используйте бинарный режим и оставьте "
+"*encoding* неуказанной.) Доступны следующие режимы:"
 
 #: ../../library/functions.rst:1366
 msgid "Character"
-msgstr ""
+msgstr "Символ"
 
 #: ../../library/functions.rst:1366
 msgid "Meaning"
-msgstr ""
+msgstr "Значение"
 
 #: ../../library/functions.rst:1368
 msgid "``'r'``"
-msgstr ""
+msgstr "``'r'``"
 
 #: ../../library/functions.rst:1368
 msgid "open for reading (default)"
-msgstr ""
+msgstr "открыть для чтения (по умолчанию)"
 
 #: ../../library/functions.rst:1369
 msgid "``'w'``"
-msgstr ""
+msgstr "``'w'``"
 
 #: ../../library/functions.rst:1369
 msgid "open for writing, truncating the file first"
-msgstr ""
+msgstr "открыть для записи, предварительно очистив файл"
 
 #: ../../library/functions.rst:1370
 msgid "``'x'``"
-msgstr ""
+msgstr "``'x'``"
 
 #: ../../library/functions.rst:1370
 msgid "open for exclusive creation, failing if the file already exists"
-msgstr ""
+msgstr "открыть для эксклюзивного создания, ошибка если файл уже существует"
 
 #: ../../library/functions.rst:1371
 msgid "``'a'``"
-msgstr ""
+msgstr "``'a'``"
 
 #: ../../library/functions.rst:1371
 msgid "open for writing, appending to the end of file if it exists"
-msgstr ""
+msgstr "открыть для записи, добавляя в конец файла, если он существует"
 
 #: ../../library/functions.rst:1372
 msgid "``'b'``"
-msgstr ""
+msgstr "``'b'``"
 
 #: ../../library/functions.rst:1372 ../../library/functions.rst:1516
 msgid "binary mode"
-msgstr ""
+msgstr "бинарный режим"
 
 #: ../../library/functions.rst:1373
 msgid "``'t'``"
-msgstr ""
+msgstr "``'t'``"
 
 #: ../../library/functions.rst:1373
 msgid "text mode (default)"
-msgstr ""
+msgstr "текстовый режим (по умолчанию)"
 
 #: ../../library/functions.rst:1374
 msgid "``'+'``"
-msgstr ""
+msgstr "``'+'``"
 
 #: ../../library/functions.rst:1374
 msgid "open for updating (reading and writing)"
-msgstr ""
+msgstr "открыть для обновления (чтение и запись)"
 
 #: ../../library/functions.rst:1377
 msgid ""
@@ -2636,6 +2657,9 @@ msgid ""
 "Modes ``'w+'`` and ``'w+b'`` open and truncate the file.  Modes ``'r+'`` and"
 " ``'r+b'`` open the file with no truncation."
 msgstr ""
+"Режим по умолчанию — ``'r'`` (открытие для чтения текста, синоним ``'rt'``)."
+" Режимы ``'w+'`` и ``'w+b'`` открывают и очищают файл. Режимы ``'r+'`` и "
+"``'r+b'`` открывают файл без очистки."
 
 #: ../../library/functions.rst:1381
 msgid ""
@@ -2647,6 +2671,14 @@ msgid ""
 "having been first decoded using a platform-dependent encoding or using the "
 "specified *encoding* if given."
 msgstr ""
+"Как упоминается в :ref:`io-overview`, Python различает бинарный и текстовый "
+"ввод/вывод. Файлы, открытые в бинарном режиме (если в аргументе *mode* "
+"указано ``'b'``), возвращают содержимое в виде объектов :class:`bytes` без "
+"какой-либо декодировки. В текстовом режиме (по умолчанию или когда в "
+"аргументе *mode* указано ``'t'``), содержимое файла возвращается как "
+":class:`str`, при этом байты сначала декодируются с использованием "
+"кодировки, зависящей от платформы, или переданной в аргументе *encoding*, "
+"если она указана."
 
 #: ../../library/functions.rst:1391
 msgid ""
@@ -2654,6 +2686,9 @@ msgid ""
 "files; all the processing is done by Python itself, and is therefore "
 "platform-independent."
 msgstr ""
+"Python не зависит от базовой операционной системы в понятии текстовых "
+"файлов; вся обработка выполняется самим Python и, следовательно, не зависит "
+"от платформы."
 
 #: ../../library/functions.rst:1395
 msgid ""

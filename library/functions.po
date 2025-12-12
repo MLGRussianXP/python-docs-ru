@@ -2312,6 +2312,14 @@ msgid ""
 "variables and nonlocal cell references does *not* affect the contents of "
 "previously returned dictionaries."
 msgstr ""
+"В :term:`оптимизированной области видимости` (включая функции, генераторы и "
+"сопрограммы) каждый вызов ``locals()`` вместо этого возвращает новый "
+"словарь, содержащий текущие привязки локальных переменных функции и все "
+"ссылки на нелокальные ячейки. В этом случае изменения привязки имени, "
+"сделанные через возвращённый словарь, *не* записываются обратно в "
+"соответствующие локальные переменные или ссылки на нелокальные ячейки, а "
+"присвоение, переприсвоение или удаление локальных переменных и ссылок на "
+"нелокальные ячейки *не* влияет на содержимое ранее возвращённых словарей."
 
 #: ../../library/functions.rst:1184
 msgid ""
@@ -2321,18 +2329,27 @@ msgid ""
 "other scopes, it behaves as if the comprehension were running as a nested "
 "function."
 msgstr ""
+"Вызов ``locals()`` в составе включения в функции, генераторе или сопрограмме"
+" эквивалентен вызову его в окружающей области видимости, за исключением "
+"того, что в результат также войдут инициализированные переменные итерации "
+"включения. В других областях видимости это поведение соответствует тому, как"
+" если бы включение выполнялось во вложенной функции."
 
 #: ../../library/functions.rst:1190
 msgid ""
 "Calling ``locals()`` as part of a generator expression is equivalent to "
 "calling it in a nested generator function."
 msgstr ""
+"Вызов ``locals()`` как части генераторного выражения эквивалентен вызову его"
+" во вложенной функции генератора."
 
 #: ../../library/functions.rst:1193
 msgid ""
 "The behaviour of ``locals()`` in a comprehension has been updated as "
 "described in :pep:`709`."
 msgstr ""
+"Поведение ``locals()`` во включении было обновлено, как описано в "
+":pep:`709`."
 
 #: ../../library/functions.rst:1197
 msgid ""
@@ -2342,6 +2359,11 @@ msgid ""
 "from being defined, the behaviour in other scopes remains unchanged from "
 "previous versions."
 msgstr ""
+"В рамках :pep:`667` теперь определена семантика изменения объектов "
+"отображения, возвращаемых этой функцией. Поведение в :term:`оптимизированных"
+" областях видимости <optimized scope>` теперь такое, как описано выше. "
+"Помимо этого определения, поведение в других областях видимости осталось "
+"таким же, как в предыдущих версиях."
 
 #: ../../library/functions.rst:1207
 msgid ""
@@ -2354,16 +2376,27 @@ msgid ""
 "For cases where the function inputs are already arranged into argument "
 "tuples, see :func:`itertools.starmap`."
 msgstr ""
+"Возвращает итератор, который применяет *function* к каждому элементу "
+"*iterable*, выдавая результаты. Если переданы дополнительные аргументы "
+"*iterables*, *function* должна принимать столько же аргументов и применяется"
+" к элементам всех параллельно итерируемых объектов. При работе с несколькими"
+" итерируемыми объектами итератор останавливается, когда заканчивается самый "
+"короткий из них. Если *strict* равен ``True`` и один из итерируемых объектов"
+" заканчивается раньше других, выбрасывается исключение :exc:`ValueError`. "
+"Для случаев, когда входные данные функции уже огранизованы в виде кортежей "
+"аргументов, см. :func:`itertools.starmap`."
 
 #: ../../library/functions.rst:1216
 msgid "Added the *strict* parameter."
-msgstr ""
+msgstr "Добавлен параметр *strict*."
 
 #: ../../library/functions.rst:1224
 msgid ""
 "Return the largest item in an iterable or the largest of two or more "
 "arguments."
 msgstr ""
+"Возвращает наибольший элемент итерируемого объекта или наибольший из двух и "
+"более аргументов."
 
 #: ../../library/functions.rst:1227
 msgid ""
@@ -2371,6 +2404,10 @@ msgid ""
 "The largest item in the iterable is returned.  If two or more positional "
 "arguments are provided, the largest of the positional arguments is returned."
 msgstr ""
+"Если передан один позиционный аргумент, он должен быть :term:`итерируемым` "
+"объектом. Возвращается наибольший элемент итерируемого объекта. Если "
+"переданы два или более позиционных аргумента, возвращается наибольший из "
+"них."
 
 #: ../../library/functions.rst:1232 ../../library/functions.rst:1270
 msgid ""
@@ -2380,6 +2417,11 @@ msgid ""
 " empty. If the iterable is empty and *default* is not provided, a "
 ":exc:`ValueError` is raised."
 msgstr ""
+"Есть два необязательных аргумента, передаваемых только по имени. Аргумент "
+"*key* определяет функцию упорядочивания с одним аргументом, подобную таковой"
+" в :meth:`list.sort`. Аргумент *default* задаёт объект, который будет "
+"возвращён, если предоставленный итерируемый объект пуст. Если итерируемый "
+"объект пуст и *default* не задан, возбуждается исключение :exc:`ValueError`."
 
 #: ../../library/functions.rst:1238
 msgid ""
@@ -2388,14 +2430,18 @@ msgid ""
 "such as ``sorted(iterable, key=keyfunc, reverse=True)[0]`` and "
 "``heapq.nlargest(1, iterable, key=keyfunc)``."
 msgstr ""
+"Если несколько элементов являются максимальными, функция вернёт первый "
+"найденный. Это согласуется с другими инструментами, сохраняющими "
+"стабильность сортировки, такими как ``sorted(iterable, key=keyfunc, "
+"reverse=True)[0]`` и ``heapq.nlargest(1, iterable, key=keyfunc)``."
 
 #: ../../library/functions.rst:1243 ../../library/functions.rst:1281
 msgid "Added the *default* keyword-only parameter."
-msgstr ""
+msgstr "Добавлен только-именованный параметр *default*."
 
 #: ../../library/functions.rst:1246 ../../library/functions.rst:1284
 msgid "The *key* can be ``None``."
-msgstr ""
+msgstr "Параметр *key* может быть ``None``."
 
 #: ../../library/functions.rst:1254
 msgid ""

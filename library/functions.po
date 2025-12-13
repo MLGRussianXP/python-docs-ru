@@ -2884,6 +2884,10 @@ msgid ""
 "closed.  If a filename is given *closefd* must be ``True`` (the default); "
 "otherwise, an error will be raised."
 msgstr ""
+"Если *closefd* равно ``False`` и вместо имени файла был передан файловый "
+"дескриптор, базовый файловый дескриптор будет оставлен открытым при закрытии"
+" файла. Если указано имя файла, *closefd* должно быть равно ``True`` "
+"(значение по умолчанию); в противном случае будет возбуждена ошибка."
 
 #: ../../library/functions.rst:1483
 msgid ""
@@ -2893,16 +2897,24 @@ msgid ""
 "descriptor (passing :mod:`os.open` as *opener* results in functionality "
 "similar to passing ``None``)."
 msgstr ""
+"Пользовательский открыватель можно использовать, передав вызываемый объект в"
+" аргументе *opener*. В этом случае базовый файловый дескриптор для файлового"
+" объекта получается вызовом *opener* с аргументами (*file*, *flags*). "
+"*opener* должен вернуть открытый файловый дескриптор (передача "
+":mod:`os.open` в качестве *opener* приводит к поведению, аналогичному "
+"передаче ``None``)."
 
 #: ../../library/functions.rst:1489
 msgid "The newly created file is :ref:`non-inheritable <fd_inheritance>`."
-msgstr ""
+msgstr "Новый созданный файл является :ref:`ненаследуемым <fd_inheritance>`."
 
 #: ../../library/functions.rst:1491
 msgid ""
 "The following example uses the :ref:`dir_fd <dir_fd>` parameter of the "
 ":func:`os.open` function to open a file relative to a given directory::"
 msgstr ""
+"Следующий пример использует параметр :ref:`dir_fd <dir_fd>` функции "
+":func:`os.open` для открытия файла относительно заданного каталога::"
 
 #: ../../library/functions.rst:1494
 msgid ""
@@ -2916,6 +2928,15 @@ msgid ""
 "...\n"
 ">>> os.close(dir_fd)  # don't leak a file descriptor"
 msgstr ""
+">>> import os\n"
+">>> dir_fd = os.open('somedir', os.O_RDONLY)\n"
+">>> def opener(path, flags):\n"
+"...     return os.open(path, flags, dir_fd=dir_fd)\n"
+"...\n"
+">>> with open('spamspam.txt', 'w', opener=opener) as f:\n"
+"...     print('Это будет записано в somedir/spamspam.txt', file=f)\n"
+"...\n"
+">>> os.close(dir_fd)  # не допускаем утечки файлового дескриптора"
 
 #: ../../library/functions.rst:1504
 msgid ""
@@ -2931,6 +2952,18 @@ msgid ""
 "is disabled, the raw stream, a subclass of :class:`io.RawIOBase`, "
 ":class:`io.FileIO`, is returned."
 msgstr ""
+"Тип :term:`файлового объекта`, возвращаемого функцией :func:`open`, зависит "
+"от режима. При использовании :func:`open` для открытия файла в текстовом "
+"режиме (``'w'``, ``'r'``, ``'wt'``, ``'rt'``, и т.д.), возвращается подкласс"
+" :class:`io.TextIOBase` (а точнее :class:`io.TextIOWrapper`). При "
+"использовании её для открытия файла в бинарном режиме с буферизацией, "
+"возвращаемый класс является подклассом :class:`io.BufferedIOBase`. Точный "
+"класс может варьироваться: в режиме чтения файла возвращается "
+":class:`io.BufferedReader`; в режимах записи и добавления возвращается "
+":class:`io.BufferedWriter`, а в режиме чтения/записи возвращается "
+":class:`io.BufferedRandom`. При отключении буферизации возвращается "
+"необработанный поток, подкласс :class:`io.RawIOBase`, а именно "
+":class:`io.FileIO`."
 
 #: ../../library/functions.rst:1525
 msgid ""
@@ -2938,41 +2971,52 @@ msgid ""
 "(where :func:`open` is declared), :mod:`os`, :mod:`os.path`, "
 ":mod:`tempfile`, and :mod:`shutil`."
 msgstr ""
+"См. также модули обработки файлов, такие как :mod:`fileinput`, :mod:`io` "
+"(где объявлена функция :func:`open`), :mod:`os`, :mod:`os.path`, "
+":mod:`tempfile` и :mod:`shutil`."
 
 #: ../../library/functions.rst:1529
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``open`` with arguments ``path``,"
 " ``mode``, ``flags``."
 msgstr ""
+"Возбуждает :ref:`событие аудита <auditing>` ``open`` с аргументами ``path``,"
+" ``mode``, ``flags``."
 
 #: ../../library/functions.rst:1531
 msgid ""
 "The ``mode`` and ``flags`` arguments may have been modified or inferred from"
 " the original call."
 msgstr ""
+"Аргументы ``mode`` и ``flags`` могут быть изменены или выведены из "
+"оригинального вызова."
 
 #: ../../library/functions.rst:1536
 msgid "The *opener* parameter was added."
-msgstr ""
+msgstr "Добавлен параметр *opener*."
 
 #: ../../library/functions.rst:1537
 msgid "The ``'x'`` mode was added."
-msgstr ""
+msgstr "Добавлен режим ``'x'``."
 
 #: ../../library/functions.rst:1538
 msgid ""
 ":exc:`IOError` used to be raised, it is now an alias of :exc:`OSError`."
 msgstr ""
+"Ранее возбуждалось исключение :exc:`IOError`, теперь это псевдоним "
+":exc:`OSError`."
 
 #: ../../library/functions.rst:1539
 msgid ""
 ":exc:`FileExistsError` is now raised if the file opened in exclusive "
 "creation mode (``'x'``) already exists."
 msgstr ""
+"Теперь возбуждается исключение :exc:`FileExistsError`, если открываемый в "
+"режиме эксклюзивного создания (``'x'``) файл уже существует."
 
 #: ../../library/functions.rst:1544
 msgid "The file is now non-inheritable."
-msgstr ""
+msgstr "Файл теперь не наследуется."
 
 #: ../../library/functions.rst:1548
 msgid ""
@@ -2980,28 +3024,34 @@ msgid ""
 "exception, the function now retries the system call instead of raising an "
 ":exc:`InterruptedError` exception (see :pep:`475` for the rationale)."
 msgstr ""
+"Если системный вызов прерывается и обработчик сигнала не возбуждает "
+"исключение, функция теперь повторяет системный вызов вместо возбуждения "
+"исключения :exc:`InterruptedError` (см. :pep:`475` с объяснением причин)."
 
 #: ../../library/functions.rst:1551
 msgid "The ``'namereplace'`` error handler was added."
-msgstr ""
+msgstr "Добавлен обработчик ошибок ``'namereplace'``."
 
 #: ../../library/functions.rst:1555
 msgid "Support added to accept objects implementing :class:`os.PathLike`."
 msgstr ""
+"Добавлена поддержка объектов, реализующих интерфейс :class:`os.PathLike`."
 
 #: ../../library/functions.rst:1556
 msgid ""
 "On Windows, opening a console buffer may return a subclass of "
 ":class:`io.RawIOBase` other than :class:`io.FileIO`."
 msgstr ""
+"В Windows открытие буфера консоли может вернуть подкласс "
+":class:`io.RawIOBase`, отличный от :class:`io.FileIO`."
 
 #: ../../library/functions.rst:1559
 msgid "The ``'U'`` mode has been removed."
-msgstr ""
+msgstr "Режим ``'U'`` был удалён."
 
 #: ../../library/functions.rst:1564
 msgid "Return the ordinal value of a character."
-msgstr ""
+msgstr "Возвращает порядковый номер символа."
 
 #: ../../library/functions.rst:1566
 msgid ""
@@ -3010,6 +3060,10 @@ msgid ""
 "``ord('€')`` (Euro sign) returns ``8364``.  This is the inverse of "
 ":func:`chr`."
 msgstr ""
+"Если аргумент — это строка из одного символа, возвращается его кодовая "
+"позиция Unicode. Например, ``ord('a')`` возвращает целое число ``97``, а "
+"``ord('€')`` (знак евро) возвращает ``8364``. Это обратная функция по "
+"отношению к :func:`chr`."
 
 #: ../../library/functions.rst:1571
 msgid ""
@@ -3017,6 +3071,9 @@ msgid ""
 "1, return its single byte value. For example, ``ord(b'a')`` returns the "
 "integer ``97``."
 msgstr ""
+"Если аргумент — объект :class:`bytes` или :class:`bytearray` длины 1, "
+"возвращается значение единственного байта. Например, ``ord(b'a')`` "
+"возвращает целое число ``97``."
 
 #: ../../library/functions.rst:1578
 msgid ""

@@ -3598,21 +3598,30 @@ msgid ""
 ":func:`itertools.islice` for an alternate version that returns an "
 ":term:`iterator`."
 msgstr ""
+"Объекты срезов также создаются при использовании расширенного синтаксиса "
+"индексирования. Например: ``a[start:stop:step]`` или ``a[start:stop, i]``. "
+"См. :func:`itertools.islice` для альтернативной версии, которая возвращает "
+":term:`итератор`."
 
 #: ../../library/functions.rst:1858
 msgid ""
 "Slice objects are now :term:`hashable` (provided :attr:`~slice.start`, "
 ":attr:`~slice.stop`, and :attr:`~slice.step` are hashable)."
 msgstr ""
+"Объекты срезов теперь являются хэшируемыми (при условии, что "
+":attr:`~slice.start`, :attr:`~slice.stop` и :attr:`~slice.step` являются "
+"хэшируемыми)."
 
 #: ../../library/functions.rst:1864
 msgid "Return a new sorted list from the items in *iterable*."
-msgstr ""
+msgstr "Возвращает новый отсортированный список из элементов в *iterable*."
 
 #: ../../library/functions.rst:1866
 msgid ""
 "Has two optional arguments which must be specified as keyword arguments."
 msgstr ""
+"Имеет два необязательных аргумента, которые должны быть указаны как "
+"именованные аргументы."
 
 #: ../../library/functions.rst:1868
 msgid ""
@@ -3621,18 +3630,26 @@ msgid ""
 "``key=str.lower``).  The default value is ``None`` (compare the elements "
 "directly)."
 msgstr ""
+"*key* указывает на функцию с одним аргументом, которая используется для "
+"извлечения ключа сравнения из каждого элемента в *iterable* (например, "
+"``key=str.lower``). Значение по умолчанию — ``None`` (сравнение элементов "
+"напрямую)."
 
 #: ../../library/functions.rst:1872
 msgid ""
 "*reverse* is a boolean value.  If set to ``True``, then the list elements "
 "are sorted as if each comparison were reversed."
 msgstr ""
+"*reverse* — логическое значение. Если установлено значение ``True``, то "
+"элементы списка сортируются так, как если бы каждое сравнение было обращено."
 
 #: ../../library/functions.rst:1875
 msgid ""
 "Use :func:`functools.cmp_to_key` to convert an old-style *cmp* function to a"
 " *key* function."
 msgstr ""
+"Используйте :func:`functools.cmp_to_key` для преобразования старого стиля "
+"функции *cmp* в функцию *key*."
 
 #: ../../library/functions.rst:1878
 msgid ""
@@ -3641,6 +3658,11 @@ msgid ""
 "compare equal --- this is helpful for sorting in multiple passes (for "
 "example, sort by department, then by salary grade)."
 msgstr ""
+"Встроенная функция :func:`sorted` гарантирует стабильность. Сортировка "
+"является стабильной, если она гарантирует сохранение относительного порядка "
+"элементов, которые сравниваются как равные --- это полезно для сортировки в "
+"несколько проходов (например, сортировка по отделу, затем по уровню "
+"зарплаты)."
 
 #: ../../library/functions.rst:1883
 msgid ""
@@ -3653,21 +3675,33 @@ msgid ""
 "mixed type comparisons which can call the reflected :meth:`~object.__gt__` "
 "method."
 msgstr ""
+"Алгоритм сортировки использует только сравнения ``<`` между элементами. В то"
+" время как определения метода :meth:`~object.__lt__` будет достаточно для "
+"сортировки, :PEP:`8` рекомендует реализовать все шесть :ref:`расширенных "
+"сравнений <comparisons>`. Это поможет избежать ошибок при использовании тех "
+"же данных с другими инструментами упорядочивания, такими как :func:`max`, "
+"которые полагаются на другой базовый метод. Реализация всех шести сравнений "
+"также помогает избежать путаницы при сравнении смешанных типов, которые "
+"могут вызывать отраженный метод :meth:`~object.__gt__`."
 
 #: ../../library/functions.rst:1892
 msgid ""
 "For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`."
 msgstr ""
+"Для примеров сортировки и краткого руководства по ней см. "
+":ref:`sortinghowto`."
 
 #: ../../library/functions.rst:1896
 msgid "Transform a method into a static method."
-msgstr ""
+msgstr "Преобразовывает метод в статический метод."
 
 #: ../../library/functions.rst:1898
 msgid ""
 "A static method does not receive an implicit first argument. To declare a "
 "static method, use this idiom::"
 msgstr ""
+"Статический метод не получает неявный первый аргумент. Чтобы объявить "
+"статический метод, используйте эту идиому::"
 
 #: ../../library/functions.rst:1901
 msgid ""
@@ -3675,12 +3709,17 @@ msgid ""
 "    @staticmethod\n"
 "    def f(arg1, arg2, argN): ..."
 msgstr ""
+"class C:\n"
+"    @staticmethod\n"
+"    def f(arg1, arg2, argN): ..."
 
 #: ../../library/functions.rst:1905
 msgid ""
 "The ``@staticmethod`` form is a function :term:`decorator` -- see "
 ":ref:`function` for details."
 msgstr ""
+"Конутрукция ``@staticmethod`` является формой вызова :term:`декоратора` — "
+"см. :ref:`function` для подробностей."
 
 #: ../../library/functions.rst:1908
 msgid ""
@@ -3689,6 +3728,10 @@ msgid ""
 ":term:`descriptor` is also callable, so it can be used in the class "
 "definition (such as ``f()``)."
 msgstr ""
+"Статический метод можно вызывать как у класса (например, ``C.f()``), так и у"
+" его экземпляра (например, ``C().f()``). Более того, статический метод как "
+":term:`дескриптор` также является вызываемым, поэтому его можно использовать"
+" в определении класса (например, ``f()``)."
 
 #: ../../library/functions.rst:1913
 msgid ""
@@ -3696,6 +3739,9 @@ msgid ""
 "see :func:`classmethod` for a variant that is useful for creating alternate "
 "class constructors."
 msgstr ""
+"Статические методы в Python аналогичны тем, которые можно найти в Java или "
+"C++. Также см. :func:`classmethod` для варианта, который полезен для "
+"создания альтернативных конструкторов класса."
 
 #: ../../library/functions.rst:1917
 msgid ""
@@ -3705,6 +3751,11 @@ msgid ""
 "want to avoid the automatic transformation to instance method.  For these "
 "cases, use this idiom::"
 msgstr ""
+"Как и все декораторы, ``staticmethod`` можно вызвать как обычную функцию и "
+"сделать что-нибудь с её результатом. Это необходимо в некоторых случаях, "
+"когда вам нужна ссылка на функцию из тела класса и вы хотите избежать "
+"автоматического преобразования её в метод экземпляра. Для таких случаев "
+"используйте эту идиому::"
 
 #: ../../library/functions.rst:1923
 msgid ""
@@ -3714,10 +3765,17 @@ msgid ""
 "class C:\n"
 "    method = staticmethod(regular_function)"
 msgstr ""
+"def regular_function():\n"
+"    ...\n"
+"\n"
+"class C:\n"
+"    method = staticmethod(regular_function)"
 
 #: ../../library/functions.rst:1929
 msgid "For more information on static methods, see :ref:`types`."
 msgstr ""
+"Для получения дополнительной информации о статических методах см. "
+":ref:`types`."
 
 #: ../../library/functions.rst:1931
 msgid ""
@@ -3727,17 +3785,26 @@ msgid ""
 ":attr:`~function.__annotations__`), have a new ``__wrapped__`` attribute, "
 "and are now callable as regular functions."
 msgstr ""
+"Статические методы теперь наследуют атрибуты метода "
+"(:attr:`~function.__module__`, :attr:`~function.__name__`, "
+":attr:`~function.__qualname__`, :attr:`~function.__doc__` и "
+":attr:`~function.__annotations__`), имеют новый атрибут ``__wrapped__`` и "
+"могут вызываться как обычные функции."
 
 #: ../../library/functions.rst:1949
 msgid ""
 "Return a :class:`str` version of *object*.  See :func:`str` for details."
 msgstr ""
+"Возвращает значение типа :class:`str` для *object*. См. :func:`str` для "
+"подробностей."
 
 #: ../../library/functions.rst:1951
 msgid ""
 "``str`` is the built-in string :term:`class`.  For general information about"
 " strings, see :ref:`textseq`."
 msgstr ""
+"``str`` — это встроенный :term:`класс` строки. Для получения общей "
+"информации о строках см. :ref:`textseq`."
 
 #: ../../library/functions.rst:1957
 msgid ""
@@ -3745,6 +3812,9 @@ msgid ""
 "the total.  The *iterable*'s items are normally numbers, and the start value"
 " is not allowed to be a string."
 msgstr ""
+"Суммирует *start* и элементы *iterable* слева направо и возвращает итоговую "
+"сумму. Элементы *iterable* обычно являются числами, и значение *start* не "
+"может быть строкой."
 
 #: ../../library/functions.rst:1961
 msgid ""
@@ -3754,22 +3824,33 @@ msgid ""
 "precision, see :func:`math.fsum`\\.  To concatenate a series of iterables, "
 "consider using :func:`itertools.chain`."
 msgstr ""
+"Для некоторых случаев использования есть хорошие альтернативы :func:`sum`. "
+"Предпочтительный и быстрый способ объединения последовательности строк — "
+"вызов ``''.join(sequence)``. Для сложения чисел с плавающей точкой с "
+"повышенной точностью, см. :func:`math.fsum`\\. Для объединения серии "
+"итерируемых объектов рассмотрите возможность использования "
+":func:`itertools.chain`."
 
 #: ../../library/functions.rst:1967
 msgid "The *start* parameter can be specified as a keyword argument."
-msgstr ""
+msgstr "Параметр *start* может быть указан как именованный аргумент."
 
 #: ../../library/functions.rst:1970
 msgid ""
 "Summation of floats switched to an algorithm that gives higher accuracy and "
 "better commutativity on most builds."
 msgstr ""
+"Суммирование чисел с плавающей точкой переключено на алгоритм, который "
+"обеспечивает более высокую точность и лучшую коммутативность на большинстве "
+"сборок."
 
 #: ../../library/functions.rst:1973
 msgid ""
 "Added specialization for summation of complexes, using same algorithm as for"
 " summation of floats."
 msgstr ""
+"Добавлена специализация для суммирования комплексных чисел, использующая тот"
+" же алгоритм, что и для суммирования чисел с плавающей точкой."
 
 #: ../../library/functions.rst:1981
 msgid ""
@@ -3777,12 +3858,18 @@ msgid ""
 "class of *type*.  This is useful for accessing inherited methods that have "
 "been overridden in a class."
 msgstr ""
+"Возвращает прокси-объект, который делегирует вызовы методов родительскому "
+"или родственному классу относительно *type*. Это полезно для доступа к "
+"унаследованным методам, которые были переопределены в классе."
 
 #: ../../library/functions.rst:1985
 msgid ""
 "The *object_or_type* determines the :term:`method resolution order` to be "
 "searched.  The search starts from the class right after the *type*."
 msgstr ""
+"*object_or_type* определяет :term:`порядок разрешения методов`, по которому "
+"будет вестись поиск. Поиск начинается с класса, следующего сразу после "
+"*type*."
 
 #: ../../library/functions.rst:1989
 msgid ""
@@ -3790,6 +3877,9 @@ msgid ""
 "-> A -> object`` and the value of *type* is ``B``, then :func:`super` "
 "searches ``C -> A -> object``."
 msgstr ""
+"Например, если значение :attr:`~type.__mro__` для *object_or_type* равно ``D"
+" -> B -> C -> A -> object``, а значение *type* равно ``B``, то :func:`super`"
+" будет искать ``C -> A -> object``."
 
 #: ../../library/functions.rst:1993
 msgid ""
@@ -3798,6 +3888,10 @@ msgid ""
 ":func:`getattr` and :func:`super`.  The attribute is dynamic and can change "
 "whenever the inheritance hierarchy is updated."
 msgstr ""
+"Атрибут :attr:`~type.__mro__` класса, соответствующего *object_or_type*, "
+"перечисляет порядок поиска разрешения метода, используемый как "
+":func:`getattr`, так и :func:`super`. Атрибут является динамическим и может "
+"меняться при каждом обновлении иерархии наследования."
 
 #: ../../library/functions.rst:1998
 msgid ""

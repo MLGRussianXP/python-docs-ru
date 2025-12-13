@@ -2762,24 +2762,36 @@ msgid ""
 "though any error handling name that has been registered with "
 ":func:`codecs.register_error` is also valid.  The standard names include:"
 msgstr ""
+"Агрумент *errors* — это опциональная строка, задающая способ обработки "
+"ошибок кодирования и декодирования; её нельзя использовать в бинарном "
+"режиме. Доступно множество стандартных обработчиков ошибок (перечисленных в "
+"разделе :ref:`error-handlers`), хотя также допустимо использование любого "
+"имени обработчика ошибок, зарегистрированного с помощью "
+":func:`codecs.register_error`. Стандартные имена включают:"
 
 #: ../../library/functions.rst:1428
 msgid ""
 "``'strict'`` to raise a :exc:`ValueError` exception if there is an encoding "
 "error.  The default value of ``None`` has the same effect."
 msgstr ""
+"``'strict'`` для возбуждения исключения :exc:`ValueError`, если произошла "
+"ошибка кодирования. Значение по умолчанию ``None`` имеет тот же эффект."
 
 #: ../../library/functions.rst:1432
 msgid ""
 "``'ignore'`` ignores errors.  Note that ignoring encoding errors can lead to"
 " data loss."
 msgstr ""
+"``'ignore'`` игнорирует ошибки. Обратите внимание, что игнорирование ошибок "
+"кодирования может привести к потере данных."
 
 #: ../../library/functions.rst:1435
 msgid ""
 "``'replace'`` causes a replacement marker (such as ``'?'``) to be inserted "
 "where there is malformed data."
 msgstr ""
+"``'replace'`` заставляет вставить маркер замены (например, ``'?'``) там, где"
+" есть некорректные данные."
 
 #: ../../library/functions.rst:1438
 msgid ""
@@ -2789,6 +2801,11 @@ msgid ""
 "handler is used when writing data.  This is useful for processing files in "
 "an unknown encoding."
 msgstr ""
+"``'surrogateescape'`` будет представлять любые некорректные байты в виде "
+"единиц суррогатного кода, варьирующихся от U+DC80 до U+DCFF. Эти кодовые "
+"единицы затем будут преобразованы обратно в те же байты при использовании "
+"обработчика ошибок ``surrogateescape`` при записи данных. Это полезно для "
+"обработки файлов в неизвестной кодировке."
 
 #: ../../library/functions.rst:1445
 msgid ""
@@ -2796,18 +2813,25 @@ msgid ""
 " not supported by the encoding are replaced with the appropriate XML "
 "character reference :samp:`&#{nnn};`."
 msgstr ""
+"``'xmlcharrefreplace'`` поддерживается только при записи в файл. Символы, не"
+" поддерживаемые кодировкой, заменяются соответствующей ссылкой на символ XML"
+" :samp:`&#{nnn};`."
 
 #: ../../library/functions.rst:1449
 msgid ""
 "``'backslashreplace'`` replaces malformed data by Python's backslashed "
 "escape sequences."
 msgstr ""
+"``'backslashreplace'`` заменяет повреждённые данные экранированными "
+"последовательностями Python с обратным слэшем."
 
 #: ../../library/functions.rst:1452
 msgid ""
 "``'namereplace'`` (also only supported when writing) replaces unsupported "
 "characters with ``\\N{...}`` escape sequences."
 msgstr ""
+"``'namereplace'`` (также поддерживается только при записи) заменяет "
+"неподдерживаемые символы экранированными последовательностями ``\\N{...}``."
 
 #: ../../library/functions.rst:1460
 msgid ""
@@ -2815,6 +2839,9 @@ msgid ""
 " be ``None``, ``''``, ``'\\n'``, ``'\\r'``, and ``'\\r\\n'``.  It works as "
 "follows:"
 msgstr ""
+"Аргумент *newline* определяет, как анализировать символы новой строки из "
+"потока. Он может принимать значения ``None``, ``''``, ``'\\n'``, ``'\\r'`` и"
+" ``'\\r\\n'``. Это работает следующим образом:"
 
 #: ../../library/functions.rst:1464
 msgid ""
@@ -2826,6 +2853,14 @@ msgid ""
 "has any of the other legal values, input lines are only terminated by the "
 "given string, and the line ending is returned to the caller untranslated."
 msgstr ""
+"При чтении ввода из потока, если *newline* равно ``None``, включается режим "
+"универсальных переводов строк. Строки во вводе могут заканчиваться на "
+"``'\\n'``, ``'\\r'`` или ``'\\r\\n'``, и они преобразуются в ``'\\n'`` перед"
+" возвратом вызывающей стороне. Если *newline* равно ``''``, также включается"
+" режим универсальных переводов строк, но концы строк возвращаются вызывающей"
+" стороне без преобразования. Если *newline* имеет любое другое допустимое "
+"значение, строки ввода завершаются только заданной строкой, и конец строки "
+"возвращается вызывающей стороне без изменений."
 
 #: ../../library/functions.rst:1472
 msgid ""
@@ -2835,6 +2870,12 @@ msgid ""
 "takes place.  If *newline* is any of the other legal values, any ``'\\n'`` "
 "characters written are translated to the given string."
 msgstr ""
+"При записи вывода в поток, если *newline* равно ``None``, все записываемые "
+"символы ``'\\n'`` будут преобразованы в системный разделитель строк по "
+"умолчанию, :data:`os.linesep`. Если *newline* равно ``''`` или ``'\\n'``, "
+"преобразование не выполняется. Если *newline* равно любому другому "
+"допустимому значению, все записанные символы ``'\\n'`` будут преобразованы в"
+" заданную строку."
 
 #: ../../library/functions.rst:1478
 msgid ""

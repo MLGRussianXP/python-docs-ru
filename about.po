@@ -32,9 +32,9 @@ msgid ""
 "`Sphinx`_, a documentation generator originally created for Python and now "
 "maintained as an independent project."
 msgstr ""
-"Документация Python создаётся на основе источников в формате "
-"`reStructuredText`_с помощью`Sphinx`_, генератора документации, изначально "
-"созданного для Python, а теперь поддерживаемого как независимый проект."
+"Документация Python создаётся из исходников в формате `reStructuredText`_с "
+"помощью`Sphinx`_ — генератора документации, изначально созданного для "
+"Python, а теперь поддерживаемого как независимый проект."
 
 #: ../../about.rst:16
 msgid ""
@@ -44,35 +44,41 @@ msgid ""
 " volunteers are always welcome!"
 msgstr ""
 "Разработка и совершенствование данной документации и её инструментов, как и "
-"весь проект Python, поддерживается добровольцами. Вся информация о том как "
-"внести свой вклад в развитие проекта находится на странице :ref:`reporting-"
-"bugs`. Мы всегда рады новым людям!"
+"весь проект Python, поддерживается добровольцами. Если вы хотите внести свой"
+" вклад, пожалуйста, ознакомьтесь со страницей :ref:`reporting-bugs`, где "
+"описано, как это сделать. Мы всегда рады новым людям!"
 
 #: ../../about.rst:21
 msgid "Many thanks go to:"
-msgstr ""
+msgstr "Особой благодарности заслуживают:"
 
 #: ../../about.rst:23
 msgid ""
 "Fred L. Drake, Jr., the creator of the original Python documentation toolset"
 " and author of much of the content;"
 msgstr ""
+"Фред Л. Дрейк младший, создатель оригинального набора инструментов для "
+"документации Python и автор большей части контента;"
 
 #: ../../about.rst:25
 msgid ""
 "the `Docutils <https://docutils.sourceforge.io/>`_ project for creating "
 "reStructuredText and the Docutils suite;"
 msgstr ""
+"проект `Docutils <https://docutils.sourceforge.io/>`_ за создание "
+"reStructuredText и библиотеки Docutils;"
 
 #: ../../about.rst:27
 msgid ""
 "Fredrik Lundh for his Alternative Python Reference project from which Sphinx"
 " got many good ideas."
 msgstr ""
+"Фредрик Лунд за его проект «Альтернативный справочник по Python», из "
+"которого Sphinx получил много хороших идей."
 
 #: ../../about.rst:32
 msgid "Contributors to the Python documentation"
-msgstr ""
+msgstr "Авторы документации Python"
 
 #: ../../about.rst:34
 msgid ""
@@ -80,9 +86,14 @@ msgid ""
 "library, and the Python documentation.  See :source:`Misc/ACKS` in the "
 "Python source distribution for a partial list of contributors."
 msgstr ""
+"Множество людей внесли свой вклад в развитие языка Python, стандартной "
+"библиотеки и документации Python. Неполный список участников можно найти в "
+"исходном коде дистрибутива Python: :source:`Misc/ACKS`."
 
 #: ../../about.rst:38
 msgid ""
 "It is only with the input and contributions of the Python community that "
 "Python has such wonderful documentation -- Thank You!"
 msgstr ""
+"Только благодаря вкладу и участию сообщества у Python есть такая "
+"замечательная документация. Спасибо Вам!"

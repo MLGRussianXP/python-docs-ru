@@ -4410,6 +4410,11 @@ msgid ""
 "directory of the module calling :func:`__import__` (see :pep:`328` for the "
 "details)."
 msgstr ""
+"Аргумент *level* указывает, следует ли использовать абсолютные или "
+"относительные импорты. ``0`` (значение по умолчанию) означает, что "
+"выполняются только абсолютные импорты. Положительные значения для *level* "
+"указывают количество родительских каталогов для поиска относительно каталога"
+" модуля, вызывающего :func:`__import__` (см. :pep:`328` для подробностей)."
 
 #: ../../library/functions.rst:2263
 msgid ""
@@ -4418,36 +4423,47 @@ msgid ""
 "module named by *name*.  However, when a non-empty *fromlist* argument is "
 "given, the module named by *name* is returned."
 msgstr ""
+"Когда переменная *name* имеет форму ``package.module``, обычно возвращается "
+"пакет верхнего уровня (имя до первой точки), а *не* модуль, указанный в "
+"*name*. Однако, если указан непустой аргумент *fromlist*, возвращается "
+"модуль, указанный в *name*."
 
 #: ../../library/functions.rst:2268
 msgid ""
 "For example, the statement ``import spam`` results in bytecode resembling "
 "the following code::"
 msgstr ""
+"Например, инструкция ``import spam`` приводит к байт-коду, похожему на "
+"следующий код::"
 
 #: ../../library/functions.rst:2271
 msgid "spam = __import__('spam', globals(), locals(), [], 0)"
-msgstr ""
+msgstr "spam = __import__('spam', globals(), locals(), [], 0)"
 
 #: ../../library/functions.rst:2273
 msgid "The statement ``import spam.ham`` results in this call::"
-msgstr ""
+msgstr "Инструкция ``import spam.ham`` приводит к такому вызову::"
 
 #: ../../library/functions.rst:2275
 msgid "spam = __import__('spam.ham', globals(), locals(), [], 0)"
-msgstr ""
+msgstr "spam = __import__('spam.ham', globals(), locals(), [], 0)"
 
 #: ../../library/functions.rst:2277
 msgid ""
 "Note how :func:`__import__` returns the toplevel module here because this is"
 " the object that is bound to a name by the :keyword:`import` statement."
 msgstr ""
+"Обратите внимание, что :func:`__import__` возвращает модуль верхнего уровня,"
+" потому что это объект, который связан с именем с помощью инструкции "
+":keyword:`import`."
 
 #: ../../library/functions.rst:2280
 msgid ""
 "On the other hand, the statement ``from spam.ham import eggs, sausage as "
 "saus`` results in ::"
 msgstr ""
+"С другой стороны, инструкция ``from spam.ham import eggs, sausage as saus`` "
+"приводит к ::"
 
 #: ../../library/functions.rst:2283
 msgid ""
@@ -4455,6 +4471,9 @@ msgid ""
 "eggs = _temp.eggs\n"
 "saus = _temp.sausage"
 msgstr ""
+"_temp = __import__('spam.ham', globals(), locals(), ['eggs', 'sausage'], 0)\n"
+"eggs = _temp.eggs\n"
+"saus = _temp.sausage"
 
 #: ../../library/functions.rst:2287
 msgid ""
@@ -4462,28 +4481,37 @@ msgid ""
 "this object, the names to import are retrieved and assigned to their "
 "respective names."
 msgstr ""
+"Здесь модуль ``spam.ham`` возвращается из :func:`__import__`. Из этого "
+"объекта извлекаются имена для импорта и присваиваются соответствующим "
+"переменным."
 
 #: ../../library/functions.rst:2291
 msgid ""
 "If you simply want to import a module (potentially within a package) by "
 "name, use :func:`importlib.import_module`."
 msgstr ""
+"Если вы просто хотите импортировать модуль (возможно, внутри пакета) по "
+"имени, используйте :func:`importlib.import_module`."
 
 #: ../../library/functions.rst:2294
 msgid ""
 "Negative values for *level* are no longer supported (which also changes the "
 "default value to 0)."
 msgstr ""
+"Отрицательные значения для *level* больше не поддерживаются (что также "
+"изменяет значение по умолчанию на 0)."
 
 #: ../../library/functions.rst:2298
 msgid ""
 "When the command line options :option:`-E` or :option:`-I` are being used, "
 "the environment variable :envvar:`PYTHONCASEOK` is now ignored."
 msgstr ""
+"Когда используются опции командной строки :option:`-E` или :option:`-I`, "
+"переменная окружения :envvar:`PYTHONCASEOK` теперь игнорируется."
 
 #: ../../library/functions.rst:2303
 msgid "Footnotes"
-msgstr ""
+msgstr "Сноски"
 
 #: ../../library/functions.rst:2304
 msgid ""
@@ -4491,111 +4519,114 @@ msgid ""
 "you are reading the code from a file, make sure to use newline conversion "
 "mode to convert Windows or Mac-style newlines."
 msgstr ""
+"Обратите внимание, что парсер принимает переводы строк только в стиле Unix. "
+"Если вы считываете код из файла, убедитесь, что используете режим "
+"конвертации переводов строк для их преобразования из Windows или Mac стилей."
 
 #: ../../library/functions.rst:154
 msgid "Boolean"
-msgstr ""
+msgstr "Логический тип"
 
 #: ../../library/functions.rst:154 ../../library/functions.rst:2071
 msgid "type"
-msgstr ""
+msgstr "тип"
 
 #: ../../library/functions.rst:652
 msgid "built-in function"
-msgstr ""
+msgstr "встроенная функция"
 
 #: ../../library/functions.rst:652
 msgid "exec"
-msgstr ""
+msgstr "exec"
 
 #: ../../library/functions.rst:750
 msgid "NaN"
-msgstr ""
+msgstr "NaN"
 
 #: ../../library/functions.rst:750
 msgid "Infinity"
-msgstr ""
+msgstr "Бесконечность"
 
 #: ../../library/functions.rst:820
 msgid "__format__"
-msgstr ""
+msgstr "__format__"
 
 #: ../../library/functions.rst:820 ../../library/functions.rst:1939
 msgid "string"
-msgstr ""
+msgstr "строка"
 
 #: ../../library/functions.rst:820
 msgid "format() (built-in function)"
-msgstr ""
+msgstr "format() (встроенная функция)"
 
 #: ../../library/functions.rst:1334
 msgid "file object"
-msgstr ""
+msgstr "файловый объект"
 
 #: ../../library/functions.rst:1334 ../../library/functions.rst:1455
 msgid "open() built-in function"
-msgstr ""
+msgstr "встроенная функция open()"
 
 #: ../../library/functions.rst:1362
 msgid "file"
-msgstr ""
+msgstr "файл"
 
 #: ../../library/functions.rst:1362
 msgid "modes"
-msgstr ""
+msgstr "режимы"
 
 #: ../../library/functions.rst:1455
 msgid "universal newlines"
-msgstr ""
+msgstr "универсальные переводы строк"
 
 #: ../../library/functions.rst:1516
 msgid "line-buffered I/O"
-msgstr ""
+msgstr "ввод/вывод с буферизацией по строкам"
 
 #: ../../library/functions.rst:1516
 msgid "unbuffered I/O"
-msgstr ""
+msgstr "ввод/вывод без буферизации"
 
 #: ../../library/functions.rst:1516
 msgid "buffer size, I/O"
-msgstr ""
+msgstr "размер буфера, ввод/вывод"
 
 #: ../../library/functions.rst:1516
 msgid "I/O control"
-msgstr ""
+msgstr "управление вводом/выводом"
 
 #: ../../library/functions.rst:1516
 msgid "buffering"
-msgstr ""
+msgstr "буферизация"
 
 #: ../../library/functions.rst:1516
 msgid "text mode"
-msgstr ""
+msgstr "текстовый режим"
 
 #: ../../library/functions.rst:1516 ../../library/functions.rst:2232
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../library/functions.rst:1516
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 #: ../../library/functions.rst:1939
 msgid "str() (built-in function)"
-msgstr ""
+msgstr "str() (встроенная функция)"
 
 #: ../../library/functions.rst:2071
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../library/functions.rst:2232
 msgid "statement"
-msgstr ""
+msgstr "инструкция"
 
 #: ../../library/functions.rst:2232
 msgid "import"
-msgstr ""
+msgstr "импорт"
 
 #: ../../library/functions.rst:2232
 msgid "builtins"
-msgstr ""
+msgstr "встроенные"

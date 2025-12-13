@@ -4333,6 +4333,8 @@ msgid ""
 ":func:`zip` in conjunction with the ``*`` operator can be used to unzip a "
 "list::"
 msgstr ""
+":func:`zip` в сочетании с оператором ``*`` можно использовать для распаковки"
+" списка::"
 
 #: ../../library/functions.rst:2218
 msgid ""
@@ -4354,13 +4356,15 @@ msgstr ""
 
 #: ../../library/functions.rst:2226
 msgid "Added the ``strict`` argument."
-msgstr ""
+msgstr "Добавлен аргумент ``strict``."
 
 #: ../../library/functions.rst:2238
 msgid ""
 "This is an advanced function that is not needed in everyday Python "
 "programming, unlike :func:`importlib.import_module`."
 msgstr ""
+"Это продвинутая функция, которая не нужна в повседневном программировании на"
+" Python, в отличие от :func:`importlib.import_module`."
 
 #: ../../library/functions.rst:2241
 msgid ""
@@ -4373,6 +4377,14 @@ msgid ""
 "implementation is in use.  Direct use of :func:`__import__` is also "
 "discouraged in favor of :func:`importlib.import_module`."
 msgstr ""
+"Эта функция вызывается инструкцией :keyword:`import`. Её можно заменить "
+"(импортировав модуль :mod:`builtins` и присвоив ``builtins.__import__``) для"
+" изменения семантики инструкции :keyword:`!import`, но это **настоятельно** "
+"не рекомендуется, так как обычно проще использовать хуки импорта (см. "
+":pep:`302`) для достижения тех же целей, и это не вызывает проблем с кодом, "
+"который предполагает использование реализации импорта по умолчанию. Прямое "
+"использование :func:`__import__` также не рекомендуется, лучше использовать "
+":func:`importlib.import_module`."
 
 #: ../../library/functions.rst:2250
 msgid ""
@@ -4383,6 +4395,12 @@ msgid ""
 "does not use its *locals* argument at all and uses its *globals* only to "
 "determine the package context of the :keyword:`import` statement."
 msgstr ""
+"Функция импортирует модуль *name*, потенциально используя заданные *globals*"
+" и *locals* для определения того, как интерпретировать имя в контексте "
+"пакета. *fromlist* содержит имена объектов или подмодулей, которые должны "
+"быть импортированы из модуля *name*. Стандартная реализация вообще не "
+"использует аргумент *locals* и использует аргумент *globals* только для "
+"определения контекста пакета инструкции :keyword:`import`."
 
 #: ../../library/functions.rst:2257
 msgid ""

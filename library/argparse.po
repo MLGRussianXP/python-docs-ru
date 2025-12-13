@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-29 15:01+0000\n"
+"POT-Creation-Date: 2025-12-13 14:58+0000\n"
 "PO-Revision-Date: 2025-09-15 01:03+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -44,7 +44,7 @@ msgid ""
 "another defined option)."
 msgstr ""
 
-#: ../../library/argparse.rst-1
+#: ../../library/argparse.rst:28
 msgid "Tutorial"
 msgstr ""
 
@@ -2210,7 +2210,7 @@ msgid "Other utilities"
 msgstr ""
 
 #: ../../library/argparse.rst:1577
-msgid "Sub-commands"
+msgid "Subcommands"
 msgstr ""
 
 #: ../../library/argparse.rst:1584
@@ -2248,7 +2248,7 @@ msgstr ""
 
 #: ../../library/argparse.rst:1605
 msgid ""
-"*prog* - usage information that will be displayed with sub-command help, by "
+"*prog* - usage information that will be displayed with subcommand help, by "
 "default the name of the program and any positional arguments before the "
 "subparser argument"
 msgstr ""
@@ -2267,8 +2267,8 @@ msgstr ""
 
 #: ../../library/argparse.rst:1615
 msgid ""
-"dest_ - name of the attribute under which sub-command name will be stored; "
-"by default ``None`` and no value is stored"
+"dest_ - name of the attribute under which subcommand name will be stored; by"
+" default ``None`` and no value is stored"
 msgstr ""
 
 #: ../../library/argparse.rst:1618

@@ -3900,6 +3900,10 @@ msgid ""
 "If the second argument is a type, ``issubclass(type2, type)`` must be true "
 "(this is useful for classmethods)."
 msgstr ""
+"Если второй аргумент опущен, возвращаемый объект super является неcвязанным."
+" Если второй аргумент является объектом, ``isinstance(obj, type)`` должно "
+"быть истиной. Если второй аргумент является типом, ``issubclass(type2, "
+"type)`` должно быть истиной (это полезно для методов класса)."
 
 #: ../../library/functions.rst:2003
 msgid ""
@@ -3910,6 +3914,12 @@ msgid ""
 "argument :func:`!super` will not work as expected within nested functions, "
 "including generator expressions, which implicitly create nested functions.)"
 msgstr ""
+"При вызове непосредственно внутри обычного метода класса оба аргумента могут"
+" быть опущены («:func:`!super` без аргументов»). В этом случае *type* будет "
+"охватывающим классом, а *obj* будет первым аргументом непосредственно "
+"охватывающей функции (обычно ``self``). (Это означает, что :func:`!super` "
+"без аргументов не будет работать должным образом во вложенных функциях, "
+"включая генераторные выражения, которые неявно создают вложенные функции.)"
 
 #: ../../library/functions.rst:2010
 msgid ""
@@ -3918,6 +3928,11 @@ msgid ""
 "naming them explicitly, thus making the code more maintainable.  This use "
 "closely parallels the use of *super* in other programming languages."
 msgstr ""
+"Существуют два типичных случая использования *super*. В иерархии классов с "
+"одиночным наследованием *super* может использоваться для ссылки на "
+"родительские классы без явного указания их имён, что делает сопросождение "
+"кода легче. Это использование хорошо соответствует использованию *super* в "
+"других языках программирования."
 
 #: ../../library/functions.rst:2015
 msgid ""
@@ -3931,10 +3946,21 @@ msgid ""
 "that order adapts to changes in the class hierarchy, and because that order "
 "can include sibling classes that are unknown prior to runtime)."
 msgstr ""
+"Второй сценарий использования — поддержка совместного множественного "
+"наследования в динамической среде выполнения. Этот сценарий использования "
+"уникален для Python и не встречается в статически компилируемых языках или "
+"языках, которые поддерживают только одиночное наследование. Это позволяет "
+"реализовывать \"ромбовидные диаграммы\", где несколько базовых классов "
+"реализуют один и тот же метод. Хороший дизайн предписывает, чтобы такие "
+"реализации имели одинаковую сигнатуру вызова в каждом случае (потому что "
+"порядок вызовов определяется во время выполнения, адаптируется к изменениям "
+"в иерархии классов и может включать родственные классы, которые неизвестны "
+"до времени выполнения)."
 
 #: ../../library/functions.rst:2025
 msgid "For both use cases, a typical superclass call looks like this::"
 msgstr ""
+"Для обоих случаев использования типичный вызов суперкласса выглядит так::"
 
 #: ../../library/functions.rst:2027
 msgid ""
@@ -3943,6 +3969,10 @@ msgid ""
 "        super().method(arg)    # This does the same thing as:\n"
 "                               # super(C, self).method(arg)"
 msgstr ""
+"class C(B):\n"
+"    def method(self, arg):\n"
+"        super().method(arg)    # Делает то же самое, что и:\n"
+"                               # super(C, self).method(arg)"
 
 #: ../../library/functions.rst:2032
 msgid ""
@@ -3950,6 +3980,9 @@ msgid ""
 "lookups.  One possible use case for this is calling :term:`descriptors "
 "<descriptor>` in a parent or sibling class."
 msgstr ""
+"В дополнение к поиску методов, :func:`super` также работает для поиска "
+"атрибутов. Один из возможных случаев использования — вызов "
+":term:`дескрипторов <descriptor>` в родительском или родственном классе."
 
 #: ../../library/functions.rst:2036
 msgid ""
@@ -3960,6 +3993,13 @@ msgid ""
 "inheritance. Accordingly, :func:`super` is undefined for implicit lookups "
 "using statements or operators such as ``super()[name]``."
 msgstr ""
+"Обратите внимание, что :func:`super` реализован как часть процесса "
+"связывания для поиска явных точечных атрибутов, таких как "
+"``super().__getitem__(name)``. Он делает это, реализуя собственный метод "
+":meth:`~object.__getattribute__` для поиска классов в предсказуемом порядке,"
+" который поддерживает кооперативное множественное наследование. "
+"Следовательно, :func:`super` не определён для неявного поиска с "
+"использованием инструкций или операторов, таких как ``super()[name]``."
 
 #: ../../library/functions.rst:2044
 msgid ""
@@ -3970,6 +4010,12 @@ msgid ""
 "necessary details to correctly retrieve the class being defined, as well as "
 "accessing the current instance for ordinary methods."
 msgstr ""
+"Также обратите внимание, что помимо формы без аргументов, :func:`super` не "
+"ограничен использованием только внутри методов. Форма с двумя аргументами "
+"явно задаёт все параметры и создаёт корректные ссылки. Форма без аргументов "
+"работает только внутри определения класса, так как компилятор заполняет "
+"необходимые детали для правильного получения определяемого класса, а также "
+"доступа к текущему экземпляру для обычных методов."
 
 #: ../../library/functions.rst:2051
 msgid ""
@@ -3977,18 +4023,26 @@ msgid ""
 ":func:`super`, see `guide to using super() "
 "<https://rhettinger.wordpress.com/2011/05/26/super-considered-super/>`_."
 msgstr ""
+"Для практических рекомендаций по проектированию кооперативных классов с "
+"использованием :func:`super`, см. `руководство по использованию super() "
+"<https://rhettinger.wordpress.com/2011/05/26/super-considered-super/>`_."
 
 #: ../../library/functions.rst:2055
 msgid ""
 ":class:`super` objects are now :mod:`pickleable <pickle>` and  "
 ":mod:`copyable <copy>`."
 msgstr ""
+"Объекты :class:`super` теперь поддерживают сериализацию через модуль "
+":mod:`pickle <pickle>` и копирование с помощью модуля :mod:`copy <copy>`."
 
 #: ../../library/functions.rst:2064
 msgid ""
 "Rather than being a function, :class:`tuple` is actually an immutable "
 "sequence type, as documented in :ref:`typesseq-tuple` and :ref:`typesseq`."
 msgstr ""
+"Вместо того чтобы быть функцией, :class:`tuple` на самом деле является "
+"неизменяемым типом последовательности, как описано в :ref:`typesseq-tuple` и"
+" :ref:`typesseq`."
 
 #: ../../library/functions.rst:2073
 msgid ""
@@ -3996,12 +4050,17 @@ msgid ""
 "type object and generally the same object as returned by "
 ":attr:`object.__class__`."
 msgstr ""
+"С одним аргументом возвращает тип *object*. Возвращаемое значение "
+"представляет собой объект типа и, как правило, совпадает с "
+":attr:`object.__class__`."
 
 #: ../../library/functions.rst:2077
 msgid ""
 "The :func:`isinstance` built-in function is recommended for testing the type"
 " of an object, because it takes subclasses into account."
 msgstr ""
+"Для проверки типа объекта рекомендуется использовать встроенную функцию "
+":func:`isinstance`, так как она учитывает подклассы."
 
 #: ../../library/functions.rst:2080
 msgid ""
@@ -4015,20 +4074,31 @@ msgid ""
 ":attr:`~type.__dict__` attribute. The following two statements create "
 "identical :class:`!type` objects:"
 msgstr ""
+"С тремя аргументами возвращает объект нового типа. По сути, это динамическая"
+" форма инструкции :keyword:`class`. Строка *name* задаёт имя класса и "
+"становится его атрибутом :attr:`~type.__name__`. Кортеж *bases* содержит "
+"базовые классы и становится его атрибутом :attr:`~type.__bases__`; если он "
+"пуст, к нему добавляется :class:`object`, высший базовый класс для всех "
+"классов. Словарь *dict* содержит определения атрибутов и методов для тела "
+"класса; он может быть скопирован или обёрнут, прежде чем он станет атрибутом"
+" :attr:`~type.__dict__`. Следующие две инструкции создают идентичные объекты"
+" :class:`!type`:"
 
 #: ../../library/functions.rst:2095
 msgid "See also:"
-msgstr ""
+msgstr "См. также:"
 
 #: ../../library/functions.rst:2097
 msgid ""
 ":ref:`Documentation on attributes and methods on classes <class-attrs-and-"
 "methods>`."
 msgstr ""
+":ref:`Документация по атрибутам и методам классов <class-attrs-and-"
+"methods>`."
 
 #: ../../library/functions.rst:2098
 msgid ":ref:`bltin-type-objects`"
-msgstr ""
+msgstr ":ref:`bltin-type-objects`"
 
 #: ../../library/functions.rst:2100
 msgid ""
@@ -4037,22 +4107,30 @@ msgid ""
 "in the same way that keywords in a class definition (besides *metaclass*) "
 "would."
 msgstr ""
+"Дополнительные именованные аргументы, переданные в форме с тремя "
+"аргументами, передаются соответствующему механизму метакласса (обычно "
+":meth:`~object.__init_subclass__`) таким же образом, как ключи в определении"
+" класса (кроме *metaclass*)."
 
 #: ../../library/functions.rst:2105
 msgid "See also :ref:`class-customization`."
-msgstr ""
+msgstr "См. также :ref:`class-customization`."
 
 #: ../../library/functions.rst:2107
 msgid ""
 "Subclasses of :class:`!type` which don't override ``type.__new__`` may no "
 "longer use the one-argument form to get the type of an object."
 msgstr ""
+"Подклассы :class:`!type`, которые не переопределяют ``type.__new__``, больше"
+" не могут использовать форму с одним аргументом для получения типа объекта."
 
 #: ../../library/functions.rst:2114
 msgid ""
 "Return the :attr:`~object.__dict__` attribute for a module, class, instance,"
 " or any other object with a :attr:`!__dict__` attribute."
 msgstr ""
+"Возвращает атрибут :attr:`~object.__dict__` для модуля, класса, экземпляра "
+"или любого другого объекта с атрибутом :attr:`!__dict__`."
 
 #: ../../library/functions.rst:2117
 msgid ""
@@ -4061,10 +4139,15 @@ msgid ""
 "restrictions on their :attr:`!__dict__` attributes (for example, classes use"
 " a :class:`types.MappingProxyType` to prevent direct dictionary updates)."
 msgstr ""
+"Такие объекты, как модули и экземпляры, имеют обновляемый атрибут "
+":attr:`~object.__dict__`; однако другие объекты могут иметь ограничения на "
+"запись в свои атрибуты :attr:`!__dict__` (например, классы используют "
+":class:`types.MappingProxyType` для предотвращения прямого обновления "
+"словаря)."
 
 #: ../../library/functions.rst:2122
 msgid "Without an argument, :func:`vars` acts like :func:`locals`."
-msgstr ""
+msgstr "Без аргумента :func:`vars` действует как :func:`locals`."
 
 #: ../../library/functions.rst:2124
 msgid ""
@@ -4072,6 +4155,9 @@ msgid ""
 "doesn't have a :attr:`~object.__dict__` attribute (for example, if its class"
 " defines the :attr:`~object.__slots__` attribute)."
 msgstr ""
+"Возбуждается исключение :exc:`TypeError`, если указан объект, но у него нет "
+"атрибута :attr:`~object.__dict__` (например, если его класс определяет "
+"атрибут :attr:`~object.__slots__`)."
 
 #: ../../library/functions.rst:2130
 msgid ""

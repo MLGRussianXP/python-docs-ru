@@ -4164,16 +4164,20 @@ msgid ""
 "The result of calling this function without an argument has been updated as "
 "described for the :func:`locals` builtin."
 msgstr ""
+"Результат вызова этой функции без аргумента был обновлён, как описано для "
+"встроенной функции :func:`locals`."
 
 #: ../../library/functions.rst:2136
 msgid ""
 "Iterate over several iterables in parallel, producing tuples with an item "
 "from each one."
 msgstr ""
+"Перебирает несколько итерируемых объекта параллельно, создавая кортежи, "
+"содержащие по одному элементу из каждого."
 
 #: ../../library/functions.rst:2139
 msgid "Example::"
-msgstr ""
+msgstr "Пример::"
 
 #: ../../library/functions.rst:2141
 msgid ""
@@ -4184,12 +4188,20 @@ msgid ""
 "(2, 'spice')\n"
 "(3, 'everything nice')"
 msgstr ""
+">>> for item in zip([1, 2, 3], ['сахар', 'специи', 'всё хорошее']):\n"
+"...     print(item)\n"
+"...\n"
+"(1, 'сахар')\n"
+"(2, 'специи')\n"
+"(3, 'всё хорошее')"
 
 #: ../../library/functions.rst:2148
 msgid ""
 "More formally: :func:`zip` returns an iterator of tuples, where the *i*-th "
 "tuple contains the *i*-th element from each of the argument iterables."
 msgstr ""
+"Более формально: :func:`zip` возвращает итератор кортежей, где *i*-й кортеж "
+"содержит *i*-й элемент каждого из переданных итерируемых объектов."
 
 #: ../../library/functions.rst:2151
 msgid ""
@@ -4197,6 +4209,9 @@ msgid ""
 "columns into rows.  This is similar to `transposing a matrix "
 "<https://en.wikipedia.org/wiki/Transpose>`_."
 msgstr ""
+"Другой способ представить себе :func:`zip`— он превращает строки в столбцы, "
+"а столбцы в строки. Это похоже на `транспонирование матрицы "
+"<https://en.wikipedia.org/wiki/Transpose>`_."
 
 #: ../../library/functions.rst:2155
 msgid ""
@@ -4204,6 +4219,9 @@ msgid ""
 "iterated on, e.g. by a :keyword:`!for` loop or by wrapping in a "
 ":class:`list`."
 msgstr ""
+":func:`zip` ленивый: элементы не будут обрабатываться, пока не будет "
+"выполнено итерирование по ним, например, с помощью цикла :keyword:`!for` или"
+" преобразования в :class:`list`."
 
 #: ../../library/functions.rst:2159
 msgid ""
@@ -4212,6 +4230,10 @@ msgid ""
 "the code that prepared these iterables.  Python offers three different "
 "approaches to dealing with this issue:"
 msgstr ""
+"Следует также учитывать, что итерируемые объекты, передаваемые в "
+":func:`zip`, могут иметь разную длину; иногда это сделано намеренно, а "
+"иногда из-за ошибки в коде, который подготовил эти объекты. Python "
+"предлагает три разных подхода к решению этой проблемы."
 
 #: ../../library/functions.rst:2164
 msgid ""
@@ -4219,12 +4241,17 @@ msgid ""
 "will ignore the remaining items in the longer iterables, cutting off the "
 "result to the length of the shortest iterable::"
 msgstr ""
+"По умолчанию, :func:`zip` останавливается, когда заканчивается самый "
+"короткий итерируемый объект. Остальные элементы в более длинных объектах "
+"игнорируются, а результат обрезается до длины самого короткого::"
 
 #: ../../library/functions.rst:2168
 msgid ""
 ">>> list(zip(range(3), ['fee', 'fi', 'fo', 'fum']))\n"
 "[(0, 'fee'), (1, 'fi'), (2, 'fo')]"
 msgstr ""
+">>> list(zip(range(3), ['фу', 'фи', 'фа', 'фум']))\n"
+"[(0, 'фу'), (1, 'фи'), (2, 'фа')]"
 
 #: ../../library/functions.rst:2171
 msgid ""
@@ -4232,18 +4259,26 @@ msgid ""
 "equal length.  In such cases, it's recommended to use the ``strict=True`` "
 "option. Its output is the same as regular :func:`zip`::"
 msgstr ""
+":func:`zip` часто используется в случаях, когда предполагается, что "
+"итерируемые объекты имеют одинаковую длину. В такой ситуации рекомендуется "
+"использовать опцию ``strict=True``. Вывод в таком случае не будет отличаться"
+" от обычного вызова :func:`zip`::"
 
 #: ../../library/functions.rst:2175
 msgid ""
 ">>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True))\n"
 "[('a', 1), ('b', 2), ('c', 3)]"
 msgstr ""
+">>> list(zip(('а', 'б', 'в'), (1, 2, 3), strict=True))\n"
+"[('а', 1), ('б', 2), ('в', 3)]"
 
 #: ../../library/functions.rst:2178
 msgid ""
 "Unlike the default behavior, it raises a :exc:`ValueError` if one iterable "
 "is exhausted before the others:"
 msgstr ""
+"В отличие от поведения по умолчанию, такой вызов выбрасывает исключение "
+":exc:`ValueError`, если один итерируемый объект закончится раньше остальных."
 
 #: ../../library/functions.rst:2196
 msgid ""
@@ -4251,6 +4286,9 @@ msgid ""
 "different lengths will be silenced, possibly manifesting as a hard-to-find "
 "bug in another part of the program."
 msgstr ""
+"Без аргумента ``strict=True``, любая ошибка, приводящая к перебору объектов "
+"разной длины, будет подавлена, что может проявиться как труднонаходимая "
+"ошибка в другой части программы."
 
 #: ../../library/functions.rst:2200
 msgid ""
@@ -4258,16 +4296,22 @@ msgid ""
 "iterables have the same length.  This is done by "
 ":func:`itertools.zip_longest`."
 msgstr ""
+"Более короткие итерируемые объекты можно дополнить постоянным значением, "
+"чтобы все объекты имели одинаковую длину. Это делается с помощью "
+":func:`itertools.zip_longest`."
 
 #: ../../library/functions.rst:2204
 msgid ""
 "Edge cases: With a single iterable argument, :func:`zip` returns an iterator"
 " of 1-tuples.  With no arguments, it returns an empty iterator."
 msgstr ""
+"Крайние случаи: При передаче одного итерируемого объекта :func:`zip` "
+"возвращает итератор кортежей, состоящих из одного элемента. При отсутствии "
+"аргументов возвращается пустой итератор."
 
 #: ../../library/functions.rst:2207
 msgid "Tips and tricks:"
-msgstr ""
+msgstr "Советы и приёмы:"
 
 #: ../../library/functions.rst:2209
 msgid ""
@@ -4277,6 +4321,12 @@ msgid ""
 "``n`` times so that each output tuple has the result of ``n`` calls to the "
 "iterator. This has the effect of dividing the input into n-length chunks."
 msgstr ""
+"Порядок вычисления итерируемых объектов слева направо гарантирован. Это "
+"позволяет использовать идиому для кластеризации серии данных в группы длиной"
+" n с использованием ``zip(*[iter(s)]*n, strict=True)``. Это повторяет *тот "
+"же* итератор ``n`` раз, чтобы каждый выходной кортеж содержал результат "
+"``n`` вызовов итератора. Это приводит к разделению входных данных на блоки "
+"длиной n."
 
 #: ../../library/functions.rst:2215
 msgid ""
@@ -4294,6 +4344,13 @@ msgid ""
 ">>> x == list(x2) and y == list(y2)\n"
 "True"
 msgstr ""
+">>> x = [1, 2, 3]\n"
+">>> y = [4, 5, 6]\n"
+">>> list(zip(x, y))\n"
+"[(1, 4), (2, 5), (3, 6)]\n"
+">>> x2, y2 = zip(*zip(x, y))\n"
+">>> x == list(x2) and y == list(y2)\n"
+"True"
 
 #: ../../library/functions.rst:2226
 msgid "Added the ``strict`` argument."

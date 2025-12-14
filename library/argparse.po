@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../library/argparse.rst:28
 msgid "Tutorial"
-msgstr ""
+msgstr "Руководство"
 
 #: ../../library/argparse.rst:30
 msgid ""

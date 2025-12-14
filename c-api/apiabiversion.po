@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 14:15+0000\n"
+"POT-Creation-Date: 2025-12-13 14:13+0000\n"
 "PO-Revision-Date: 2025-09-16 00:00+0000\n"
 "Last-Translator: Gnevich <and.vareba81@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../c-api/apiabiversion.rst:7
 msgid "API and ABI Versioning"
-msgstr ""
+msgstr "Управление версиями API и ABI"
 
 #: ../../c-api/apiabiversion.rst:11
 msgid "Build-time version constants"
@@ -104,7 +104,7 @@ msgstr ""
 
 #: ../../c-api/apiabiversion.rst:75
 msgid "Argument"
-msgstr ""
+msgstr "Аргумент"
 
 #: ../../c-api/apiabiversion.rst:73
 msgid "No. of bits"
@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../../c-api/apiabiversion.rst:75
 msgid "Bit mask"
-msgstr ""
+msgstr "Битовая маска"
 
 #: ../../c-api/apiabiversion.rst:75
 msgid "Bit shift"
@@ -137,7 +137,7 @@ msgstr ""
 #: ../../c-api/apiabiversion.rst:77 ../../c-api/apiabiversion.rst:79
 #: ../../c-api/apiabiversion.rst:81
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../c-api/apiabiversion.rst:77
 msgid "``0xFF000000``"
@@ -145,11 +145,11 @@ msgstr ""
 
 #: ../../c-api/apiabiversion.rst:77
 msgid "24"
-msgstr ""
+msgstr "24"
 
 #: ../../c-api/apiabiversion.rst:77
 msgid "``0x03``"
-msgstr ""
+msgstr "``0x03``"
 
 #: ../../c-api/apiabiversion.rst:79
 msgid "*minor*"
@@ -161,11 +161,11 @@ msgstr ""
 
 #: ../../c-api/apiabiversion.rst:79
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../c-api/apiabiversion.rst:79
 msgid "``0x04``"
-msgstr ""
+msgstr "``0x04``"
 
 #: ../../c-api/apiabiversion.rst:79
 msgid "``0x0A``"
@@ -181,7 +181,7 @@ msgstr ""
 
 #: ../../c-api/apiabiversion.rst:81
 msgid "``0x01``"
-msgstr ""
+msgstr "``0x01``"
 
 #: ../../c-api/apiabiversion.rst:81
 msgid "``0x00``"
@@ -193,7 +193,7 @@ msgstr ""
 
 #: ../../c-api/apiabiversion.rst:83 ../../c-api/apiabiversion.rst:85
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../c-api/apiabiversion.rst:83
 msgid "``0x000000F0``"
@@ -201,7 +201,7 @@ msgstr ""
 
 #: ../../c-api/apiabiversion.rst:83
 msgid "``0xA``"
-msgstr ""
+msgstr "``0xA``"
 
 #: ../../c-api/apiabiversion.rst:83
 msgid "``0xF``"
@@ -217,11 +217,11 @@ msgstr ""
 
 #: ../../c-api/apiabiversion.rst:85
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: ../../c-api/apiabiversion.rst:85
 msgid "``0x2``"
-msgstr ""
+msgstr "``0x2``"
 
 #: ../../c-api/apiabiversion.rst:85
 msgid "``0x0``"
@@ -229,11 +229,11 @@ msgstr ""
 
 #: ../../c-api/apiabiversion.rst:88
 msgid "For example:"
-msgstr ""
+msgstr "Например:"
 
 #: ../../c-api/apiabiversion.rst:91
 msgid "Version"
-msgstr ""
+msgstr "Версия"
 
 #: ../../c-api/apiabiversion.rst:91
 msgid "``Py_PACK_FULL_VERSION`` arguments"

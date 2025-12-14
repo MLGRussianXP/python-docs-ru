@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-13 14:15+0000\n"
+"POT-Creation-Date: 2025-12-13 14:13+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -61,6 +61,10 @@ msgid ""
 " degrees clockwise."
 msgstr ""
 
+#: ../../library/turtle.rst:43
+msgid "Turtle star"
+msgstr ""
+
 #: ../../library/turtle.rst:45
 msgid ""
 "Turtle can draw intricate shapes using programs that repeat simple moves."
@@ -90,7 +94,7 @@ msgstr ""
 
 #: ../../library/turtle.rst:68
 msgid "Tutorial"
-msgstr ""
+msgstr "Руководство"
 
 #: ../../library/turtle.rst:70
 msgid ""
@@ -514,71 +518,71 @@ msgstr ""
 msgid "Move and draw"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:336
 msgid ":func:`forward` | :func:`fd`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:337
 msgid ":func:`backward` | :func:`bk` | :func:`back`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:338
 msgid ":func:`right` | :func:`rt`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:339
 msgid ":func:`left` | :func:`lt`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:340
 msgid ":func:`goto` | :func:`setpos` | :func:`setposition`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:341
 msgid ":func:`teleport`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:342
 msgid ":func:`setx`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:343
 msgid ":func:`sety`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:344
 msgid ":func:`setheading` | :func:`seth`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:345
 msgid ":func:`home`"
 msgstr ""
 
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:2864
+#: ../../library/turtle.rst:346 ../../library/turtle.rst:2864
 msgid ":func:`circle`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:347
 msgid ":func:`dot`"
 msgstr ""
 
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:2842
+#: ../../library/turtle.rst:348 ../../library/turtle.rst:2842
 msgid ":func:`stamp`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:349
 msgid ":func:`clearstamp`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:350
 msgid ":func:`clearstamps`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:351
 msgid ":func:`undo`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:352
 msgid ":func:`speed`"
 msgstr ""
 
@@ -586,27 +590,27 @@ msgstr ""
 msgid "Tell Turtle's state"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:355
 msgid ":func:`position` | :func:`pos`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:356
 msgid ":func:`towards`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:357
 msgid ":func:`xcor`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:358
 msgid ":func:`ycor`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:359
 msgid ":func:`heading`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:360
 msgid ":func:`distance`"
 msgstr ""
 
@@ -614,11 +618,11 @@ msgstr ""
 msgid "Setting and measurement"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:363
 msgid ":func:`degrees`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:364
 msgid ":func:`radians`"
 msgstr ""
 
@@ -626,23 +630,23 @@ msgstr ""
 msgid "Drawing state"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:368
 msgid ":func:`pendown` | :func:`pd` | :func:`down`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:369
 msgid ":func:`penup` | :func:`pu` | :func:`up`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:370
 msgid ":func:`pensize` | :func:`width`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:371
 msgid ":func:`pen`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:372
 msgid ":func:`isdown`"
 msgstr ""
 
@@ -650,15 +654,15 @@ msgstr ""
 msgid "Color control"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:375
 msgid ":func:`color`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:376
 msgid ":func:`pencolor`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:377
 msgid ":func:`fillcolor`"
 msgstr ""
 
@@ -666,19 +670,19 @@ msgstr ""
 msgid "Filling"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:380
 msgid ":func:`filling`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:381
 msgid ":func:`fill`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:382
 msgid ":func:`begin_fill`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:383
 msgid ":func:`end_fill`"
 msgstr ""
 
@@ -686,15 +690,15 @@ msgstr ""
 msgid "More drawing control"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:386
 msgid ":func:`reset`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:387
 msgid ":func:`clear`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:388
 msgid ":func:`write`"
 msgstr ""
 
@@ -706,15 +710,15 @@ msgstr ""
 msgid "Visibility"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:392
 msgid ":func:`showturtle` | :func:`st`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:393
 msgid ":func:`hideturtle` | :func:`ht`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:394
 msgid ":func:`isvisible`"
 msgstr ""
 
@@ -722,35 +726,35 @@ msgstr ""
 msgid "Appearance"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:397
 msgid ":func:`shape`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:398
 msgid ":func:`resizemode`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:399
 msgid ":func:`shapesize` | :func:`turtlesize`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:400
 msgid ":func:`shearfactor`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:401
 msgid ":func:`tiltangle`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:402
 msgid ":func:`tilt`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:403
 msgid ":func:`shapetransform`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:404
 msgid ":func:`get_shapepoly`"
 msgstr ""
 
@@ -758,15 +762,15 @@ msgstr ""
 msgid "Using events"
 msgstr ""
 
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:2836
+#: ../../library/turtle.rst:407 ../../library/turtle.rst:2836
 msgid ":func:`onclick`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:408
 msgid ":func:`onrelease`"
 msgstr ""
 
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:2819
+#: ../../library/turtle.rst:409 ../../library/turtle.rst:2819
 msgid ":func:`ondrag`"
 msgstr ""
 
@@ -774,39 +778,39 @@ msgstr ""
 msgid "Special Turtle methods"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:412
 msgid ":func:`poly`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:413
 msgid ":func:`begin_poly`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:414
 msgid ":func:`end_poly`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:415
 msgid ":func:`get_poly`"
 msgstr ""
 
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:2858
+#: ../../library/turtle.rst:416 ../../library/turtle.rst:2858
 msgid ":func:`clone`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:417
 msgid ":func:`getturtle` | :func:`getpen`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:418
 msgid ":func:`getscreen`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:419
 msgid ":func:`setundobuffer`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:420
 msgid ":func:`undobufferentries`"
 msgstr ""
 
@@ -818,27 +822,27 @@ msgstr ""
 msgid "Window control"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:427
 msgid ":func:`bgcolor`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:428
 msgid ":func:`bgpic`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:429
 msgid ":func:`clearscreen`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:430
 msgid ":func:`resetscreen`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:431
 msgid ":func:`screensize`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:432
 msgid ":func:`setworldcoordinates`"
 msgstr ""
 
@@ -846,19 +850,19 @@ msgstr ""
 msgid "Animation control"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:435
 msgid ":func:`no_animation`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:436
 msgid ":func:`delay`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:437
 msgid ":func:`tracer`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:438
 msgid ":func:`update`"
 msgstr ""
 
@@ -866,27 +870,27 @@ msgstr ""
 msgid "Using screen events"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:441
 msgid ":func:`listen`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:442
 msgid ":func:`onkey` | :func:`onkeyrelease`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:443
 msgid ":func:`onkeypress`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:444
 msgid ":func:`onclick` | :func:`onscreenclick`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:445
 msgid ":func:`ontimer`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:446
 msgid ":func:`mainloop` | :func:`done`"
 msgstr ""
 
@@ -894,35 +898,35 @@ msgstr ""
 msgid "Settings and special methods"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:449
 msgid ":func:`mode`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:450
 msgid ":func:`colormode`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:451
 msgid ":func:`getcanvas`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:452
 msgid ":func:`getshapes`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:453
 msgid ":func:`register_shape` | :func:`addshape`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:454
 msgid ":func:`turtles`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:455
 msgid ":func:`window_height`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:456
 msgid ":func:`window_width`"
 msgstr ""
 
@@ -930,11 +934,11 @@ msgstr ""
 msgid "Input methods"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:459
 msgid ":func:`textinput`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:460
 msgid ":func:`numinput`"
 msgstr ""
 
@@ -942,23 +946,23 @@ msgstr ""
 msgid "Methods specific to Screen"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:463
 msgid ":func:`bye`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:464
 msgid ":func:`exitonclick`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:465
 msgid ":func:`save`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:466
 msgid ":func:`setup`"
 msgstr ""
 
-#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:467
 msgid ":func:`title`"
 msgstr ""
 

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-25 14:12+0000\n"
+"POT-Creation-Date: 2025-12-13 14:13+0000\n"
 "PO-Revision-Date: 2025-09-16 00:00+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../c-api/arg.rst:6
 msgid "Parsing arguments and building values"
-msgstr ""
+msgstr "Анализ аргументов и построение значений"
 
 #: ../../c-api/arg.rst:8
 msgid ""
@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../c-api/arg.rst:19
 msgid "Parsing arguments"
-msgstr ""
+msgstr "Анализ аргументов"
 
 #: ../../c-api/arg.rst:21
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../c-api/arg.rst:33
 msgid "Strings and buffers"
-msgstr ""
+msgstr "Строки и буферы"
 
 #: ../../c-api/arg.rst:37
 msgid ""
@@ -415,7 +415,7 @@ msgstr ""
 
 #: ../../c-api/arg.rst:230
 msgid "Numbers"
-msgstr ""
+msgstr "Числа"
 
 #: ../../c-api/arg.rst:232
 msgid ""

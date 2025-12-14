@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-25 14:15+0000\n"
+"POT-Creation-Date: 2025-12-13 14:13+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -139,7 +140,7 @@ msgstr ""
 
 #: ../../tools/templates/download.html:75
 msgid "Problems"
-msgstr ""
+msgstr "Проблемы"
 
 #: ../../tools/templates/download.html:77
 msgid ""
@@ -149,31 +150,31 @@ msgstr ""
 
 #: ../../tools/templates/dummy.html:6
 msgid "Availability"
-msgstr ""
+msgstr "Доступность"
 
 #: ../../tools/templates/dummy.html:10
 msgid "Part of the"
-msgstr ""
+msgstr "Часть"
 
 #: ../../tools/templates/dummy.html:11
 msgid "Limited API"
-msgstr ""
+msgstr "Ограниченный API"
 
 #: ../../tools/templates/dummy.html:12
 msgid "Stable ABI"
-msgstr ""
+msgstr "Стабильный ABI"
 
 #: ../../tools/templates/dummy.html:13
 msgid "(as an opaque struct)"
-msgstr ""
+msgstr "(как непрозрачная структура)"
 
 #: ../../tools/templates/dummy.html:14
 msgid "(including all members)"
-msgstr ""
+msgstr "(включая всех участников)"
 
 #: ../../tools/templates/dummy.html:15
 msgid "since version %s"
-msgstr ""
+msgstr "начиная с версии %s"
 
 #: ../../tools/templates/dummy.html:16
 msgid "(Only some members are part of the stable ABI.)"
@@ -181,11 +182,11 @@ msgstr ""
 
 #: ../../tools/templates/dummy.html:17
 msgid "This is"
-msgstr ""
+msgstr "Это"
 
 #: ../../tools/templates/dummy.html:18
 msgid "Unstable API"
-msgstr ""
+msgstr "Нестабильный API"
 
 #: ../../tools/templates/dummy.html:19
 msgid ". It may change without warning in minor releases."
@@ -217,193 +218,195 @@ msgstr ""
 
 #: ../../tools/templates/dummy.html:35
 msgid "in development"
-msgstr ""
+msgstr "в разработке"
 
 #: ../../tools/templates/dummy.html:36
 msgid "pre-release"
-msgstr ""
+msgstr "пререлиз"
 
 #: ../../tools/templates/dummy.html:37
 msgid "stable"
-msgstr ""
+msgstr "стабильный"
 
 #: ../../tools/templates/dummy.html:38
 msgid "security-fixes"
-msgstr ""
+msgstr "исправления безопасности"
 
 #: ../../tools/templates/dummy.html:39
 msgid "EOL"
-msgstr ""
+msgstr "EOL"
 
 #: ../../tools/templates/indexcontent.html:21
 msgid "Welcome! This is the official documentation for Python %(release)s."
-msgstr ""
+msgstr "Добро пожаловать! Это официальная документация Python %(release)s."
 
 #: ../../tools/templates/indexcontent.html:23
 msgid "Documentation sections:"
-msgstr ""
+msgstr "Разделы документации:"
 
 #: ../../tools/templates/indexcontent.html:26
 msgid "What's new in Python %(version)s?"
-msgstr ""
+msgstr "Что нового в Python %(version)s?"
 
 #: ../../tools/templates/indexcontent.html:27
 msgid ""
 "Or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents since Python "
 "2.0</a>"
 msgstr ""
+"Или <a href=\"%(whatsnew_index)s\">все документы \"Что нового\", начиная с "
+"Python 2.0</a>"
 
 #: ../../tools/templates/indexcontent.html:28
 msgid "Tutorial"
-msgstr ""
+msgstr "Руководство"
 
 #: ../../tools/templates/indexcontent.html:29
 msgid "Start here: a tour of Python's syntax and features"
-msgstr ""
+msgstr "Начните здесь: обзор синтаксиса и возможностей Python"
 
 #: ../../tools/templates/indexcontent.html:30
 msgid "Library reference"
-msgstr ""
+msgstr "Справочник по библиотеке"
 
 #: ../../tools/templates/indexcontent.html:31
 msgid "Standard library and builtins"
-msgstr ""
+msgstr "Стандартная библиотека и встроенные функции"
 
 #: ../../tools/templates/indexcontent.html:32
 msgid "Language reference"
-msgstr ""
+msgstr "Справочник по языку"
 
 #: ../../tools/templates/indexcontent.html:33
 msgid "Syntax and language elements"
-msgstr ""
+msgstr "Синтаксис и элементы языка"
 
 #: ../../tools/templates/indexcontent.html:34
 msgid "Python setup and usage"
-msgstr ""
+msgstr "Установка и использование Python"
 
 #: ../../tools/templates/indexcontent.html:35
 msgid "How to install, configure, and use Python"
-msgstr ""
+msgstr "Как установить, настроить и использовать Python"
 
 #: ../../tools/templates/indexcontent.html:36
 msgid "Python HOWTOs"
-msgstr ""
+msgstr "Python HOWTOs"
 
 #: ../../tools/templates/indexcontent.html:37
 msgid "In-depth topic manuals"
-msgstr ""
+msgstr "Подробные тематические руководства"
 
 #: ../../tools/templates/indexcontent.html:39
 msgid "Installing Python modules"
-msgstr ""
+msgstr "Установка модулей Python"
 
 #: ../../tools/templates/indexcontent.html:40
 msgid "Third-party modules and PyPI.org"
-msgstr ""
+msgstr "Сторонние модули и PyPI.org"
 
 #: ../../tools/templates/indexcontent.html:41
 msgid "Distributing Python modules"
-msgstr ""
+msgstr "Распространение модулей Python"
 
 #: ../../tools/templates/indexcontent.html:42
 msgid "Publishing modules for use by other people"
-msgstr ""
+msgstr "Публикация модулей для использования другими людьми"
 
 #: ../../tools/templates/indexcontent.html:43
 msgid "Extending and embedding"
-msgstr ""
+msgstr "Расширение и встраивание"
 
 #: ../../tools/templates/indexcontent.html:44
 msgid "For C/C++ programmers"
-msgstr ""
+msgstr "Для программистов на C/C++"
 
 #: ../../tools/templates/indexcontent.html:45
 msgid "Python's C API"
-msgstr ""
+msgstr "C API Python"
 
 #: ../../tools/templates/indexcontent.html:46
 msgid "C API reference"
-msgstr ""
+msgstr "Справочник по C API"
 
 #: ../../tools/templates/indexcontent.html:47
 msgid "FAQs"
-msgstr ""
+msgstr "ЧаВо"
 
 #: ../../tools/templates/indexcontent.html:48
 msgid "Frequently asked questions (with answers!)"
-msgstr ""
+msgstr "Часто задаваемые вопросы (с ответами!)"
 
 #: ../../tools/templates/indexcontent.html:49
 msgid "Deprecations"
-msgstr ""
+msgstr "Устаревшие возможности"
 
 #: ../../tools/templates/indexcontent.html:50
 msgid "Deprecated functionality"
-msgstr ""
+msgstr "Функциональность, признанная устаревшей"
 
 #: ../../tools/templates/indexcontent.html:54
 msgid "Indices, glossary, and search:"
-msgstr ""
+msgstr "Индексы, глоссарий и поиск:"
 
 #: ../../tools/templates/indexcontent.html:57
 msgid "Global module index"
-msgstr ""
+msgstr "Глобальный указатель модулей"
 
 #: ../../tools/templates/indexcontent.html:58
 msgid "All modules and libraries"
-msgstr ""
+msgstr "Все модули и библиотеки"
 
 #: ../../tools/templates/indexcontent.html:59
 msgid "General index"
-msgstr ""
+msgstr "Общий указатель"
 
 #: ../../tools/templates/indexcontent.html:60
 msgid "All functions, classes, and terms"
-msgstr ""
+msgstr "Все функции, классы и термины"
 
 #: ../../tools/templates/indexcontent.html:61
 msgid "Glossary"
-msgstr ""
+msgstr "Глоссарий"
 
 #: ../../tools/templates/indexcontent.html:62
 msgid "Terms explained"
-msgstr ""
+msgstr "Объяснение терминов"
 
 #: ../../tools/templates/indexcontent.html:64
 msgid "Search page"
-msgstr ""
+msgstr "Страница поиска"
 
 #: ../../tools/templates/indexcontent.html:65
 msgid "Search this documentation"
-msgstr ""
+msgstr "Поиск по этой документации"
 
 #: ../../tools/templates/indexcontent.html:66
 msgid "Complete table of contents"
-msgstr ""
+msgstr "Полное содержание"
 
 #: ../../tools/templates/indexcontent.html:67
 msgid "Lists all sections and subsections"
-msgstr ""
+msgstr "Список всех разделов и подразделов"
 
 #: ../../tools/templates/indexcontent.html:71
 msgid "Project information:"
-msgstr ""
+msgstr "Информация о проекте:"
 
 #: ../../tools/templates/indexcontent.html:74
 msgid "Reporting issues"
-msgstr ""
+msgstr "Сообщение о проблемах"
 
 #: ../../tools/templates/indexcontent.html:75
 msgid "Contributing to docs"
-msgstr ""
+msgstr "Вклад в документацию"
 
 #: ../../tools/templates/indexcontent.html:76
 msgid "Download the documentation"
-msgstr ""
+msgstr "Скачать документацию"
 
 #: ../../tools/templates/indexcontent.html:78
 msgid "History and license of Python"
-msgstr ""
+msgstr "История и лицензия Python"
 
 #: ../../tools/templates/indexcontent.html:79
 msgid "Copyright"
@@ -411,7 +414,7 @@ msgstr ""
 
 #: ../../tools/templates/indexcontent.html:80
 msgid "About the documentation"
-msgstr ""
+msgstr "О документации"
 
 #: ../../tools/templates/indexsidebar.html:2
 msgid "Download these documents"

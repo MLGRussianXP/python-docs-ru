@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-16 17:23+0000\n"
+"POT-Creation-Date: 2025-12-13 14:13+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:6
 msgid "Simple statements"
-msgstr ""
+msgstr "Простые инструкции"
 
 #: ../../reference/simple_stmts.rst:10
 msgid ""
@@ -31,10 +32,13 @@ msgid ""
 " statements may occur on a single line separated by semicolons.  The syntax "
 "for simple statements is:"
 msgstr ""
+"Простая инструкция состоит из одной логической строки. Несколько простых "
+"инструкций могут находиться в одной строке, разделённой точкой с запятой. "
+"Синтаксис простых инструкций:"
 
 #: ../../reference/simple_stmts.rst:37
 msgid "Expression statements"
-msgstr ""
+msgstr "Инструкции выражений"
 
 #: ../../reference/simple_stmts.rst:44
 msgid ""
@@ -44,12 +48,19 @@ msgid ""
 "uses of expression statements are allowed and occasionally useful.  The "
 "syntax for an expression statement is:"
 msgstr ""
+"Инструкции выражений используются (в основном в интерактивном режиме) для "
+"вычисления и вывода значения или (обычно) для вызова процедуры (функции, "
+"которая не возвращает значимого результата; в Python процедуры возвращают "
+"значение ``None``). Другие варианты использования инструкций выражений "
+"разрешены и иногда полезны. Синтаксис инструкции выражения:"
 
 #: ../../reference/simple_stmts.rst:53
 msgid ""
 "An expression statement evaluates the expression list (which may be a single"
 " expression)."
 msgstr ""
+"Инструкция выражения вычисляет список выражений (который может быть одним "
+"выражением)."
 
 #: ../../reference/simple_stmts.rst:65
 msgid ""
@@ -58,6 +69,11 @@ msgid ""
 "written to standard output on a line by itself (except if the result is "
 "``None``, so that procedure calls do not cause any output.)"
 msgstr ""
+"В интерактивном режиме, если значение отличается от ``None``, оно "
+"преобразуется в строку с помощью встроенной функции :func:`repr`, и "
+"результирующая строка записывается в стандартный вывод в отдельной строке "
+"(кроме случаев, когда результатом будет ``None``, так что вызовы процедур не"
+" приводят к каким-либо выводам)."
 
 #: ../../reference/simple_stmts.rst:73
 msgid "Assignment statements"
@@ -1120,12 +1136,21 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:977
 msgid ""
-"The :keyword:`global` statement applies to the entire scope of a function or"
-" class body. A :exc:`SyntaxError` is raised if a variable is used or "
-"assigned to prior to its global declaration in the scope."
+"The :keyword:`!global` statement applies to the entire current scope "
+"(module, function body or class definition). A :exc:`SyntaxError` is raised "
+"if a variable is used or assigned to prior to its global declaration in the "
+"scope."
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:986
+#: ../../reference/simple_stmts.rst:982
+msgid ""
+"At the module level, all variables are global, so a :keyword:`!global` "
+"statement has no effect. However, variables must still not be used or "
+"assigned to prior to their :keyword:`!global` declaration. This requirement "
+"is relaxed in the interactive prompt (:term:`REPL`)."
+msgstr ""
+
+#: ../../reference/simple_stmts.rst:993
 msgid ""
 "**Programmer's note:** :keyword:`global` is a directive to the parser.  It "
 "applies only to code parsed at the same time as the :keyword:`!global` "
@@ -1137,11 +1162,11 @@ msgid ""
 ":func:`compile` functions."
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:998
+#: ../../reference/simple_stmts.rst:1005
 msgid "The :keyword:`!nonlocal` statement"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1006
+#: ../../reference/simple_stmts.rst:1013
 msgid ""
 "When the definition of a function or class is nested (enclosed) within the "
 "definitions of other functions, its nonlocal scopes are the local scopes of "
@@ -1153,64 +1178,64 @@ msgid ""
 " :exc:`SyntaxError` is raised."
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1015
+#: ../../reference/simple_stmts.rst:1022
 msgid ""
 "The :keyword:`nonlocal` statement applies to the entire scope of a function "
 "or class body. A :exc:`SyntaxError` is raised if a variable is used or "
 "assigned to prior to its nonlocal declaration in the scope."
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1021
+#: ../../reference/simple_stmts.rst:1028
 msgid ":pep:`3104` - Access to Names in Outer Scopes"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1022
+#: ../../reference/simple_stmts.rst:1029
 msgid "The specification for the :keyword:`nonlocal` statement."
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1024
+#: ../../reference/simple_stmts.rst:1031
 msgid ""
 "**Programmer's note:** :keyword:`nonlocal` is a directive to the parser and "
 "applies only to code parsed along with it.  See the note for the "
 ":keyword:`global` statement."
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1032
+#: ../../reference/simple_stmts.rst:1039
 msgid "The :keyword:`!type` statement"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1039
+#: ../../reference/simple_stmts.rst:1046
 msgid ""
 "The :keyword:`!type` statement declares a type alias, which is an instance "
 "of :class:`typing.TypeAliasType`."
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1042
+#: ../../reference/simple_stmts.rst:1049
 msgid "For example, the following statement creates a type alias::"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1044
+#: ../../reference/simple_stmts.rst:1051
 msgid "type Point = tuple[float, float]"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1046
+#: ../../reference/simple_stmts.rst:1053
 msgid "This code is roughly equivalent to::"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1048
+#: ../../reference/simple_stmts.rst:1055
 msgid ""
 "annotation-def VALUE_OF_Point():\n"
 "    return tuple[float, float]\n"
 "Point = typing.TypeAliasType(\"Point\", VALUE_OF_Point())"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1052
+#: ../../reference/simple_stmts.rst:1059
 msgid ""
 "``annotation-def`` indicates an :ref:`annotation scope <annotation-scopes>`,"
 " which behaves mostly like a function, but with several small differences."
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1055
+#: ../../reference/simple_stmts.rst:1062
 msgid ""
 "The value of the type alias is evaluated in the annotation scope. It is not "
 "evaluated when the type alias is created, but only when the value is "
@@ -1219,21 +1244,21 @@ msgid ""
 "are not yet defined."
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1061
+#: ../../reference/simple_stmts.rst:1068
 msgid ""
 "Type aliases may be made generic by adding a :ref:`type parameter list "
 "<type-params>` after the name. See :ref:`generic-type-aliases` for more."
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1064
+#: ../../reference/simple_stmts.rst:1071
 msgid ":keyword:`!type` is a :ref:`soft keyword <soft-keywords>`."
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1070
+#: ../../reference/simple_stmts.rst:1077
 msgid ":pep:`695` - Type Parameter Syntax"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1071
+#: ../../reference/simple_stmts.rst:1078
 msgid ""
 "Introduced the :keyword:`!type` statement and syntax for generic classes and"
 " functions."
@@ -1251,8 +1276,8 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:525 ../../reference/simple_stmts.rst:561
 #: ../../reference/simple_stmts.rst:686 ../../reference/simple_stmts.rst:720
 #: ../../reference/simple_stmts.rst:745 ../../reference/simple_stmts.rst:878
-#: ../../reference/simple_stmts.rst:964 ../../reference/simple_stmts.rst:1000
-#: ../../reference/simple_stmts.rst:1034
+#: ../../reference/simple_stmts.rst:964 ../../reference/simple_stmts.rst:1007
+#: ../../reference/simple_stmts.rst:1041
 msgid "statement"
 msgstr ""
 
@@ -1266,7 +1291,7 @@ msgstr ""
 msgid "list"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:56 ../../reference/simple_stmts.rst:981
+#: ../../reference/simple_stmts.rst:56 ../../reference/simple_stmts.rst:988
 msgid "built-in function"
 msgstr ""
 
@@ -1362,7 +1387,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:116 ../../reference/simple_stmts.rst:384
 #: ../../reference/simple_stmts.rst:745 ../../reference/simple_stmts.rst:964
-#: ../../reference/simple_stmts.rst:1000
+#: ../../reference/simple_stmts.rst:1007
 msgid ", (comma)"
 msgstr ""
 
@@ -1692,26 +1717,26 @@ msgstr ""
 msgid "future statement"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:964 ../../reference/simple_stmts.rst:1000
+#: ../../reference/simple_stmts.rst:964 ../../reference/simple_stmts.rst:1007
 msgid "identifier list"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:981
+#: ../../reference/simple_stmts.rst:988
 msgid "exec"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:981
+#: ../../reference/simple_stmts.rst:988
 msgid "eval"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:981
+#: ../../reference/simple_stmts.rst:988
 msgid "compile"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1000
+#: ../../reference/simple_stmts.rst:1007
 msgid "nonlocal"
 msgstr ""
 
-#: ../../reference/simple_stmts.rst:1034
+#: ../../reference/simple_stmts.rst:1041
 msgid "type"
 msgstr ""

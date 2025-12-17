@@ -93,6 +93,8 @@ msgid ""
 "(See section :ref:`primaries` for the syntax definitions for *attributeref*,"
 " *subscription*, and *slicing*.)"
 msgstr ""
+"(Определения синтаксиса для *attributeref*, *subscription* и *slicing* см. в"
+" разделе :ref:`primaries`.)"
 
 #: ../../reference/simple_stmts.rst:100
 msgid ""
@@ -101,6 +103,10 @@ msgid ""
 "tuple) and assigns the single resulting object to each of the target lists, "
 "from left to right."
 msgstr ""
+"Инструкция присваивания вычисляет список выражений (напомним, что это может "
+"быть одно выражение или список выражений, разделённых запятыми; в последнем "
+"случае результатом является кортеж) и присваивает один получившийся объект "
+"каждому целевому списку слева направо."
 
 #: ../../reference/simple_stmts.rst:109
 msgid ""
@@ -112,22 +118,33 @@ msgid ""
 "exceptions raised are given with the definition of the object types (see "
 "section :ref:`types`)."
 msgstr ""
+"Присваивание определяется рекурсивно в зависимости от формы цели (или "
+"целевого списка). Когда цель является частью изменяемого объекта (ссылка на "
+"атрибут, элемент последовательности или срез), сам этот объект должен в "
+"конечном итоге выполнить присваивание и принять решение о его допустимости, "
+"в противном случае может быть выброшено исключение. Правила, соблюдаемые "
+"различными типами, и возникающие исключения приведены вместе с определением "
+"типов объектов (см. раздел :ref:`types`)."
 
 #: ../../reference/simple_stmts.rst:122
 msgid ""
 "Assignment of an object to a target list, optionally enclosed in parentheses"
 " or square brackets, is recursively defined as follows."
 msgstr ""
+"Присваивание объекта целевому списку, при необходимости заключённому в "
+"круглые или квадратные скобки, определяется рекурсивно следующим образом."
 
 #: ../../reference/simple_stmts.rst:125
 msgid ""
 "If the target list is a single target with no trailing comma, optionally in "
 "parentheses, the object is assigned to that target."
 msgstr ""
+"Если целевой список состоит из одной цели без завершающей запятой, возможно "
+"в круглых скобках, объект присваивается этой цели."
 
 #: ../../reference/simple_stmts.rst:128
 msgid "Else:"
-msgstr ""
+msgstr "Иначе:"
 
 #: ../../reference/simple_stmts.rst:130
 msgid ""
@@ -139,6 +156,13 @@ msgid ""
 " after the starred target.  A list of the remaining items in the iterable is"
 " then assigned to the starred target (the list can be empty)."
 msgstr ""
+"Если целевой список содержит одну цель со звёздочкой в префиксе, называемую "
+"«звёздной» целью, то объект должен быть итерируемым. Число элементов в нём "
+"может быть больше, чем в целевом списке, равным ему или ровно на один "
+"меньше. Первые элементы итерируемого объекта присваиваются, слева направо, "
+"целям до звёздной, а последние — после неё. Затем оставшиеся элементы "
+"итерируемого объекта формируют список (возможно пустой), который "
+"присваивается самой звёздной цели."
 
 #: ../../reference/simple_stmts.rst:138
 msgid ""
@@ -146,16 +170,20 @@ msgid ""
 "are targets in the target list, and the items are assigned, from left to "
 "right, to the corresponding targets."
 msgstr ""
+"Иначе: объект должен быть итерируемым и содержать столько же элементов, "
+"сколько и в целевом списке, и элементы присваиваются соответствующим целям, "
+"слева направо."
 
 #: ../../reference/simple_stmts.rst:142
 msgid ""
 "Assignment of an object to a single target is recursively defined as "
 "follows."
 msgstr ""
+"Присваивание объекта одной цели определяется рекурсивно следующим образом."
 
 #: ../../reference/simple_stmts.rst:144
 msgid "If the target is an identifier (name):"
-msgstr ""
+msgstr "Если целью является идентификатор (имя):"
 
 #: ../../reference/simple_stmts.rst:146
 msgid ""
@@ -163,12 +191,17 @@ msgid ""
 "statement in the current code block: the name is bound to the object in the "
 "current local namespace."
 msgstr ""
+"Если имя не встречается в инструкции :keyword:`global` или "
+":keyword:`nonlocal` в текущем блоке кода, оно связывается с объектом в "
+"текущем локальном пространстве имён."
 
 #: ../../reference/simple_stmts.rst:150
 msgid ""
 "Otherwise: the name is bound to the object in the global namespace or the "
 "outer namespace determined by :keyword:`nonlocal`, respectively."
 msgstr ""
+"В противном случае имя связывается с объектом в глобальном пространстве имён"
+" или во внешнем, определяемом :keyword:`nonlocal`, соответственно."
 
 #: ../../reference/simple_stmts.rst:155
 msgid ""
@@ -176,6 +209,10 @@ msgid ""
 "count for the object previously bound to the name to reach zero, causing the"
 " object to be deallocated and its destructor (if it has one) to be called."
 msgstr ""
+"Если имя уже было связано с каким-либо объектом, оно переназначается. Это "
+"может привести к тому, что счётчик ссылок на объект, ранее связанный с "
+"именем, достигнет нуля, что вызовет освобождение объекта и вызов его "
+"деструктора (если он определён)."
 
 #: ../../reference/simple_stmts.rst:161
 msgid ""
@@ -186,6 +223,12 @@ msgid ""
 "if it cannot perform the assignment, it raises an exception (usually but not"
 " necessarily :exc:`AttributeError`)."
 msgstr ""
+"Если целью является ссылка на атрибут, сначала вычисляется первичное "
+"выражение в ссылке. Оно должно вернуть объект с присваиваемыми атрибутами; "
+"если это не так, возбуждается исключение :exc:`TypeError`. Затем у этого "
+"объекта запрашивается присваивание переданного объекта указанному атрибуту; "
+"если объект не может выполнить присваивание, выбрасывается исключение "
+"(обычно, но не обязательно, :exc:`AttributeError`)."
 
 #: ../../reference/simple_stmts.rst:170
 msgid ""

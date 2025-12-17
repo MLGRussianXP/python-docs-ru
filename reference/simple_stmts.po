@@ -323,6 +323,8 @@ msgid ""
 "For user-defined objects, the :meth:`~object.__setitem__` method is called "
 "with appropriate arguments."
 msgstr ""
+"Для объектов, определяемых пользоватем, вызывается метод "
+":meth:`~object.__setitem__` с соответствующими аргументами."
 
 #: ../../reference/simple_stmts.rst:222
 msgid ""

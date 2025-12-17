@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 14:13+0000\n"
+"POT-Creation-Date: 2025-12-15 14:20+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -77,13 +77,16 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:73
 msgid "Assignment statements"
-msgstr ""
+msgstr "Инструкции присвоения"
 
 #: ../../reference/simple_stmts.rst:83
 msgid ""
 "Assignment statements are used to (re)bind names to values and to modify "
 "attributes or items of mutable objects:"
 msgstr ""
+"Инструкции присваивания используются для (повторного) связывания имён со "
+"значениями, а также для изменения атрибутов или элементов изменяемых "
+"объектов:"
 
 #: ../../reference/simple_stmts.rst:97
 msgid ""

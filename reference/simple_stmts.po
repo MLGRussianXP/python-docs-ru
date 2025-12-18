@@ -340,6 +340,18 @@ msgid ""
 "be different from the length of the assigned sequence, thus changing the "
 "length of the target sequence, if the target sequence allows it."
 msgstr ""
+"Если целью является срез: сначала вычисляется первичное выражение в этом "
+"обращении. Оно должно возвращать объект изменяемой последовательности "
+"(например, список). Присваиваемый объект должен быть последовательностью "
+"того же типа. Затем вычисляются выражения нижней и верхней границ среза, "
+"если они заданы; по умолчанию берутся ноль и длина последовательности. "
+"Границы должны при вычислении давать целые числа. Если какая-либо граница "
+"отрицательная, к ней прибавляется длина последовательности. Полученные "
+"границы ограничиваются значениями от нуля до длины последовательности "
+"включительно. Наконец, последовательности поручается заменить указанный срез"
+" элементами присваиваемой последовательности. Длина среза может отличаться "
+"от длины присваиваемой последовательности, что изменяет длину целевой "
+"последовательности, если она это позволяет."
 
 #: ../../reference/simple_stmts.rst:236
 msgid ""
@@ -347,6 +359,9 @@ msgid ""
 "same as for expressions, and invalid syntax is rejected during the code "
 "generation phase, causing less detailed error messages."
 msgstr ""
+"В текущей реализации синтаксис целевых объектов аналогичен синтаксису "
+"выражений, а некорректный синтаксис отклоняется на этапе генерации кода, что"
+" приводит к менее подробным сообщениям об ошибках."
 
 #: ../../reference/simple_stmts.rst:240
 msgid ""
@@ -356,6 +371,11 @@ msgid ""
 "assigned-to variables occur left-to-right, sometimes resulting in confusion."
 "  For instance, the following program prints ``[0, 2]``::"
 msgstr ""
+"Хотя определение присваивания подразумевает, что пересечения между левой и "
+"правой частью происходят «одновременно» (например, ``a, b = b, a`` меняет "
+"значения двух переменных местами), пересечения *внутри* множества "
+"присваиваемых переменных выполняются слева направо, что иногда приводит к "
+"неожиданным результатам. Например, следующая программа выводит ``[0, 2]``::"
 
 #: ../../reference/simple_stmts.rst:246
 msgid ""
@@ -364,24 +384,30 @@ msgid ""
 "i, x[i] = 1, 2         # i is updated, then x[i] is updated\n"
 "print(x)"
 msgstr ""
+"x = [0, 1]\n"
+"i = 0\n"
+"i, x[i] = 1, 2         # сначала обновляется i, затем обновляется x[i]\n"
+"print(x)"
 
 #: ../../reference/simple_stmts.rst:254
 msgid ":pep:`3132` - Extended Iterable Unpacking"
-msgstr ""
+msgstr ":pep:`3132` — Расширенная распаковка итерируемых объектов"
 
 #: ../../reference/simple_stmts.rst:255
 msgid "The specification for the ``*target`` feature."
-msgstr ""
+msgstr "Спецификация конструкции ``*target``."
 
 #: ../../reference/simple_stmts.rst:261
 msgid "Augmented assignment statements"
-msgstr ""
+msgstr "Комбинированные инструкции присваивания"
 
 #: ../../reference/simple_stmts.rst:279
 msgid ""
 "Augmented assignment is the combination, in a single statement, of a binary "
 "operation and an assignment statement:"
 msgstr ""
+"Комбинированное присваивание — это комбинация в одной инструкции бинарной "
+"операции и инструкции присваивания:"
 
 #: ../../reference/simple_stmts.rst:288
 msgid ""

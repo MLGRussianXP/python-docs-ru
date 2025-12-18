@@ -406,7 +406,7 @@ msgid ""
 "Augmented assignment is the combination, in a single statement, of a binary "
 "operation and an assignment statement:"
 msgstr ""
-"Комбинированное присваивание — это комбинация в одной инструкции бинарной "
+"Комбинированное присваивание — это объединение в одной инструкции бинарной "
 "операции и инструкции присваивания:"
 
 #: ../../reference/simple_stmts.rst:288

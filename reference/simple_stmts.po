@@ -414,6 +414,8 @@ msgid ""
 "(See section :ref:`primaries` for the syntax definitions of the last three "
 "symbols.)"
 msgstr ""
+"(См. раздел :ref:`primaries` для описания синтаксиса трёх последних "
+"операторов.)"
 
 #: ../../reference/simple_stmts.rst:291
 msgid ""

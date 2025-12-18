@@ -453,6 +453,10 @@ msgid ""
 "first looks-up ``a[i]``, then it evaluates ``f(x)`` and performs the "
 "addition, and lastly, it writes the result back to ``a[i]``."
 msgstr ""
+"В отличие от обычного присваивания, комбинированное присваивание вычисляет "
+"левую часть *перед* правой. Например, в выражении ``a[i] += f(x)`` сначала "
+"вычисляется ``a[i]``, затем вычисляется ``f(x)`` и выполняется сложение, "
+"после чего результат записывается обратно в ``a[i]``."
 
 #: ../../reference/simple_stmts.rst:307
 msgid ""
@@ -462,6 +466,11 @@ msgid ""
 "possible *in-place* behavior, the binary operation performed by augmented "
 "assignment is the same as the normal binary operations."
 msgstr ""
+"За исключением присваивания кортежам и множеству целей в одной инструкции, "
+"присваивание, выполняемое комбинированной инструкцией, обрабатывается так "
+"же, как обычное присваивание. Аналогично, за исключением возможного "
+"поведения *на месте*, бинарная операция, выполняемая при комбинированном "
+"присваивании, идентична обычной бинарной операции."
 
 #: ../../reference/simple_stmts.rst:313
 msgid ""
@@ -469,10 +478,13 @@ msgid ""
 "class and instance attributes <attr-target-note>` applies as for regular "
 "assignments."
 msgstr ""
+"Для целей, которые являются ссылками на атрибуты, действует то же "
+":ref:`предостережение о различии атрибутов класса и экземпляра <attr-target-"
+"note>`, что и для обычного присваивания."
 
 #: ../../reference/simple_stmts.rst:320
 msgid "Annotated assignment statements"
-msgstr ""
+msgstr "Аннотированные инструкции присваивания"
 
 #: ../../reference/simple_stmts.rst:327
 msgid ""
@@ -480,12 +492,17 @@ msgid ""
 " single statement, of a variable or attribute annotation and an optional "
 "assignment statement:"
 msgstr ""
+":term:`Аннотированное <variable annotation>` присваивание — это комбинация в"
+" одной инструкции аннотации переменной или атрибута с необязательной "
+"инструкцией присваивания:"
 
 #: ../../reference/simple_stmts.rst:334
 msgid ""
 "The difference from normal :ref:`assignment` is that only a single target is"
 " allowed."
 msgstr ""
+"Отличие от обычного :ref:`assignment` заключается в том, что допускается "
+"только одна цель."
 
 #: ../../reference/simple_stmts.rst:336
 msgid ""
@@ -496,18 +513,29 @@ msgid ""
 "evaluated using the :attr:`~object.__annotations__` attribute of a class or "
 "module, or using the facilities in the :mod:`annotationlib` module."
 msgstr ""
+"Цель присваивания считается «простой», если она состоит из одного имени, не "
+"заключённого в скобки. Для простых целей в области видимости класса или "
+"модуля^ аннотации собираются в вычисляемую отложенно :ref:`область аннотаций"
+" <annotation-scopes>`. Эти аннотации можно получить через атрибут "
+":attr:`~object.__annotations__` класса или модуля, либо через средства "
+"модуля :mod:`annotationlib`."
 
 #: ../../reference/simple_stmts.rst:345
 msgid ""
 "If the assignment target is not simple (an attribute, subscript node, or "
 "parenthesized name), the annotation is never evaluated."
 msgstr ""
+"Если цель присваивания не простая (атрибут, элемент по индексу или имя в "
+"скобках), аннотация никогда не вычисляется."
 
 #: ../../reference/simple_stmts.rst:348
 msgid ""
 "If a name is annotated in a function scope, then this name is local for that"
 " scope. Annotations are never evaluated and stored in function scopes."
 msgstr ""
+"Если имя аннотировано в области видимости функции, оно считается локальным "
+"для этой области. Аннотации в функциях никогда не вычисляются и не "
+"сохраняются."
 
 #: ../../reference/simple_stmts.rst:351
 msgid ""
@@ -517,6 +545,10 @@ msgid ""
 " the target except for the last :meth:`~object.__setitem__` or "
 ":meth:`~object.__setattr__` call."
 msgstr ""
+"Если правая часть присутствует, аннотированное присваивание выполняет "
+"присваивание как обычное, игнорируя аннотацию. Если правая часть отсутствует"
+" для цели выражения, интерпретатор вычисляет цель за исключением последнего "
+"вызова :meth:`~object.__setitem__` или :meth:`~object.__setattr__`."
 
 #: ../../reference/simple_stmts.rst:359
 msgid ":pep:`526` - Syntax for Variable Annotations"

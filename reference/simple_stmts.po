@@ -648,16 +648,27 @@ msgid ""
 "that failed in the error message; it will be displayed as part of the stack "
 "trace."
 msgstr ""
+"Этот эквивалентный код предполагает, что :const:`__debug__` и "
+":exc:`AssertionError` ссылаются на одноимённые встроенные переменные. В "
+"текущей реализации встроенная переменная ``__debug__`` имеет значение "
+"``True`` при обычном запуске и ``False``, когда запрошена оптимизация (опция"
+" командной строки :option:`-O`). Текущий генератор кода не создаёт никакого "
+"кода для инструкции :keyword:`assert`, если оптимизация запрошена во время "
+"компиляции. Обратите внимание, что нет необходимости включать исходный код "
+"выражения, которое не прошло проверку, в сообщение об ошибке; он будет "
+"отображён как часть трассировки стека."
 
 #: ../../reference/simple_stmts.rst:418
 msgid ""
 "Assignments to :const:`__debug__` are illegal.  The value for the built-in "
 "variable is determined when the interpreter starts."
 msgstr ""
+"Присваивания :const:`__debug__` недопустимы. Значение этой встроенной "
+"переменной определяется при запуске интерпретатора."
 
 #: ../../reference/simple_stmts.rst:425
 msgid "The :keyword:`!pass` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!pass`"
 
 #: ../../reference/simple_stmts.rst:435
 msgid ""
@@ -665,6 +676,9 @@ msgid ""
 "happens. It is useful as a placeholder when a statement is required "
 "syntactically, but no code needs to be executed, for example::"
 msgstr ""
+"Инструкция :keyword:`pass` — это пустая операция. При её выполнении ничего "
+"не происходит. Она полезна как заглушка в тех случаях, когда синтаксически "
+"требуется инструкция, но выполнять никакой код не нужно, например::"
 
 #: ../../reference/simple_stmts.rst:439
 msgid ""
@@ -672,22 +686,28 @@ msgid ""
 "\n"
 "class C: pass       # a class with no methods (yet)"
 msgstr ""
+"def f(arg): pass    # функция, которая (пока) ничего не делает\n"
+"\n"
+"class C: pass       # класс без методов (пока)"
 
 #: ../../reference/simple_stmts.rst:447
 msgid "The :keyword:`!del` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!del`"
 
 #: ../../reference/simple_stmts.rst:457
 msgid ""
 "Deletion is recursively defined very similar to the way assignment is "
 "defined. Rather than spelling it out in full details, here are some hints."
 msgstr ""
+"Удаление определяется рекурсивно, очень похоже на то, как определяется "
+"присваивание. Вместо подробного изложения всех деталей ниже приведены "
+"некоторые пояснения."
 
 #: ../../reference/simple_stmts.rst:460
 msgid ""
 "Deletion of a target list recursively deletes each target, from left to "
 "right."
-msgstr ""
+msgstr "Удаление списка целей рекурсивно удаляет каждую цель слева направо."
 
 #: ../../reference/simple_stmts.rst:466
 msgid ""

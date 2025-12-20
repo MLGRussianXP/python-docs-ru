@@ -820,6 +820,8 @@ msgid ""
 "yield <expr>\n"
 "yield from <expr>"
 msgstr ""
+"yield <expr>\n"
+"yield from <expr>"
 
 #: ../../reference/simple_stmts.rst:543
 msgid "are equivalent to the yield expression statements ::"
@@ -830,6 +832,8 @@ msgid ""
 "(yield <expr>)\n"
 "(yield from <expr>)"
 msgstr ""
+"(yield <expr>)\n"
+"(yield from <expr>)"
 
 #: ../../reference/simple_stmts.rst:548
 msgid ""

@@ -814,6 +814,10 @@ msgid ""
 "parentheses that would otherwise be required in the equivalent yield "
 "expression statement. For example, the yield statements ::"
 msgstr ""
+"Инструкция :keyword:`yield` семантически эквивалентна :ref:`выражению yield "
+"<yieldexpr>`. Использование инструкции ``yield`` позволяет не ставить "
+"скобки, которые требовались бы в эквивалентном выражении yield. Например, "
+"инструкции ::"
 
 #: ../../reference/simple_stmts.rst:540
 msgid ""
@@ -825,7 +829,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:543
 msgid "are equivalent to the yield expression statements ::"
-msgstr ""
+msgstr "эквивалентны выражениям ::"
 
 #: ../../reference/simple_stmts.rst:545
 msgid ""
@@ -843,12 +847,18 @@ msgid ""
 "cause that definition to create a generator function instead of a normal "
 "function."
 msgstr ""
+"Выражения и инструкции yield используются только при определении "
+":term:`генераторной` функции и только в её теле. Использование "
+":keyword:`yield` внутри определения функции делает эту функцию генераторной,"
+" а не обычной."
 
 #: ../../reference/simple_stmts.rst:553
 msgid ""
 "For full details of :keyword:`yield` semantics, refer to the "
 ":ref:`yieldexpr` section."
 msgstr ""
+"Полную информацию о семантике :keyword:`yield` можно найти в разделе "
+":ref:`yieldexpr`."
 
 #: ../../reference/simple_stmts.rst:559
 msgid "The :keyword:`!raise` statement"

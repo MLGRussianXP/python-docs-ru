@@ -775,6 +775,9 @@ msgid ""
 " a :keyword:`finally` clause, that :keyword:`!finally` clause is executed "
 "before really leaving the function."
 msgstr ""
+"Когда :keyword:`return` выходит из инструкции :keyword:`try` с "
+":keyword:`finally`, то перед фактическим завершением функции выполняется "
+"этот блок :keyword:`!finally`."
 
 #: ../../reference/simple_stmts.rst:510
 msgid ""
@@ -783,6 +786,10 @@ msgid ""
 "returned value (if any) is used as an argument to construct "
 ":exc:`StopIteration` and becomes the :attr:`StopIteration.value` attribute."
 msgstr ""
+"В генераторной функции инструкция :keyword:`return` указывает на завершение "
+"генератора и выбрасывает исключение :exc:`StopIteration`. Возвращаемое "
+"значение (если есть) передаётся конструктору :exc:`StopIteration` и "
+"становится атрибутом :attr:`StopIteration.value`."
 
 #: ../../reference/simple_stmts.rst:515
 msgid ""
@@ -791,10 +798,14 @@ msgid ""
 ":exc:`StopAsyncIteration` to be raised.  A non-empty :keyword:`!return` "
 "statement is a syntax error in an asynchronous generator function."
 msgstr ""
+"В асинхронной генераторной функции пустая инструкция :keyword:`return` "
+"указывает на завершение генератора и выбрасывает :exc:`StopAsyncIteration`. "
+"Непустая инструкция :keyword:`!return` в асинхронной генераторной функции "
+"является синтаксической ошибкой."
 
 #: ../../reference/simple_stmts.rst:523
 msgid "The :keyword:`!yield` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!yield`"
 
 #: ../../reference/simple_stmts.rst:535
 msgid ""

@@ -862,7 +862,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:559
 msgid "The :keyword:`!raise` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!raise`"
 
 #: ../../reference/simple_stmts.rst:570
 msgid ""
@@ -871,6 +871,10 @@ msgid ""
 "If there isn't currently an active exception, a :exc:`RuntimeError` "
 "exception is raised indicating that this is an error."
 msgstr ""
+"Если выражения отсутствуют, инструкция :keyword:`raise` повторно возбуждает "
+"исключение, которое в данный момент обрабатывается, так называемое *активное"
+" исключение*. Если активного исключения нет, возбуждается исключение "
+":exc:`RuntimeError`, указывающее на ошибку."
 
 #: ../../reference/simple_stmts.rst:575
 msgid ""

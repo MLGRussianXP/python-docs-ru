@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-17 14:16+0000\n"
+"POT-Creation-Date: 2025-12-19 14:15+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -600,34 +600,41 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:382
 msgid "The :keyword:`!assert` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!assert`"
 
 #: ../../reference/simple_stmts.rst:389
 msgid ""
 "Assert statements are a convenient way to insert debugging assertions into a"
 " program:"
 msgstr ""
+"Инструкции assert — это удобный способ вставки отладочных утверждений  в "
+"программу:"
 
 #: ../../reference/simple_stmts.rst:395
 msgid "The simple form, ``assert expression``, is equivalent to ::"
-msgstr ""
+msgstr "Простая форма, ``assert expression``, эквивалентна ::"
 
 #: ../../reference/simple_stmts.rst:397
 msgid ""
 "if __debug__:\n"
 "    if not expression: raise AssertionError"
 msgstr ""
+"if __debug__:\n"
+"    if not expression: raise AssertionError"
 
 #: ../../reference/simple_stmts.rst:400
 msgid ""
 "The extended form, ``assert expression1, expression2``, is equivalent to ::"
 msgstr ""
+"Расширенная форма, ``assert expression1, expression2``, эквивалентна ::"
 
 #: ../../reference/simple_stmts.rst:402
 msgid ""
 "if __debug__:\n"
 "    if not expression1: raise AssertionError(expression2)"
 msgstr ""
+"if __debug__:\n"
+"    if not expression1: raise AssertionError(expression2)"
 
 #: ../../reference/simple_stmts.rst:409
 msgid ""

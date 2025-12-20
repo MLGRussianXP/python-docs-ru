@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-11 14:21+0000\n"
+"POT-Creation-Date: 2025-12-19 14:15+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -721,7 +722,7 @@ msgstr ""
 
 #: ../../library/xmlrpc.client.rst:527
 msgid ""
-"Convert *params* into an XML-RPC request. or into a response if "
+"Convert *params* into an XML-RPC request, or into a response if "
 "*methodresponse* is true. *params* can be either a tuple of arguments or an "
 "instance of the :exc:`Fault` exception class.  If *methodresponse* is true, "
 "only a single value can be returned, meaning that *params* must be of length"
@@ -807,7 +808,7 @@ msgstr ""
 
 #: ../../library/xmlrpc.client.rst:604
 msgid "Footnotes"
-msgstr ""
+msgstr "Примечания"
 
 #: ../../library/xmlrpc.client.rst:605
 msgid ""

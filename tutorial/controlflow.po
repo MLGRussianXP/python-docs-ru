@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 14:20+0000\n"
+"POT-Creation-Date: 2025-12-19 14:15+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -2475,7 +2475,7 @@ msgstr ""
 
 #: ../../tutorial/controlflow.rst:1155
 msgid "Footnotes"
-msgstr "Сноски"
+msgstr "Примечания"
 
 #: ../../tutorial/controlflow.rst:1156
 msgid ""

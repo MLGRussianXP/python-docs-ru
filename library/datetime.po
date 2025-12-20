@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-16 14:19+0000\n"
+"POT-Creation-Date: 2025-12-19 14:15+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1004,11 +1005,11 @@ msgstr ""
 msgid "\\(3)"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:663
 msgid "``date1 == date2``"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:664
 msgid "``date1 != date2``"
 msgstr ""
 
@@ -1016,19 +1017,19 @@ msgstr ""
 msgid "Equality comparison. (4)"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:666
 msgid "``date1 < date2``"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:667
 msgid "``date1 > date2``"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:668
 msgid "``date1 <= date2``"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:669
 msgid "``date1 >= date2``"
 msgstr ""
 
@@ -1777,27 +1778,27 @@ msgstr ""
 msgid "``timedelta = datetime1 - datetime2``"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:1259
 msgid "``datetime1 == datetime2``"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:1260
 msgid "``datetime1 != datetime2``"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:1262
 msgid "``datetime1 < datetime2``"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:1263
 msgid "``datetime1 > datetime2``"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:1264
 msgid "``datetime1 <= datetime2``"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:1265
 msgid "``datetime1 >= datetime2``"
 msgstr ""
 
@@ -3511,11 +3512,11 @@ msgstr ""
 msgid "Weekday as locale's abbreviated name."
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2490
 msgid "Sun, Mon, ..., Sat (en_US);"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2492
 msgid "So, Mo, ..., Sa (de_DE)"
 msgstr ""
 
@@ -3527,11 +3528,11 @@ msgstr ""
 msgid "Weekday as locale's full name."
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2495
 msgid "Sunday, Monday, ..., Saturday (en_US);"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2497
 msgid "Sonntag, Montag, ..., Samstag (de_DE)"
 msgstr ""
 
@@ -3574,11 +3575,11 @@ msgstr ""
 msgid "Month as locale's abbreviated name."
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2507
 msgid "Jan, Feb, ..., Dec (en_US);"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2509
 msgid "Jan, Feb, ..., Dez (de_DE)"
 msgstr ""
 
@@ -3590,11 +3591,11 @@ msgstr ""
 msgid "Month as locale's full name."
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2512
 msgid "January, February, ..., December (en_US);"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2514
 msgid "Januar, Februar, ..., Dezember (de_DE)"
 msgstr ""
 
@@ -3662,11 +3663,11 @@ msgstr ""
 msgid "Locale's equivalent of either AM or PM."
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2532
 msgid "AM, PM (en_US);"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2533
 msgid "am, pm (de_DE)"
 msgstr ""
 
@@ -3795,11 +3796,11 @@ msgstr ""
 msgid "Locale's appropriate date and time representation."
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2572
 msgid "Tue Aug 16 21:30:00 1988 (en_US);"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2574
 msgid "Di 16 Aug 21:30:00 1988 (de_DE)"
 msgstr ""
 
@@ -3811,15 +3812,15 @@ msgstr ""
 msgid "Locale's appropriate date representation."
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2577
 msgid "08/16/88 (None);"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2578
 msgid "08/16/1988 (en_US);"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2579
 msgid "16.08.1988 (de_DE)"
 msgstr ""
 
@@ -3831,11 +3832,11 @@ msgstr ""
 msgid "Locale's appropriate time representation."
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2581
 msgid "21:30:00 (en_US);"
 msgstr ""
 
-#: ../../library/datetime.rst:0
+#: ../../library/datetime.rst:2582
 msgid "21:30:00 (de_DE)"
 msgstr ""
 
@@ -4162,7 +4163,7 @@ msgstr ""
 
 #: ../../library/datetime.rst:2785
 msgid "Footnotes"
-msgstr ""
+msgstr "Примечания"
 
 #: ../../library/datetime.rst:2786
 msgid "If, that is, we ignore the effects of Relativity"

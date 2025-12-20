@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-16 17:23+0000\n"
+"POT-Creation-Date: 2025-12-19 14:15+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,7 +168,7 @@ msgid ""
 "Returns the canonical combining class assigned to the character *chr* as "
 "integer. Returns ``0`` if no combining class is defined. See the `Canonical "
 "Combining Class Values section of the Unicode Character Database "
-"<www.unicode.org/reports/tr44/tr44-34.html#Canonical_Combining_Class_Values>`_"
+"<https://www.unicode.org/reports/tr44/tr44-34.html#Canonical_Combining_Class_Values>`_"
 " for more information."
 msgstr ""
 
@@ -277,7 +278,7 @@ msgstr ""
 
 #: ../../library/unicodedata.rst:213
 msgid "Footnotes"
-msgstr ""
+msgstr "Примечания"
 
 #: ../../library/unicodedata.rst:214
 msgid "https://www.unicode.org/Public/16.0.0/ucd/NameAliases.txt"

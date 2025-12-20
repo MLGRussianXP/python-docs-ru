@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 14:19+0000\n"
+"POT-Creation-Date: 2025-12-19 14:15+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -104,26 +105,26 @@ msgid "The following functions are provided for min-heaps:"
 msgstr ""
 
 #: ../../library/heapq.rst:63
+msgid "Transform list *x* into a min-heap, in-place, in linear time."
+msgstr ""
+
+#: ../../library/heapq.rst:68
 msgid ""
 "Push the value *item* onto the *heap*, maintaining the min-heap invariant."
 msgstr ""
 
-#: ../../library/heapq.rst:68
+#: ../../library/heapq.rst:73
 msgid ""
 "Pop and return the smallest item from the *heap*, maintaining the min-heap "
 "invariant.  If the heap is empty, :exc:`IndexError` is raised.  To access "
 "the smallest item without popping it, use ``heap[0]``."
 msgstr ""
 
-#: ../../library/heapq.rst:75
+#: ../../library/heapq.rst:80
 msgid ""
 "Push *item* on the heap, then pop and return the smallest item from the "
 "*heap*.  The combined action runs more efficiently than :func:`heappush` "
 "followed by a separate call to :func:`heappop`."
-msgstr ""
-
-#: ../../library/heapq.rst:82
-msgid "Transform list *x* into a min-heap, in-place, in linear time."
 msgstr ""
 
 #: ../../library/heapq.rst:87
@@ -521,7 +522,7 @@ msgstr ""
 
 #: ../../library/heapq.rst:380
 msgid "Footnotes"
-msgstr ""
+msgstr "Примечания"
 
 #: ../../library/heapq.rst:381
 msgid ""

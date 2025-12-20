@@ -743,25 +743,31 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:486
 msgid "The :keyword:`!return` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!return`"
 
 #: ../../reference/simple_stmts.rst:496
 msgid ""
 ":keyword:`return` may only occur syntactically nested in a function "
 "definition, not within a nested class definition."
 msgstr ""
+":keyword:`return` может встречаться только внутри определения функции, но не"
+" внутри определения вложенного класса."
 
 #: ../../reference/simple_stmts.rst:499
 msgid ""
 "If an expression list is present, it is evaluated, else ``None`` is "
 "substituted."
 msgstr ""
+"Если список выражений присутствует, он вычисляется, в противном случае он "
+"заменяется на ``None``."
 
 #: ../../reference/simple_stmts.rst:501
 msgid ""
 ":keyword:`return` leaves the current function call with the expression list "
 "(or ``None``) as return value."
 msgstr ""
+":keyword:`return` завершает текущий вызов функции, возвращая список "
+"выражений (или ``None``) в качестве значения."
 
 #: ../../reference/simple_stmts.rst:506
 msgid ""

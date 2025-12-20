@@ -716,6 +716,10 @@ msgid ""
 "statement in the same code block.  Trying to delete an unbound name raises a"
 " :exc:`NameError` exception."
 msgstr ""
+"Удаление имени удаляет привязку этого имени из локального или глобального "
+"пространства имён — в зависимости от того, присутствует ли это имя в "
+"инструкции :keyword:`global` в том же блоке кода. Попытка удалить имя без "
+"привязки приводит к возбуждению исключения :exc:`NameError`."
 
 #: ../../reference/simple_stmts.rst:473
 msgid ""
@@ -724,12 +728,18 @@ msgid ""
 "to assignment of an empty slice of the right type (but even this is "
 "determined by the sliced object)."
 msgstr ""
+"Удаление атрибутов, индексируемых элементов и срезов передаётся "
+"соответствующему первичному объекту. Удаление среза в общем случае "
+"эквивалентно присваиванию пустого среза соответствующего типа (однако даже "
+"это определяется объектом, к которому применяется срез)."
 
 #: ../../reference/simple_stmts.rst:478
 msgid ""
 "Previously it was illegal to delete a name from the local namespace if it "
 "occurs as a free variable in a nested block."
 msgstr ""
+"Раньше было запрещено удалять имя из локального пространства имён, если оно "
+"встречается как свободная переменная во вложенном блоке."
 
 #: ../../reference/simple_stmts.rst:486
 msgid "The :keyword:`!return` statement"

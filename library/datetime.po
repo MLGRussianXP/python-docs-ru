@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-19 14:15+0000\n"
+"POT-Creation-Date: 2025-12-21 14:13+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -654,7 +654,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/datetime.rst:400 ../../library/datetime.rst:672
-#: ../../library/datetime.rst:2663
+#: ../../library/datetime.rst:2696
 msgid "Notes:"
 msgstr ""
 
@@ -1676,7 +1676,7 @@ msgid ""
 "equivalent to::"
 msgstr ""
 
-#: ../../library/datetime.rst:1148 ../../library/datetime.rst:2643
+#: ../../library/datetime.rst:1148 ../../library/datetime.rst:2676
 msgid "datetime(*(time.strptime(date_string, format)[0:6]))"
 msgstr ""
 
@@ -2007,7 +2007,7 @@ msgstr ""
 
 #: ../../library/datetime.rst:1431 ../../library/datetime.rst:2042
 #: ../../library/datetime.rst:2149 ../../library/datetime.rst:2394
-#: ../../library/datetime.rst:2406 ../../library/datetime.rst:2716
+#: ../../library/datetime.rst:2406 ../../library/datetime.rst:2749
 msgid "The UTC offset is not restricted to a whole number of minutes."
 msgstr ""
 
@@ -3715,7 +3715,7 @@ msgstr ""
 msgid "\\(5)"
 msgstr ""
 
-#: ../../library/datetime.rst:2545 ../../library/datetime.rst:2704
+#: ../../library/datetime.rst:2545 ../../library/datetime.rst:2737
 msgid "``%z``"
 msgstr ""
 
@@ -3734,7 +3734,7 @@ msgstr ""
 msgid "\\(6)"
 msgstr ""
 
-#: ../../library/datetime.rst:2550 ../../library/datetime.rst:2730
+#: ../../library/datetime.rst:2550 ../../library/datetime.rst:2763
 msgid "``%Z``"
 msgstr ""
 
@@ -3902,7 +3902,7 @@ msgstr ""
 msgid "\\(8), \\(9)"
 msgstr ""
 
-#: ../../library/datetime.rst:2607 ../../library/datetime.rst:2726
+#: ../../library/datetime.rst:2607 ../../library/datetime.rst:2759
 msgid "``%:z``"
 msgstr ""
 
@@ -3956,37 +3956,57 @@ msgstr ""
 
 #: ../../library/datetime.rst:2637
 msgid ""
-"For the :meth:`.datetime.strptime` class method, the default value is "
-"``1900-01-01T00:00:00.000``: any components not specified in the format "
-"string will be pulled from the default value. [#]_"
+"For the :meth:`.datetime.strptime` and :meth:`.date.strptime` class methods,"
+" the default value is ``1900-01-01T00:00:00.000``: any components not "
+"specified in the format string will be pulled from the default value."
 msgstr ""
 
-#: ../../library/datetime.rst:2641
+#: ../../library/datetime.rst:2642
+msgid ""
+"When used to parse partial dates lacking a year, :meth:`.datetime.strptime` "
+"and :meth:`.date.strptime` will raise when encountering February 29 because "
+"the default year of 1900 is *not* a leap year.  Always add a default leap "
+"year to partial date strings before parsing."
+msgstr ""
+
+#: ../../library/datetime.rst:2663
+msgid ""
+">>> from datetime import datetime\n"
+">>> value = \"2/29\"\n"
+">>> datetime.strptime(value, \"%m/%d\")\n"
+"Traceback (most recent call last):\n"
+"...\n"
+"ValueError: day 29 must be in range 1..28 for month 2 in year 1900\n"
+">>> datetime.strptime(f\"1904 {value}\", \"%Y %m/%d\")\n"
+"datetime.datetime(1904, 2, 29, 0, 0)"
+msgstr ""
+
+#: ../../library/datetime.rst:2674
 msgid "Using ``datetime.strptime(date_string, format)`` is equivalent to::"
 msgstr ""
 
-#: ../../library/datetime.rst:2645
+#: ../../library/datetime.rst:2678
 msgid ""
 "except when the format includes sub-second components or time zone offset "
 "information, which are supported in ``datetime.strptime`` but are discarded "
 "by ``time.strptime``."
 msgstr ""
 
-#: ../../library/datetime.rst:2649
+#: ../../library/datetime.rst:2682
 msgid ""
 "For :class:`.time` objects, the format codes for year, month, and day should"
 " not be used, as :class:`!time` objects have no such values. If they're used"
 " anyway, 1900 is substituted for the year, and 1 for the month and day."
 msgstr ""
 
-#: ../../library/datetime.rst:2653
+#: ../../library/datetime.rst:2686
 msgid ""
 "For :class:`date` objects, the format codes for hours, minutes, seconds, and"
 " microseconds should not be used, as :class:`date` objects have no such "
 "values. If they're used anyway, 0 is substituted for them."
 msgstr ""
 
-#: ../../library/datetime.rst:2657
+#: ../../library/datetime.rst:2690
 msgid ""
 "For the same reason, handling of format strings containing Unicode code "
 "points that can't be represented in the charset of the current locale is "
@@ -3995,7 +4015,7 @@ msgid ""
 ":exc:`UnicodeError` or return an empty string instead."
 msgstr ""
 
-#: ../../library/datetime.rst:2666
+#: ../../library/datetime.rst:2699
 msgid ""
 "Because the format depends on the current locale, care should be taken when "
 "making assumptions about the output value. Field orderings will vary (for "
@@ -4003,38 +4023,38 @@ msgid ""
 "contain non-ASCII characters."
 msgstr ""
 
-#: ../../library/datetime.rst:2672
+#: ../../library/datetime.rst:2705
 msgid ""
 "The :meth:`~.datetime.strptime` method can parse years in the full [1, 9999]"
 " range, but years < 1000 must be zero-filled to 4-digit width."
 msgstr ""
 
-#: ../../library/datetime.rst:2675
+#: ../../library/datetime.rst:2708
 msgid ""
 "In previous versions, :meth:`~.datetime.strftime` method was restricted to "
 "years >= 1900."
 msgstr ""
 
-#: ../../library/datetime.rst:2679
+#: ../../library/datetime.rst:2712
 msgid ""
 "In version 3.2, :meth:`~.datetime.strftime` method was restricted to years "
 ">= 1000."
 msgstr ""
 
-#: ../../library/datetime.rst:2684
+#: ../../library/datetime.rst:2717
 msgid ""
 "When used with the :meth:`~.datetime.strptime` method, the ``%p`` directive "
 "only affects the output hour field if the ``%I`` directive is used to parse "
 "the hour."
 msgstr ""
 
-#: ../../library/datetime.rst:2688
+#: ../../library/datetime.rst:2721
 msgid ""
 "Unlike the :mod:`time` module, the :mod:`!datetime` module does not support "
 "leap seconds."
 msgstr ""
 
-#: ../../library/datetime.rst:2692
+#: ../../library/datetime.rst:2725
 msgid ""
 "When used with the :meth:`~.datetime.strptime` method, the ``%f`` directive "
 "accepts from one to six digits and zero pads on the right. ``%f`` is an "
@@ -4042,17 +4062,17 @@ msgid ""
 " separately in datetime objects, and therefore always available)."
 msgstr ""
 
-#: ../../library/datetime.rst:2699
+#: ../../library/datetime.rst:2732
 msgid ""
 "For a naive object, the ``%z``, ``%:z`` and ``%Z`` format codes are replaced"
 " by empty strings."
 msgstr ""
 
-#: ../../library/datetime.rst:2702
+#: ../../library/datetime.rst:2735
 msgid "For an aware object:"
 msgstr ""
 
-#: ../../library/datetime.rst:2705
+#: ../../library/datetime.rst:2738
 msgid ""
 ":meth:`~.datetime.utcoffset` is transformed into a string of the form "
 "``±HHMM[SS[.ffffff]]``, where ``HH`` is a 2-digit string giving the number "
@@ -4066,7 +4086,7 @@ msgid ""
 "``%z`` is replaced with the string ``'-0330'``."
 msgstr ""
 
-#: ../../library/datetime.rst:2719
+#: ../../library/datetime.rst:2752
 msgid ""
 "When the ``%z`` directive is provided to the  :meth:`~.datetime.strptime` "
 "method, the UTC offsets can have a colon as a separator between hours, "
@@ -4075,53 +4095,53 @@ msgid ""
 "``'+00:00'``."
 msgstr ""
 
-#: ../../library/datetime.rst:2727
+#: ../../library/datetime.rst:2760
 msgid ""
 "Behaves exactly as ``%z``, but has a colon separator added between hours, "
 "minutes and seconds."
 msgstr ""
 
-#: ../../library/datetime.rst:2731
+#: ../../library/datetime.rst:2764
 msgid ""
 "In :meth:`~.datetime.strftime`, ``%Z`` is replaced by an empty string if "
 ":meth:`~.datetime.tzname` returns ``None``; otherwise ``%Z`` is replaced by "
 "the returned value, which must be a string."
 msgstr ""
 
-#: ../../library/datetime.rst:2735
+#: ../../library/datetime.rst:2768
 msgid ":meth:`~.datetime.strptime` only accepts certain values for ``%Z``:"
 msgstr ""
 
-#: ../../library/datetime.rst:2737
+#: ../../library/datetime.rst:2770
 msgid "any value in ``time.tzname`` for your machine's locale"
 msgstr ""
 
-#: ../../library/datetime.rst:2738
+#: ../../library/datetime.rst:2771
 msgid "the hard-coded values ``UTC`` and ``GMT``"
 msgstr ""
 
-#: ../../library/datetime.rst:2740
+#: ../../library/datetime.rst:2773
 msgid ""
 "So someone living in Japan may have ``JST``, ``UTC``, and ``GMT`` as valid "
 "values, but probably not ``EST``. It will raise ``ValueError`` for invalid "
 "values."
 msgstr ""
 
-#: ../../library/datetime.rst:2744
+#: ../../library/datetime.rst:2777
 msgid ""
 "When the ``%z`` directive is provided to the :meth:`~.datetime.strptime` "
 "method, an aware :class:`.datetime` object will be produced. The ``tzinfo`` "
 "of the result will be set to a :class:`timezone` instance."
 msgstr ""
 
-#: ../../library/datetime.rst:2750
+#: ../../library/datetime.rst:2783
 msgid ""
 "When used with the :meth:`~.datetime.strptime` method, ``%U`` and ``%W`` are"
 " only used in calculations when the day of the week and the calendar year "
 "(``%Y``) are specified."
 msgstr ""
 
-#: ../../library/datetime.rst:2755
+#: ../../library/datetime.rst:2788
 msgid ""
 "Similar to ``%U`` and ``%W``, ``%V`` is only used in calculations when the "
 "day of the week and the ISO year (``%G``) are specified in a "
@@ -4129,7 +4149,7 @@ msgid ""
 "are not interchangeable."
 msgstr ""
 
-#: ../../library/datetime.rst:2761
+#: ../../library/datetime.rst:2794
 msgid ""
 "When used with the :meth:`~.datetime.strptime` method, the leading zero is "
 "optional for  formats ``%d``, ``%m``, ``%H``, ``%I``, ``%M``, ``%S``, "
@@ -4137,23 +4157,23 @@ msgid ""
 "zero."
 msgstr ""
 
-#: ../../library/datetime.rst:2766
+#: ../../library/datetime.rst:2799
 msgid ""
 "When parsing a month and day using :meth:`~.datetime.strptime`, always "
 "include a year in the format.  If the value you need to parse lacks a year, "
 "append an explicit dummy leap year.  Otherwise your code will raise an "
 "exception when it encounters leap day because the default year used by the "
-"parser is not a leap year.  Users run into this bug every four years..."
+"parser (1900) is not a leap year.  Users run into that bug every leap year."
 msgstr ""
 
-#: ../../library/datetime.rst:2772
+#: ../../library/datetime.rst:2805
 msgid ""
 ">>> month_day = \"02/29\"\n"
 ">>> datetime.strptime(f\"{month_day};1984\", \"%m/%d;%Y\")  # No leap year bug.\n"
 "datetime.datetime(1984, 2, 29, 0, 0)"
 msgstr ""
 
-#: ../../library/datetime.rst:2778
+#: ../../library/datetime.rst:2811
 msgid ""
 ":meth:`~.datetime.strptime` calls using a format string containing a day of "
 "month without a year now emit a :exc:`DeprecationWarning`. In 3.15 or later "
@@ -4161,15 +4181,15 @@ msgid ""
 "See :gh:`70647`."
 msgstr ""
 
-#: ../../library/datetime.rst:2785
+#: ../../library/datetime.rst:2818
 msgid "Footnotes"
 msgstr "Примечания"
 
-#: ../../library/datetime.rst:2786
+#: ../../library/datetime.rst:2819
 msgid "If, that is, we ignore the effects of Relativity"
 msgstr ""
 
-#: ../../library/datetime.rst:2788
+#: ../../library/datetime.rst:2821
 msgid ""
 "This matches the definition of the \"proleptic Gregorian\" calendar in "
 "Dershowitz and Reingold's book *Calendrical Calculations*, where it's the "
@@ -4178,17 +4198,11 @@ msgid ""
 "systems."
 msgstr ""
 
-#: ../../library/datetime.rst:2794
+#: ../../library/datetime.rst:2827
 msgid ""
 "See R. H. van Gent's `guide to the mathematics of the ISO 8601 calendar "
 "<https://web.archive.org/web/20220531051136/https://webspace.science.uu.nl/~gent0113/calendar/isocalendar.htm>`_"
 " for a good explanation."
-msgstr ""
-
-#: ../../library/datetime.rst:2798
-msgid ""
-"Passing ``datetime.strptime('Feb 29', '%b %d')`` will fail since 1900 is not"
-" a leap year."
 msgstr ""
 
 #: ../../library/datetime.rst:2441

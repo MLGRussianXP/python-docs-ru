@@ -1098,7 +1098,7 @@ msgid ""
 ":keyword:`while` loop, but not nested in a function or class definition "
 "within that loop."
 msgstr ""
-"Инструкция :keyword:`break` может использоваться только внутри цикла "
+"Инструкция :keyword:`break` может использоваться только внутри циклов "
 ":keyword:`for` или :keyword:`while`, но не внутри определения функции или "
 "класса, вложенного в такой цикл."
 
@@ -1139,6 +1139,10 @@ msgid ""
 "within that loop.  It continues with the next cycle of the nearest enclosing"
 " loop."
 msgstr ""
+"Инструкция :keyword:`continue` может использоваться только внутри циклов "
+":keyword:`for` или :keyword:`while`, но не внутри определения функции или "
+"класса, вложенного в такой цикл. Она немедленно переходит к следующей "
+"итерации ближайшего охватывающего цикла."
 
 #: ../../reference/simple_stmts.rst:734
 msgid ""
@@ -1146,26 +1150,34 @@ msgid ""
 "with a :keyword:`finally` clause, that :keyword:`!finally` clause is "
 "executed before really starting the next loop cycle."
 msgstr ""
+"Когда :keyword:`continue` передаёт управление за пределы инструкции "
+":keyword:`try` с частью :keyword:`finally`, то перед фактическим началом "
+"следующей итерации цикла выполняется эта часть :keyword:`!finally`."
 
 #: ../../reference/simple_stmts.rst:743
 msgid "The :keyword:`!import` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!import`"
 
 #: ../../reference/simple_stmts.rst:764
 msgid ""
 "The basic import statement (no :keyword:`from` clause) is executed in two "
 "steps:"
 msgstr ""
+"Базовая форма инструкции импорта (без части :keyword:`from`) выполняется в "
+"два этапа:"
 
 #: ../../reference/simple_stmts.rst:767
 msgid "find a module, loading and initializing it if necessary"
 msgstr ""
+"находится модуль, который при необходимости загружается и инициализируется"
 
 #: ../../reference/simple_stmts.rst:768
 msgid ""
 "define a name or names in the local namespace for the scope where the "
 ":keyword:`import` statement occurs."
 msgstr ""
+"в локальном пространстве имён области видимости, в которой встречается "
+"инструкция :keyword:`import`, определяется одно или несколько имён."
 
 #: ../../reference/simple_stmts.rst:771
 msgid ""
@@ -1173,6 +1185,9 @@ msgid ""
 "steps are carried out separately for each clause, just as though the clauses"
 " had been separated out into individual import statements."
 msgstr ""
+"Когда инструкция содержит несколько частей (разделённых запятыми), эти два "
+"шага выполняются отдельно для каждой части, словно каждая из них была "
+"записана в виде отдельной инструкции импорта."
 
 #: ../../reference/simple_stmts.rst:776
 msgid ""
@@ -1184,18 +1199,29 @@ msgid ""
 "could not be located, *or* that an error occurred while initializing the "
 "module, which includes execution of the module's code."
 msgstr ""
+"Подробности первого шага — поиска и загрузки модулей — описаны в разделе "
+":ref:`система импорта <importsystem>`, который также рассматривает различные"
+" типы пакетов и модулей, которые могут быть импортированы, а также все хуки,"
+" с помощью которых можно настраивать систему импорта. Обратите внимание, что"
+" ошибки на этом этапе могут означать то, что модуль не удалось найти, *либо*"
+" что ошибка произошла при инициализации модуля, которая включает выполнение "
+"его кода."
 
 #: ../../reference/simple_stmts.rst:784
 msgid ""
 "If the requested module is retrieved successfully, it will be made available"
 " in the local namespace in one of three ways:"
 msgstr ""
+"Если запрошенный модуль успешно получен, он будет доступен в локальном "
+"пространстве имён одним из трёх способов:"
 
 #: ../../reference/simple_stmts.rst:789
 msgid ""
 "If the module name is followed by :keyword:`!as`, then the name following "
 ":keyword:`!as` is bound directly to the imported module."
 msgstr ""
+"Если за именем модуля следует :keyword:`!as`, то имя после :keyword:`!as`, "
+"связывается непосредственно с импортированным модулем."
 
 #: ../../reference/simple_stmts.rst:791
 msgid ""
@@ -1203,6 +1229,9 @@ msgid ""
 "module, the module's name is bound in the local namespace as a reference to "
 "the imported module"
 msgstr ""
+"Если другое имя не указано и импортируемый модуль является модулем верхнего "
+"уровня, имя модуля связывается в локальном пространстве имён как ссылка на "
+"импортированный модуль."
 
 #: ../../reference/simple_stmts.rst:794
 msgid ""
@@ -1211,35 +1240,44 @@ msgid ""
 "namespace as a reference to the top level package. The imported module must "
 "be accessed using its full qualified name rather than directly"
 msgstr ""
+"Если импортируемый модуль *не* является модулем верхнего уровня, то имя "
+"пакета верхнего уровня, содержащего модуль, связывается в локальном "
+"пространстве имён как ссылка на этот пакет. Доступ к импортированному модулю"
+" должен осуществляться по его полному имени, а не напрямую."
 
 #: ../../reference/simple_stmts.rst:804
 msgid "The :keyword:`from` form uses a slightly more complex process:"
-msgstr ""
+msgstr "Форма :keyword:`from` использует немного более сложный процесс:"
 
 #: ../../reference/simple_stmts.rst:806
 msgid ""
 "find the module specified in the :keyword:`from` clause, loading and "
 "initializing it if necessary;"
 msgstr ""
+"находится модуль, указанный в части :keyword:`from`, при необходимости он "
+"загружается и инициализируется;"
 
 #: ../../reference/simple_stmts.rst:808
 msgid ""
 "for each of the identifiers specified in the :keyword:`import` clauses:"
-msgstr ""
+msgstr "для каждого идентификатора, указанного в части :keyword:`import`:"
 
 #: ../../reference/simple_stmts.rst:810
 msgid "check if the imported module has an attribute by that name"
-msgstr ""
+msgstr "проверяется, есть ли у импортированного модуля атрибут с этим именем"
 
 #: ../../reference/simple_stmts.rst:811
 msgid ""
 "if not, attempt to import a submodule with that name and then check the "
 "imported module again for that attribute"
 msgstr ""
+"если атрибут не найден, осуществляется попытка импортировать подмодуль с "
+"этим именем и снова проверить наличие атрибута в нём"
 
 #: ../../reference/simple_stmts.rst:813
 msgid "if the attribute is not found, :exc:`ImportError` is raised."
 msgstr ""
+"если атрибут всё ещё не найден, возбуждается исключение :exc:`ImportError`."
 
 #: ../../reference/simple_stmts.rst:814
 msgid ""
@@ -1247,10 +1285,13 @@ msgid ""
 " the name in the :keyword:`!as` clause if it is present, otherwise using the"
 " attribute name"
 msgstr ""
+"если атрибут найден, в локальном пространстве имён создаётся ссылка на это "
+"значение, используя имя из части :keyword:`!as`, если оно указано, иначе — "
+"имя атрибута"
 
 #: ../../reference/simple_stmts.rst:818
 msgid "Examples::"
-msgstr ""
+msgstr "Примеры::"
 
 #: ../../reference/simple_stmts.rst:820
 msgid ""

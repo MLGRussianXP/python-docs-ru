@@ -1469,11 +1469,12 @@ msgid ""
 "compatibility."
 msgstr ""
 "Инструкции будущих возможностей, включающие историческую функциональность, "
-"по-прежнему распознаются интерпретатором Python 3. К ним относятся: "
-"``absolute_import``, ``division``, ``generators``, ``generator_stop``, "
-"``unicode_literals``, ``print_function``, ``nested_scopes`` и "
-"``with_statement``. Все они избыточны, поскольку всегда включены, и "
-"сохраняются только для обратной совместимости."
+"по-прежнему распознаются интерпретатором Python 3. Список таких возможностей"
+" включает: ``absolute_import``, ``division``, ``generators``, "
+"``generator_stop``, ``unicode_literals``, ``print_function``, "
+"``nested_scopes`` и ``with_statement``. Все такие инструкции избыточны, "
+"поскольку вся эта функциональность уже включена, и сохраняются только для "
+"обратной совместимости."
 
 #: ../../reference/simple_stmts.rst:916
 msgid ""
@@ -1484,6 +1485,13 @@ msgid ""
 "case the compiler may need to parse the module differently.  Such decisions "
 "cannot be pushed off until runtime."
 msgstr ""
+"Инструкции будущих возможностей распознаются и обрабатываются особым образом"
+" на этапе компиляции: изменения в семантике базовых конструкций часто "
+"реализуются за счёт генерации другого кода. В некоторых случаях новая "
+"возможность может даже вводить несовместимый синтаксис (например, новое "
+"зарезервированное слово), и тогда компилятору требуется по-другому "
+"анализировать модуль. Такие решения нельзя откладывать до времени "
+"выполнения."
 
 #: ../../reference/simple_stmts.rst:923
 msgid ""
@@ -1491,6 +1499,9 @@ msgid ""
 "defined, and raises a compile-time error if a future statement contains a "
 "feature not known to it."
 msgstr ""
+"Для каждого конкретного выпуска Python компилятор знает, какие имена "
+"возможностей определены, и выдаёт ошибку на этапе компиляции, если "
+"инструкция будущих возможностей содержит неизвестное ему имя."
 
 #: ../../reference/simple_stmts.rst:927
 msgid ""
@@ -1498,26 +1509,34 @@ msgid ""
 " is a standard module :mod:`__future__`, described later, and it will be "
 "imported in the usual way at the time the future statement is executed."
 msgstr ""
+"Непосредственная семантика времени выполнения такая же, как у обычной "
+"инструкции импорта: существует стандартный модуль :mod:`__future__`, "
+"описанный далее, и он импортируется обычным образом в момент выполнения "
+"инструкции будущих возможностей."
 
 #: ../../reference/simple_stmts.rst:931
 msgid ""
 "The interesting runtime semantics depend on the specific feature enabled by "
 "the future statement."
 msgstr ""
+"Более существенные аспекты семантики времени выполнения зависят от "
+"конкретной функциональности, включаемой инструкцией будущих возможностей."
 
 #: ../../reference/simple_stmts.rst:934
 msgid "Note that there is nothing special about the statement::"
-msgstr ""
+msgstr "Обратите внимание, что в этой инструкции нет ничего особенного::"
 
 #: ../../reference/simple_stmts.rst:936
 msgid "import __future__ [as name]"
-msgstr ""
+msgstr "import __future__ [as name]"
 
 #: ../../reference/simple_stmts.rst:938
 msgid ""
 "That is not a future statement; it's an ordinary import statement with no "
 "special semantics or syntax restrictions."
 msgstr ""
+"Это не инструкция будущих возможностей, а обычная инструкция импорта, не "
+"имеющая ни специальной семантики, ни синтаксических ограничений."
 
 #: ../../reference/simple_stmts.rst:941
 msgid ""
@@ -1527,6 +1546,12 @@ msgid ""
 "the future statement.  This can be controlled by optional arguments to "
 ":func:`compile` --- see the documentation of that function for details."
 msgstr ""
+"Код, который компилируется с помощью встроенных функций :func:`exec` и "
+":func:`compile` и при этом находится в модуле :mod:`!M`, содержащем "
+"инструкцию будущих возможностей, по умолчанию будет использовать новый "
+"синтаксис или семантику, связанные с этой инструкцией. Это поведение можно "
+"изменить с помощью дополнительных аргументов функции :func:`compile` — "
+"подробности см. в её документации."
 
 #: ../../reference/simple_stmts.rst:947
 msgid ""
@@ -1536,18 +1561,23 @@ msgid ""
 "and the script includes a future statement, it will be in effect in the "
 "interactive session started after the script is executed."
 msgstr ""
+"Инструкция будущих возможностей, введённая в интерактивной командной строке "
+"интерпретатора, действует до конца текущего сеанса. Если интерпретатор "
+"запущен с опцией :option:`-i`, ему передан скрипт для выполнения, и этот "
+"скрипт содержит инструкцию будущих возможностей, то она будет действовать и "
+"в интерактивном сеансе, который начинается после выполнения скрипта."
 
 #: ../../reference/simple_stmts.rst:955
 msgid ":pep:`236` - Back to the __future__"
-msgstr ""
+msgstr ":pep:`236` — Назад в __будущее__"
 
 #: ../../reference/simple_stmts.rst:956
 msgid "The original proposal for the __future__ mechanism."
-msgstr ""
+msgstr "Первоначальное предложение механизма __future__."
 
 #: ../../reference/simple_stmts.rst:962
 msgid "The :keyword:`!global` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!global`"
 
 #: ../../reference/simple_stmts.rst:972
 msgid ""
@@ -1556,6 +1586,10 @@ msgid ""
 "variable without :keyword:`!global`, although free variables may refer to "
 "globals without being declared global."
 msgstr ""
+"Инструкция :keyword:`global` заставляет перечисленные идентификаторы "
+"интерпретироваться как глобальные. Без инструкции :keyword:`!global` "
+"присвоение глобальной переменной было бы невозможно, хотя свободные "
+"переменные могут ссылаться на глобальные без объявления их как глобальных."
 
 #: ../../reference/simple_stmts.rst:977
 msgid ""

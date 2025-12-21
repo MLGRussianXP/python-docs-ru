@@ -1468,6 +1468,12 @@ msgid ""
 "redundant because they are always enabled, and only kept for backwards "
 "compatibility."
 msgstr ""
+"Инструкции будущих возможностей, включающие историческую функциональность, "
+"по-прежнему распознаются интерпретатором Python 3. К ним относятся: "
+"``absolute_import``, ``division``, ``generators``, ``generator_stop``, "
+"``unicode_literals``, ``print_function``, ``nested_scopes`` и "
+"``with_statement``. Все они избыточны, поскольку всегда включены, и "
+"сохраняются только для обратной совместимости."
 
 #: ../../reference/simple_stmts.rst:916
 msgid ""

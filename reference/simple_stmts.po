@@ -1730,6 +1730,9 @@ msgid ""
 "``annotation-def`` indicates an :ref:`annotation scope <annotation-scopes>`,"
 " which behaves mostly like a function, but with several small differences."
 msgstr ""
+"``annotation-def`` обозначает :ref:`область действия аннотации <annotation-"
+"scopes>`, которая ведёт себя в основном как функция, но имеет несколько "
+"небольших отличий."
 
 #: ../../reference/simple_stmts.rst:1062
 msgid ""
@@ -1739,30 +1742,40 @@ msgid ""
 ":ref:`lazy-evaluation`). This allows the type alias to refer to names that "
 "are not yet defined."
 msgstr ""
+"Значение псевдонима типа вычисляется в области действия аннотации. Оно не "
+"вычисляется в момент создания псевдонима типа, а только когда значение "
+"запрашивается через атрибут псевдонима :attr:`!__value__` (см. :ref:`lazy-"
+"evaluation`). Это позволяет псевдониму типа ссылаться на имена, которые ещё "
+"не определены."
 
 #: ../../reference/simple_stmts.rst:1068
 msgid ""
 "Type aliases may be made generic by adding a :ref:`type parameter list "
 "<type-params>` after the name. See :ref:`generic-type-aliases` for more."
 msgstr ""
+"Псевдонимы типов могут быть обобщёнными, если после имени указать "
+":ref:`список параметров типа <type-params>`. Подробнее см. :ref:`generic-"
+"type-aliases`."
 
 #: ../../reference/simple_stmts.rst:1071
 msgid ":keyword:`!type` is a :ref:`soft keyword <soft-keywords>`."
-msgstr ""
+msgstr ":keyword:`!type` — это :ref:`мягкое ключевое слово <soft-keywords>`."
 
 #: ../../reference/simple_stmts.rst:1077
 msgid ":pep:`695` - Type Parameter Syntax"
-msgstr ""
+msgstr ":pep:`695` — Синтаксис параметров типа"
 
 #: ../../reference/simple_stmts.rst:1078
 msgid ""
 "Introduced the :keyword:`!type` statement and syntax for generic classes and"
 " functions."
 msgstr ""
+"Введена инструкция :keyword:`!type` и синтаксис для обобщённых классов и "
+"функций."
 
 #: ../../reference/simple_stmts.rst:8
 msgid "simple"
-msgstr ""
+msgstr "простой"
 
 #: ../../reference/simple_stmts.rst:8 ../../reference/simple_stmts.rst:39
 #: ../../reference/simple_stmts.rst:75 ../../reference/simple_stmts.rst:263
@@ -1775,464 +1788,464 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:964 ../../reference/simple_stmts.rst:1007
 #: ../../reference/simple_stmts.rst:1041
 msgid "statement"
-msgstr ""
+msgstr "инструкция"
 
 #: ../../reference/simple_stmts.rst:39 ../../reference/simple_stmts.rst:42
 msgid "expression"
-msgstr ""
+msgstr "выражение"
 
 #: ../../reference/simple_stmts.rst:39 ../../reference/simple_stmts.rst:42
 #: ../../reference/simple_stmts.rst:105 ../../reference/simple_stmts.rst:116
 #: ../../reference/simple_stmts.rst:196 ../../reference/simple_stmts.rst:449
 msgid "list"
-msgstr ""
+msgstr "список"
 
 #: ../../reference/simple_stmts.rst:56 ../../reference/simple_stmts.rst:988
 msgid "built-in function"
-msgstr ""
+msgstr "встроенная функция"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "repr"
-msgstr ""
+msgstr "repr"
 
 #: ../../reference/simple_stmts.rst:56 ../../reference/simple_stmts.rst:75
 #: ../../reference/simple_stmts.rst:187 ../../reference/simple_stmts.rst:196
 #: ../../reference/simple_stmts.rst:207 ../../reference/simple_stmts.rst:583
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "None"
-msgstr ""
+msgstr "None"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "string"
-msgstr ""
+msgstr "строка"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "conversion"
-msgstr ""
+msgstr "преобразование"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "output"
-msgstr ""
+msgstr "вывод"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "standard"
-msgstr ""
+msgstr "стандартный"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "writing"
-msgstr ""
+msgstr "написание"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "values"
-msgstr ""
+msgstr "значения"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "procedure"
-msgstr ""
+msgstr "процедура"
 
 #: ../../reference/simple_stmts.rst:56
 msgid "call"
-msgstr ""
+msgstr "вызов"
 
 #: ../../reference/simple_stmts.rst:75
 msgid "= (equals)"
-msgstr ""
+msgstr "= (равно)"
 
 #: ../../reference/simple_stmts.rst:75
 msgid "assignment statement"
-msgstr ""
+msgstr "инструкция присваивания"
 
 #: ../../reference/simple_stmts.rst:75 ../../reference/simple_stmts.rst:116
 #: ../../reference/simple_stmts.rst:159 ../../reference/simple_stmts.rst:187
 #: ../../reference/simple_stmts.rst:220 ../../reference/simple_stmts.rst:263
 #: ../../reference/simple_stmts.rst:322
 msgid "assignment"
-msgstr ""
+msgstr "присваивание"
 
 #: ../../reference/simple_stmts.rst:75 ../../reference/simple_stmts.rst:745
 #: ../../reference/simple_stmts.rst:800 ../../reference/simple_stmts.rst:964
 msgid "binding"
-msgstr ""
+msgstr "связывание"
 
 #: ../../reference/simple_stmts.rst:75 ../../reference/simple_stmts.rst:462
 #: ../../reference/simple_stmts.rst:745 ../../reference/simple_stmts.rst:800
 #: ../../reference/simple_stmts.rst:964
 msgid "name"
-msgstr ""
+msgstr "имя"
 
 #: ../../reference/simple_stmts.rst:75
 msgid "rebinding"
-msgstr ""
+msgstr "повторное связывание"
 
 #: ../../reference/simple_stmts.rst:75 ../../reference/simple_stmts.rst:187
 msgid "mutable"
-msgstr ""
+msgstr "изменяемый"
 
 #: ../../reference/simple_stmts.rst:75 ../../reference/simple_stmts.rst:159
 #: ../../reference/simple_stmts.rst:471
 msgid "attribute"
-msgstr ""
+msgstr "атрибут"
 
 #: ../../reference/simple_stmts.rst:105 ../../reference/simple_stmts.rst:116
 #: ../../reference/simple_stmts.rst:449 ../../reference/simple_stmts.rst:699
 msgid "target"
-msgstr ""
+msgstr "цель"
 
 #: ../../reference/simple_stmts.rst:116 ../../reference/simple_stmts.rst:384
 #: ../../reference/simple_stmts.rst:745 ../../reference/simple_stmts.rst:964
 #: ../../reference/simple_stmts.rst:1007
 msgid ", (comma)"
-msgstr ""
+msgstr ", (запятая)"
 
 #: ../../reference/simple_stmts.rst:116
 msgid "in target list"
-msgstr ""
+msgstr "в списке целей"
 
 #: ../../reference/simple_stmts.rst:116 ../../reference/simple_stmts.rst:826
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (звёздочка)"
 
 #: ../../reference/simple_stmts.rst:116
 msgid "in assignment target list"
-msgstr ""
+msgstr "в списке целей присваивания"
 
 #: ../../reference/simple_stmts.rst:116
 msgid "[] (square brackets)"
-msgstr ""
+msgstr "[] (квадратные скобки)"
 
 #: ../../reference/simple_stmts.rst:116
 msgid "() (parentheses)"
-msgstr ""
+msgstr "() (скобки)"
 
 #: ../../reference/simple_stmts.rst:153
 msgid "destructor"
-msgstr ""
+msgstr "деструктор"
 
 #: ../../reference/simple_stmts.rst:187
 msgid "subscription"
-msgstr ""
+msgstr "индексация"
 
 #: ../../reference/simple_stmts.rst:196
 msgid "sequence"
-msgstr ""
+msgstr "последовательность"
 
 #: ../../reference/simple_stmts.rst:207
 msgid "mapping"
-msgstr ""
+msgstr "отображение"
 
 #: ../../reference/simple_stmts.rst:207
 msgid "dictionary"
-msgstr ""
+msgstr "словарь"
 
 #: ../../reference/simple_stmts.rst:220
 msgid "slicing"
-msgstr ""
+msgstr "срез"
 
 #: ../../reference/simple_stmts.rst:263
 msgid "augmented"
-msgstr ""
+msgstr "комбинированный"
 
 #: ../../reference/simple_stmts.rst:263
 msgid "assignment, augmented"
-msgstr ""
+msgstr "присваивание, комбинированное"
 
 #: ../../reference/simple_stmts.rst:263
 msgid "+="
-msgstr ""
+msgstr "+="
 
 #: ../../reference/simple_stmts.rst:263
 msgid "augmented assignment"
-msgstr ""
+msgstr "комбинированное присваивание"
 
 #: ../../reference/simple_stmts.rst:263
 msgid "-="
-msgstr ""
+msgstr "-="
 
 #: ../../reference/simple_stmts.rst:263
 msgid "*="
-msgstr ""
+msgstr "*="
 
 #: ../../reference/simple_stmts.rst:263
 msgid "/="
-msgstr ""
+msgstr "/="
 
 #: ../../reference/simple_stmts.rst:263
 msgid "%="
-msgstr ""
+msgstr "%="
 
 #: ../../reference/simple_stmts.rst:263
 msgid "&="
-msgstr ""
+msgstr "&="
 
 #: ../../reference/simple_stmts.rst:263
 msgid "^="
-msgstr ""
+msgstr "^="
 
 #: ../../reference/simple_stmts.rst:263
 msgid "|="
-msgstr ""
+msgstr "|="
 
 #: ../../reference/simple_stmts.rst:263
 msgid "**="
-msgstr ""
+msgstr "**="
 
 #: ../../reference/simple_stmts.rst:263
 msgid "//="
-msgstr ""
+msgstr "//="
 
 #: ../../reference/simple_stmts.rst:263
 msgid ">>="
-msgstr ""
+msgstr ">>="
 
 #: ../../reference/simple_stmts.rst:263
 msgid "<<="
-msgstr ""
+msgstr "<<="
 
 #: ../../reference/simple_stmts.rst:322
 msgid "annotated"
-msgstr ""
+msgstr "аннотированный"
 
 #: ../../reference/simple_stmts.rst:322
 msgid "assignment, annotated"
-msgstr ""
+msgstr "присваивание, аннотированное"
 
 #: ../../reference/simple_stmts.rst:322
 msgid ": (colon)"
-msgstr ""
+msgstr ": (двоеточие)"
 
 #: ../../reference/simple_stmts.rst:322
 msgid "annotated variable"
-msgstr ""
+msgstr "аннотированная переменная"
 
 #: ../../reference/simple_stmts.rst:384
 msgid "assert"
-msgstr ""
+msgstr "утверждать"
 
 #: ../../reference/simple_stmts.rst:384
 msgid "debugging"
-msgstr ""
+msgstr "отладка"
 
 #: ../../reference/simple_stmts.rst:384
 msgid "assertions"
-msgstr ""
+msgstr "утверждения"
 
 #: ../../reference/simple_stmts.rst:384
 msgid "expression list"
-msgstr ""
+msgstr "список выражений"
 
 #: ../../reference/simple_stmts.rst:405
 msgid "__debug__"
-msgstr ""
+msgstr "__debug__"
 
 #: ../../reference/simple_stmts.rst:405 ../../reference/simple_stmts.rst:525
 #: ../../reference/simple_stmts.rst:561 ../../reference/simple_stmts.rst:593
 #: ../../reference/simple_stmts.rst:745
 msgid "exception"
-msgstr ""
+msgstr "исключение"
 
 #: ../../reference/simple_stmts.rst:405
 msgid "AssertionError"
-msgstr ""
+msgstr "AssertionError"
 
 #: ../../reference/simple_stmts.rst:427
 msgid "pass"
-msgstr ""
+msgstr "pass"
 
 #: ../../reference/simple_stmts.rst:427
 msgid "null"
-msgstr ""
+msgstr "null"
 
 #: ../../reference/simple_stmts.rst:427
 msgid "operation"
-msgstr ""
+msgstr "операция"
 
 #: ../../reference/simple_stmts.rst:449
 msgid "del"
-msgstr ""
+msgstr "del"
 
 #: ../../reference/simple_stmts.rst:449 ../../reference/simple_stmts.rst:471
 msgid "deletion"
-msgstr ""
+msgstr "удаление"
 
 #: ../../reference/simple_stmts.rst:462 ../../reference/simple_stmts.rst:964
 msgid "global"
-msgstr ""
+msgstr "global"
 
 #: ../../reference/simple_stmts.rst:462
 msgid "unbinding"
-msgstr ""
+msgstr "отвязывание"
 
 #: ../../reference/simple_stmts.rst:488
 msgid "return"
-msgstr ""
+msgstr "return"
 
 #: ../../reference/simple_stmts.rst:488 ../../reference/simple_stmts.rst:525
 msgid "function"
-msgstr ""
+msgstr "функция"
 
 #: ../../reference/simple_stmts.rst:488
 msgid "definition"
-msgstr ""
+msgstr "определение"
 
 #: ../../reference/simple_stmts.rst:488
 msgid "class"
-msgstr ""
+msgstr "класс"
 
 #: ../../reference/simple_stmts.rst:504 ../../reference/simple_stmts.rst:699
 #: ../../reference/simple_stmts.rst:708 ../../reference/simple_stmts.rst:720
 #: ../../reference/simple_stmts.rst:745
 msgid "keyword"
-msgstr ""
+msgstr "ключевое слово"
 
 #: ../../reference/simple_stmts.rst:504 ../../reference/simple_stmts.rst:708
 #: ../../reference/simple_stmts.rst:720
 msgid "finally"
-msgstr ""
+msgstr "finally"
 
 #: ../../reference/simple_stmts.rst:525
 msgid "yield"
-msgstr ""
+msgstr "yield"
 
 #: ../../reference/simple_stmts.rst:525
 msgid "generator"
-msgstr ""
+msgstr "генератор"
 
 #: ../../reference/simple_stmts.rst:525
 msgid "iterator"
-msgstr ""
+msgstr "итератор"
 
 #: ../../reference/simple_stmts.rst:525
 msgid "StopIteration"
-msgstr ""
+msgstr "StopIteration"
 
 #: ../../reference/simple_stmts.rst:561
 msgid "raise"
-msgstr ""
+msgstr "возбудить"
 
 #: ../../reference/simple_stmts.rst:561
 msgid "raising"
-msgstr ""
+msgstr "возбуждение"
 
 #: ../../reference/simple_stmts.rst:561
 msgid "__traceback__ (exception attribute)"
-msgstr ""
+msgstr "__traceback__ (атрибут исключения)"
 
 #: ../../reference/simple_stmts.rst:583
 msgid "traceback"
-msgstr ""
+msgstr "трассировка"
 
 #: ../../reference/simple_stmts.rst:593
 msgid "chaining"
-msgstr ""
+msgstr "цепочка"
 
 #: ../../reference/simple_stmts.rst:593
 msgid "__cause__ (exception attribute)"
-msgstr ""
+msgstr "__cause__ (атрибут исключения)"
 
 #: ../../reference/simple_stmts.rst:593
 msgid "__context__ (exception attribute)"
-msgstr ""
+msgstr "__context__ (атрибут исключения)"
 
 #: ../../reference/simple_stmts.rst:686
 msgid "break"
-msgstr ""
+msgstr "break"
 
 #: ../../reference/simple_stmts.rst:686 ../../reference/simple_stmts.rst:720
 msgid "for"
-msgstr ""
+msgstr "for"
 
 #: ../../reference/simple_stmts.rst:686 ../../reference/simple_stmts.rst:720
 msgid "while"
-msgstr ""
+msgstr "while"
 
 #: ../../reference/simple_stmts.rst:686 ../../reference/simple_stmts.rst:720
 msgid "loop"
-msgstr ""
+msgstr "цикл"
 
 #: ../../reference/simple_stmts.rst:699
 msgid "else"
-msgstr ""
+msgstr "else"
 
 #: ../../reference/simple_stmts.rst:699
 msgid "loop control"
-msgstr ""
+msgstr "управление циклом"
 
 #: ../../reference/simple_stmts.rst:720
 msgid "continue"
-msgstr ""
+msgstr "continue"
 
 #: ../../reference/simple_stmts.rst:745 ../../reference/simple_stmts.rst:851
 msgid "import"
-msgstr ""
+msgstr "import"
 
 #: ../../reference/simple_stmts.rst:745
 msgid "module"
-msgstr ""
+msgstr "модуль"
 
 #: ../../reference/simple_stmts.rst:745
 msgid "importing"
-msgstr ""
+msgstr "импортирование"
 
 #: ../../reference/simple_stmts.rst:745 ../../reference/simple_stmts.rst:800
 msgid "from"
-msgstr ""
+msgstr "from"
 
 #: ../../reference/simple_stmts.rst:745 ../../reference/simple_stmts.rst:787
 msgid "as"
-msgstr ""
+msgstr "as"
 
 #: ../../reference/simple_stmts.rst:745
 msgid "ImportError"
-msgstr ""
+msgstr "ImportError"
 
 #: ../../reference/simple_stmts.rst:745 ../../reference/simple_stmts.rst:787
 #: ../../reference/simple_stmts.rst:800 ../../reference/simple_stmts.rst:826
 msgid "import statement"
-msgstr ""
+msgstr "инструкция импорта"
 
 #: ../../reference/simple_stmts.rst:832
 msgid "__all__ (optional module attribute)"
-msgstr ""
+msgstr "__all__ (необязательный атрибут модуля)"
 
 #: ../../reference/simple_stmts.rst:851
 msgid "relative"
-msgstr ""
+msgstr "относительный"
 
 #: ../../reference/simple_stmts.rst:878
 msgid "future"
-msgstr ""
+msgstr "future"
 
 #: ../../reference/simple_stmts.rst:878
 msgid "__future__"
-msgstr ""
+msgstr "__future__"
 
 #: ../../reference/simple_stmts.rst:878
 msgid "future statement"
-msgstr ""
+msgstr "инструкция будущих возможностей"
 
 #: ../../reference/simple_stmts.rst:964 ../../reference/simple_stmts.rst:1007
 msgid "identifier list"
-msgstr ""
+msgstr "список идентификаторов"
 
 #: ../../reference/simple_stmts.rst:988
 msgid "exec"
-msgstr ""
+msgstr "exec"
 
 #: ../../reference/simple_stmts.rst:988
 msgid "eval"
-msgstr ""
+msgstr "eval"
 
 #: ../../reference/simple_stmts.rst:988
 msgid "compile"
-msgstr ""
+msgstr "compile"
 
 #: ../../reference/simple_stmts.rst:1007
 msgid "nonlocal"
-msgstr ""
+msgstr "nonlocal"
 
 #: ../../reference/simple_stmts.rst:1041
 msgid "type"
-msgstr ""
+msgstr "тип"

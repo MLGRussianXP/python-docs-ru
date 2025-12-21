@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-19 14:15+0000\n"
+"POT-Creation-Date: 2025-12-21 14:13+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -77,7 +77,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:73
 msgid "Assignment statements"
-msgstr "Инструкции присвоения"
+msgstr "Инструкции присваивания"
 
 #: ../../reference/simple_stmts.rst:83
 msgid ""
@@ -1331,6 +1331,17 @@ msgid ""
 "API (such as library modules which were imported and used within the "
 "module)."
 msgstr ""
+"*Общедоступные имена* модуля определяются следующим образом: проверяется "
+"наличие переменной с именем ``__all__`` в пространстве имён модуля. Если она"
+" определена, это должна быть последовательность строк, каждая из которых — "
+"имя, определённое или импортированное модулем. Все имена, указанные в "
+"``__all__``, считаются общедоступными и обязаны существовать. Если "
+"``__all__`` не определено, в качестве публичных рассматриваются все имена в "
+"пространстве имён модуля, которые не начинаются с символа подчёркивания "
+"(``'_'``). Переменная ``__all__`` должна включать весь публичный API модуля."
+" Она предназначена для предотвращения случайного экспорта элементов, не "
+"являющихся частью его API (например, библиотечных модулей, импортированных и"
+" использованных внутри модуля)."
 
 #: ../../reference/simple_stmts.rst:847
 msgid ""
@@ -1338,6 +1349,9 @@ msgid ""
 "allowed at the module level.  Attempting to use it in class or function "
 "definitions will raise a :exc:`SyntaxError`."
 msgstr ""
+"Форма импорта с подстановочным знаком — ``from module import *`` — разрешена"
+" только на уровне модуля. Попытка использовать её внутри определения класса "
+"или функции приводит к возбуждению исключения :exc:`SyntaxError`."
 
 #: ../../reference/simple_stmts.rst:854
 msgid ""
@@ -1355,12 +1369,26 @@ msgid ""
 "``pkg.subpkg2.mod``. The specification for relative imports is contained in "
 "the :ref:`relativeimports` section."
 msgstr ""
+"При указании импортируемого модуля не обязательно задавать его абсолютное "
+"имя. Если модуль или пакет находится внутри другого пакета, можно выполнить "
+"относительный импорт в пределах того же верхнеуровневого пакета, не указывая"
+" его имя. Используя ведущие точки в имени модуля или пакета после ключевого "
+"слова :keyword:`from`, можно указать, на сколько уровней вверх по иерархии "
+"пакетов следует подняться, не перечисляя точные имена. Одна ведущая точка "
+"означает текущий пакет, в котором находится модуль, выполняющий импорт. Две "
+"точки — подъём на один уровень вверх, три точки — на два уровня и так далее."
+" Так, при выполнении ``from . import mod`` из модуля в пакете ``pkg`` будет "
+"импортирован ``pkg.mod``. При выполнении ``from ..subpkg2 import mod`` из "
+"``pkg.subpkg1`` будет импортирован ``pkg.subpkg2.mod``. Спецификация "
+"относительных импортов приведена в разделе :ref:`relativeimports`."
 
 #: ../../reference/simple_stmts.rst:868
 msgid ""
 ":func:`importlib.import_module` is provided to support applications that "
 "determine dynamically the modules to be loaded."
 msgstr ""
+"Функция :func:`importlib.import_module` предназначена для поддержки "
+"приложений, которые динамически определяют загружаемые модули."
 
 #: ../../reference/simple_stmts.rst:871
 msgid ""
@@ -1368,10 +1396,13 @@ msgid ""
 "``module``, ``filename``, ``sys.path``, ``sys.meta_path``, "
 "``sys.path_hooks``."
 msgstr ""
+"Возбуждает :ref:`событие аудита <auditing>` ``import`` с аргументами "
+"``module``, ``filename``, ``sys.path``, ``sys.meta_path`` и "
+"``sys.path_hooks``."
 
 #: ../../reference/simple_stmts.rst:876
 msgid "Future statements"
-msgstr ""
+msgstr "Инструкции будущих возможностей"
 
 #: ../../reference/simple_stmts.rst:882
 msgid ""
@@ -1379,6 +1410,10 @@ msgid ""
 "module should be compiled using syntax or semantics that will be available "
 "in a specified future release of Python where the feature becomes standard."
 msgstr ""
+":dfn:`Инструкция будущих возможностей` — это директива компилятору, "
+"указывающая, что данный модуль должен компилироваться с использованием "
+"синтаксиса или семантики, которые станут стандартными в одном из будущих "
+"выпусков Python."
 
 #: ../../reference/simple_stmts.rst:886
 msgid ""
@@ -1387,28 +1422,34 @@ msgid ""
 "of the new features on a per-module basis before the release in which the "
 "feature becomes standard."
 msgstr ""
+"Эти инструкции предназначены для упрощения перехода на будущие версии "
+"Python, которые вносят в язык несовместимые изменения. Они позволяют "
+"использовать новые возможности на уровне отдельных модулей ещё до того, как "
+"они станут стандартными в будущих выпусках Python."
 
 #: ../../reference/simple_stmts.rst:898
 msgid ""
 "A future statement must appear near the top of the module.  The only lines "
 "that can appear before a future statement are:"
 msgstr ""
+"Инструкции будущих возможностей должны находиться в начале модуля. Перед "
+"ними могут встречаться только следующие строки:"
 
 #: ../../reference/simple_stmts.rst:901
 msgid "the module docstring (if any),"
-msgstr ""
+msgstr "строка документации модуля (если она есть),"
 
 #: ../../reference/simple_stmts.rst:902
 msgid "comments,"
-msgstr ""
+msgstr "комментарии,"
 
 #: ../../reference/simple_stmts.rst:903
 msgid "blank lines, and"
-msgstr ""
+msgstr "пустые строки и"
 
 #: ../../reference/simple_stmts.rst:904
 msgid "other future statements."
-msgstr ""
+msgstr "другие инструкции будущих возможностей."
 
 #: ../../reference/simple_stmts.rst:906
 msgid ""

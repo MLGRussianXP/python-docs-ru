@@ -1277,7 +1277,7 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:813
 msgid "if the attribute is not found, :exc:`ImportError` is raised."
 msgstr ""
-"если атрибут всё ещё не найден, возбуждается исключение :exc:`ImportError`."
+"если атрибут всё ещё не найден, возбуждается исключение :exc:`ImportError`"
 
 #: ../../reference/simple_stmts.rst:814
 msgid ""
@@ -1301,6 +1301,11 @@ msgid ""
 "from foo.bar import baz    # foo, foo.bar, and foo.bar.baz imported, foo.bar.baz bound as baz\n"
 "from foo import attr       # foo imported and foo.attr bound as attr"
 msgstr ""
+"import foo                 # модуль foo импортирован и связан локально\n"
+"import foo.bar.baz         # модули foo, foo.bar и foo.bar.baz импортированы, foo связано локально\n"
+"import foo.bar.baz as fbb  # модули foo, foo.bar и foo.bar.baz импортированы, foo.bar.baz связано как fbb\n"
+"from foo.bar import baz    # модули foo, foo.bar и foo.bar.baz импортированы, foo.bar.baz связано как baz\n"
+"from foo import attr       # модуль foo импортирован и foo.attr связано как attr"
 
 #: ../../reference/simple_stmts.rst:828
 msgid ""
@@ -1308,6 +1313,10 @@ msgid ""
 " defined in the module are bound in the local namespace for the scope where "
 "the :keyword:`import` statement occurs."
 msgstr ""
+"Если список идентификаторов заменён на звёздочку (``'*'``), все "
+"общедоступные имена, определённые в модуле, связываются в локальном "
+"пространстве имён той области видимости, где встречается инструкция "
+":keyword:`import`."
 
 #: ../../reference/simple_stmts.rst:837
 msgid ""

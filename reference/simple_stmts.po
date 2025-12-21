@@ -1130,7 +1130,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:718
 msgid "The :keyword:`!continue` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!continue`"
 
 #: ../../reference/simple_stmts.rst:730
 msgid ""

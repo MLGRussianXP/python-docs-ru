@@ -1598,6 +1598,10 @@ msgid ""
 "if a variable is used or assigned to prior to its global declaration in the "
 "scope."
 msgstr ""
+"Инструкция :keyword:`!global` действует на всю текущую область видимости "
+"(модуль, тело функции или определение класса). Если переменная используется "
+"или ей присваивается значение до её объявления как глобальной в этой "
+"области, выбрасывается исключение :exc:`SyntaxError`."
 
 #: ../../reference/simple_stmts.rst:982
 msgid ""
@@ -1606,6 +1610,11 @@ msgid ""
 "assigned to prior to their :keyword:`!global` declaration. This requirement "
 "is relaxed in the interactive prompt (:term:`REPL`)."
 msgstr ""
+"На уровне модуля все переменные являются глобальными, поэтому инструкция "
+":keyword:`!global` не оказывает никакого эффекта. Тем не менее, переменные "
+"по-прежнему не должны использоваться или им присваиваться значение до их "
+"объявления через :keyword:`!global`. Это ограничение смягчено в "
+"интерактивной консоли (:term:`REPL`)."
 
 #: ../../reference/simple_stmts.rst:993
 msgid ""
@@ -1618,10 +1627,18 @@ msgid ""
 " containing the function call.  The same applies to the :func:`eval` and "
 ":func:`compile` functions."
 msgstr ""
+"**Примечание для программиста:** инструкция :keyword:`global` является "
+"директивой для анализатора. Она применяется только к коду, который "
+"анализируется одновременно с инструкцией :keyword:`!global`. В частности, "
+"инструкция :keyword:`!global` в строке или объекте кода, переданном "
+"встроенной функции :func:`exec`, не влияет на блок кода, *содержащий* вызов "
+"функции, и код внутри такой строки не подчиняется инструкциям "
+":keyword:`!global` из кода, содержащего вызов функции. То же самое относится"
+" к функциям :func:`eval` и :func:`compile`."
 
 #: ../../reference/simple_stmts.rst:1005
 msgid "The :keyword:`!nonlocal` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!nonlocal`"
 
 #: ../../reference/simple_stmts.rst:1013
 msgid ""
@@ -1634,6 +1651,15 @@ msgid ""
 "name is not bound in any nonlocal scope, or if there is no nonlocal scope, a"
 " :exc:`SyntaxError` is raised."
 msgstr ""
+"Когда определение функции или класса вложено (заключено) в определения "
+"других функций, их нелокальные области видимости — это локальные области "
+"видимости внешних функций. Инструкция :keyword:`nonlocal` заставляет "
+"перечисленные идентификаторы ссылаться на имена, ранее привязанные в таких "
+"нелокальных областях. Она позволяет вложенному коду переназначать эти "
+"идентификаторы. Если имя привязано более чем в одной нелокальной области, "
+"используется ближайшая привязка. Если имя не привязано ни в одной "
+"нелокальной области или таких областей нет, выбрасывается исключение "
+":exc:`SyntaxError`."
 
 #: ../../reference/simple_stmts.rst:1022
 msgid ""
@@ -1641,14 +1667,18 @@ msgid ""
 "or class body. A :exc:`SyntaxError` is raised if a variable is used or "
 "assigned to prior to its nonlocal declaration in the scope."
 msgstr ""
+"Инструкция :keyword:`nonlocal` действует на всю область видимости тела "
+"функции или класса. Если переменная используется или ей присваивается "
+"значение до её объявления как нелокальной, выбрасывается исключение "
+":exc:`SyntaxError`."
 
 #: ../../reference/simple_stmts.rst:1028
 msgid ":pep:`3104` - Access to Names in Outer Scopes"
-msgstr ""
+msgstr ":pep:`3104` — Доступ к именам во внешних областях видимости"
 
 #: ../../reference/simple_stmts.rst:1029
 msgid "The specification for the :keyword:`nonlocal` statement."
-msgstr ""
+msgstr "Спецификация инструкции :keyword:`nonlocal`."
 
 #: ../../reference/simple_stmts.rst:1031
 msgid ""
@@ -1656,28 +1686,34 @@ msgid ""
 "applies only to code parsed along with it.  See the note for the "
 ":keyword:`global` statement."
 msgstr ""
+"**Примечание для программиста:** инструкция :keyword:`nonlocal` является "
+"директивой для анализатора и применяется только к коду, который "
+"анализируется вместе с этой инструкцией. См. примечание к инструкции "
+":keyword:`global`."
 
 #: ../../reference/simple_stmts.rst:1039
 msgid "The :keyword:`!type` statement"
-msgstr ""
+msgstr "Инструкция :keyword:`!type`"
 
 #: ../../reference/simple_stmts.rst:1046
 msgid ""
 "The :keyword:`!type` statement declares a type alias, which is an instance "
 "of :class:`typing.TypeAliasType`."
 msgstr ""
+"Инструкция :keyword:`!type` объявляет псевдоним типа, который является "
+"экземпляром :class:`typing.TypeAliasType`."
 
 #: ../../reference/simple_stmts.rst:1049
 msgid "For example, the following statement creates a type alias::"
-msgstr ""
+msgstr "Например, следующая инструкция создаёт псевдоним типа::"
 
 #: ../../reference/simple_stmts.rst:1051
 msgid "type Point = tuple[float, float]"
-msgstr ""
+msgstr "type Point = tuple[float, float]"
 
 #: ../../reference/simple_stmts.rst:1053
 msgid "This code is roughly equivalent to::"
-msgstr ""
+msgstr "Этот код примерно эквивалентен следующему::"
 
 #: ../../reference/simple_stmts.rst:1055
 msgid ""
@@ -1685,6 +1721,9 @@ msgid ""
 "    return tuple[float, float]\n"
 "Point = typing.TypeAliasType(\"Point\", VALUE_OF_Point())"
 msgstr ""
+"annotation-def VALUE_OF_Point():\n"
+"    return tuple[float, float]\n"
+"Point = typing.TypeAliasType(\"Point\", VALUE_OF_Point())"
 
 #: ../../reference/simple_stmts.rst:1059
 msgid ""

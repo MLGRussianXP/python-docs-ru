@@ -1456,6 +1456,8 @@ msgid ""
 "The only feature that requires using the future statement is ``annotations``"
 " (see :pep:`563`)."
 msgstr ""
+"Единственная функциональность, требующая использования инструкции будущих "
+"возможностей — это ``annotations`` (см. :pep:`563`)."
 
 #: ../../reference/simple_stmts.rst:909
 msgid ""

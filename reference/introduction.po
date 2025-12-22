@@ -5,15 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
+# Dmitry Luschan, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-25 14:21+0000\n"
+"POT-Creation-Date: 2025-12-21 14:13+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,13 +24,15 @@ msgstr ""
 
 #: ../../reference/introduction.rst:6
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
 #: ../../reference/introduction.rst:8
 msgid ""
 "This reference manual describes the Python programming language. It is not "
 "intended as a tutorial."
 msgstr ""
+"Это справочное руководство описывает язык программирования Python. Оно не "
+"предназначено для использования в качестве учебного пособия."
 
 #: ../../reference/introduction.rst:11
 msgid ""
@@ -45,6 +48,18 @@ msgid ""
 "like to see a more formal definition of the language, maybe you could "
 "volunteer your time --- or invent a cloning machine :-)."
 msgstr ""
+"Хотя я стараюсь быть максимально точным, я решил использовать описание на "
+"естественном языке, а не формальные спецификации, для всего, кроме "
+"синтаксиса и лексического анализа. Это должно сделать документ более "
+"понятным для среднего читателя, но оставит пространство для "
+"неоднозначностей. Следовательно, если бы вы прибыли с Марса и попытались "
+"заново реализовать Python, опираясь только на этот документ, вам пришлось бы"
+" многое угадывать, и в итоге вы, вероятно, реализовали бы совсем другой "
+"язык. С другой стороны, если вы используете Python и задаётесь вопросом, "
+"каковы точные правила в какой-то конкретной области языка, вы определённо "
+"сможете найти их здесь. Если же вы хотели бы увидеть более формальное "
+"определение языка, возможно, вы могли бы пожертвовать своим временем — или "
+"изобрести машину для клонирования :-)."
 
 #: ../../reference/introduction.rst:23
 msgid ""
@@ -57,6 +72,14 @@ msgid ""
 "implementation imposes additional limitations. Therefore, you'll find short "
 "\"implementation notes\" sprinkled throughout the text."
 msgstr ""
+"Опасно добавлять слишком много деталей реализации в справочник по языку — "
+"реализация может измениться, и другие реализации того же языка могут "
+"работать иначе. С другой стороны, CPython является одной реализацией Python,"
+" находящейся в широком использовании (хотя альтернативные реализации "
+"продолжают получать поддержку), и её конкретные особенности иногда "
+"заслуживают упоминания, особенно там, где реализация накладывает "
+"дополнительные ограничения. Поэтому по всему тексту вы найдёте короткие "
+"«примечания по реализации»."
 
 #: ../../reference/introduction.rst:32
 msgid ""
@@ -65,10 +88,14 @@ msgid ""
 "modules are mentioned when they interact in a significant way with the "
 "language definition."
 msgstr ""
+"Каждая реализация Python поставляется с рядом встроенных и стандартных "
+"модулей. Они документированы в :ref:`library-index`. Некоторые встроенные "
+"модули упоминаются тогда, когда они существенно взаимодействуют с "
+"определением языка."
 
 #: ../../reference/introduction.rst:41
 msgid "Alternate Implementations"
-msgstr ""
+msgstr "Альтернативные реализации"
 
 #: ../../reference/introduction.rst:43
 msgid ""
@@ -76,24 +103,29 @@ msgid ""
 "there are some alternate implementations which are of particular interest to"
 " different audiences."
 msgstr ""
+"Хотя существует одна реализация Python, которая безусловно наиболее "
+"популярна, существуют и альтернативные реализации, представляющие особый "
+"интерес для разных аудиторий."
 
 #: ../../reference/introduction.rst:47
 msgid "Known implementations include:"
-msgstr ""
+msgstr "Известные реализации включают:"
 
 #: ../../reference/introduction.rst:49
 msgid "CPython"
-msgstr ""
+msgstr "CPython"
 
 #: ../../reference/introduction.rst:50
 msgid ""
 "This is the original and most-maintained implementation of Python, written "
 "in C. New language features generally appear here first."
 msgstr ""
+"Это оригинальная и самая поддеживаемая реализация Python, написанная на C. "
+"Новые возможности языка обычно появляются здесь в первую очередь."
 
 #: ../../reference/introduction.rst:53
 msgid "Jython"
-msgstr ""
+msgstr "Jython"
 
 #: ../../reference/introduction.rst:54
 msgid ""
@@ -103,10 +135,15 @@ msgid ""
 "libraries. More information can be found at `the Jython website "
 "<https://www.jython.org/>`_."
 msgstr ""
+"Python, реализованный на Java. Эта реализация может использоваться в "
+"качестве скриптового языка для приложений Java или для создания приложений с"
+" использованием библиотек классов Java. Она также часто используется для "
+"создания тестов для библиотек Java. Более подробная информация доступна на "
+"`сайте Jython <https://www.jython.org/>`_."
 
 #: ../../reference/introduction.rst:59
 msgid "Python for .NET"
-msgstr ""
+msgstr "Python для .NET"
 
 #: ../../reference/introduction.rst:60
 msgid ""
@@ -115,10 +152,14 @@ msgid ""
 " by Brian Lloyd.  For more information, see the `Python for .NET home page "
 "<https://pythonnet.github.io/>`_."
 msgstr ""
+"Эта реализация фактически использует CPython, но является управляемым "
+"приложением .NET и делает доступными библиотеки .NET. Она была создана "
+"Брайаном Ллойдом. Для дополнительной информации см. `главную страницу Python"
+" для .NET <https://pythonnet.github.io/>`_."
 
 #: ../../reference/introduction.rst:65
 msgid "IronPython"
-msgstr ""
+msgstr "IronPython"
 
 #: ../../reference/introduction.rst:66
 msgid ""
@@ -128,10 +169,15 @@ msgid ""
 "  For more information, see `the IronPython website "
 "<https://ironpython.net/>`_."
 msgstr ""
+"Альтернативная реализация Python для .NET. В отличие от Python.NET, это "
+"полноценная реализация Python, которая генерирует IL и компилирует код "
+"Python непосредственно в сборки .NET. Она была создана Джимом Хьюгинином, "
+"первоначальным создателем Jython. Дополнительную информацию можно найти на "
+"`сайте IronPython <https://ironpython.net/>`_."
 
 #: ../../reference/introduction.rst:71
 msgid "PyPy"
-msgstr ""
+msgstr "PyPy"
 
 #: ../../reference/introduction.rst:72
 msgid ""
@@ -143,6 +189,12 @@ msgid ""
 "information is available on `the PyPy project's home page "
 "<https://pypy.org/>`_."
 msgstr ""
+"Реализация Python, полностью написанная на Python. Она поддерживает "
+"несколько продвинутых возможностей, отсутствующих в других реализациях, "
+"таких как поддержка работы без стека и компилятор Just in Time. Одна из "
+"целей проекта — поощрять эксперименты с самим языком, облегчая модификацию "
+"интерпретатора (поскольку он написан на Python). Дополнительная информация "
+"доступна на `главной странице проекта PyPy <https://pypy.org/>`_."
 
 #: ../../reference/introduction.rst:79
 msgid ""
@@ -152,10 +204,15 @@ msgid ""
 "implementation-specific documentation to determine what else you need to "
 "know about the specific implementation you're using."
 msgstr ""
+"Каждая из этих реализаций в той или иной степени отличается от языка, "
+"описанного в этом справочном руководстве, или вводит специфическую "
+"информацию, выходящую за рамки стандартной документации Python. Пожалуйста, "
+"обращайтесь к документации конкретной реализации, чтобы узнать, что ещё "
+"необходимо учитывать при работе с выбранной реализацией."
 
 #: ../../reference/introduction.rst:89
 msgid "Notation"
-msgstr ""
+msgstr "Нотация"
 
 #: ../../reference/introduction.rst:93
 msgid ""
@@ -164,6 +221,10 @@ msgid ""
 "<https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form>`_ and `PEG"
 " <https://en.wikipedia.org/wiki/Parsing_expression_grammar>`_. For example:"
 msgstr ""
+"Описание лексического анализа и синтаксиса использует нотацию грамматики, "
+"которая представляет собой смесь `EBNF "
+"<https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form>`_ и `PEG "
+"<https://en.wikipedia.org/wiki/Parsing_expression_grammar>`_. Например:"
 
 #: ../../reference/introduction.rst:106
 msgid ""
@@ -173,6 +234,11 @@ msgid ""
 "through ``'z'`` and ``A`` through ``Z``; a ``digit`` is a single character "
 "from ``0`` to ``9``."
 msgstr ""
+"В этом примере первая строка говорит, что ``name`` — это ``letter``, за "
+"которой следует последовательность из нуля или более ``letter``, ``digit`` и"
+" подчёркиваний. В свою очередь, ``letter`` — это любой одиночный символ от "
+"``'a'`` до ``'z'`` или от ``A`` до ``Z``; а ``digit`` — это одиночный символ"
+" от ``0`` до ``9``."
 
 #: ../../reference/introduction.rst:112
 msgid ""
@@ -180,18 +246,25 @@ msgid ""
 "defined) followed by a colon, ``:``. The definition to the right of the "
 "colon uses the following syntax elements:"
 msgstr ""
+"Каждое правило начинается с имени (которое идентифицирует определяемое "
+"правило), за которым следует двоеточие, ``:``. Определение справа от "
+"двоеточия использует следующие синтаксические элементы:"
 
 #: ../../reference/introduction.rst:116
 msgid ""
 "``name``: A name refers to another rule. Where possible, it is a link to the"
 " rule's definition."
 msgstr ""
+"``name``: Имя ссылается на другое правило. По возможности, это ссылка на "
+"определение правила."
 
 #: ../../reference/introduction.rst:119
 msgid ""
 "``TOKEN``: An uppercase name refers to a :term:`token`. For the purposes of "
 "grammar definitions, tokens are the same as rules."
 msgstr ""
+"``TOKEN``: Заглавное имя ссылается на :term:`токен`. Для целей определения "
+"грамматики токены эквивалентны правилам."
 
 #: ../../reference/introduction.rst:122
 msgid ""
@@ -199,16 +272,23 @@ msgid ""
 "literally (without the quotes). The type of quote is chosen according to the"
 " meaning of ``text``:"
 msgstr ""
+"``\"text\"``, ``'text'``: Текст в одинарных или двойных кавычках должен "
+"совпадение буквально (без кавычек). Тип кавычка выбирается в зависимости от "
+"значения ``text``:"
 
 #: ../../reference/introduction.rst:126
 msgid "``'if'``: A name in single quotes denotes a :ref:`keyword <keywords>`."
 msgstr ""
+"``'if'``: Имя в одинарных кавычках обозначает :ref:`ключевое слово "
+"<keywords>` ."
 
 #: ../../reference/introduction.rst:127
 msgid ""
 "``\"case\"``: A name in double quotes denotes a :ref:`soft-keyword <soft-"
 "keywords>`."
 msgstr ""
+"``\"case\"``: Имя в двойных кавычках обозначает :ref:`мягкое ключевое слово "
+"<soft-keywords>` ."
 
 #: ../../reference/introduction.rst:129
 msgid ""
@@ -216,12 +296,17 @@ msgid ""
 ":py:data:`~token.OP` token, that is, a :ref:`delimiter <delimiters>` or "
 ":ref:`operator <operators>`."
 msgstr ""
+"``'@'``: Символ, не являющийся буквой, в одинарных кавычках обозначает "
+":py:data:`~token.OP` токен, то есть :ref:`разделитель <delimiters>` или "
+":ref:`оператор <operators>`."
 
 #: ../../reference/introduction.rst:133
 msgid ""
 "``e1 e2``: Items separated only by whitespace denote a sequence. Here, "
 "``e1`` must be followed by ``e2``."
 msgstr ""
+"``e1 e2``: Элементы, разделённые только пробелами, обозначают "
+"последовательность. Здесь за ``e1`` должен следовать ``e2``."
 
 #: ../../reference/introduction.rst:135
 msgid ""
@@ -230,36 +315,48 @@ msgid ""
 "traditional PEG grammars, this is written as a slash, ``/``, rather than a "
 "vertical bar. See :pep:`617` for more background and details."
 msgstr ""
+"``e1 | e2``: Вертикальная черта используется для разделения альтернатив. Она"
+" обозначает «упорядоченный выбор» PEG: если ``e1`` совпадает, то ``e2`` не "
+"рассматривается. В традиционных PEG-грамматиках это записывается как слэш, "
+"``/``, а не вертикальная черта. См. :pep:`617` для более подробного "
+"объяснения и деталей."
 
 #: ../../reference/introduction.rst:141
 msgid "``e*``: A star means zero or more repetitions of the preceding item."
 msgstr ""
+"``e*``: Звёздочка означает ноль или более повторений предыдущего элемента."
 
 #: ../../reference/introduction.rst:142
 msgid "``e+``: Likewise, a plus means one or more repetitions."
-msgstr ""
+msgstr "``e+``: Аналогично, плюс означает одно или несколько повторений."
 
 #: ../../reference/introduction.rst:143
 msgid ""
 "``[e]``: A phrase enclosed in square brackets means zero or one occurrences."
 " In other words, the enclosed phrase is optional."
 msgstr ""
+"``[e]``: Фраза в квадратных скобках означает ноль или одно вхождение. "
+"Другими словами, заключённая фраза является необязательной."
 
 #: ../../reference/introduction.rst:145
 msgid ""
 "``e?``: A question mark has exactly the same meaning as square brackets: the"
 " preceding item is optional."
 msgstr ""
+"``e?``: Вопросительный знак имеет точно такой же смысл, как квадратные "
+"скобки: предыдущий элемент необязателен."
 
 #: ../../reference/introduction.rst:147
 msgid "``(e)``: Parentheses are used for grouping."
-msgstr ""
+msgstr "``(e)``: Скобки используются для группировки."
 
 #: ../../reference/introduction.rst:149
 msgid ""
 "The following notation is only used in :ref:`lexical definitions <notation-"
 "lexical-vs-syntactic>`."
 msgstr ""
+"Следующая нотация используется только в :ref:`лексических определениях "
+"<notation-lexical-vs-syntactic>`."
 
 #: ../../reference/introduction.rst:152
 msgid ""
@@ -267,6 +364,9 @@ msgid ""
 "choice of any single character in the given (inclusive) range of ASCII "
 "characters."
 msgstr ""
+"``\"a\"...\"z\"``: Два буквальных символа, разделённые тремя точками, "
+"означают выбор любого одиночного символа в указанном (включительно) "
+"диапазоне ASCII."
 
 #: ../../reference/introduction.rst:154
 msgid ""
@@ -350,20 +450,20 @@ msgstr ""
 
 #: ../../reference/introduction.rst:91
 msgid "BNF"
-msgstr ""
+msgstr "BNF"
 
 #: ../../reference/introduction.rst:91
 msgid "grammar"
-msgstr ""
+msgstr "грамматика"
 
 #: ../../reference/introduction.rst:91
 msgid "syntax"
-msgstr ""
+msgstr "синтаксис"
 
 #: ../../reference/introduction.rst:91
 msgid "notation"
-msgstr ""
+msgstr "нотация"
 
 #: ../../reference/introduction.rst:197
 msgid "lexical definitions"
-msgstr ""
+msgstr "лексические определения"

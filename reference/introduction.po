@@ -384,31 +384,41 @@ msgid ""
 "Some definitions also use *lookaheads*, which indicate that an element must "
 "(or must not) match at a given position, but without consuming any input:"
 msgstr ""
+"В некоторых определениях также используются *lookahead*-ы, которые "
+"указывают, что элемент должен (или не должен) совпадать в заданной позиции, "
+"но без потребления входных данных:"
 
 #: ../../reference/introduction.rst:163
 msgid "``&e``: a positive lookahead (that is, ``e`` is required to match)"
-msgstr ""
+msgstr "``&e``: позитивный lookahead (т.е. ``e`` требуется для совпадения)"
 
 #: ../../reference/introduction.rst:164
 msgid ""
 "``!e``: a negative lookahead (that is, ``e`` is required *not* to match)"
 msgstr ""
+"``!e``: негативный lookahead (т.е. ``e`` должен *отсутствовать* для "
+"совпадения)"
 
 #: ../../reference/introduction.rst:166
 msgid ""
 "The unary operators (``*``, ``+``, ``?``) bind as tightly as possible; the "
 "vertical bar (``|``) binds most loosely."
 msgstr ""
+"Унарные операторы (``*``, ``+``, ``?``) применяются только к ближайшему "
+"элементу; а вертикальная черта (``|``) — к максимально возможному числу "
+"элементов."
 
 #: ../../reference/introduction.rst:169
 msgid "White space is only meaningful to separate tokens."
-msgstr ""
+msgstr "Пробел имеет значение только для разделения токенов."
 
 #: ../../reference/introduction.rst:171
 msgid ""
 "Rules are normally contained on a single line, but rules that are too long "
 "may be wrapped:"
 msgstr ""
+"Обычно правила помещаются на одной строке, но слишком длинные правила могут "
+"быть перенесены:"
 
 #: ../../reference/introduction.rst:180
 msgid ""
@@ -416,14 +426,17 @@ msgid ""
 "colon, and each alternative beginning with a vertical bar on a new line. For"
 " example:"
 msgstr ""
+"В качестве альтернативы правила могут быть оформлены так, что первая строка "
+"заканчивается двоеточием, а каждая альтернатива начинается с вертикальной "
+"черты на новой строке. Например:"
 
 #: ../../reference/introduction.rst:195
 msgid "This does *not* mean that there is an empty first alternative."
-msgstr ""
+msgstr "Это *не* означает, что существует пустая первая альтернатива."
 
 #: ../../reference/introduction.rst:202
 msgid "Lexical and Syntactic definitions"
-msgstr ""
+msgstr "Лексические и синтаксические определения"
 
 #: ../../reference/introduction.rst:204
 msgid ""
@@ -434,6 +447,12 @@ msgid ""
 "cases the exact boundary between the two phases is a CPython implementation "
 "detail."
 msgstr ""
+"Существует некоторое различие между *лексическим* и *синтаксическим* "
+"анализом: :term:`лексический анализатор` работает с отдельными символами "
+"исходного кода, в то время как *парсер* (синтаксический анализатор) работает"
+" с потоком :term:`токенов <token>`, сгенерированных лексическим "
+"анализатором. Однако в некоторых случаях точная граница между этими двумя "
+"этапами является деталью реализации CPython."
 
 #: ../../reference/introduction.rst:211
 msgid ""
@@ -443,6 +462,12 @@ msgid ""
 ":data:`token.INDENT` or :data:`~token.NEWLINE`. *Syntactic* definitions then"
 " use these tokens, rather than source characters."
 msgstr ""
+"Практическое различие между ними заключается в том, что в *лексических* "
+"определениях все пробельные символы являются значимыми. Лексический "
+"анализатор :ref:`отбрасывает <whitespace>` все пробельные символы, которые "
+"не преобразуются в токены, такие как :data:`token.INDENT` или "
+":data:`~token.NEWLINE`. *Синтаксические* определения затем используют эти "
+"токены, а не исходные символы."
 
 #: ../../reference/introduction.rst:217
 msgid ""
@@ -450,6 +475,10 @@ msgid ""
 " All uses of BNF in the next chapter (:ref:`lexical`) are lexical "
 "definitions; uses in subsequent chapters are syntactic definitions."
 msgstr ""
+"В этой документации для обоих типов определений используется одна и та же "
+"грамматика BNF. Все использования BNF в следующей главе (:ref:`lexical`) "
+"являются лексическими определениями; а использования в последующих главах — "
+"синтаксическими."
 
 #: ../../reference/introduction.rst:91
 msgid "BNF"

@@ -375,6 +375,9 @@ msgid ""
 "\"\\\">``), or an abbreviation that is defined in nearby text (for example, "
 "``<Lu>``)."
 msgstr ""
+"``<...>``: Фраза в угловых скобках даёт неформальное описание совпадающего "
+"символа (например, ``<any ASCII character except \"\\\">``) или сокращение, "
+"которое определено в соседнем тексте (например, ``<Lu>``)."
 
 #: ../../reference/introduction.rst:160
 msgid ""

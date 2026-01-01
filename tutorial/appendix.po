@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-19 14:15+0000\n"
+"POT-Creation-Date: 2026-01-01 14:14+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -42,28 +42,17 @@ msgstr ""
 
 #: ../../tutorial/appendix.rst:17
 msgid ""
-"On Windows, or Unix-like systems with :mod:`curses` support, a new "
-"interactive shell is used by default since Python 3.13. This one supports "
-"color, multiline editing, history browsing, and paste mode.  To disable "
-"color, see :ref:`using-on-controlling-color` for details.  Function keys "
-"provide some additional functionality. :kbd:`F1` enters the interactive help"
-" browser :mod:`pydoc`. :kbd:`F2` allows for browsing command-line history "
-"with neither output nor the :term:`>>>` and :term:`...` prompts. :kbd:`F3` "
-"enters \"paste mode\", which makes pasting larger blocks of code easier. "
-"Press :kbd:`F3` to return to the regular prompt."
+"Since Python 3.13, a new interactive shell is used by default. This one "
+"supports color, multiline editing, history browsing, and paste mode.  To "
+"disable color, see :ref:`using-on-controlling-color` for details.  Function "
+"keys provide some additional functionality. :kbd:`F1` enters the interactive"
+" help browser :mod:`pydoc`. :kbd:`F2` allows for browsing command-line "
+"history with neither output nor the :term:`>>>` and :term:`...` prompts. "
+":kbd:`F3` enters \"paste mode\", which makes pasting larger blocks of code "
+"easier. Press :kbd:`F3` to return to the regular prompt."
 msgstr ""
-"В Windows или Unix-подобных системах с поддержкой :mod:`curses`, начиная с "
-"Python 3.13 по умолчанию используется новая интерактивная оболочка. Она "
-"поддерживает цветовое оформление, многострочное редактирование, просмотр "
-"истории и режим вставки. Чтобы отключить цвета, см. :ref:`using-on-"
-"controlling-color`. Функциональные клавиши предоставляют дополнительные "
-"возможности. Клавиша :kbd:`F1`включает интерактивный просмотр справки "
-":mod:`pydoc`. Клавиша :kbd:`F2` позволяет просматривать историю команд без "
-"вывода и без приглашений :term:`>>>` и :term:`...`. Клавиша :kbd:`F3` "
-"включает «режим вставки», упрощающий вставку больших блоков кода. Для выхода"
-" из него и возврата к обычному режиму снова нажмите :kbd:`F3`."
 
-#: ../../tutorial/appendix.rst:28
+#: ../../tutorial/appendix.rst:27
 msgid ""
 "When using the new interactive shell, exit the shell by typing :kbd:`exit` "
 "or :kbd:`quit`. Adding call parentheses after those commands is not "
@@ -73,7 +62,7 @@ msgstr ""
 ":kbd:`exit` или :kbd:`quit`. Добавлять скобки для вызова этих команд не "
 "обязательно."
 
-#: ../../tutorial/appendix.rst:32
+#: ../../tutorial/appendix.rst:31
 msgid ""
 "If the new interactive shell is not desired, it can be disabled via the "
 ":envvar:`PYTHON_BASIC_REPL` environment variable."
@@ -81,11 +70,11 @@ msgstr ""
 "Если новая интерактивная оболочка нежелательна, её можно отключить с помощью"
 " переменной окружения :envvar:`PYTHON_BASIC_REPL`."
 
-#: ../../tutorial/appendix.rst:38
+#: ../../tutorial/appendix.rst:37
 msgid "Error Handling"
 msgstr "Обработка ошибок"
 
-#: ../../tutorial/appendix.rst:40
+#: ../../tutorial/appendix.rst:39
 msgid ""
 "When an error occurs, the interpreter prints an error message and a stack "
 "trace. In interactive mode, it then returns to the primary prompt; when "
@@ -108,7 +97,7 @@ msgstr ""
 "исчерпания памяти. Все сообщения об ошибках выводятся в стандартный поток "
 "ошибок, а нормальный вывод команд — в стандартный поток вывода."
 
-#: ../../tutorial/appendix.rst:50
+#: ../../tutorial/appendix.rst:49
 msgid ""
 "Typing the interrupt character (usually :kbd:`Control-C` or :kbd:`Delete`) "
 "to the primary or secondary prompt cancels the input and returns to the "
@@ -122,11 +111,11 @@ msgstr ""
 "исключение :exc:`KeyboardInterrupt`, которое может быть обработано "
 "инструкцией :keyword:`try`."
 
-#: ../../tutorial/appendix.rst:60
+#: ../../tutorial/appendix.rst:59
 msgid "Executable Python Scripts"
 msgstr "Исполняемые Python скрипты"
 
-#: ../../tutorial/appendix.rst:62
+#: ../../tutorial/appendix.rst:61
 msgid ""
 "On BSD'ish Unix systems, Python scripts can be made directly executable, "
 "like shell scripts, by putting the line ::"
@@ -134,11 +123,11 @@ msgstr ""
 "В BSD-подобных Unix системах скрипты Python можно сделать исполняемыми, как "
 "скрипты командной оболочки, добавив строку ::"
 
-#: ../../tutorial/appendix.rst:65
+#: ../../tutorial/appendix.rst:64
 msgid "#!/usr/bin/env python3"
 msgstr "#!/usr/bin/env python3"
 
-#: ../../tutorial/appendix.rst:67
+#: ../../tutorial/appendix.rst:66
 msgid ""
 "(assuming that the interpreter is on the user's :envvar:`PATH`) at the "
 "beginning of the script and giving the file an executable mode.  The ``#!`` "
@@ -154,7 +143,7 @@ msgstr ""
 "(``'\\r\\n'``). Обратите внимание, что символ хэша или решетки, ``'#'``, "
 "используется для начала комментария в Python."
 
-#: ../../tutorial/appendix.rst:74
+#: ../../tutorial/appendix.rst:73
 msgid ""
 "The script can be given an executable mode, or permission, using the "
 ":program:`chmod` command."
@@ -162,11 +151,11 @@ msgstr ""
 "Скрипту можно назначить права на исполнение или режим исполнения с помощью "
 "команды :program:`chmod`."
 
-#: ../../tutorial/appendix.rst:77
+#: ../../tutorial/appendix.rst:76
 msgid "$ chmod +x myscript.py"
 msgstr "$ chmod +x myscript.py"
 
-#: ../../tutorial/appendix.rst:81
+#: ../../tutorial/appendix.rst:80
 msgid ""
 "On Windows systems, there is no notion of an \"executable mode\".  The "
 "Python installer automatically associates ``.py`` files with ``python.exe`` "
@@ -180,11 +169,11 @@ msgstr ""
 " может быть ``.pyw``, в этом случае окно консоли, которое обычно появляется,"
 " будет скрыто."
 
-#: ../../tutorial/appendix.rst:91
+#: ../../tutorial/appendix.rst:90
 msgid "The Interactive Startup File"
 msgstr "Файл интерактивного запуска"
 
-#: ../../tutorial/appendix.rst:93
+#: ../../tutorial/appendix.rst:92
 msgid ""
 "When you use Python interactively, it is frequently handy to have some "
 "standard commands executed every time the interpreter is started.  You can "
@@ -198,7 +187,7 @@ msgstr ""
 " в ней путь к файлу с вашими стартовыми командами. Это похоже на "
 "использование :file:`.profile` в оболочках Unix."
 
-#: ../../tutorial/appendix.rst:99
+#: ../../tutorial/appendix.rst:98
 msgid ""
 "This file is only read in interactive sessions, not when Python reads "
 "commands from a script, and not when :file:`/dev/tty` is given as the "
@@ -216,7 +205,7 @@ msgstr ""
 "напрямую в интерактивной сессии. Вы также можете поменять вид основного "
 "``sys.ps1`` и вторичного ``sys.ps2`` приглашений в этом файле."
 
-#: ../../tutorial/appendix.rst:107
+#: ../../tutorial/appendix.rst:106
 msgid ""
 "If you want to read an additional start-up file from the current directory, "
 "you can program this in the global start-up file using code like ``if "
@@ -231,7 +220,7 @@ msgstr ""
 "файл напрямую в вашей программе, то вы можете сделать это явно таким "
 "образом: ::"
 
-#: ../../tutorial/appendix.rst:113
+#: ../../tutorial/appendix.rst:112
 msgid ""
 "import os\n"
 "filename = os.environ.get('PYTHONSTARTUP')\n"
@@ -247,11 +236,11 @@ msgstr ""
 "        startup_file = fobj.read()\n"
 "    exec(startup_file)"
 
-#: ../../tutorial/appendix.rst:124
+#: ../../tutorial/appendix.rst:123
 msgid "The Customization Modules"
 msgstr "Модули настройки"
 
-#: ../../tutorial/appendix.rst:126
+#: ../../tutorial/appendix.rst:125
 msgid ""
 "Python provides two hooks to let you customize it: :index:`sitecustomize` "
 "and :index:`usercustomize`.  To see how it works, you need first to find the"
@@ -263,7 +252,7 @@ msgstr ""
 "работает, сначала нужно узнать расположение пользовательского каталога site-"
 "package. Запустите Python и выполните код::"
 
-#: ../../tutorial/appendix.rst:130
+#: ../../tutorial/appendix.rst:129
 msgid ""
 ">>> import site\n"
 ">>> site.getusersitepackages()\n"
@@ -273,7 +262,7 @@ msgstr ""
 ">>> site.getusersitepackages()\n"
 "'/home/user/.local/lib/python3.x/site-packages'"
 
-#: ../../tutorial/appendix.rst:134
+#: ../../tutorial/appendix.rst:133
 msgid ""
 "Now you can create a file named :file:`usercustomize.py` in that directory "
 "and put anything you want in it.  It will affect every invocation of Python,"
@@ -285,7 +274,7 @@ msgstr ""
 "Python, если только интерпретатор не запущен с опцией :option:`-s` для "
 "отключения автоматического импорта."
 
-#: ../../tutorial/appendix.rst:138
+#: ../../tutorial/appendix.rst:137
 msgid ""
 ":index:`sitecustomize` works in the same way, but is typically created by an"
 " administrator of the computer in the global site-packages directory, and is"
@@ -297,10 +286,10 @@ msgstr ""
 "импортируется перед :index:`usercustomize`. Дополнительную информацию "
 "смотрите в документации модуля:mod:`site`."
 
-#: ../../tutorial/appendix.rst:145
+#: ../../tutorial/appendix.rst:144
 msgid "Footnotes"
 msgstr "Примечания"
 
-#: ../../tutorial/appendix.rst:146
+#: ../../tutorial/appendix.rst:145
 msgid "A problem with the GNU Readline package may prevent this."
 msgstr "Проблема с пакетом GNU Readline может этому воспрепятствовать."

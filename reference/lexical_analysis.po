@@ -137,28 +137,28 @@ msgstr ":ref:`Строковый литерал <strings>`"
 
 #: ../../reference/lexical_analysis.rst:52
 msgid "ASCII letter (``a``-``z``, ``A``-``Z``)"
-msgstr ""
+msgstr "ASCII-буква (``a``–``z``, ``A``–``Z``)"
 
 #: ../../reference/lexical_analysis.rst:53
 msgid "non-ASCII character"
-msgstr ""
+msgstr "не-ASCII символ"
 
 #: ../../reference/lexical_analysis.rst:54
 #: ../../reference/lexical_analysis.rst:58
 msgid ":ref:`Name <identifiers>`"
-msgstr ""
+msgstr ":ref:`Имя <identifiers>`"
 
 #: ../../reference/lexical_analysis.rst:55
 msgid "Prefixed :ref:`string or bytes literal <strings>`"
-msgstr ""
+msgstr "Префиксный :ref:`строковый или байтовый литерал <strings>`"
 
 #: ../../reference/lexical_analysis.rst:57
 msgid "underscore (``_``)"
-msgstr ""
+msgstr "подчёркивание (``_``)"
 
 #: ../../reference/lexical_analysis.rst:59
 msgid "(Can also be part of :ref:`numeric literals <numbers>`)"
-msgstr ""
+msgstr "(Также может быть частью :ref:`числовых литералов <numbers>`)"
 
 #: ../../reference/lexical_analysis.rst:61
 msgid "number (``0``-``9``)"

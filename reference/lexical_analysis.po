@@ -162,40 +162,40 @@ msgstr "(Также может быть частью :ref:`числовых ли
 
 #: ../../reference/lexical_analysis.rst:61
 msgid "number (``0``-``9``)"
-msgstr ""
+msgstr "цифра (``0``–``9``)"
 
 #: ../../reference/lexical_analysis.rst:62
 #: ../../reference/lexical_analysis.rst:65
 msgid ":ref:`Numeric literal <numbers>`"
-msgstr ""
+msgstr ":ref:`Числовой литерал <numbers>`"
 
 #: ../../reference/lexical_analysis.rst:64
 msgid "dot (``.``)"
-msgstr ""
+msgstr "точка (``.``)"
 
 #: ../../reference/lexical_analysis.rst:66
 msgid ":ref:`Operator <operators>`"
-msgstr ""
+msgstr ":ref:`Оператор <operators>`"
 
 #: ../../reference/lexical_analysis.rst:68
 msgid "question mark (``?``)"
-msgstr ""
+msgstr "вопросительный знак (``?``)"
 
 #: ../../reference/lexical_analysis.rst:69
 msgid "dollar (``$``)"
-msgstr ""
+msgstr "доллар (``$``)"
 
 #: ../../reference/lexical_analysis.rst:74
 msgid "backquote (``​`​``)"
-msgstr ""
+msgstr "обратная кавычка (``​`​``)"
 
 #: ../../reference/lexical_analysis.rst:75
 msgid "control character"
-msgstr ""
+msgstr "управляющий символ"
 
 #: ../../reference/lexical_analysis.rst:76
 msgid "Error (outside string literals and comments)"
-msgstr ""
+msgstr "Ошибка (за пределами строковых литералов и комментариев)"
 
 #: ../../reference/lexical_analysis.rst:78
 msgid "other printing character"

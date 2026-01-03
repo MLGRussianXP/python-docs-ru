@@ -279,20 +279,27 @@ msgid ""
 "literals <strings>`.) Each line can use any of the sequences; they do not "
 "need to be consistent within a file."
 msgstr ""
+"Независимо от платформы каждая из этих последовательностей заменяется одним "
+"символом ASCII LF (перевод строки). (Это выполняется даже внутри "
+":ref:`строковых литералов <strings>`.) В каждой строке может использоваться "
+"любая из этих последовательностей; они не обязаны быть единообразными внутри"
+" одного файла."
 
 #: ../../reference/lexical_analysis.rst:130
 msgid ""
 "The end of input also serves as an implicit terminator for the final "
 "physical line."
 msgstr ""
+"Конец входных данных также служит неявным завершением последней физической "
+"строки."
 
 #: ../../reference/lexical_analysis.rst:133
 msgid "Formally:"
-msgstr ""
+msgstr "Формально:"
 
 #: ../../reference/lexical_analysis.rst:144
 msgid "Comments"
-msgstr ""
+msgstr "Комментарии"
 
 #: ../../reference/lexical_analysis.rst:149
 msgid ""

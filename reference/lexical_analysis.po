@@ -45,6 +45,10 @@ msgid ""
 "characters <lexical-source-character>`. If the text cannot be decoded, a "
 ":exc:`SyntaxError` is raised."
 msgstr ""
+"Лексический анализатор определяет :ref:`кодировку <encodings>` текста "
+"программы (по умолчанию UTF-8) и декодирует текст в :ref:`исходные символы "
+"<lexical-source-character>`. Если текст не может быть декодирован, "
+"возбуждается исключение :exc:`SyntaxError`."
 
 #: ../../reference/lexical_analysis.rst:20
 msgid ""
@@ -55,73 +59,81 @@ msgid ""
 "processed. The following table gives a quick summary of these source "
 "characters, with links to sections that contain more information."
 msgstr ""
+"Затем лексический анализатор, используя исходные символы, генерирует поток "
+"токенов. Тип создаваемого токена обычно зависит от следующего исходного "
+"символа, который предстоит обработать. Аналогично, другое специальное "
+"поведение анализатора зависит от первого исходного символа, который ещё не "
+"был обработан. В следующей таблице приведено краткое описание таких исходных"
+" символов со ссылками на разделы, содержащие более подробную информацию."
 
 #: ../../reference/lexical_analysis.rst:30
 msgid "Character"
-msgstr ""
+msgstr "Символ"
 
 #: ../../reference/lexical_analysis.rst:31
 msgid "Next token (or other relevant documentation)"
-msgstr ""
+msgstr "Следующий токен (или другая соответствующая документация)"
 
 #: ../../reference/lexical_analysis.rst:33
 #: ../../reference/lexical_analysis.rst:266
 msgid "space"
-msgstr ""
+msgstr "пробел"
 
 #: ../../reference/lexical_analysis.rst:34
 #: ../../reference/lexical_analysis.rst:266
 msgid "tab"
-msgstr ""
+msgstr "табуляция"
 
 #: ../../reference/lexical_analysis.rst:35
 msgid "formfeed"
-msgstr ""
+msgstr "перевод страницы"
 
 #: ../../reference/lexical_analysis.rst:36
 msgid ":ref:`Whitespace <whitespace>`"
-msgstr ""
+msgstr ":ref:`Пробельный символ <whitespace>`"
 
 #: ../../reference/lexical_analysis.rst:38
 msgid "CR, LF"
-msgstr ""
+msgstr "CR, LF"
 
 #: ../../reference/lexical_analysis.rst:39
 msgid ":ref:`New line <line-structure>`"
-msgstr ""
+msgstr ":ref:`Новая строка <line-structure>`"
 
 #: ../../reference/lexical_analysis.rst:40
 msgid ":ref:`Indentation <indentation>`"
-msgstr ""
+msgstr ":ref:`Отступ <indentation>`"
 
 #: ../../reference/lexical_analysis.rst:42
 msgid "backslash (``\\``)"
-msgstr ""
+msgstr "обратный слэш (``\\``)"
 
 #: ../../reference/lexical_analysis.rst:43
 msgid ":ref:`Explicit line joining <explicit-joining>`"
-msgstr ""
+msgstr ":ref:`Явное объединение строк <explicit-joining>`"
 
 #: ../../reference/lexical_analysis.rst:44
 msgid ""
 "(Also significant in :ref:`string escape sequences <escape-sequences>`)"
 msgstr ""
+"(Также имеет значение в :ref:`строковых экранированных последовательностях "
+"<escape-sequences>`)"
 
 #: ../../reference/lexical_analysis.rst:46
 msgid "hash (``#``)"
-msgstr ""
+msgstr "решётка (``#``)"
 
 #: ../../reference/lexical_analysis.rst:47
 msgid ":ref:`Comment <comments>`"
-msgstr ""
+msgstr ":ref:`Комментарий <comments>`"
 
 #: ../../reference/lexical_analysis.rst:49
 msgid "quote (``'``, ``\"``)"
-msgstr ""
+msgstr "кавычка (``'``, ``\"``)"
 
 #: ../../reference/lexical_analysis.rst:50
 msgid ":ref:`String literal <strings>`"
-msgstr ""
+msgstr ":ref:`Строковый литерал <strings>`"
 
 #: ../../reference/lexical_analysis.rst:52
 msgid "ASCII letter (``a``-``z``, ``A``-``Z``)"

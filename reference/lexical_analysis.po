@@ -199,31 +199,31 @@ msgstr "Ошибка (за пределами строковых литерал�
 
 #: ../../reference/lexical_analysis.rst:78
 msgid "other printing character"
-msgstr ""
+msgstr "прочий отображаемый символ"
 
 #: ../../reference/lexical_analysis.rst:79
 msgid ":ref:`Operator or delimiter <operators>`"
-msgstr ""
+msgstr ":ref:`Оператор или разделитель <operators>`"
 
 #: ../../reference/lexical_analysis.rst:81
 msgid "end of file"
-msgstr ""
+msgstr "конец файла"
 
 #: ../../reference/lexical_analysis.rst:82
 msgid ":ref:`End marker <endmarker-token>`"
-msgstr ""
+msgstr ":ref:`Конечный маркер <endmarker-token>`"
 
 #: ../../reference/lexical_analysis.rst:88
 msgid "Line structure"
-msgstr ""
+msgstr "Структура строк"
 
 #: ../../reference/lexical_analysis.rst:92
 msgid "A Python program is divided into a number of *logical lines*."
-msgstr ""
+msgstr "Программа на Python разделена на несколько *логических строк*."
 
 #: ../../reference/lexical_analysis.rst:98
 msgid "Logical lines"
-msgstr ""
+msgstr "Логические строки"
 
 #: ../../reference/lexical_analysis.rst:102
 msgid ""
@@ -234,30 +234,43 @@ msgid ""
 "or more *physical lines* by following the :ref:`explicit <explicit-joining>`"
 " or :ref:`implicit <implicit-joining>` *line joining* rules."
 msgstr ""
+"Конец логической строки представляется токеном :data:`~token.NEWLINE`. "
+"Инструкции не могут пересекать границы логических строк, за исключением "
+"случаев, когда :data:`!NEWLINE` допускается синтаксисом (например, между "
+"инструкциями в составных инструкциях). Логическая строка строится из одной "
+"или нескольких физических строк в соответствии с правилами :ref:`явного "
+"<explicit-joining>` или :ref:`неявного <implicit-joining>` *объединения "
+"строк*."
 
 #: ../../reference/lexical_analysis.rst:113
 msgid "Physical lines"
-msgstr ""
+msgstr "Физические строки"
 
 #: ../../reference/lexical_analysis.rst:115
 msgid ""
 "A physical line is a sequence of characters terminated by one the following "
 "end-of-line sequences:"
 msgstr ""
+"Физическая строка — это последовательность символов, заканчивающаяся одной "
+"из следующих последовательностей конца строки:"
 
 #: ../../reference/lexical_analysis.rst:118
 msgid "the Unix form using ASCII LF (linefeed),"
-msgstr ""
+msgstr "форма Unix с использованием ASCII LF (перевод строки),"
 
 #: ../../reference/lexical_analysis.rst:119
 msgid ""
 "the Windows form using the ASCII sequence CR LF (return followed by "
 "linefeed),"
 msgstr ""
+"форма Windows с использованием последовательности ASCII CR LF (возврат "
+"каретки, за которым следует перевод строки),"
 
 #: ../../reference/lexical_analysis.rst:120
 msgid "the '`Classic Mac OS`__' form using the ASCII CR (return) character."
 msgstr ""
+"форма «`Классической Mac OS`__» с использованием символа ASCII CR (возврат "
+"каретки)."
 
 #: ../../reference/lexical_analysis.rst:124
 msgid ""

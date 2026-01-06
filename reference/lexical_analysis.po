@@ -315,7 +315,7 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:158
 msgid "Encoding declarations"
-msgstr ""
+msgstr "Объявление кодировки"
 
 #: ../../reference/lexical_analysis.rst:163
 msgid ""
@@ -326,22 +326,29 @@ msgid ""
 "line of its own. If it is the second line, the first line must also be a "
 "comment-only line. The recommended forms of an encoding expression are ::"
 msgstr ""
+"Если комментарий в первой или второй строке скрипта Python соответствует "
+"регулярному выражению ``coding[=:]\\s*([-\\w.]+)``, этот комментарий "
+"обрабатывается как объявление кодировки; первая группа этого выражения "
+"задаёт кодировку файла с исходным кодом. Объявление кодировки должно "
+"располагаться на отдельной строке. Если это вторая строка, первая строка "
+"также должна быть строкой только с комментарием. Рекомендуемые формы записи "
+"кодировки ::"
 
 #: ../../reference/lexical_analysis.rst:170
 msgid "# -*- coding: <encoding-name> -*-"
-msgstr ""
+msgstr "# -*- coding: <encoding-name> -*-"
 
 #: ../../reference/lexical_analysis.rst:172
 msgid "which is recognized also by GNU Emacs, and ::"
-msgstr ""
+msgstr "которые распознаются также GNU Emacs, и ::"
 
 #: ../../reference/lexical_analysis.rst:174
 msgid "# vim:fileencoding=<encoding-name>"
-msgstr ""
+msgstr "# vim:fileencoding=<encoding-name>"
 
 #: ../../reference/lexical_analysis.rst:176
 msgid "which is recognized by Bram Moolenaar's VIM."
-msgstr ""
+msgstr "которые распознаются редактором VIM Брэма Муленаара."
 
 #: ../../reference/lexical_analysis.rst:178
 msgid ""
@@ -350,6 +357,10 @@ msgid ""
 "order mark (``b'\\xef\\xbb\\xbf'``) is ignored rather than being a syntax "
 "error."
 msgstr ""
+"Если объявление кодировки не найдено, используется кодировка по умолчанию "
+"UTF-8. Если явная или неявная кодировка файла — UTF-8, начальная метка "
+"порядка байтов UTF-8 (``b'\\xef\\xbb\\xbf'``) игнорируется, а не вызывает "
+"синтаксическую ошибку."
 
 #: ../../reference/lexical_analysis.rst:182
 msgid ""
@@ -357,6 +368,9 @@ msgid ""
 "(see :ref:`standard-encodings`). The encoding is used for all lexical "
 "analysis, including string literals, comments and identifiers."
 msgstr ""
+"Если кодировка объявлена, её имя должно распознаваться Python (см. "
+":ref:`standard-encodings`). Кодировка используется для всего лексического "
+"анализа, включая строковые литералы, комментарии и идентификаторы."
 
 #: ../../reference/lexical_analysis.rst:189
 msgid ""
@@ -364,10 +378,14 @@ msgid ""
 "works on Unicode text decoded using the source encoding. Any Unicode code "
 "point, except the NUL control character, can appear in Python source."
 msgstr ""
+"Весь лексический анализ, включая строковые литералы, комментарии и "
+"идентификаторы, выполняется на тексте Unicode, декодированном с "
+"использованием исходной кодировки. Любая кодовая позиция Unicode, кроме "
+"управляющего символа NUL, может встречаться в исходном коде Python."
 
 #: ../../reference/lexical_analysis.rst:203
 msgid "Explicit line joining"
-msgstr ""
+msgstr "Явное объединение строк"
 
 #: ../../reference/lexical_analysis.rst:207
 msgid ""
@@ -385,6 +403,10 @@ msgid ""
 "   and 0 <= minute < 60 and 0 <= second < 60:   # Looks like a valid date\n"
 "        return 1"
 msgstr ""
+"if 1900 < year < 2100 and 1 <= month <= 12 \\\n"
+"   and 1 <= day <= 31 and 0 <= hour < 24 \\\n"
+"   and 0 <= minute < 60 and 0 <= second < 60:   # Похоже на корректную дату\n"
+"        return 1"
 
 #: ../../reference/lexical_analysis.rst:218
 msgid ""

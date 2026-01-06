@@ -395,6 +395,12 @@ msgid ""
 "following forming a single logical line, deleting the backslash and the "
 "following end-of-line character.  For example::"
 msgstr ""
+"Две или более физических строк могут быть объединены в логическую строку с "
+"помощью символа обратного слэша (``\\``), следующим образом: если физическая"
+" строка оканчивается обратным слэшем, который не является частью строкового "
+"литерала или комментария, она объединяется с последующей строкой, формируя "
+"единую логическую строку, при этом удаляются сам обратный слэш и следующий "
+"символ конца строки. Например::"
 
 #: ../../reference/lexical_analysis.rst:213
 msgid ""
@@ -416,16 +422,24 @@ msgid ""
 "physical lines using a backslash).  A backslash is illegal elsewhere on a "
 "line outside a string literal."
 msgstr ""
+"Строка, заканчивающаяся обратным слэшем, не может содержать комментарий. "
+"Обратный слэш не продолжает комментарий. Обратный слэш не делит токен, кроме"
+" строковых литералов (т.е. токены, отличные от строковых литералов, нельзя "
+"разделять на физические строки с помощью обратного слэша). В остальных "
+"местах строки вне строковых литералов использование обратного слэша "
+"запрещено."
 
 #: ../../reference/lexical_analysis.rst:228
 msgid "Implicit line joining"
-msgstr ""
+msgstr "Неявное объединение строк"
 
 #: ../../reference/lexical_analysis.rst:230
 msgid ""
 "Expressions in parentheses, square brackets or curly braces can be split "
 "over more than one physical line without using backslashes. For example::"
 msgstr ""
+"Выражения в круглых, квадратных или фигурных скобках можно разделить на "
+"несколько физических строк без использования обратного слэша. Например::"
 
 #: ../../reference/lexical_analysis.rst:233
 msgid ""
@@ -434,6 +448,10 @@ msgid ""
 "               'Juli',    'Augustus', 'September',  # for the months\n"
 "               'Oktober', 'November', 'December']   # of the year"
 msgstr ""
+"month_names = ['Januari', 'Februari', 'Maart',      # Это\n"
+"               'April',   'Mei',      'Juni',       # голландские названия\n"
+"               'Juli',    'Augustus', 'September',  # месяцев\n"
+"               'Oktober', 'November', 'December']   # в году"
 
 #: ../../reference/lexical_analysis.rst:238
 msgid ""
@@ -443,10 +461,15 @@ msgid ""
 "continued lines can also occur within triple-quoted strings (see below); in "
 "that case they cannot carry comments."
 msgstr ""
+"Строки, продолжающиеся неявно, могут содержать комментарии. Отступ строк "
+"продолжения не важен. Допускаются также пустые строки продолжения. Между "
+"строками неявного продолжения нет токена NEWLINE. Неявно продолжающиеся "
+"строки также могут встречаться в строках, заключенных в тройные кавычки (см."
+" ниже); в этом случае комментраии в них запрещены."
 
 #: ../../reference/lexical_analysis.rst:248
 msgid "Blank lines"
-msgstr ""
+msgstr "Пустые строки"
 
 #: ../../reference/lexical_analysis.rst:252
 msgid ""
@@ -458,10 +481,17 @@ msgid ""
 "containing not even whitespace or a comment) terminates a multi-line "
 "statement."
 msgstr ""
+"Логическая строка, содержащая только пробелы, табуляции, переводы страницы "
+"и, возможно, комментарий, игнорируется (т.е. токен :data:`~token.NEWLINE` не"
+" создаётся). При интерактивном вводе инструкций обработка пустой строки "
+"может различаться в зависимости от реализации цикла чтение–вычисление–вывод "
+"(REPL). В стандартном интерактивном интерпретаторе полностью пустая "
+"логическая строка (то есть не содержащая ни пробелов, ни комментариев) "
+"завершает многострочную инструкцию."
 
 #: ../../reference/lexical_analysis.rst:264
 msgid "Indentation"
-msgstr ""
+msgstr "Отступы"
 
 #: ../../reference/lexical_analysis.rst:268
 msgid ""
@@ -469,6 +499,9 @@ msgid ""
 "used to compute the indentation level of the line, which in turn is used to "
 "determine the grouping of statements."
 msgstr ""
+"Ведущие пробельные символы (пробелы и табуляции) в начале логической строки "
+"определяют уровень её отступа, который, в свою очередь, используется для "
+"определения группировки инструкций."
 
 #: ../../reference/lexical_analysis.rst:272
 msgid ""

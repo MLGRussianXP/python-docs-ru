@@ -870,18 +870,21 @@ msgid ""
 "These classes are identified by the patterns of leading and trailing "
 "underscore characters:"
 msgstr ""
+"Некоторые классы идентификаторов (помимо ключевых слов) имеют особое "
+"значение. Эти классы определяются шаблонами начальных и конечных символов "
+"подчёркивания:"
 
 #: ../../reference/lexical_analysis.rst:483
 msgid "``_*``"
-msgstr ""
+msgstr "``_*``"
 
 #: ../../reference/lexical_analysis.rst:484
 msgid "Not imported by ``from module import *``."
-msgstr ""
+msgstr "Не импортируются при использовании ``from module import *``."
 
 #: ../../reference/lexical_analysis.rst:486
 msgid "``_``"
-msgstr ""
+msgstr "``_``"
 
 #: ../../reference/lexical_analysis.rst:487
 msgid ""
@@ -889,6 +892,9 @@ msgid ""
 ":ref:`soft keyword <soft-keywords>` that denotes a :ref:`wildcard <wildcard-"
 "patterns>`."
 msgstr ""
+"В шаблоне ``case`` внутри инструкции :keyword:`match` символ ``_`` является "
+":ref:`мягким ключевым словом <soft-keywords>`, обозначающим :ref:`шаблон-"
+"подстановку <wildcard-patterns>`."
 
 #: ../../reference/lexical_analysis.rst:491
 msgid ""

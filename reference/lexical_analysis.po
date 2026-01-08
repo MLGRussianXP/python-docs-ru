@@ -712,60 +712,79 @@ msgid ""
 "longest possible string that forms a legal token, when read from left to "
 "right."
 msgstr ""
+"Помимо :data:`~token.NEWLINE`, :data:`~token.INDENT` и "
+":data:`~token.DEDENT`, существуют следующие категории токенов: "
+"*идентификаторы* и *ключевые слова* (:data:`~token.NAME`), *литералы* "
+"(например, :data:`~token.NUMBER` и :data:`~token.STRING`) и другие символы "
+"(*операторы* и *разделители*, :data:`~token.OP`). Пробельные символы (кроме "
+"символов окончания логической строки, рассмотренных ранее) не являются "
+"токенами, а служат для разделения токенов. В случае неоднозначности токеном "
+"считается наибольшая последовательность символов, которая образует "
+"допустимый токен при чтении слева направо."
 
 #: ../../reference/lexical_analysis.rst:390
 msgid "Names (identifiers and keywords)"
-msgstr ""
+msgstr "Имена (идентификаторы и ключевые слова)"
 
 #: ../../reference/lexical_analysis.rst:394
 msgid ""
 ":data:`~token.NAME` tokens represent *identifiers*, *keywords*, and *soft "
 "keywords*."
 msgstr ""
+"Токены :data:`~token.NAME` представляют собой *идентификаторы*, *ключевые "
+"слова* и *мягкие ключевые слова*."
 
 #: ../../reference/lexical_analysis.rst:397
 msgid "Names are composed of the following characters:"
-msgstr ""
+msgstr "Имена состоят из следующих символ:"
 
 #: ../../reference/lexical_analysis.rst:399
 msgid "uppercase and lowercase letters (``A-Z`` and ``a-z``),"
-msgstr ""
+msgstr "прописных и строчных букв (``A-Z`` и ``a-z``),"
 
 #: ../../reference/lexical_analysis.rst:400
 msgid "the underscore (``_``),"
-msgstr ""
+msgstr "символа подчеркивания (``_``),"
 
 #: ../../reference/lexical_analysis.rst:401
 msgid ""
 "digits (``0`` through ``9``), which cannot appear as the first character, "
 "and"
-msgstr ""
+msgstr "цифр (``0`` – ``9``), которые не могут быть первым символом, и"
 
 #: ../../reference/lexical_analysis.rst:402
 msgid ""
 "non-ASCII characters. Valid names may only contain \"letter-like\" and "
 "\"digit-like\" characters; see :ref:`lexical-names-nonascii` for details."
 msgstr ""
+"не-ASCII-символов. Допустимые имена могут содержать только символы, "
+"«похожие» на буквы и цифры; подробности см. в разделе :ref:`lexical-names-"
+"nonascii`."
 
 #: ../../reference/lexical_analysis.rst:405
 msgid ""
 "Names must contain at least one character, but have no upper length limit. "
 "Case is significant."
 msgstr ""
+"Имена должны содержать как минимум один символ и не имеют верхнего "
+"ограничения по длине. Регистр букв имеет значение."
 
 #: ../../reference/lexical_analysis.rst:408
 msgid "Formally, names are described by the following lexical definitions:"
-msgstr ""
+msgstr "Формально имена описываются следующими лексическими определениями:"
 
 #: ../../reference/lexical_analysis.rst:418
 msgid ""
 "Note that not all names matched by this grammar are valid; see "
 ":ref:`lexical-names-nonascii` for details."
 msgstr ""
+"Обратите внимание, что не все имена, соответствующие этой грамматике, "
+"являются допустимыми; подробности см. в разделе :ref:`lexical-names-"
+"nonascii`."
 
 #: ../../reference/lexical_analysis.rst:425
 msgid "Keywords"
-msgstr ""
+msgstr "Ключевые слова"
 
 #: ../../reference/lexical_analysis.rst:431
 msgid ""

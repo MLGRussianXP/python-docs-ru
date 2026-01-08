@@ -792,6 +792,9 @@ msgid ""
 "language, and cannot be used as ordinary identifiers.  They must be spelled "
 "exactly as written here:"
 msgstr ""
+"Следующие имена используются как зарезервированные слова, или *ключевые "
+"слова* языка, и не могут быть использованы как обычные идентификаторы. Они "
+"должны быть записаны точно в том виде, в каком приведены ниже:"
 
 #: ../../reference/lexical_analysis.rst:435
 msgid ""
@@ -813,28 +816,35 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:449
 msgid "Soft Keywords"
-msgstr ""
+msgstr "Мягкие ключевые слова"
 
 #: ../../reference/lexical_analysis.rst:455
 msgid ""
 "Some names are only reserved under specific contexts. These are known as "
 "*soft keywords*:"
 msgstr ""
+"Некоторые имена являются зарезервированными только в определённых "
+"контекстах. Они известны как *мягкие ключевые слова*:"
 
 #: ../../reference/lexical_analysis.rst:458
 msgid ""
 "``match``, ``case``, and ``_``, when used in the :keyword:`match` statement."
 msgstr ""
+"``match``, ``case`` и ``_``, при использовании в инструкции "
+":keyword:`match`."
 
 #: ../../reference/lexical_analysis.rst:459
 msgid "``type``, when used in the :keyword:`type` statement."
-msgstr ""
+msgstr "``type``, при использовании в инструкции :keyword:`type`."
 
 #: ../../reference/lexical_analysis.rst:461
 msgid ""
 "These syntactically act as keywords in their specific contexts, but this "
 "distinction is done at the parser level, not when tokenizing."
 msgstr ""
+"В своём конкретном контексте они синтаксически ведут себя как ключевые "
+"слова, однако это различие реализуется на уровне парсера, а не во время "
+"разделения на токены."
 
 #: ../../reference/lexical_analysis.rst:464
 msgid ""
@@ -842,10 +852,13 @@ msgid ""
 "preserving compatibility with existing code that uses these names as "
 "identifier names."
 msgstr ""
+"В качестве мягких ключевых слов их можно использовать в грамматике при "
+"сохранении совместимости с существующим кодом, где эти имена встречаются в "
+"качестве идентификаторов."
 
 #: ../../reference/lexical_analysis.rst:468
 msgid "``type`` is now a soft keyword."
-msgstr ""
+msgstr "``type`` теперь является мягким ключевым словом."
 
 #: ../../reference/lexical_analysis.rst:477
 msgid "Reserved classes of identifiers"

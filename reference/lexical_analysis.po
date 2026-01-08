@@ -580,12 +580,24 @@ msgid ""
 ":data:`!DEDENT` token is generated for each number remaining on the stack "
 "that is larger than zero."
 msgstr ""
+"Перед чтением первой строки файла на стек помещается нулевой уровень; он "
+"никогда не будет удалён. Числа, помещаемые на стек, всегда строго возрастают"
+" от нижнего элемента к верхнему. В начале каждой логической строки уровень "
+"её отступа сравнивается с верхним элементом стека. Если он равен верхнему "
+"элементу — ничего не происходит. Если он больше — значение помещается на "
+"стек, и создаётся один токен :data:`!INDENT`. Если он меньше — значение "
+"*должно* присутствовать в стеке; все элементы стека, большие этого уровня, "
+"удаляются, и для каждого из них генерируется токен :data:`!DEDENT`. В конце "
+"файла для каждого числа в стеке, большего нуля, также создаётся токен "
+":data:`!DEDENT`."
 
 #: ../../reference/lexical_analysis.rst:311
 msgid ""
 "Here is an example of a correctly (though confusingly) indented piece of "
 "Python code::"
 msgstr ""
+"Вот пример корректного (хотя и запутанного) фрагмента кода Python с "
+"отступами:"
 
 #: ../../reference/lexical_analysis.rst:314
 msgid ""
@@ -601,10 +613,21 @@ msgid ""
 "              r.append(l[i:i+1] + x)\n"
 "    return r"
 msgstr ""
+"def perm(l):\n"
+"        # Вычисление списка всех перестановок l\n"
+"    if len(l) <= 1:\n"
+"                  return [l]\n"
+"    r = []\n"
+"    for i in range(len(l)):\n"
+"             s = l[:i] + l[i+1:]\n"
+"             p = perm(s)\n"
+"             for x in p:\n"
+"              r.append(l[i:i+1] + x)\n"
+"    return r"
 
 #: ../../reference/lexical_analysis.rst:326
 msgid "The following example shows various indentation errors::"
-msgstr ""
+msgstr "В следующем примере показаны различные ошибки отступов:"
 
 #: ../../reference/lexical_analysis.rst:328
 msgid ""
@@ -616,6 +639,13 @@ msgid ""
 "                r.append(l[i:i+1] + x)\n"
 "            return r                # error: inconsistent dedent"
 msgstr ""
+" def perm(l):                       # ошибка: первая строка с отступом\n"
+"for i in range(len(l)):             # ошибка: нет отступа\n"
+"    s = l[:i] + l[i+1:]\n"
+"        p = perm(l[:i] + l[i+1:])   # ошибка: неожиданный отступ\n"
+"        for x in p:\n"
+"                r.append(l[i:i+1] + x)\n"
+"            return r                # ошибка: несогласующееся уменьшение отступа"
 
 #: ../../reference/lexical_analysis.rst:336
 msgid ""
@@ -623,10 +653,13 @@ msgid ""
 "error is found by the lexical analyzer --- the indentation of ``return r`` "
 "does not match a level popped off the stack.)"
 msgstr ""
+"(На самом деле первые три ошибки обнаруживаются парсером; только последняя "
+"ошибка определяется лексическим анализатором — отступ ``return r`` не "
+"соответствует уровню, извлечённому из стека.)"
 
 #: ../../reference/lexical_analysis.rst:344
 msgid "Whitespace between tokens"
-msgstr ""
+msgstr "Пробелы между токенами"
 
 #: ../../reference/lexical_analysis.rst:346
 msgid ""
@@ -634,6 +667,9 @@ msgid ""
 "whitespace characters space, tab and formfeed can be used interchangeably to"
 " separate tokens:"
 msgstr ""
+"За исключением начала логической строки или строковых литералов, пробельные "
+"символы — пробел, табуляция и перевод страницы — могут использоваться "
+"взаимозаменяемо для разделения токенов:"
 
 #: ../../reference/lexical_analysis.rst:356
 msgid ""
@@ -642,20 +678,27 @@ msgid ""
 "token, but ``a b`` is two tokens. However, ``+a`` and ``+ a`` both produce "
 "two tokens, ``+`` and ``a``, as ``+a`` is not a valid token."
 msgstr ""
+"Пробельные символы необходимы между двумя токенами только в том случае, если"
+" их объединение могло бы быть интерпретировано как другой токен. Например: "
+"``ab`` — один токен, но ``a b`` — два токена. Однако, ``+a`` и ``+ a`` оба "
+"дают два токена ``+`` и ``a``, так как ``+a`` не является допустимым "
+"токеном."
 
 #: ../../reference/lexical_analysis.rst:365
 msgid "End marker"
-msgstr ""
+msgstr "Маркер конца"
 
 #: ../../reference/lexical_analysis.rst:367
 msgid ""
 "At the end of non-interactive input, the lexical analyzer generates an "
 ":data:`~token.ENDMARKER` token."
 msgstr ""
+"В конце неинтерактивного ввода лексический анализатор создаёт токен "
+":data:`~token.ENDMARKER`."
 
 #: ../../reference/lexical_analysis.rst:374
 msgid "Other tokens"
-msgstr ""
+msgstr "Другие токены"
 
 #: ../../reference/lexical_analysis.rst:376
 msgid ""
@@ -741,6 +784,13 @@ msgid ""
 "assert     del        global     not        with\n"
 "async      elif       if         or         yield"
 msgstr ""
+"False      await      else       import     pass\n"
+"None       break      except     in         raise\n"
+"True       class      finally    is         return\n"
+"and        continue   for        lambda     try\n"
+"as         def        from       nonlocal   while\n"
+"assert     del        global     not        with\n"
+"async      elif       if         or         yield"
 
 #: ../../reference/lexical_analysis.rst:449
 msgid "Soft Keywords"

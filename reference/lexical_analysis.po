@@ -978,10 +978,14 @@ msgid ""
 "<identifiers>`. For example, ``ř_1``, ``蛇``, or ``साँप``  are valid names, "
 "but ``r〰2``, ``€``, or ``🐍`` are not."
 msgstr ""
+"Имена, содержащие не-ASCII символы, требуют дополнительной нормализации и "
+"проверки, помимо правил и грамматики, описанных :ref:`выше <identifiers>`. "
+"Например, ``ř_1``, ``蛇`` или ``साँप`` являются допустимыми именами, а "
+"``r〰2``, ``€`` или ``🐍`` — нет."
 
 #: ../../reference/lexical_analysis.rst:533
 msgid "This section explains the exact rules."
-msgstr ""
+msgstr "В этом разделе объясняются точные правила."
 
 #: ../../reference/lexical_analysis.rst:535
 msgid ""
@@ -990,6 +994,10 @@ msgid ""
 "converted to their \"basic\" form. For example, ``ﬁⁿₐˡᵢᶻₐᵗᵢᵒₙ`` normalizes "
 "to ``finalization``, so Python treats them as the same name::"
 msgstr ""
+"Все имена при разборе преобразуются в `нормализованную форму`_ NFKC. Это "
+"означает, что некоторые типографские варианты символов преобразуются в их "
+"«базовую» форму. Например, ``ﬁⁿₐˡᵢᶻₐᵗᵢᵒₙ`` нормализуется в ``finalization``,"
+" и Python будет рассматривать их как одно и то же имя::"
 
 #: ../../reference/lexical_analysis.rst:540
 msgid ""
@@ -997,6 +1005,9 @@ msgid ""
 ">>> finalization\n"
 "3"
 msgstr ""
+">>> ﬁⁿₐˡᵢᶻₐᵗᵢᵒₙ = 3\n"
+">>> finalization\n"
+"3"
 
 #: ../../reference/lexical_analysis.rst:546
 msgid ""
@@ -1006,6 +1017,11 @@ msgid ""
 ":func:`globals` dictionary as ``globals()[\"finalization\"]`` but not "
 "``globals()[\"ﬁⁿₐˡᵢᶻₐᵗᵢᵒₙ\"]``."
 msgstr ""
+"Нормализация выполняется только на лексическом уровне. Функции времени "
+"выполнения, которые принимают имена как строки, обычно не нормализуют свои "
+"аргументы. Например, переменная, определённая выше, доступна во время "
+"выполнения через словарь :func:`globals` как "
+"``globals()[\"finalization\"]``, но не как ``globals()[\"ﬁⁿₐˡᵢᶻₐᵗᵢᵒₙ\"]``."
 
 #: ../../reference/lexical_analysis.rst:553
 msgid ""
@@ -1014,6 +1030,11 @@ msgid ""
 "character in the \"letter-like\" set ``xid_start``, and the remaining "
 "characters must be in the \"letter- and digit-like\" set ``xid_continue``."
 msgstr ""
+"Аналогично тому, как имена, состоящие только из ASCII символов, могут "
+"содержать только буквы, цифры и подчёркивание и не могут начинаться с цифры,"
+" допустимое имя должно начинаться с символа из множества «похожих» на буквы "
+"``xid_start``, а все остальные символы должны принадлежать множеству "
+"«похожих» на буквы или цифры ``xid_continue``."
 
 #: ../../reference/lexical_analysis.rst:559
 msgid ""
@@ -1022,6 +1043,10 @@ msgid ""
 "includes the underscore (``_``). Note that Python does not necessarily "
 "conform to `UAX-31`_."
 msgstr ""
+"Эти множества основаны на наборах *XID_Start* и *XID_Continue*, определённых"
+" в приложении к стандарту Unicode `UAX-31`_. В Python ``xid_start`` "
+"дополнительно включает подчёркивание (``_``). Обратите внимание, что Python "
+"не обязательно полностью соответствует `UAX-31`_."
 
 #: ../../reference/lexical_analysis.rst:564
 msgid ""
@@ -1030,32 +1055,36 @@ msgid ""
 "file in the Unicode Character Database. For reference, the construction "
 "rules for the ``xid_*`` sets are given below."
 msgstr ""
+"Неформальный список символов из множеств *XID_Start* и *XID_Continue*, как "
+"определено в Unicode, доступен в файле `DerivedCoreProperties.txt`_ в базе "
+"данных символов Unicode. Для справки ниже приведены правила построения "
+"множеств ``xid_*``."
 
 #: ../../reference/lexical_analysis.rst:569
 msgid "The set ``id_start`` is defined as the union of:"
-msgstr ""
+msgstr "Множество ``id_start`` определяется как объединение:"
 
 #: ../../reference/lexical_analysis.rst:571
 msgid ""
 "Unicode category ``<Lu>`` - uppercase letters (includes ``A`` to ``Z``)"
-msgstr ""
+msgstr "категория Unicode ``<Lu>`` — заглавные буквы (включая ``A``–``Z``)"
 
 #: ../../reference/lexical_analysis.rst:572
 msgid ""
 "Unicode category ``<Ll>`` - lowercase letters (includes ``a`` to ``z``)"
-msgstr ""
+msgstr "категория Unicode ``<Ll>`` — строчные буквы (включая ``a``–``z``)"
 
 #: ../../reference/lexical_analysis.rst:573
 msgid "Unicode category ``<Lt>`` - titlecase letters"
-msgstr ""
+msgstr "категория Unicode ``<Lt>`` — буквы заглавного регистра"
 
 #: ../../reference/lexical_analysis.rst:574
 msgid "Unicode category ``<Lm>`` - modifier letters"
-msgstr ""
+msgstr "категория Unicode ``<Lm>`` — модификаторные буквы"
 
 #: ../../reference/lexical_analysis.rst:575
 msgid "Unicode category ``<Lo>`` - other letters"
-msgstr ""
+msgstr "категория Unicode ``<Lo>`` — прочие буквы"
 
 #: ../../reference/lexical_analysis.rst:576
 msgid "Unicode category ``<Nl>`` - letter numbers"

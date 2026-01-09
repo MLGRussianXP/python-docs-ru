@@ -1171,12 +1171,15 @@ msgstr "Литералы"
 #: ../../reference/lexical_analysis.rst:618
 msgid "Literals are notations for constant values of some built-in types."
 msgstr ""
+"Литералы — это явная запись постоянных значений некоторых встроенных типов."
 
 #: ../../reference/lexical_analysis.rst:620
 msgid ""
 "In terms of lexical analysis, Python has :ref:`string, bytes <strings>` and "
 ":ref:`numeric <numbers>` literals."
 msgstr ""
+"С точки зрения лексического анализа в Python существуют :ref:`строковые, "
+"байтовые <strings>` и :ref:`числовые <numbers>` литералы."
 
 #: ../../reference/lexical_analysis.rst:623
 msgid ""
@@ -1184,6 +1187,9 @@ msgid ""
 "(``None``, ``True``, ``False``) and the special :ref:`ellipsis token "
 "<lexical-ellipsis>` (``...``)."
 msgstr ""
+"Другие «литералы» лексически обозначаются с помощью :ref:`ключевых слов "
+"<keywords>` (``None``, ``True``, ``False``) и специального :ref:`токена "
+"многоточия <lexical-ellipsis>` (``...``)."
 
 #: ../../reference/lexical_analysis.rst:634
 msgid "String and Bytes literals"

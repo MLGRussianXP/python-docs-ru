@@ -902,6 +902,9 @@ msgid ""
 "evaluation available in the variable ``_``. (It is stored in the "
 ":mod:`builtins` module, alongside built-in functions like ``print``.)"
 msgstr ""
+"Отдельно стоит отметить, что в интерактивном интерпретаторе результат "
+"последнего вычисления доступен в переменной ``_``. (Она хранится в модуле "
+":mod:`builtins` наряду со встроенными функциями, такими как ``print``.)"
 
 #: ../../reference/lexical_analysis.rst:496
 msgid ""

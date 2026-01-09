@@ -969,7 +969,7 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:525
 msgid "Non-ASCII characters in names"
-msgstr ""
+msgstr "Не-ASCII символы в именах"
 
 #: ../../reference/lexical_analysis.rst:527
 msgid ""

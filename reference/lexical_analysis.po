@@ -1088,17 +1088,19 @@ msgstr "категория Unicode ``<Lo>`` — прочие буквы"
 
 #: ../../reference/lexical_analysis.rst:576
 msgid "Unicode category ``<Nl>`` - letter numbers"
-msgstr ""
+msgstr "категория Unicode ``<Nl>`` — символьные числительные"
 
 #: ../../reference/lexical_analysis.rst:577
 msgid "{``\"_\"``} - the underscore"
-msgstr ""
+msgstr "{``\"_\"``} — подчёркивание"
 
 #: ../../reference/lexical_analysis.rst:578
 msgid ""
 "``<Other_ID_Start>`` - an explicit set of characters in `PropList.txt`_ to "
 "support backwards compatibility"
 msgstr ""
+"``<Other_ID_Start>`` —  явный набор символов из `PropList.txt`_ для "
+"поддержки обратной совместимости"
 
 #: ../../reference/lexical_analysis.rst:581
 msgid ""
@@ -1106,58 +1108,65 @@ msgid ""
 "removing all characters whose normalization is not of the form ``id_start "
 "id_continue*``."
 msgstr ""
+"Множество ``xid_start`` затем корректируется в соответствии с нормализацией "
+"NFKC: из него удаляются все символы, нормализация которых не имеет формы "
+"``id_start id_continue*``."
 
 #: ../../reference/lexical_analysis.rst:585
 msgid "The set ``id_continue`` is defined as the union of:"
-msgstr ""
+msgstr "Множество ``id_continue`` определяется как объединение:"
 
 #: ../../reference/lexical_analysis.rst:587
 msgid "``id_start`` (see above)"
-msgstr ""
+msgstr "``id_start`` (см. выше)"
 
 #: ../../reference/lexical_analysis.rst:588
 msgid "Unicode category ``<Nd>`` - decimal numbers (includes ``0`` to ``9``)"
-msgstr ""
+msgstr "категория Unicode ``<Nd>`` — десятичные цифры (включая ``0``–``9``)"
 
 #: ../../reference/lexical_analysis.rst:589
 msgid "Unicode category ``<Pc>`` - connector punctuations"
-msgstr ""
+msgstr "категория Unicode ``<Pc>`` — соединительные знаки препинания"
 
 #: ../../reference/lexical_analysis.rst:590
 msgid "Unicode category ``<Mn>`` - nonspacing marks"
-msgstr ""
+msgstr "категория Unicode ``<Mn>`` — неразделяемые знаки без ширины"
 
 #: ../../reference/lexical_analysis.rst:591
 msgid "Unicode category ``<Mc>`` - spacing combining marks"
-msgstr ""
+msgstr "категория Unicode ``<Mc>`` — комбинируемые знаки с шириной"
 
 #: ../../reference/lexical_analysis.rst:592
 msgid ""
 "``<Other_ID_Continue>`` - another explicit set of characters in "
 "`PropList.txt`_ to support backwards compatibility"
 msgstr ""
+"``<Other_ID_Continue>`` — ещё один явный набор символов из `PropList.txt`_ "
+"для поддержки обратной совместимости"
 
 #: ../../reference/lexical_analysis.rst:595
 msgid "Again, ``xid_continue`` closes this set under NFKC normalization."
-msgstr ""
+msgstr "Множество ``xid_continue`` также корректируется по нормализации NFKC."
 
 #: ../../reference/lexical_analysis.rst:597
 msgid ""
 "Unicode categories use the version of the Unicode Character Database as "
 "included in the :mod:`unicodedata` module."
 msgstr ""
+"Категории Unicode используют версию базы данных символов Unicode, включённую"
+" в модуль :mod:`unicodedata`."
 
 #: ../../reference/lexical_analysis.rst:607
 msgid ":pep:`3131` -- Supporting Non-ASCII Identifiers"
-msgstr ""
+msgstr ":pep:`3131` — Поддержка идентификаторов с не-ASCII символами"
 
 #: ../../reference/lexical_analysis.rst:608
 msgid ":pep:`672` -- Unicode-related Security Considerations for Python"
-msgstr ""
+msgstr ":pep:`672` — Соображения безопасности Python, связанные с Unicode"
 
 #: ../../reference/lexical_analysis.rst:614
 msgid "Literals"
-msgstr ""
+msgstr "Литералы"
 
 #: ../../reference/lexical_analysis.rst:618
 msgid "Literals are notations for constant values of some built-in types."

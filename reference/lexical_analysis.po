@@ -911,6 +911,9 @@ msgid ""
 "Elsewhere, ``_`` is a regular identifier. It is often used to name "
 "\"special\" items, but it is not special to Python itself."
 msgstr ""
+"В остальных случаях ``_`` — обычный идентификатор. Его часто используют для "
+"именования «специальных» элементов, однако сам по себе он не имеет особого "
+"значения для Python."
 
 #: ../../reference/lexical_analysis.rst:501
 msgid ""
@@ -918,14 +921,18 @@ msgid ""
 " to the documentation for the :mod:`gettext` module for more information on "
 "this convention."
 msgstr ""
+"Имя ``_`` часто используется в сочетании с интернационализацией; обратитесь "
+"к документации модуля :mod:`gettext` для получения дополнительной информации"
+" об этом соглашении."
 
 #: ../../reference/lexical_analysis.rst:505
 msgid "It is also commonly used for unused variables."
 msgstr ""
+"Оно также широко применяется для обозначения неиспользуемых переменных."
 
 #: ../../reference/lexical_analysis.rst:507
 msgid "``__*__``"
-msgstr ""
+msgstr "``__*__``"
 
 #: ../../reference/lexical_analysis.rst:508
 msgid ""

@@ -1299,57 +1299,64 @@ msgstr "\"\"\"Эта строка содержит \"кавычки\" внутр
 
 #: ../../reference/lexical_analysis.rst:690
 msgid "Unescaped newlines are also allowed and retained::"
-msgstr ""
+msgstr "Также допускаются и сохраняются неэкранированные переводы строки::"
 
 #: ../../reference/lexical_analysis.rst:692
 msgid ""
 "'''This triple-quoted string\n"
 "continues on the next line.'''"
 msgstr ""
+"'''Эта строка в тройных кавычках\n"
+"продолжается на следующей строке.'''"
 
 #: ../../reference/lexical_analysis.rst:701
 msgid "String prefixes"
-msgstr ""
+msgstr "Префиксы строк"
 
 #: ../../reference/lexical_analysis.rst:703
 msgid ""
 "String literals can have an optional :dfn:`prefix` that influences how the "
 "content of the literal is parsed, for example:"
 msgstr ""
+"Строковые литералы могут иметь необязательный :dfn:`префикс`, который влияет"
+" на то, как разбирается содержимое литерала, например:"
 
 #: ../../reference/lexical_analysis.rst:706
 msgid ""
 "b\"data\"\n"
 "f'{result=}'"
 msgstr ""
+"b\"data\"\n"
+"f'{result=}'"
 
 #: ../../reference/lexical_analysis.rst:711
 msgid "The allowed prefixes are:"
-msgstr ""
+msgstr "Допустимые префиксы:"
 
 #: ../../reference/lexical_analysis.rst:713
 msgid "``b``: :ref:`Bytes literal <bytes-literal>`"
-msgstr ""
+msgstr "``b``: :ref:`Байтовый литерал <bytes-literal>`"
 
 #: ../../reference/lexical_analysis.rst:714
 msgid "``r``: :ref:`Raw string <raw-strings>`"
-msgstr ""
+msgstr "``r``: :ref:`Сырая строка <raw-strings>`"
 
 #: ../../reference/lexical_analysis.rst:715
 msgid "``f``: :ref:`Formatted string literal <f-strings>` (\"f-string\")"
 msgstr ""
+"``f``: :ref:`Форматированный строковый литерал <f-strings>` («f-строки»)"
 
 #: ../../reference/lexical_analysis.rst:716
 msgid "``t``: :ref:`Template string literal <t-strings>` (\"t-string\")"
-msgstr ""
+msgstr "``t``: :ref:`Шаблонный строковый литерал <t-strings>` («t-строки»)"
 
 #: ../../reference/lexical_analysis.rst:717
 msgid "``u``: No effect (allowed for backwards compatibility)"
-msgstr ""
+msgstr "``u``: Не оказывает эффекта (допускается для обратной совместимости)"
 
 #: ../../reference/lexical_analysis.rst:719
 msgid "See the linked sections for details on each type."
-msgstr ""
+msgstr "Подробности по каждому типу см. в соответствующих разделах."
 
 #: ../../reference/lexical_analysis.rst:721
 msgid ""
@@ -1358,12 +1365,18 @@ msgid ""
 "'``b``', so '``fr``', '``rf``', '``tr``', '``rt``', '``br``', and '``rb``' "
 "are also valid prefixes."
 msgstr ""
+"Префиксы нечувствительны к регистру (например, '``B``' работает так же, как "
+"'``b``'). Префикс '``r``' может сочетаться с '``f``', '``t``' или '``b``', "
+"поэтому '``fr``', '``rf``', '``tr``', '``rt``', '``br``' и '``rb``' также "
+"являются допустимыми префиксами."
 
 #: ../../reference/lexical_analysis.rst:725
 msgid ""
 "The ``'rb'`` prefix of raw bytes literals has been added as a synonym of "
 "``'br'``."
 msgstr ""
+"Префикс ``'rb'`` для сырых байтовых литералов был добавлен как синоним "
+"``'br'``."
 
 #: ../../reference/lexical_analysis.rst:729
 msgid ""
@@ -1371,6 +1384,9 @@ msgid ""
 "simplify the maintenance of dual Python 2.x and 3.x codebases. See "
 ":pep:`414` for more information."
 msgstr ""
+"Поддержка устаревшего литерала Unicode (``u'value'``) была вновь введена для"
+" упрощения сопровождения кодовых баз, совместимых с Python 2.x и 3.x. "
+"Дополнительные сведения см. в :pep:`414`."
 
 #: ../../reference/lexical_analysis.rst:735
 msgid "Formal grammar"

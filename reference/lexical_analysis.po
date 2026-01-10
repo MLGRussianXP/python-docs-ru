@@ -1193,19 +1193,23 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:634
 msgid "String and Bytes literals"
-msgstr ""
+msgstr "Строковые и байтовые литералы"
 
 #: ../../reference/lexical_analysis.rst:636
 msgid ""
 "String literals are text enclosed in single quotes (``'``) or double quotes "
 "(``\"``). For example:"
 msgstr ""
+"Строковые литералы — это текст, заключённый в одиночные (``'``) или двойные "
+"кавычки (``\"``). Например:"
 
 #: ../../reference/lexical_analysis.rst:639
 msgid ""
 "\"spam\"\n"
 "'eggs'"
 msgstr ""
+"\"spam\"\n"
+"'eggs'"
 
 #: ../../reference/lexical_analysis.rst:644
 msgid ""
@@ -1213,18 +1217,25 @@ msgid ""
 "can only contain the other quote (except with escape sequences, see below). "
 "For example:"
 msgstr ""
+"Кавычка, используемая для начала литерала, также завершает его, поэтому "
+"строковый литерал может содержать только другую кавычку (за исключением "
+"экранированных последовательностей, см. ниже). Например:"
 
 #: ../../reference/lexical_analysis.rst:648
 msgid ""
 "'Say \"Hello\", please.'\n"
 "\"Don't do that!\""
 msgstr ""
+"'Скажи \"Привет\", пожалуйста.'\n"
+"\"Не делайте 'это' здесь!\""
 
 #: ../../reference/lexical_analysis.rst:653
 msgid ""
 "Except for this limitation, the choice of quote character (``'`` or ``\"``) "
 "does not affect how the literal is parsed."
 msgstr ""
+"За исключением этого ограничения выбор символа кавычек (``'`` или ``\"``) не"
+" влияет на то, как литерал разбирается."
 
 #: ../../reference/lexical_analysis.rst:656
 msgid ""
@@ -1233,32 +1244,43 @@ msgid ""
 " after the backslash. For example, ``\\\"`` denotes the double quote "
 "character, and does *not* end the string:"
 msgstr ""
+"Внутри строкового литерала символ обратного слэша (``\\``) вводит "
+":dfn:`экранированную последовательность`, значение которой зависит от "
+"символа, следующего за обратным слэшем. Например, ``\\\"`` обозначает символ"
+" двойной кавычки и *не* завершает строку:"
 
 #: ../../reference/lexical_analysis.rst:662
 msgid ""
 ">>> print(\"Say \\\"Hello\\\" to everyone!\")\n"
 "Say \"Hello\" to everyone!"
 msgstr ""
+">>> print(\"Скажи \\\"Привет\\\" всем!\")\n"
+"Скажи \"Привет\" всем!"
 
 #: ../../reference/lexical_analysis.rst:667
 msgid ""
 "See :ref:`escape sequences <escape-sequences>` below for a full list of such"
 " sequences, and more details."
 msgstr ""
+"Полный список таких последовательностей и дополнительные сведения см. ниже в"
+" разделе :ref:`экранированные последовательности <escape-sequences>`."
 
 #: ../../reference/lexical_analysis.rst:676
 msgid "Triple-quoted strings"
-msgstr ""
+msgstr "Строки в тройных кавычках"
 
 #: ../../reference/lexical_analysis.rst:678
 msgid ""
 "Strings can also be enclosed in matching groups of three single or double "
 "quotes. These are generally referred to as :dfn:`triple-quoted strings`::"
 msgstr ""
+"Строки также могут быть заключены в соответствующие группы из трёх одиночных"
+" или двойных кавычек. Обычно их называют :dfn:`строками в тройных "
+"кавычках`::"
 
 #: ../../reference/lexical_analysis.rst:682
 msgid "\"\"\"This is a triple-quoted string.\"\"\""
-msgstr ""
+msgstr "\"\"\"Это строка в тройных кавычках.\"\"\""
 
 #: ../../reference/lexical_analysis.rst:684
 msgid ""
@@ -1266,10 +1288,14 @@ msgid ""
 "except that three unescaped quotes in a row terminate the literal, if they "
 "are of the same kind (``'`` or ``\"``) used at the start::"
 msgstr ""
+"В литералах в тройных кавычках допускаются неэкранированные кавычки (и они "
+"сохраняются), за исключением случая, когда три неэкранированные кавычки "
+"подряд завершают литерал, если они того же вида (``'`` или ``\"``), который "
+"использовался в начале::"
 
 #: ../../reference/lexical_analysis.rst:688
 msgid "\"\"\"This string has \"quotes\" inside.\"\"\""
-msgstr ""
+msgstr "\"\"\"Эта строка содержит \"кавычки\" внутри.\"\"\""
 
 #: ../../reference/lexical_analysis.rst:690
 msgid "Unescaped newlines are also allowed and retained::"

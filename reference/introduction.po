@@ -5,16 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
-# Dmitry Luschan, 2025
+# Dmitry Luschan, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-21 14:13+0000\n"
+"POT-Creation-Date: 2026-01-11 14:14+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Dmitry Luschan, 2025\n"
+"Last-Translator: Dmitry Luschan, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -384,20 +384,22 @@ msgid ""
 "Some definitions also use *lookaheads*, which indicate that an element must "
 "(or must not) match at a given position, but without consuming any input:"
 msgstr ""
-"В некоторых определениях также используются *lookahead*-ы, которые "
-"указывают, что элемент должен (или не должен) совпадать в заданной позиции, "
-"но без потребления входных данных:"
+"В некоторых определениях также используется *предварительный просмотр*, "
+"который указывает, что элемент должен (или не должен) совпадать в заданной "
+"позиции, но без потребления входных данных:"
 
 #: ../../reference/introduction.rst:163
 msgid "``&e``: a positive lookahead (that is, ``e`` is required to match)"
-msgstr "``&e``: позитивный lookahead (т.е. ``e`` требуется для совпадения)"
+msgstr ""
+"``&e``: положительный предварительный просмотр (т.е. ``e`` требуется для "
+"совпадения)"
 
 #: ../../reference/introduction.rst:164
 msgid ""
 "``!e``: a negative lookahead (that is, ``e`` is required *not* to match)"
 msgstr ""
-"``!e``: негативный lookahead (т.е. ``e`` должен *отсутствовать* для "
-"совпадения)"
+"``!e``: отрицательный предварительный просмотр (т.е. ``e`` должен "
+"*отсутствовать* для совпадения)"
 
 #: ../../reference/introduction.rst:166
 msgid ""

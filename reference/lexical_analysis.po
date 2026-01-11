@@ -1417,10 +1417,13 @@ msgid ""
 "particular, the prefix (if any) must be immediately followed by the starting"
 " quote."
 msgstr ""
+"Обратите внимание, что, как и во всех лексических определениях, пробельные "
+"символы имеют значение. В частности, за префиксом (если он есть) должна "
+"сразу следовать открывающая кавычка."
 
 #: ../../reference/lexical_analysis.rst:781
 msgid "Escape sequences"
-msgstr ""
+msgstr "Экранированные последовательности"
 
 #: ../../reference/lexical_analysis.rst:783
 msgid ""
@@ -1428,147 +1431,153 @@ msgid ""
 "and bytes literals are interpreted according to rules similar to those used "
 "by Standard C.  The recognized escape sequences are:"
 msgstr ""
+"Если префиксы '``r``' или '``R``' не указаны, экранированные "
+"последовательности в строковых и байтовых литералах интерпретируются "
+"согласно правилам, аналогичным стандарту языка C. Распознаваемые "
+"экранированные последовательности:"
 
 #: ../../reference/lexical_analysis.rst:791
 msgid "Escape Sequence"
-msgstr ""
+msgstr "Экранированная последовательность"
 
 #: ../../reference/lexical_analysis.rst:792
 msgid "Meaning"
-msgstr ""
+msgstr "Значение"
 
 #: ../../reference/lexical_analysis.rst:793
 msgid "``\\``\\ <newline>"
-msgstr ""
+msgstr "``\\``\\ <newline>"
 
 #: ../../reference/lexical_analysis.rst:794
 msgid ":ref:`string-escape-ignore`"
-msgstr ""
+msgstr ":ref:`string-escape-ignore`"
 
 #: ../../reference/lexical_analysis.rst:795
 msgid "``\\\\``"
-msgstr ""
+msgstr "``\\\\``"
 
 #: ../../reference/lexical_analysis.rst:796
 msgid ":ref:`Backslash <string-escape-escaped-char>`"
-msgstr ""
+msgstr ":ref:`Обратный слэш <string-escape-escaped-char>`"
 
 #: ../../reference/lexical_analysis.rst:797
 msgid "``\\'``"
-msgstr ""
+msgstr "``\\'``"
 
 #: ../../reference/lexical_analysis.rst:798
 msgid ":ref:`Single quote <string-escape-escaped-char>`"
-msgstr ""
+msgstr ":ref:`Одинарная кавычка <string-escape-escaped-char>`"
 
 #: ../../reference/lexical_analysis.rst:799
 msgid "``\\\"``"
-msgstr ""
+msgstr "``\\\"``"
 
 #: ../../reference/lexical_analysis.rst:800
 msgid ":ref:`Double quote <string-escape-escaped-char>`"
-msgstr ""
+msgstr ":ref:`Двойная кавычка <string-escape-escaped-char>`"
 
 #: ../../reference/lexical_analysis.rst:801
 msgid "``\\a``"
-msgstr ""
+msgstr "``\\a``"
 
 #: ../../reference/lexical_analysis.rst:802
 msgid "ASCII Bell (BEL)"
-msgstr ""
+msgstr "Сигнал «звонка» ASCII (BEL)"
 
 #: ../../reference/lexical_analysis.rst:803
 msgid "``\\b``"
-msgstr ""
+msgstr "``\\b``"
 
 #: ../../reference/lexical_analysis.rst:804
 msgid "ASCII Backspace (BS)"
-msgstr ""
+msgstr "Возврат каретки назад ASCII (BS)"
 
 #: ../../reference/lexical_analysis.rst:805
 msgid "``\\f``"
-msgstr ""
+msgstr "``\\f``"
 
 #: ../../reference/lexical_analysis.rst:806
 msgid "ASCII Formfeed (FF)"
-msgstr ""
+msgstr "Перевод страницы ASCII (FF)"
 
 #: ../../reference/lexical_analysis.rst:807
 msgid "``\\n``"
-msgstr ""
+msgstr "``\\n``"
 
 #: ../../reference/lexical_analysis.rst:808
 msgid "ASCII Linefeed (LF)"
-msgstr ""
+msgstr "Перевод строки ASCII (LF)"
 
 #: ../../reference/lexical_analysis.rst:809
 msgid "``\\r``"
-msgstr ""
+msgstr "``\\r``"
 
 #: ../../reference/lexical_analysis.rst:810
 msgid "ASCII Carriage Return (CR)"
-msgstr ""
+msgstr "Возврат каретки ASCII (CR)"
 
 #: ../../reference/lexical_analysis.rst:811
 msgid "``\\t``"
-msgstr ""
+msgstr "``\\t``"
 
 #: ../../reference/lexical_analysis.rst:812
 msgid "ASCII Horizontal Tab (TAB)"
-msgstr ""
+msgstr "Горизонтальная табуляция ASCII (TAB)"
 
 #: ../../reference/lexical_analysis.rst:813
 msgid "``\\v``"
-msgstr ""
+msgstr "``\\v``"
 
 #: ../../reference/lexical_analysis.rst:814
 msgid "ASCII Vertical Tab (VT)"
-msgstr ""
+msgstr "Вертикальная табуляция ASCII (VT)"
 
 #: ../../reference/lexical_analysis.rst:815
 msgid ":samp:`\\\\\\\\{ooo}`"
-msgstr ""
+msgstr ":samp:`\\\\\\\\{ooo}`"
 
 #: ../../reference/lexical_analysis.rst:816
 msgid ":ref:`string-escape-oct`"
-msgstr ""
+msgstr ":ref:`string-escape-oct`"
 
 #: ../../reference/lexical_analysis.rst:817
 msgid ":samp:`\\\\x{hh}`"
-msgstr ""
+msgstr ":samp:`\\\\x{hh}`"
 
 #: ../../reference/lexical_analysis.rst:818
 msgid ":ref:`string-escape-hex`"
-msgstr ""
+msgstr ":ref:`string-escape-hex`"
 
 #: ../../reference/lexical_analysis.rst:819
 msgid ":samp:`\\\\N\\\\{{name}\\\\}`"
-msgstr ""
+msgstr ":samp:`\\\\N\\\\{{name}\\\\}`"
 
 #: ../../reference/lexical_analysis.rst:820
 msgid ":ref:`string-escape-named`"
-msgstr ""
+msgstr ":ref:`string-escape-named`"
 
 #: ../../reference/lexical_analysis.rst:821
 msgid ":samp:`\\\\u{xxxx}`"
-msgstr ""
+msgstr ":samp:`\\\\u{xxxx}`"
 
 #: ../../reference/lexical_analysis.rst:822
 #: ../../reference/lexical_analysis.rst:824
 msgid ":ref:`Hexadecimal Unicode character <string-escape-long-hex>`"
-msgstr ""
+msgstr ":ref:`Шестнадцатеричный символ Unicode <string-escape-long-hex>`"
 
 #: ../../reference/lexical_analysis.rst:823
 msgid ":samp:`\\\\U{xxxxxxxx}`"
-msgstr ""
+msgstr ":samp:`\\\\U{xxxxxxxx}`"
 
 #: ../../reference/lexical_analysis.rst:829
 msgid "Ignored end of line"
-msgstr ""
+msgstr "Игнорирование конца строки"
 
 #: ../../reference/lexical_analysis.rst:831
 msgid "A backslash can be added at the end of a line to ignore the newline::"
 msgstr ""
+"В конце строки можно добавить обратный слэш, чтобы игнорировать перевод "
+"строки:"
 
 #: ../../reference/lexical_analysis.rst:833
 msgid ""
@@ -1576,6 +1585,9 @@ msgid ""
 "... backslashes or newline characters.'\n"
 "'This string will not include backslashes or newline characters.'"
 msgstr ""
+">>> 'Эта строка не будет включать \\\n"
+"... обратные слэши или символы перевода строки.'\n"
+"'Эта строка не будет включать обратные слэши или символы перевода строки.'"
 
 #: ../../reference/lexical_analysis.rst:837
 msgid ""
@@ -1583,10 +1595,13 @@ msgid ""
 "<strings>`, or parentheses and :ref:`string literal concatenation <string-"
 "concatenation>`."
 msgstr ""
+"Того же результата можно добиться, используя :ref:`строки в тройных кавычках"
+" <strings>` или круглые скобки и :ref:`конкатенацию строковых литералов "
+"<string-concatenation>`."
 
 #: ../../reference/lexical_analysis.rst:843
 msgid "Escaped characters"
-msgstr ""
+msgstr "Экранированные символы"
 
 #: ../../reference/lexical_analysis.rst:845
 msgid ""

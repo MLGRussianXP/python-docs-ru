@@ -1390,7 +1390,7 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:735
 msgid "Formal grammar"
-msgstr ""
+msgstr "Формальная грамматика"
 
 #: ../../reference/lexical_analysis.rst:737
 msgid ""
@@ -1398,12 +1398,18 @@ msgid ""
 ":ref:`\"t-strings\" <t-strings>`, are described by the following lexical "
 "definitions."
 msgstr ""
+"Строковые литералы, за исключением :ref:`«f-строк» <f-strings>` и "
+":ref:`«t-строк» <t-strings>`, описываются следующими лексическими "
+"определениями."
 
 #: ../../reference/lexical_analysis.rst:741
 msgid ""
 "These definitions use :ref:`negative lookaheads <lexical-lookaheads>` "
 "(``!``) to indicate that an ending quote ends the literal."
 msgstr ""
+"В этих определениях используются :ref:`негативные lookahead-ы<lexical-"
+"lookaheads>` (``!``), чтобы указать, что завершающая кавычка заканчивает "
+"литерал."
 
 #: ../../reference/lexical_analysis.rst:759
 msgid ""

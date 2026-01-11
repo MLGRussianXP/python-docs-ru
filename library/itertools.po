@@ -1,19 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # python-doc bot, 2025
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-25 15:00+0000\n"
+"POT-Creation-Date: 2026-01-11 14:58+0000\n"
 "PO-Revision-Date: 2025-09-15 01:04+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -152,7 +153,7 @@ msgid "(p0, p1, ..., p_n-1), ..."
 msgstr ""
 
 #: ../../library/itertools.rst:50
-msgid "``batched('ABCDEFG', n=2) → AB CD EF G``"
+msgid "``batched('ABCDEFG', n=3) → ABC DEF G``"
 msgstr ""
 
 #: ../../library/itertools.rst:51
@@ -535,7 +536,7 @@ msgstr ""
 #: ../../library/itertools.rst:183
 msgid ""
 "def batched(iterable, n, *, strict=False):\n"
-"    # batched('ABCDEFG', 2) → AB CD EF G\n"
+"    # batched('ABCDEFG', 3) → ABC DEF G\n"
 "    if n < 1:\n"
 "        raise ValueError('n must be at least one')\n"
 "    iterator = iter(iterable)\n"

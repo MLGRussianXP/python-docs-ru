@@ -1609,24 +1609,33 @@ msgid ""
 "literal, it must be doubled. The ``\\\\`` escape sequence denotes a single "
 "backslash character::"
 msgstr ""
+"Чтобы включить обратный слэш в не :ref:`сырой <raw-strings>` строковый "
+"литерал Python, его нужно удвоить. Экранированная последовательность "
+"``\\\\`` обозначает один символ обратного слэша::"
 
 #: ../../reference/lexical_analysis.rst:849
 msgid ""
 ">>> print('C:\\\\Program Files')\n"
 "C:\\Program Files"
 msgstr ""
+">>> print('C:\\\\Program Files')\n"
+"C:\\Program Files"
 
 #: ../../reference/lexical_analysis.rst:852
 msgid ""
 "Similarly, the ``\\'`` and ``\\\"`` sequences denote the single and double "
 "quote character, respectively::"
 msgstr ""
+"Аналогично, последовательности ``\\'`` и ``\\\"`` обозначают соответственно "
+"одинарную и двойную кавычку::"
 
 #: ../../reference/lexical_analysis.rst:855
 msgid ""
 ">>> print('\\' and \\\"')\n"
 "' and \""
 msgstr ""
+">>> print('\\' и \\\"')\n"
+"' и \""
 
 #: ../../reference/lexical_analysis.rst:861
 msgid "Octal character"

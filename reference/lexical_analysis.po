@@ -1639,23 +1639,27 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:861
 msgid "Octal character"
-msgstr ""
+msgstr "Восьмеричные символы"
 
 #: ../../reference/lexical_analysis.rst:863
 msgid ""
 "The sequence :samp:`\\\\\\\\{ooo}` denotes a *character* with the octal "
 "(base 8) value *ooo*::"
 msgstr ""
+"Последовательность :samp:`\\\\\\\\{ooo}` обозначает *символ* с восьмеричным "
+"(по основанию 8) значением *ooo*::"
 
 #: ../../reference/lexical_analysis.rst:866
 msgid ""
 ">>> '\\120'\n"
 "'P'"
 msgstr ""
+">>> '\\120'\n"
+"'P'"
 
 #: ../../reference/lexical_analysis.rst:869
 msgid "Up to three octal digits (0 through 7) are accepted."
-msgstr ""
+msgstr "Допускается до трёх восьмеричных цифр (от 0 до 7)."
 
 #: ../../reference/lexical_analysis.rst:871
 #: ../../reference/lexical_analysis.rst:896
@@ -1663,12 +1667,16 @@ msgid ""
 "In a bytes literal, *character* means a *byte* with the given value. In a "
 "string literal, it means a Unicode character with the given value."
 msgstr ""
+"В байтовом литерале *символ* означает байт с указанным значением. В "
+"строковом литерале — символ Unicode с указанным значением."
 
 #: ../../reference/lexical_analysis.rst:874
 msgid ""
 "Octal escapes with value larger than ``0o377`` (255) produce a "
 ":exc:`DeprecationWarning`."
 msgstr ""
+"Восьмеричные экранированные последовательности со значением больше ``0o377``"
+" (255) вызывают :exc:`DeprecationWarning`."
 
 #: ../../reference/lexical_analysis.rst:878
 msgid ""
@@ -1676,36 +1684,46 @@ msgid ""
 ":exc:`SyntaxWarning`. In a future Python version they will raise a "
 ":exc:`SyntaxError`."
 msgstr ""
+"Восьмеричные экранированные последовательности со значением больше ``0o377``"
+" (255) вызывают :exc:`SyntaxWarning`. В будущих версиях Python они будут "
+"приводить к возникновению :exc:`SyntaxError`."
 
 #: ../../reference/lexical_analysis.rst:886
 msgid "Hexadecimal character"
-msgstr ""
+msgstr "Шестнадцатеричные символы"
 
 #: ../../reference/lexical_analysis.rst:888
 msgid ""
 "The sequence :samp:`\\\\x{hh}` denotes a *character* with the hex (base 16) "
 "value *hh*::"
 msgstr ""
+"Последовательность :samp:`\\\\x{hh}` обозначает *символ* с шестнадцатеричным"
+" (по основанию 16) значением *hh*::"
 
 #: ../../reference/lexical_analysis.rst:891
 msgid ""
 ">>> '\\x50'\n"
 "'P'"
 msgstr ""
+">>> '\\x50'\n"
+"'P'"
 
 #: ../../reference/lexical_analysis.rst:894
 msgid "Unlike in Standard C, exactly two hex digits are required."
 msgstr ""
+"В отличие от стандарта языка C требуется ровно две шестнадцатеричные цифры."
 
 #: ../../reference/lexical_analysis.rst:902
 msgid "Named Unicode character"
-msgstr ""
+msgstr "Именованные символы Unicode"
 
 #: ../../reference/lexical_analysis.rst:904
 msgid ""
 "The sequence :samp:`\\\\N\\\\{{name}\\\\}` denotes a Unicode character with "
 "the given *name*::"
 msgstr ""
+"Последовательность :samp:`\\\\N\\\\{{name}\\\\}` обозначает символ Unicode с"
+" указанным *именем*::"
 
 #: ../../reference/lexical_analysis.rst:907
 msgid ""
@@ -1714,10 +1732,16 @@ msgid ""
 ">>> '\\N{SNAKE}'\n"
 "'🐍'"
 msgstr ""
+">>> '\\N{LATIN CAPITAL LETTER P}'\n"
+"'P'\n"
+">>> '\\N{SNAKE}'\n"
+"'🐍'"
 
 #: ../../reference/lexical_analysis.rst:912
 msgid "This sequence cannot appear in :ref:`bytes literals <bytes-literal>`."
 msgstr ""
+"Эта последовательность не должна встречаться в :ref:`байтовых литералах "
+"<bytes-literal>`."
 
 #: ../../reference/lexical_analysis.rst:914
 msgid ""
@@ -1725,10 +1749,12 @@ msgid ""
 "<https://www.unicode.org/Public/16.0.0/ucd/NameAliases.txt>`__ has been "
 "added."
 msgstr ""
+"Добавлена поддержка `псевдонимов имён "
+"<https://www.unicode.org/Public/16.0.0/ucd/NameAliases.txt>`__."
 
 #: ../../reference/lexical_analysis.rst:921
 msgid "Hexadecimal Unicode characters"
-msgstr ""
+msgstr "Шестнадцатеричные символы Unicode"
 
 #: ../../reference/lexical_analysis.rst:923
 msgid ""
@@ -1737,6 +1763,10 @@ msgid ""
 "are required for ``\\u``; exactly eight digits are required for ``\\U``. The"
 " latter can encode any Unicode character."
 msgstr ""
+"Последовательности :samp:`\\\\u{xxxx}` и :samp:`\\\\U{xxxxxxxx}` обозначают "
+"символ Unicode с указанным шестнадцатеричным (по основанию 16) значением. "
+"Для ``\\u`` требуется ровно четыре цифры; для ``\\U`` — ровно восемь. "
+"Последняя форма может кодировать любой символ Unicode."
 
 #: ../../reference/lexical_analysis.rst:929
 msgid ""
@@ -1745,11 +1775,17 @@ msgid ""
 ">>> '\\U0001f40d'\n"
 "'🐍'"
 msgstr ""
+">>> '\\u1234'\n"
+"'ሴ'\n"
+">>> '\\U0001f40d'\n"
+"'🐍'"
 
 #: ../../reference/lexical_analysis.rst:936
 msgid ""
 "These sequences cannot appear in :ref:`bytes literals <bytes-literal>`."
 msgstr ""
+"Эти последовательности не могут появляться в :ref:`байтовых литералах "
+"<bytes-literal>`."
 
 #: ../../reference/lexical_analysis.rst:942
 msgid "Unrecognized escape sequences"

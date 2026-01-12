@@ -1639,7 +1639,7 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:861
 msgid "Octal character"
-msgstr "Восьмеричные символы"
+msgstr "Символы в восьмеричной записе"
 
 #: ../../reference/lexical_analysis.rst:863
 msgid ""
@@ -1690,7 +1690,7 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:886
 msgid "Hexadecimal character"
-msgstr "Шестнадцатеричные символы"
+msgstr "Символы в шестнадцатеричной записе"
 
 #: ../../reference/lexical_analysis.rst:888
 msgid ""
@@ -1754,7 +1754,7 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:921
 msgid "Hexadecimal Unicode characters"
-msgstr "Шестнадцатеричные символы Unicode"
+msgstr "Символы Unicode в шестнадцатеричной записе"
 
 #: ../../reference/lexical_analysis.rst:923
 msgid ""
@@ -1789,13 +1789,16 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:942
 msgid "Unrecognized escape sequences"
-msgstr ""
+msgstr "Нераспознанные экранированные последовательности"
 
 #: ../../reference/lexical_analysis.rst:944
 msgid ""
 "Unlike in Standard C, all unrecognized escape sequences are left in the "
 "string unchanged, that is, *the backslash is left in the result*::"
 msgstr ""
+"В отличие от стандарта языка C все нераспознанные экранированные "
+"последовательности оставляются в строке без изменений, то есть *обратный "
+"слэш сохраняется в результате*::"
 
 #: ../../reference/lexical_analysis.rst:947
 msgid ""
@@ -1804,6 +1807,10 @@ msgid ""
 ">>> list('\\q')\n"
 "['\\\\', 'q']"
 msgstr ""
+">>> print('\\q')\n"
+"\\q\n"
+">>> list('\\q')\n"
+"['\\\\', 'q']"
 
 #: ../../reference/lexical_analysis.rst:952
 msgid ""
@@ -1811,20 +1818,28 @@ msgid ""
 " literals (``\\N...``, ``\\u...``, ``\\U...``) fall into the category of "
 "unrecognized escapes."
 msgstr ""
+"Обратите внимание, что для байтовых литералов экранированные "
+"последовательности, распознаваемые только в строковых литералах (``\\N...``,"
+" ``\\u...``, ``\\U...``), относятся к категории нераспознанных."
 
 #: ../../reference/lexical_analysis.rst:956
 msgid "Unrecognized escape sequences produce a :exc:`DeprecationWarning`."
 msgstr ""
+"Нераспознанные экранированные последовательности вызывают "
+":exc:`DeprecationWarning`."
 
 #: ../../reference/lexical_analysis.rst:959
 msgid ""
 "Unrecognized escape sequences produce a :exc:`SyntaxWarning`. In a future "
 "Python version they will raise a :exc:`SyntaxError`."
 msgstr ""
+"Нераспознанные экранированные последовательности вызывают "
+":exc:`SyntaxWarning`. В будущих версиях Python они будут приводить к "
+"возникновению :exc:`SyntaxError`."
 
 #: ../../reference/lexical_analysis.rst:972
 msgid "Bytes literals"
-msgstr ""
+msgstr "Байтовые литералы"
 
 #: ../../reference/lexical_analysis.rst:974
 msgid ""
@@ -1834,6 +1849,11 @@ msgid ""
 "128 or greater must be expressed with escape sequences (typically "
 ":ref:`string-escape-hex` or :ref:`string-escape-oct`):"
 msgstr ""
+":dfn:`Байтовые литералы` всегда имеют префикс ``b`` или ``B``; они создают "
+"экземпляр типа :class:`bytes` вместо типа :class:`str`. Они могут содержать "
+"только символы ASCII; байты с числовым значением 128 или больше должны "
+"задаваться с помощью экранированных последовательностей (обычно "
+":ref:`string-escape-hex` или :ref:`string-escape-oct`):"
 
 #: ../../reference/lexical_analysis.rst:980
 msgid ""
@@ -1842,16 +1862,22 @@ msgid ""
 ">>> list(b'\\x89PNG\\r\\n\\x1a\\n')\n"
 "[137, 80, 78, 71, 13, 10, 26, 10]"
 msgstr ""
+">>> b'\\x89PNG\\r\\n\\x1a\\n'\n"
+"b'\\x89PNG\\r\\n\\x1a\\n'\n"
+">>> list(b'\\x89PNG\\r\\n\\x1a\\n')\n"
+"[137, 80, 78, 71, 13, 10, 26, 10]"
 
 #: ../../reference/lexical_analysis.rst:987
 msgid ""
 "Similarly, a zero byte must be expressed using an escape sequence (typically"
 " ``\\0`` or ``\\x00``)."
 msgstr ""
+"Аналогично, нулевой байт должен задаваться с помощью экранированной "
+"последовательности (обычно ``\\0`` или ``\\x00``)."
 
 #: ../../reference/lexical_analysis.rst:998
 msgid "Raw string literals"
-msgstr ""
+msgstr "Сырые строковые литералы"
 
 #: ../../reference/lexical_analysis.rst:1000
 msgid ""
@@ -1861,12 +1887,20 @@ msgid ""
 "characters. As a result, in raw string literals, :ref:`escape sequences "
 "<escape-sequences>` are not treated specially:"
 msgstr ""
+"Строковые и байтовые литералы могут иметь необязательный префикс '``r``' или"
+" '``R``'; такие конструкции называются соответственно :dfn:`сырыми "
+"строковыми литералами` и :dfn:`сырыми байтовыми литералами` и рассматривают "
+"обратные слэши как обычные символы. В результате, в сырых строковых "
+"литералах :ref:`экранированные последовательности <escape-sequences>` не "
+"обрабатываются специальным образом:"
 
 #: ../../reference/lexical_analysis.rst:1007
 msgid ""
 ">>> r'\\d{4}-\\d{2}-\\d{2}'\n"
 "'\\\\d{4}-\\\\d{2}-\\\\d{2}'"
 msgstr ""
+">>> r'\\d{4}-\\d{2}-\\d{2}'\n"
+"'\\\\d{4}-\\\\d{2}-\\\\d{2}'"
 
 #: ../../reference/lexical_analysis.rst:1012
 msgid ""
@@ -1880,6 +1914,14 @@ msgid ""
 "interpreted as those two characters as part of the literal, *not* as a line "
 "continuation."
 msgstr ""
+"Даже в сыром литерале кавычки можно экранировать обратным слэшем, но сам "
+"слэш остаётся в результате; например, ``r\"\\\"\"`` — это корректный "
+"литерал, состоящий из двух символов: обратного слэша и двойной кавычки. "
+"Литерал ``r\"\\\"`` не является допустимым (даже сырая строка не может "
+"заканчиваться нечётным числом слэшей). Конкретно, *сырой литерал не может "
+"заканчиваться одним обратным слэшем* (так как слэш экранировал бы следующую "
+"кавычку). Также обратный слэш, за которым идёт перевод строки, "
+"интерпретируется как два отдельных символа, а *не* как продолжение строки."
 
 #: ../../reference/lexical_analysis.rst:1040
 msgid "f-strings"

@@ -1978,12 +1978,16 @@ msgid ""
 "Any doubled curly braces (``{{`` or ``}}``) outside replacement fields are "
 "replaced with the corresponding single curly brace::"
 msgstr ""
+"Любые удвоенные фигурные скобки (``{{`` или ``}}``) вне полей подстановки "
+"заменяются на соответствующую одиночную фигурную скобку::"
 
 #: ../../reference/lexical_analysis.rst:1067
 msgid ""
 ">>> print(f'{{...}}')\n"
 "{...}"
 msgstr ""
+">>> print(f'{{...}}')\n"
+"{...}"
 
 #: ../../reference/lexical_analysis.rst:1070
 msgid ""
@@ -1992,6 +1996,11 @@ msgid ""
 " literal is also marked as a raw string), and newlines are possible in "
 "triple-quoted f-strings::"
 msgstr ""
+"Все остальные символы вне полей подстановки обрабатываются так же, как и в "
+"обычных строковых литералах. Это означает, что экранированные "
+"последовательности интерпретируются (за исключением случаев, когда литерал "
+"также помечен как сырая строка), а в f-строках с тройными кавычками "
+"допускаются переводы строки::"
 
 #: ../../reference/lexical_analysis.rst:1076
 msgid ""
@@ -2006,6 +2015,16 @@ msgid ""
 "Three shall be the number of the counting\n"
 "and the number of the counting shall be three."
 msgstr ""
+">>> name = 'Галахад'\n"
+">>> favorite_color = 'синий'\n"
+">>> print(f'{name}:\\t{favorite_color}')\n"
+"Галахад: синий\n"
+">>> print(rf\"C:\\Users\\{name}\")\n"
+"C:\\Users\\Галахад\n"
+">>> print(f'''Три шага к цели,\n"
+"... и цель — три шага.''')\n"
+"Три шага к цели,\n"
+"и цель — три шага."
 
 #: ../../reference/lexical_analysis.rst:1087
 msgid ""
@@ -2015,18 +2034,27 @@ msgid ""
 " not allowed, and both :keyword:`lambda` and assignment expressions ``:=`` "
 "must be surrounded by explicit parentheses::"
 msgstr ""
+"Выражения в форматированных строковых литералах обрабатываются как обычные "
+"выражения Python. Каждое выражение вычисляется в контексте, в котором "
+"находится этот литерал, слева направо. Пустые выражения недопустимы, а "
+":keyword:`lambda` и выражения присваивания ``:=`` должны быть заключены в "
+"явные скобки::"
 
 #: ../../reference/lexical_analysis.rst:1094
 msgid ""
 ">>> f'{(half := 1/2)}, {half * 42}'\n"
 "'0.5, 21.0'"
 msgstr ""
+">>> f'{(half := 1/2)}, {half * 42}'\n"
+"'0.5, 21.0'"
 
 #: ../../reference/lexical_analysis.rst:1097
 msgid ""
 "Reusing the outer f-string quoting type inside a replacement field is "
 "permitted::"
 msgstr ""
+"Допускается повторное использование того же типа кавычек, которые "
+"используются для внешней f-строки, внутри поля подстановки::"
 
 #: ../../reference/lexical_analysis.rst:1100
 msgid ""
@@ -2034,12 +2062,17 @@ msgid ""
 ">>> f\"abc {a[\"x\"]} def\"\n"
 "'abc 2 def'"
 msgstr ""
+">>> a = dict(x=2)\n"
+">>> f\"abc {a[\"x\"]} def\"\n"
+"'abc 2 def'"
 
 #: ../../reference/lexical_analysis.rst:1104
 msgid ""
 "Backslashes are also allowed in replacement fields and are evaluated the "
 "same way as in any other context::"
 msgstr ""
+"Обратные слэши также разрешены в полях подстановки и обрабатываются так же, "
+"как и в любом другом контексте::"
 
 #: ../../reference/lexical_analysis.rst:1107
 msgid ""
@@ -2050,10 +2083,16 @@ msgid ""
 "b\n"
 "c"
 msgstr ""
+">>> a = [\"a\", \"b\", \"c\"]\n"
+">>> print(f\"Список a содержит:\\n{\"\\n\".join(a)}\")\n"
+"Список a содержит:\n"
+"a\n"
+"b\n"
+"c"
 
 #: ../../reference/lexical_analysis.rst:1114
 msgid "It is possible to nest f-strings::"
-msgstr ""
+msgstr "Допускается вложенность f-строк::"
 
 #: ../../reference/lexical_analysis.rst:1116
 msgid ""
@@ -2061,14 +2100,19 @@ msgid ""
 ">>> f'Repeated:{f' hello {name}' * 3}'\n"
 "'Repeated: hello world hello world hello world'"
 msgstr ""
+">>> name = 'мир'\n"
+">>> f'Повтор:{f' привет {мир}' * 3}'\n"
+"'f'Повтор: привет мир привет мир привет мир'"
 
 #: ../../reference/lexical_analysis.rst:1120
 msgid "Portable Python programs should not use more than 5 levels of nesting."
 msgstr ""
+"Переносимые программы на Python не должны использовать более 5 уровней "
+"вложенности."
 
 #: ../../reference/lexical_analysis.rst:1124
 msgid "CPython does not limit nesting of f-strings."
-msgstr ""
+msgstr "CPython не ограничивает глубину вложенности f-строк."
 
 #: ../../reference/lexical_analysis.rst:1126
 msgid ""
@@ -2078,6 +2122,11 @@ msgid ""
 "and quotes). This means that replacement fields with comments must be closed"
 " in a different line:"
 msgstr ""
+"Выражения подстановки могут содержать переводы строки как в f-строках с "
+"одинарными, так и с тройными кавычками, а также могут содержать комментарии."
+" Всё, что следует после символа ``#`` внутри поля подстановки, считается "
+"комментарием (включая закрывающие скобки и кавычки). Это означает, что поля "
+"подстановки с комментариями должны закрываться в другой строке:"
 
 #: ../../reference/lexical_analysis.rst:1133
 msgid ""
@@ -2086,30 +2135,38 @@ msgid ""
 "...       + 3}\"\n"
 "'abc5'"
 msgstr ""
+">>> a = 2\n"
+">>> f\"abc{a  # Этот комментарий }\" продолжается до конца строки\n"
+"...       + 3}\"\n"
+"'abc5'"
 
 #: ../../reference/lexical_analysis.rst:1140
 msgid "After the expression, replacement fields may optionally contain:"
-msgstr ""
+msgstr "После выражения поле подстановки может дополнительно содержать:"
 
 #: ../../reference/lexical_analysis.rst:1142
 msgid ""
 "a *debug specifier* -- an equal sign (``=``), optionally surrounded by "
 "whitespace on one or both sides;"
 msgstr ""
+"*отладочный спецификатор* — знак равенства (``=``), возможно, с пробельным "
+"символов с одной или двух сторон;"
 
 #: ../../reference/lexical_analysis.rst:1144
 msgid "a *conversion specifier* -- ``!s``, ``!r`` or ``!a``; and/or"
-msgstr ""
+msgstr "*спецификатор преобразования* — ``!s``, ``!r`` или ``!a``; и/или"
 
 #: ../../reference/lexical_analysis.rst:1145
 msgid "a *format specifier* prefixed with a colon (``:``)."
-msgstr ""
+msgstr "*спецификатор формата*, предваряемый двоеточием (``:``)."
 
 #: ../../reference/lexical_analysis.rst:1147
 msgid ""
 "See the :ref:`Standard Library section on f-strings <stdtypes-fstrings>` for"
 " details on how these fields are evaluated."
 msgstr ""
+"Подробности о вычислении этих полей см. в :ref:`разделе стандартной "
+"библиотеки о f-строках <stdtypes-fstrings>`."
 
 #: ../../reference/lexical_analysis.rst:1150
 msgid ""
@@ -2119,6 +2176,11 @@ msgid ""
 "characters using the :ref:`Format Specification Mini-Language "
 "<formatspec>`::"
 msgstr ""
+"Как объясняется в этом разделе, *спецификаторы формата* передаются в "
+"качестве второго аргумента функции :func:`format` для форматирования "
+"значения поля подстановки. Например, они могут использоваться для задания "
+"ширины поля и символов заполнения с помощью :ref:`мини-языка спецификаций "
+"формата <formatspec>`::"
 
 #: ../../reference/lexical_analysis.rst:1155
 msgid ""
@@ -2126,10 +2188,15 @@ msgid ""
 ">>> f'{number:20.7f}'\n"
 "'          14.3000000'"
 msgstr ""
+">>> number = 14.3\n"
+">>> f'{number:20.7f}'\n"
+"'          14.3000000'"
 
 #: ../../reference/lexical_analysis.rst:1159
 msgid "Top-level format specifiers may include nested replacement fields::"
 msgstr ""
+"Спецификаторы формата верхнего уровня могут включать вложенные поля "
+"подстановки::"
 
 #: ../../reference/lexical_analysis.rst:1161
 msgid ""
@@ -2138,12 +2205,18 @@ msgid ""
 ">>> f'{number:{field_size}.{precision}f}'\n"
 "'          14.3000000'"
 msgstr ""
+">>> field_size = 20\n"
+">>> precision = 7\n"
+">>> f'{number:{field_size}.{precision}f}'\n"
+"'          14.3000000'"
 
 #: ../../reference/lexical_analysis.rst:1166
 msgid ""
 "These nested fields may include their own conversion fields and :ref:`format"
 " specifiers <formatspec>`::"
 msgstr ""
+"Эти вложенные поля могут содержать собственные спецификаторы преобразования "
+"и :ref:`спецификаторы формата <formatspec>`::"
 
 #: ../../reference/lexical_analysis.rst:1169
 msgid ""
@@ -2153,6 +2226,11 @@ msgid ""
 ">>> f'{number:{field_size:05}}'\n"
 "'00000000000000000003'"
 msgstr ""
+">>> number = 3\n"
+">>> f'{number:{field_size}}'\n"
+"'                   3'\n"
+">>> f'{number:{field_size:05}}'\n"
+"'00000000000000000003'"
 
 #: ../../reference/lexical_analysis.rst:1175
 msgid ""

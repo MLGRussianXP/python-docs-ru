@@ -1925,23 +1925,27 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:1040
 msgid "f-strings"
-msgstr ""
+msgstr "f-строки"
 
 #: ../../reference/lexical_analysis.rst:1043
 msgid ""
 "The :keyword:`await` and :keyword:`async for` can be used in expressions "
 "within f-strings."
 msgstr ""
+"Ключевые слова :keyword:`await` и :keyword:`async for` могут использоваться "
+"в выражениях внутри f-строк."
 
 #: ../../reference/lexical_analysis.rst:1046
 msgid "Added the debug specifier (``=``)"
-msgstr ""
+msgstr "Добавлен отладочный спецификатор (``=``)."
 
 #: ../../reference/lexical_analysis.rst:1048
 msgid ""
 "Many restrictions on expressions within f-strings have been removed. "
 "Notably, nested strings, comments, and backslashes are now permitted."
 msgstr ""
+"Сняты многие ограничения на выражения внутри f-строк. В частности, теперь "
+"допускаются вложенные строки, комментарии и обратные слэши."
 
 #: ../../reference/lexical_analysis.rst:1052
 msgid ""
@@ -1951,6 +1955,11 @@ msgid ""
 "fields* delimited by curly braces ``{}``. Replacement fields contain "
 "expressions which are evaluated at run time. For example::"
 msgstr ""
+":dfn:`Форматированный строковый литерал` или :dfn:`f-строка` — это строковый"
+" литерал, имеющий префикс '``f``' или '``F``'. В отличие от других строковых"
+" литералов, f-строки не имеют постоянного значения. Они могут содержать "
+"*поля подстановки*, обрамлённые фигурными скобками ``{}``. Поля подстановки "
+"содержат выражения, которые вычисляются во время выполнения. Например::"
 
 #: ../../reference/lexical_analysis.rst:1059
 msgid ""
@@ -1959,6 +1968,10 @@ msgid ""
 ">>> f'{who.title()} expects the {nationality} Inquisition!'\n"
 "'Nobody expects the Spanish Inquisition!'"
 msgstr ""
+">>> who = 'никто'\n"
+">>> nationality = 'испанскую'\n"
+">>> f'Кто ожидает {nationality} инквизицию? — {who.title()}!'\n"
+"'Кто ожидает испанскую инквизицию? — Никто!'"
 
 #: ../../reference/lexical_analysis.rst:1064
 msgid ""

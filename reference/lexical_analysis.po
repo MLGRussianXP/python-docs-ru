@@ -2237,12 +2237,17 @@ msgid ""
 "However, these nested fields may not include more deeply nested replacement "
 "fields."
 msgstr ""
+"Однако такие вложенные поля не могут содержать вложенные поля подстановки "
+"более глубокого уровня."
 
 #: ../../reference/lexical_analysis.rst:1178
 msgid ""
 "Formatted string literals cannot be used as :term:`docstrings <docstring>`, "
 "even if they do not include expressions::"
 msgstr ""
+"Форматированные строковые литералы не могут использоваться в качестве "
+":term:`строк документации <docstring>`, даже если они не содержат "
+"выражений::"
 
 #: ../../reference/lexical_analysis.rst:1181
 msgid ""
@@ -2252,22 +2257,27 @@ msgid ""
 ">>> print(foo.__doc__)\n"
 "None"
 msgstr ""
+">>> def foo():\n"
+"...     f\"Это не строка документации\"\n"
+"...\n"
+">>> print(foo.__doc__)\n"
+"None"
 
 #: ../../reference/lexical_analysis.rst:1189
 msgid ":pep:`498` -- Literal String Interpolation"
-msgstr ""
+msgstr ":pep:`498` — Интерполяция строковых литералов"
 
 #: ../../reference/lexical_analysis.rst:1190
 msgid ":pep:`701` -- Syntactic formalization of f-strings"
-msgstr ""
+msgstr ":pep:`701` — Синтаксическая формализация f-строк"
 
 #: ../../reference/lexical_analysis.rst:1191
 msgid ":meth:`str.format`, which uses a related format string mechanism."
-msgstr ""
+msgstr ":meth:`str.format`, использующий связанный механизм форматных строк"
 
 #: ../../reference/lexical_analysis.rst:1198
 msgid "t-strings"
-msgstr ""
+msgstr "t-строки"
 
 #: ../../reference/lexical_analysis.rst:1202
 msgid ""
@@ -2277,10 +2287,15 @@ msgid ""
 "evaluation rules, see the :ref:`Standard Library section on t-strings "
 "<stdtypes-tstrings>`"
 msgstr ""
+":dfn:`Шаблонный строковый литерал` или :dfn:`t-строка` — это строковый "
+"литерал, который имеет префикс '``t``' или '``T``'. Эти строки подчиняются "
+"тем же правилам синтаксиса, что и :ref:`форматированные строковые литералы "
+"<f-strings>`. Различия в правилах вычисления описаны в :ref:`разделе "
+"стандартной библиотеки о t-строках <stdtypes-tstrings>`."
 
 #: ../../reference/lexical_analysis.rst:1211
 msgid "Formal grammar for f-strings"
-msgstr ""
+msgstr "Формальная грамматика для f-строк"
 
 #: ../../reference/lexical_analysis.rst:1213
 msgid ""
@@ -2290,28 +2305,40 @@ msgid ""
 "partly by the parser, which handles expressions in the replacement field. "
 "The exact way the work is split is a CPython implementation detail."
 msgstr ""
+"F-строки частично обрабатываются :term:`лексическим анализатором`, который "
+"создаёт токены :py:data:`~token.FSTRING_START`, "
+":py:data:`~token.FSTRING_MIDDLE` и :py:data:`~token.FSTRING_END`, и частично"
+" — парсером, который обрабатывает выражения в полях подстановки. Точный "
+"способ разделения этой работы является деталью реализации CPython."
 
 #: ../../reference/lexical_analysis.rst:1219
 msgid ""
 "Correspondingly, the f-string grammar is a mix of :ref:`lexical and "
 "syntactic definitions <notation-lexical-vs-syntactic>`."
 msgstr ""
+"Соответственно, грамматика f-строк представляет собой смесь "
+":ref:`лексических и синтаксических определений <notation-lexical-vs-"
+"syntactic>`."
 
 #: ../../reference/lexical_analysis.rst:1222
 msgid "Whitespace is significant in these situations:"
-msgstr ""
+msgstr "Пробельные символы имеет значение в таких ситуациях:"
 
 #: ../../reference/lexical_analysis.rst:1224
 msgid ""
 "There may be no whitespace in :py:data:`~token.FSTRING_START` (between the "
 "prefix and quote)."
 msgstr ""
+"В :py:data:`~token.FSTRING_START` пробельные символы недопустимы (между "
+"префиксом и кавычкой)."
 
 #: ../../reference/lexical_analysis.rst:1226
 msgid ""
 "Whitespace in :py:data:`~token.FSTRING_MIDDLE` is part of the literal string"
 " contents."
 msgstr ""
+"Пробельные символы в :py:data:`~token.FSTRING_MIDDLE` считаются частью "
+"содержимого литерала."
 
 #: ../../reference/lexical_analysis.rst:1228
 msgid ""
@@ -2320,6 +2347,10 @@ msgid ""
 "as whitespace immediately following ``f_debug_specifier``, is retained as "
 "part of the expression."
 msgstr ""
+"В ``fstring_replacement_field``, если присутствует ``f_debug_specifier``, "
+"все пробельные символы после открывающей фигурной скобки до "
+"``f_debug_specifier``, а также пробельные символы сразу после "
+"``f_debug_specifier``, сохраняются как часть выражения."
 
 #: ../../reference/lexical_analysis.rst:1235
 msgid ""
@@ -2327,6 +2358,8 @@ msgid ""
 "from the source code using locations of the ``{`` token and the token after "
 "``=``."
 msgstr ""
+"Выражение не обрабатывается на этапе разбиения на токены. Оно извлекается из"
+" исходного кода с использованием позиций токена ``{`` и токена после ``=``."
 
 #: ../../reference/lexical_analysis.rst:1240
 msgid ""
@@ -2334,6 +2367,10 @@ msgid ""
 "lookaheads>` (``!``) to indicate special characters (backslash, newline, "
 "``{``, ``}``) and sequences (``f_quote``)."
 msgstr ""
+"Определение ``FSTRING_MIDDLE`` использует :ref:`отрицательный "
+"предварительный просмотр <lexical-lookaheads>` (``!``) для обозначения "
+"специальных символов (обратный слэш, новая строка, ``{``, ``}``) и "
+"последовательностей (``f_quote``)."
 
 #: ../../reference/lexical_analysis.rst:1281
 msgid ""
@@ -2341,18 +2378,25 @@ msgid ""
 "are context-sensitive -- they depend on the contents of ``FSTRING_START`` of"
 " the nearest enclosing ``fstring``."
 msgstr ""
+"В приведённом выше фрагменте грамматики правила ``f_quote`` и "
+"``FSTRING_MIDDLE`` являются контекстно-зависимыми — они зависят от "
+"содержимого токена ``FSTRING_START`` ближайшей окружающей ``fstring``."
 
 #: ../../reference/lexical_analysis.rst:1285
 msgid ""
 "Constructing a more traditional formal grammar from this template is left as"
 " an exercise for the reader."
 msgstr ""
+"Построение более традиционной формальной грамматики на основе этого шаблона "
+"оставлено как упражнение для читателя."
 
 #: ../../reference/lexical_analysis.rst:1288
 msgid ""
 "The grammar for t-strings is identical to the one for f-strings, with *t* "
 "instead of *f* at the beginning of rule and token names and in the prefix."
 msgstr ""
+"Грамматика для t-строк идентична грамматике f-строк, за исключением того, "
+"что вместо *f* используется *t* в начале правил, токенов и префикса."
 
 #: ../../reference/lexical_analysis.rst:1302
 msgid "Numeric literals"

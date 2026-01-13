@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-21 15:05+0000\n"
+"POT-Creation-Date: 2026-01-13 15:09+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -330,8 +330,8 @@ msgid ""
 "of type :class:`int` and returns a :class:`str`."
 msgstr ""
 
-#: ../../library/typing.rst:215 ../../library/typing.rst:3168
-#: ../../library/typing.rst:3349
+#: ../../library/typing.rst:215 ../../library/typing.rst:3176
+#: ../../library/typing.rst:3357
 msgid "For example:"
 msgstr ""
 
@@ -418,7 +418,7 @@ msgid ""
 "ReturnType]`` respectively."
 msgstr ""
 
-#: ../../library/typing.rst:287 ../../library/typing.rst:3853
+#: ../../library/typing.rst:287 ../../library/typing.rst:3861
 msgid ""
 "``Callable`` now supports :class:`ParamSpec` and :data:`Concatenate`. See "
 ":pep:`612` for more details."
@@ -1265,7 +1265,7 @@ msgstr ""
 #: ../../library/typing.rst:1048 ../../library/typing.rst:1222
 #: ../../library/typing.rst:1309 ../../library/typing.rst:1351
 #: ../../library/typing.rst:1560 ../../library/typing.rst:1621
-#: ../../library/typing.rst:3105 ../../library/typing.rst:3334
+#: ../../library/typing.rst:3113 ../../library/typing.rst:3342
 msgid "For example::"
 msgstr ""
 
@@ -1891,7 +1891,7 @@ msgid ""
 "    TIMEOUT = 1  # Error reported by type checker"
 msgstr ""
 
-#: ../../library/typing.rst:1320 ../../library/typing.rst:3121
+#: ../../library/typing.rst:1320 ../../library/typing.rst:3129
 msgid ""
 "There is no runtime checking of these properties. See :pep:`591` for more "
 "details."
@@ -3143,8 +3143,8 @@ msgstr ""
 msgid "Typed version of :func:`collections.namedtuple`."
 msgstr ""
 
-#: ../../library/typing.rst:2264 ../../library/typing.rst:2356
-#: ../../library/typing.rst:3405
+#: ../../library/typing.rst:2264 ../../library/typing.rst:2360
+#: ../../library/typing.rst:3413
 msgid "Usage::"
 msgstr ""
 
@@ -3256,17 +3256,23 @@ msgid ""
 msgstr ""
 
 #: ../../library/typing.rst:2333
+msgid ""
+"``NamedTuple`` is now a function rather than a class. It can still be used "
+"as a class base, as described above."
+msgstr ""
+
+#: ../../library/typing.rst:2337
 msgid "Added support for generic namedtuples."
 msgstr ""
 
-#: ../../library/typing.rst:2336
+#: ../../library/typing.rst:2340
 msgid ""
 "The undocumented keyword argument syntax for creating NamedTuple classes "
 "(``NT = NamedTuple(\"NT\", x=int)``) is deprecated, and will be disallowed "
 "in 3.15. Use the class-based syntax or the functional syntax instead."
 msgstr ""
 
-#: ../../library/typing.rst:2341
+#: ../../library/typing.rst:2345
 msgid ""
 "When using the functional syntax to create a NamedTuple class, failing to "
 "pass a value to the 'fields' parameter (``NT = NamedTuple(\"NT\")``) is "
@@ -3276,60 +3282,60 @@ msgid ""
 "NT(NamedTuple): pass`` or ``NT = NamedTuple(\"NT\", [])``."
 msgstr ""
 
-#: ../../library/typing.rst:2351
+#: ../../library/typing.rst:2355
 msgid "Helper class to create low-overhead :ref:`distinct types <distinct>`."
 msgstr ""
 
-#: ../../library/typing.rst:2353
+#: ../../library/typing.rst:2357
 msgid ""
 "A ``NewType`` is considered a distinct type by a typechecker. At runtime, "
 "however, calling a ``NewType`` returns its argument unchanged."
 msgstr ""
 
-#: ../../library/typing.rst:2358
+#: ../../library/typing.rst:2362
 msgid ""
 "UserId = NewType('UserId', int)  # Declare the NewType \"UserId\"\n"
 "first_user = UserId(1)  # \"UserId\" returns the argument unchanged at runtime"
 msgstr ""
 
-#: ../../library/typing.rst:2363
+#: ../../library/typing.rst:2367
 msgid "The name of the module in which the new type is defined."
 msgstr ""
 
-#: ../../library/typing.rst:2367
+#: ../../library/typing.rst:2371
 msgid "The name of the new type."
 msgstr ""
 
-#: ../../library/typing.rst:2371
+#: ../../library/typing.rst:2375
 msgid "The type that the new type is based on."
 msgstr ""
 
-#: ../../library/typing.rst:2375
+#: ../../library/typing.rst:2379
 msgid "``NewType`` is now a class rather than a function."
 msgstr ""
 
-#: ../../library/typing.rst:2380
+#: ../../library/typing.rst:2384
 msgid "Base class for protocol classes."
 msgstr ""
 
-#: ../../library/typing.rst:2382
+#: ../../library/typing.rst:2386
 msgid "Protocol classes are defined like this::"
 msgstr ""
 
-#: ../../library/typing.rst:2384
+#: ../../library/typing.rst:2388
 msgid ""
 "class Proto(Protocol):\n"
 "    def meth(self) -> int:\n"
 "        ..."
 msgstr ""
 
-#: ../../library/typing.rst:2388
+#: ../../library/typing.rst:2392
 msgid ""
 "Such classes are primarily used with static type checkers that recognize "
 "structural subtyping (static duck-typing), for example::"
 msgstr ""
 
-#: ../../library/typing.rst:2391
+#: ../../library/typing.rst:2395
 msgid ""
 "class C:\n"
 "    def meth(self) -> int:\n"
@@ -3341,7 +3347,7 @@ msgid ""
 "func(C())  # Passes static type check"
 msgstr ""
 
-#: ../../library/typing.rst:2400
+#: ../../library/typing.rst:2404
 msgid ""
 "See :pep:`544` for more details. Protocol classes decorated with "
 ":func:`runtime_checkable` (described later) act as simple-minded runtime "
@@ -3350,24 +3356,24 @@ msgid ""
 "the second argument to :func:`isinstance` or :func:`issubclass`."
 msgstr ""
 
-#: ../../library/typing.rst:2406
+#: ../../library/typing.rst:2410
 msgid "Protocol classes can be generic, for example::"
 msgstr ""
 
-#: ../../library/typing.rst:2408
+#: ../../library/typing.rst:2412
 msgid ""
 "class GenProto[T](Protocol):\n"
 "    def meth(self) -> T:\n"
 "        ..."
 msgstr ""
 
-#: ../../library/typing.rst:2412
+#: ../../library/typing.rst:2416
 msgid ""
 "In code that needs to be compatible with Python 3.11 or older, generic "
 "Protocols can be written as follows::"
 msgstr ""
 
-#: ../../library/typing.rst:2415
+#: ../../library/typing.rst:2419
 msgid ""
 "T = TypeVar(\"T\")\n"
 "\n"
@@ -3376,11 +3382,11 @@ msgid ""
 "        ..."
 msgstr ""
 
-#: ../../library/typing.rst:2425
+#: ../../library/typing.rst:2429
 msgid "Mark a protocol class as a runtime protocol."
 msgstr ""
 
-#: ../../library/typing.rst:2427
+#: ../../library/typing.rst:2431
 msgid ""
 "Such a protocol can be used with :func:`isinstance` and :func:`issubclass`. "
 "This allows a simple-minded structural check, very similar to \"one trick "
@@ -3388,7 +3394,7 @@ msgid ""
 ":class:`~collections.abc.Iterable`.  For example::"
 msgstr ""
 
-#: ../../library/typing.rst:2431
+#: ../../library/typing.rst:2435
 msgid ""
 "@runtime_checkable\n"
 "class Closable(Protocol):\n"
@@ -3404,12 +3410,12 @@ msgid ""
 "assert isinstance(threading.Thread(name='Bob'), Named)"
 msgstr ""
 
-#: ../../library/typing.rst:2444
+#: ../../library/typing.rst:2448
 msgid ""
 "This decorator raises :exc:`TypeError` when applied to a non-protocol class."
 msgstr ""
 
-#: ../../library/typing.rst:2448
+#: ../../library/typing.rst:2452
 msgid ""
 ":func:`!runtime_checkable` will check only the presence of the required "
 "methods or attributes, not their type signatures or types. For example, "
@@ -3420,7 +3426,7 @@ msgid ""
 "(instantiate) :class:`ssl.SSLObject`."
 msgstr ""
 
-#: ../../library/typing.rst:2459
+#: ../../library/typing.rst:2463
 msgid ""
 "An :func:`isinstance` check against a runtime-checkable protocol can be "
 "surprisingly slow compared to an ``isinstance()`` check against a non-"
@@ -3428,7 +3434,7 @@ msgid ""
 "calls for structural checks in performance-sensitive code."
 msgstr ""
 
-#: ../../library/typing.rst:2467
+#: ../../library/typing.rst:2471
 msgid ""
 "The internal implementation of :func:`isinstance` checks against runtime-"
 "checkable protocols now uses :func:`inspect.getattr_static` to look up "
@@ -3438,7 +3444,7 @@ msgid ""
 " versa. Most users are unlikely to be affected by this change."
 msgstr ""
 
-#: ../../library/typing.rst:2476
+#: ../../library/typing.rst:2480
 msgid ""
 "The members of a runtime-checkable protocol are now considered \"frozen\" at"
 " runtime as soon as the class has been created. Monkey-patching attributes "
@@ -3447,13 +3453,13 @@ msgid ""
 ":ref:`What's new in Python 3.12 <whatsnew-typing-py312>` for more details."
 msgstr ""
 
-#: ../../library/typing.rst:2487
+#: ../../library/typing.rst:2491
 msgid ""
-"Special construct to add type hints to a dictionary. At runtime it is a "
-"plain :class:`dict`."
+"Special construct to add type hints to a dictionary. At runtime "
+"\":class:`!TypedDict` instances\" are simply :class:`dicts <dict>`."
 msgstr ""
 
-#: ../../library/typing.rst:2490
+#: ../../library/typing.rst:2494
 msgid ""
 "``TypedDict`` declares a dictionary type that expects all of its instances "
 "to have a certain set of keys, where each key is associated with a value of "
@@ -3461,7 +3467,7 @@ msgid ""
 "enforced by type checkers. Usage::"
 msgstr ""
 
-#: ../../library/typing.rst:2496
+#: ../../library/typing.rst:2500
 msgid ""
 "class Point2D(TypedDict):\n"
 "    x: int\n"
@@ -3474,17 +3480,17 @@ msgid ""
 "assert Point2D(x=1, y=2, label='first') == dict(x=1, y=2, label='first')"
 msgstr ""
 
-#: ../../library/typing.rst:2506
+#: ../../library/typing.rst:2510
 msgid ""
 "An alternative way to create a ``TypedDict`` is by using function-call "
 "syntax. The second argument must be a literal :class:`dict`::"
 msgstr ""
 
-#: ../../library/typing.rst:2509
+#: ../../library/typing.rst:2513
 msgid "Point2D = TypedDict('Point2D', {'x': int, 'y': int, 'label': str})"
 msgstr ""
 
-#: ../../library/typing.rst:2511
+#: ../../library/typing.rst:2515
 msgid ""
 "This functional syntax allows defining keys which are not valid "
 ":ref:`identifiers <identifiers>`, for example because they are keywords or "
@@ -3492,7 +3498,7 @@ msgid ""
 "mangling>` like regular private names::"
 msgstr ""
 
-#: ../../library/typing.rst:2516
+#: ../../library/typing.rst:2520
 msgid ""
 "# raises SyntaxError\n"
 "class Point2D(TypedDict):\n"
@@ -3507,13 +3513,13 @@ msgid ""
 "Definition = TypedDict('Definition', {'__schema': str})  # not mangled"
 msgstr ""
 
-#: ../../library/typing.rst:2528
+#: ../../library/typing.rst:2532
 msgid ""
 "By default, all keys must be present in a ``TypedDict``. It is possible to "
 "mark individual keys as non-required using :data:`NotRequired`::"
 msgstr ""
 
-#: ../../library/typing.rst:2531
+#: ../../library/typing.rst:2535
 msgid ""
 "class Point2D(TypedDict):\n"
 "    x: int\n"
@@ -3524,19 +3530,19 @@ msgid ""
 "Point2D = TypedDict('Point2D', {'x': int, 'y': int, 'label': NotRequired[str]})"
 msgstr ""
 
-#: ../../library/typing.rst:2539
+#: ../../library/typing.rst:2543
 msgid ""
 "This means that a ``Point2D`` ``TypedDict`` can have the ``label`` key "
 "omitted."
 msgstr ""
 
-#: ../../library/typing.rst:2542
+#: ../../library/typing.rst:2546
 msgid ""
 "It is also possible to mark all keys as non-required by default by "
 "specifying a totality of ``False``::"
 msgstr ""
 
-#: ../../library/typing.rst:2545
+#: ../../library/typing.rst:2549
 msgid ""
 "class Point2D(TypedDict, total=False):\n"
 "    x: int\n"
@@ -3546,7 +3552,7 @@ msgid ""
 "Point2D = TypedDict('Point2D', {'x': int, 'y': int}, total=False)"
 msgstr ""
 
-#: ../../library/typing.rst:2552
+#: ../../library/typing.rst:2556
 msgid ""
 "This means that a ``Point2D`` ``TypedDict`` can have any of the keys "
 "omitted. A type checker is only expected to support a literal ``False`` or "
@@ -3554,13 +3560,13 @@ msgid ""
 "and makes all items defined in the class body required."
 msgstr ""
 
-#: ../../library/typing.rst:2557
+#: ../../library/typing.rst:2561
 msgid ""
 "Individual keys of a ``total=False`` ``TypedDict`` can be marked as required"
 " using :data:`Required`::"
 msgstr ""
 
-#: ../../library/typing.rst:2560
+#: ../../library/typing.rst:2564
 msgid ""
 "class Point2D(TypedDict, total=False):\n"
 "    x: Required[int]\n"
@@ -3575,25 +3581,25 @@ msgid ""
 "}, total=False)"
 msgstr ""
 
-#: ../../library/typing.rst:2572
+#: ../../library/typing.rst:2576
 msgid ""
 "It is possible for a ``TypedDict`` type to inherit from one or more other "
 "``TypedDict`` types using the class-based syntax. Usage::"
 msgstr ""
 
-#: ../../library/typing.rst:2576
+#: ../../library/typing.rst:2580
 msgid ""
 "class Point3D(Point2D):\n"
 "    z: int"
 msgstr ""
 
-#: ../../library/typing.rst:2579
+#: ../../library/typing.rst:2583
 msgid ""
 "``Point3D`` has three items: ``x``, ``y`` and ``z``. It is equivalent to "
 "this definition::"
 msgstr ""
 
-#: ../../library/typing.rst:2582
+#: ../../library/typing.rst:2586
 msgid ""
 "class Point3D(TypedDict):\n"
 "    x: int\n"
@@ -3601,13 +3607,13 @@ msgid ""
 "    z: int"
 msgstr ""
 
-#: ../../library/typing.rst:2587
+#: ../../library/typing.rst:2591
 msgid ""
 "A ``TypedDict`` cannot inherit from a non-\\ ``TypedDict`` class, except for"
 " :class:`Generic`. For example::"
 msgstr ""
 
-#: ../../library/typing.rst:2590
+#: ../../library/typing.rst:2594
 msgid ""
 "class X(TypedDict):\n"
 "    x: int\n"
@@ -3622,24 +3628,24 @@ msgid ""
 "class XZ(X, Z): pass  # raises TypeError"
 msgstr ""
 
-#: ../../library/typing.rst:2602
+#: ../../library/typing.rst:2606
 msgid "A ``TypedDict`` can be generic::"
 msgstr ""
 
-#: ../../library/typing.rst:2604
+#: ../../library/typing.rst:2608
 msgid ""
 "class Group[T](TypedDict):\n"
 "    key: T\n"
 "    group: list[T]"
 msgstr ""
 
-#: ../../library/typing.rst:2608
+#: ../../library/typing.rst:2612
 msgid ""
 "To create a generic ``TypedDict`` that is compatible with Python 3.11 or "
 "lower, inherit from :class:`Generic` explicitly:"
 msgstr ""
 
-#: ../../library/typing.rst:2611
+#: ../../library/typing.rst:2615
 msgid ""
 "T = TypeVar(\"T\")\n"
 "\n"
@@ -3648,7 +3654,7 @@ msgid ""
 "    group: list[T]"
 msgstr ""
 
-#: ../../library/typing.rst:2619
+#: ../../library/typing.rst:2623
 msgid ""
 "A ``TypedDict`` can be introspected via annotations dicts (see "
 ":ref:`annotations-howto` for more information on annotations best "
@@ -3656,12 +3662,12 @@ msgid ""
 ":attr:`__optional_keys__`."
 msgstr ""
 
-#: ../../library/typing.rst:2625
+#: ../../library/typing.rst:2629
 msgid ""
 "``Point2D.__total__`` gives the value of the ``total`` argument. Example:"
 msgstr ""
 
-#: ../../library/typing.rst:2628
+#: ../../library/typing.rst:2632
 msgid ""
 ">>> from typing import TypedDict\n"
 ">>> class Point2D(TypedDict): pass\n"
@@ -3675,7 +3681,7 @@ msgid ""
 "True"
 msgstr ""
 
-#: ../../library/typing.rst:2641
+#: ../../library/typing.rst:2645
 msgid ""
 "This attribute reflects *only* the value of the ``total`` argument to the "
 "current ``TypedDict`` class, not whether the class is semantically total. "
@@ -3685,21 +3691,21 @@ msgid ""
 " :attr:`__required_keys__` and :attr:`__optional_keys__` for introspection."
 msgstr ""
 
-#: ../../library/typing.rst:2654
+#: ../../library/typing.rst:2658
 msgid ""
 "``Point2D.__required_keys__`` and ``Point2D.__optional_keys__`` return "
 ":class:`frozenset` objects containing required and non-required keys, "
 "respectively."
 msgstr ""
 
-#: ../../library/typing.rst:2657
+#: ../../library/typing.rst:2661
 msgid ""
 "Keys marked with :data:`Required` will always appear in "
 "``__required_keys__`` and keys marked with :data:`NotRequired` will always "
 "appear in ``__optional_keys__``."
 msgstr ""
 
-#: ../../library/typing.rst:2660
+#: ../../library/typing.rst:2664
 msgid ""
 "For backwards compatibility with Python 3.10 and below, it is also possible "
 "to use inheritance to declare both required and non-required keys in the "
@@ -3708,7 +3714,7 @@ msgid ""
 "``TypedDict`` with a different value for ``total``:"
 msgstr ""
 
-#: ../../library/typing.rst:2667
+#: ../../library/typing.rst:2671
 msgid ""
 ">>> class Point2D(TypedDict, total=False):\n"
 "...     x: int\n"
@@ -3723,7 +3729,7 @@ msgid ""
 "True"
 msgstr ""
 
-#: ../../library/typing.rst:2685
+#: ../../library/typing.rst:2689
 msgid ""
 "If ``from __future__ import annotations`` is used or if annotations are "
 "given as strings, annotations are not evaluated when the ``TypedDict`` is "
@@ -3732,48 +3738,54 @@ msgid ""
 "attributes may be incorrect."
 msgstr ""
 
-#: ../../library/typing.rst:2691
+#: ../../library/typing.rst:2695
 msgid "Support for :data:`ReadOnly` is reflected in the following attributes:"
 msgstr ""
 
-#: ../../library/typing.rst:2695
+#: ../../library/typing.rst:2699
 msgid ""
 "A :class:`frozenset` containing the names of all read-only keys. Keys are "
 "read-only if they carry the :data:`ReadOnly` qualifier."
 msgstr ""
 
-#: ../../library/typing.rst:2702
+#: ../../library/typing.rst:2706
 msgid ""
 "A :class:`frozenset` containing the names of all mutable keys. Keys are "
 "mutable if they do not carry the :data:`ReadOnly` qualifier."
 msgstr ""
 
-#: ../../library/typing.rst:2707
+#: ../../library/typing.rst:2711
 msgid ""
 "See :pep:`589` for more examples and detailed rules of using ``TypedDict``."
 msgstr ""
 
-#: ../../library/typing.rst:2711
+#: ../../library/typing.rst:2715
+msgid ""
+"``TypedDict`` is now a function rather than a class. It can still be used as"
+" a class base, as described above."
+msgstr ""
+
+#: ../../library/typing.rst:2719
 msgid ""
 "Added support for marking individual keys as :data:`Required` or "
 ":data:`NotRequired`. See :pep:`655`."
 msgstr ""
 
-#: ../../library/typing.rst:2715
+#: ../../library/typing.rst:2723
 msgid "Added support for generic ``TypedDict``\\ s."
 msgstr ""
 
-#: ../../library/typing.rst:2718
+#: ../../library/typing.rst:2726
 msgid ""
 "Removed support for the keyword-argument method of creating ``TypedDict``\\ "
 "s."
 msgstr ""
 
-#: ../../library/typing.rst:2721
+#: ../../library/typing.rst:2729
 msgid "Support for the :data:`ReadOnly` qualifier was added."
 msgstr ""
 
-#: ../../library/typing.rst:2724
+#: ../../library/typing.rst:2732
 msgid ""
 "When using the functional syntax to create a TypedDict class, failing to "
 "pass a value to the 'fields' parameter (``TD = TypedDict(\"TD\")``) is "
@@ -3783,106 +3795,106 @@ msgid ""
 "TD(TypedDict): pass`` or ``TD = TypedDict(\"TD\", {})``."
 msgstr ""
 
-#: ../../library/typing.rst:2733
+#: ../../library/typing.rst:2741
 msgid "Protocols"
 msgstr ""
 
-#: ../../library/typing.rst:2735
+#: ../../library/typing.rst:2743
 msgid ""
 "The following protocols are provided by the :mod:`!typing` module. All are "
 "decorated with :deco:`runtime_checkable`."
 msgstr ""
 
-#: ../../library/typing.rst:2740
+#: ../../library/typing.rst:2748
 msgid ""
 "An ABC with one abstract method ``__abs__`` that is covariant in its return "
 "type."
 msgstr ""
 
-#: ../../library/typing.rst:2745
+#: ../../library/typing.rst:2753
 msgid "An ABC with one abstract method ``__bytes__``."
 msgstr ""
 
-#: ../../library/typing.rst:2749
+#: ../../library/typing.rst:2757
 msgid "An ABC with one abstract method ``__complex__``."
 msgstr ""
 
-#: ../../library/typing.rst:2753
+#: ../../library/typing.rst:2761
 msgid "An ABC with one abstract method ``__float__``."
 msgstr ""
 
-#: ../../library/typing.rst:2757
+#: ../../library/typing.rst:2765
 msgid "An ABC with one abstract method ``__index__``."
 msgstr ""
 
-#: ../../library/typing.rst:2763
+#: ../../library/typing.rst:2771
 msgid "An ABC with one abstract method ``__int__``."
 msgstr ""
 
-#: ../../library/typing.rst:2767
+#: ../../library/typing.rst:2775
 msgid ""
 "An ABC with one abstract method ``__round__`` that is covariant in its "
 "return type."
 msgstr ""
 
-#: ../../library/typing.rst:2771
+#: ../../library/typing.rst:2779
 msgid "ABCs for working with IO"
 msgstr ""
 
-#: ../../library/typing.rst:2777
+#: ../../library/typing.rst:2785
 msgid ""
 "Generic type ``IO[AnyStr]`` and its subclasses ``TextIO(IO[str])`` and "
 "``BinaryIO(IO[bytes])`` represent the types of I/O streams such as returned "
 "by :func:`open`."
 msgstr ""
 
-#: ../../library/typing.rst:2783
+#: ../../library/typing.rst:2791
 msgid "Functions and decorators"
 msgstr ""
 
-#: ../../library/typing.rst:2787
+#: ../../library/typing.rst:2795
 msgid "Cast a value to a type."
 msgstr ""
 
-#: ../../library/typing.rst:2789
+#: ../../library/typing.rst:2797
 msgid ""
 "This returns the value unchanged.  To the type checker this signals that the"
 " return value has the designated type, but at runtime we intentionally don't"
 " check anything (we want this to be as fast as possible)."
 msgstr ""
 
-#: ../../library/typing.rst:2796
+#: ../../library/typing.rst:2804
 msgid ""
 "Ask a static type checker to confirm that *val* has an inferred type of "
 "*typ*."
 msgstr ""
 
-#: ../../library/typing.rst:2798
+#: ../../library/typing.rst:2806
 msgid ""
 "At runtime this does nothing: it returns the first argument unchanged with "
 "no checks or side effects, no matter the actual type of the argument."
 msgstr ""
 
-#: ../../library/typing.rst:2801
+#: ../../library/typing.rst:2809
 msgid ""
 "When a static type checker encounters a call to ``assert_type()``, it emits "
 "an error if the value is not of the specified type::"
 msgstr ""
 
-#: ../../library/typing.rst:2804
+#: ../../library/typing.rst:2812
 msgid ""
 "def greet(name: str) -> None:\n"
 "    assert_type(name, str)  # OK, inferred type of `name` is `str`\n"
 "    assert_type(name, int)  # type checker error"
 msgstr ""
 
-#: ../../library/typing.rst:2808
+#: ../../library/typing.rst:2816
 msgid ""
 "This function is useful for ensuring the type checker's understanding of a "
 "script is in line with the developer's intentions::"
 msgstr ""
 
-#: ../../library/typing.rst:2811
+#: ../../library/typing.rst:2819
 msgid ""
 "def complex_function(arg: object):\n"
 "    # Do some complex type-narrowing logic,\n"
@@ -3892,16 +3904,16 @@ msgid ""
 "    assert_type(arg, int)"
 msgstr ""
 
-#: ../../library/typing.rst:2822
+#: ../../library/typing.rst:2830
 msgid ""
 "Ask a static type checker to confirm that a line of code is unreachable."
 msgstr ""
 
-#: ../../library/typing.rst:2824
+#: ../../library/typing.rst:2832
 msgid "Example::"
 msgstr ""
 
-#: ../../library/typing.rst:2826
+#: ../../library/typing.rst:2834
 msgid ""
 "def int_or_str(arg: int | str) -> None:\n"
 "    match arg:\n"
@@ -3913,14 +3925,14 @@ msgid ""
 "            assert_never(unreachable)"
 msgstr ""
 
-#: ../../library/typing.rst:2835
+#: ../../library/typing.rst:2843
 msgid ""
 "Here, the annotations allow the type checker to infer that the last case can"
 " never execute, because ``arg`` is either an :class:`int` or a :class:`str`,"
 " and both options are covered by earlier cases."
 msgstr ""
 
-#: ../../library/typing.rst:2840
+#: ../../library/typing.rst:2848
 msgid ""
 "If a type checker finds that a call to ``assert_never()`` is reachable, it "
 "will emit an error. For example, if the type annotation for ``arg`` was "
@@ -3930,60 +3942,60 @@ msgid ""
 "passed in must be the bottom type, :data:`Never`, and nothing else."
 msgstr ""
 
-#: ../../library/typing.rst:2848
+#: ../../library/typing.rst:2856
 msgid "At runtime, this throws an exception when called."
 msgstr ""
 
-#: ../../library/typing.rst:2851
+#: ../../library/typing.rst:2859
 msgid ""
 "`Unreachable Code and Exhaustiveness Checking "
 "<https://typing.python.org/en/latest/guides/unreachable.html>`__ has more "
 "information about exhaustiveness checking with static typing."
 msgstr ""
 
-#: ../../library/typing.rst:2859
+#: ../../library/typing.rst:2867
 msgid ""
 "Ask a static type checker to reveal the inferred type of an expression."
 msgstr ""
 
-#: ../../library/typing.rst:2861
+#: ../../library/typing.rst:2869
 msgid ""
 "When a static type checker encounters a call to this function, it emits a "
 "diagnostic with the inferred type of the argument. For example::"
 msgstr ""
 
-#: ../../library/typing.rst:2864
+#: ../../library/typing.rst:2872
 msgid ""
 "x: int = 1\n"
 "reveal_type(x)  # Revealed type is \"builtins.int\""
 msgstr ""
 
-#: ../../library/typing.rst:2867
+#: ../../library/typing.rst:2875
 msgid ""
 "This can be useful when you want to debug how your type checker handles a "
 "particular piece of code."
 msgstr ""
 
-#: ../../library/typing.rst:2870
+#: ../../library/typing.rst:2878
 msgid ""
 "At runtime, this function prints the runtime type of its argument to "
 ":data:`sys.stderr` and returns the argument unchanged (allowing the call to "
 "be used within an expression)::"
 msgstr ""
 
-#: ../../library/typing.rst:2874
+#: ../../library/typing.rst:2882
 msgid ""
 "x = reveal_type(1)  # prints \"Runtime type is int\"\n"
 "print(x)  # prints \"1\""
 msgstr ""
 
-#: ../../library/typing.rst:2877
+#: ../../library/typing.rst:2885
 msgid ""
 "Note that the runtime type may be different from (more or less specific "
 "than) the type statically inferred by a type checker."
 msgstr ""
 
-#: ../../library/typing.rst:2880
+#: ../../library/typing.rst:2888
 msgid ""
 "Most type checkers support ``reveal_type()`` anywhere, even if the name is "
 "not imported from ``typing``. Importing the name from ``typing``, however, "
@@ -3991,13 +4003,13 @@ msgid ""
 "clearly."
 msgstr ""
 
-#: ../../library/typing.rst:2891
+#: ../../library/typing.rst:2899
 msgid ""
 "Decorator to mark an object as providing :func:`dataclass "
 "<dataclasses.dataclass>`-like behavior."
 msgstr ""
 
-#: ../../library/typing.rst:2894
+#: ../../library/typing.rst:2902
 msgid ""
 "``dataclass_transform`` may be used to decorate a class, metaclass, or a "
 "function that is itself a decorator. The presence of "
@@ -4006,11 +4018,11 @@ msgid ""
 "to :deco:`dataclasses.dataclass`."
 msgstr ""
 
-#: ../../library/typing.rst:2901
+#: ../../library/typing.rst:2909
 msgid "Example usage with a decorator function:"
 msgstr ""
 
-#: ../../library/typing.rst:2903
+#: ../../library/typing.rst:2911
 msgid ""
 "@dataclass_transform()\n"
 "def create_model[T](cls: type[T]) -> type[T]:\n"
@@ -4023,11 +4035,11 @@ msgid ""
 "    name: str"
 msgstr ""
 
-#: ../../library/typing.rst:2915
+#: ../../library/typing.rst:2923
 msgid "On a base class::"
 msgstr ""
 
-#: ../../library/typing.rst:2917
+#: ../../library/typing.rst:2925
 msgid ""
 "@dataclass_transform()\n"
 "class ModelBase: ...\n"
@@ -4037,11 +4049,11 @@ msgid ""
 "    name: str"
 msgstr ""
 
-#: ../../library/typing.rst:2924
+#: ../../library/typing.rst:2932
 msgid "On a metaclass::"
 msgstr ""
 
-#: ../../library/typing.rst:2926
+#: ../../library/typing.rst:2934
 msgid ""
 "@dataclass_transform()\n"
 "class ModelMeta(type): ...\n"
@@ -4053,7 +4065,7 @@ msgid ""
 "    name: str"
 msgstr ""
 
-#: ../../library/typing.rst:2935
+#: ../../library/typing.rst:2943
 msgid ""
 "The ``CustomerModel`` classes defined above will be treated by type checkers"
 " similarly to classes created with :deco:`dataclasses.dataclass`. For "
@@ -4061,7 +4073,7 @@ msgid ""
 "that accept ``id`` and ``name``."
 msgstr ""
 
-#: ../../library/typing.rst:2941
+#: ../../library/typing.rst:2949
 msgid ""
 "The decorated class, metaclass, or function may accept the following bool "
 "arguments which type checkers will assume have the same effect as they would"
@@ -4071,7 +4083,7 @@ msgid ""
 " ``False``) to be statically evaluated."
 msgstr ""
 
-#: ../../library/typing.rst:2949
+#: ../../library/typing.rst:2957
 msgid ""
 "The arguments to the ``dataclass_transform`` decorator can be used to "
 "customize the default behaviors of the decorated class, metaclass, or "
@@ -4082,90 +4094,90 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../library/typing.rst:2953
+#: ../../library/typing.rst:2961
 msgid ""
 "Indicates whether the ``eq`` parameter is assumed to be ``True`` or "
 "``False`` if it is omitted by the caller. Defaults to ``True``."
 msgstr ""
 
-#: ../../library/typing.rst:2958
+#: ../../library/typing.rst:2966
 msgid ""
 "Indicates whether the ``order`` parameter is assumed to be ``True`` or "
 "``False`` if it is omitted by the caller. Defaults to ``False``."
 msgstr ""
 
-#: ../../library/typing.rst:2963
+#: ../../library/typing.rst:2971
 msgid ""
 "Indicates whether the ``kw_only`` parameter is assumed to be ``True`` or "
 "``False`` if it is omitted by the caller. Defaults to ``False``."
 msgstr ""
 
-#: ../../library/typing.rst:2968
+#: ../../library/typing.rst:2976
 msgid ""
 "Indicates whether the ``frozen`` parameter is assumed to be ``True`` or "
 "``False`` if it is omitted by the caller. Defaults to ``False``.  .. "
 "versionadded:: 3.12"
 msgstr ""
 
-#: ../../library/typing.rst:2969
+#: ../../library/typing.rst:2977
 msgid ""
 "Indicates whether the ``frozen`` parameter is assumed to be ``True`` or "
 "``False`` if it is omitted by the caller. Defaults to ``False``."
 msgstr ""
 
-#: ../../library/typing.rst:2975
+#: ../../library/typing.rst:2983
 msgid ""
 "Specifies a static list of supported classes or functions that describe "
 "fields, similar to :func:`dataclasses.field`. Defaults to ``()``."
 msgstr ""
 
-#: ../../library/typing.rst:2981
+#: ../../library/typing.rst:2989
 msgid ""
 "Arbitrary other keyword arguments are accepted in order to allow for "
 "possible future extensions."
 msgstr ""
 
-#: ../../library/typing.rst:2985
+#: ../../library/typing.rst:2993
 msgid ""
 "Type checkers recognize the following optional parameters on field "
 "specifiers:"
 msgstr ""
 
-#: ../../library/typing.rst:2988
+#: ../../library/typing.rst:2996
 msgid "**Recognised parameters for field specifiers**"
 msgstr ""
 
-#: ../../library/typing.rst:2992
+#: ../../library/typing.rst:3000
 msgid "Parameter name"
 msgstr ""
 
-#: ../../library/typing.rst:2993
+#: ../../library/typing.rst:3001
 msgid "Description"
 msgstr ""
 
-#: ../../library/typing.rst:2994
+#: ../../library/typing.rst:3002
 msgid "``init``"
 msgstr ""
 
-#: ../../library/typing.rst:2995
+#: ../../library/typing.rst:3003
 msgid ""
 "Indicates whether the field should be included in the synthesized "
 "``__init__`` method. If unspecified, ``init`` defaults to ``True``."
 msgstr ""
 
-#: ../../library/typing.rst:2998
+#: ../../library/typing.rst:3006
 msgid "``default``"
 msgstr ""
 
-#: ../../library/typing.rst:2999
+#: ../../library/typing.rst:3007
 msgid "Provides the default value for the field."
 msgstr ""
 
-#: ../../library/typing.rst:3000
+#: ../../library/typing.rst:3008
 msgid "``default_factory``"
 msgstr ""
 
-#: ../../library/typing.rst:3001
+#: ../../library/typing.rst:3009
 msgid ""
 "Provides a runtime callback that returns the default value for the field. If"
 " neither ``default`` nor ``default_factory`` are specified, the field is "
@@ -4173,19 +4185,19 @@ msgid ""
 " is instantiated."
 msgstr ""
 
-#: ../../library/typing.rst:3006
+#: ../../library/typing.rst:3014
 msgid "``factory``"
 msgstr ""
 
-#: ../../library/typing.rst:3007
+#: ../../library/typing.rst:3015
 msgid "An alias for the ``default_factory`` parameter on field specifiers."
 msgstr ""
 
-#: ../../library/typing.rst:3008
+#: ../../library/typing.rst:3016
 msgid "``kw_only``"
 msgstr ""
 
-#: ../../library/typing.rst:3009
+#: ../../library/typing.rst:3017
 msgid ""
 "Indicates whether the field should be marked as keyword-only. If ``True``, "
 "the field will be keyword-only. If ``False``, it will not be keyword-only. "
@@ -4195,32 +4207,32 @@ msgid ""
 "will be used."
 msgstr ""
 
-#: ../../library/typing.rst:3015
+#: ../../library/typing.rst:3023
 msgid "``alias``"
 msgstr ""
 
-#: ../../library/typing.rst:3016
+#: ../../library/typing.rst:3024
 msgid ""
 "Provides an alternative name for the field. This alternative name is used in"
 " the synthesized ``__init__`` method."
 msgstr ""
 
-#: ../../library/typing.rst:3019
+#: ../../library/typing.rst:3027
 msgid ""
 "At runtime, this decorator records its arguments in the "
 "``__dataclass_transform__`` attribute on the decorated object. It has no "
 "other runtime effect."
 msgstr ""
 
-#: ../../library/typing.rst:3023
+#: ../../library/typing.rst:3031
 msgid "See :pep:`681` for more details."
 msgstr ""
 
-#: ../../library/typing.rst:3031
+#: ../../library/typing.rst:3039
 msgid "Decorator for creating overloaded functions and methods."
 msgstr ""
 
-#: ../../library/typing.rst:3033
+#: ../../library/typing.rst:3041
 msgid ""
 "The ``@overload`` decorator allows describing functions and methods that "
 "support multiple different combinations of argument types. A series of "
@@ -4228,7 +4240,7 @@ msgid ""
 "non-``@overload``-decorated definition (for the same function/method)."
 msgstr ""
 
-#: ../../library/typing.rst:3038
+#: ../../library/typing.rst:3046
 msgid ""
 "``@overload``-decorated definitions are for the benefit of the type checker "
 "only, since they will be overwritten by the non-``@overload``-decorated "
@@ -4238,13 +4250,13 @@ msgid ""
 ":exc:`NotImplementedError`."
 msgstr ""
 
-#: ../../library/typing.rst:3046
+#: ../../library/typing.rst:3054
 msgid ""
 "An example of overload that gives a more precise type than can be expressed "
 "using a union or a type variable:"
 msgstr ""
 
-#: ../../library/typing.rst:3049
+#: ../../library/typing.rst:3057
 msgid ""
 "@overload\n"
 "def process(response: None) -> None:\n"
@@ -4259,23 +4271,23 @@ msgid ""
 "    ...  # actual implementation goes here"
 msgstr ""
 
-#: ../../library/typing.rst:3063
+#: ../../library/typing.rst:3071
 msgid ""
 "See :pep:`484` for more details and comparison with other typing semantics."
 msgstr ""
 
-#: ../../library/typing.rst:3065
+#: ../../library/typing.rst:3073
 msgid ""
 "Overloaded functions can now be introspected at runtime using "
 ":func:`get_overloads`."
 msgstr ""
 
-#: ../../library/typing.rst:3072
+#: ../../library/typing.rst:3080
 msgid ""
 "Return a sequence of :deco:`overload`-decorated definitions for *func*."
 msgstr ""
 
-#: ../../library/typing.rst:3075
+#: ../../library/typing.rst:3083
 msgid ""
 "*func* is the function object for the implementation of the overloaded "
 "function. For example, given the definition of ``process`` in the "
@@ -4285,32 +4297,32 @@ msgid ""
 " sequence."
 msgstr ""
 
-#: ../../library/typing.rst:3082
+#: ../../library/typing.rst:3090
 msgid ""
 "``get_overloads()`` can be used for introspecting an overloaded function at "
 "runtime."
 msgstr ""
 
-#: ../../library/typing.rst:3090
+#: ../../library/typing.rst:3098
 msgid "Clear all registered overloads in the internal registry."
 msgstr ""
 
-#: ../../library/typing.rst:3092
+#: ../../library/typing.rst:3100
 msgid "This can be used to reclaim the memory used by the registry."
 msgstr ""
 
-#: ../../library/typing.rst:3099
+#: ../../library/typing.rst:3107
 msgid "Decorator to indicate final methods and final classes."
 msgstr ""
 
-#: ../../library/typing.rst:3101
+#: ../../library/typing.rst:3109
 msgid ""
 "Decorating a method with ``@final`` indicates to a type checker that the "
 "method cannot be overridden in a subclass. Decorating a class with "
 "``@final`` indicates that it cannot be subclassed."
 msgstr ""
 
-#: ../../library/typing.rst:3107
+#: ../../library/typing.rst:3115
 msgid ""
 "class Base:\n"
 "    @final\n"
@@ -4327,7 +4339,7 @@ msgid ""
 "    ..."
 msgstr ""
 
-#: ../../library/typing.rst:3126
+#: ../../library/typing.rst:3134
 msgid ""
 "The decorator will now attempt to set a ``__final__`` attribute to ``True`` "
 "on the decorated object. Thus, a check like ``if getattr(obj, \"__final__\","
@@ -4337,11 +4349,11 @@ msgid ""
 "exception."
 msgstr ""
 
-#: ../../library/typing.rst:3137
+#: ../../library/typing.rst:3145
 msgid "Decorator to indicate that annotations are not type hints."
 msgstr ""
 
-#: ../../library/typing.rst:3139
+#: ../../library/typing.rst:3147
 msgid ""
 "This works as a class or function :term:`decorator`.  With a class, it "
 "applies recursively to all methods and classes defined in that class (but "
@@ -4349,40 +4361,40 @@ msgid ""
 "will ignore all annotations in a function or class with this decorator."
 msgstr ""
 
-#: ../../library/typing.rst:3145
+#: ../../library/typing.rst:3153
 msgid "``@no_type_check`` mutates the decorated object in place."
 msgstr ""
 
-#: ../../library/typing.rst:3149
+#: ../../library/typing.rst:3157
 msgid "Decorator to give another decorator the :func:`no_type_check` effect."
 msgstr ""
 
-#: ../../library/typing.rst:3151
+#: ../../library/typing.rst:3159
 msgid ""
 "This wraps the decorator with something that wraps the decorated function in"
 " :func:`no_type_check`."
 msgstr ""
 
-#: ../../library/typing.rst:3154
+#: ../../library/typing.rst:3162
 msgid ""
 "No type checker ever added support for ``@no_type_check_decorator``. It is "
 "therefore deprecated, and will be removed in Python 3.15."
 msgstr ""
 
-#: ../../library/typing.rst:3160
+#: ../../library/typing.rst:3168
 msgid ""
 "Decorator to indicate that a method in a subclass is intended to override a "
 "method or attribute in a superclass."
 msgstr ""
 
-#: ../../library/typing.rst:3163
+#: ../../library/typing.rst:3171
 msgid ""
 "Type checkers should emit an error if a method decorated with ``@override`` "
 "does not, in fact, override anything. This helps prevent bugs that may occur"
 " when a base class is changed without an equivalent change to a child class."
 msgstr ""
 
-#: ../../library/typing.rst:3170
+#: ../../library/typing.rst:3178
 msgid ""
 "class Base:\n"
 "    def log_status(self) -> None:\n"
@@ -4398,11 +4410,11 @@ msgid ""
 "        ..."
 msgstr ""
 
-#: ../../library/typing.rst:3185
+#: ../../library/typing.rst:3193
 msgid "There is no runtime checking of this property."
 msgstr ""
 
-#: ../../library/typing.rst:3187
+#: ../../library/typing.rst:3195
 msgid ""
 "The decorator will attempt to set an ``__override__`` attribute to ``True`` "
 "on the decorated object. Thus, a check like ``if getattr(obj, "
@@ -4412,22 +4424,22 @@ msgid ""
 "without raising an exception."
 msgstr ""
 
-#: ../../library/typing.rst:3194
+#: ../../library/typing.rst:3202
 msgid "See :pep:`698` for more details."
 msgstr ""
 
-#: ../../library/typing.rst:3201
+#: ../../library/typing.rst:3209
 msgid "Decorator to mark a class or function as unavailable at runtime."
 msgstr ""
 
-#: ../../library/typing.rst:3203
+#: ../../library/typing.rst:3211
 msgid ""
 "This decorator is itself not available at runtime. It is mainly intended to "
 "mark classes that are defined in type stub files if an implementation "
 "returns an instance of a private class::"
 msgstr ""
 
-#: ../../library/typing.rst:3207
+#: ../../library/typing.rst:3215
 msgid ""
 "@type_check_only\n"
 "class Response:  # private or not available at runtime\n"
@@ -4437,29 +4449,29 @@ msgid ""
 "def fetch_response() -> Response: ..."
 msgstr ""
 
-#: ../../library/typing.rst:3214
+#: ../../library/typing.rst:3222
 msgid ""
 "Note that returning instances of private classes is not recommended. It is "
 "usually preferable to make such classes public."
 msgstr ""
 
-#: ../../library/typing.rst:3218
+#: ../../library/typing.rst:3226
 msgid "Introspection helpers"
 msgstr ""
 
-#: ../../library/typing.rst:3222
+#: ../../library/typing.rst:3230
 msgid ""
 "Return a dictionary containing type hints for a function, method, module or "
 "class object."
 msgstr ""
 
-#: ../../library/typing.rst:3225
+#: ../../library/typing.rst:3233
 msgid ""
 "This is often the same as ``obj.__annotations__``, but this function makes "
 "the following changes to the annotations dictionary:"
 msgstr ""
 
-#: ../../library/typing.rst:3228
+#: ../../library/typing.rst:3236
 msgid ""
 "Forward references encoded as string literals or :class:`ForwardRef` objects"
 " are handled by evaluating them in *globalns*, *localns*, and (where "
@@ -4468,17 +4480,17 @@ msgid ""
 " inferred from *obj*."
 msgstr ""
 
-#: ../../library/typing.rst:3233
+#: ../../library/typing.rst:3241
 msgid "``None`` is replaced with :class:`types.NoneType`."
 msgstr ""
 
-#: ../../library/typing.rst:3234
+#: ../../library/typing.rst:3242
 msgid ""
 "If :deco:`no_type_check` has been applied to *obj*, an empty dictionary is "
 "returned."
 msgstr ""
 
-#: ../../library/typing.rst:3236
+#: ../../library/typing.rst:3244
 msgid ""
 "If *obj* is a class ``C``, the function returns a dictionary that merges "
 "annotations from ``C``'s base classes with those on ``C`` directly. This is "
@@ -4488,7 +4500,7 @@ msgid ""
 "annotations on classes appearing later in the method resolution order."
 msgstr ""
 
-#: ../../library/typing.rst:3243
+#: ../../library/typing.rst:3251
 msgid ""
 "The function recursively replaces all occurrences of ``Annotated[T, ...]``, "
 "``Required[T]``, ``NotRequired[T]``, and ``ReadOnly[T]`` with ``T``, unless "
@@ -4496,13 +4508,13 @@ msgid ""
 "information)."
 msgstr ""
 
-#: ../../library/typing.rst:3248
+#: ../../library/typing.rst:3256
 msgid ""
 "See also :func:`inspect.get_annotations`, a lower-level function that "
 "returns annotations more directly."
 msgstr ""
 
-#: ../../library/typing.rst:3253
+#: ../../library/typing.rst:3261
 msgid ""
 "If any forward references in the annotations of *obj* are not resolvable or "
 "are not valid Python code, this function will raise an exception such as "
@@ -4511,26 +4523,26 @@ msgid ""
 "imported under :data:`if TYPE_CHECKING <TYPE_CHECKING>`."
 msgstr ""
 
-#: ../../library/typing.rst:3259
+#: ../../library/typing.rst:3267
 msgid ""
 "Added ``include_extras`` parameter as part of :pep:`593`. See the "
 "documentation on :data:`Annotated` for more information."
 msgstr ""
 
-#: ../../library/typing.rst:3263
+#: ../../library/typing.rst:3271
 msgid ""
 "Previously, ``Optional[t]`` was added for function and method annotations if"
 " a default value equal to ``None`` was set. Now the annotation is returned "
 "unchanged."
 msgstr ""
 
-#: ../../library/typing.rst:3270
+#: ../../library/typing.rst:3278
 msgid ""
 "Get the unsubscripted version of a type: for a typing object of the form "
 "``X[Y, Z, ...]`` return ``X``."
 msgstr ""
 
-#: ../../library/typing.rst:3273
+#: ../../library/typing.rst:3281
 msgid ""
 "If ``X`` is a typing-module alias for a builtin or :mod:`collections` class,"
 " it will be normalized to the original class. If ``X`` is an instance of "
@@ -4538,11 +4550,11 @@ msgid ""
 ":class:`ParamSpec`. Return ``None`` for unsupported objects."
 msgstr ""
 
-#: ../../library/typing.rst:3279 ../../library/typing.rst:3303
+#: ../../library/typing.rst:3287 ../../library/typing.rst:3311
 msgid "Examples:"
 msgstr ""
 
-#: ../../library/typing.rst:3281
+#: ../../library/typing.rst:3289
 msgid ""
 "assert get_origin(str) is None\n"
 "assert get_origin(Dict[str, int]) is dict\n"
@@ -4553,13 +4565,13 @@ msgid ""
 "assert get_origin(P.kwargs) is P"
 msgstr ""
 
-#: ../../library/typing.rst:3295
+#: ../../library/typing.rst:3303
 msgid ""
 "Get type arguments with all substitutions performed: for a typing object of "
 "the form ``X[Y, Z, ...]`` return ``(Y, Z, ...)``."
 msgstr ""
 
-#: ../../library/typing.rst:3298
+#: ../../library/typing.rst:3306
 msgid ""
 "If ``X`` is a union or :class:`Literal` contained in another generic type, "
 "the order of ``(Y, Z, ...)`` may be different from the order of the original"
@@ -4567,18 +4579,18 @@ msgid ""
 "unsupported objects."
 msgstr ""
 
-#: ../../library/typing.rst:3305
+#: ../../library/typing.rst:3313
 msgid ""
 "assert get_args(int) == ()\n"
 "assert get_args(Dict[int, str]) == (int, str)\n"
 "assert get_args(Union[int, str]) == (int, str)"
 msgstr ""
 
-#: ../../library/typing.rst:3315
+#: ../../library/typing.rst:3323
 msgid "Return the set of members defined in a :class:`Protocol`."
 msgstr ""
 
-#: ../../library/typing.rst:3317
+#: ../../library/typing.rst:3325
 msgid ""
 ">>> from typing import Protocol, get_protocol_members\n"
 ">>> class P(Protocol):\n"
@@ -4588,15 +4600,15 @@ msgid ""
 "True"
 msgstr ""
 
-#: ../../library/typing.rst:3326
+#: ../../library/typing.rst:3334
 msgid "Raise :exc:`TypeError` for arguments that are not Protocols."
 msgstr ""
 
-#: ../../library/typing.rst:3332
+#: ../../library/typing.rst:3340
 msgid "Determine if a type is a :class:`Protocol`."
 msgstr ""
 
-#: ../../library/typing.rst:3336
+#: ../../library/typing.rst:3344
 msgid ""
 "class P(Protocol):\n"
 "    def a(self) -> str: ...\n"
@@ -4606,11 +4618,11 @@ msgid ""
 "is_protocol(int)  # => False"
 msgstr ""
 
-#: ../../library/typing.rst:3347
+#: ../../library/typing.rst:3355
 msgid "Check if a type is a :class:`TypedDict`."
 msgstr ""
 
-#: ../../library/typing.rst:3351
+#: ../../library/typing.rst:3359
 msgid ""
 "class Film(TypedDict):\n"
 "    title: str\n"
@@ -4624,32 +4636,32 @@ msgid ""
 "assert not is_typeddict(TypedDict)"
 msgstr ""
 
-#: ../../library/typing.rst:3368
+#: ../../library/typing.rst:3376
 msgid ""
 "Class used for internal typing representation of string forward references."
 msgstr ""
 
-#: ../../library/typing.rst:3370
+#: ../../library/typing.rst:3378
 msgid ""
 "For example, ``List[\"SomeClass\"]`` is implicitly transformed into "
 "``List[ForwardRef(\"SomeClass\")]``.  ``ForwardRef`` should not be "
 "instantiated by a user, but may be used by introspection tools."
 msgstr ""
 
-#: ../../library/typing.rst:3375
+#: ../../library/typing.rst:3383
 msgid ""
 ":pep:`585` generic types such as ``list[\"SomeClass\"]`` will not be "
 "implicitly transformed into ``list[ForwardRef(\"SomeClass\")]`` and thus "
 "will not automatically resolve to ``list[SomeClass]``."
 msgstr ""
 
-#: ../../library/typing.rst:3383
+#: ../../library/typing.rst:3391
 msgid ""
 "A sentinel object used to indicate that a type parameter has no default "
 "value. For example:"
 msgstr ""
 
-#: ../../library/typing.rst:3386
+#: ../../library/typing.rst:3394
 msgid ""
 ">>> T = TypeVar(\"T\")\n"
 ">>> T.__default__ is typing.NoDefault\n"
@@ -4659,17 +4671,17 @@ msgid ""
 "True"
 msgstr ""
 
-#: ../../library/typing.rst:3398
+#: ../../library/typing.rst:3406
 msgid "Constant"
 msgstr ""
 
-#: ../../library/typing.rst:3402
+#: ../../library/typing.rst:3410
 msgid ""
 "A special constant that is assumed to be ``True`` by 3rd party static type "
 "checkers. It is ``False`` at runtime."
 msgstr ""
 
-#: ../../library/typing.rst:3407
+#: ../../library/typing.rst:3415
 msgid ""
 "if TYPE_CHECKING:\n"
 "    import expensive_mod\n"
@@ -4678,7 +4690,7 @@ msgid ""
 "    local_var: expensive_mod.AnotherType = other_fun()"
 msgstr ""
 
-#: ../../library/typing.rst:3413
+#: ../../library/typing.rst:3421
 msgid ""
 "The first type annotation must be enclosed in quotes, making it a \"forward "
 "reference\", to hide the ``expensive_mod`` reference from the interpreter "
@@ -4686,7 +4698,7 @@ msgid ""
 "second annotation does not need to be enclosed in quotes."
 msgstr ""
 
-#: ../../library/typing.rst:3420
+#: ../../library/typing.rst:3428
 msgid ""
 "If ``from __future__ import annotations`` is used, annotations are not "
 "evaluated at function definition time. Instead, they are stored as strings "
@@ -4694,11 +4706,11 @@ msgid ""
 "annotation (see :pep:`563`)."
 msgstr ""
 
-#: ../../library/typing.rst:3432
+#: ../../library/typing.rst:3440
 msgid "Deprecated aliases"
 msgstr ""
 
-#: ../../library/typing.rst:3434
+#: ../../library/typing.rst:3442
 msgid ""
 "This module defines several deprecated aliases to pre-existing standard "
 "library classes. These were originally included in the :mod:`!typing` module"
@@ -4707,7 +4719,7 @@ msgid ""
 "pre-existing classes were enhanced to support ``[]`` (see :pep:`585`)."
 msgstr ""
 
-#: ../../library/typing.rst:3441
+#: ../../library/typing.rst:3449
 msgid ""
 "The redundant types are deprecated as of Python 3.9. However, while the "
 "aliases may be removed at some point, removal of these aliases is not "
@@ -4715,7 +4727,7 @@ msgid ""
 "the interpreter for these aliases."
 msgstr ""
 
-#: ../../library/typing.rst:3446
+#: ../../library/typing.rst:3454
 msgid ""
 "If at some point it is decided to remove these deprecated aliases, a "
 "deprecation warning will be issued by the interpreter for at least two "
@@ -4724,38 +4736,38 @@ msgid ""
 "3.14."
 msgstr ""
 
-#: ../../library/typing.rst:3451
+#: ../../library/typing.rst:3459
 msgid ""
 "Type checkers are encouraged to flag uses of the deprecated types if the "
 "program they are checking targets a minimum Python version of 3.9 or newer."
 msgstr ""
 
-#: ../../library/typing.rst:3457
+#: ../../library/typing.rst:3465
 msgid "Aliases to built-in types"
 msgstr ""
 
-#: ../../library/typing.rst:3461
+#: ../../library/typing.rst:3469
 msgid "Deprecated alias to :class:`dict`."
 msgstr ""
 
-#: ../../library/typing.rst:3463
+#: ../../library/typing.rst:3471
 msgid ""
 "Note that to annotate arguments, it is preferred to use an abstract "
 "collection type such as :class:`~collections.abc.Mapping` rather than to use"
 " :class:`dict` or :class:`!typing.Dict`."
 msgstr ""
 
-#: ../../library/typing.rst:3467
+#: ../../library/typing.rst:3475
 msgid ""
 ":class:`builtins.dict <dict>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3473
+#: ../../library/typing.rst:3481
 msgid "Deprecated alias to :class:`list`."
 msgstr ""
 
-#: ../../library/typing.rst:3475
+#: ../../library/typing.rst:3483
 msgid ""
 "Note that to annotate arguments, it is preferred to use an abstract "
 "collection type such as :class:`~collections.abc.Sequence` or "
@@ -4763,136 +4775,136 @@ msgid ""
 ":class:`!typing.List`."
 msgstr ""
 
-#: ../../library/typing.rst:3480
+#: ../../library/typing.rst:3488
 msgid ""
 ":class:`builtins.list <list>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3486
+#: ../../library/typing.rst:3494
 msgid "Deprecated alias to :class:`builtins.set <set>`."
 msgstr ""
 
-#: ../../library/typing.rst:3488
+#: ../../library/typing.rst:3496
 msgid ""
 "Note that to annotate arguments, it is preferred to use an abstract "
 "collection type such as :class:`collections.abc.Set` rather than to use "
 ":class:`set` or :class:`typing.Set`."
 msgstr ""
 
-#: ../../library/typing.rst:3492
+#: ../../library/typing.rst:3500
 msgid ""
 ":class:`builtins.set <set>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3498
+#: ../../library/typing.rst:3506
 msgid "Deprecated alias to :class:`builtins.frozenset <frozenset>`."
 msgstr ""
 
-#: ../../library/typing.rst:3500
+#: ../../library/typing.rst:3508
 msgid ""
 ":class:`builtins.frozenset <frozenset>` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3507
+#: ../../library/typing.rst:3515
 msgid "Deprecated alias for :class:`tuple`."
 msgstr ""
 
-#: ../../library/typing.rst:3509
+#: ../../library/typing.rst:3517
 msgid ""
 ":class:`tuple` and ``Tuple`` are special-cased in the type system; see "
 ":ref:`annotating-tuples` for more details."
 msgstr ""
 
-#: ../../library/typing.rst:3512
+#: ../../library/typing.rst:3520
 msgid ""
 ":class:`builtins.tuple <tuple>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3518
+#: ../../library/typing.rst:3526
 msgid "Deprecated alias to :class:`type`."
 msgstr ""
 
-#: ../../library/typing.rst:3520
+#: ../../library/typing.rst:3528
 msgid ""
 "See :ref:`type-of-class-objects` for details on using :class:`type` or "
 "``typing.Type`` in type annotations."
 msgstr ""
 
-#: ../../library/typing.rst:3525
+#: ../../library/typing.rst:3533
 msgid ""
 ":class:`builtins.type <type>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3532
+#: ../../library/typing.rst:3540
 msgid "Aliases to types in :mod:`collections`"
 msgstr ""
 
-#: ../../library/typing.rst:3536
+#: ../../library/typing.rst:3544
 msgid "Deprecated alias to :class:`collections.defaultdict`."
 msgstr ""
 
-#: ../../library/typing.rst:3540
+#: ../../library/typing.rst:3548
 msgid ""
 ":class:`collections.defaultdict` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3546
+#: ../../library/typing.rst:3554
 msgid "Deprecated alias to :class:`collections.OrderedDict`."
 msgstr ""
 
-#: ../../library/typing.rst:3550
+#: ../../library/typing.rst:3558
 msgid ""
 ":class:`collections.OrderedDict` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3556
+#: ../../library/typing.rst:3564
 msgid "Deprecated alias to :class:`collections.ChainMap`."
 msgstr ""
 
-#: ../../library/typing.rst:3560
+#: ../../library/typing.rst:3568
 msgid ""
 ":class:`collections.ChainMap` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3566
+#: ../../library/typing.rst:3574
 msgid "Deprecated alias to :class:`collections.Counter`."
 msgstr ""
 
-#: ../../library/typing.rst:3570
+#: ../../library/typing.rst:3578
 msgid ""
 ":class:`collections.Counter` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3576
+#: ../../library/typing.rst:3584
 msgid "Deprecated alias to :class:`collections.deque`."
 msgstr ""
 
-#: ../../library/typing.rst:3580
+#: ../../library/typing.rst:3588
 msgid ""
 ":class:`collections.deque` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3587
+#: ../../library/typing.rst:3595
 msgid "Aliases to other concrete types"
 msgstr ""
 
-#: ../../library/typing.rst:3592
+#: ../../library/typing.rst:3600
 msgid ""
 "Deprecated aliases corresponding to the return types from :func:`re.compile`"
 " and :func:`re.match`."
 msgstr ""
 
-#: ../../library/typing.rst:3595
+#: ../../library/typing.rst:3603
 msgid ""
 "These types (and the corresponding functions) are generic over "
 ":data:`AnyStr`. ``Pattern`` can be specialised as ``Pattern[str]`` or "
@@ -4900,60 +4912,60 @@ msgid ""
 "``Match[bytes]``."
 msgstr ""
 
-#: ../../library/typing.rst:3600
+#: ../../library/typing.rst:3608
 msgid ""
 "Classes ``Pattern`` and ``Match`` from :mod:`re` now support ``[]``. See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3606
+#: ../../library/typing.rst:3614
 msgid "Deprecated alias for :class:`str`."
 msgstr ""
 
-#: ../../library/typing.rst:3608
+#: ../../library/typing.rst:3616
 msgid ""
 "``Text`` is provided to supply a forward compatible path for Python 2 code: "
 "in Python 2, ``Text`` is an alias for ``unicode``."
 msgstr ""
 
-#: ../../library/typing.rst:3612
+#: ../../library/typing.rst:3620
 msgid ""
 "Use ``Text`` to indicate that a value must contain a unicode string in a "
 "manner that is compatible with both Python 2 and Python 3::"
 msgstr ""
 
-#: ../../library/typing.rst:3615
+#: ../../library/typing.rst:3623
 msgid ""
 "def add_unicode_checkmark(text: Text) -> Text:\n"
 "    return text + u' \\u2713'"
 msgstr ""
 
-#: ../../library/typing.rst:3620
+#: ../../library/typing.rst:3628
 msgid ""
 "Python 2 is no longer supported, and most type checkers also no longer "
 "support type checking Python 2 code. Removal of the alias is not currently "
 "planned, but users are encouraged to use :class:`str` instead of ``Text``."
 msgstr ""
 
-#: ../../library/typing.rst:3630
+#: ../../library/typing.rst:3638
 msgid "Aliases to container ABCs in :mod:`collections.abc`"
 msgstr ""
 
-#: ../../library/typing.rst:3634
+#: ../../library/typing.rst:3642
 msgid "Deprecated alias to :class:`collections.abc.Set`."
 msgstr ""
 
-#: ../../library/typing.rst:3636
+#: ../../library/typing.rst:3644
 msgid ""
 ":class:`collections.abc.Set` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3642
+#: ../../library/typing.rst:3650
 msgid "Deprecated alias to :class:`collections.abc.ByteString`."
 msgstr ""
 
-#: ../../library/typing.rst:3644
+#: ../../library/typing.rst:3652
 msgid ""
 "Use ``isinstance(obj, collections.abc.Buffer)`` to test if ``obj`` "
 "implements the :ref:`buffer protocol <bufferobjects>` at runtime. For use in"
@@ -4962,7 +4974,7 @@ msgid ""
 "bytearray | memoryview``)."
 msgstr ""
 
-#: ../../library/typing.rst:3650
+#: ../../library/typing.rst:3658
 msgid ""
 ":class:`!ByteString` was originally intended to be an abstract class that "
 "would serve as a supertype of both :class:`bytes` and :class:`bytearray`. "
@@ -4973,289 +4985,289 @@ msgid ""
 "runtime or by static type checkers)."
 msgstr ""
 
-#: ../../library/typing.rst:3658
+#: ../../library/typing.rst:3666
 msgid "See :pep:`PEP 688 <688#current-options>` for more details."
 msgstr ""
 
-#: ../../library/typing.rst:3664
+#: ../../library/typing.rst:3672
 msgid "Deprecated alias to :class:`collections.abc.Collection`."
 msgstr ""
 
-#: ../../library/typing.rst:3668
+#: ../../library/typing.rst:3676
 msgid ""
 ":class:`collections.abc.Collection` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3674
+#: ../../library/typing.rst:3682
 msgid "Deprecated alias to :class:`collections.abc.Container`."
 msgstr ""
 
-#: ../../library/typing.rst:3676
+#: ../../library/typing.rst:3684
 msgid ""
 ":class:`collections.abc.Container` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3682
+#: ../../library/typing.rst:3690
 msgid "Deprecated alias to :class:`collections.abc.ItemsView`."
 msgstr ""
 
-#: ../../library/typing.rst:3684
+#: ../../library/typing.rst:3692
 msgid ""
 ":class:`collections.abc.ItemsView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3690
+#: ../../library/typing.rst:3698
 msgid "Deprecated alias to :class:`collections.abc.KeysView`."
 msgstr ""
 
-#: ../../library/typing.rst:3692
+#: ../../library/typing.rst:3700
 msgid ""
 ":class:`collections.abc.KeysView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3698
+#: ../../library/typing.rst:3706
 msgid "Deprecated alias to :class:`collections.abc.Mapping`."
 msgstr ""
 
-#: ../../library/typing.rst:3700
+#: ../../library/typing.rst:3708
 msgid ""
 ":class:`collections.abc.Mapping` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3706
+#: ../../library/typing.rst:3714
 msgid "Deprecated alias to :class:`collections.abc.MappingView`."
 msgstr ""
 
-#: ../../library/typing.rst:3708
+#: ../../library/typing.rst:3716
 msgid ""
 ":class:`collections.abc.MappingView` now supports subscripting (``[]``). See"
 " :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3714
+#: ../../library/typing.rst:3722
 msgid "Deprecated alias to :class:`collections.abc.MutableMapping`."
 msgstr ""
 
-#: ../../library/typing.rst:3716
+#: ../../library/typing.rst:3724
 msgid ""
 ":class:`collections.abc.MutableMapping` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3723
+#: ../../library/typing.rst:3731
 msgid "Deprecated alias to :class:`collections.abc.MutableSequence`."
 msgstr ""
 
-#: ../../library/typing.rst:3725
+#: ../../library/typing.rst:3733
 msgid ""
 ":class:`collections.abc.MutableSequence` now supports subscripting (``[]``)."
 " See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3732
+#: ../../library/typing.rst:3740
 msgid "Deprecated alias to :class:`collections.abc.MutableSet`."
 msgstr ""
 
-#: ../../library/typing.rst:3734
+#: ../../library/typing.rst:3742
 msgid ""
 ":class:`collections.abc.MutableSet` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3740
+#: ../../library/typing.rst:3748
 msgid "Deprecated alias to :class:`collections.abc.Sequence`."
 msgstr ""
 
-#: ../../library/typing.rst:3742
+#: ../../library/typing.rst:3750
 msgid ""
 ":class:`collections.abc.Sequence` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3748
+#: ../../library/typing.rst:3756
 msgid "Deprecated alias to :class:`collections.abc.ValuesView`."
 msgstr ""
 
-#: ../../library/typing.rst:3750
+#: ../../library/typing.rst:3758
 msgid ""
 ":class:`collections.abc.ValuesView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3757
+#: ../../library/typing.rst:3765
 msgid "Aliases to asynchronous ABCs in :mod:`collections.abc`"
 msgstr ""
 
-#: ../../library/typing.rst:3761
+#: ../../library/typing.rst:3769
 msgid "Deprecated alias to :class:`collections.abc.Coroutine`."
 msgstr ""
 
-#: ../../library/typing.rst:3763
+#: ../../library/typing.rst:3771
 msgid ""
 "See :ref:`annotating-generators-and-coroutines` for details on using "
 ":class:`collections.abc.Coroutine` and ``typing.Coroutine`` in type "
 "annotations."
 msgstr ""
 
-#: ../../library/typing.rst:3769
+#: ../../library/typing.rst:3777
 msgid ""
 ":class:`collections.abc.Coroutine` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3775
+#: ../../library/typing.rst:3783
 msgid "Deprecated alias to :class:`collections.abc.AsyncGenerator`."
 msgstr ""
 
-#: ../../library/typing.rst:3777
+#: ../../library/typing.rst:3785
 msgid ""
 "See :ref:`annotating-generators-and-coroutines` for details on using "
 ":class:`collections.abc.AsyncGenerator` and ``typing.AsyncGenerator`` in "
 "type annotations."
 msgstr ""
 
-#: ../../library/typing.rst:3783
+#: ../../library/typing.rst:3791
 msgid ""
 ":class:`collections.abc.AsyncGenerator` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3788
+#: ../../library/typing.rst:3796
 msgid "The ``SendType`` parameter now has a default."
 msgstr ""
 
-#: ../../library/typing.rst:3793
+#: ../../library/typing.rst:3801
 msgid "Deprecated alias to :class:`collections.abc.AsyncIterable`."
 msgstr ""
 
-#: ../../library/typing.rst:3797
+#: ../../library/typing.rst:3805
 msgid ""
 ":class:`collections.abc.AsyncIterable` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3803
+#: ../../library/typing.rst:3811
 msgid "Deprecated alias to :class:`collections.abc.AsyncIterator`."
 msgstr ""
 
-#: ../../library/typing.rst:3807
+#: ../../library/typing.rst:3815
 msgid ""
 ":class:`collections.abc.AsyncIterator` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3813
+#: ../../library/typing.rst:3821
 msgid "Deprecated alias to :class:`collections.abc.Awaitable`."
 msgstr ""
 
-#: ../../library/typing.rst:3817
+#: ../../library/typing.rst:3825
 msgid ""
 ":class:`collections.abc.Awaitable` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3824
+#: ../../library/typing.rst:3832
 msgid "Aliases to other ABCs in :mod:`collections.abc`"
 msgstr ""
 
-#: ../../library/typing.rst:3828
+#: ../../library/typing.rst:3836
 msgid "Deprecated alias to :class:`collections.abc.Iterable`."
 msgstr ""
 
-#: ../../library/typing.rst:3830
+#: ../../library/typing.rst:3838
 msgid ""
 ":class:`collections.abc.Iterable` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3836
+#: ../../library/typing.rst:3844
 msgid "Deprecated alias to :class:`collections.abc.Iterator`."
 msgstr ""
 
-#: ../../library/typing.rst:3838
+#: ../../library/typing.rst:3846
 msgid ""
 ":class:`collections.abc.Iterator` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3844
+#: ../../library/typing.rst:3852
 msgid "Deprecated alias to :class:`collections.abc.Callable`."
 msgstr ""
 
-#: ../../library/typing.rst:3846
+#: ../../library/typing.rst:3854
 msgid ""
 "See :ref:`annotating-callables` for details on how to use "
 ":class:`collections.abc.Callable` and ``typing.Callable`` in type "
 "annotations."
 msgstr ""
 
-#: ../../library/typing.rst:3849
+#: ../../library/typing.rst:3857
 msgid ""
 ":class:`collections.abc.Callable` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3859
+#: ../../library/typing.rst:3867
 msgid "Deprecated alias to :class:`collections.abc.Generator`."
 msgstr ""
 
-#: ../../library/typing.rst:3861
+#: ../../library/typing.rst:3869
 msgid ""
 "See :ref:`annotating-generators-and-coroutines` for details on using "
 ":class:`collections.abc.Generator` and ``typing.Generator`` in type "
 "annotations."
 msgstr ""
 
-#: ../../library/typing.rst:3865
+#: ../../library/typing.rst:3873
 msgid ""
 ":class:`collections.abc.Generator` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3869
+#: ../../library/typing.rst:3877
 msgid "Default values for the send and return types were added."
 msgstr ""
 
-#: ../../library/typing.rst:3874
+#: ../../library/typing.rst:3882
 msgid "Deprecated alias to :class:`collections.abc.Hashable`."
 msgstr ""
 
-#: ../../library/typing.rst:3876
+#: ../../library/typing.rst:3884
 msgid "Use :class:`collections.abc.Hashable` directly instead."
 msgstr ""
 
-#: ../../library/typing.rst:3881
+#: ../../library/typing.rst:3889
 msgid "Deprecated alias to :class:`collections.abc.Reversible`."
 msgstr ""
 
-#: ../../library/typing.rst:3883
+#: ../../library/typing.rst:3891
 msgid ""
 ":class:`collections.abc.Reversible` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3889
+#: ../../library/typing.rst:3897
 msgid "Deprecated alias to :class:`collections.abc.Sized`."
 msgstr ""
 
-#: ../../library/typing.rst:3891
+#: ../../library/typing.rst:3899
 msgid "Use :class:`collections.abc.Sized` directly instead."
 msgstr ""
 
-#: ../../library/typing.rst:3897
+#: ../../library/typing.rst:3905
 msgid "Aliases to :mod:`contextlib` ABCs"
 msgstr ""
 
-#: ../../library/typing.rst:3901
+#: ../../library/typing.rst:3909
 msgid "Deprecated alias to :class:`contextlib.AbstractContextManager`."
 msgstr ""
 
-#: ../../library/typing.rst:3903
+#: ../../library/typing.rst:3911
 msgid ""
 "The first type parameter, ``T_co``, represents the type returned by the "
 ":meth:`~object.__enter__` method. The optional second type parameter, "
@@ -5263,21 +5275,21 @@ msgid ""
 "returned by the :meth:`~object.__exit__` method."
 msgstr ""
 
-#: ../../library/typing.rst:3910
+#: ../../library/typing.rst:3918
 msgid ""
 ":class:`contextlib.AbstractContextManager` now supports subscripting "
 "(``[]``). See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3915
+#: ../../library/typing.rst:3923
 msgid "Added the optional second type parameter, ``ExitT_co``."
 msgstr ""
 
-#: ../../library/typing.rst:3920
+#: ../../library/typing.rst:3928
 msgid "Deprecated alias to :class:`contextlib.AbstractAsyncContextManager`."
 msgstr ""
 
-#: ../../library/typing.rst:3922
+#: ../../library/typing.rst:3930
 msgid ""
 "The first type parameter, ``T_co``, represents the type returned by the "
 ":meth:`~object.__aenter__` method. The optional second type parameter, "
@@ -5285,21 +5297,21 @@ msgid ""
 "returned by the :meth:`~object.__aexit__` method."
 msgstr ""
 
-#: ../../library/typing.rst:3929
+#: ../../library/typing.rst:3937
 msgid ""
 ":class:`contextlib.AbstractAsyncContextManager` now supports subscripting "
 "(``[]``). See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:3934
+#: ../../library/typing.rst:3942
 msgid "Added the optional second type parameter, ``AExitT_co``."
 msgstr ""
 
-#: ../../library/typing.rst:3938
+#: ../../library/typing.rst:3946
 msgid "Deprecation Timeline of Major Features"
 msgstr ""
 
-#: ../../library/typing.rst:3940
+#: ../../library/typing.rst:3948
 msgid ""
 "Certain features in ``typing`` are deprecated and may be removed in a future"
 " version of Python. The following table summarizes major deprecations for "
@@ -5307,112 +5319,112 @@ msgid ""
 "listed."
 msgstr ""
 
-#: ../../library/typing.rst:3947
+#: ../../library/typing.rst:3955
 msgid "Feature"
 msgstr ""
 
-#: ../../library/typing.rst:3948
+#: ../../library/typing.rst:3956
 msgid "Deprecated in"
 msgstr ""
 
-#: ../../library/typing.rst:3949
+#: ../../library/typing.rst:3957
 msgid "Projected removal"
 msgstr ""
 
-#: ../../library/typing.rst:3950
+#: ../../library/typing.rst:3958
 msgid "PEP/issue"
 msgstr ""
 
-#: ../../library/typing.rst:3951
+#: ../../library/typing.rst:3959
 msgid "``typing`` versions of standard collections"
 msgstr ""
 
-#: ../../library/typing.rst:3952 ../../library/typing.rst:3956
+#: ../../library/typing.rst:3960 ../../library/typing.rst:3964
 msgid "3.9"
 msgstr ""
 
-#: ../../library/typing.rst:3953
+#: ../../library/typing.rst:3961
 msgid "Undecided (see :ref:`deprecated-aliases` for more information)"
 msgstr ""
 
-#: ../../library/typing.rst:3954
+#: ../../library/typing.rst:3962
 msgid ":pep:`585`"
 msgstr ""
 
-#: ../../library/typing.rst:3955
+#: ../../library/typing.rst:3963
 msgid ":class:`typing.ByteString`"
 msgstr ""
 
-#: ../../library/typing.rst:3957
+#: ../../library/typing.rst:3965
 msgid "3.17"
 msgstr ""
 
-#: ../../library/typing.rst:3958
+#: ../../library/typing.rst:3966
 msgid ":gh:`91896`"
 msgstr ""
 
-#: ../../library/typing.rst:3959
+#: ../../library/typing.rst:3967
 msgid ":data:`typing.Text`"
 msgstr ""
 
-#: ../../library/typing.rst:3960
+#: ../../library/typing.rst:3968
 msgid "3.11"
 msgstr ""
 
-#: ../../library/typing.rst:3961 ../../library/typing.rst:3965
-#: ../../library/typing.rst:3969
+#: ../../library/typing.rst:3969 ../../library/typing.rst:3973
+#: ../../library/typing.rst:3977
 msgid "Undecided"
 msgstr ""
 
-#: ../../library/typing.rst:3962
+#: ../../library/typing.rst:3970
 msgid ":gh:`92332`"
 msgstr ""
 
-#: ../../library/typing.rst:3963
+#: ../../library/typing.rst:3971
 msgid ":class:`typing.Hashable` and :class:`typing.Sized`"
 msgstr ""
 
-#: ../../library/typing.rst:3964 ../../library/typing.rst:3968
+#: ../../library/typing.rst:3972 ../../library/typing.rst:3976
 msgid "3.12"
 msgstr ""
 
-#: ../../library/typing.rst:3966
+#: ../../library/typing.rst:3974
 msgid ":gh:`94309`"
 msgstr ""
 
-#: ../../library/typing.rst:3967
+#: ../../library/typing.rst:3975
 msgid ":data:`typing.TypeAlias`"
 msgstr ""
 
-#: ../../library/typing.rst:3970
+#: ../../library/typing.rst:3978
 msgid ":pep:`695`"
 msgstr ""
 
-#: ../../library/typing.rst:3971
+#: ../../library/typing.rst:3979
 msgid ":func:`@typing.no_type_check_decorator <no_type_check_decorator>`"
 msgstr ""
 
-#: ../../library/typing.rst:3972 ../../library/typing.rst:3976
+#: ../../library/typing.rst:3980 ../../library/typing.rst:3984
 msgid "3.13"
 msgstr ""
 
-#: ../../library/typing.rst:3973
+#: ../../library/typing.rst:3981
 msgid "3.15"
 msgstr ""
 
-#: ../../library/typing.rst:3974
+#: ../../library/typing.rst:3982
 msgid ":gh:`106309`"
 msgstr ""
 
-#: ../../library/typing.rst:3975
+#: ../../library/typing.rst:3983
 msgid ":data:`typing.AnyStr`"
 msgstr ""
 
-#: ../../library/typing.rst:3977
+#: ../../library/typing.rst:3985
 msgid "3.18"
 msgstr ""
 
-#: ../../library/typing.rst:3978
+#: ../../library/typing.rst:3986
 msgid ":gh:`105578`"
 msgstr ""
 

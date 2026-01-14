@@ -2533,67 +2533,89 @@ msgid ""
 "``0123`` is not a valid literal. This is for disambiguation with C-style "
 "octal literals, which Python used before version 3.0."
 msgstr ""
+"Ведущие нули в десятичном числе, отличном от нуля, не допускаются. Например,"
+" ``0123`` — недопустимый литерал. Это сделано для различия с восьмеричными "
+"литералами в стиле C, которые Python использовал до версии 3.0."
 
 #: ../../reference/lexical_analysis.rst:1380
 msgid ""
 "Formally, integer literals are described by the following lexical "
 "definitions:"
 msgstr ""
+"Формально целочисленные литералы описываются следующими лексическими "
+"определениями:"
 
 #: ../../reference/lexical_analysis.rst:1397
 #: ../../reference/lexical_analysis.rst:1461
 msgid "Underscores are now allowed for grouping purposes in literals."
 msgstr ""
+"Подчёркивания теперь разрешены для визуального группирования цифр в "
+"литералах."
 
 #: ../../reference/lexical_analysis.rst:1408
 msgid "Floating-point literals"
-msgstr ""
+msgstr "Литералы с плавающей точкой"
 
 #: ../../reference/lexical_analysis.rst:1410
 msgid ""
 "Floating-point (float) literals, such as ``3.14`` or ``1.5``, denote "
 ":ref:`approximations of real numbers <datamodel-float>`."
 msgstr ""
+"Литералы с плавающей точкой (float), такие как ``3.14`` или ``1.5``, "
+"обозначают :ref:`приближения действительных чисел <datamodel-float>`."
 
 #: ../../reference/lexical_analysis.rst:1413
 msgid ""
 "They consist of *integer* and *fraction* parts, each composed of decimal "
 "digits. The parts are separated by a decimal point, ``.``::"
 msgstr ""
+"Они состоят из *целой* и *дробной* частей, каждая из которых состоит из "
+"десятичных цифр. Части разделяются десятичной точкой ``.``::"
 
 #: ../../reference/lexical_analysis.rst:1416
 msgid ""
 "2.71828\n"
 "4.0"
 msgstr ""
+"2.71828\n"
+"4.0"
 
 #: ../../reference/lexical_analysis.rst:1419
 msgid ""
 "Unlike in integer literals, leading zeros are allowed. For example, "
 "``077.010`` is legal, and denotes the same number as ``77.01``."
 msgstr ""
+"В отличие от целочисленных литералов, ведущие нули здесь разрешены. "
+"Например, ``077.010`` — допустимый литерал, обозначающий то же число, что и "
+"``77.01``."
 
 #: ../../reference/lexical_analysis.rst:1422
 msgid ""
 "As in integer literals, single underscores may occur between digits to help "
 "readability::"
 msgstr ""
+"Как и в целочисленных литералах, для удобства чтения между цифрами можно "
+"использовать одиночные подчёркивания::"
 
 #: ../../reference/lexical_analysis.rst:1425
 msgid ""
 "96_485.332_123\n"
 "3.14_15_93"
 msgstr ""
+"96_485.332_123\n"
+"3.14_15_93"
 
 #: ../../reference/lexical_analysis.rst:1428
 msgid "Either of these parts, but not both, can be empty. For example::"
-msgstr ""
+msgstr "Любая из частей числа, но не обе сразу, может быть пустой. Например::"
 
 #: ../../reference/lexical_analysis.rst:1430
 msgid ""
 "10.  # (equivalent to 10.0)\n"
 ".001  # (equivalent to 0.001)"
 msgstr ""
+"10.  # (эквивалентно 10.0)\n"
+".001  # (эквивалентно 0.001)"
 
 #: ../../reference/lexical_analysis.rst:1433
 msgid ""
@@ -2602,6 +2624,10 @@ msgid ""
 "number in the same format as the integer and fraction parts. The ``e`` or "
 "``E`` represents \"times ten raised to the power of\"::"
 msgstr ""
+"При желании целая и дробная части могут сопровождаться *экспонентой*: буквой"
+" ``e`` или ``E``, за которой следует необязательный знак ``+`` или ``-`` и "
+"число в том же формате, что и целая и дробная части. Символы ``e`` или ``E``"
+" означают «умножить на десять в степени»::"
 
 #: ../../reference/lexical_analysis.rst:1438
 msgid ""
@@ -2609,28 +2635,37 @@ msgid ""
 "1.166e-5  # (represents 1.166×10⁻⁵, or 0.00001166)\n"
 "6.02214076e+23  # (represents 6.02214076×10²³, or 602214076000000000000000.)"
 msgstr ""
+"1,0e3 # (представляет 1,0×10³ или 1000,0)\n"
+"1.166e-5 # (представляет 1.166×10-⁵ или 0.00001166)\n"
+"6,02214076e+23 # (представляет 6,02214076×10²³ или 602214076000000000000000.)"
 
 #: ../../reference/lexical_analysis.rst:1442
 msgid ""
 "In floats with only integer and exponent parts, the decimal point may be "
 "omitted::"
 msgstr ""
+"В литералах с плавающей точкой, содержащих только целую часть и экспоненту, "
+"десятичную точку можно опустить:"
 
 #: ../../reference/lexical_analysis.rst:1445
 msgid ""
 "1e3  # (equivalent to 1.e3 and 1.0e3)\n"
 "0e0  # (equivalent to 0.)"
 msgstr ""
+"1e3 # (эквивалентно 1.e3 и 1.0e3)\n"
+"0e0 # (эквивалентно 0.)"
 
 #: ../../reference/lexical_analysis.rst:1448
 msgid ""
 "Formally, floating-point literals are described by the following lexical "
 "definitions:"
 msgstr ""
+"Формально литералы с плавающей точкой описываются следующими лексическими "
+"определениями:"
 
 #: ../../reference/lexical_analysis.rst:1470
 msgid "Imaginary literals"
-msgstr ""
+msgstr "Мнимые литералы"
 
 #: ../../reference/lexical_analysis.rst:1472
 msgid ""
@@ -2638,6 +2673,9 @@ msgid ""
 "literals. Instead, *imaginary literals* denote complex numbers with a zero "
 "real part."
 msgstr ""
+"В Python есть объекты :ref:`комплексных чисел <typesnumeric>`, но нет "
+"комплексных литералов. Вместо этого *мнимые литералы* обозначают комплексные"
+" числа с нулевой действительной частью."
 
 #: ../../reference/lexical_analysis.rst:1477
 msgid ""
@@ -2645,10 +2683,13 @@ msgid ""
 "number 3 added to the imaginary number 4.2\\ *i*. Python uses a similar "
 "syntax, except the imaginary unit is written as ``j`` rather than *i*::"
 msgstr ""
+"Например, в математике комплексное число 3+4.2\\ *i* записывается как сумма "
+"действительного числа 3 и мнимого числа 4.2\\ *i*. Python использует "
+"аналогичный синтаксис, но мнимая единица обозначается как ``j``, а не *i*::"
 
 #: ../../reference/lexical_analysis.rst:1482
 msgid "3+4.2j"
-msgstr ""
+msgstr "3+4.2j"
 
 #: ../../reference/lexical_analysis.rst:1484
 msgid ""
@@ -2657,22 +2698,30 @@ msgid ""
 "literal <imaginary>` ``4.2j``. Since these are three separate tokens, "
 "whitespace is allowed between them::"
 msgstr ""
+"Это выражение состоит из :ref:`целого литерала <integers>` ``3``, "
+":ref:`оператора <operators>` '``+``' и :ref:`мнимого литерала <imaginary>` "
+"``4.2j``. Поскольку это три отдельных токена, между ними допускаются "
+"пробельные символы::"
 
 #: ../../reference/lexical_analysis.rst:1490
 msgid "3 + 4.2j"
-msgstr ""
+msgstr "3 + 4.2j"
 
 #: ../../reference/lexical_analysis.rst:1492
 msgid ""
 "No whitespace is allowed *within* each token. In particular, the ``j`` "
 "suffix, may not be separated from the number before it."
 msgstr ""
+"Пробельные символы *внутри* одного токена недопустимы. В частности, суффикс "
+"``j`` не может быть отделён от числа перед ним."
 
 #: ../../reference/lexical_analysis.rst:1496
 msgid ""
 "The number before the ``j`` has the same syntax as a floating-point literal."
 " Thus, the following are valid imaginary literals::"
 msgstr ""
+"Число перед ``j`` имеет тот же синтаксис, что и литерал с плавающей точкой. "
+"Следовательно, допустимы такие мнимые литералы::"
 
 #: ../../reference/lexical_analysis.rst:1499
 msgid ""
@@ -2684,6 +2733,13 @@ msgid ""
 "3.14e-10j\n"
 "3.14_15_93j"
 msgstr ""
+"4.2j\n"
+"3.14j\n"
+"10.j\n"
+".001j\n"
+"1e100j\n"
+"3.14e-10j\n"
+"3.14_15_93j"
 
 #: ../../reference/lexical_analysis.rst:1507
 msgid ""
@@ -2691,6 +2747,9 @@ msgid ""
 "imaginary number only has an integer part. The number is still evaluated as "
 "a floating-point number, not an integer::"
 msgstr ""
+"В отличие от литерала с плавающей точкой, если мнимое число содержит только "
+"целую часть, то десятичную точку можно опустить. Число всё равно "
+"интерпретируется как число с плавающей точкой, а не целое::"
 
 #: ../../reference/lexical_analysis.rst:1511
 msgid ""
@@ -2698,25 +2757,30 @@ msgid ""
 "0j\n"
 "1000000000000000000000000j   # equivalent to 1e+24j"
 msgstr ""
+"10j\n"
+"0j\n"
+"10000000000000000000000000000j # эквивалентно 1e+24j"
 
 #: ../../reference/lexical_analysis.rst:1515
 msgid ""
 "The ``j`` suffix is case-insensitive. That means you can use ``J`` instead::"
 msgstr ""
+"Суффикс ``j`` не зависит от регистра. Можно использовать ``J`` вместо него::"
 
 #: ../../reference/lexical_analysis.rst:1518
 msgid "3.14J   # equivalent to 3.14j"
-msgstr ""
+msgstr "3.14J # эквивалентно 3.14j"
 
 #: ../../reference/lexical_analysis.rst:1520
 msgid ""
 "Formally, imaginary literals are described by the following lexical "
 "definition:"
 msgstr ""
+"Формально мнимые литералы описываются следующим лексическим определением:"
 
 #: ../../reference/lexical_analysis.rst:1533
 msgid "Operators and delimiters"
-msgstr ""
+msgstr "Операторы и разделители"
 
 #: ../../reference/lexical_analysis.rst:1539
 msgid ""
@@ -2725,6 +2789,10 @@ msgid ""
 "tokens and their names <token_operators_delimiters>` is also available in "
 "the :mod:`!token` module documentation."
 msgstr ""
+"Следующая грамматика определяет токены :dfn:`оператор` и :dfn:`разделитель`,"
+" то есть общий тип токена :data:`~token.OP`. :ref:`Список этих токенов и их "
+"имён <token_operators_delimiters>` также доступен в документации модуля "
+":mod:`!token`."
 
 #: ../../reference/lexical_analysis.rst:1568
 msgid ""

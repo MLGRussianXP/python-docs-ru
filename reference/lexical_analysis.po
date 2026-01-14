@@ -862,7 +862,7 @@ msgstr "``type`` теперь является мягким ключевым с�
 
 #: ../../reference/lexical_analysis.rst:477
 msgid "Reserved classes of identifiers"
-msgstr ""
+msgstr "Зарезервированные классы идентификаторов"
 
 #: ../../reference/lexical_analysis.rst:479
 msgid ""
@@ -2811,6 +2811,11 @@ msgid ""
 " for sequence unpacking, and ``@`` is both the matrix multiplication and a "
 "delimiter that introduces decorators."
 msgstr ""
+"Некоторые токены могут выступать в роли операторов и разделителей в "
+"зависимости от контекста. Например, ``*`` одновременно является оператором "
+"умножения и разделителем для распаковки последовательностей, а ``@`` — "
+"оператором матричного умножения и разделителем, используемым для применения "
+"декораторов."
 
 #: ../../reference/lexical_analysis.rst:1577
 msgid ""
@@ -2818,419 +2823,427 @@ msgid ""
 "consider ``.``, ``(``, and ``)`` to be delimiters, while others see the "
 ":py:func:`getattr` operator and the function call operator(s)."
 msgstr ""
+"Для некоторых токенов различие неочевидно. Например, некоторые считают "
+"``.``, ``(`` и ``)`` разделителями, в то время как другие рассматривают их "
+"как оператор :py:func:`getattr` и оператор вызова функций."
 
 #: ../../reference/lexical_analysis.rst:1581
 msgid ""
 "Some of Python's operators, like ``and``, ``or``, and ``not in``, use "
 ":ref:`keyword <keywords>` tokens rather than \"symbols\" (operator tokens)."
 msgstr ""
+"Некоторые операторы Python, такие как ``and``, ``or`` и ``not in``, "
+"используют токены :ref:`ключевых слов <keywords>`, а не «символы» (токены-"
+"операторы)."
 
 #: ../../reference/lexical_analysis.rst:1584
 msgid ""
 "A sequence of three consecutive periods (``...``) has a special meaning as "
 "an :py:data:`Ellipsis` literal."
 msgstr ""
+"Последовательность из трёх точек подряд (``...``) имеет специальное значение"
+" как литерал :py:data:`Ellipsis`."
 
 #: ../../reference/lexical_analysis.rst:8
 msgid "lexical analysis"
-msgstr ""
+msgstr "лексический анализ"
 
 #: ../../reference/lexical_analysis.rst:8
 msgid "parser"
-msgstr ""
+msgstr "парсер"
 
 #: ../../reference/lexical_analysis.rst:8
 msgid "token"
-msgstr ""
+msgstr "токен"
 
 #: ../../reference/lexical_analysis.rst:90
 msgid "line structure"
-msgstr ""
+msgstr "структура строки"
 
 #: ../../reference/lexical_analysis.rst:100
 msgid "logical line"
-msgstr ""
+msgstr "логическая строка"
 
 #: ../../reference/lexical_analysis.rst:100
 #: ../../reference/lexical_analysis.rst:205
 #: ../../reference/lexical_analysis.rst:763
 msgid "physical line"
-msgstr ""
+msgstr "физическая строка"
 
 #: ../../reference/lexical_analysis.rst:100
 #: ../../reference/lexical_analysis.rst:205
 msgid "line joining"
-msgstr ""
+msgstr "объединение строк"
 
 #: ../../reference/lexical_analysis.rst:100
 msgid "NEWLINE token"
-msgstr ""
+msgstr "токен NEWLINE"
 
 #: ../../reference/lexical_analysis.rst:146
 msgid "comment"
-msgstr ""
+msgstr "комментарий"
 
 #: ../../reference/lexical_analysis.rst:146
 msgid "hash character"
-msgstr ""
+msgstr "символ решётки"
 
 #: ../../reference/lexical_analysis.rst:146
 #: ../../reference/lexical_analysis.rst:160
 msgid "# (hash)"
-msgstr ""
+msgstr "# (решётка)"
 
 #: ../../reference/lexical_analysis.rst:160
 msgid "source character set"
-msgstr ""
+msgstr "набор символов исходного кода"
 
 #: ../../reference/lexical_analysis.rst:160
 msgid "encoding declarations (source file)"
-msgstr ""
+msgstr "объявления кодирования (в исходном файле)"
 
 #: ../../reference/lexical_analysis.rst:160
 msgid "source encoding declaration"
-msgstr ""
+msgstr "объявление кодировки исходного файла"
 
 #: ../../reference/lexical_analysis.rst:205
 msgid "line continuation"
-msgstr ""
+msgstr "продолжение строки"
 
 #: ../../reference/lexical_analysis.rst:205
 msgid "backslash character"
-msgstr ""
+msgstr "символ обратного слэша"
 
 #: ../../reference/lexical_analysis.rst:250
 msgid "blank line"
-msgstr ""
+msgstr "пустая строка"
 
 #: ../../reference/lexical_analysis.rst:266
 msgid "indentation"
-msgstr ""
+msgstr "отступ"
 
 #: ../../reference/lexical_analysis.rst:266
 msgid "leading whitespace"
-msgstr ""
+msgstr "ведущие пробельные символы"
 
 #: ../../reference/lexical_analysis.rst:266
 msgid "grouping"
-msgstr ""
+msgstr "группировка"
 
 #: ../../reference/lexical_analysis.rst:266
 msgid "statement grouping"
-msgstr ""
+msgstr "группировка инструкций"
 
 #: ../../reference/lexical_analysis.rst:294
 msgid "INDENT token"
-msgstr ""
+msgstr "токен INDENT"
 
 #: ../../reference/lexical_analysis.rst:294
 msgid "DEDENT token"
-msgstr ""
+msgstr "токен DEDENT"
 
 #: ../../reference/lexical_analysis.rst:392
 msgid "identifier"
-msgstr ""
+msgstr "идентификатор"
 
 #: ../../reference/lexical_analysis.rst:392
 msgid "name"
-msgstr ""
+msgstr "имя"
 
 #: ../../reference/lexical_analysis.rst:427
 #: ../../reference/lexical_analysis.rst:451
 msgid "keyword"
-msgstr ""
+msgstr "ключевое слово"
 
 #: ../../reference/lexical_analysis.rst:427
 msgid "reserved word"
-msgstr ""
+msgstr "зарезервированное слово"
 
 #: ../../reference/lexical_analysis.rst:451
 msgid "soft keyword"
-msgstr ""
+msgstr "мягкое ключевое слово"
 
 #: ../../reference/lexical_analysis.rst:471
 msgid "_, identifiers"
-msgstr ""
+msgstr "_, идентификаторы"
 
 #: ../../reference/lexical_analysis.rst:471
 msgid "__, identifiers"
-msgstr ""
+msgstr "__, идентификаторы"
 
 #: ../../reference/lexical_analysis.rst:616
 msgid "literal"
-msgstr ""
+msgstr "литерал"
 
 #: ../../reference/lexical_analysis.rst:616
 msgid "constant"
-msgstr ""
+msgstr "постоянная"
 
 #: ../../reference/lexical_analysis.rst:628
 #: ../../reference/lexical_analysis.rst:671
 #: ../../reference/lexical_analysis.rst:696
 msgid "string literal"
-msgstr ""
+msgstr "строковый литерал"
 
 #: ../../reference/lexical_analysis.rst:628
 #: ../../reference/lexical_analysis.rst:964
 msgid "bytes literal"
-msgstr ""
+msgstr "байтовый литерал"
 
 #: ../../reference/lexical_analysis.rst:628
 msgid "ASCII"
-msgstr ""
+msgstr "ASCII"
 
 #: ../../reference/lexical_analysis.rst:628
 msgid "' (single quote)"
-msgstr ""
+msgstr "' (одинарная кавычка)"
 
 #: ../../reference/lexical_analysis.rst:628
 msgid "\" (double quote)"
-msgstr ""
+msgstr "\" (двойная кавычка)"
 
 #: ../../reference/lexical_analysis.rst:671
 msgid "triple-quoted string"
-msgstr ""
+msgstr "строка в тройных кавычках"
 
 #: ../../reference/lexical_analysis.rst:671
 msgid "\"\"\""
-msgstr ""
+msgstr "\"\"\""
 
 #: ../../reference/lexical_analysis.rst:671
 msgid "'''"
-msgstr ""
+msgstr "'''"
 
 #: ../../reference/lexical_analysis.rst:696
 msgid "u'"
-msgstr ""
+msgstr "u'"
 
 #: ../../reference/lexical_analysis.rst:696
 msgid "u\""
-msgstr ""
+msgstr "u\""
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "escape sequence"
-msgstr ""
+msgstr "экранированная последовательность"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "Standard C"
-msgstr ""
+msgstr "Стандарт языка C"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\ (backslash)"
-msgstr ""
+msgstr "\\ (обратный слэш)"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\\\"
-msgstr ""
+msgstr "\\\\"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\a"
-msgstr ""
+msgstr "\\a"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\b"
-msgstr ""
+msgstr "\\b"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\f"
-msgstr ""
+msgstr "\\f"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\n"
-msgstr ""
+msgstr "\\n"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\r"
-msgstr ""
+msgstr "\\r"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\t"
-msgstr ""
+msgstr "\\t"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\v"
-msgstr ""
+msgstr "\\v"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\x"
-msgstr ""
+msgstr "\\x"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\u"
-msgstr ""
+msgstr "\\u"
 
 #: ../../reference/lexical_analysis.rst:763
 msgid "\\U"
-msgstr ""
+msgstr "\\U"
 
 #: ../../reference/lexical_analysis.rst:939
 msgid "unrecognized escape sequence"
-msgstr ""
+msgstr "нераспознанная экранированная последовательность"
 
 #: ../../reference/lexical_analysis.rst:964
 msgid "b'"
-msgstr ""
+msgstr "b'"
 
 #: ../../reference/lexical_analysis.rst:964
 msgid "b\""
-msgstr ""
+msgstr "b\""
 
 #: ../../reference/lexical_analysis.rst:991
 msgid "r'"
-msgstr ""
+msgstr "r'"
 
 #: ../../reference/lexical_analysis.rst:991
 msgid "raw string literal"
-msgstr ""
+msgstr "сырой строковый литерал"
 
 #: ../../reference/lexical_analysis.rst:991
 msgid "r\""
-msgstr ""
+msgstr "r\""
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "formatted string literal"
-msgstr ""
+msgstr "форматированный строковый литерал"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "interpolated string literal"
-msgstr ""
+msgstr "строковый литерал с подстановкой"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "string"
-msgstr ""
+msgstr "строка"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "formatted literal"
-msgstr ""
+msgstr "форматированный литерал"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "interpolated literal"
-msgstr ""
+msgstr "литерал с подстановкой"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "f-string"
-msgstr ""
+msgstr "f-строка"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "fstring"
-msgstr ""
+msgstr "fstring"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "f'"
-msgstr ""
+msgstr "f'"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "f\""
-msgstr ""
+msgstr "f\""
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "{} (curly brackets)"
-msgstr ""
+msgstr "{} (фигурные скобки)"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "in formatted string literal"
-msgstr ""
+msgstr "в форматированном строковом литерале"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "! (exclamation)"
-msgstr ""
+msgstr "! (восклицание)"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid ": (colon)"
-msgstr ""
+msgstr ": (двоеточие)"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "= (equals)"
-msgstr ""
+msgstr "= (равно)"
 
 #: ../../reference/lexical_analysis.rst:1022
 msgid "for help in debugging using string literals"
-msgstr ""
+msgstr "для облегчения отладки с помощью строковых литералов"
 
 #: ../../reference/lexical_analysis.rst:1304
 msgid "number"
-msgstr ""
+msgstr "число"
 
 #: ../../reference/lexical_analysis.rst:1304
 msgid "numeric literal"
-msgstr ""
+msgstr "числовой литерал"
 
 #: ../../reference/lexical_analysis.rst:1304
 #: ../../reference/lexical_analysis.rst:1326
 msgid "integer literal"
-msgstr ""
+msgstr "целочисленный литерал"
 
 #: ../../reference/lexical_analysis.rst:1304
 msgid "floating-point literal"
-msgstr ""
+msgstr "литерал с плавающей точкой"
 
 #: ../../reference/lexical_analysis.rst:1304
 msgid "hexadecimal literal"
-msgstr ""
+msgstr "шестнадцатеричный литерал"
 
 #: ../../reference/lexical_analysis.rst:1304
 msgid "octal literal"
-msgstr ""
+msgstr "восьмеричный литерал"
 
 #: ../../reference/lexical_analysis.rst:1304
 msgid "binary literal"
-msgstr ""
+msgstr "двоичный литерал"
 
 #: ../../reference/lexical_analysis.rst:1304
 msgid "decimal literal"
-msgstr ""
+msgstr "десятичный литерал"
 
 #: ../../reference/lexical_analysis.rst:1304
 msgid "imaginary literal"
-msgstr ""
+msgstr "мнимый литерал"
 
 #: ../../reference/lexical_analysis.rst:1304
 msgid "complex literal"
-msgstr ""
+msgstr "комплексный литерал"
 
 #: ../../reference/lexical_analysis.rst:1326
 msgid "0b"
-msgstr ""
+msgstr "0b"
 
 #: ../../reference/lexical_analysis.rst:1326
 msgid "0o"
-msgstr ""
+msgstr "0o"
 
 #: ../../reference/lexical_analysis.rst:1326
 msgid "0x"
-msgstr ""
+msgstr "0x"
 
 #: ../../reference/lexical_analysis.rst:1326
 #: ../../reference/lexical_analysis.rst:1401
 msgid "_ (underscore)"
-msgstr ""
+msgstr "_ (подчёркивание)"
 
 #: ../../reference/lexical_analysis.rst:1326
 #: ../../reference/lexical_analysis.rst:1401
 #: ../../reference/lexical_analysis.rst:1465
 msgid "in numeric literal"
-msgstr ""
+msgstr "в числовом литерале"
 
 #: ../../reference/lexical_analysis.rst:1401
 msgid ". (dot)"
-msgstr ""
+msgstr ". (точка)"
 
 #: ../../reference/lexical_analysis.rst:1401
 msgid "e"
-msgstr ""
+msgstr "e"
 
 #: ../../reference/lexical_analysis.rst:1465
 msgid "j"
-msgstr ""
+msgstr "j"
 
 #: ../../reference/lexical_analysis.rst:1535
 msgid "operators"
-msgstr ""
+msgstr "операторы"
 
 #: ../../reference/lexical_analysis.rst:1535
 msgid "delimiters"
-msgstr ""
+msgstr "разделители"

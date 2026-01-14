@@ -2433,11 +2433,11 @@ msgstr ""
 
 #: ../../reference/lexical_analysis.rst:1335
 msgid "Integer literals"
-msgstr ""
+msgstr "Целочисленные литералы"
 
 #: ../../reference/lexical_analysis.rst:1337
 msgid "Integer literals denote whole numbers. For example::"
-msgstr ""
+msgstr "Целочисленные литералы обозначают целые числа. Например::"
 
 #: ../../reference/lexical_analysis.rst:1339
 msgid ""
@@ -2445,16 +2445,21 @@ msgid ""
 "3\n"
 "2147483647"
 msgstr ""
+"7\n"
+"3\n"
+"2147483647"
 
 #: ../../reference/lexical_analysis.rst:1343
 msgid ""
 "There is no limit for the length of integer literals apart from what can be "
 "stored in available memory::"
 msgstr ""
+"Длина целочисленного литерала не ограничена, кроме как объёмом доступной "
+"памяти::"
 
 #: ../../reference/lexical_analysis.rst:1346
 msgid "7922816251426433759354395033679228162514264337593543950336"
-msgstr ""
+msgstr "7922816251426433759354395033679228162514264337593543950336"
 
 #: ../../reference/lexical_analysis.rst:1348
 msgid ""
@@ -2462,6 +2467,9 @@ msgid ""
 "ignored for determining the numeric value of the literal. For example, the "
 "following literals are equivalent::"
 msgstr ""
+"Для улучшения читаемости цифры в литерале можно разделять на группы "
+"подчёркиваниями. При определении числового значения они игнорируются. "
+"Например, следующие литералы эквивалентны::"
 
 #: ../../reference/lexical_analysis.rst:1352
 msgid ""
@@ -2469,12 +2477,17 @@ msgid ""
 "100000000000\n"
 "1_00_00_00_00_000"
 msgstr ""
+"100_000_000_000\n"
+"100000000000\n"
+"1_00_00_00_00_000"
 
 #: ../../reference/lexical_analysis.rst:1356
 msgid ""
 "Underscores can only occur between digits. For example, ``_123``, ``321_``, "
 "and ``123__321`` are *not* valid literals."
 msgstr ""
+"Знаки подчёркивания могут появляться только между цифрами. Например, "
+"``_123``, ``321_`` и ``123__321`` *не* являются допустимыми литералами."
 
 #: ../../reference/lexical_analysis.rst:1359
 msgid ""
@@ -2483,6 +2496,11 @@ msgid ""
 "Hexadecimal digits 10 through 15 are represented by letters ``A``-``F``, "
 "case-insensitive.  For example::"
 msgstr ""
+"Целые числа могут быть записаны в двоичной (с основанием 2), восьмеричной (с"
+" основанием 8) или шестнадцатеричной (с основанием 16) системе счисления с "
+"использованием префиксов ``0b``, ``0o`` и ``0x`` соответственно. "
+"Шестнадцатеричные цифры от 10 до 15 обозначаются буквами ``A``–``F`` без "
+"учёта регистра. Например::"
 
 #: ../../reference/lexical_analysis.rst:1364
 msgid ""
@@ -2493,12 +2511,21 @@ msgid ""
 "0xdeadbeef\n"
 "0xDead_Beef"
 msgstr ""
+"0b100110111\n"
+"0b_1110_0101\n"
+"0o177\n"
+"0o377\n"
+"0xdeadbeef\n"
+"0xDead_Beef"
 
 #: ../../reference/lexical_analysis.rst:1371
 msgid ""
 "An underscore can follow the base specifier. For example, ``0x_1f`` is a "
 "valid literal, but ``0_x1f`` and ``0x__1f`` are not."
 msgstr ""
+"Символ подчёркивания может следовать сразу за спецификатором системы "
+"счисления. Например, ``0x_1f`` — допустимый литерал, а ``0_x1f`` и "
+"``0x__1f`` — нет."
 
 #: ../../reference/lexical_analysis.rst:1375
 msgid ""

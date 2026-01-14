@@ -2800,6 +2800,9 @@ msgid ""
 " while *delimiters* serve other purposes. However, there is no clear, formal"
 " distinction between the two categories."
 msgstr ""
+"Как правило, *операторы* используются для объединения :ref:`выражений "
+"<expressions>`, в то время как *разделители* служат другим целям. Однако "
+"чёткого формального различия между этими двумя категориями нет."
 
 #: ../../reference/lexical_analysis.rst:1572
 msgid ""

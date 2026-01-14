@@ -2407,6 +2407,8 @@ msgid ""
 ":data:`~token.NUMBER` tokens represent numeric literals, of which there are "
 "three types: integers, floating-point numbers, and imaginary numbers."
 msgstr ""
+"Токены :data:`~token.NUMBER` представляют числовые литералы, которые делятся"
+" на три типа: целые числа, числа с плавающей точкой и мнимые числа."
 
 #: ../../reference/lexical_analysis.rst:1316
 msgid ""
@@ -2415,12 +2417,19 @@ msgid ""
 "constructor, respectively. Note that not all valid inputs for those "
 "constructors are also valid literals."
 msgstr ""
+"Числовое значение числового литерала соответствует значению, которое "
+"получилось бы, если бы оно было передано в виде строки в конструктор класса "
+":class:`int`, :class:`float` или :class:`complex` соответственно. Обратите "
+"внимание, что не все допустимые входные значения для этих конструкторов "
+"также являются допустимыми литералами."
 
 #: ../../reference/lexical_analysis.rst:1321
 msgid ""
 "Numeric literals do not include a sign; a phrase like ``-1`` is actually an "
 "expression composed of the unary operator '``-``' and the literal ``1``."
 msgstr ""
+"Числовые литералы не включают знак. Запись вроде ``-1`` на самом деле "
+"является выражением, состоящим из унарного оператора ``-`` и литерала ``1``."
 
 #: ../../reference/lexical_analysis.rst:1335
 msgid "Integer literals"

@@ -5,7 +5,7 @@
 # 
 # Translators:
 # python-doc bot, 2025
-# Dmitry Luschan, 2025
+# Dmitry Luschan, 2026
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-15 14:20+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Dmitry Luschan, 2025\n"
+"Last-Translator: Dmitry Luschan, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -96,6 +96,17 @@ msgid ""
 " available; you'll only be able to use backspace to remove characters from "
 "the current line."
 msgstr ""
+"Возможности построчного редактирования интерпретатора включают интерактивное"
+" редактирование, подстановку из истории команд и автодополнение кода на "
+"большинстве систем. Возможно, самый быстрый способ проверить, поддерживается"
+" ли редактирование командной строки, — ввести слово в приглашении Python и "
+"нажать стрелку влево (или :kbd:`Control-b`). Если курсор перемещается, "
+"значит редактирование командной строки доступно; см. Приложение :ref:`tut-"
+"interacting`, где приводится введение в используемые сочетания клавиш. Если "
+"же ничего не происходит или отображается последовательность вроде ``^[[D`` "
+"или ``^B``, значит редактирование командной строки недоступно; в этом случае"
+" вы сможете использовать только клавишу backspace для удаления символов в "
+"текущей строке."
 
 #: ../../tutorial/interpreter.rst:46
 msgid ""

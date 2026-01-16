@@ -48,10 +48,14 @@ msgid ""
 "objects; the :func:`id` function returns an integer representing its "
 "identity."
 msgstr ""
+"Каждый объект имеет идентификатор, тип и значение. *Идентификатор* объекта "
+"никогда не меняется после его создания; его можно рассматривать как адрес "
+"объекта в памяти. Оператор :keyword:`is` сравнивает идентификаторы двух "
+"объектов, а функция :func:`id` возвращает его в виде целого числа."
 
 #: ../../reference/datamodel.rst:38
 msgid "For CPython, ``id(x)`` is the memory address where ``x`` is stored."
-msgstr ""
+msgstr "Для CPython, ``id(x)`` — это адрес памяти, где хранится ``x``."
 
 #: ../../reference/datamodel.rst:40
 msgid ""

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 14:14+0000\n"
+"POT-Creation-Date: 2026-01-21 14:24+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Dmitry Luschan, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -214,7 +214,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:120
 msgid "The standard type hierarchy"
-msgstr ""
+msgstr "Иерархия стандартных типов"
 
 #: ../../reference/datamodel.rst:129
 msgid ""
@@ -225,6 +225,12 @@ msgid ""
 "integers, etc.), although such additions will often be provided via the "
 "standard library instead."
 msgstr ""
+"Ниже приведён список типов, встроенных в Python. Модули расширений "
+"(написанные на C, Java или других языках, в зависимости от реализации) могут"
+" определять дополнительные типы. В будущих версиях Python в иерархию типов "
+"могут быть добавлены новые типы (например, рациональные числа, эффективно "
+"хранимые массивы целых чисел и т. п.), хотя такие дополнения чаще будут "
+"предоставляться через стандартную библиотеку."
 
 #: ../../reference/datamodel.rst:140
 msgid ""
@@ -233,10 +239,14 @@ msgid ""
 " and are not intended for general use.  Their definition may change in the "
 "future."
 msgstr ""
+"В описании некоторых типов ниже приведён абзац со списком «специальных "
+"атрибутов». Это атрибуты, которые предоставляют доступ к деталям реализации "
+"и не предназначены для общего использования. Их определение может измениться"
+" в будущем."
 
 #: ../../reference/datamodel.rst:146 ../../reference/datamodel.rst:148
 msgid "None"
-msgstr ""
+msgstr "None"
 
 #: ../../reference/datamodel.rst:150
 msgid ""
@@ -245,10 +255,15 @@ msgid ""
 "signify the absence of a value in many situations, e.g., it is returned from"
 " functions that don't explicitly return anything. Its truth value is false."
 msgstr ""
+"У этого типа есть только одно значение. Существует единственный объект с "
+"этим значением. Этот объект доступен через встроенное имя ``None``. Он "
+"используется для обозначения отсутствия значения во многих случаях, "
+"например, возвращается функциями, которые явно ничего не возвращают. Его "
+"логическое значение — ложь."
 
 #: ../../reference/datamodel.rst:157 ../../reference/datamodel.rst:159
 msgid "NotImplemented"
-msgstr ""
+msgstr "NotImplemented"
 
 #: ../../reference/datamodel.rst:161
 msgid ""
@@ -259,14 +274,25 @@ msgid ""
 " will then try the reflected operation, or some other fallback, depending on"
 " the operator.)  It should not be evaluated in a boolean context."
 msgstr ""
+"У этого типа есть только одно значение. Существует единственный объект с "
+"этим значением. Этот объект доступен через встроенное имя "
+":data:`NotImplemented`. Числовые методы и методы расширенного сравнения "
+"должны возвращать это значение, если они не реализуют операцию для данных "
+"операндов. (Интерпретатор затем попробует отражённую операцию или другой "
+"вариант обработки, в зависимости от оператора.) Его не следует использовать "
+"в логическом контексте."
 
 #: ../../reference/datamodel.rst:168
 msgid "See :ref:`implementing-the-arithmetic-operations` for more details."
 msgstr ""
+"См. :ref:`implementing-the-arithmetic-operations` для получения "
+"подробностей."
 
 #: ../../reference/datamodel.rst:172
 msgid "Evaluating :data:`NotImplemented` in a boolean context was deprecated."
 msgstr ""
+"Использование :data:`NotImplemented` в логическом контексте было объявлено "
+"устаревшим."
 
 #: ../../reference/datamodel.rst:175
 msgid ""
@@ -274,10 +300,13 @@ msgid ""
 ":exc:`TypeError`. It previously evaluated to :const:`True` and emitted a "
 ":exc:`DeprecationWarning` since Python 3.9."
 msgstr ""
+"Использование :data:`NotImplemented` в логическом контексте теперь "
+"возбуждает :exc:`TypeError`. Ранее оно оценивалось как :const:`True` и "
+"генерировало :exc:`DeprecationWarning` начиная с Python 3.9."
 
 #: ../../reference/datamodel.rst:182 ../../reference/datamodel.rst:183
 msgid "Ellipsis"
-msgstr ""
+msgstr "Многоточие"
 
 #: ../../reference/datamodel.rst:187
 msgid ""

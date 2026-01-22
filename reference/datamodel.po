@@ -306,7 +306,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:182 ../../reference/datamodel.rst:183
 msgid "Ellipsis"
-msgstr "Многоточие"
+msgstr "Ellipsis"
 
 #: ../../reference/datamodel.rst:187
 msgid ""
@@ -314,10 +314,13 @@ msgid ""
 "This object is accessed through the literal ``...`` or the built-in name "
 "``Ellipsis``.  Its truth value is true."
 msgstr ""
+"У этого типа есть только одно значение. Существует единственный объект с "
+"этим значением. Этот объект доступен через литерал ``...`` или через "
+"встроенное имя ``Ellipsis``. Его логическое значение — истина."
 
 #: ../../reference/datamodel.rst:193
 msgid ":class:`numbers.Number`"
-msgstr ""
+msgstr ":class:`numbers.Number`"
 
 #: ../../reference/datamodel.rst:197
 msgid ""
@@ -327,6 +330,11 @@ msgid ""
 "strongly related to mathematical numbers, but subject to the limitations of "
 "numerical representation in computers."
 msgstr ""
+"Они создаются числовыми литералами и возвращаются как результаты "
+"арифметических операторов и встроенных арифметических функций. Числовые "
+"объекты неизменяемы: после создания их значение никогда не меняется. Числа в"
+" Python, разумеется, тесно связаны с математическими числами, но подчиняются"
+" ограничениям численного представления в компьютерах."
 
 #: ../../reference/datamodel.rst:203
 msgid ""
@@ -334,42 +342,54 @@ msgid ""
 ":meth:`~object.__repr__` and :meth:`~object.__str__`, have the following "
 "properties:"
 msgstr ""
+"Строковые представления числовых классов, вычисляемые методами "
+":meth:`~object.__repr__` и :meth:`~object.__str__`, обладают следующими "
+"свойствами:"
 
 #: ../../reference/datamodel.rst:207
 msgid ""
 "They are valid numeric literals which, when passed to their class "
 "constructor, produce an object having the value of the original numeric."
 msgstr ""
+"Они являются корректными числовыми литералами, которые при передаче в "
+"конструктор своего класса создают объект со значением исходного числа."
 
 #: ../../reference/datamodel.rst:211
 msgid "The representation is in base 10, when possible."
 msgstr ""
+"Представление, когда это возможно, осуществляется в десятичной системе "
+"счисления."
 
 #: ../../reference/datamodel.rst:213
 msgid ""
 "Leading zeros, possibly excepting a single zero before a decimal point, are "
 "not shown."
 msgstr ""
+"Ведущие нули, за исключением, возможно, одного нуля перед десятичной точкой,"
+" не отображаются."
 
 #: ../../reference/datamodel.rst:216
 msgid ""
 "Trailing zeros, possibly excepting a single zero after a decimal point, are "
 "not shown."
 msgstr ""
+"Конечные нули, за исключением, возможно, одного нуля после десятичной точки,"
+" не отображаются."
 
 #: ../../reference/datamodel.rst:219
 msgid "A sign is shown only when the number is negative."
-msgstr ""
+msgstr "Знак отображается только в том случае, если число отрицательное."
 
 #: ../../reference/datamodel.rst:221
 msgid ""
 "Python distinguishes between integers, floating-point numbers, and complex "
 "numbers:"
 msgstr ""
+"Python различает целые числа, числа с плавающей точкой и комплексные числа:"
 
 #: ../../reference/datamodel.rst:226
 msgid ":class:`numbers.Integral`"
-msgstr ""
+msgstr ":class:`numbers.Integral`"
 
 #: ../../reference/datamodel.rst:230
 msgid ""

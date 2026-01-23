@@ -396,6 +396,8 @@ msgid ""
 "These represent elements from the mathematical set of integers (positive and"
 " negative)."
 msgstr ""
+"Эти объекты представляют элементы математического множества целых чисел "
+"(положительных и отрицательных)."
 
 #: ../../reference/datamodel.rst:236
 msgid ""
@@ -403,14 +405,17 @@ msgid ""
 "meaningful interpretation of shift and mask operations involving negative "
 "integers."
 msgstr ""
+"Правила представления целых чисел выбраны так, чтобы операции сдвига и "
+"наложения маски имели наиболее осмысленную интерпретацию, в том числе для "
+"отрицательных чисел."
 
 #: ../../reference/datamodel.rst:239
 msgid "There are two types of integers:"
-msgstr ""
+msgstr "Существует два типа целых чисел:"
 
 #: ../../reference/datamodel.rst:241
 msgid "Integers (:class:`int`)"
-msgstr ""
+msgstr "Целые числа (:class:`int`)"
 
 #: ../../reference/datamodel.rst:242
 msgid ""

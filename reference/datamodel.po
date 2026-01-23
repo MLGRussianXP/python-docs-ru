@@ -465,10 +465,17 @@ msgid ""
 "dwarfed by the overhead of using objects in Python, so there is no reason to"
 " complicate the language with two kinds of floating-point numbers."
 msgstr ""
+"Они представляют числа с плавающей точкой двойной точности на машинном "
+"уровне. Диапазон допустимых значений и обработка переполнения зависят от "
+"архитектуры машины (и реализации на C или Java). Python не поддерживает "
+"числа с плавающей точкой одинарной точности — экономия процессорного времени"
+" и памяти, ради которой их обычно используют, ничтожна по сравнению с "
+"накладными расходами на использование объектов в Python. Поэтому нет смысла "
+"усложнять язык двумя видами чисел с плавающей точкой."
 
 #: ../../reference/datamodel.rst:282
 msgid ":class:`numbers.Complex` (:class:`complex`)"
-msgstr ""
+msgstr ":class:`numbers.Complex` (:class:`complex`)"
 
 #: ../../reference/datamodel.rst:288
 msgid ""
@@ -477,6 +484,11 @@ msgid ""
 "numbers. The real and imaginary parts of a complex number ``z`` can be "
 "retrieved through the read-only attributes ``z.real`` and ``z.imag``."
 msgstr ""
+"Они представляют комплексные числа как пару чисел с плавающей точкой двойной"
+" точности на машинном уровне. Здесь действуют те же оговорки, что и для "
+"чисел с плавающей точкой. Вещественную и мнимую части комплексного числа "
+"``z`` можно получить через атрибуты только для чтения ``z.real`` и "
+"``z.imag``."
 
 #: ../../reference/datamodel.rst:295
 msgid "Sequences"

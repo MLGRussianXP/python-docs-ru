@@ -543,7 +543,7 @@ msgstr "Последовательности различаются по изм�
 
 #: ../../reference/datamodel.rst:327
 msgid "Immutable sequences"
-msgstr ""
+msgstr "Неизменяемые последовательности"
 
 #: ../../reference/datamodel.rst:333
 msgid ""

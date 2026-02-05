@@ -93,6 +93,8 @@ msgid ""
 "(See section :ref:`primaries` for the syntax definitions for *attributeref* "
 "and *subscription*.)"
 msgstr ""
+"(См. раздел :ref:`primaries` для описания синтаксиса *обращения к атрибуту* "
+"и *индексирования*)."
 
 #: ../../reference/simple_stmts.rst:99
 msgid ""

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 14:19+0000\n"
+"POT-Creation-Date: 2026-02-07 14:20+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../library/operator.rst:18
 msgid ""
-"The :mod:`operator` module exports a set of efficient functions "
+"The :mod:`!operator` module exports a set of efficient functions "
 "corresponding to the intrinsic operators of Python.  For example, "
 "``operator.add(x, y)`` is equivalent to the expression ``x+y``. Many "
 "function names are those used for special methods, without the double "
@@ -236,8 +236,8 @@ msgstr ""
 
 #: ../../library/operator.rst:278
 msgid ""
-"The :mod:`operator` module also defines tools for generalized attribute and "
-"item lookups.  These are useful for making fast field extractors as "
+"The :mod:`!operator` module also defines tools for generalized attribute and"
+" item lookups.  These are useful for making fast field extractors as "
 "arguments for :func:`map`, :func:`sorted`, :meth:`itertools.groupby`, or "
 "other functions that expect a function argument."
 msgstr ""
@@ -368,7 +368,7 @@ msgstr ""
 #: ../../library/operator.rst:392
 msgid ""
 "This table shows how abstract operations correspond to operator symbols in "
-"the Python syntax and the functions in the :mod:`operator` module."
+"the Python syntax and the functions in the :mod:`!operator` module."
 msgstr ""
 
 #: ../../library/operator.rst:396

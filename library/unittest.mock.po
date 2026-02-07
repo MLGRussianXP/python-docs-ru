@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-23 14:15+0000\n"
+"POT-Creation-Date: 2026-02-07 14:20+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -32,14 +32,14 @@ msgstr ""
 
 #: ../../library/unittest.mock.rst:16
 msgid ""
-":mod:`unittest.mock` is a library for testing in Python. It allows you to "
+":mod:`!unittest.mock` is a library for testing in Python. It allows you to "
 "replace parts of your system under test with mock objects and make "
 "assertions about how they have been used."
 msgstr ""
 
 #: ../../library/unittest.mock.rst:20
 msgid ""
-":mod:`unittest.mock` provides a core :class:`Mock` class removing the need "
+":mod:`!unittest.mock` provides a core :class:`Mock` class removing the need "
 "to create a host of stubs throughout your test suite. After performing an "
 "action, you can make assertions about which methods / attributes were used "
 "and arguments they were called with. You can also specify return values and "
@@ -64,8 +64,8 @@ msgstr ""
 
 #: ../../library/unittest.mock.rst:36
 msgid ""
-"There is a backport of :mod:`unittest.mock` for earlier versions of Python, "
-"available as :pypi:`mock` on PyPI."
+"There is a backport of :mod:`!unittest.mock` for earlier versions of Python,"
+" available as :pypi:`mock` on PyPI."
 msgstr ""
 
 #: ../../library/unittest.mock.rst:41
@@ -2761,7 +2761,7 @@ msgstr ""
 
 #: ../../library/unittest.mock.rst:2641
 msgid ""
-":mod:`unittest.mock` already provides a feature to help with this, called "
+":mod:`!unittest.mock` already provides a feature to help with this, called "
 "speccing. If you use a class or instance as the :attr:`!spec` for a mock "
 "then you can only access attributes on the mock that exist on the real "
 "class:"

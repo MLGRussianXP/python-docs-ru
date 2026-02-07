@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 14:19+0000\n"
+"POT-Creation-Date: 2026-02-07 14:20+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../library/http.rst:15
 msgid ""
-":mod:`http` is a package that collects several modules for working with the "
-"HyperText Transfer Protocol:"
+":mod:`!http` is a package that collects several modules for working with the"
+" HyperText Transfer Protocol:"
 msgstr ""
 
 #: ../../library/http.rst:18
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../library/http.rst:25
 msgid ""
-"The :mod:`http` module also defines the following enums that help you work "
+"The :mod:`!http` module also defines the following enums that help you work "
 "with http related code:"
 msgstr ""
 
@@ -69,8 +69,8 @@ msgid ""
 " reason phrases and long descriptions written in English."
 msgstr ""
 
-#: ../../library/http.rst:34 ../../library/http.rst:161
-#: ../../library/http.rst:175
+#: ../../library/http.rst:34 ../../library/http.rst:162
+#: ../../library/http.rst:176
 msgid "Usage::"
 msgstr ""
 
@@ -106,12 +106,12 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
-#: ../../library/http.rst:60 ../../library/http.rst:208
+#: ../../library/http.rst:60 ../../library/http.rst:209
 msgid "Enum Name"
 msgstr ""
 
-#: ../../library/http.rst:60 ../../library/http.rst:152
-#: ../../library/http.rst:208
+#: ../../library/http.rst:60 ../../library/http.rst:153
+#: ../../library/http.rst:209
 msgid "Details"
 msgstr ""
 
@@ -879,74 +879,76 @@ msgstr ""
 #: ../../library/http.rst:140
 msgid ""
 "Implemented RFC9110 naming for status constants. Old constant names are "
-"preserved for backwards compatibility."
+"preserved for backwards compatibility: ``413 REQUEST_ENTITY_TOO_LARGE``, "
+"``414 REQUEST_URI_TOO_LONG``, ``416 REQUESTED_RANGE_NOT_SATISFIABLE`` and "
+"``422 UNPROCESSABLE_ENTITY``."
 msgstr ""
 
-#: ../../library/http.rst:145
+#: ../../library/http.rst:146
 msgid "HTTP status category"
 msgstr ""
 
-#: ../../library/http.rst:149
+#: ../../library/http.rst:150
 msgid ""
 "The enum values have several properties to indicate the HTTP status "
 "category:"
 msgstr ""
 
-#: ../../library/http.rst:152
+#: ../../library/http.rst:153
 msgid "Property"
 msgstr ""
 
-#: ../../library/http.rst:152
+#: ../../library/http.rst:153
 msgid "Indicates that"
 msgstr ""
 
-#: ../../library/http.rst:154
+#: ../../library/http.rst:155
 msgid "``is_informational``"
 msgstr ""
 
-#: ../../library/http.rst:154
+#: ../../library/http.rst:155
 msgid "``100 <= status <= 199``"
 msgstr ""
 
-#: ../../library/http.rst:154 ../../library/http.rst:155
-#: ../../library/http.rst:156 ../../library/http.rst:157
-#: ../../library/http.rst:158
+#: ../../library/http.rst:155 ../../library/http.rst:156
+#: ../../library/http.rst:157 ../../library/http.rst:158
+#: ../../library/http.rst:159
 msgid "HTTP Semantics :rfc:`9110`, Section 15"
 msgstr ""
 
-#: ../../library/http.rst:155
+#: ../../library/http.rst:156
 msgid "``is_success``"
 msgstr ""
 
-#: ../../library/http.rst:155
+#: ../../library/http.rst:156
 msgid "``200 <= status <= 299``"
 msgstr ""
 
-#: ../../library/http.rst:156
+#: ../../library/http.rst:157
 msgid "``is_redirection``"
 msgstr ""
 
-#: ../../library/http.rst:156
+#: ../../library/http.rst:157
 msgid "``300 <= status <= 399``"
 msgstr ""
 
-#: ../../library/http.rst:157
+#: ../../library/http.rst:158
 msgid "``is_client_error``"
 msgstr ""
 
-#: ../../library/http.rst:157
+#: ../../library/http.rst:158
 msgid "``400 <= status <= 499``"
 msgstr ""
 
-#: ../../library/http.rst:158
+#: ../../library/http.rst:159
 msgid "``is_server_error``"
 msgstr ""
 
-#: ../../library/http.rst:158
+#: ../../library/http.rst:159
 msgid "``500 <= status <= 599``"
 msgstr ""
 
-#: ../../library/http.rst:163
+#: ../../library/http.rst:164
 msgid ""
 ">>> from http import HTTPStatus\n"
 ">>> HTTPStatus.OK.is_success\n"
@@ -955,13 +957,13 @@ msgid ""
 "False"
 msgstr ""
 
-#: ../../library/http.rst:173
+#: ../../library/http.rst:174
 msgid ""
 "A subclass of :class:`enum.StrEnum` that defines a set of HTTP methods and "
 "descriptions written in English."
 msgstr ""
 
-#: ../../library/http.rst:177
+#: ../../library/http.rst:178
 msgid ""
 ">>> from http import HTTPMethod\n"
 ">>>\n"
@@ -985,89 +987,89 @@ msgid ""
 " <HTTPMethod.TRACE>]"
 msgstr ""
 
-#: ../../library/http.rst:201
+#: ../../library/http.rst:202
 msgid "HTTP methods"
 msgstr ""
 
-#: ../../library/http.rst:203
+#: ../../library/http.rst:204
 msgid ""
 "Supported, `IANA-registered methods <https://www.iana.org/assignments/http-"
 "methods/http-methods.xhtml>`_ available in :class:`http.HTTPMethod` are:"
 msgstr ""
 
-#: ../../library/http.rst:208
+#: ../../library/http.rst:209
 msgid "Method"
 msgstr ""
 
-#: ../../library/http.rst:210
+#: ../../library/http.rst:211
 msgid "``GET``"
 msgstr ""
 
-#: ../../library/http.rst:210
+#: ../../library/http.rst:211
 msgid "HTTP Semantics :rfc:`9110`, Section 9.3.1"
 msgstr ""
 
-#: ../../library/http.rst:211
+#: ../../library/http.rst:212
 msgid "``HEAD``"
 msgstr ""
 
-#: ../../library/http.rst:211
+#: ../../library/http.rst:212
 msgid "HTTP Semantics :rfc:`9110`, Section 9.3.2"
 msgstr ""
 
-#: ../../library/http.rst:212
+#: ../../library/http.rst:213
 msgid "``POST``"
 msgstr ""
 
-#: ../../library/http.rst:212
+#: ../../library/http.rst:213
 msgid "HTTP Semantics :rfc:`9110`, Section 9.3.3"
 msgstr ""
 
-#: ../../library/http.rst:213
+#: ../../library/http.rst:214
 msgid "``PUT``"
 msgstr ""
 
-#: ../../library/http.rst:213
+#: ../../library/http.rst:214
 msgid "HTTP Semantics :rfc:`9110`, Section 9.3.4"
 msgstr ""
 
-#: ../../library/http.rst:214
+#: ../../library/http.rst:215
 msgid "``DELETE``"
 msgstr ""
 
-#: ../../library/http.rst:214
+#: ../../library/http.rst:215
 msgid "HTTP Semantics :rfc:`9110`, Section 9.3.5"
 msgstr ""
 
-#: ../../library/http.rst:215
+#: ../../library/http.rst:216
 msgid "``CONNECT``"
 msgstr ""
 
-#: ../../library/http.rst:215
+#: ../../library/http.rst:216
 msgid "HTTP Semantics :rfc:`9110`, Section 9.3.6"
 msgstr ""
 
-#: ../../library/http.rst:216
+#: ../../library/http.rst:217
 msgid "``OPTIONS``"
 msgstr ""
 
-#: ../../library/http.rst:216
+#: ../../library/http.rst:217
 msgid "HTTP Semantics :rfc:`9110`, Section 9.3.7"
 msgstr ""
 
-#: ../../library/http.rst:217
+#: ../../library/http.rst:218
 msgid "``TRACE``"
 msgstr ""
 
-#: ../../library/http.rst:217
+#: ../../library/http.rst:218
 msgid "HTTP Semantics :rfc:`9110`, Section 9.3.8"
 msgstr ""
 
-#: ../../library/http.rst:218
+#: ../../library/http.rst:219
 msgid "``PATCH``"
 msgstr ""
 
-#: ../../library/http.rst:218
+#: ../../library/http.rst:219
 msgid "HTTP/1.1 :rfc:`5789`"
 msgstr ""
 

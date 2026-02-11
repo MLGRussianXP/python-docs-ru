@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 14:19+0000\n"
+"POT-Creation-Date: 2026-02-11 14:49+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/weakref.rst:4
-msgid ":mod:`weakref` --- Weak references"
+msgid ":mod:`!weakref` --- Weak references"
 msgstr ""
 
 #: ../../library/weakref.rst:14
@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../library/weakref.rst:18
 msgid ""
-"The :mod:`weakref` module allows the Python programmer to create :dfn:`weak "
-"references` to objects."
+"The :mod:`!weakref` module allows the Python programmer to create :dfn:`weak"
+" references` to objects."
 msgstr ""
 
 #: ../../library/weakref.rst:24
@@ -65,7 +65,7 @@ msgid ""
 "names to images, or images to names, the image objects would remain alive "
 "just because they appeared as values or keys in the dictionaries.  The "
 ":class:`WeakKeyDictionary` and :class:`WeakValueDictionary` classes supplied"
-" by the :mod:`weakref` module are an alternative, using weak references to "
+" by the :mod:`!weakref` module are an alternative, using weak references to "
 "construct mappings that don't keep objects alive solely because they appear "
 "in the mapping objects.  If, for example, an image object is a value in a "
 ":class:`WeakValueDictionary`, then when the last remaining references to "
@@ -98,7 +98,7 @@ msgid ""
 "Most programs should find that using one of these weak container types or "
 ":class:`finalize` is all they need -- it's not usually necessary to create "
 "your own weak references directly.  The low-level machinery is exposed by "
-"the :mod:`weakref` module for the benefit of advanced uses."
+"the :mod:`!weakref` module for the benefit of advanced uses."
 msgstr ""
 
 #: ../../library/weakref.rst:68

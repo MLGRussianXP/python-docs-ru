@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-08 02:53-0300\n"
+"POT-Creation-Date: 2026-02-11 14:49+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -26,7 +26,7 @@ msgid "Tkinter Dialogs"
 msgstr ""
 
 #: ../../library/dialog.rst:5
-msgid ":mod:`tkinter.simpledialog` --- Standard Tkinter input dialogs"
+msgid ":mod:`!tkinter.simpledialog` --- Standard Tkinter input dialogs"
 msgstr ""
 
 #: ../../library/dialog.rst:11
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../library/dialog.rst:15
 msgid ""
-"The :mod:`tkinter.simpledialog` module contains convenience classes and "
+"The :mod:`!tkinter.simpledialog` module contains convenience classes and "
 "functions for creating simple modal dialogs to get a value from the user."
 msgstr ""
 
@@ -62,7 +62,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/dialog.rst:43
-msgid ":mod:`tkinter.filedialog` --- File selection dialogs"
+msgid ":mod:`!tkinter.filedialog` --- File selection dialogs"
 msgstr ""
 
 #: ../../library/dialog.rst:49
@@ -71,8 +71,8 @@ msgstr ""
 
 #: ../../library/dialog.rst:53
 msgid ""
-"The :mod:`tkinter.filedialog` module provides classes and factory functions "
-"for creating file/directory selection windows."
+"The :mod:`!tkinter.filedialog` module provides classes and factory functions"
+" for creating file/directory selection windows."
 msgstr ""
 
 #: ../../library/dialog.rst:57
@@ -269,7 +269,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/dialog.rst:208
-msgid ":mod:`tkinter.commondialog` --- Dialog window templates"
+msgid ":mod:`!tkinter.commondialog` --- Dialog window templates"
 msgstr ""
 
 #: ../../library/dialog.rst:214
@@ -278,7 +278,7 @@ msgstr ""
 
 #: ../../library/dialog.rst:218
 msgid ""
-"The :mod:`tkinter.commondialog` module provides the :class:`Dialog` class "
+"The :mod:`!tkinter.commondialog` module provides the :class:`Dialog` class "
 "that is the base class for dialogs defined in other supporting modules."
 msgstr ""
 

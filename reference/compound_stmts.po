@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 15:07+0000\n"
+"POT-Creation-Date: 2026-02-15 15:14+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -1213,8 +1213,8 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:1015
 msgid ""
 "The length of the subject sequence is obtained via :func:`len` (i.e. via the"
-" :meth:`__len__` protocol).  This length may be cached by the interpreter in"
-" a similar manner as :ref:`value patterns <value-patterns>`."
+" :meth:`~object.__len__` protocol). This length may be cached by the "
+"interpreter in a similar manner as :ref:`value patterns <value-patterns>`."
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1021

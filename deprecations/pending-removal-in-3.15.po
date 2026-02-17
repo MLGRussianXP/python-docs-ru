@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-23 14:56+0000\n"
+"POT-Creation-Date: 2026-02-17 15:27+0000\n"
 "PO-Revision-Date: 2025-09-15 01:03+0000\n"
 "Last-Translator: Vladimir, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -134,9 +134,9 @@ msgstr ""
 #: ../../deprecations/pending-removal-in-3.15.rst:65
 msgid ""
 ":func:`~threading.RLock` will take no arguments in Python 3.15. Passing any "
-"arguments has been deprecated since Python 3.14, as the  Python version does"
-" not permit any arguments, but the C version allows any number of positional"
-" or keyword arguments, ignoring every argument."
+"arguments has been deprecated since Python 3.14, as the Python version does "
+"not permit any arguments, but the C version allows any number of positional "
+"or keyword arguments, ignoring every argument."
 msgstr ""
 
 #: ../../deprecations/pending-removal-in-3.15.rst:71

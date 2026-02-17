@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-07 14:58+0000\n"
+"POT-Creation-Date: 2026-02-17 15:27+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -618,10 +618,10 @@ msgstr ""
 #: ../../tutorial/classes.rst:422
 msgid ""
 "As discussed in :ref:`tut-object`, shared data can have possibly surprising "
-"effects with involving :term:`mutable` objects such as lists and "
-"dictionaries. For example, the *tricks* list in the following code should "
-"not be used as a class variable because just a single list would be shared "
-"by all *Dog* instances::"
+"effects involving :term:`mutable` objects such as lists and dictionaries. "
+"For example, the *tricks* list in the following code should not be used as a"
+" class variable because just a single list would be shared by all *Dog* "
+"instances::"
 msgstr ""
 
 #: ../../tutorial/classes.rst:428

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-03 14:16+0000\n"
+"POT-Creation-Date: 2026-02-17 15:27+0000\n"
 "PO-Revision-Date: 2025-09-15 01:04+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -380,8 +380,8 @@ msgstr ""
 
 #: ../../library/shlex.rst:346
 msgid ""
-"When operating in non-POSIX mode, :class:`~shlex.shlex` will try to obey to "
-"the following rules."
+"When operating in non-POSIX mode, :class:`~shlex.shlex` will try to obey the"
+" following rules."
 msgstr ""
 
 #: ../../library/shlex.rst:349
@@ -424,7 +424,7 @@ msgstr ""
 
 #: ../../library/shlex.rst:369
 msgid ""
-"When operating in POSIX mode, :class:`~shlex.shlex` will try to obey to the "
+"When operating in POSIX mode, :class:`~shlex.shlex` will try to obey the "
 "following parsing rules."
 msgstr ""
 
@@ -452,7 +452,7 @@ msgid ""
 "Enclosing characters in quotes which are part of "
 ":attr:`~shlex.escapedquotes` (e.g. ``'\"'``) preserves the literal value of "
 "all characters within the quotes, with the exception of the characters "
-"mentioned in :attr:`~shlex.escape`.  The escape characters retain its "
+"mentioned in :attr:`~shlex.escape`.  The escape characters retain their "
 "special meaning only when followed by the quote in use, or the escape "
 "character itself. Otherwise the escape character will be considered a normal"
 " character."

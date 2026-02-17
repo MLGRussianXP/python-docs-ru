@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 14:19+0000\n"
+"POT-Creation-Date: 2026-02-17 14:41+0000\n"
 "PO-Revision-Date: 2025-09-16 00:00+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -142,7 +142,7 @@ msgid "Set *\\*err_msg* to ``NULL`` and return ``0`` otherwise."
 msgstr ""
 
 #: ../../c-api/init_config.rst:105
-msgid "An error message is an UTF-8 encoded string."
+msgid "An error message is a UTF-8 encoded string."
 msgstr ""
 
 #: ../../c-api/init_config.rst:107
@@ -1002,13 +1002,13 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:547
 msgid ""
-"Public: Can by get by :c:func:`PyConfig_Get` and set by "
+"Public: Can be retrieved by :c:func:`PyConfig_Get` and set by "
 ":c:func:`PyConfig_Set`."
 msgstr ""
 
 #: ../../c-api/init_config.rst:549
 msgid ""
-"Read-only: Can by get by :c:func:`PyConfig_Get`, but cannot be set by "
+"Read-only: Can be retrieved by :c:func:`PyConfig_Get`, but cannot be set by "
 ":c:func:`PyConfig_Set`."
 msgstr ""
 
@@ -1780,7 +1780,7 @@ msgstr ""
 msgid ""
 "Most ``PyConfig`` methods :ref:`preinitialize Python <c-preinit>` if needed."
 " In that case, the Python preinitialization configuration "
-"(:c:type:`PyPreConfig`) in based on the :c:type:`PyConfig`. If configuration"
+"(:c:type:`PyPreConfig`) is based on the :c:type:`PyConfig`. If configuration"
 " fields which are in common with :c:type:`PyPreConfig` are tuned, they must "
 "be set before calling a :c:type:`PyConfig` method:"
 msgstr ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-01 15:07+0000\n"
+"POT-Creation-Date: 2026-03-09 15:33+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -286,11 +286,11 @@ msgstr ""
 
 #: ../../tutorial/introduction.rst:187
 msgid ""
-">>> print('C:\\some\\name')  # here \\n means newline!\n"
-"C:\\some\n"
+">>> print('C:\\this\\name')  # here \\t means tab, \\n means newline\n"
+"C:      his\n"
 "ame\n"
-">>> print(r'C:\\some\\name')  # note the r before the quote\n"
-"C:\\some\\name"
+">>> print(r'C:\\this\\name')  # note the r before the quote\n"
+"C:\\this\\name"
 msgstr ""
 
 #: ../../tutorial/introduction.rst:193

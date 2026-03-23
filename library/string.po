@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-07 14:20+0000\n"
+"POT-Creation-Date: 2026-03-23 14:50+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -104,7 +104,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/string.rst:86
-msgid "Custom String Formatting"
+msgid "Custom string formatting"
 msgstr ""
 
 #: ../../library/string.rst:88
@@ -242,7 +242,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/string.rst:196
-msgid "Format String Syntax"
+msgid "Format string syntax"
 msgstr ""
 
 #: ../../library/string.rst:198
@@ -382,7 +382,7 @@ msgid "See the :ref:`formatexamples` section for some examples."
 msgstr ""
 
 #: ../../library/string.rst:308
-msgid "Format Specification Mini-Language"
+msgid "Format specification mini-language"
 msgstr ""
 
 #: ../../library/string.rst:310
@@ -1093,8 +1093,8 @@ msgstr ""
 
 #: ../../library/string.rst:762
 msgid ""
-">>> import datetime\n"
-">>> d = datetime.datetime(2010, 7, 4, 12, 15, 58)\n"
+">>> import datetime as dt\n"
+">>> d = dt.datetime(2010, 7, 4, 12, 15, 58)\n"
 ">>> '{:%Y-%m-%d %H:%M:%S}'.format(d)\n"
 "'2010-07-04 12:15:58'"
 msgstr ""

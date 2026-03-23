@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 15:27+0000\n"
+"POT-Creation-Date: 2026-03-23 15:38+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -97,7 +97,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/xmlrpc.server.rst:76
-msgid "SimpleXMLRPCServer Objects"
+msgid "SimpleXMLRPCServer objects"
 msgstr ""
 
 #: ../../library/xmlrpc.server.rst:78
@@ -177,7 +177,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/xmlrpc.server.rst:147
-msgid "SimpleXMLRPCServer Example"
+msgid "SimpleXMLRPCServer example"
 msgstr ""
 
 #: ../../library/xmlrpc.server.rst:148
@@ -290,7 +290,7 @@ msgstr ""
 
 #: ../../library/xmlrpc.server.rst:237
 msgid ""
-"import datetime\n"
+"import datetime as dt\n"
 "\n"
 "class ExampleService:\n"
 "    def getData(self):\n"
@@ -299,7 +299,7 @@ msgid ""
 "    class currentTime:\n"
 "        @staticmethod\n"
 "        def getCurrentTime():\n"
-"            return datetime.datetime.now()\n"
+"            return dt.datetime.now()\n"
 "\n"
 "with SimpleXMLRPCServer((\"localhost\", 8000)) as server:\n"
 "    server.register_function(pow)\n"
@@ -450,7 +450,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/xmlrpc.server.rst:394
-msgid "DocXMLRPCServer Objects"
+msgid "DocXMLRPCServer objects"
 msgstr ""
 
 #: ../../library/xmlrpc.server.rst:396

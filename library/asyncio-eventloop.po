@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 15:36+0000\n"
+"POT-Creation-Date: 2026-03-23 15:38+0000\n"
 "PO-Revision-Date: 2025-09-15 01:03+0000\n"
 "Last-Translator: Vladimir, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../library/asyncio-eventloop.rst:8
-msgid "Event Loop"
+msgid "Event loop"
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:10
@@ -164,7 +164,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:103
-msgid "Event Loop Methods"
+msgid "Event loop methods"
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:105
@@ -489,7 +489,7 @@ msgid "The :func:`asyncio.sleep` function."
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:359
-msgid "Creating Futures and Tasks"
+msgid "Creating futures and tasks"
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:363
@@ -1237,7 +1237,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:950
-msgid "TLS Upgrade"
+msgid "TLS upgrade"
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:958
@@ -1744,7 +1744,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1412
-msgid "Error Handling API"
+msgid "Error handling API"
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1414
@@ -1906,7 +1906,7 @@ msgid "The :ref:`debug mode of asyncio <asyncio-debug-mode>`."
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1515
-msgid "Running Subprocesses"
+msgid "Running subprocesses"
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1517
@@ -2107,7 +2107,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1653
-msgid "Callback Handles"
+msgid "Callback handles"
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1657
@@ -2152,7 +2152,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1696
-msgid "Server Objects"
+msgid "Server objects"
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1698
@@ -2316,7 +2316,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1839
-msgid "Event Loop Implementations"
+msgid "Event loop implementations"
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1841
@@ -2453,10 +2453,10 @@ msgstr ""
 #: ../../library/asyncio-eventloop.rst:1951
 msgid ""
 "import asyncio\n"
-"import datetime\n"
+"import datetime as dt\n"
 "\n"
 "def display_date(end_time, loop):\n"
-"    print(datetime.datetime.now())\n"
+"    print(dt.datetime.now())\n"
 "    if (loop.time() + 1.0) < end_time:\n"
 "        loop.call_later(1, display_date, end_time, loop)\n"
 "    else:\n"

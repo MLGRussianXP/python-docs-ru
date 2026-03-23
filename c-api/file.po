@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-03 14:16+0000\n"
+"POT-Creation-Date: 2026-03-23 15:38+0000\n"
 "PO-Revision-Date: 2025-09-15 01:03+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -127,15 +127,49 @@ msgid ""
 "arguments."
 msgstr ""
 
-#: ../../c-api/file.rst:101
+#: ../../c-api/file.rst:98
+msgid ""
+"Open *path* with the mode ``'rb'``. *path* must be a Python :class:`str` "
+"object. The behavior of this function may be overridden by "
+":c:func:`PyFile_SetOpenCodeHook` to allow for some preprocessing of the "
+"text."
+msgstr ""
+
+#: ../../c-api/file.rst:103
+msgid "This is analogous to :func:`io.open_code` in Python."
+msgstr ""
+
+#: ../../c-api/file.rst:105
+msgid ""
+"On success, this function returns a :term:`strong reference` to a Python "
+"file object. On failure, this function returns ``NULL`` with an exception "
+"set."
+msgstr ""
+
+#: ../../c-api/file.rst:114
+msgid ""
+"Similar to :c:func:`PyFile_OpenCodeObject`, but *path* is a UTF-8 encoded "
+":c:expr:`const char*`."
+msgstr ""
+
+#: ../../c-api/file.rst:124
 msgid ""
 "Write object *obj* to file object *p*.  The only supported flag for *flags* "
 "is :c:macro:`Py_PRINT_RAW`; if given, the :func:`str` of the object is "
-"written instead of the :func:`repr`.  Return ``0`` on success or ``-1`` on "
-"failure; the appropriate exception will be set."
+"written instead of the :func:`repr`."
 msgstr ""
 
-#: ../../c-api/file.rst:109
+#: ../../c-api/file.rst:128
+msgid "If *obj* is ``NULL``, write the string ``\"<NULL>\"``."
+msgstr ""
+
+#: ../../c-api/file.rst:130
+msgid ""
+"Return ``0`` on success or ``-1`` on failure; the appropriate exception will"
+" be set."
+msgstr ""
+
+#: ../../c-api/file.rst:135
 msgid ""
 "Write string *s* to file object *p*.  Return ``0`` on success or ``-1`` on "
 "failure; the appropriate exception will be set."
@@ -153,6 +187,6 @@ msgstr ""
 msgid "EOFError (built-in exception)"
 msgstr ""
 
-#: ../../c-api/file.rst:99
+#: ../../c-api/file.rst:122
 msgid "Py_PRINT_RAW (C macro)"
 msgstr ""

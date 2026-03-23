@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-07 14:58+0000\n"
+"POT-Creation-Date: 2026-03-23 15:38+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -23,11 +23,11 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../tutorial/stdlib.rst:5
-msgid "Brief Tour of the Standard Library"
+msgid "Brief tour of the standard library"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:11
-msgid "Operating System Interface"
+msgid "Operating system interface"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:13
@@ -84,7 +84,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:51
-msgid "File Wildcards"
+msgid "File wildcards"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:53
@@ -101,7 +101,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:64
-msgid "Command Line Arguments"
+msgid "Command-line arguments"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:66
@@ -156,7 +156,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:101
-msgid "Error Output Redirection and Program Termination"
+msgid "Error output redirection and program termination"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:103
@@ -177,7 +177,7 @@ msgid "The most direct way to terminate a script is to use ``sys.exit()``."
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:116
-msgid "String Pattern Matching"
+msgid "String pattern matching"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:118
@@ -269,7 +269,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:179
-msgid "Internet Access"
+msgid "Internet access"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:181
@@ -307,7 +307,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:210
-msgid "Dates and Times"
+msgid "Dates and times"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:212
@@ -322,22 +322,22 @@ msgstr ""
 #: ../../tutorial/stdlib.rst:218
 msgid ""
 ">>> # dates are easily constructed and formatted\n"
-">>> from datetime import date\n"
-">>> now = date.today()\n"
+">>> import datetime as dt\n"
+">>> now = dt.date.today()\n"
 ">>> now\n"
 "datetime.date(2003, 12, 2)\n"
 ">>> now.strftime(\"%m-%d-%y. %d %b %Y is a %A on the %d day of %B.\")\n"
 "'12-02-03. 02 Dec 2003 is a Tuesday on the 02 day of December.'\n"
 "\n"
 ">>> # dates support calendar arithmetic\n"
-">>> birthday = date(1964, 7, 31)\n"
+">>> birthday = dt.date(1964, 7, 31)\n"
 ">>> age = now - birthday\n"
 ">>> age.days\n"
 "14368"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:236
-msgid "Data Compression"
+msgid "Data compression"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:238
@@ -363,7 +363,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:258
-msgid "Performance Measurement"
+msgid "Performance measurement"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:260
@@ -397,7 +397,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:282
-msgid "Quality Control"
+msgid "Quality control"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:284
@@ -456,7 +456,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:328
-msgid "Batteries Included"
+msgid "Batteries included"
 msgstr ""
 
 #: ../../tutorial/stdlib.rst:330

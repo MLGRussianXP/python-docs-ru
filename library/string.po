@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 14:59+0000\n"
+"POT-Creation-Date: 2026-03-23 15:38+0000\n"
 "PO-Revision-Date: 2025-09-15 01:04+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -104,7 +104,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/string.rst:86
-msgid "Custom String Formatting"
+msgid "Custom string formatting"
 msgstr ""
 
 #: ../../library/string.rst:88
@@ -240,7 +240,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/string.rst:194
-msgid "Format String Syntax"
+msgid "Format string syntax"
 msgstr ""
 
 #: ../../library/string.rst:196
@@ -379,7 +379,7 @@ msgid "See the :ref:`formatexamples` section for some examples."
 msgstr ""
 
 #: ../../library/string.rst:303
-msgid "Format Specification Mini-Language"
+msgid "Format specification mini-language"
 msgstr ""
 
 #: ../../library/string.rst:305
@@ -642,7 +642,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/string.rst:486 ../../library/string.rst:515
-#: ../../library/string.rst:601
+#: ../../library/string.rst:604
 msgid "None"
 msgstr ""
 
@@ -709,7 +709,7 @@ msgid ""
 "upper-cased to ``'0X'`` as well."
 msgstr ""
 
-#: ../../library/string.rst:511 ../../library/string.rst:593
+#: ../../library/string.rst:511 ../../library/string.rst:596
 msgid "``'n'``"
 msgstr ""
 
@@ -754,20 +754,26 @@ msgid ""
 msgstr ""
 
 #: ../../library/string.rst:540
+msgid ""
+"For :class:`float`, the exponent always contains at least two digits, and is"
+" zero if the value is zero."
+msgstr ""
+
+#: ../../library/string.rst:543
 msgid "``'E'``"
 msgstr ""
 
-#: ../../library/string.rst:540
+#: ../../library/string.rst:543
 msgid ""
 "Scientific notation. Same as ``'e'`` except it uses an upper case 'E' as the"
 " separator character."
 msgstr ""
 
-#: ../../library/string.rst:543
+#: ../../library/string.rst:546
 msgid "``'f'``"
 msgstr ""
 
-#: ../../library/string.rst:543
+#: ../../library/string.rst:546
 msgid ""
 "Fixed-point notation. For a given precision ``p``, formats the number as a "
 "decimal number with exactly ``p`` digits following the decimal point. With "
@@ -777,21 +783,21 @@ msgid ""
 "point is omitted unless the ``#`` option is used."
 msgstr ""
 
-#: ../../library/string.rst:552
+#: ../../library/string.rst:555
 msgid "``'F'``"
 msgstr ""
 
-#: ../../library/string.rst:552
+#: ../../library/string.rst:555
 msgid ""
 "Fixed-point notation. Same as ``'f'``, but converts ``nan`` to  ``NAN`` and "
 "``inf`` to ``INF``."
 msgstr ""
 
-#: ../../library/string.rst:555
+#: ../../library/string.rst:558
 msgid "``'g'``"
 msgstr ""
 
-#: ../../library/string.rst:555
+#: ../../library/string.rst:558
 msgid ""
 "General format.  For a given precision ``p >= 1``, this rounds the number to"
 " ``p`` significant digits and then formats the result in either fixed-point "
@@ -799,7 +805,7 @@ msgid ""
 " ``0`` is treated as equivalent to a precision of ``1``."
 msgstr ""
 
-#: ../../library/string.rst:562
+#: ../../library/string.rst:565
 msgid ""
 "The precise rules are as follows: suppose that the result formatted with "
 "presentation type ``'e'`` and precision ``p-1`` would have exponent ``exp``."
@@ -812,7 +818,7 @@ msgid ""
 "it, unless the ``'#'`` option is used."
 msgstr ""
 
-#: ../../library/string.rst:575
+#: ../../library/string.rst:578
 msgid ""
 "With no precision given, uses a precision of ``6`` significant digits for "
 ":class:`float`. For :class:`~decimal.Decimal`, the coefficient of the result"
@@ -822,41 +828,41 @@ msgid ""
 "point notation is used otherwise."
 msgstr ""
 
-#: ../../library/string.rst:584
+#: ../../library/string.rst:587
 msgid ""
 "Positive and negative infinity, positive and negative zero, and nans, are "
 "formatted as ``inf``, ``-inf``, ``0``, ``-0`` and ``nan`` respectively, "
 "regardless of the precision."
 msgstr ""
 
-#: ../../library/string.rst:589
+#: ../../library/string.rst:592
 msgid "``'G'``"
 msgstr ""
 
-#: ../../library/string.rst:589
+#: ../../library/string.rst:592
 msgid ""
 "General format. Same as ``'g'`` except switches to ``'E'`` if the number "
 "gets too large. The representations of infinity and NaN are uppercased, too."
 msgstr ""
 
-#: ../../library/string.rst:593
+#: ../../library/string.rst:596
 msgid ""
 "Number. This is the same as ``'g'``, except that it uses the current locale "
 "setting to insert the appropriate digit group separators for the integral "
 "part of a number."
 msgstr ""
 
-#: ../../library/string.rst:598
+#: ../../library/string.rst:601
 msgid "``'%'``"
 msgstr ""
 
-#: ../../library/string.rst:598
+#: ../../library/string.rst:601
 msgid ""
 "Percentage. Multiplies the number by 100 and displays in fixed (``'f'``) "
 "format, followed by a percent sign."
 msgstr ""
 
-#: ../../library/string.rst:601
+#: ../../library/string.rst:604
 msgid ""
 "For :class:`float` this is like the ``'g'`` type, except that when fixed-"
 "point notation is used to format the result, it always includes at least one"
@@ -865,20 +871,20 @@ msgid ""
 "as large as needed to represent the given value faithfully."
 msgstr ""
 
-#: ../../library/string.rst:609
+#: ../../library/string.rst:612
 msgid ""
 "For :class:`~decimal.Decimal`, this is the same as either ``'g'`` or ``'G'``"
 " depending on the value of ``context.capitals`` for the current decimal "
 "context."
 msgstr ""
 
-#: ../../library/string.rst:613
+#: ../../library/string.rst:616
 msgid ""
 "The overall effect is to match the output of :func:`str` as altered by the "
 "other format modifiers."
 msgstr ""
 
-#: ../../library/string.rst:617
+#: ../../library/string.rst:620
 msgid ""
 "The result should be correctly rounded to a given precision ``p`` of digits "
 "after the decimal point.  The rounding mode for :class:`float` matches that "
@@ -886,7 +892,7 @@ msgid ""
 "mode of the current :ref:`context <decimal-context>` will be used."
 msgstr ""
 
-#: ../../library/string.rst:622
+#: ../../library/string.rst:625
 msgid ""
 "The available presentation types for :class:`complex` are the same as those "
 "for :class:`float` (``'%'`` is not allowed).  Both the real and imaginary "
@@ -898,34 +904,34 @@ msgid ""
 "surrounded by parentheses), possibly altered by other format modifiers."
 msgstr ""
 
-#: ../../library/string.rst:635
+#: ../../library/string.rst:638
 msgid "Format examples"
 msgstr ""
 
-#: ../../library/string.rst:637
+#: ../../library/string.rst:640
 msgid ""
 "This section contains examples of the :meth:`str.format` syntax and "
 "comparison with the old ``%``-formatting."
 msgstr ""
 
-#: ../../library/string.rst:640
+#: ../../library/string.rst:643
 msgid ""
 "In most of the cases the syntax is similar to the old ``%``-formatting, with"
 " the addition of the ``{}`` and with ``:`` used instead of ``%``. For "
 "example, ``'%03.2f'`` can be translated to ``'{:03.2f}'``."
 msgstr ""
 
-#: ../../library/string.rst:644
+#: ../../library/string.rst:647
 msgid ""
 "The new format syntax also supports new and different options, shown in the "
 "following examples."
 msgstr ""
 
-#: ../../library/string.rst:647
+#: ../../library/string.rst:650
 msgid "Accessing arguments by position::"
 msgstr ""
 
-#: ../../library/string.rst:649
+#: ../../library/string.rst:652
 msgid ""
 ">>> '{0}, {1}, {2}'.format('a', 'b', 'c')\n"
 "'a, b, c'\n"
@@ -939,11 +945,11 @@ msgid ""
 "'abracadabra'"
 msgstr ""
 
-#: ../../library/string.rst:660
+#: ../../library/string.rst:663
 msgid "Accessing arguments by name::"
 msgstr ""
 
-#: ../../library/string.rst:662
+#: ../../library/string.rst:665
 msgid ""
 ">>> 'Coordinates: {latitude}, {longitude}'.format(latitude='37.24N', longitude='-115.81W')\n"
 "'Coordinates: 37.24N, -115.81W'\n"
@@ -952,11 +958,11 @@ msgid ""
 "'Coordinates: 37.24N, -115.81W'"
 msgstr ""
 
-#: ../../library/string.rst:668
+#: ../../library/string.rst:671
 msgid "Accessing arguments' attributes::"
 msgstr ""
 
-#: ../../library/string.rst:670
+#: ../../library/string.rst:673
 msgid ""
 ">>> c = 3-5j\n"
 ">>> ('The complex number {0} is formed from the real part {0.real} '\n"
@@ -972,32 +978,32 @@ msgid ""
 "'Point(4, 2)'"
 msgstr ""
 
-#: ../../library/string.rst:683
+#: ../../library/string.rst:686
 msgid "Accessing arguments' items::"
 msgstr ""
 
-#: ../../library/string.rst:685
+#: ../../library/string.rst:688
 msgid ""
 ">>> coord = (3, 5)\n"
 ">>> 'X: {0[0]};  Y: {0[1]}'.format(coord)\n"
 "'X: 3;  Y: 5'"
 msgstr ""
 
-#: ../../library/string.rst:689
+#: ../../library/string.rst:692
 msgid "Replacing ``%s`` and ``%r``::"
 msgstr ""
 
-#: ../../library/string.rst:691
+#: ../../library/string.rst:694
 msgid ""
 ">>> \"repr() shows quotes: {!r}; str() doesn't: {!s}\".format('test1', 'test2')\n"
 "\"repr() shows quotes: 'test1'; str() doesn't: test2\""
 msgstr ""
 
-#: ../../library/string.rst:694
+#: ../../library/string.rst:697
 msgid "Aligning the text and specifying a width::"
 msgstr ""
 
-#: ../../library/string.rst:696
+#: ../../library/string.rst:699
 msgid ""
 ">>> '{:<30}'.format('left aligned')\n"
 "'left aligned                  '\n"
@@ -1009,11 +1015,11 @@ msgid ""
 "'***********centered***********'"
 msgstr ""
 
-#: ../../library/string.rst:705
+#: ../../library/string.rst:708
 msgid "Replacing ``%+f``, ``%-f``, and ``% f`` and specifying a sign::"
 msgstr ""
 
-#: ../../library/string.rst:707
+#: ../../library/string.rst:710
 msgid ""
 ">>> '{:+f}; {:+f}'.format(3.14, -3.14)  # show it always\n"
 "'+3.140000; -3.140000'\n"
@@ -1023,12 +1029,12 @@ msgid ""
 "'3.140000; -3.140000'"
 msgstr ""
 
-#: ../../library/string.rst:714
+#: ../../library/string.rst:717
 msgid ""
 "Replacing ``%x`` and ``%o`` and converting the value to different bases::"
 msgstr ""
 
-#: ../../library/string.rst:716
+#: ../../library/string.rst:719
 msgid ""
 ">>> # format also supports binary numbers\n"
 ">>> \"int: {0:d};  hex: {0:x};  oct: {0:o};  bin: {0:b}\".format(42)\n"
@@ -1038,11 +1044,11 @@ msgid ""
 "'int: 42;  hex: 0x2a;  oct: 0o52;  bin: 0b101010'"
 msgstr ""
 
-#: ../../library/string.rst:723
+#: ../../library/string.rst:726
 msgid "Using the comma or the underscore as a digit group separator::"
 msgstr ""
 
-#: ../../library/string.rst:725
+#: ../../library/string.rst:728
 msgid ""
 ">>> '{:,}'.format(1234567890)\n"
 "'1,234,567,890'\n"
@@ -1054,11 +1060,11 @@ msgid ""
 "'4996_02d2'"
 msgstr ""
 
-#: ../../library/string.rst:734
+#: ../../library/string.rst:737
 msgid "Expressing a percentage::"
 msgstr ""
 
-#: ../../library/string.rst:736
+#: ../../library/string.rst:739
 msgid ""
 ">>> points = 19\n"
 ">>> total = 22\n"
@@ -1066,23 +1072,23 @@ msgid ""
 "'Correct answers: 86.36%'"
 msgstr ""
 
-#: ../../library/string.rst:741
+#: ../../library/string.rst:744
 msgid "Using type-specific formatting::"
 msgstr ""
 
-#: ../../library/string.rst:743
+#: ../../library/string.rst:746
 msgid ""
-">>> import datetime\n"
-">>> d = datetime.datetime(2010, 7, 4, 12, 15, 58)\n"
+">>> import datetime as dt\n"
+">>> d = dt.datetime(2010, 7, 4, 12, 15, 58)\n"
 ">>> '{:%Y-%m-%d %H:%M:%S}'.format(d)\n"
 "'2010-07-04 12:15:58'"
 msgstr ""
 
-#: ../../library/string.rst:748
+#: ../../library/string.rst:751
 msgid "Nesting arguments and more complex examples::"
 msgstr ""
 
-#: ../../library/string.rst:750
+#: ../../library/string.rst:753
 msgid ""
 ">>> for align, text in zip('<^>', ['left', 'center', 'right']):\n"
 "...     '{0:{fill}{align}16}'.format(text, fill=align, align=align)\n"
@@ -1112,11 +1118,11 @@ msgid ""
 "   11     B    13  1011"
 msgstr ""
 
-#: ../../library/string.rst:782
+#: ../../library/string.rst:785
 msgid "Template strings"
 msgstr ""
 
-#: ../../library/string.rst:784
+#: ../../library/string.rst:787
 msgid ""
 "Template strings provide simpler string substitutions as described in "
 ":pep:`292`.  A primary use case for template strings is for "
@@ -1127,17 +1133,17 @@ msgid ""
 "<https://flufli18n.readthedocs.io/en/latest/>`_ package."
 msgstr ""
 
-#: ../../library/string.rst:794
+#: ../../library/string.rst:797
 msgid ""
 "Template strings support ``$``-based substitutions, using the following "
 "rules:"
 msgstr ""
 
-#: ../../library/string.rst:796
+#: ../../library/string.rst:799
 msgid "``$$`` is an escape; it is replaced with a single ``$``."
 msgstr ""
 
-#: ../../library/string.rst:798
+#: ../../library/string.rst:801
 msgid ""
 "``$identifier`` names a substitution placeholder matching a mapping key of "
 "``\"identifier\"``.  By default, ``\"identifier\"`` is restricted to any "
@@ -1147,30 +1153,30 @@ msgid ""
 "specification."
 msgstr ""
 
-#: ../../library/string.rst:805
+#: ../../library/string.rst:808
 msgid ""
 "``${identifier}`` is equivalent to ``$identifier``.  It is required when "
 "valid identifier characters follow the placeholder but are not part of the "
 "placeholder, such as ``\"${noun}ification\"``."
 msgstr ""
 
-#: ../../library/string.rst:809
+#: ../../library/string.rst:812
 msgid ""
 "Any other appearance of ``$`` in the string will result in a "
 ":exc:`ValueError` being raised."
 msgstr ""
 
-#: ../../library/string.rst:812
+#: ../../library/string.rst:815
 msgid ""
 "The :mod:`string` module provides a :class:`Template` class that implements "
 "these rules.  The methods of :class:`Template` are:"
 msgstr ""
 
-#: ../../library/string.rst:818
+#: ../../library/string.rst:821
 msgid "The constructor takes a single argument which is the template string."
 msgstr ""
 
-#: ../../library/string.rst:823
+#: ../../library/string.rst:826
 msgid ""
 "Performs the template substitution, returning a new string.  *mapping* is "
 "any dictionary-like object with keys that match the placeholders in the "
@@ -1179,7 +1185,7 @@ msgid ""
 " there are duplicates, the placeholders from *kwds* take precedence."
 msgstr ""
 
-#: ../../library/string.rst:832
+#: ../../library/string.rst:835
 msgid ""
 "Like :meth:`substitute`, except that if placeholders are missing from "
 "*mapping* and *kwds*, instead of raising a :exc:`KeyError` exception, the "
@@ -1188,7 +1194,7 @@ msgid ""
 "simply return ``$`` instead of raising :exc:`ValueError`."
 msgstr ""
 
-#: ../../library/string.rst:838
+#: ../../library/string.rst:841
 msgid ""
 "While other exceptions may still occur, this method is called \"safe\" "
 "because it always tries to return a usable string instead of raising an "
@@ -1198,33 +1204,33 @@ msgid ""
 "Python identifiers."
 msgstr ""
 
-#: ../../library/string.rst:848
+#: ../../library/string.rst:851
 msgid ""
 "Returns ``False`` if the template has invalid placeholders that will cause "
 ":meth:`substitute` to raise :exc:`ValueError`."
 msgstr ""
 
-#: ../../library/string.rst:856
+#: ../../library/string.rst:859
 msgid ""
 "Returns a list of the valid identifiers in the template, in the order they "
 "first appear, ignoring any invalid identifiers."
 msgstr ""
 
-#: ../../library/string.rst:861
+#: ../../library/string.rst:864
 msgid ":class:`Template` instances also provide one public data attribute:"
 msgstr ""
 
-#: ../../library/string.rst:865
+#: ../../library/string.rst:868
 msgid ""
 "This is the object passed to the constructor's *template* argument.  In "
 "general, you shouldn't change it, but read-only access is not enforced."
 msgstr ""
 
-#: ../../library/string.rst:868
+#: ../../library/string.rst:871
 msgid "Here is an example of how to use a Template::"
 msgstr ""
 
-#: ../../library/string.rst:870
+#: ../../library/string.rst:873
 msgid ""
 ">>> from string import Template\n"
 ">>> s = Template('$who likes $what')\n"
@@ -1243,7 +1249,7 @@ msgid ""
 "'tim likes $what'"
 msgstr ""
 
-#: ../../library/string.rst:886
+#: ../../library/string.rst:889
 msgid ""
 "Advanced usage: you can derive subclasses of :class:`Template` to customize "
 "the placeholder syntax, delimiter character, or the entire regular "
@@ -1251,7 +1257,7 @@ msgid ""
 "these class attributes:"
 msgstr ""
 
-#: ../../library/string.rst:891
+#: ../../library/string.rst:894
 msgid ""
 "*delimiter* -- This is the literal string describing a placeholder "
 "introducing delimiter.  The default value is ``$``.  Note that this should "
@@ -1261,7 +1267,7 @@ msgid ""
 "be set in the subclass's class namespace)."
 msgstr ""
 
-#: ../../library/string.rst:898
+#: ../../library/string.rst:901
 msgid ""
 "*idpattern* -- This is the regular expression describing the pattern for "
 "non-braced placeholders.  The default value is the regular expression "
@@ -1269,19 +1275,19 @@ msgid ""
 "``None`` this pattern will also apply to braced placeholders."
 msgstr ""
 
-#: ../../library/string.rst:905
+#: ../../library/string.rst:908
 msgid ""
 "Since default *flags* is ``re.IGNORECASE``, pattern ``[a-z]`` can match with"
 " some non-ASCII characters. That's why we use the local ``a`` flag here."
 msgstr ""
 
-#: ../../library/string.rst:909
+#: ../../library/string.rst:912
 msgid ""
 "*braceidpattern* can be used to define separate patterns used inside and "
 "outside the braces."
 msgstr ""
 
-#: ../../library/string.rst:913
+#: ../../library/string.rst:916
 msgid ""
 "*braceidpattern* -- This is like *idpattern* but describes the pattern for "
 "braced placeholders.  Defaults to ``None`` which means to fall back to "
@@ -1290,7 +1296,7 @@ msgid ""
 "unbraced placeholders."
 msgstr ""
 
-#: ../../library/string.rst:921
+#: ../../library/string.rst:924
 msgid ""
 "*flags* -- The regular expression flags that will be applied when compiling "
 "the regular expression used for recognizing substitutions.  The default "
@@ -1299,7 +1305,7 @@ msgid ""
 "regular expressions."
 msgstr ""
 
-#: ../../library/string.rst:929
+#: ../../library/string.rst:932
 msgid ""
 "Alternatively, you can provide the entire regular expression pattern by "
 "overriding the class attribute *pattern*.  If you do this, the value must be"
@@ -1308,41 +1314,41 @@ msgid ""
 " placeholder rule:"
 msgstr ""
 
-#: ../../library/string.rst:935
+#: ../../library/string.rst:938
 msgid ""
 "*escaped* -- This group matches the escape sequence, e.g. ``$$``, in the "
 "default pattern."
 msgstr ""
 
-#: ../../library/string.rst:938
+#: ../../library/string.rst:941
 msgid ""
 "*named* -- This group matches the unbraced placeholder name; it should not "
 "include the delimiter in capturing group."
 msgstr ""
 
-#: ../../library/string.rst:941
+#: ../../library/string.rst:944
 msgid ""
 "*braced* -- This group matches the brace enclosed placeholder name; it "
 "should not include either the delimiter or braces in the capturing group."
 msgstr ""
 
-#: ../../library/string.rst:944
+#: ../../library/string.rst:947
 msgid ""
 "*invalid* -- This group matches any other delimiter pattern (usually a "
 "single delimiter), and it should appear last in the regular expression."
 msgstr ""
 
-#: ../../library/string.rst:947
+#: ../../library/string.rst:950
 msgid ""
 "The methods on this class will raise :exc:`ValueError` if the pattern "
 "matches the template without one of these named groups matching."
 msgstr ""
 
-#: ../../library/string.rst:952
+#: ../../library/string.rst:955
 msgid "Helper functions"
 msgstr ""
 
-#: ../../library/string.rst:956
+#: ../../library/string.rst:959
 msgid ""
 "Split the argument into words using :meth:`str.split`, capitalize each word "
 "using :meth:`str.capitalize`, and join the capitalized words using "
@@ -1418,10 +1424,10 @@ msgstr ""
 msgid "_ (underscore)"
 msgstr ""
 
-#: ../../library/string.rst:792
+#: ../../library/string.rst:795
 msgid "$ (dollar)"
 msgstr ""
 
-#: ../../library/string.rst:792
+#: ../../library/string.rst:795
 msgid "in template strings"
 msgstr ""

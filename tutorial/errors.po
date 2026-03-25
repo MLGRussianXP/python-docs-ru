@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-03 15:04+0000\n"
+"POT-Creation-Date: 2026-03-25 15:54+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -783,9 +783,9 @@ msgid ""
 ">>> try:\n"
 "...     f()\n"
 "... except Exception as e:\n"
-"...     print(f'caught {type(e)}: e')\n"
+"...     print(f'caught {type(e)}: {e}')\n"
 "...\n"
-"caught <class 'ExceptionGroup'>: e\n"
+"caught <class 'ExceptionGroup'>: there were problems (2 sub-exceptions)\n"
 ">>>"
 msgstr ""
 

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-07 14:20+0000\n"
+"POT-Creation-Date: 2026-04-21 15:07+0000\n"
 "PO-Revision-Date: 2025-09-16 00:00+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../library/calendar.rst:59
 msgid ""
-"Set the first weekday to *firstweekday*, passed as an :class:`int` (0--6)"
+"Set the first weekday to *firstweekday*, passed as an :class:`int` (0--6)."
 msgstr ""
 
 #: ../../library/calendar.rst:61
@@ -99,8 +99,8 @@ msgstr ""
 
 #: ../../library/calendar.rst:65
 msgid ""
-"Return an iterator for the week day numbers that will be used for one week."
-"  The first value from the iterator will be the same as the value of the "
+"Return an iterator for the weekday numbers that will be used for one week.  "
+"The first value from the iterator will be the same as the value of the "
 ":attr:`~Calendar.firstweekday` property."
 msgstr ""
 
@@ -125,7 +125,7 @@ msgid ""
 "Return an iterator for the month *month* in the year *year* similar to "
 ":meth:`itermonthdates`, but not restricted by the :class:`datetime.date` "
 "range. Days returned will be tuples consisting of a day of the month number "
-"and a week day number."
+"and a weekday number."
 msgstr ""
 
 #: ../../library/calendar.rst:96
@@ -451,7 +451,7 @@ msgstr ""
 
 #: ../../library/calendar.rst:408
 msgid ""
-"Returns weekday of first day of the month and number of days in month,  for "
+"Returns weekday of first day of the month and number of days in month, for "
 "the specified *year* and *month*."
 msgstr ""
 
@@ -489,7 +489,7 @@ msgid ""
 "the :func:`~time.gmtime` function in the :mod:`time` module, and returns the"
 " corresponding Unix timestamp value, assuming an epoch of 1970, and the "
 "POSIX encoding.  In fact, :func:`time.gmtime` and :func:`timegm` are each "
-"others' inverse."
+"other's inverse."
 msgstr ""
 
 #: ../../library/calendar.rst:450

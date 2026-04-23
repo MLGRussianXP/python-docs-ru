@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-23 14:50+0000\n"
+"POT-Creation-Date: 2026-04-23 15:47+0000\n"
 "PO-Revision-Date: 2025-09-16 00:00+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../c-api/file.rst:6
-msgid "File Objects"
+msgid "File objects"
 msgstr ""
 
 #: ../../c-api/file.rst:10
@@ -176,23 +176,22 @@ msgid ""
 msgstr ""
 
 #: ../../c-api/file.rst:140
-msgid "Deprecated API"
+msgid "Soft-deprecated API"
 msgstr ""
 
-#: ../../c-api/file.rst:143
+#: ../../c-api/file.rst:144
 msgid ""
-"These are :term:`soft deprecated` APIs that were included in Python's C API "
-"by mistake. They are documented solely for completeness; use other "
-"``PyFile*`` APIs instead."
+"These are APIs that were included in Python's C API by mistake. They are "
+"documented solely for completeness; use other ``PyFile*`` APIs instead."
 msgstr ""
 
-#: ../../c-api/file.rst:149
+#: ../../c-api/file.rst:150
 msgid ""
 "Use :c:func:`PyFile_FromFd` with defaults (``fd, NULL, \"w\", -1, NULL, "
 "NULL, NULL, 0``) instead."
 msgstr ""
 
-#: ../../c-api/file.rst:153
+#: ../../c-api/file.rst:154
 msgid ""
 "Type of file-like objects used internally at Python startup when "
 ":py:mod:`io` is not yet available. Use Python :py:func:`open` or "

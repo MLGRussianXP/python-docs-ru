@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-03 14:16+0000\n"
+"POT-Creation-Date: 2026-04-29 16:47+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../tutorial/stdlib2.rst:5
-msgid "Brief Tour of the Standard Library --- Part II"
+msgid "Brief tour of the standard library --- part II"
 msgstr ""
 
 #: ../../tutorial/stdlib2.rst:7
@@ -32,7 +32,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib2.rst:14
-msgid "Output Formatting"
+msgid "Output formatting"
 msgstr ""
 
 #: ../../tutorial/stdlib2.rst:16
@@ -199,7 +199,7 @@ msgid ""
 msgstr ""
 
 #: ../../tutorial/stdlib2.rst:134
-msgid "Working with Binary Data Record Layouts"
+msgid "Working with binary data record layouts"
 msgstr ""
 
 #: ../../tutorial/stdlib2.rst:136
@@ -260,14 +260,13 @@ msgid ""
 "\n"
 "class AsyncZip(threading.Thread):\n"
 "    def __init__(self, infile, outfile):\n"
-"        threading.Thread.__init__(self)\n"
+"        super().__init__()\n"
 "        self.infile = infile\n"
 "        self.outfile = outfile\n"
 "\n"
 "    def run(self):\n"
-"        f = zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED)\n"
-"        f.write(self.infile)\n"
-"        f.close()\n"
+"        with zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED) as f:\n"
+"            f.write(self.infile)\n"
 "        print('Finished background zip of:', self.infile)\n"
 "\n"
 "background = AsyncZip('mydata.txt', 'myarchive.zip')\n"
@@ -278,7 +277,7 @@ msgid ""
 "print('Main program waited until background was done.')"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:198
+#: ../../tutorial/stdlib2.rst:197
 msgid ""
 "The principal challenge of multi-threaded applications is coordinating "
 "threads that share data or other resources.  To that end, the threading "
@@ -286,7 +285,7 @@ msgid ""
 "events, condition variables, and semaphores."
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:203
+#: ../../tutorial/stdlib2.rst:202
 msgid ""
 "While those tools are powerful, minor design errors can result in problems "
 "that are difficult to reproduce.  So, the preferred approach to task "
@@ -297,18 +296,18 @@ msgid ""
 "and more reliable."
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:214
+#: ../../tutorial/stdlib2.rst:213
 msgid "Logging"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:216
+#: ../../tutorial/stdlib2.rst:215
 msgid ""
 "The :mod:`logging` module offers a full featured and flexible logging "
 "system. At its simplest, log messages are sent to a file or to "
 "``sys.stderr``::"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:219
+#: ../../tutorial/stdlib2.rst:218
 msgid ""
 "import logging\n"
 "logging.debug('Debugging information')\n"
@@ -318,18 +317,18 @@ msgid ""
 "logging.critical('Critical error -- shutting down')"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:226
+#: ../../tutorial/stdlib2.rst:225
 msgid "This produces the following output:"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:228
+#: ../../tutorial/stdlib2.rst:227
 msgid ""
 "WARNING:root:Warning:config file server.conf not found\n"
 "ERROR:root:Error occurred\n"
 "CRITICAL:root:Critical error -- shutting down"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:234
+#: ../../tutorial/stdlib2.rst:233
 msgid ""
 "By default, informational and debugging messages are suppressed and the "
 "output is sent to standard error.  Other output options include routing "
@@ -339,25 +338,25 @@ msgid ""
 ":const:`~logging.ERROR`, and :const:`~logging.CRITICAL`."
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:241
+#: ../../tutorial/stdlib2.rst:240
 msgid ""
 "The logging system can be configured directly from Python or can be loaded "
 "from a user editable configuration file for customized logging without "
 "altering the application."
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:249
-msgid "Weak References"
+#: ../../tutorial/stdlib2.rst:248
+msgid "Weak references"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:251
+#: ../../tutorial/stdlib2.rst:250
 msgid ""
 "Python does automatic memory management (reference counting for most objects"
 " and :term:`garbage collection` to eliminate cycles).  The memory is freed "
 "shortly after the last reference to it has been eliminated."
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:255
+#: ../../tutorial/stdlib2.rst:254
 msgid ""
 "This approach works fine for most applications but occasionally there is a "
 "need to track objects only as long as they are being used by something else."
@@ -369,7 +368,7 @@ msgid ""
 "expensive to create::"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:263
+#: ../../tutorial/stdlib2.rst:262
 msgid ""
 ">>> import weakref, gc\n"
 ">>> class A:\n"
@@ -395,18 +394,18 @@ msgid ""
 "KeyError: 'primary'"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:290
-msgid "Tools for Working with Lists"
+#: ../../tutorial/stdlib2.rst:289
+msgid "Tools for working with lists"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:292
+#: ../../tutorial/stdlib2.rst:291
 msgid ""
 "Many data structure needs can be met with the built-in list type. However, "
 "sometimes there is a need for alternative implementations with different "
 "performance trade-offs."
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:296
+#: ../../tutorial/stdlib2.rst:295
 msgid ""
 "The :mod:`array` module provides an :class:`~array.array` object that is "
 "like a list that stores only homogeneous data and stores it more compactly."
@@ -415,7 +414,7 @@ msgid ""
 "per entry for regular lists of Python int objects::"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:302
+#: ../../tutorial/stdlib2.rst:301
 msgid ""
 ">>> from array import array\n"
 ">>> a = array('H', [4000, 10, 700, 22222])\n"
@@ -425,7 +424,7 @@ msgid ""
 "array('H', [10, 700])"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:309
+#: ../../tutorial/stdlib2.rst:308
 msgid ""
 "The :mod:`collections` module provides a :class:`~collections.deque` object "
 "that is like a list with faster appends and pops from the left side but "
@@ -433,7 +432,7 @@ msgid ""
 " queues and breadth first tree searches::"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:314
+#: ../../tutorial/stdlib2.rst:313
 msgid ""
 ">>> from collections import deque\n"
 ">>> d = deque([\"task1\", \"task2\", \"task3\"])\n"
@@ -442,7 +441,7 @@ msgid ""
 "Handling task1"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:322
+#: ../../tutorial/stdlib2.rst:321
 msgid ""
 "unsearched = deque([starting_node])\n"
 "def breadth_first_search(unsearched):\n"
@@ -453,14 +452,14 @@ msgid ""
 "        unsearched.append(m)"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:330
+#: ../../tutorial/stdlib2.rst:329
 msgid ""
 "In addition to alternative list implementations, the library also offers "
 "other tools such as the :mod:`bisect` module with functions for manipulating"
 " sorted lists::"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:334
+#: ../../tutorial/stdlib2.rst:333
 msgid ""
 ">>> import bisect\n"
 ">>> scores = [(100, 'perl'), (200, 'tcl'), (400, 'lua'), (500, 'python')]\n"
@@ -469,7 +468,7 @@ msgid ""
 "[(100, 'perl'), (200, 'tcl'), (300, 'ruby'), (400, 'lua'), (500, 'python')]"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:340
+#: ../../tutorial/stdlib2.rst:339
 msgid ""
 "The :mod:`heapq` module provides functions for implementing heaps based on "
 "regular lists.  The lowest valued entry is always kept at position zero.  "
@@ -477,7 +476,7 @@ msgid ""
 " but do not want to run a full list sort::"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:345
+#: ../../tutorial/stdlib2.rst:344
 msgid ""
 ">>> from heapq import heapify, heappop, heappush\n"
 ">>> data = [1, 3, 5, 7, 9, 2, 4, 6, 8, 0]\n"
@@ -487,49 +486,49 @@ msgid ""
 "[-5, 0, 1]"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:356
-msgid "Decimal Floating-Point Arithmetic"
+#: ../../tutorial/stdlib2.rst:355
+msgid "Decimal floating-point arithmetic"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:358
+#: ../../tutorial/stdlib2.rst:357
 msgid ""
 "The :mod:`decimal` module offers a :class:`~decimal.Decimal` datatype for "
 "decimal floating-point arithmetic.  Compared to the built-in :class:`float` "
 "implementation of binary floating point, the class is especially helpful for"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:362
+#: ../../tutorial/stdlib2.rst:361
 msgid ""
 "financial applications and other uses which require exact decimal "
 "representation,"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:364
+#: ../../tutorial/stdlib2.rst:363
 msgid "control over precision,"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:365
+#: ../../tutorial/stdlib2.rst:364
 msgid "control over rounding to meet legal or regulatory requirements,"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:366
+#: ../../tutorial/stdlib2.rst:365
 msgid "tracking of significant decimal places, or"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:367
+#: ../../tutorial/stdlib2.rst:366
 msgid ""
 "applications where the user expects the results to match calculations done "
 "by hand."
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:370
+#: ../../tutorial/stdlib2.rst:369
 msgid ""
 "For example, calculating a 5% tax on a 70 cent phone charge gives different "
 "results in decimal floating point and binary floating point. The difference "
 "becomes significant if the results are rounded to the nearest cent::"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:374
+#: ../../tutorial/stdlib2.rst:373
 msgid ""
 ">>> from decimal import *\n"
 ">>> round(Decimal('0.70') * Decimal('1.05'), 2)\n"
@@ -538,7 +537,7 @@ msgid ""
 "0.73"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:380
+#: ../../tutorial/stdlib2.rst:379
 msgid ""
 "The :class:`~decimal.Decimal` result keeps a trailing zero, automatically "
 "inferring four place significance from multiplicands with two place "
@@ -547,14 +546,14 @@ msgid ""
 "decimal quantities."
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:386
+#: ../../tutorial/stdlib2.rst:385
 msgid ""
 "Exact representation enables the :class:`~decimal.Decimal` class to perform "
 "modulo calculations and equality tests that are unsuitable for binary "
 "floating point::"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:390
+#: ../../tutorial/stdlib2.rst:389
 msgid ""
 ">>> Decimal('1.00') % Decimal('.10')\n"
 "Decimal('0.00')\n"
@@ -567,13 +566,13 @@ msgid ""
 "False"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:400
+#: ../../tutorial/stdlib2.rst:399
 msgid ""
 "The :mod:`decimal` module provides arithmetic with as much precision as "
 "needed::"
 msgstr ""
 
-#: ../../tutorial/stdlib2.rst:402
+#: ../../tutorial/stdlib2.rst:401
 msgid ""
 ">>> getcontext().prec = 36\n"
 ">>> Decimal(1) / Decimal(7)\n"

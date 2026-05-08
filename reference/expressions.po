@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 14:43+0000\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Dmitry Luschan, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -463,14 +463,15 @@ msgstr ""
 msgid ""
 "The comprehension consists of a single expression followed by at least one "
 ":keyword:`!for` clause and zero or more :keyword:`!for` or :keyword:`!if` "
-"clauses. In this case, the elements of the new container are those that "
+"clauses.  In this case, the elements of the new container are those that "
 "would be produced by considering each of the :keyword:`!for` or "
 ":keyword:`!if` clauses a block, nesting from left to right, and evaluating "
 "the expression to produce an element each time the innermost block is "
-"reached."
+"reached.  If the expression is starred, the result will instead be unpacked "
+"to produce zero or more elements."
 msgstr ""
 
-#: ../../reference/expressions.rst:381
+#: ../../reference/expressions.rst:383
 msgid ""
 "However, aside from the iterable expression in the leftmost :keyword:`!for` "
 "clause, the comprehension is executed in a separate implicitly nested scope."
@@ -478,7 +479,7 @@ msgid ""
 "the enclosing scope."
 msgstr ""
 
-#: ../../reference/expressions.rst:385
+#: ../../reference/expressions.rst:387
 msgid ""
 "The iterable expression in the leftmost :keyword:`!for` clause is evaluated "
 "directly in the enclosing scope and then passed as an argument to the "
@@ -488,14 +489,14 @@ msgid ""
 "iterable. For example: ``[x*y for x in range(10) for y in range(x, x+10)]``."
 msgstr ""
 
-#: ../../reference/expressions.rst:392
+#: ../../reference/expressions.rst:394
 msgid ""
 "To ensure the comprehension always results in a container of the appropriate"
 " type, ``yield`` and ``yield from`` expressions are prohibited in the "
 "implicitly nested scope."
 msgstr ""
 
-#: ../../reference/expressions.rst:399
+#: ../../reference/expressions.rst:401
 msgid ""
 "Since Python 3.6, in an :keyword:`async def` function, an :keyword:`!async "
 "for` clause may be used to iterate over a :term:`asynchronous iterator`. A "
@@ -505,7 +506,7 @@ msgid ""
 "clauses, and may also use :keyword:`await` expressions."
 msgstr ""
 
-#: ../../reference/expressions.rst:406
+#: ../../reference/expressions.rst:408
 msgid ""
 "If a comprehension contains :keyword:`!async for` clauses, or if it contains"
 " :keyword:`!await` expressions or other asynchronous comprehensions anywhere"
@@ -515,32 +516,36 @@ msgid ""
 "it appears. See also :pep:`530`."
 msgstr ""
 
-#: ../../reference/expressions.rst:413
+#: ../../reference/expressions.rst:415
 msgid "Asynchronous comprehensions were introduced."
 msgstr ""
 
-#: ../../reference/expressions.rst:416 ../../reference/expressions.rst:595
+#: ../../reference/expressions.rst:418 ../../reference/expressions.rst:613
 msgid ""
 "``yield`` and ``yield from`` prohibited in the implicitly nested scope."
 msgstr ""
 
-#: ../../reference/expressions.rst:419
+#: ../../reference/expressions.rst:421
 msgid ""
 "Asynchronous comprehensions are now allowed inside comprehensions in "
 "asynchronous functions. Outer comprehensions implicitly become asynchronous."
 msgstr ""
 
-#: ../../reference/expressions.rst:428
+#: ../../reference/expressions.rst:426
+msgid "Unpacking with the ``*`` operator is now allowed in the expression."
+msgstr ""
+
+#: ../../reference/expressions.rst:433
 msgid "List displays"
 msgstr ""
 
-#: ../../reference/expressions.rst:438
+#: ../../reference/expressions.rst:443
 msgid ""
 "A list display is a possibly empty series of expressions enclosed in square "
 "brackets:"
 msgstr ""
 
-#: ../../reference/expressions.rst:444
+#: ../../reference/expressions.rst:449
 msgid ""
 "A list display yields a new list object, the contents being specified by "
 "either a list of expressions or a comprehension.  When a comma-separated "
@@ -550,17 +555,17 @@ msgid ""
 "comprehension."
 msgstr ""
 
-#: ../../reference/expressions.rst:454
+#: ../../reference/expressions.rst:459
 msgid "Set displays"
 msgstr ""
 
-#: ../../reference/expressions.rst:463
+#: ../../reference/expressions.rst:468
 msgid ""
 "A set display is denoted by curly braces and distinguishable from dictionary"
 " displays by the lack of colons separating keys and values:"
 msgstr ""
 
-#: ../../reference/expressions.rst:469
+#: ../../reference/expressions.rst:474
 msgid ""
 "A set display yields a new mutable set object, the contents being specified "
 "by either a sequence of expressions or a comprehension.  When a comma-"
@@ -570,27 +575,27 @@ msgid ""
 "comprehension."
 msgstr ""
 
-#: ../../reference/expressions.rst:475
+#: ../../reference/expressions.rst:480
 msgid ""
 "An empty set cannot be constructed with ``{}``; this literal constructs an "
 "empty dictionary."
 msgstr ""
 
-#: ../../reference/expressions.rst:482
+#: ../../reference/expressions.rst:487
 msgid "Dictionary displays"
 msgstr ""
 
-#: ../../reference/expressions.rst:493
+#: ../../reference/expressions.rst:498
 msgid ""
 "A dictionary display is a possibly empty series of dict items (key/value "
 "pairs) enclosed in curly braces:"
 msgstr ""
 
-#: ../../reference/expressions.rst:502
+#: ../../reference/expressions.rst:507
 msgid "A dictionary display yields a new dictionary object."
 msgstr ""
 
-#: ../../reference/expressions.rst:504
+#: ../../reference/expressions.rst:509
 msgid ""
 "If a comma-separated sequence of dict items is given, they are evaluated "
 "from left to right to define the entries of the dictionary: each key object "
@@ -600,7 +605,7 @@ msgid ""
 "given."
 msgstr ""
 
-#: ../../reference/expressions.rst:514
+#: ../../reference/expressions.rst:519
 msgid ""
 "A double asterisk ``**`` denotes :dfn:`dictionary unpacking`. Its operand "
 "must be a :term:`mapping`.  Each mapping item is added to the new "
@@ -608,19 +613,38 @@ msgid ""
 "and earlier dictionary unpackings."
 msgstr ""
 
-#: ../../reference/expressions.rst:519
+#: ../../reference/expressions.rst:524
 msgid "Unpacking into dictionary displays, originally proposed by :pep:`448`."
 msgstr ""
 
-#: ../../reference/expressions.rst:522
-msgid ""
-"A dict comprehension, in contrast to list and set comprehensions, needs two "
-"expressions separated with a colon followed by the usual \"for\" and \"if\" "
-"clauses. When the comprehension is run, the resulting key and value elements"
-" are inserted in the new dictionary in the order they are produced."
+#: ../../reference/expressions.rst:527
+msgid "A dict comprehension may take one of two forms:"
 msgstr ""
 
-#: ../../reference/expressions.rst:530
+#: ../../reference/expressions.rst:529
+msgid ""
+"The first form  uses two expressions separated with a colon followed by the "
+"usual \"for\" and \"if\" clauses.  When the comprehension is run, the "
+"resulting key and value elements are inserted in the new dictionary in the "
+"order they are produced."
+msgstr ""
+
+#: ../../reference/expressions.rst:534
+msgid ""
+"The second form uses a single expression prefixed by the ``**`` dictionary "
+"unpacking operator followed by the usual \"for\" and \"if\" clauses.  When "
+"the comprehension is evaluated, the expression is evaluated and then "
+"unpacked, inserting zero or more key/value pairs into the new dictionary."
+msgstr ""
+
+#: ../../reference/expressions.rst:539
+msgid ""
+"Both forms of dictionary comprehension retain the property that if the same "
+"key is specified multiple times, the associated value in the resulting "
+"dictionary will be the last one specified."
+msgstr ""
+
+#: ../../reference/expressions.rst:546
 msgid ""
 "Restrictions on the types of the key values are listed earlier in section "
 ":ref:`types`.  (To summarize, the key type should be :term:`hashable`, which"
@@ -629,7 +653,7 @@ msgid ""
 "given key value prevails."
 msgstr ""
 
-#: ../../reference/expressions.rst:536
+#: ../../reference/expressions.rst:552
 msgid ""
 "Prior to Python 3.8, in dict comprehensions, the evaluation order of key and"
 " value was not well-defined.  In CPython, the value was evaluated before the"
@@ -637,22 +661,28 @@ msgid ""
 " by :pep:`572`."
 msgstr ""
 
-#: ../../reference/expressions.rst:546
+#: ../../reference/expressions.rst:558
+msgid ""
+"Unpacking with the ``**`` operator is now allowed in dictionary "
+"comprehensions."
+msgstr ""
+
+#: ../../reference/expressions.rst:564
 msgid "Generator expressions"
 msgstr ""
 
-#: ../../reference/expressions.rst:553
+#: ../../reference/expressions.rst:571
 msgid "A generator expression is a compact generator notation in parentheses:"
 msgstr ""
 
-#: ../../reference/expressions.rst:558
+#: ../../reference/expressions.rst:576
 msgid ""
 "A generator expression yields a new generator object.  Its syntax is the "
 "same as for comprehensions, except that it is enclosed in parentheses "
 "instead of brackets or curly braces."
 msgstr ""
 
-#: ../../reference/expressions.rst:562
+#: ../../reference/expressions.rst:580
 msgid ""
 "Variables used in the generator expression are evaluated lazily when the "
 ":meth:`~generator.__next__` method is called for the generator object (in "
@@ -667,20 +697,20 @@ msgid ""
 "iterable. For example: ``(x*y for x in range(10) for y in range(x, x+10))``."
 msgstr ""
 
-#: ../../reference/expressions.rst:574
+#: ../../reference/expressions.rst:592
 msgid ""
 "The parentheses can be omitted on calls with only one argument.  See section"
 " :ref:`calls` for details."
 msgstr ""
 
-#: ../../reference/expressions.rst:577
+#: ../../reference/expressions.rst:595
 msgid ""
 "To avoid interfering with the expected operation of the generator expression"
 " itself, ``yield`` and ``yield from`` expressions are prohibited in the "
 "implicitly defined generator."
 msgstr ""
 
-#: ../../reference/expressions.rst:581
+#: ../../reference/expressions.rst:599
 msgid ""
 "If a generator expression contains either :keyword:`!async for` clauses or "
 ":keyword:`await` expressions it is called an :dfn:`asynchronous generator "
@@ -689,22 +719,22 @@ msgid ""
 ":ref:`async-iterators`)."
 msgstr ""
 
-#: ../../reference/expressions.rst:587
+#: ../../reference/expressions.rst:605
 msgid "Asynchronous generator expressions were introduced."
 msgstr ""
 
-#: ../../reference/expressions.rst:590
+#: ../../reference/expressions.rst:608
 msgid ""
 "Prior to Python 3.7, asynchronous generator expressions could only appear in"
 " :keyword:`async def` coroutines.  Starting with 3.7, any function can use "
 "asynchronous generator expressions."
 msgstr ""
 
-#: ../../reference/expressions.rst:602
+#: ../../reference/expressions.rst:620
 msgid "Yield expressions"
 msgstr ""
 
-#: ../../reference/expressions.rst:615
+#: ../../reference/expressions.rst:633
 msgid ""
 "The yield expression is used when defining a :term:`generator` function or "
 "an :term:`asynchronous generator` function and thus can only be used in the "
@@ -714,7 +744,7 @@ msgid ""
 " asynchronous generator function. For example::"
 msgstr ""
 
-#: ../../reference/expressions.rst:622
+#: ../../reference/expressions.rst:640
 msgid ""
 "def gen():  # defines a generator function\n"
 "    yield 123\n"
@@ -723,27 +753,27 @@ msgid ""
 "    yield 123"
 msgstr ""
 
-#: ../../reference/expressions.rst:628
+#: ../../reference/expressions.rst:646
 msgid ""
 "Due to their side effects on the containing scope, ``yield`` expressions are"
 " not permitted as part of the implicitly defined scopes used to implement "
 "comprehensions and generator expressions."
 msgstr ""
 
-#: ../../reference/expressions.rst:632
+#: ../../reference/expressions.rst:650
 msgid ""
 "Yield expressions prohibited in the implicitly nested scopes used to "
 "implement comprehensions and generator expressions."
 msgstr ""
 
-#: ../../reference/expressions.rst:636
+#: ../../reference/expressions.rst:654
 msgid ""
 "Generator functions are described below, while asynchronous generator "
 "functions are described separately in section :ref:`asynchronous-generator-"
 "functions`."
 msgstr ""
 
-#: ../../reference/expressions.rst:640
+#: ../../reference/expressions.rst:658
 msgid ""
 "When a generator function is called, it returns an iterator known as a "
 "generator.  That generator then controls the execution of the generator "
@@ -764,7 +794,7 @@ msgid ""
 "result will be the value passed in to that method."
 msgstr ""
 
-#: ../../reference/expressions.rst:660
+#: ../../reference/expressions.rst:678
 msgid ""
 "All of this makes generator functions quite similar to coroutines; they "
 "yield multiple times, they have more than one entry point and their "
@@ -773,7 +803,7 @@ msgid ""
 " the control is always transferred to the generator's caller."
 msgstr ""
 
-#: ../../reference/expressions.rst:666
+#: ../../reference/expressions.rst:684
 msgid ""
 "Yield expressions are allowed anywhere in a :keyword:`try` construct.  If "
 "the generator is not resumed before it is finalized (by reaching a zero "
@@ -782,7 +812,7 @@ msgid ""
 ":keyword:`finally` clauses to execute."
 msgstr ""
 
-#: ../../reference/expressions.rst:675
+#: ../../reference/expressions.rst:693
 msgid ""
 "When ``yield from <expr>`` is used, the supplied expression must be an "
 "iterable. The values produced by iterating that iterable are passed directly"
@@ -795,7 +825,7 @@ msgid ""
 "immediately."
 msgstr ""
 
-#: ../../reference/expressions.rst:684
+#: ../../reference/expressions.rst:702
 msgid ""
 "When the underlying iterator is complete, the :attr:`~StopIteration.value` "
 "attribute of the raised :exc:`StopIteration` instance becomes the value of "
@@ -804,73 +834,73 @@ msgid ""
 "(by returning a value from the subgenerator)."
 msgstr ""
 
-#: ../../reference/expressions.rst:690
+#: ../../reference/expressions.rst:708
 msgid "Added ``yield from <expr>`` to delegate control flow to a subiterator."
 msgstr ""
 
-#: ../../reference/expressions.rst:693
+#: ../../reference/expressions.rst:711
 msgid ""
 "The parentheses may be omitted when the yield expression is the sole "
 "expression on the right hand side of an assignment statement."
 msgstr ""
 
-#: ../../reference/expressions.rst:698
+#: ../../reference/expressions.rst:716
 msgid ":pep:`255` - Simple Generators"
 msgstr ""
 
-#: ../../reference/expressions.rst:699
+#: ../../reference/expressions.rst:717
 msgid ""
 "The proposal for adding generators and the :keyword:`yield` statement to "
 "Python."
 msgstr ""
 
-#: ../../reference/expressions.rst:701
+#: ../../reference/expressions.rst:719
 msgid ":pep:`342` - Coroutines via Enhanced Generators"
 msgstr ""
 
-#: ../../reference/expressions.rst:702
+#: ../../reference/expressions.rst:720
 msgid ""
 "The proposal to enhance the API and syntax of generators, making them usable"
 " as simple coroutines."
 msgstr ""
 
-#: ../../reference/expressions.rst:705
+#: ../../reference/expressions.rst:723
 msgid ":pep:`380` - Syntax for Delegating to a Subgenerator"
 msgstr ""
 
-#: ../../reference/expressions.rst:706
+#: ../../reference/expressions.rst:724
 msgid ""
 "The proposal to introduce the :token:`~python-grammar:yield_from` syntax, "
 "making delegation to subgenerators easy."
 msgstr ""
 
-#: ../../reference/expressions.rst:709
+#: ../../reference/expressions.rst:727
 msgid ":pep:`525` - Asynchronous Generators"
 msgstr ""
 
-#: ../../reference/expressions.rst:710
+#: ../../reference/expressions.rst:728
 msgid ""
 "The proposal that expanded on :pep:`492` by adding generator capabilities to"
 " coroutine functions."
 msgstr ""
 
-#: ../../reference/expressions.rst:717
+#: ../../reference/expressions.rst:735
 msgid "Generator-iterator methods"
 msgstr ""
 
-#: ../../reference/expressions.rst:719
+#: ../../reference/expressions.rst:737
 msgid ""
 "This subsection describes the methods of a generator iterator.  They can be "
 "used to control the execution of a generator function."
 msgstr ""
 
-#: ../../reference/expressions.rst:722
+#: ../../reference/expressions.rst:740
 msgid ""
 "Note that calling any of the generator methods below when the generator is "
 "already executing raises a :exc:`ValueError` exception."
 msgstr ""
 
-#: ../../reference/expressions.rst:730
+#: ../../reference/expressions.rst:748
 msgid ""
 "Starts the execution of a generator function or resumes it at the last "
 "executed yield expression.  When a generator function is resumed with a "
@@ -882,13 +912,13 @@ msgid ""
 ":exc:`StopIteration` exception is raised."
 msgstr ""
 
-#: ../../reference/expressions.rst:739
+#: ../../reference/expressions.rst:757
 msgid ""
 "This method is normally called implicitly, e.g. by a :keyword:`for` loop, or"
 " by the built-in :func:`next` function."
 msgstr ""
 
-#: ../../reference/expressions.rst:745
+#: ../../reference/expressions.rst:763
 msgid ""
 "Resumes the execution and \"sends\" a value into the generator function.  "
 "The *value* argument becomes the result of the current yield expression.  "
@@ -899,7 +929,7 @@ msgid ""
 "expression that could receive the value."
 msgstr ""
 
-#: ../../reference/expressions.rst:757
+#: ../../reference/expressions.rst:775
 msgid ""
 "Raises an exception at the point where the generator was paused, and returns"
 " the next value yielded by the generator function.  If the generator exits "
@@ -908,13 +938,13 @@ msgid ""
 "raises a different exception, then that exception propagates to the caller."
 msgstr ""
 
-#: ../../reference/expressions.rst:763
+#: ../../reference/expressions.rst:781
 msgid ""
 "In typical use, this is called with a single exception instance similar to "
 "the way the :keyword:`raise` keyword is used."
 msgstr ""
 
-#: ../../reference/expressions.rst:766
+#: ../../reference/expressions.rst:784
 msgid ""
 "For backwards compatibility, however, the second signature is supported, "
 "following a convention from older versions of Python. The *type* argument "
@@ -925,13 +955,13 @@ msgid ""
 "*value* may be cleared."
 msgstr ""
 
-#: ../../reference/expressions.rst:777 ../../reference/expressions.rst:963
+#: ../../reference/expressions.rst:795 ../../reference/expressions.rst:981
 msgid ""
 "The second signature \\(type\\[, value\\[, traceback\\]\\]\\) is deprecated "
 "and may be removed in a future version of Python."
 msgstr ""
 
-#: ../../reference/expressions.rst:785
+#: ../../reference/expressions.rst:803
 msgid ""
 "Raises a :exc:`GeneratorExit` exception at the point where the generator "
 "function was paused (equivalent to calling ``throw(GeneratorExit)``). The "
@@ -946,23 +976,23 @@ msgid ""
 " other effect."
 msgstr ""
 
-#: ../../reference/expressions.rst:799
+#: ../../reference/expressions.rst:817
 msgid ""
 "If a generator returns a value upon being closed, the value is returned by "
 ":meth:`close`."
 msgstr ""
 
-#: ../../reference/expressions.rst:805
+#: ../../reference/expressions.rst:823
 msgid "Examples"
 msgstr ""
 
-#: ../../reference/expressions.rst:807
+#: ../../reference/expressions.rst:825
 msgid ""
 "Here is a simple example that demonstrates the behavior of generators and "
 "generator functions::"
 msgstr ""
 
-#: ../../reference/expressions.rst:810
+#: ../../reference/expressions.rst:828
 msgid ""
 ">>> def echo(value=None):\n"
 "...     print(\"Execution starts when 'next()' is called for the first time.\")\n"
@@ -989,7 +1019,7 @@ msgid ""
 "Don't forget to clean up when 'close()' is called."
 msgstr ""
 
-#: ../../reference/expressions.rst:834
+#: ../../reference/expressions.rst:852
 msgid ""
 "For examples using ``yield from``, see :ref:`pep-380` in \"What's New in "
 "Python.\""
@@ -997,18 +1027,18 @@ msgstr ""
 "Примеры использования ``yield from`` см. :ref:`pep-380` в разделе \"Что "
 "нового в Python\"."
 
-#: ../../reference/expressions.rst:840
+#: ../../reference/expressions.rst:858
 msgid "Asynchronous generator functions"
 msgstr ""
 
-#: ../../reference/expressions.rst:842
+#: ../../reference/expressions.rst:860
 msgid ""
 "The presence of a yield expression in a function or method defined using "
 ":keyword:`async def` further defines the function as an :term:`asynchronous "
 "generator` function."
 msgstr ""
 
-#: ../../reference/expressions.rst:846
+#: ../../reference/expressions.rst:864
 msgid ""
 "When an asynchronous generator function is called, it returns an "
 "asynchronous iterator known as an asynchronous generator object. That object"
@@ -1018,7 +1048,7 @@ msgid ""
 " :keyword:`for` statement."
 msgstr ""
 
-#: ../../reference/expressions.rst:853
+#: ../../reference/expressions.rst:871
 msgid ""
 "Calling one of the asynchronous generator's methods returns an "
 ":term:`awaitable` object, and the execution starts when this object is "
@@ -1037,7 +1067,7 @@ msgid ""
 " passed in to that method."
 msgstr ""
 
-#: ../../reference/expressions.rst:868
+#: ../../reference/expressions.rst:886
 msgid ""
 "If an asynchronous generator happens to exit early by :keyword:`break`, the "
 "caller task being cancelled, or other exceptions, the generator's async "
@@ -1049,7 +1079,7 @@ msgid ""
 "generator and ultimately detach it from the event loop."
 msgstr ""
 
-#: ../../reference/expressions.rst:878
+#: ../../reference/expressions.rst:896
 msgid ""
 "In an asynchronous generator function, yield expressions are allowed "
 "anywhere in a :keyword:`try` construct. However, if an asynchronous "
@@ -1063,7 +1093,7 @@ msgid ""
 ":keyword:`!finally` clauses to execute."
 msgstr ""
 
-#: ../../reference/expressions.rst:889
+#: ../../reference/expressions.rst:907
 msgid ""
 "To take care of finalization upon event loop termination, an event loop "
 "should define a *finalizer* function which takes an asynchronous generator-"
@@ -1076,23 +1106,23 @@ msgid ""
 ":source:`Lib/asyncio/base_events.py`."
 msgstr ""
 
-#: ../../reference/expressions.rst:898
+#: ../../reference/expressions.rst:916
 msgid ""
 "The expression ``yield from <expr>`` is a syntax error when used in an "
 "asynchronous generator function."
 msgstr ""
 
-#: ../../reference/expressions.rst:905
+#: ../../reference/expressions.rst:923
 msgid "Asynchronous generator-iterator methods"
 msgstr ""
 
-#: ../../reference/expressions.rst:907
+#: ../../reference/expressions.rst:925
 msgid ""
 "This subsection describes the methods of an asynchronous generator iterator,"
 " which are used to control the execution of a generator function."
 msgstr ""
 
-#: ../../reference/expressions.rst:916
+#: ../../reference/expressions.rst:934
 msgid ""
 "Returns an awaitable which when run starts to execute the asynchronous "
 "generator or resumes it at the last executed yield expression.  When an "
@@ -1107,12 +1137,12 @@ msgid ""
 "iteration has completed."
 msgstr ""
 
-#: ../../reference/expressions.rst:928
+#: ../../reference/expressions.rst:946
 msgid ""
 "This method is normally called implicitly by a :keyword:`async for` loop."
 msgstr ""
 
-#: ../../reference/expressions.rst:934
+#: ../../reference/expressions.rst:952
 msgid ""
 "Returns an awaitable which when run resumes the execution of the "
 "asynchronous generator. As with the :meth:`~generator.send` method for a "
@@ -1127,7 +1157,7 @@ msgid ""
 "expression that could receive the value."
 msgstr ""
 
-#: ../../reference/expressions.rst:951
+#: ../../reference/expressions.rst:969
 msgid ""
 "Returns an awaitable that raises an exception of type ``type`` at the point "
 "where the asynchronous generator was paused, and returns the next value "
@@ -1139,7 +1169,7 @@ msgid ""
 "that exception propagates to the caller of the awaitable."
 msgstr ""
 
-#: ../../reference/expressions.rst:972
+#: ../../reference/expressions.rst:990
 msgid ""
 "Returns an awaitable that when run will throw a :exc:`GeneratorExit` into "
 "the asynchronous generator function at the point where it was paused. If the"
@@ -1155,25 +1185,25 @@ msgid ""
 "will return an awaitable that does nothing."
 msgstr ""
 
-#: ../../reference/expressions.rst:988
+#: ../../reference/expressions.rst:1006
 msgid "Primaries"
 msgstr ""
 
-#: ../../reference/expressions.rst:992
+#: ../../reference/expressions.rst:1010
 msgid ""
 "Primaries represent the most tightly bound operations of the language. Their"
 " syntax is:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1002
+#: ../../reference/expressions.rst:1020
 msgid "Attribute references"
 msgstr ""
 
-#: ../../reference/expressions.rst:1008
+#: ../../reference/expressions.rst:1026
 msgid "An attribute reference is a primary followed by a period and a name:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1018
+#: ../../reference/expressions.rst:1036
 msgid ""
 "The primary must evaluate to an object of a type that supports attribute "
 "references, which most objects do.  This object is then asked to produce the"
@@ -1182,7 +1212,7 @@ msgid ""
 "reference may yield different objects."
 msgstr ""
 
-#: ../../reference/expressions.rst:1024
+#: ../../reference/expressions.rst:1042
 msgid ""
 "This production can be customized by overriding the "
 ":meth:`~object.__getattribute__` method or the :meth:`~object.__getattr__` "
@@ -1191,38 +1221,38 @@ msgid ""
 "available."
 msgstr ""
 
-#: ../../reference/expressions.rst:1030
+#: ../../reference/expressions.rst:1048
 msgid ""
 "If an :exc:`AttributeError` is raised and the object has a "
 ":meth:`!__getattr__` method, that method is called as a fallback."
 msgstr ""
 
-#: ../../reference/expressions.rst:1036
+#: ../../reference/expressions.rst:1054
 msgid "Subscriptions and slicings"
 msgstr ""
 
-#: ../../reference/expressions.rst:1051
+#: ../../reference/expressions.rst:1069
 msgid ""
 "The :dfn:`subscription` syntax is usually used for selecting an element from"
 " a :ref:`container <sequence-types>` -- for example, to get a value from a "
 ":class:`dict`::"
 msgstr ""
 
-#: ../../reference/expressions.rst:1055
+#: ../../reference/expressions.rst:1073
 msgid ""
 ">>> digits_by_name = {'one': 1, 'two': 2}\n"
 ">>> digits_by_name['two']  # Subscripting a dictionary using the key 'two'\n"
 "2"
 msgstr ""
 
-#: ../../reference/expressions.rst:1059
+#: ../../reference/expressions.rst:1077
 msgid ""
 "In the subscription syntax, the object being subscribed -- a :ref:`primary "
 "<primaries>` -- is followed by a :dfn:`subscript` in square brackets. In the"
 " simplest case, the subscript is a single expression."
 msgstr ""
 
-#: ../../reference/expressions.rst:1064
+#: ../../reference/expressions.rst:1082
 msgid ""
 "Depending on the type of the object being subscribed, the subscript is "
 "sometimes called a :term:`key` (for mappings), :term:`index` (for "
@@ -1230,7 +1260,7 @@ msgid ""
 "Syntactically, these are all equivalent::"
 msgstr ""
 
-#: ../../reference/expressions.rst:1069
+#: ../../reference/expressions.rst:1087
 msgid ""
 ">>> colors = ['red', 'blue', 'green', 'black']\n"
 ">>> colors[3]  # Subscripting a list using the index 3\n"
@@ -1240,7 +1270,7 @@ msgid ""
 "list[str]"
 msgstr ""
 
-#: ../../reference/expressions.rst:1076
+#: ../../reference/expressions.rst:1094
 msgid ""
 "At runtime, the interpreter will evaluate the primary and the subscript, and"
 " call the primary's :meth:`~object.__getitem__` or "
@@ -1249,14 +1279,14 @@ msgid ""
 ":ref:`classgetitem-versus-getitem`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1083
+#: ../../reference/expressions.rst:1101
 msgid ""
 "To show how subscription works, we can define a custom object that "
 "implements :meth:`~object.__getitem__` and prints out the value of the "
 "subscript::"
 msgstr ""
 
-#: ../../reference/expressions.rst:1087
+#: ../../reference/expressions.rst:1105
 msgid ""
 ">>> class SubscriptionDemo:\n"
 "...     def __getitem__(self, key):\n"
@@ -1269,13 +1299,13 @@ msgid ""
 "subscripted with: 'aaa'"
 msgstr ""
 
-#: ../../reference/expressions.rst:1097
+#: ../../reference/expressions.rst:1115
 msgid ""
 "See :meth:`~object.__getitem__` documentation for how built-in types handle "
 "subscription."
 msgstr ""
 
-#: ../../reference/expressions.rst:1100
+#: ../../reference/expressions.rst:1118
 msgid ""
 "Subscriptions may also be used as targets in :ref:`assignment <assignment>` "
 "or :ref:`deletion <del>` statements. In these cases, the interpreter will "
@@ -1284,7 +1314,7 @@ msgid ""
 " :meth:`~object.__getitem__`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1106
+#: ../../reference/expressions.rst:1124
 msgid ""
 ">>> colors = ['red', 'blue', 'green', 'black']\n"
 ">>> colors[3] = 'white'  # Setting item at index\n"
@@ -1295,17 +1325,17 @@ msgid ""
 "['red', 'blue', 'green']"
 msgstr ""
 
-#: ../../reference/expressions.rst:1116
+#: ../../reference/expressions.rst:1134
 msgid ""
 "All advanced forms of *subscript* documented in the following sections are "
 "also usable for assignment and deletion."
 msgstr ""
 
-#: ../../reference/expressions.rst:1135
+#: ../../reference/expressions.rst:1153
 msgid "Slicings"
 msgstr ""
 
-#: ../../reference/expressions.rst:1137
+#: ../../reference/expressions.rst:1155
 msgid ""
 "A more advanced form of subscription, :dfn:`slicing`, is commonly used to "
 "extract a portion of a :ref:`sequence <datamodel-sequences>`. In this form, "
@@ -1314,7 +1344,7 @@ msgid ""
 "least one colon::"
 msgstr ""
 
-#: ../../reference/expressions.rst:1144
+#: ../../reference/expressions.rst:1162
 msgid ""
 ">>> number_names = ['zero', 'one', 'two', 'three', 'four', 'five']\n"
 ">>> number_names[1:3]\n"
@@ -1334,7 +1364,7 @@ msgid ""
 "['zero', 'one', 'two', 'three']"
 msgstr ""
 
-#: ../../reference/expressions.rst:1161
+#: ../../reference/expressions.rst:1179
 msgid ""
 "When a slice is evaluated, the interpreter constructs a :class:`slice` "
 "object whose :attr:`~slice.start`, :attr:`~slice.stop` and "
@@ -1345,7 +1375,7 @@ msgid ""
 ":term:`special method`, as above. ::"
 msgstr ""
 
-#: ../../reference/expressions.rst:1169
+#: ../../reference/expressions.rst:1187
 msgid ""
 "# continuing with the SubscriptionDemo instance defined above:\n"
 ">>> demo[2:3]\n"
@@ -1354,17 +1384,17 @@ msgid ""
 "subscripted with: slice(None, None, 'spam')"
 msgstr ""
 
-#: ../../reference/expressions.rst:1177
+#: ../../reference/expressions.rst:1195
 msgid "Comma-separated subscripts"
 msgstr ""
 
-#: ../../reference/expressions.rst:1179
+#: ../../reference/expressions.rst:1197
 msgid ""
 "The subscript can also be given as two or more comma-separated expressions "
 "or slices::"
 msgstr ""
 
-#: ../../reference/expressions.rst:1182
+#: ../../reference/expressions.rst:1200
 msgid ""
 "# continuing with the SubscriptionDemo instance defined above:\n"
 ">>> demo[1, 2, 3]\n"
@@ -1373,7 +1403,7 @@ msgid ""
 "subscripted with: (slice(1, 2, None), 3)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1188
+#: ../../reference/expressions.rst:1206
 msgid ""
 "This form is commonly used with numerical libraries for slicing multi-"
 "dimensional data. In this case, the interpreter constructs a :class:`tuple` "
@@ -1382,80 +1412,80 @@ msgid ""
 ":term:`special method`, as above."
 msgstr ""
 
-#: ../../reference/expressions.rst:1194
+#: ../../reference/expressions.rst:1212
 msgid ""
 "The subscript may also be given as a single expression or slice followed by "
 "a comma, to specify a one-element tuple::"
 msgstr ""
 
-#: ../../reference/expressions.rst:1197
+#: ../../reference/expressions.rst:1215
 msgid ""
 ">>> demo['spam',]\n"
 "subscripted with: ('spam',)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1202
+#: ../../reference/expressions.rst:1220
 msgid "\"Starred\" subscriptions"
 msgstr ""
 
-#: ../../reference/expressions.rst:1204
+#: ../../reference/expressions.rst:1222
 msgid "Expressions in *tuple_slices* may be starred. See :pep:`646`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1207
+#: ../../reference/expressions.rst:1225
 msgid ""
 "The subscript can also contain a starred expression. In this case, the "
 "interpreter unpacks the result into a tuple, and passes this tuple to "
 ":meth:`~object.__getitem__` or :meth:`~object.__class_getitem__`::"
 msgstr ""
 
-#: ../../reference/expressions.rst:1211
+#: ../../reference/expressions.rst:1229
 msgid ""
 "# continuing with the SubscriptionDemo instance defined above:\n"
 ">>> demo[*range(10)]\n"
 "subscripted with: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1215
+#: ../../reference/expressions.rst:1233
 msgid ""
 "Starred expressions may be combined with comma-separated expressions and "
 "slices::"
 msgstr ""
 
-#: ../../reference/expressions.rst:1218
+#: ../../reference/expressions.rst:1236
 msgid ""
 ">>> demo['a', 'b', *range(3), 'c']\n"
 "subscripted with: ('a', 'b', 0, 1, 2, 'c')"
 msgstr ""
 
-#: ../../reference/expressions.rst:1223
+#: ../../reference/expressions.rst:1241
 msgid "Formal subscription grammar"
 msgstr ""
 
-#: ../../reference/expressions.rst:1234
+#: ../../reference/expressions.rst:1252
 msgid ""
 "Recall that the ``|`` operator :ref:`denotes ordered choice <notation>`. "
 "Specifically, in :token:`!subscript`, if both alternatives would match, the "
 "first (:token:`!single_subscript`) has priority."
 msgstr ""
 
-#: ../../reference/expressions.rst:1249
+#: ../../reference/expressions.rst:1267
 msgid "Calls"
 msgstr ""
 
-#: ../../reference/expressions.rst:1251
+#: ../../reference/expressions.rst:1269
 msgid ""
 "A call calls a callable object (e.g., a :term:`function`) with a possibly "
 "empty series of :term:`arguments <argument>`:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1268
+#: ../../reference/expressions.rst:1286
 msgid ""
 "An optional trailing comma may be present after the positional and keyword "
 "arguments but does not affect the semantics."
 msgstr ""
 
-#: ../../reference/expressions.rst:1274
+#: ../../reference/expressions.rst:1292
 msgid ""
 "The primary must evaluate to a callable object (user-defined functions, "
 "built-in functions, methods of built-in objects, class objects, methods of "
@@ -1465,7 +1495,7 @@ msgid ""
 " :term:`parameter` lists."
 msgstr ""
 
-#: ../../reference/expressions.rst:1282
+#: ../../reference/expressions.rst:1300
 msgid ""
 "If keyword arguments are present, they are first converted to positional "
 "arguments, as follows.  First, a list of unfilled slots is created for the "
@@ -1486,7 +1516,7 @@ msgid ""
 "filled slots is used as the argument list for the call."
 msgstr ""
 
-#: ../../reference/expressions.rst:1302
+#: ../../reference/expressions.rst:1320
 msgid ""
 "An implementation may provide built-in functions whose positional parameters"
 " do not have names, even if they are 'named' for the purpose of "
@@ -1495,7 +1525,7 @@ msgid ""
 ":c:func:`PyArg_ParseTuple` to parse their arguments."
 msgstr ""
 
-#: ../../reference/expressions.rst:1308
+#: ../../reference/expressions.rst:1326
 msgid ""
 "If there are more positional arguments than there are formal parameter "
 "slots, a :exc:`TypeError` exception is raised, unless a formal parameter "
@@ -1504,7 +1534,7 @@ msgid ""
 " empty tuple if there were no excess positional arguments)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1314
+#: ../../reference/expressions.rst:1332
 msgid ""
 "If any keyword argument does not correspond to a formal parameter name, a "
 ":exc:`TypeError` exception is raised, unless a formal parameter using the "
@@ -1514,7 +1544,7 @@ msgid ""
 "(new) empty dictionary if there were no excess keyword arguments."
 msgstr ""
 
-#: ../../reference/expressions.rst:1325
+#: ../../reference/expressions.rst:1343
 msgid ""
 "If the syntax ``*expression`` appears in the function call, ``expression`` "
 "must evaluate to an :term:`iterable`.  Elements from these iterables are "
@@ -1524,14 +1554,14 @@ msgid ""
 " ..., *yM*, *x3*, *x4*."
 msgstr ""
 
-#: ../../reference/expressions.rst:1332
+#: ../../reference/expressions.rst:1350
 msgid ""
 "A consequence of this is that although the ``*expression`` syntax may appear"
 " *after* explicit keyword arguments, it is processed *before* the keyword "
 "arguments (and any ``**expression`` arguments -- see below).  So::"
 msgstr ""
 
-#: ../../reference/expressions.rst:1336
+#: ../../reference/expressions.rst:1354
 msgid ""
 ">>> def f(a, b):\n"
 "...     print(a, b)\n"
@@ -1546,14 +1576,14 @@ msgid ""
 "1 2"
 msgstr ""
 
-#: ../../reference/expressions.rst:1348
+#: ../../reference/expressions.rst:1366
 msgid ""
 "It is unusual for both keyword arguments and the ``*expression`` syntax to "
 "be used in the same call, so in practice this confusion does not often "
 "arise."
 msgstr ""
 
-#: ../../reference/expressions.rst:1354
+#: ../../reference/expressions.rst:1372
 msgid ""
 "If the syntax ``**expression`` appears in the function call, ``expression`` "
 "must evaluate to a :term:`mapping`, the contents of which are treated as "
@@ -1562,7 +1592,7 @@ msgid ""
 " a :exc:`TypeError` exception is raised."
 msgstr ""
 
-#: ../../reference/expressions.rst:1360
+#: ../../reference/expressions.rst:1378
 msgid ""
 "When ``**expression`` is used, each key in this mapping must be a string. "
 "Each value from the mapping is assigned to the first formal parameter "
@@ -1574,35 +1604,35 @@ msgid ""
 "exception is raised."
 msgstr ""
 
-#: ../../reference/expressions.rst:1370
+#: ../../reference/expressions.rst:1388
 msgid ""
 "Formal parameters using the syntax ``*identifier`` or ``**identifier`` "
 "cannot be used as positional argument slots or as keyword argument names."
 msgstr ""
 
-#: ../../reference/expressions.rst:1373
+#: ../../reference/expressions.rst:1391
 msgid ""
 "Function calls accept any number of ``*`` and ``**`` unpackings, positional "
 "arguments may follow iterable unpackings (``*``), and keyword arguments may "
 "follow dictionary unpackings (``**``). Originally proposed by :pep:`448`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1379
+#: ../../reference/expressions.rst:1397
 msgid ""
 "A call always returns some value, possibly ``None``, unless it raises an "
 "exception.  How this value is computed depends on the type of the callable "
 "object."
 msgstr ""
 
-#: ../../reference/expressions.rst:1383
+#: ../../reference/expressions.rst:1401
 msgid "If it is---"
 msgstr ""
 
-#: ../../reference/expressions.rst:1385
+#: ../../reference/expressions.rst:1403
 msgid "a user-defined function:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1392
+#: ../../reference/expressions.rst:1410
 msgid ""
 "The code block for the function is executed, passing it the argument list.  "
 "The first thing the code block will do is bind the formal parameters to the "
@@ -1613,73 +1643,73 @@ msgid ""
 "``None``."
 msgstr ""
 
-#: ../../reference/expressions.rst:1399
+#: ../../reference/expressions.rst:1417
 msgid "a built-in function or method:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1410
+#: ../../reference/expressions.rst:1428
 msgid ""
 "The result is up to the interpreter; see :ref:`built-in-funcs` for the "
 "descriptions of built-in functions and methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1413
+#: ../../reference/expressions.rst:1431
 msgid "a class object:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1418
+#: ../../reference/expressions.rst:1436
 msgid "A new instance of that class is returned."
 msgstr ""
 
-#: ../../reference/expressions.rst:1420
+#: ../../reference/expressions.rst:1438
 msgid "a class instance method:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1426
+#: ../../reference/expressions.rst:1444
 msgid ""
 "The corresponding user-defined function is called, with an argument list "
 "that is one longer than the argument list of the call: the instance becomes "
 "the first argument."
 msgstr ""
 
-#: ../../reference/expressions.rst:1430
+#: ../../reference/expressions.rst:1448
 msgid "a class instance:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1435
+#: ../../reference/expressions.rst:1453
 msgid ""
 "The class must define a :meth:`~object.__call__` method; the effect is then "
 "the same as if that method was called."
 msgstr ""
 
-#: ../../reference/expressions.rst:1443 ../../reference/expressions.rst:2264
+#: ../../reference/expressions.rst:1461 ../../reference/expressions.rst:2282
 msgid "Await expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:1445
+#: ../../reference/expressions.rst:1463
 msgid ""
 "Suspend the execution of :term:`coroutine` on an :term:`awaitable` object. "
 "Can only be used inside a :term:`coroutine function`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1457
+#: ../../reference/expressions.rst:1475
 msgid "The power operator"
 msgstr ""
 
-#: ../../reference/expressions.rst:1463
+#: ../../reference/expressions.rst:1481
 msgid ""
 "The power operator binds more tightly than unary operators on its left; it "
 "binds less tightly than unary operators on its right.  The syntax is:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1469
+#: ../../reference/expressions.rst:1487
 msgid ""
 "Thus, in an unparenthesized sequence of power and unary operators, the "
 "operators are evaluated from right to left (this does not constrain the "
 "evaluation order for the operands): ``-1**2`` results in ``-1``."
 msgstr ""
 
-#: ../../reference/expressions.rst:1473
+#: ../../reference/expressions.rst:1491
 msgid ""
 "The power operator has the same semantics as the built-in :func:`pow` "
 "function, when called with two arguments: it yields its left argument raised"
@@ -1688,7 +1718,7 @@ msgid ""
 "result is of that type."
 msgstr ""
 
-#: ../../reference/expressions.rst:1479
+#: ../../reference/expressions.rst:1497
 msgid ""
 "For int operands, the result has the same type as the operands unless the "
 "second argument is negative; in that case, all arguments are converted to "
@@ -1696,7 +1726,7 @@ msgid ""
 "``100``, but ``10**-2`` returns ``0.01``."
 msgstr ""
 
-#: ../../reference/expressions.rst:1484
+#: ../../reference/expressions.rst:1502
 msgid ""
 "Raising ``0.0`` to a negative power results in a :exc:`ZeroDivisionError`. "
 "Raising a negative number to a fractional power results in a "
@@ -1704,34 +1734,34 @@ msgid ""
 ":exc:`ValueError`.)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1488
+#: ../../reference/expressions.rst:1506
 msgid ""
 "This operation can be customized using the special :meth:`~object.__pow__` "
 "and :meth:`~object.__rpow__` methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1494
+#: ../../reference/expressions.rst:1512
 msgid "Unary arithmetic and bitwise operations"
 msgstr ""
 
-#: ../../reference/expressions.rst:1500
+#: ../../reference/expressions.rst:1518
 msgid "All unary arithmetic and bitwise operations have the same priority:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1511
+#: ../../reference/expressions.rst:1529
 msgid ""
 "The unary ``-`` (minus) operator yields the negation of its numeric "
 "argument; the operation can be overridden with the :meth:`~object.__neg__` "
 "special method."
 msgstr ""
 
-#: ../../reference/expressions.rst:1519
+#: ../../reference/expressions.rst:1537
 msgid ""
 "The unary ``+`` (plus) operator yields its numeric argument unchanged; the "
 "operation can be overridden with the :meth:`~object.__pos__` special method."
 msgstr ""
 
-#: ../../reference/expressions.rst:1526
+#: ../../reference/expressions.rst:1544
 msgid ""
 "The unary ``~`` (invert) operator yields the bitwise inversion of its "
 "integer argument.  The bitwise inversion of ``x`` is defined as ``-(x+1)``."
@@ -1739,17 +1769,17 @@ msgid ""
 " :meth:`~object.__invert__` special method."
 msgstr ""
 
-#: ../../reference/expressions.rst:1535
+#: ../../reference/expressions.rst:1553
 msgid ""
 "In all three cases, if the argument does not have the proper type, a "
 ":exc:`TypeError` exception is raised."
 msgstr ""
 
-#: ../../reference/expressions.rst:1542
+#: ../../reference/expressions.rst:1560
 msgid "Binary arithmetic operations"
 msgstr ""
 
-#: ../../reference/expressions.rst:1546
+#: ../../reference/expressions.rst:1564
 msgid ""
 "The binary arithmetic operations have the conventional priority levels.  "
 "Note that some of these operations also apply to certain non-numeric types."
@@ -1757,7 +1787,7 @@ msgid ""
 "multiplicative operators and one for additive operators:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1561
+#: ../../reference/expressions.rst:1579
 msgid ""
 "The ``*`` (multiplication) operator yields the product of its arguments.  "
 "The arguments must either both be numbers, or one argument must be an "
@@ -1767,32 +1797,32 @@ msgid ""
 "performed; a negative repetition factor yields an empty sequence."
 msgstr ""
 
-#: ../../reference/expressions.rst:1568
+#: ../../reference/expressions.rst:1586
 msgid ""
 "This operation can be customized using the special :meth:`~object.__mul__` "
 "and :meth:`~object.__rmul__` methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1571 ../../reference/expressions.rst:1652
-#: ../../reference/expressions.rst:1668
+#: ../../reference/expressions.rst:1589 ../../reference/expressions.rst:1670
+#: ../../reference/expressions.rst:1686
 msgid ""
 "If only one operand is a complex number, the other operand is converted to a"
 " floating-point number."
 msgstr ""
 
-#: ../../reference/expressions.rst:1579
+#: ../../reference/expressions.rst:1597
 msgid ""
 "The ``@`` (at) operator is intended to be used for matrix multiplication.  "
 "No builtin Python types implement this operator."
 msgstr ""
 
-#: ../../reference/expressions.rst:1582
+#: ../../reference/expressions.rst:1600
 msgid ""
 "This operation can be customized using the special "
 ":meth:`~object.__matmul__` and :meth:`~object.__rmatmul__` methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1593
+#: ../../reference/expressions.rst:1611
 msgid ""
 "The ``/`` (division) and ``//`` (floor division) operators yield the "
 "quotient of their arguments.  The numeric arguments are first "
@@ -1803,7 +1833,7 @@ msgid ""
 ":exc:`ZeroDivisionError` exception."
 msgstr ""
 
-#: ../../reference/expressions.rst:1601
+#: ../../reference/expressions.rst:1619
 msgid ""
 "The division operation can be customized using the special "
 ":meth:`~object.__truediv__` and :meth:`~object.__rtruediv__` methods. The "
@@ -1811,7 +1841,7 @@ msgid ""
 ":meth:`~object.__floordiv__` and :meth:`~object.__rfloordiv__` methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1610
+#: ../../reference/expressions.rst:1628
 msgid ""
 "The ``%`` (modulo) operator yields the remainder from the division of the "
 "first argument by the second.  The numeric arguments are first "
@@ -1824,7 +1854,7 @@ msgid ""
 "second operand [#]_."
 msgstr ""
 
-#: ../../reference/expressions.rst:1620
+#: ../../reference/expressions.rst:1638
 msgid ""
 "The floor division and modulo operators are connected by the following "
 "identity: ``x == (x//y)*y + (x%y)``.  Floor division and modulo are also "
@@ -1832,7 +1862,7 @@ msgid ""
 "(x//y, x%y)``. [#]_."
 msgstr ""
 
-#: ../../reference/expressions.rst:1625
+#: ../../reference/expressions.rst:1643
 msgid ""
 "In addition to performing the modulo operation on numbers, the ``%`` "
 "operator is also overloaded by string objects to perform old-style string "
@@ -1841,20 +1871,20 @@ msgid ""
 "formatting`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1630
+#: ../../reference/expressions.rst:1648
 msgid ""
 "The *modulo* operation can be customized using the special "
 ":meth:`~object.__mod__` and :meth:`~object.__rmod__` methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1633
+#: ../../reference/expressions.rst:1651
 msgid ""
 "The floor division operator, the modulo operator, and the :func:`divmod` "
 "function are not defined for complex numbers.  Instead, convert to a "
 "floating-point number using the :func:`abs` function if appropriate."
 msgstr ""
 
-#: ../../reference/expressions.rst:1642
+#: ../../reference/expressions.rst:1660
 msgid ""
 "The ``+`` (addition) operator yields the sum of its arguments.  The "
 "arguments must either both be numbers or both be sequences of the same type."
@@ -1863,41 +1893,41 @@ msgid ""
 "the sequences are concatenated."
 msgstr ""
 
-#: ../../reference/expressions.rst:1649
+#: ../../reference/expressions.rst:1667
 msgid ""
 "This operation can be customized using the special :meth:`~object.__add__` "
 "and :meth:`~object.__radd__` methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1661
+#: ../../reference/expressions.rst:1679
 msgid ""
 "The ``-`` (subtraction) operator yields the difference of its arguments. The"
 " numeric arguments are first :ref:`converted to a common real type "
 "<stdtypes-mixed-arithmetic>`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1665
+#: ../../reference/expressions.rst:1683
 msgid ""
 "This operation can be customized using the special :meth:`~object.__sub__` "
 "and :meth:`~object.__rsub__` methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1676
+#: ../../reference/expressions.rst:1694
 msgid "Shifting operations"
 msgstr ""
 
-#: ../../reference/expressions.rst:1683
+#: ../../reference/expressions.rst:1701
 msgid ""
 "The shifting operations have lower priority than the arithmetic operations:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1688
+#: ../../reference/expressions.rst:1706
 msgid ""
 "These operators accept integers as arguments.  They shift the first argument"
 " to the left or right by the number of bits given by the second argument."
 msgstr ""
 
-#: ../../reference/expressions.rst:1691
+#: ../../reference/expressions.rst:1709
 msgid ""
 "The left shift operation can be customized using the special "
 ":meth:`~object.__lshift__` and :meth:`~object.__rlshift__` methods. The "
@@ -1905,46 +1935,46 @@ msgid ""
 ":meth:`~object.__rshift__` and :meth:`~object.__rrshift__` methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1698
+#: ../../reference/expressions.rst:1716
 msgid ""
 "A right shift by *n* bits is defined as floor division by ``pow(2,n)``.  A "
 "left shift by *n* bits is defined as multiplication with ``pow(2,n)``."
 msgstr ""
 
-#: ../../reference/expressions.rst:1705
+#: ../../reference/expressions.rst:1723
 msgid "Binary bitwise operations"
 msgstr ""
 
-#: ../../reference/expressions.rst:1709
+#: ../../reference/expressions.rst:1727
 msgid "Each of the three bitwise operations has a different priority level:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1720
+#: ../../reference/expressions.rst:1738
 msgid ""
 "The ``&`` operator yields the bitwise AND of its arguments, which must be "
 "integers or one of them must be a custom object overriding "
 ":meth:`~object.__and__` or :meth:`~object.__rand__` special methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1729
+#: ../../reference/expressions.rst:1747
 msgid ""
 "The ``^`` operator yields the bitwise XOR (exclusive OR) of its arguments, "
 "which must be integers or one of them must be a custom object overriding "
 ":meth:`~object.__xor__` or :meth:`~object.__rxor__` special methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1738
+#: ../../reference/expressions.rst:1756
 msgid ""
 "The ``|`` operator yields the bitwise (inclusive) OR of its arguments, which"
 " must be integers or one of them must be a custom object overriding "
 ":meth:`~object.__or__` or :meth:`~object.__ror__` special methods."
 msgstr ""
 
-#: ../../reference/expressions.rst:1746
+#: ../../reference/expressions.rst:1764
 msgid "Comparisons"
 msgstr ""
 
-#: ../../reference/expressions.rst:1758
+#: ../../reference/expressions.rst:1776
 msgid ""
 "Unlike C, all comparison operations in Python have the same priority, which "
 "is lower than that of any arithmetic, shifting or bitwise operation.  Also "
@@ -1952,14 +1982,14 @@ msgid ""
 "conventional in mathematics:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1768
+#: ../../reference/expressions.rst:1786
 msgid ""
 "Comparisons yield boolean values: ``True`` or ``False``. Custom :dfn:`rich "
 "comparison methods` may return non-boolean values. In this case Python will "
 "call :func:`bool` on such value in boolean contexts."
 msgstr ""
 
-#: ../../reference/expressions.rst:1774
+#: ../../reference/expressions.rst:1792
 msgid ""
 "Comparisons can be chained arbitrarily, e.g., ``x < y <= z`` is equivalent "
 "to ``x < y and y <= z``, except that ``y`` is evaluated only once (but in "
@@ -1967,7 +1997,7 @@ msgid ""
 "false)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1778
+#: ../../reference/expressions.rst:1796
 msgid ""
 "Formally, if *a*, *b*, *c*, ..., *y*, *z* are expressions and *op1*, *op2*, "
 "..., *opN* are comparison operators, then ``a op1 b op2 c ... y opN z`` is "
@@ -1975,24 +2005,24 @@ msgid ""
 "expression is evaluated at most once."
 msgstr ""
 
-#: ../../reference/expressions.rst:1783
+#: ../../reference/expressions.rst:1801
 msgid ""
 "Note that ``a op1 b op2 c`` doesn't imply any kind of comparison between *a*"
 " and *c*, so that, e.g., ``x < y > z`` is perfectly legal (though perhaps "
 "not pretty)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1790
+#: ../../reference/expressions.rst:1808
 msgid "Value comparisons"
 msgstr ""
 
-#: ../../reference/expressions.rst:1792
+#: ../../reference/expressions.rst:1810
 msgid ""
 "The operators ``<``, ``>``, ``==``, ``>=``, ``<=``, and ``!=`` compare the "
 "values of two objects.  The objects do not need to have the same type."
 msgstr ""
 
-#: ../../reference/expressions.rst:1795
+#: ../../reference/expressions.rst:1813
 msgid ""
 "Chapter :ref:`objects` states that objects have a value (in addition to type"
 " and identity).  The value of an object is a rather abstract notion in "
@@ -2004,7 +2034,7 @@ msgid ""
 "indirectly, by means of their comparison implementation."
 msgstr ""
 
-#: ../../reference/expressions.rst:1804
+#: ../../reference/expressions.rst:1822
 msgid ""
 "Because all types are (direct or indirect) subtypes of :class:`object`, they"
 " inherit the default comparison behavior from :class:`object`.  Types can "
@@ -2012,7 +2042,7 @@ msgid ""
 "methods` like :meth:`~object.__lt__`, described in :ref:`customization`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1810
+#: ../../reference/expressions.rst:1828
 msgid ""
 "The default behavior for equality comparison (``==`` and ``!=``) is based on"
 " the identity of the objects.  Hence, equality comparison of instances with "
@@ -2022,14 +2052,14 @@ msgid ""
 "``x is y`` implies ``x == y``)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1817
+#: ../../reference/expressions.rst:1835
 msgid ""
 "A default order comparison (``<``, ``>``, ``<=``, and ``>=``) is not "
 "provided; an attempt raises :exc:`TypeError`.  A motivation for this default"
 " behavior is the lack of a similar invariant as for equality."
 msgstr ""
 
-#: ../../reference/expressions.rst:1821
+#: ../../reference/expressions.rst:1839
 msgid ""
 "The behavior of the default equality comparison, that instances with "
 "different identities are always unequal, may be in contrast to what types "
@@ -2038,13 +2068,13 @@ msgid ""
 "in fact, a number of built-in types have done that."
 msgstr ""
 
-#: ../../reference/expressions.rst:1827
+#: ../../reference/expressions.rst:1845
 msgid ""
 "The following list describes the comparison behavior of the most important "
 "built-in types."
 msgstr ""
 
-#: ../../reference/expressions.rst:1830
+#: ../../reference/expressions.rst:1848
 msgid ""
 "Numbers of built-in numeric types (:ref:`typesnumeric`) and of the standard "
 "library types :class:`fractions.Fraction` and :class:`decimal.Decimal` can "
@@ -2054,7 +2084,7 @@ msgid ""
 " of precision."
 msgstr ""
 
-#: ../../reference/expressions.rst:1837
+#: ../../reference/expressions.rst:1855
 msgid ""
 "The not-a-number values ``float('NaN')`` and ``decimal.Decimal('NaN')`` are "
 "special.  Any ordered comparison of a number to a not-a-number value is "
@@ -2064,32 +2094,32 @@ msgid ""
 "is compliant with IEEE 754."
 msgstr ""
 
-#: ../../reference/expressions.rst:1844
+#: ../../reference/expressions.rst:1862
 msgid ""
 "``None`` and :data:`NotImplemented` are singletons.  :PEP:`8` advises that "
 "comparisons for singletons should always be done with ``is`` or ``is not``, "
 "never the equality operators."
 msgstr ""
 
-#: ../../reference/expressions.rst:1848
+#: ../../reference/expressions.rst:1866
 msgid ""
 "Binary sequences (instances of :class:`bytes` or :class:`bytearray`) can be "
 "compared within and across their types.  They compare lexicographically "
 "using the numeric values of their elements."
 msgstr ""
 
-#: ../../reference/expressions.rst:1852
+#: ../../reference/expressions.rst:1870
 msgid ""
 "Strings (instances of :class:`str`) compare lexicographically using the "
 "numerical Unicode code points (the result of the built-in function "
 ":func:`ord`) of their characters. [#]_"
 msgstr ""
 
-#: ../../reference/expressions.rst:1856
+#: ../../reference/expressions.rst:1874
 msgid "Strings and binary sequences cannot be directly compared."
 msgstr ""
 
-#: ../../reference/expressions.rst:1858
+#: ../../reference/expressions.rst:1876
 msgid ""
 "Sequences (instances of :class:`tuple`, :class:`list`, or :class:`range`) "
 "can be compared only within each of their types, with the restriction that "
@@ -2098,7 +2128,7 @@ msgid ""
 "raises :exc:`TypeError`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1864
+#: ../../reference/expressions.rst:1882
 msgid ""
 "Sequences compare lexicographically using comparison of corresponding "
 "elements.  The built-in containers typically assume identical objects are "
@@ -2106,19 +2136,19 @@ msgid ""
 "objects to improve performance and to maintain their internal invariants."
 msgstr ""
 
-#: ../../reference/expressions.rst:1869
+#: ../../reference/expressions.rst:1887
 msgid ""
 "Lexicographical comparison between built-in collections works as follows:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1871
+#: ../../reference/expressions.rst:1889
 msgid ""
 "For two collections to compare equal, they must be of the same type, have "
 "the same length, and each pair of corresponding elements must compare equal "
 "(for example, ``[1,2] == (1,2)`` is false because the type is not the same)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1876
+#: ../../reference/expressions.rst:1894
 msgid ""
 "Collections that support order comparison are ordered the same as their "
 "first unequal elements (for example, ``[1,2,x] <= [1,2,y]`` has the same "
@@ -2127,25 +2157,25 @@ msgid ""
 "true)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1882
+#: ../../reference/expressions.rst:1900
 msgid ""
 "Mappings (instances of :class:`dict`) compare equal if and only if they have"
 " equal ``(key, value)`` pairs. Equality comparison of the keys and values "
 "enforces reflexivity."
 msgstr ""
 
-#: ../../reference/expressions.rst:1886
+#: ../../reference/expressions.rst:1904
 msgid ""
 "Order comparisons (``<``, ``>``, ``<=``, and ``>=``) raise :exc:`TypeError`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1888
+#: ../../reference/expressions.rst:1906
 msgid ""
 "Sets (instances of :class:`set` or :class:`frozenset`) can be compared "
 "within and across their types."
 msgstr ""
 
-#: ../../reference/expressions.rst:1891
+#: ../../reference/expressions.rst:1909
 msgid ""
 "They define order comparison operators to mean subset and superset tests.  "
 "Those relations do not define total orderings (for example, the two sets "
@@ -2156,110 +2186,110 @@ msgid ""
 "sets as inputs)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1899
+#: ../../reference/expressions.rst:1917
 msgid "Comparison of sets enforces reflexivity of its elements."
 msgstr ""
 
-#: ../../reference/expressions.rst:1901
+#: ../../reference/expressions.rst:1919
 msgid ""
 "Most other built-in types have no comparison methods implemented, so they "
 "inherit the default comparison behavior."
 msgstr ""
 
-#: ../../reference/expressions.rst:1904
+#: ../../reference/expressions.rst:1922
 msgid ""
 "User-defined classes that customize their comparison behavior should follow "
 "some consistency rules, if possible:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1907
+#: ../../reference/expressions.rst:1925
 msgid ""
 "Equality comparison should be reflexive. In other words, identical objects "
 "should compare equal:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1910
+#: ../../reference/expressions.rst:1928
 msgid "``x is y`` implies ``x == y``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1912
+#: ../../reference/expressions.rst:1930
 msgid ""
 "Comparison should be symmetric. In other words, the following expressions "
 "should have the same result:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1915
+#: ../../reference/expressions.rst:1933
 msgid "``x == y`` and ``y == x``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1917
+#: ../../reference/expressions.rst:1935
 msgid "``x != y`` and ``y != x``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1919
+#: ../../reference/expressions.rst:1937
 msgid "``x < y`` and ``y > x``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1921
+#: ../../reference/expressions.rst:1939
 msgid "``x <= y`` and ``y >= x``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1923
+#: ../../reference/expressions.rst:1941
 msgid ""
 "Comparison should be transitive. The following (non-exhaustive) examples "
 "illustrate that:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1926
+#: ../../reference/expressions.rst:1944
 msgid "``x > y and y > z`` implies ``x > z``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1928
+#: ../../reference/expressions.rst:1946
 msgid "``x < y and y <= z`` implies ``x < z``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1930
+#: ../../reference/expressions.rst:1948
 msgid ""
 "Inverse comparison should result in the boolean negation. In other words, "
 "the following expressions should have the same result:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1933
+#: ../../reference/expressions.rst:1951
 msgid "``x == y`` and ``not x != y``"
 msgstr ""
 
-#: ../../reference/expressions.rst:1935
+#: ../../reference/expressions.rst:1953
 msgid "``x < y`` and ``not x >= y`` (for total ordering)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1937
+#: ../../reference/expressions.rst:1955
 msgid "``x > y`` and ``not x <= y`` (for total ordering)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1939
+#: ../../reference/expressions.rst:1957
 msgid ""
 "The last two expressions apply to totally ordered collections (e.g. to "
 "sequences, but not to sets or mappings). See also the "
 ":func:`~functools.total_ordering` decorator."
 msgstr ""
 
-#: ../../reference/expressions.rst:1943
+#: ../../reference/expressions.rst:1961
 msgid ""
 "The :func:`hash` result should be consistent with equality. Objects that are"
 " equal should either have the same hash value, or be marked as unhashable."
 msgstr ""
 
-#: ../../reference/expressions.rst:1947
+#: ../../reference/expressions.rst:1965
 msgid ""
 "Python does not enforce these consistency rules. In fact, the not-a-number "
 "values are an example for not following these rules."
 msgstr ""
 
-#: ../../reference/expressions.rst:1956
+#: ../../reference/expressions.rst:1974
 msgid "Membership test operations"
 msgstr ""
 
-#: ../../reference/expressions.rst:1958
+#: ../../reference/expressions.rst:1976
 msgid ""
 "The operators :keyword:`in` and :keyword:`not in` test for membership.  ``x "
 "in s`` evaluates to ``True`` if *x* is a member of *s*, and ``False`` "
@@ -2270,7 +2300,7 @@ msgid ""
 "expression ``x in y`` is equivalent to ``any(x is e or x == e for e in y)``."
 msgstr ""
 
-#: ../../reference/expressions.rst:1966
+#: ../../reference/expressions.rst:1984
 msgid ""
 "For the string and bytes types, ``x in y`` is ``True`` if and only if *x* is"
 " a substring of *y*.  An equivalent test is ``y.find(x) != -1``.  Empty "
@@ -2278,14 +2308,14 @@ msgid ""
 "``\"\" in \"abc\"`` will return ``True``."
 msgstr ""
 
-#: ../../reference/expressions.rst:1971
+#: ../../reference/expressions.rst:1989
 msgid ""
 "For user-defined classes which define the :meth:`~object.__contains__` "
 "method, ``x in y`` returns ``True`` if ``y.__contains__(x)`` returns a true "
 "value, and ``False`` otherwise."
 msgstr ""
 
-#: ../../reference/expressions.rst:1975
+#: ../../reference/expressions.rst:1993
 msgid ""
 "For user-defined classes which do not define :meth:`~object.__contains__` "
 "but do define :meth:`~object.__iter__`, ``x in y`` is ``True`` if some value"
@@ -2294,7 +2324,7 @@ msgid ""
 "it is as if :keyword:`in` raised that exception."
 msgstr ""
 
-#: ../../reference/expressions.rst:1981
+#: ../../reference/expressions.rst:1999
 msgid ""
 "Lastly, the old-style iteration protocol is tried: if a class defines "
 ":meth:`~object.__getitem__`, ``x in y`` is ``True`` if and only if there is "
@@ -2303,17 +2333,17 @@ msgid ""
 "other exception is raised, it is as if :keyword:`in` raised that exception)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1993
+#: ../../reference/expressions.rst:2011
 msgid ""
 "The operator :keyword:`not in` is defined to have the inverse truth value of"
 " :keyword:`in`."
 msgstr ""
 
-#: ../../reference/expressions.rst:2006
+#: ../../reference/expressions.rst:2024
 msgid "Identity comparisons"
 msgstr ""
 
-#: ../../reference/expressions.rst:2008
+#: ../../reference/expressions.rst:2026
 msgid ""
 "The operators :keyword:`is` and :keyword:`is not` test for an object's "
 "identity: ``x is y`` is true if and only if *x* and *y* are the same object."
@@ -2321,11 +2351,11 @@ msgid ""
 "not y`` yields the inverse truth value. [#]_"
 msgstr ""
 
-#: ../../reference/expressions.rst:2020
+#: ../../reference/expressions.rst:2038
 msgid "Boolean operations"
 msgstr ""
 
-#: ../../reference/expressions.rst:2031
+#: ../../reference/expressions.rst:2049
 msgid ""
 "In the context of Boolean operations, and also when expressions are used by "
 "control flow statements, the following values are interpreted as false: "
@@ -2336,26 +2366,26 @@ msgid ""
 ":meth:`~object.__bool__` method."
 msgstr ""
 
-#: ../../reference/expressions.rst:2040
+#: ../../reference/expressions.rst:2058
 msgid ""
 "The operator :keyword:`not` yields ``True`` if its argument is false, "
 "``False`` otherwise."
 msgstr ""
 
-#: ../../reference/expressions.rst:2045
+#: ../../reference/expressions.rst:2063
 msgid ""
 "The expression ``x and y`` first evaluates *x*; if *x* is false, its value "
 "is returned; otherwise, *y* is evaluated and the resulting value is "
 "returned."
 msgstr ""
 
-#: ../../reference/expressions.rst:2050
+#: ../../reference/expressions.rst:2068
 msgid ""
 "The expression ``x or y`` first evaluates *x*; if *x* is true, its value is "
 "returned; otherwise, *y* is evaluated and the resulting value is returned."
 msgstr ""
 
-#: ../../reference/expressions.rst:2053
+#: ../../reference/expressions.rst:2071
 msgid ""
 "Note that neither :keyword:`and` nor :keyword:`or` restrict the value and "
 "type they return to ``False`` and ``True``, but rather return the last "
@@ -2367,11 +2397,11 @@ msgid ""
 "``''``.)"
 msgstr ""
 
-#: ../../reference/expressions.rst:2072
+#: ../../reference/expressions.rst:2090
 msgid "Assignment expressions"
 msgstr ""
 
-#: ../../reference/expressions.rst:2077
+#: ../../reference/expressions.rst:2095
 msgid ""
 "An assignment expression (sometimes also called a \"named expression\" or "
 "\"walrus\") assigns an :token:`~python-grammar:expression` to an "
@@ -2379,27 +2409,27 @@ msgid ""
 ":token:`~python-grammar:expression`."
 msgstr ""
 
-#: ../../reference/expressions.rst:2082
+#: ../../reference/expressions.rst:2100
 msgid "One common use case is when handling matched regular expressions:"
 msgstr ""
 
-#: ../../reference/expressions.rst:2084
+#: ../../reference/expressions.rst:2102
 msgid ""
 "if matching := pattern.search(data):\n"
 "    do_something(matching)"
 msgstr ""
 
-#: ../../reference/expressions.rst:2089
+#: ../../reference/expressions.rst:2107
 msgid "Or, when processing a file stream in chunks:"
 msgstr ""
 
-#: ../../reference/expressions.rst:2091
+#: ../../reference/expressions.rst:2109
 msgid ""
 "while chunk := file.read(9000):\n"
 "    process(chunk)"
 msgstr ""
 
-#: ../../reference/expressions.rst:2096
+#: ../../reference/expressions.rst:2114
 msgid ""
 "Assignment expressions must be surrounded by parentheses when used as "
 "expression statements and when used as sub-expressions in slicing, "
@@ -2409,37 +2439,37 @@ msgid ""
 "and ``while`` statements."
 msgstr ""
 
-#: ../../reference/expressions.rst:2104
+#: ../../reference/expressions.rst:2122
 msgid "See :pep:`572` for more details about assignment expressions."
 msgstr ""
 
-#: ../../reference/expressions.rst:2111
+#: ../../reference/expressions.rst:2129
 msgid "Conditional expressions"
 msgstr ""
 
-#: ../../reference/expressions.rst:2123
+#: ../../reference/expressions.rst:2141
 msgid ""
 "A conditional expression (sometimes called a \"ternary operator\") is an "
 "alternative to the if-else statement. As it is an expression, it returns a "
 "value and can appear as a sub-expression."
 msgstr ""
 
-#: ../../reference/expressions.rst:2127
+#: ../../reference/expressions.rst:2145
 msgid ""
 "The expression ``x if C else y`` first evaluates the condition, *C* rather "
 "than *x*. If *C* is true, *x* is evaluated and its value is returned; "
 "otherwise, *y* is evaluated and its value is returned."
 msgstr ""
 
-#: ../../reference/expressions.rst:2131
+#: ../../reference/expressions.rst:2149
 msgid "See :pep:`308` for more details about conditional expressions."
 msgstr ""
 
-#: ../../reference/expressions.rst:2138
+#: ../../reference/expressions.rst:2156
 msgid "Lambdas"
 msgstr ""
 
-#: ../../reference/expressions.rst:2149
+#: ../../reference/expressions.rst:2167
 msgid ""
 "Lambda expressions (sometimes called lambda forms) are used to create "
 "anonymous functions. The expression ``lambda parameters: expression`` yields"
@@ -2447,47 +2477,47 @@ msgid ""
 "defined with:"
 msgstr ""
 
-#: ../../reference/expressions.rst:2153
+#: ../../reference/expressions.rst:2171
 msgid ""
 "def <lambda>(parameters):\n"
 "    return expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:2158
+#: ../../reference/expressions.rst:2176
 msgid ""
 "See section :ref:`function` for the syntax of parameter lists.  Note that "
 "functions created with lambda expressions cannot contain statements or "
 "annotations."
 msgstr ""
 
-#: ../../reference/expressions.rst:2166
+#: ../../reference/expressions.rst:2184
 msgid "Expression lists"
 msgstr ""
 
-#: ../../reference/expressions.rst:2182
+#: ../../reference/expressions.rst:2200
 msgid ""
 "Except when part of a list or set display, an expression list containing at "
 "least one comma yields a tuple.  The length of the tuple is the number of "
 "expressions in the list.  The expressions are evaluated from left to right."
 msgstr ""
 
-#: ../../reference/expressions.rst:2191
+#: ../../reference/expressions.rst:2209
 msgid ""
 "An asterisk ``*`` denotes :dfn:`iterable unpacking`.  Its operand must be an"
 " :term:`iterable`.  The iterable is expanded into a sequence of items, which"
 " are included in the new tuple, list, or set, at the site of the unpacking."
 msgstr ""
 
-#: ../../reference/expressions.rst:2196
+#: ../../reference/expressions.rst:2214
 msgid ""
 "Iterable unpacking in expression lists, originally proposed by :pep:`448`."
 msgstr ""
 
-#: ../../reference/expressions.rst:2199
+#: ../../reference/expressions.rst:2217
 msgid "Any item in an expression list may be starred. See :pep:`646`."
 msgstr ""
 
-#: ../../reference/expressions.rst:2204
+#: ../../reference/expressions.rst:2222
 msgid ""
 "A trailing comma is required only to create a one-item tuple, such as "
 "``1,``; it is optional in all other cases. A single expression without a "
@@ -2496,24 +2526,24 @@ msgid ""
 "``()``.)"
 msgstr ""
 
-#: ../../reference/expressions.rst:2215
+#: ../../reference/expressions.rst:2233
 msgid "Evaluation order"
 msgstr ""
 
-#: ../../reference/expressions.rst:2219
+#: ../../reference/expressions.rst:2237
 msgid ""
 "Python evaluates expressions from left to right.  Notice that while "
 "evaluating an assignment, the right-hand side is evaluated before the left-"
 "hand side."
 msgstr ""
 
-#: ../../reference/expressions.rst:2222
+#: ../../reference/expressions.rst:2240
 msgid ""
 "In the following lines, expressions will be evaluated in the arithmetic "
 "order of their suffixes::"
 msgstr ""
 
-#: ../../reference/expressions.rst:2225
+#: ../../reference/expressions.rst:2243
 msgid ""
 "expr1, expr2, expr3, expr4\n"
 "(expr1, expr2, expr3, expr4)\n"
@@ -2523,11 +2553,11 @@ msgid ""
 "expr3, expr4 = expr1, expr2"
 msgstr ""
 
-#: ../../reference/expressions.rst:2236
+#: ../../reference/expressions.rst:2254
 msgid "Operator precedence"
 msgstr ""
 
-#: ../../reference/expressions.rst:2241
+#: ../../reference/expressions.rst:2259
 msgid ""
 "The following table summarizes the operator precedence in Python, from "
 "highest precedence (most binding) to lowest precedence (least binding).  "
@@ -2537,176 +2567,176 @@ msgid ""
 "group from right to left)."
 msgstr ""
 
-#: ../../reference/expressions.rst:2247
+#: ../../reference/expressions.rst:2265
 msgid ""
 "Note that comparisons, membership tests, and identity tests, all have the "
 "same precedence and have a left-to-right chaining feature as described in "
 "the :ref:`comparisons` section."
 msgstr ""
 
-#: ../../reference/expressions.rst:2253
+#: ../../reference/expressions.rst:2271
 msgid "Operator"
 msgstr ""
 
-#: ../../reference/expressions.rst:2253
+#: ../../reference/expressions.rst:2271
 msgid "Description"
 msgstr ""
 
-#: ../../reference/expressions.rst:2255
+#: ../../reference/expressions.rst:2273
 msgid "``(expressions...)``,"
 msgstr ""
 
-#: ../../reference/expressions.rst:2257
+#: ../../reference/expressions.rst:2275
 msgid "``[expressions...]``, ``{key: value...}``, ``{expressions...}``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2255
+#: ../../reference/expressions.rst:2273
 msgid ""
 "Binding or parenthesized expression, list display, dictionary display, set "
 "display"
 msgstr ""
 
-#: ../../reference/expressions.rst:2261
+#: ../../reference/expressions.rst:2279
 msgid "``x[index]``, ``x[index:index]`` ``x(arguments...)``, ``x.attribute``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2261
+#: ../../reference/expressions.rst:2279
 msgid "Subscription (including slicing), call, attribute reference"
 msgstr ""
 
-#: ../../reference/expressions.rst:2264
+#: ../../reference/expressions.rst:2282
 msgid ":keyword:`await x <await>`"
 msgstr ""
 
-#: ../../reference/expressions.rst:2266
+#: ../../reference/expressions.rst:2284
 msgid "``**``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2266
+#: ../../reference/expressions.rst:2284
 msgid "Exponentiation [#]_"
 msgstr ""
 
-#: ../../reference/expressions.rst:2268
+#: ../../reference/expressions.rst:2286
 msgid "``+x``, ``-x``, ``~x``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2268
+#: ../../reference/expressions.rst:2286
 msgid "Positive, negative, bitwise NOT"
 msgstr ""
 
-#: ../../reference/expressions.rst:2270
+#: ../../reference/expressions.rst:2288
 msgid "``*``, ``@``, ``/``, ``//``, ``%``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2270
+#: ../../reference/expressions.rst:2288
 msgid ""
 "Multiplication, matrix multiplication, division, floor division, remainder "
 "[#]_"
 msgstr ""
 
-#: ../../reference/expressions.rst:2274
+#: ../../reference/expressions.rst:2292
 msgid "``+``, ``-``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2274
+#: ../../reference/expressions.rst:2292
 msgid "Addition and subtraction"
 msgstr ""
 
-#: ../../reference/expressions.rst:2276
+#: ../../reference/expressions.rst:2294
 msgid "``<<``, ``>>``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2276
+#: ../../reference/expressions.rst:2294
 msgid "Shifts"
 msgstr ""
 
-#: ../../reference/expressions.rst:2278
+#: ../../reference/expressions.rst:2296
 msgid "``&``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2278
+#: ../../reference/expressions.rst:2296
 msgid "Bitwise AND"
 msgstr ""
 
-#: ../../reference/expressions.rst:2280
+#: ../../reference/expressions.rst:2298
 msgid "``^``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2280
+#: ../../reference/expressions.rst:2298
 msgid "Bitwise XOR"
 msgstr ""
 
-#: ../../reference/expressions.rst:2282
+#: ../../reference/expressions.rst:2300
 msgid "``|``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2282
+#: ../../reference/expressions.rst:2300
 msgid "Bitwise OR"
 msgstr ""
 
-#: ../../reference/expressions.rst:2284
+#: ../../reference/expressions.rst:2302
 msgid ""
 ":keyword:`in`, :keyword:`not in`, :keyword:`is`, :keyword:`is not`, ``<``, "
 "``<=``, ``>``, ``>=``, ``!=``, ``==``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2284
+#: ../../reference/expressions.rst:2302
 msgid "Comparisons, including membership tests and identity tests"
 msgstr ""
 
-#: ../../reference/expressions.rst:2288
+#: ../../reference/expressions.rst:2306
 msgid ":keyword:`not x <not>`"
 msgstr ""
 
-#: ../../reference/expressions.rst:2288
+#: ../../reference/expressions.rst:2306
 msgid "Boolean NOT"
 msgstr ""
 
-#: ../../reference/expressions.rst:2290
+#: ../../reference/expressions.rst:2308
 msgid ":keyword:`and`"
 msgstr ""
 
-#: ../../reference/expressions.rst:2290
+#: ../../reference/expressions.rst:2308
 msgid "Boolean AND"
 msgstr ""
 
-#: ../../reference/expressions.rst:2292
+#: ../../reference/expressions.rst:2310
 msgid ":keyword:`or`"
 msgstr ""
 
-#: ../../reference/expressions.rst:2292
+#: ../../reference/expressions.rst:2310
 msgid "Boolean OR"
 msgstr ""
 
-#: ../../reference/expressions.rst:2294
+#: ../../reference/expressions.rst:2312
 msgid ":keyword:`if <if_expr>` -- :keyword:`!else`"
 msgstr ""
 
-#: ../../reference/expressions.rst:2294
+#: ../../reference/expressions.rst:2312
 msgid "Conditional expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:2296
+#: ../../reference/expressions.rst:2314
 msgid ":keyword:`lambda`"
 msgstr ""
 
-#: ../../reference/expressions.rst:2296
+#: ../../reference/expressions.rst:2314
 msgid "Lambda expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:2298
+#: ../../reference/expressions.rst:2316
 msgid "``:=``"
 msgstr ""
 
-#: ../../reference/expressions.rst:2298
+#: ../../reference/expressions.rst:2316
 msgid "Assignment expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:2303
+#: ../../reference/expressions.rst:2321
 msgid "Footnotes"
 msgstr "Примечания"
 
-#: ../../reference/expressions.rst:2304
+#: ../../reference/expressions.rst:2322
 msgid ""
 "While ``abs(x%y) < abs(y)`` is true mathematically, for floats it may not be"
 " true numerically due to roundoff.  For example, and assuming a platform on "
@@ -2718,7 +2748,7 @@ msgid ""
 "approach is more appropriate depends on the application."
 msgstr ""
 
-#: ../../reference/expressions.rst:2313
+#: ../../reference/expressions.rst:2331
 msgid ""
 "If x is very close to an exact integer multiple of y, it's possible for "
 "``x//y`` to be one larger than ``(x-x%y)//y`` due to rounding.  In such "
@@ -2726,7 +2756,7 @@ msgid ""
 "``divmod(x,y)[0] * y + x % y`` be very close to ``x``."
 msgstr ""
 
-#: ../../reference/expressions.rst:2318
+#: ../../reference/expressions.rst:2336
 msgid ""
 "The Unicode standard distinguishes between :dfn:`code points` (e.g. U+0041) "
 "and :dfn:`abstract characters` (e.g. \"LATIN CAPITAL LETTER A\"). While most"
@@ -2740,7 +2770,7 @@ msgid ""
 "(COMBINING CEDILLA)."
 msgstr ""
 
-#: ../../reference/expressions.rst:2329
+#: ../../reference/expressions.rst:2347
 msgid ""
 "The comparison operators on strings compare at the level of Unicode code "
 "points. This may be counter-intuitive to humans.  For example, ``\"\\u00C7\""
@@ -2748,13 +2778,13 @@ msgid ""
 "the same abstract character \"LATIN CAPITAL LETTER C WITH CEDILLA\"."
 msgstr ""
 
-#: ../../reference/expressions.rst:2334
+#: ../../reference/expressions.rst:2352
 msgid ""
 "To compare strings at the level of abstract characters (that is, in a way "
 "intuitive to humans), use :func:`unicodedata.normalize`."
 msgstr ""
 
-#: ../../reference/expressions.rst:2337
+#: ../../reference/expressions.rst:2355
 msgid ""
 "Due to automatic garbage-collection, free lists, and the dynamic nature of "
 "descriptors, you may notice seemingly unusual behaviour in certain uses of "
@@ -2762,22 +2792,22 @@ msgid ""
 "instance methods, or constants.  Check their documentation for more info."
 msgstr ""
 
-#: ../../reference/expressions.rst:2342
+#: ../../reference/expressions.rst:2360
 msgid ""
 "The power operator ``**`` binds less tightly than an arithmetic or bitwise "
 "unary operator on its right, that is, ``2**-1`` is ``0.5``."
 msgstr ""
 
-#: ../../reference/expressions.rst:2345
+#: ../../reference/expressions.rst:2363
 msgid ""
 "The ``%`` operator is also used for string formatting; the same precedence "
 "applies."
 msgstr ""
 
-#: ../../reference/expressions.rst:8 ../../reference/expressions.rst:548
-#: ../../reference/expressions.rst:604 ../../reference/expressions.rst:2022
-#: ../../reference/expressions.rst:2062 ../../reference/expressions.rst:2113
-#: ../../reference/expressions.rst:2140 ../../reference/expressions.rst:2168
+#: ../../reference/expressions.rst:8 ../../reference/expressions.rst:566
+#: ../../reference/expressions.rst:622 ../../reference/expressions.rst:2040
+#: ../../reference/expressions.rst:2080 ../../reference/expressions.rst:2131
+#: ../../reference/expressions.rst:2158 ../../reference/expressions.rst:2186
 msgid "expression"
 msgstr ""
 
@@ -2785,8 +2815,8 @@ msgstr ""
 msgid "BNF"
 msgstr ""
 
-#: ../../reference/expressions.rst:30 ../../reference/expressions.rst:1496
-#: ../../reference/expressions.rst:1544
+#: ../../reference/expressions.rst:30 ../../reference/expressions.rst:1514
+#: ../../reference/expressions.rst:1562
 msgid "arithmetic"
 msgstr ""
 
@@ -2806,11 +2836,11 @@ msgstr ""
 msgid "identifier"
 msgstr ""
 
-#: ../../reference/expressions.rst:113 ../../reference/expressions.rst:725
-#: ../../reference/expressions.rst:780 ../../reference/expressions.rst:911
-#: ../../reference/expressions.rst:966 ../../reference/expressions.rst:1013
-#: ../../reference/expressions.rst:1533 ../../reference/expressions.rst:1587
-#: ../../reference/expressions.rst:1696
+#: ../../reference/expressions.rst:113 ../../reference/expressions.rst:743
+#: ../../reference/expressions.rst:798 ../../reference/expressions.rst:929
+#: ../../reference/expressions.rst:984 ../../reference/expressions.rst:1031
+#: ../../reference/expressions.rst:1551 ../../reference/expressions.rst:1605
+#: ../../reference/expressions.rst:1714
 msgid "exception"
 msgstr ""
 
@@ -2834,7 +2864,7 @@ msgstr ""
 msgid "literal"
 msgstr ""
 
-#: ../../reference/expressions.rst:205 ../../reference/expressions.rst:527
+#: ../../reference/expressions.rst:205 ../../reference/expressions.rst:543
 msgid "immutable"
 msgstr ""
 
@@ -2846,15 +2876,15 @@ msgstr ""
 msgid "type"
 msgstr ""
 
-#: ../../reference/expressions.rst:205 ../../reference/expressions.rst:430
-#: ../../reference/expressions.rst:456 ../../reference/expressions.rst:484
-#: ../../reference/expressions.rst:527 ../../reference/expressions.rst:548
-#: ../../reference/expressions.rst:713 ../../reference/expressions.rst:901
-#: ../../reference/expressions.rst:1013 ../../reference/expressions.rst:1042
-#: ../../reference/expressions.rst:1126 ../../reference/expressions.rst:1238
-#: ../../reference/expressions.rst:1386 ../../reference/expressions.rst:1400
-#: ../../reference/expressions.rst:1414 ../../reference/expressions.rst:1421
-#: ../../reference/expressions.rst:1987 ../../reference/expressions.rst:2180
+#: ../../reference/expressions.rst:205 ../../reference/expressions.rst:435
+#: ../../reference/expressions.rst:461 ../../reference/expressions.rst:489
+#: ../../reference/expressions.rst:543 ../../reference/expressions.rst:566
+#: ../../reference/expressions.rst:731 ../../reference/expressions.rst:919
+#: ../../reference/expressions.rst:1031 ../../reference/expressions.rst:1060
+#: ../../reference/expressions.rst:1144 ../../reference/expressions.rst:1256
+#: ../../reference/expressions.rst:1404 ../../reference/expressions.rst:1418
+#: ../../reference/expressions.rst:1432 ../../reference/expressions.rst:1439
+#: ../../reference/expressions.rst:2005 ../../reference/expressions.rst:2198
 msgid "object"
 msgstr ""
 
@@ -2862,8 +2892,8 @@ msgstr ""
 msgid "parenthesized form"
 msgstr ""
 
-#: ../../reference/expressions.rst:317 ../../reference/expressions.rst:548
-#: ../../reference/expressions.rst:1238
+#: ../../reference/expressions.rst:317 ../../reference/expressions.rst:566
+#: ../../reference/expressions.rst:1256
 msgid "() (parentheses)"
 msgstr ""
 
@@ -2871,28 +2901,28 @@ msgstr ""
 msgid "tuple display"
 msgstr ""
 
-#: ../../reference/expressions.rst:330 ../../reference/expressions.rst:430
+#: ../../reference/expressions.rst:330 ../../reference/expressions.rst:435
 msgid "empty"
 msgstr ""
 
-#: ../../reference/expressions.rst:330 ../../reference/expressions.rst:1042
-#: ../../reference/expressions.rst:1126 ../../reference/expressions.rst:2180
+#: ../../reference/expressions.rst:330 ../../reference/expressions.rst:1060
+#: ../../reference/expressions.rst:1144 ../../reference/expressions.rst:2198
 msgid "tuple"
 msgstr ""
 
-#: ../../reference/expressions.rst:336 ../../reference/expressions.rst:2202
+#: ../../reference/expressions.rst:336 ../../reference/expressions.rst:2220
 msgid "comma"
 msgstr ""
 
-#: ../../reference/expressions.rst:336 ../../reference/expressions.rst:430
-#: ../../reference/expressions.rst:456 ../../reference/expressions.rst:484
-#: ../../reference/expressions.rst:1120 ../../reference/expressions.rst:1238
-#: ../../reference/expressions.rst:2168
+#: ../../reference/expressions.rst:336 ../../reference/expressions.rst:435
+#: ../../reference/expressions.rst:461 ../../reference/expressions.rst:489
+#: ../../reference/expressions.rst:1138 ../../reference/expressions.rst:1256
+#: ../../reference/expressions.rst:2186
 msgid ", (comma)"
 msgstr ""
 
-#: ../../reference/expressions.rst:351 ../../reference/expressions.rst:430
-#: ../../reference/expressions.rst:456 ../../reference/expressions.rst:484
+#: ../../reference/expressions.rst:351 ../../reference/expressions.rst:435
+#: ../../reference/expressions.rst:461 ../../reference/expressions.rst:489
 msgid "comprehensions"
 msgstr ""
 
@@ -2900,11 +2930,11 @@ msgstr ""
 msgid "for"
 msgstr ""
 
-#: ../../reference/expressions.rst:361 ../../reference/expressions.rst:396
+#: ../../reference/expressions.rst:361 ../../reference/expressions.rst:398
 msgid "in comprehensions"
 msgstr ""
 
-#: ../../reference/expressions.rst:361 ../../reference/expressions.rst:2113
+#: ../../reference/expressions.rst:361 ../../reference/expressions.rst:2131
 msgid "if"
 msgstr ""
 
@@ -2912,612 +2942,612 @@ msgstr ""
 msgid "async for"
 msgstr ""
 
-#: ../../reference/expressions.rst:396 ../../reference/expressions.rst:1439
+#: ../../reference/expressions.rst:398 ../../reference/expressions.rst:1457
 msgid "await"
 msgstr ""
 
-#: ../../reference/expressions.rst:430 ../../reference/expressions.rst:1013
-#: ../../reference/expressions.rst:1042 ../../reference/expressions.rst:1126
-#: ../../reference/expressions.rst:2168
+#: ../../reference/expressions.rst:435 ../../reference/expressions.rst:1031
+#: ../../reference/expressions.rst:1060 ../../reference/expressions.rst:1144
+#: ../../reference/expressions.rst:2186
 msgid "list"
 msgstr ""
 
-#: ../../reference/expressions.rst:430 ../../reference/expressions.rst:456
-#: ../../reference/expressions.rst:484
+#: ../../reference/expressions.rst:435 ../../reference/expressions.rst:461
+#: ../../reference/expressions.rst:489
 msgid "display"
 msgstr ""
 
-#: ../../reference/expressions.rst:430 ../../reference/expressions.rst:1038
+#: ../../reference/expressions.rst:435 ../../reference/expressions.rst:1056
 msgid "[] (square brackets)"
 msgstr ""
 
-#: ../../reference/expressions.rst:430
+#: ../../reference/expressions.rst:435
 msgid "list expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:430 ../../reference/expressions.rst:456
-#: ../../reference/expressions.rst:2168
+#: ../../reference/expressions.rst:435 ../../reference/expressions.rst:461
+#: ../../reference/expressions.rst:2186
 msgid "expression list"
 msgstr ""
 
-#: ../../reference/expressions.rst:456
+#: ../../reference/expressions.rst:461
 msgid "set"
 msgstr ""
 
-#: ../../reference/expressions.rst:456 ../../reference/expressions.rst:484
+#: ../../reference/expressions.rst:461 ../../reference/expressions.rst:489
 msgid "{} (curly brackets)"
 msgstr ""
 
-#: ../../reference/expressions.rst:456
+#: ../../reference/expressions.rst:461
 msgid "set expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:484 ../../reference/expressions.rst:510
-#: ../../reference/expressions.rst:1042
+#: ../../reference/expressions.rst:489 ../../reference/expressions.rst:515
+#: ../../reference/expressions.rst:1060
 msgid "dictionary"
 msgstr ""
 
-#: ../../reference/expressions.rst:484
+#: ../../reference/expressions.rst:489
 msgid "key"
 msgstr ""
 
-#: ../../reference/expressions.rst:484
+#: ../../reference/expressions.rst:489
 msgid "value"
 msgstr ""
 
-#: ../../reference/expressions.rst:484
+#: ../../reference/expressions.rst:489
 msgid "key/value pair"
 msgstr ""
 
-#: ../../reference/expressions.rst:484
+#: ../../reference/expressions.rst:489
 msgid "dictionary expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:484 ../../reference/expressions.rst:1120
-#: ../../reference/expressions.rst:2140
+#: ../../reference/expressions.rst:489 ../../reference/expressions.rst:1138
+#: ../../reference/expressions.rst:2158
 msgid ": (colon)"
 msgstr ""
 
-#: ../../reference/expressions.rst:484
+#: ../../reference/expressions.rst:489
 msgid "in dictionary expressions"
 msgstr ""
 
-#: ../../reference/expressions.rst:484 ../../reference/expressions.rst:510
+#: ../../reference/expressions.rst:489 ../../reference/expressions.rst:515
 msgid "in dictionary displays"
 msgstr ""
 
-#: ../../reference/expressions.rst:510 ../../reference/expressions.rst:1321
-#: ../../reference/expressions.rst:2187
+#: ../../reference/expressions.rst:515 ../../reference/expressions.rst:1339
+#: ../../reference/expressions.rst:2205
 msgid "unpacking"
 msgstr ""
 
-#: ../../reference/expressions.rst:510 ../../reference/expressions.rst:1351
-#: ../../reference/expressions.rst:1459
+#: ../../reference/expressions.rst:515 ../../reference/expressions.rst:1369
+#: ../../reference/expressions.rst:1477
 msgid "**"
 msgstr ""
 
-#: ../../reference/expressions.rst:527
+#: ../../reference/expressions.rst:543
 msgid "hashable"
 msgstr ""
 
-#: ../../reference/expressions.rst:548 ../../reference/expressions.rst:604
-#: ../../reference/expressions.rst:713
+#: ../../reference/expressions.rst:566 ../../reference/expressions.rst:622
+#: ../../reference/expressions.rst:731
 msgid "generator"
 msgstr ""
 
-#: ../../reference/expressions.rst:548
+#: ../../reference/expressions.rst:566
 msgid "generator expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:604 ../../reference/expressions.rst:1439
+#: ../../reference/expressions.rst:622 ../../reference/expressions.rst:1457
 msgid "keyword"
 msgstr ""
 
-#: ../../reference/expressions.rst:604 ../../reference/expressions.rst:802
+#: ../../reference/expressions.rst:622 ../../reference/expressions.rst:820
 msgid "yield"
 msgstr ""
 
-#: ../../reference/expressions.rst:604 ../../reference/expressions.rst:672
+#: ../../reference/expressions.rst:622 ../../reference/expressions.rst:690
 msgid "from"
 msgstr ""
 
-#: ../../reference/expressions.rst:604 ../../reference/expressions.rst:1386
-#: ../../reference/expressions.rst:1400 ../../reference/expressions.rst:2140
+#: ../../reference/expressions.rst:622 ../../reference/expressions.rst:1404
+#: ../../reference/expressions.rst:1418 ../../reference/expressions.rst:2158
 msgid "function"
 msgstr ""
 
-#: ../../reference/expressions.rst:658
+#: ../../reference/expressions.rst:676
 msgid "coroutine"
 msgstr ""
 
-#: ../../reference/expressions.rst:672
+#: ../../reference/expressions.rst:690
 msgid "yield from expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:725
+#: ../../reference/expressions.rst:743
 msgid "StopIteration"
 msgstr ""
 
-#: ../../reference/expressions.rst:780 ../../reference/expressions.rst:966
+#: ../../reference/expressions.rst:798 ../../reference/expressions.rst:984
 msgid "GeneratorExit"
 msgstr ""
 
-#: ../../reference/expressions.rst:802
+#: ../../reference/expressions.rst:820
 msgid "examples"
 msgstr ""
 
-#: ../../reference/expressions.rst:901
+#: ../../reference/expressions.rst:919
 msgid "asynchronous-generator"
 msgstr ""
 
-#: ../../reference/expressions.rst:911
+#: ../../reference/expressions.rst:929
 msgid "StopAsyncIteration"
 msgstr ""
 
-#: ../../reference/expressions.rst:990
+#: ../../reference/expressions.rst:1008
 msgid "primary"
 msgstr ""
 
-#: ../../reference/expressions.rst:1004
+#: ../../reference/expressions.rst:1022
 msgid "attribute"
 msgstr ""
 
-#: ../../reference/expressions.rst:1004
+#: ../../reference/expressions.rst:1022
 msgid "reference"
 msgstr ""
 
-#: ../../reference/expressions.rst:1004
+#: ../../reference/expressions.rst:1022
 msgid ". (dot)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1004
+#: ../../reference/expressions.rst:1022
 msgid "attribute reference"
 msgstr ""
 
-#: ../../reference/expressions.rst:1013
+#: ../../reference/expressions.rst:1031
 msgid "AttributeError"
 msgstr ""
 
-#: ../../reference/expressions.rst:1013
+#: ../../reference/expressions.rst:1031
 msgid "module"
 msgstr ""
 
-#: ../../reference/expressions.rst:1038
+#: ../../reference/expressions.rst:1056
 msgid "subscription"
 msgstr ""
 
-#: ../../reference/expressions.rst:1042 ../../reference/expressions.rst:1126
-#: ../../reference/expressions.rst:1987
+#: ../../reference/expressions.rst:1060 ../../reference/expressions.rst:1144
+#: ../../reference/expressions.rst:2005
 msgid "sequence"
 msgstr ""
 
-#: ../../reference/expressions.rst:1042
+#: ../../reference/expressions.rst:1060
 msgid "mapping"
 msgstr ""
 
-#: ../../reference/expressions.rst:1042 ../../reference/expressions.rst:1126
+#: ../../reference/expressions.rst:1060 ../../reference/expressions.rst:1144
 msgid "string"
 msgstr ""
 
-#: ../../reference/expressions.rst:1042
+#: ../../reference/expressions.rst:1060
 msgid "item"
 msgstr ""
 
-#: ../../reference/expressions.rst:1120
+#: ../../reference/expressions.rst:1138
 msgid "slicing"
 msgstr ""
 
-#: ../../reference/expressions.rst:1120
+#: ../../reference/expressions.rst:1138
 msgid "slice"
 msgstr ""
 
-#: ../../reference/expressions.rst:1238
+#: ../../reference/expressions.rst:1256
 msgid "callable"
 msgstr ""
 
-#: ../../reference/expressions.rst:1238 ../../reference/expressions.rst:1386
-#: ../../reference/expressions.rst:1400 ../../reference/expressions.rst:1414
-#: ../../reference/expressions.rst:1421 ../../reference/expressions.rst:1431
+#: ../../reference/expressions.rst:1256 ../../reference/expressions.rst:1404
+#: ../../reference/expressions.rst:1418 ../../reference/expressions.rst:1432
+#: ../../reference/expressions.rst:1439 ../../reference/expressions.rst:1449
 msgid "call"
 msgstr ""
 
-#: ../../reference/expressions.rst:1238
+#: ../../reference/expressions.rst:1256
 msgid "argument"
 msgstr ""
 
-#: ../../reference/expressions.rst:1238 ../../reference/expressions.rst:1271
+#: ../../reference/expressions.rst:1256 ../../reference/expressions.rst:1289
 msgid "call semantics"
 msgstr ""
 
-#: ../../reference/expressions.rst:1238
+#: ../../reference/expressions.rst:1256
 msgid "argument list"
 msgstr ""
 
-#: ../../reference/expressions.rst:1238
+#: ../../reference/expressions.rst:1256
 msgid "= (equals)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1238 ../../reference/expressions.rst:1321
-#: ../../reference/expressions.rst:1351
+#: ../../reference/expressions.rst:1256 ../../reference/expressions.rst:1339
+#: ../../reference/expressions.rst:1369
 msgid "in function calls"
 msgstr ""
 
-#: ../../reference/expressions.rst:1271
+#: ../../reference/expressions.rst:1289
 msgid "parameter"
 msgstr ""
 
-#: ../../reference/expressions.rst:1321 ../../reference/expressions.rst:1557
-#: ../../reference/expressions.rst:2187
+#: ../../reference/expressions.rst:1339 ../../reference/expressions.rst:1575
+#: ../../reference/expressions.rst:2205
 msgid "* (asterisk)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1386
+#: ../../reference/expressions.rst:1404
 msgid "user-defined"
 msgstr ""
 
-#: ../../reference/expressions.rst:1386
+#: ../../reference/expressions.rst:1404
 msgid "user-defined function"
 msgstr ""
 
-#: ../../reference/expressions.rst:1400
+#: ../../reference/expressions.rst:1418
 msgid "built-in function"
 msgstr ""
 
-#: ../../reference/expressions.rst:1400
+#: ../../reference/expressions.rst:1418
 msgid "method"
 msgstr ""
 
-#: ../../reference/expressions.rst:1400
+#: ../../reference/expressions.rst:1418
 msgid "built-in method"
 msgstr ""
 
-#: ../../reference/expressions.rst:1414
+#: ../../reference/expressions.rst:1432
 msgid "class"
 msgstr ""
 
-#: ../../reference/expressions.rst:1414
+#: ../../reference/expressions.rst:1432
 msgid "class object"
 msgstr ""
 
-#: ../../reference/expressions.rst:1421
+#: ../../reference/expressions.rst:1439
 msgid "class instance"
 msgstr ""
 
-#: ../../reference/expressions.rst:1421 ../../reference/expressions.rst:1431
+#: ../../reference/expressions.rst:1439 ../../reference/expressions.rst:1449
 msgid "instance"
 msgstr ""
 
-#: ../../reference/expressions.rst:1431
+#: ../../reference/expressions.rst:1449
 msgid "__call__() (object method)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1459
+#: ../../reference/expressions.rst:1477
 msgid "power"
 msgstr ""
 
-#: ../../reference/expressions.rst:1459 ../../reference/expressions.rst:1496
-#: ../../reference/expressions.rst:1544 ../../reference/expressions.rst:1678
-#: ../../reference/expressions.rst:1707 ../../reference/expressions.rst:2022
+#: ../../reference/expressions.rst:1477 ../../reference/expressions.rst:1514
+#: ../../reference/expressions.rst:1562 ../../reference/expressions.rst:1696
+#: ../../reference/expressions.rst:1725 ../../reference/expressions.rst:2040
 msgid "operation"
 msgstr ""
 
-#: ../../reference/expressions.rst:1459 ../../reference/expressions.rst:1505
-#: ../../reference/expressions.rst:1514 ../../reference/expressions.rst:1522
-#: ../../reference/expressions.rst:1557 ../../reference/expressions.rst:1575
-#: ../../reference/expressions.rst:1587 ../../reference/expressions.rst:1606
-#: ../../reference/expressions.rst:1637 ../../reference/expressions.rst:1656
-#: ../../reference/expressions.rst:1678 ../../reference/expressions.rst:1716
-#: ../../reference/expressions.rst:1724 ../../reference/expressions.rst:1733
-#: ../../reference/expressions.rst:1748 ../../reference/expressions.rst:1987
-#: ../../reference/expressions.rst:1996 ../../reference/expressions.rst:2038
-#: ../../reference/expressions.rst:2043 ../../reference/expressions.rst:2048
-#: ../../reference/expressions.rst:2113 ../../reference/expressions.rst:2238
+#: ../../reference/expressions.rst:1477 ../../reference/expressions.rst:1523
+#: ../../reference/expressions.rst:1532 ../../reference/expressions.rst:1540
+#: ../../reference/expressions.rst:1575 ../../reference/expressions.rst:1593
+#: ../../reference/expressions.rst:1605 ../../reference/expressions.rst:1624
+#: ../../reference/expressions.rst:1655 ../../reference/expressions.rst:1674
+#: ../../reference/expressions.rst:1696 ../../reference/expressions.rst:1734
+#: ../../reference/expressions.rst:1742 ../../reference/expressions.rst:1751
+#: ../../reference/expressions.rst:1766 ../../reference/expressions.rst:2005
+#: ../../reference/expressions.rst:2014 ../../reference/expressions.rst:2056
+#: ../../reference/expressions.rst:2061 ../../reference/expressions.rst:2066
+#: ../../reference/expressions.rst:2131 ../../reference/expressions.rst:2256
 msgid "operator"
 msgstr ""
 
-#: ../../reference/expressions.rst:1496
+#: ../../reference/expressions.rst:1514
 msgid "unary"
 msgstr ""
 
-#: ../../reference/expressions.rst:1496 ../../reference/expressions.rst:1707
-#: ../../reference/expressions.rst:1716 ../../reference/expressions.rst:1724
-#: ../../reference/expressions.rst:1733
+#: ../../reference/expressions.rst:1514 ../../reference/expressions.rst:1725
+#: ../../reference/expressions.rst:1734 ../../reference/expressions.rst:1742
+#: ../../reference/expressions.rst:1751
 msgid "bitwise"
 msgstr ""
 
-#: ../../reference/expressions.rst:1505
+#: ../../reference/expressions.rst:1523
 msgid "negation"
 msgstr ""
 
-#: ../../reference/expressions.rst:1505
+#: ../../reference/expressions.rst:1523
 msgid "minus"
 msgstr ""
 
-#: ../../reference/expressions.rst:1505 ../../reference/expressions.rst:1656
+#: ../../reference/expressions.rst:1523 ../../reference/expressions.rst:1674
 msgid "- (minus)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1505 ../../reference/expressions.rst:1514
+#: ../../reference/expressions.rst:1523 ../../reference/expressions.rst:1532
 msgid "unary operator"
 msgstr ""
 
-#: ../../reference/expressions.rst:1514
+#: ../../reference/expressions.rst:1532
 msgid "plus"
 msgstr ""
 
-#: ../../reference/expressions.rst:1514 ../../reference/expressions.rst:1637
+#: ../../reference/expressions.rst:1532 ../../reference/expressions.rst:1655
 msgid "+ (plus)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1522
+#: ../../reference/expressions.rst:1540
 msgid "inversion"
 msgstr ""
 
-#: ../../reference/expressions.rst:1522
+#: ../../reference/expressions.rst:1540
 msgid "~ (tilde)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1533
+#: ../../reference/expressions.rst:1551
 msgid "TypeError"
 msgstr ""
 
-#: ../../reference/expressions.rst:1544 ../../reference/expressions.rst:1707
+#: ../../reference/expressions.rst:1562 ../../reference/expressions.rst:1725
 msgid "binary"
 msgstr ""
 
-#: ../../reference/expressions.rst:1557
+#: ../../reference/expressions.rst:1575
 msgid "multiplication"
 msgstr ""
 
-#: ../../reference/expressions.rst:1575
+#: ../../reference/expressions.rst:1593
 msgid "matrix multiplication"
 msgstr ""
 
-#: ../../reference/expressions.rst:1575
+#: ../../reference/expressions.rst:1593
 msgid "@ (at)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1587
+#: ../../reference/expressions.rst:1605
 msgid "ZeroDivisionError"
 msgstr ""
 
-#: ../../reference/expressions.rst:1587
+#: ../../reference/expressions.rst:1605
 msgid "division"
 msgstr ""
 
-#: ../../reference/expressions.rst:1587
+#: ../../reference/expressions.rst:1605
 msgid "/ (slash)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1587
+#: ../../reference/expressions.rst:1605
 msgid "//"
 msgstr ""
 
-#: ../../reference/expressions.rst:1606
+#: ../../reference/expressions.rst:1624
 msgid "modulo"
 msgstr ""
 
-#: ../../reference/expressions.rst:1606
+#: ../../reference/expressions.rst:1624
 msgid "% (percent)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1637
+#: ../../reference/expressions.rst:1655
 msgid "addition"
 msgstr ""
 
-#: ../../reference/expressions.rst:1637 ../../reference/expressions.rst:1656
+#: ../../reference/expressions.rst:1655 ../../reference/expressions.rst:1674
 msgid "binary operator"
 msgstr ""
 
-#: ../../reference/expressions.rst:1656
+#: ../../reference/expressions.rst:1674
 msgid "subtraction"
 msgstr ""
 
-#: ../../reference/expressions.rst:1678
+#: ../../reference/expressions.rst:1696
 msgid "shifting"
 msgstr ""
 
-#: ../../reference/expressions.rst:1678
+#: ../../reference/expressions.rst:1696
 msgid "<<"
 msgstr ""
 
-#: ../../reference/expressions.rst:1678
+#: ../../reference/expressions.rst:1696
 msgid ">>"
 msgstr ""
 
-#: ../../reference/expressions.rst:1696
+#: ../../reference/expressions.rst:1714
 msgid "ValueError"
 msgstr ""
 
-#: ../../reference/expressions.rst:1716 ../../reference/expressions.rst:2043
+#: ../../reference/expressions.rst:1734 ../../reference/expressions.rst:2061
 msgid "and"
 msgstr ""
 
-#: ../../reference/expressions.rst:1716
+#: ../../reference/expressions.rst:1734
 msgid "& (ampersand)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1724
+#: ../../reference/expressions.rst:1742
 msgid "xor"
 msgstr ""
 
-#: ../../reference/expressions.rst:1724
+#: ../../reference/expressions.rst:1742
 msgid "exclusive"
 msgstr ""
 
-#: ../../reference/expressions.rst:1724 ../../reference/expressions.rst:1733
-#: ../../reference/expressions.rst:2048
+#: ../../reference/expressions.rst:1742 ../../reference/expressions.rst:1751
+#: ../../reference/expressions.rst:2066
 msgid "or"
 msgstr ""
 
-#: ../../reference/expressions.rst:1724
+#: ../../reference/expressions.rst:1742
 msgid "^ (caret)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1733
+#: ../../reference/expressions.rst:1751
 msgid "inclusive"
 msgstr ""
 
-#: ../../reference/expressions.rst:1733
+#: ../../reference/expressions.rst:1751
 msgid "| (vertical bar)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1748
+#: ../../reference/expressions.rst:1766
 msgid "comparison"
 msgstr ""
 
-#: ../../reference/expressions.rst:1748
+#: ../../reference/expressions.rst:1766
 msgid "C"
 msgstr ""
 
-#: ../../reference/expressions.rst:1748
+#: ../../reference/expressions.rst:1766
 msgid "language"
 msgstr ""
 
-#: ../../reference/expressions.rst:1748
+#: ../../reference/expressions.rst:1766
 msgid "< (less)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1748
+#: ../../reference/expressions.rst:1766
 msgid "> (greater)"
 msgstr ""
 
-#: ../../reference/expressions.rst:1748
+#: ../../reference/expressions.rst:1766
 msgid "<="
 msgstr ""
 
-#: ../../reference/expressions.rst:1748
+#: ../../reference/expressions.rst:1766
 msgid ">="
 msgstr ""
 
-#: ../../reference/expressions.rst:1748
+#: ../../reference/expressions.rst:1766
 msgid "=="
 msgstr ""
 
-#: ../../reference/expressions.rst:1748
+#: ../../reference/expressions.rst:1766
 msgid "!="
 msgstr ""
 
-#: ../../reference/expressions.rst:1772
+#: ../../reference/expressions.rst:1790
 msgid "chaining"
 msgstr ""
 
-#: ../../reference/expressions.rst:1772
+#: ../../reference/expressions.rst:1790
 msgid "comparisons"
 msgstr ""
 
-#: ../../reference/expressions.rst:1987
+#: ../../reference/expressions.rst:2005
 msgid "in"
 msgstr ""
 
-#: ../../reference/expressions.rst:1987
+#: ../../reference/expressions.rst:2005
 msgid "not in"
 msgstr ""
 
-#: ../../reference/expressions.rst:1987
+#: ../../reference/expressions.rst:2005
 msgid "membership"
 msgstr ""
 
-#: ../../reference/expressions.rst:1987 ../../reference/expressions.rst:1996
+#: ../../reference/expressions.rst:2005 ../../reference/expressions.rst:2014
 msgid "test"
 msgstr ""
 
-#: ../../reference/expressions.rst:1996
+#: ../../reference/expressions.rst:2014
 msgid "is"
 msgstr ""
 
-#: ../../reference/expressions.rst:1996
+#: ../../reference/expressions.rst:2014
 msgid "is not"
 msgstr ""
 
-#: ../../reference/expressions.rst:1996
+#: ../../reference/expressions.rst:2014
 msgid "identity"
 msgstr ""
 
-#: ../../reference/expressions.rst:2022
+#: ../../reference/expressions.rst:2040
 msgid "Conditional"
 msgstr ""
 
-#: ../../reference/expressions.rst:2022
+#: ../../reference/expressions.rst:2040
 msgid "Boolean"
 msgstr ""
 
-#: ../../reference/expressions.rst:2038
+#: ../../reference/expressions.rst:2056
 msgid "not"
 msgstr ""
 
-#: ../../reference/expressions.rst:2062
+#: ../../reference/expressions.rst:2080
 msgid ":= (colon equals)"
 msgstr ""
 
-#: ../../reference/expressions.rst:2062
+#: ../../reference/expressions.rst:2080
 msgid "assignment expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:2062
+#: ../../reference/expressions.rst:2080
 msgid "walrus operator"
 msgstr ""
 
-#: ../../reference/expressions.rst:2062
+#: ../../reference/expressions.rst:2080
 msgid "named expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:2062
+#: ../../reference/expressions.rst:2080
 msgid "assignment"
 msgstr ""
 
-#: ../../reference/expressions.rst:2113
+#: ../../reference/expressions.rst:2131
 msgid "conditional"
 msgstr ""
 
-#: ../../reference/expressions.rst:2113
+#: ../../reference/expressions.rst:2131
 msgid "ternary"
 msgstr ""
 
-#: ../../reference/expressions.rst:2113
+#: ../../reference/expressions.rst:2131
 msgid "conditional expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:2113
+#: ../../reference/expressions.rst:2131
 msgid "else"
 msgstr ""
 
-#: ../../reference/expressions.rst:2140
+#: ../../reference/expressions.rst:2158
 msgid "lambda"
 msgstr ""
 
-#: ../../reference/expressions.rst:2140
+#: ../../reference/expressions.rst:2158
 msgid "form"
 msgstr ""
 
-#: ../../reference/expressions.rst:2140
+#: ../../reference/expressions.rst:2158
 msgid "anonymous"
 msgstr ""
 
-#: ../../reference/expressions.rst:2140
+#: ../../reference/expressions.rst:2158
 msgid "lambda expression"
 msgstr ""
 
-#: ../../reference/expressions.rst:2187
+#: ../../reference/expressions.rst:2205
 msgid "iterable"
 msgstr ""
 
-#: ../../reference/expressions.rst:2187
+#: ../../reference/expressions.rst:2205
 msgid "in expression lists"
 msgstr ""
 
-#: ../../reference/expressions.rst:2202
+#: ../../reference/expressions.rst:2220
 msgid "trailing"
 msgstr ""
 
-#: ../../reference/expressions.rst:2217
+#: ../../reference/expressions.rst:2235
 msgid "evaluation"
 msgstr ""
 
-#: ../../reference/expressions.rst:2217
+#: ../../reference/expressions.rst:2235
 msgid "order"
 msgstr ""
 
-#: ../../reference/expressions.rst:2238
+#: ../../reference/expressions.rst:2256
 msgid "precedence"
 msgstr ""

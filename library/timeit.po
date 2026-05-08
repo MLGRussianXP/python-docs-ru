@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# python-doc bot, 2025
+# python-doc bot, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-07 14:20+0000\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: python-doc bot, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/timeit.rst:23
-msgid "Basic Examples"
+msgid "Basic examples"
 msgstr ""
 
 #: ../../library/timeit.rst:25
@@ -91,7 +91,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/timeit.rst:60
-msgid "Python Interface"
+msgid "Python interface"
 msgstr ""
 
 #: ../../library/timeit.rst:62
@@ -119,7 +119,7 @@ msgid ""
 "namespace in which to execute the code."
 msgstr ""
 
-#: ../../library/timeit.rst:86 ../../library/timeit.rst:183
+#: ../../library/timeit.rst:86 ../../library/timeit.rst:186
 msgid "Default value of *repeat* changed from 3 to 5."
 msgstr ""
 
@@ -200,10 +200,10 @@ msgstr ""
 #: ../../library/timeit.rst:150
 msgid ""
 "This is a convenience function that calls :meth:`.timeit` repeatedly so that"
-" the total time >= 0.2 second, returning the eventual (number of loops, time"
-" taken for that number of loops). It calls :meth:`.timeit` with increasing "
-"numbers from the sequence 1, 2, 5, 10, 20, 50, ... until the time taken is "
-"at least 0.2 seconds."
+" the total time >= *Timer.target_time* seconds, returning the eventual "
+"(number of loops, time taken for that number of loops). It calls "
+":meth:`.timeit` with increasing numbers from the sequence 1, 2, 5, 10, 20, "
+"50, ... until the time taken is at least *target_time* seconds."
 msgstr ""
 
 #: ../../library/timeit.rst:156
@@ -212,11 +212,15 @@ msgid ""
 "trial with two arguments: ``callback(number, time_taken)``."
 msgstr ""
 
-#: ../../library/timeit.rst:164
+#: ../../library/timeit.rst:161
+msgid "The optional *target_time* parameter was added."
+msgstr ""
+
+#: ../../library/timeit.rst:167
 msgid "Call :meth:`.timeit` a few times."
 msgstr ""
 
-#: ../../library/timeit.rst:166
+#: ../../library/timeit.rst:169
 msgid ""
 "This is a convenience function that calls the :meth:`.timeit` repeatedly, "
 "returning a list of results.  The first argument specifies how many times to"
@@ -224,7 +228,7 @@ msgid ""
 "for :meth:`.timeit`."
 msgstr ""
 
-#: ../../library/timeit.rst:173
+#: ../../library/timeit.rst:176
 msgid ""
 "It's tempting to calculate mean and standard deviation from the result "
 "vector and report these.  However, this is not very useful. In a typical "
@@ -237,15 +241,15 @@ msgid ""
 "statistics."
 msgstr ""
 
-#: ../../library/timeit.rst:189
+#: ../../library/timeit.rst:192
 msgid "Helper to print a traceback from the timed code."
 msgstr ""
 
-#: ../../library/timeit.rst:191
+#: ../../library/timeit.rst:194
 msgid "Typical use::"
 msgstr ""
 
-#: ../../library/timeit.rst:193
+#: ../../library/timeit.rst:196
 msgid ""
 "t = Timer(...)       # outside the try/except\n"
 "try:\n"
@@ -254,64 +258,70 @@ msgid ""
 "    t.print_exc()"
 msgstr ""
 
-#: ../../library/timeit.rst:199
+#: ../../library/timeit.rst:202
 msgid ""
 "The advantage over the standard traceback is that source lines in the "
 "compiled template will be displayed.  The optional *file* argument directs "
 "where the traceback is sent; it defaults to :data:`sys.stderr`."
 msgstr ""
 
-#: ../../library/timeit.rst:207
-msgid "Command-Line Interface"
+#: ../../library/timeit.rst:210
+msgid "Command-line interface"
 msgstr ""
 
-#: ../../library/timeit.rst:209
+#: ../../library/timeit.rst:212
 msgid ""
 "When called as a program from the command line, the following form is used::"
 msgstr ""
 
-#: ../../library/timeit.rst:211
+#: ../../library/timeit.rst:214
 msgid ""
 "python -m timeit [-n N] [-r N] [-u U] [-s S] [-p] [-v] [-h] [statement ...]"
 msgstr ""
 
-#: ../../library/timeit.rst:213
+#: ../../library/timeit.rst:216
 msgid "Where the following options are understood:"
 msgstr ""
 
-#: ../../library/timeit.rst:219
+#: ../../library/timeit.rst:222
 msgid "how many times to execute 'statement'"
 msgstr ""
 
-#: ../../library/timeit.rst:223
+#: ../../library/timeit.rst:226
 msgid "how many times to repeat the timer (default 5)"
 msgstr ""
 
-#: ../../library/timeit.rst:227
+#: ../../library/timeit.rst:230
 msgid "statement to be executed once initially (default ``pass``)"
 msgstr ""
 
-#: ../../library/timeit.rst:231
+#: ../../library/timeit.rst:234
 msgid ""
 "measure process time, not wallclock time, using :func:`time.process_time` "
 "instead of :func:`time.perf_counter`, which is the default"
 msgstr ""
 
-#: ../../library/timeit.rst:238
+#: ../../library/timeit.rst:241
 msgid ""
 "specify a time unit for timer output; can select ``nsec``, ``usec``, "
 "``msec``, or ``sec``"
 msgstr ""
 
-#: ../../library/timeit.rst:244
+#: ../../library/timeit.rst:247
+msgid ""
+"if :option:`--number` is 0, the code will run until it takes at least this "
+"many seconds (default: 0.2)"
+msgstr ""
+
+#: ../../library/timeit.rst:254
 msgid "print raw timing results; repeat for more digits precision"
 msgstr ""
 
-#: ../../library/timeit.rst:248
+#: ../../library/timeit.rst:258
 msgid "print a short usage message and exit"
 msgstr ""
 
-#: ../../library/timeit.rst:250
+#: ../../library/timeit.rst:260
 msgid ""
 "A multi-line statement may be given by specifying each line as a separate "
 "statement argument; indented lines are possible by enclosing an argument in "
@@ -319,14 +329,14 @@ msgid ""
 "similarly."
 msgstr ""
 
-#: ../../library/timeit.rst:255
+#: ../../library/timeit.rst:265
 msgid ""
 "If :option:`-n` is not given, a suitable number of loops is calculated by "
 "trying increasing numbers from the sequence 1, 2, 5, 10, 20, 50, ... until "
-"the total time is at least 0.2 seconds."
+"the total time is at least :option:`--target-time` seconds (default: 0.2)."
 msgstr ""
 
-#: ../../library/timeit.rst:259
+#: ../../library/timeit.rst:269
 msgid ""
 ":func:`default_timer` measurements can be affected by other programs running"
 " on the same machine, so the best thing to do when accurate timing is "
@@ -336,7 +346,7 @@ msgid ""
 "measure CPU time."
 msgstr ""
 
-#: ../../library/timeit.rst:267
+#: ../../library/timeit.rst:277
 msgid ""
 "There is a certain baseline overhead associated with executing a pass "
 "statement. The code here doesn't try to hide it, but you should be aware of "
@@ -344,17 +354,23 @@ msgid ""
 "arguments, and it might differ between Python versions."
 msgstr ""
 
-#: ../../library/timeit.rst:276
+#: ../../library/timeit.rst:282
+msgid ""
+"Output is in color by default and can be :ref:`controlled using environment "
+"variables <using-on-controlling-color>`."
+msgstr ""
+
+#: ../../library/timeit.rst:289
 msgid "Examples"
 msgstr ""
 
-#: ../../library/timeit.rst:278
+#: ../../library/timeit.rst:291
 msgid ""
 "It is possible to provide a setup statement that is executed only once at "
 "the beginning:"
 msgstr ""
 
-#: ../../library/timeit.rst:280
+#: ../../library/timeit.rst:293
 msgid ""
 "$ python -m timeit -s \"text = 'sample string'; char = 'g'\" \"char in text\"\n"
 "5000000 loops, best of 5: 0.0877 usec per loop\n"
@@ -362,7 +378,7 @@ msgid ""
 "1000000 loops, best of 5: 0.342 usec per loop"
 msgstr ""
 
-#: ../../library/timeit.rst:287
+#: ../../library/timeit.rst:300
 msgid ""
 "In the output, there are three fields. The loop count, which tells you how "
 "many times the statement body was run per timing loop repetition. The "
@@ -372,7 +388,7 @@ msgid ""
 " repetition took divided by the loop count."
 msgstr ""
 
-#: ../../library/timeit.rst:296
+#: ../../library/timeit.rst:309
 msgid ""
 ">>> import timeit\n"
 ">>> timeit.timeit('char in text', setup='text = \"sample string\"; char = \"g\"')\n"
@@ -381,11 +397,11 @@ msgid ""
 "1.7246671520006203"
 msgstr ""
 
-#: ../../library/timeit.rst:302
+#: ../../library/timeit.rst:315
 msgid "The same can be done using the :class:`Timer` class and its methods::"
 msgstr ""
 
-#: ../../library/timeit.rst:304
+#: ../../library/timeit.rst:317
 msgid ""
 ">>> import timeit\n"
 ">>> t = timeit.Timer('char in text', setup='text = \"sample string\"; char = \"g\"')\n"
@@ -395,7 +411,7 @@ msgid ""
 "[0.40183617287970225, 0.37027556854118704, 0.38344867356679524, 0.3712595970846668, 0.37866875250654886]"
 msgstr ""
 
-#: ../../library/timeit.rst:312
+#: ../../library/timeit.rst:325
 msgid ""
 "The following examples show how to time expressions that contain multiple "
 "lines. Here we compare the cost of using :func:`hasattr` vs. "
@@ -403,7 +419,7 @@ msgid ""
 "attributes:"
 msgstr ""
 
-#: ../../library/timeit.rst:316
+#: ../../library/timeit.rst:329
 msgid ""
 "$ python -m timeit \"try:\" \"  str.__bool__\" \"except AttributeError:\" \"  pass\"\n"
 "20000 loops, best of 5: 15.7 usec per loop\n"
@@ -416,7 +432,7 @@ msgid ""
 "100000 loops, best of 5: 2.23 usec per loop"
 msgstr ""
 
-#: ../../library/timeit.rst:330
+#: ../../library/timeit.rst:343
 msgid ""
 ">>> import timeit\n"
 ">>> # attribute is missing\n"
@@ -446,13 +462,13 @@ msgid ""
 "0.08588060699912603"
 msgstr ""
 
-#: ../../library/timeit.rst:358
+#: ../../library/timeit.rst:371
 msgid ""
 "To give the :mod:`!timeit` module access to functions you define, you can "
 "pass a *setup* parameter which contains an import statement::"
 msgstr ""
 
-#: ../../library/timeit.rst:361
+#: ../../library/timeit.rst:374
 msgid ""
 "def test():\n"
 "    \"\"\"Stupid test function\"\"\"\n"
@@ -463,14 +479,14 @@ msgid ""
 "    print(timeit.timeit(\"test()\", setup=\"from __main__ import test\"))"
 msgstr ""
 
-#: ../../library/timeit.rst:369
+#: ../../library/timeit.rst:382
 msgid ""
 "Another option is to pass :func:`globals` to the  *globals* parameter, which"
 " will cause the code to be executed within your current global namespace.  "
 "This can be more convenient than individually specifying imports::"
 msgstr ""
 
-#: ../../library/timeit.rst:373
+#: ../../library/timeit.rst:386
 msgid ""
 "def f(x):\n"
 "    return x**2\n"

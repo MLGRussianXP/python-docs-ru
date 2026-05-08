@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-09 14:17+0000\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -23,8 +23,8 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../tutorial/stdlib2.rst:5
-msgid "Brief Tour of the Standard Library --- Part II"
-msgstr "Краткий обзор стандартной библиотеки — часть II"
+msgid "Brief tour of the standard library --- part II"
+msgstr ""
 
 #: ../../tutorial/stdlib2.rst:7
 msgid ""
@@ -36,8 +36,8 @@ msgstr ""
 "скриптах."
 
 #: ../../tutorial/stdlib2.rst:14
-msgid "Output Formatting"
-msgstr "Форматирование вывода"
+msgid "Output formatting"
+msgstr ""
 
 #: ../../tutorial/stdlib2.rst:16
 msgid ""
@@ -76,24 +76,25 @@ msgid ""
 "...     'yellow'], 'blue']]]\n"
 "...\n"
 ">>> pprint.pprint(t, width=30)\n"
-"[[[['black', 'cyan'],\n"
-"   'white',\n"
-"   ['green', 'red']],\n"
-"  [['magenta', 'yellow'],\n"
-"   'blue']]]"
+"[\n"
+"    [\n"
+"        [\n"
+"            ['black', 'cyan'],\n"
+"            'white',\n"
+"            ['green', 'red'],\n"
+"        ],\n"
+"        [\n"
+"            [\n"
+"                'magenta',\n"
+"                'yellow',\n"
+"            ],\n"
+"            'blue',\n"
+"        ],\n"
+"    ],\n"
+"]"
 msgstr ""
-">>> import pprint\n"
-">>> t = [[[['чёрный', 'бирюзовый'], 'белый', ['зелёный', 'красный']], [['пурпурный',\n"
-"...     'жёлтый'], 'синий']]]\n"
-"...\n"
-">>> pprint.pprint(t, width=30)\n"
-"[[[['чёрный', 'бирюзовый'],\n"
-"   'белый',\n"
-"   ['зелёный', 'красный']],\n"
-"  [['пурпурный', 'жёлтый'],\n"
-"   'синий']]]"
 
-#: ../../tutorial/stdlib2.rst:39
+#: ../../tutorial/stdlib2.rst:50
 msgid ""
 "The :mod:`textwrap` module formats paragraphs of text to fit a given screen "
 "width::"
@@ -101,7 +102,7 @@ msgstr ""
 "Модуль :mod:`textwrap` форматирует абзацы текста, чтобы они помещались в "
 "заданную ширину экрана::"
 
-#: ../../tutorial/stdlib2.rst:42
+#: ../../tutorial/stdlib2.rst:53
 msgid ""
 ">>> import textwrap\n"
 ">>> doc = \"\"\"The wrap() method is just like fill() except that it returns\n"
@@ -125,7 +126,7 @@ msgstr ""
 "вместо одной длинной строки с переводами\n"
 "строки между частями текста."
 
-#: ../../tutorial/stdlib2.rst:53
+#: ../../tutorial/stdlib2.rst:64
 msgid ""
 "The :mod:`locale` module accesses a database of culture specific data "
 "formats. The grouping attribute of locale's format function provides a "
@@ -136,7 +137,7 @@ msgstr ""
 "этого модуля есть специальный параметр для добавления разделителей групп в "
 "числах::"
 
-#: ../../tutorial/stdlib2.rst:57
+#: ../../tutorial/stdlib2.rst:68
 msgid ""
 ">>> import locale\n"
 ">>> locale.setlocale(locale.LC_ALL, 'English_United States.1252')\n"
@@ -160,11 +161,11 @@ msgstr ""
 "...                      x, conv['currency_symbol']), grouping=True)\n"
 "'1\\xa0234\\xa0567,80\\xa0₽'"
 
-#: ../../tutorial/stdlib2.rst:72
+#: ../../tutorial/stdlib2.rst:83
 msgid "Templating"
 msgstr "Шаблоны"
 
-#: ../../tutorial/stdlib2.rst:74
+#: ../../tutorial/stdlib2.rst:85
 msgid ""
 "The :mod:`string` module includes a versatile :class:`~string.Template` "
 "class with a simplified syntax suitable for editing by end-users.  This "
@@ -176,7 +177,7 @@ msgstr ""
 "редактирования конечными пользователями. Это позволяет пользователям "
 "настраивать свои приложения, без изменения кода программы."
 
-#: ../../tutorial/stdlib2.rst:78
+#: ../../tutorial/stdlib2.rst:89
 msgid ""
 "The format uses placeholder names formed by ``$`` with valid Python "
 "identifiers (alphanumeric characters and underscores).  Surrounding the "
@@ -190,7 +191,7 @@ msgstr ""
 "символы сразу после него, без дополнительных пробелов. Написание ``$$`` "
 "создает одиночный экранированный ``$``::"
 
-#: ../../tutorial/stdlib2.rst:83
+#: ../../tutorial/stdlib2.rst:94
 msgid ""
 ">>> from string import Template\n"
 ">>> t = Template('${village}folk send $$10 to $cause.')\n"
@@ -202,7 +203,7 @@ msgstr ""
 ">>> t.substitute(village='Ноттингем', cause='фонд канавы')\n"
 "'Ноттингемцы шлют $10 в фонд канавы.'"
 
-#: ../../tutorial/stdlib2.rst:88
+#: ../../tutorial/stdlib2.rst:99
 msgid ""
 "The :meth:`~string.Template.substitute` method raises a :exc:`KeyError` when"
 " a placeholder is not supplied in a dictionary or a keyword argument.  For "
@@ -217,7 +218,7 @@ msgstr ""
 ":meth:`~string.Template.safe_substitute` может быть более подходящим — он "
 "оставит заполнители без изменений, если данные отсутствуют::"
 
-#: ../../tutorial/stdlib2.rst:94
+#: ../../tutorial/stdlib2.rst:105
 msgid ""
 ">>> t = Template('Return the $item to $owner.')\n"
 ">>> d = dict(item='unladen swallow')\n"
@@ -237,7 +238,7 @@ msgstr ""
 ">>> t.safe_substitute(d)\n"
 "'Незагруженная ласточка возвращается $owner.'"
 
-#: ../../tutorial/stdlib2.rst:103
+#: ../../tutorial/stdlib2.rst:114
 msgid ""
 "Template subclasses can specify a custom delimiter.  For example, a batch "
 "renaming utility for a photo browser may elect to use percent signs for "
@@ -249,7 +250,7 @@ msgstr ""
 "процента для заполнителей, таких как текущая дата, номер изображения в "
 "последовательности или формат файла::"
 
-#: ../../tutorial/stdlib2.rst:107
+#: ../../tutorial/stdlib2.rst:118
 msgid ""
 ">>> import time, os.path\n"
 ">>> photofiles = ['img_1074.jpg', 'img_1076.jpg', 'img_1077.jpg']\n"
@@ -289,7 +290,7 @@ msgstr ""
 "img_1076.jpg --> Эшли_1.jpg\n"
 "img_1077.jpg --> Эшли_2.jpg"
 
-#: ../../tutorial/stdlib2.rst:126
+#: ../../tutorial/stdlib2.rst:137
 msgid ""
 "Another application for templating is separating program logic from the "
 "details of multiple output formats.  This makes it possible to substitute "
@@ -299,11 +300,11 @@ msgstr ""
 "множества выходных форматов. Это позволяет подставлять собственные шаблоны "
 "для XML-файлов, текстовых отчётов и HTML-страниц."
 
-#: ../../tutorial/stdlib2.rst:134
-msgid "Working with Binary Data Record Layouts"
-msgstr "Работа с записями бинарных данных"
+#: ../../tutorial/stdlib2.rst:145
+msgid "Working with binary data record layouts"
+msgstr ""
 
-#: ../../tutorial/stdlib2.rst:136
+#: ../../tutorial/stdlib2.rst:147
 msgid ""
 "The :mod:`struct` module provides :func:`~struct.pack` and "
 ":func:`~struct.unpack` functions for working with variable length binary "
@@ -321,7 +322,7 @@ msgstr ""
 "соответственно. Символ ``\"<\"`` указывает, что они имеют стандартный "
 "размер, а порядок байтов — little-endian::"
 
-#: ../../tutorial/stdlib2.rst:144
+#: ../../tutorial/stdlib2.rst:155
 msgid ""
 "import struct\n"
 "\n"
@@ -361,11 +362,11 @@ msgstr ""
 "\n"
 "    start += extra_size + comp_size     # перейти к следующему заголовку"
 
-#: ../../tutorial/stdlib2.rst:167
+#: ../../tutorial/stdlib2.rst:178
 msgid "Multi-threading"
 msgstr "Многопоточность"
 
-#: ../../tutorial/stdlib2.rst:169
+#: ../../tutorial/stdlib2.rst:180
 msgid ""
 "Threading is a technique for decoupling tasks which are not sequentially "
 "dependent.  Threads can be used to improve the responsiveness of "
@@ -379,7 +380,7 @@ msgstr ""
 "выполняются в фоновом режиме. Похожий сценарий — выполнение ввода/вывода "
 "параллельно с вычислениями в другом потоке."
 
-#: ../../tutorial/stdlib2.rst:174
+#: ../../tutorial/stdlib2.rst:185
 msgid ""
 "The following code shows how the high level :mod:`threading` module can run "
 "tasks in background while the main program continues to run::"
@@ -388,20 +389,19 @@ msgstr ""
 "запускать задачи в фоновом режиме, в то время как основная программа "
 "продолжает работать:"
 
-#: ../../tutorial/stdlib2.rst:177
+#: ../../tutorial/stdlib2.rst:188
 msgid ""
 "import threading, zipfile\n"
 "\n"
 "class AsyncZip(threading.Thread):\n"
 "    def __init__(self, infile, outfile):\n"
-"        threading.Thread.__init__(self)\n"
+"        super().__init__()\n"
 "        self.infile = infile\n"
 "        self.outfile = outfile\n"
 "\n"
 "    def run(self):\n"
-"        f = zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED)\n"
-"        f.write(self.infile)\n"
-"        f.close()\n"
+"        with zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED) as f:\n"
+"            f.write(self.infile)\n"
 "        print('Finished background zip of:', self.infile)\n"
 "\n"
 "background = AsyncZip('mydata.txt', 'myarchive.zip')\n"
@@ -411,28 +411,8 @@ msgid ""
 "background.join()    # Wait for the background task to finish\n"
 "print('Main program waited until background was done.')"
 msgstr ""
-"import threading, zipfile\n"
-"\n"
-"class AsyncZip(threading.Thread):\n"
-"    def __init__(self, infile, outfile):\n"
-"        threading.Thread.__init__(self)\n"
-"        self.infile = infile\n"
-"        self.outfile = outfile\n"
-"\n"
-"    def run(self):\n"
-"        f = zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED)\n"
-"        f.write(self.infile)\n"
-"        f.close()\n"
-"        print('Архивирование в фоне завершено:', self.infile)\n"
-"\n"
-"background = AsyncZip('mydata.txt', 'myarchive.zip')\n"
-"background.start()\n"
-"print('Основная программа продолжает выполняться на переднем плане.')\n"
-"\n"
-"background.join()    # Ждём, пока фоновая задача завершится\n"
-"print('Основная программа дождалась окончания фоновой задачи.')"
 
-#: ../../tutorial/stdlib2.rst:198
+#: ../../tutorial/stdlib2.rst:208
 msgid ""
 "The principal challenge of multi-threaded applications is coordinating "
 "threads that share data or other resources.  To that end, the threading "
@@ -444,7 +424,7 @@ msgstr ""
 "threading предоставляет ряд примитивов синхронизации, включая блокировки, "
 "события, условные переменные и семафоры."
 
-#: ../../tutorial/stdlib2.rst:203
+#: ../../tutorial/stdlib2.rst:213
 msgid ""
 "While those tools are powerful, minor design errors can result in problems "
 "that are difficult to reproduce.  So, the preferred approach to task "
@@ -462,11 +442,11 @@ msgstr ""
 ":class:`~queue.Queue` для межпоточного взаимодействия и координации, легче "
 "проектируются, более читабельны и надежны."
 
-#: ../../tutorial/stdlib2.rst:214
+#: ../../tutorial/stdlib2.rst:224
 msgid "Logging"
 msgstr "Логирование"
 
-#: ../../tutorial/stdlib2.rst:216
+#: ../../tutorial/stdlib2.rst:226
 msgid ""
 "The :mod:`logging` module offers a full featured and flexible logging "
 "system. At its simplest, log messages are sent to a file or to "
@@ -476,7 +456,7 @@ msgstr ""
 "журналирования. В самом простом случае сообщения журнала отправляются в файл"
 " или в ``sys.stderr``::"
 
-#: ../../tutorial/stdlib2.rst:219
+#: ../../tutorial/stdlib2.rst:229
 msgid ""
 "import logging\n"
 "logging.debug('Debugging information')\n"
@@ -492,11 +472,11 @@ msgstr ""
 "logging.error('Произошла ошибка')\n"
 "logging.critical('Критическая ошибка — завершение работы')"
 
-#: ../../tutorial/stdlib2.rst:226
+#: ../../tutorial/stdlib2.rst:236
 msgid "This produces the following output:"
 msgstr "Это приводит к следующему выводу:"
 
-#: ../../tutorial/stdlib2.rst:228
+#: ../../tutorial/stdlib2.rst:238
 msgid ""
 "WARNING:root:Warning:config file server.conf not found\n"
 "ERROR:root:Error occurred\n"
@@ -506,7 +486,7 @@ msgstr ""
 "ERROR:root:Произошла ошибка\n"
 "CRITICAL:root:Критическая ошибка — завершение работы"
 
-#: ../../tutorial/stdlib2.rst:234
+#: ../../tutorial/stdlib2.rst:244
 msgid ""
 "By default, informational and debugging messages are suppressed and the "
 "output is sent to standard error.  Other output options include routing "
@@ -523,7 +503,7 @@ msgstr ""
 ":const:`~logging.WARNING`, :const:`~logging.ERROR` и "
 ":const:`~logging.CRITICAL`."
 
-#: ../../tutorial/stdlib2.rst:241
+#: ../../tutorial/stdlib2.rst:251
 msgid ""
 "The logging system can be configured directly from Python or can be loaded "
 "from a user editable configuration file for customized logging without "
@@ -533,11 +513,11 @@ msgstr ""
 "загружать из конфигурационного файла, редактируемого пользователем, для её "
 "конфигурации без изменения приложения."
 
-#: ../../tutorial/stdlib2.rst:249
-msgid "Weak References"
-msgstr "Слабые ссылки"
+#: ../../tutorial/stdlib2.rst:259
+msgid "Weak references"
+msgstr ""
 
-#: ../../tutorial/stdlib2.rst:251
+#: ../../tutorial/stdlib2.rst:261
 msgid ""
 "Python does automatic memory management (reference counting for most objects"
 " and :term:`garbage collection` to eliminate cycles).  The memory is freed "
@@ -547,7 +527,7 @@ msgstr ""
 "большинства объектов и :term:`сбор мусора` для устранения циклов). Память "
 "освобождается вскоре после удаления последней ссылки на неё."
 
-#: ../../tutorial/stdlib2.rst:255
+#: ../../tutorial/stdlib2.rst:265
 msgid ""
 "This approach works fine for most applications but occasionally there is a "
 "need to track objects only as long as they are being used by something else."
@@ -567,7 +547,7 @@ msgstr ""
 "ссылок запускается обратный вызов. К типичным применениям этого относится "
 "кэширование объектов, создание которых является затратным::"
 
-#: ../../tutorial/stdlib2.rst:263
+#: ../../tutorial/stdlib2.rst:273
 msgid ""
 ">>> import weakref, gc\n"
 ">>> class A:\n"
@@ -588,38 +568,16 @@ msgid ""
 "Traceback (most recent call last):\n"
 "  File \"<stdin>\", line 1, in <module>\n"
 "    d['primary']                # entry was automatically removed\n"
-"  File \"C:/python314/lib/weakref.py\", line 46, in __getitem__\n"
+"  File \"C:/python315/lib/weakref.py\", line 46, in __getitem__\n"
 "    o = self.data[key]()\n"
 "KeyError: 'primary'"
 msgstr ""
-">>> import weakref, gc\n"
-">>> class A:\n"
-"...     def __init__(self, value):\n"
-"...         self.value = value\n"
-"...     def __repr__(self):\n"
-"...         return str(self.value)\n"
-"...\n"
-">>> a = A(10)                   # создаётся ссылка\n"
-">>> d = weakref.WeakValueDictionary()\n"
-">>> d['primary'] = a            # не создаётся ссылка\n"
-">>> d['primary']                # возвращается объект, если он ещё жив\n"
-"10\n"
-">>> del a                       # удаляется единственная ссылка\n"
-">>> gc.collect()                # немедленно запускается сборщик мусора\n"
-"0\n"
-">>> d['primary']                # запись была автоматически удалена\n"
-"Traceback (most recent call last):\n"
-"  File \"<stdin>\", line 1, in <module>\n"
-"    d['primary']                # запись была автоматически удалена\n"
-"  File \"C:/python314/lib/weakref.py\", line 46, in __getitem__\n"
-"    o = self.data[key]()\n"
-"KeyError: 'primary'"
 
-#: ../../tutorial/stdlib2.rst:290
-msgid "Tools for Working with Lists"
-msgstr "Инструменты для работы со списками"
+#: ../../tutorial/stdlib2.rst:300
+msgid "Tools for working with lists"
+msgstr ""
 
-#: ../../tutorial/stdlib2.rst:292
+#: ../../tutorial/stdlib2.rst:302
 msgid ""
 "Many data structure needs can be met with the built-in list type. However, "
 "sometimes there is a need for alternative implementations with different "
@@ -629,7 +587,7 @@ msgstr ""
 "встроенного типа списка. Однако иногда возникает необходимость в "
 "альтернативных реализациях с другим компромиссом в производительности."
 
-#: ../../tutorial/stdlib2.rst:296
+#: ../../tutorial/stdlib2.rst:306
 msgid ""
 "The :mod:`array` module provides an :class:`~array.array` object that is "
 "like a list that stores only homogeneous data and stores it more compactly."
@@ -643,7 +601,7 @@ msgstr ""
 "двухбайтовых беззнаковых двоичных чисел (код типа ``\"H\"``), вместо обычных"
 " 16 байтов на элемент для стандартных списков из объектов int в Python:"
 
-#: ../../tutorial/stdlib2.rst:302
+#: ../../tutorial/stdlib2.rst:312
 msgid ""
 ">>> from array import array\n"
 ">>> a = array('H', [4000, 10, 700, 22222])\n"
@@ -659,7 +617,7 @@ msgstr ""
 ">>> a[1:3]\n"
 "array('H', [10, 700])"
 
-#: ../../tutorial/stdlib2.rst:309
+#: ../../tutorial/stdlib2.rst:319
 msgid ""
 "The :mod:`collections` module provides a :class:`~collections.deque` object "
 "that is like a list with faster appends and pops from the left side but "
@@ -671,7 +629,7 @@ msgstr ""
 "левой стороны, но более медленным поиском в середине. Эти объекты хорошо "
 "подходят для реализации очередей и поиска по дереву в ширину:"
 
-#: ../../tutorial/stdlib2.rst:314
+#: ../../tutorial/stdlib2.rst:324
 msgid ""
 ">>> from collections import deque\n"
 ">>> d = deque([\"task1\", \"task2\", \"task3\"])\n"
@@ -685,7 +643,7 @@ msgstr ""
 ">>> print(\"Обработка\", d.popleft())\n"
 "Обработка задача1"
 
-#: ../../tutorial/stdlib2.rst:322
+#: ../../tutorial/stdlib2.rst:332
 msgid ""
 "unsearched = deque([starting_node])\n"
 "def breadth_first_search(unsearched):\n"
@@ -703,7 +661,7 @@ msgstr ""
 "            return m\n"
 "        unsearched.append(m)"
 
-#: ../../tutorial/stdlib2.rst:330
+#: ../../tutorial/stdlib2.rst:340
 msgid ""
 "In addition to alternative list implementations, the library also offers "
 "other tools such as the :mod:`bisect` module with functions for manipulating"
@@ -713,7 +671,7 @@ msgstr ""
 "предлагает другие инструменты, например модуль :mod:`bisect` с функциями для"
 " работы с отсортированными списками::"
 
-#: ../../tutorial/stdlib2.rst:334
+#: ../../tutorial/stdlib2.rst:344
 msgid ""
 ">>> import bisect\n"
 ">>> scores = [(100, 'perl'), (200, 'tcl'), (400, 'lua'), (500, 'python')]\n"
@@ -727,7 +685,7 @@ msgstr ""
 ">>> scores\n"
 "[(100, 'perl'), (200, 'tcl'), (300, 'ruby'), (400, 'lua'), (500, 'python')]"
 
-#: ../../tutorial/stdlib2.rst:340
+#: ../../tutorial/stdlib2.rst:350
 msgid ""
 "The :mod:`heapq` module provides functions for implementing heaps based on "
 "regular lists.  The lowest valued entry is always kept at position zero.  "
@@ -739,7 +697,7 @@ msgstr ""
 "позиции. Это полезно для приложений, которые неоднократно обращаются к "
 "наименьшему элементу, но не хотят выполнять полную сортировку списка::"
 
-#: ../../tutorial/stdlib2.rst:345
+#: ../../tutorial/stdlib2.rst:355
 msgid ""
 ">>> from heapq import heapify, heappop, heappush\n"
 ">>> data = [1, 3, 5, 7, 9, 2, 4, 6, 8, 0]\n"
@@ -755,11 +713,11 @@ msgstr ""
 ">>> [heappop(data) for i in range(3)]  # получить три наименьших элемента\n"
 "[-5, 0, 1]"
 
-#: ../../tutorial/stdlib2.rst:356
-msgid "Decimal Floating-Point Arithmetic"
-msgstr "Десятичная арифметика с плавающей точкой"
+#: ../../tutorial/stdlib2.rst:366
+msgid "Decimal floating-point arithmetic"
+msgstr ""
 
-#: ../../tutorial/stdlib2.rst:358
+#: ../../tutorial/stdlib2.rst:368
 msgid ""
 "The :mod:`decimal` module offers a :class:`~decimal.Decimal` datatype for "
 "decimal floating-point arithmetic.  Compared to the built-in :class:`float` "
@@ -770,7 +728,7 @@ msgstr ""
 ":class:`float`, реализующим двоичные числа с плавающей точкой, этот класс "
 "особенно полезен для"
 
-#: ../../tutorial/stdlib2.rst:362
+#: ../../tutorial/stdlib2.rst:372
 msgid ""
 "financial applications and other uses which require exact decimal "
 "representation,"
@@ -778,21 +736,21 @@ msgstr ""
 "финансовых приложений и других случаев, требующих точного десятичного "
 "представления,"
 
-#: ../../tutorial/stdlib2.rst:364
+#: ../../tutorial/stdlib2.rst:374
 msgid "control over precision,"
 msgstr "контроля точности,"
 
-#: ../../tutorial/stdlib2.rst:365
+#: ../../tutorial/stdlib2.rst:375
 msgid "control over rounding to meet legal or regulatory requirements,"
 msgstr ""
 "контроля округления для соответствия законодательным или нормативным "
 "требованиям,"
 
-#: ../../tutorial/stdlib2.rst:366
+#: ../../tutorial/stdlib2.rst:376
 msgid "tracking of significant decimal places, or"
 msgstr "отслеживания значащих десятичных разрядов или"
 
-#: ../../tutorial/stdlib2.rst:367
+#: ../../tutorial/stdlib2.rst:377
 msgid ""
 "applications where the user expects the results to match calculations done "
 "by hand."
@@ -800,7 +758,7 @@ msgstr ""
 "приложений, в которых пользователь ожидает, что результаты совпадут с "
 "расчётами, выполненными вручную."
 
-#: ../../tutorial/stdlib2.rst:370
+#: ../../tutorial/stdlib2.rst:380
 msgid ""
 "For example, calculating a 5% tax on a 70 cent phone charge gives different "
 "results in decimal floating point and binary floating point. The difference "
@@ -810,7 +768,7 @@ msgstr ""
 "разные результаты в десятичном и двоичном представлении чисел с плавающей "
 "точкой. Разница становится значимой, если результаты округлить до цента:"
 
-#: ../../tutorial/stdlib2.rst:374
+#: ../../tutorial/stdlib2.rst:384
 msgid ""
 ">>> from decimal import *\n"
 ">>> round(Decimal('0.70') * Decimal('1.05'), 2)\n"
@@ -824,7 +782,7 @@ msgstr ""
 ">>> round(.70 * 1.05, 2)\n"
 "0.73"
 
-#: ../../tutorial/stdlib2.rst:380
+#: ../../tutorial/stdlib2.rst:390
 msgid ""
 "The :class:`~decimal.Decimal` result keeps a trailing zero, automatically "
 "inferring four place significance from multiplicands with two place "
@@ -839,7 +797,7 @@ msgstr ""
 "которые могут возникнуть, когда двоичные числа с плавающей точкой не могут "
 "точно представить десятичные величины."
 
-#: ../../tutorial/stdlib2.rst:386
+#: ../../tutorial/stdlib2.rst:396
 msgid ""
 "Exact representation enables the :class:`~decimal.Decimal` class to perform "
 "modulo calculations and equality tests that are unsuitable for binary "
@@ -849,7 +807,7 @@ msgstr ""
 "вычисления по модулю и проверки равенства, которые непригодны для двоичных "
 "чисел с плавающей точкой::"
 
-#: ../../tutorial/stdlib2.rst:390
+#: ../../tutorial/stdlib2.rst:400
 msgid ""
 ">>> Decimal('1.00') % Decimal('.10')\n"
 "Decimal('0.00')\n"
@@ -871,7 +829,7 @@ msgstr ""
 ">>> 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 == 1.0\n"
 "False"
 
-#: ../../tutorial/stdlib2.rst:400
+#: ../../tutorial/stdlib2.rst:410
 msgid ""
 "The :mod:`decimal` module provides arithmetic with as much precision as "
 "needed::"
@@ -879,7 +837,7 @@ msgstr ""
 "Модуль :mod:`decimal` обеспечивает арифметические операции с необходимой "
 "точностью::"
 
-#: ../../tutorial/stdlib2.rst:402
+#: ../../tutorial/stdlib2.rst:412
 msgid ""
 ">>> getcontext().prec = 36\n"
 ">>> Decimal(1) / Decimal(7)\n"

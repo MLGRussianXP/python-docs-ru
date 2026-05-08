@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-07 14:14+0000\n"
+"POT-Creation-Date: 2026-05-08 18:34+0000\n"
 "PO-Revision-Date: 2025-09-16 00:00+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -655,18 +655,20 @@ msgstr ""
 
 #: ../../faq/design.rst:423
 msgid ""
-"Tuples are immutable, meaning that once a tuple has been created, you can't "
-"replace any of its elements with a new value.  Lists are mutable, meaning "
-"that you can always change a list's elements.  Only immutable elements can "
-"be used as dictionary keys, and hence only tuples and not lists can be used "
-"as keys."
-msgstr ""
-
-#: ../../faq/design.rst:430
-msgid "How are lists implemented in CPython?"
+"Tuples are :term:`immutable`, meaning that once a tuple has been created, "
+"you can't replace any of its elements with a new value.  Lists are "
+":term:`mutable`, meaning that you can always change a list's elements.  Only"
+" :term:`hashable` objects can be used as dictionary keys. Most immutable "
+"types are hashable, which is why tuples, but not lists, can be used as keys."
+" Note, however, that a tuple is only hashable if all of its elements are "
+"hashable."
 msgstr ""
 
 #: ../../faq/design.rst:432
+msgid "How are lists implemented in CPython?"
+msgstr ""
+
+#: ../../faq/design.rst:434
 msgid ""
 "CPython's lists are really variable-length arrays, not Lisp-style linked "
 "lists. The implementation uses a contiguous array of references to other "
@@ -674,13 +676,13 @@ msgid ""
 "head structure."
 msgstr ""
 
-#: ../../faq/design.rst:436
+#: ../../faq/design.rst:438
 msgid ""
 "This makes indexing a list ``a[i]`` an operation whose cost is independent "
 "of the size of the list or the value of the index."
 msgstr ""
 
-#: ../../faq/design.rst:439
+#: ../../faq/design.rst:441
 msgid ""
 "When items are appended or inserted, the array of references is resized.  "
 "Some cleverness is applied to improve the performance of appending items "
@@ -688,11 +690,11 @@ msgid ""
 "the next few times don't require an actual resize."
 msgstr ""
 
-#: ../../faq/design.rst:446
+#: ../../faq/design.rst:448
 msgid "How are dictionaries implemented in CPython?"
 msgstr ""
 
-#: ../../faq/design.rst:448
+#: ../../faq/design.rst:450
 msgid ""
 "CPython's dictionaries are implemented as resizable hash tables.  Compared "
 "to B-trees, this gives better performance for lookup (the most common "
@@ -700,7 +702,7 @@ msgid ""
 "simpler."
 msgstr ""
 
-#: ../../faq/design.rst:452
+#: ../../faq/design.rst:454
 msgid ""
 "Dictionaries work by computing a hash code for each key stored in the "
 "dictionary using the :func:`hash` built-in function.  The hash code varies "
@@ -713,11 +715,11 @@ msgid ""
 "Big-O notation -- to retrieve a key."
 msgstr ""
 
-#: ../../faq/design.rst:463
+#: ../../faq/design.rst:465
 msgid "Why must dictionary keys be immutable?"
 msgstr ""
 
-#: ../../faq/design.rst:465
+#: ../../faq/design.rst:467
 msgid ""
 "The hash table implementation of dictionaries uses a hash value calculated "
 "from the key value to find the key.  If the key were a mutable object, its "
@@ -730,7 +732,7 @@ msgid ""
 "would be different."
 msgstr ""
 
-#: ../../faq/design.rst:474
+#: ../../faq/design.rst:476
 msgid ""
 "If you want a dictionary indexed with a list, simply convert the list to a "
 "tuple first; the function ``tuple(L)`` creates a tuple with the same entries"
@@ -738,23 +740,23 @@ msgid ""
 "dictionary keys."
 msgstr ""
 
-#: ../../faq/design.rst:478
+#: ../../faq/design.rst:480
 msgid "Some unacceptable solutions that have been proposed:"
 msgstr ""
 
-#: ../../faq/design.rst:480
+#: ../../faq/design.rst:482
 msgid ""
 "Hash lists by their address (object ID).  This doesn't work because if you "
 "construct a new list with the same value it won't be found; e.g.::"
 msgstr ""
 
-#: ../../faq/design.rst:483
+#: ../../faq/design.rst:485
 msgid ""
 "mydict = {[1, 2]: '12'}\n"
 "print(mydict[[1, 2]])"
 msgstr ""
 
-#: ../../faq/design.rst:486
+#: ../../faq/design.rst:488
 msgid ""
 "would raise a :exc:`KeyError` exception because the id of the ``[1, 2]`` "
 "used in the second line differs from that in the first line.  In other "
@@ -762,14 +764,14 @@ msgid ""
 ":keyword:`is`."
 msgstr ""
 
-#: ../../faq/design.rst:490
+#: ../../faq/design.rst:492
 msgid ""
 "Make a copy when using a list as a key.  This doesn't work because the list,"
 " being a mutable object, could contain a reference to itself, and then the "
 "copying code would run into an infinite loop."
 msgstr ""
 
-#: ../../faq/design.rst:494
+#: ../../faq/design.rst:496
 msgid ""
 "Allow lists as keys but tell the user not to modify them.  This would allow "
 "a class of hard-to-track bugs in programs when you forgot or modified a list"
@@ -777,7 +779,7 @@ msgid ""
 "every value in ``d.keys()`` is usable as a key of the dictionary."
 msgstr ""
 
-#: ../../faq/design.rst:499
+#: ../../faq/design.rst:501
 msgid ""
 "Mark lists as read-only once they are used as a dictionary key.  The problem"
 " is that it's not just the top-level object that could change its value; you"
@@ -787,7 +789,7 @@ msgid ""
 "loop."
 msgstr ""
 
-#: ../../faq/design.rst:505
+#: ../../faq/design.rst:507
 msgid ""
 "There is a trick to get around this if you need to, but use it at your own "
 "risk: You can wrap a mutable structure inside a class instance which has "
@@ -797,7 +799,7 @@ msgid ""
 "the object is in the dictionary (or other structure). ::"
 msgstr ""
 
-#: ../../faq/design.rst:513
+#: ../../faq/design.rst:515
 msgid ""
 "class ListWrapper:\n"
 "    def __init__(self, the_list):\n"
@@ -817,14 +819,14 @@ msgid ""
 "        return result"
 msgstr ""
 
-#: ../../faq/design.rst:530
+#: ../../faq/design.rst:532
 msgid ""
 "Note that the hash computation is complicated by the possibility that some "
 "members of the list may be unhashable and also by the possibility of "
 "arithmetic overflow."
 msgstr ""
 
-#: ../../faq/design.rst:534
+#: ../../faq/design.rst:536
 msgid ""
 "Furthermore it must always be the case that if ``o1 == o2`` (ie "
 "``o1.__eq__(o2) is True``) then ``hash(o1) == hash(o2)`` (ie, "
@@ -833,7 +835,7 @@ msgid ""
 "and other hash based structures will misbehave."
 msgstr ""
 
-#: ../../faq/design.rst:539
+#: ../../faq/design.rst:541
 msgid ""
 "In the case of :class:`!ListWrapper`, whenever the wrapper object is in a "
 "dictionary the wrapped list must not change to avoid anomalies.  Don't do "
@@ -841,11 +843,11 @@ msgid ""
 "consequences of not meeting them correctly.  Consider yourself warned."
 msgstr ""
 
-#: ../../faq/design.rst:546
+#: ../../faq/design.rst:548
 msgid "Why doesn't list.sort() return the sorted list?"
 msgstr ""
 
-#: ../../faq/design.rst:548
+#: ../../faq/design.rst:550
 msgid ""
 "In situations where performance matters, making a copy of the list just to "
 "sort it would be wasteful. Therefore, :meth:`list.sort` sorts the list in "
@@ -855,7 +857,7 @@ msgid ""
 "around."
 msgstr ""
 
-#: ../../faq/design.rst:554
+#: ../../faq/design.rst:556
 msgid ""
 "If you want to return a new list, use the built-in :func:`sorted` function "
 "instead.  This function creates a new list from a provided iterable, sorts "
@@ -863,17 +865,17 @@ msgid ""
 "dictionary in sorted order::"
 msgstr ""
 
-#: ../../faq/design.rst:559
+#: ../../faq/design.rst:561
 msgid ""
 "for key in sorted(mydict):\n"
 "    ...  # do whatever with mydict[key]..."
 msgstr ""
 
-#: ../../faq/design.rst:564
+#: ../../faq/design.rst:566
 msgid "How do you specify and enforce an interface spec in Python?"
 msgstr ""
 
-#: ../../faq/design.rst:566
+#: ../../faq/design.rst:568
 msgid ""
 "An interface specification for a module as provided by languages such as C++"
 " and Java describes the prototypes for the methods and functions of the "
@@ -881,7 +883,7 @@ msgid ""
 " helps in the construction of large programs."
 msgstr ""
 
-#: ../../faq/design.rst:571
+#: ../../faq/design.rst:573
 msgid ""
 "Python 2.6 adds an :mod:`abc` module that lets you define Abstract Base "
 "Classes (ABCs).  You can then use :func:`isinstance` and :func:`issubclass` "
@@ -891,13 +893,13 @@ msgid ""
 " :class:`~collections.abc.MutableMapping`."
 msgstr ""
 
-#: ../../faq/design.rst:578
+#: ../../faq/design.rst:580
 msgid ""
 "For Python, many of the advantages of interface specifications can be "
 "obtained by an appropriate test discipline for components."
 msgstr ""
 
-#: ../../faq/design.rst:581
+#: ../../faq/design.rst:583
 msgid ""
 "A good test suite for a module can both provide a regression test and serve "
 "as a module interface specification and a set of examples.  Many Python "
@@ -909,7 +911,7 @@ msgid ""
 "code in a module."
 msgstr ""
 
-#: ../../faq/design.rst:589
+#: ../../faq/design.rst:591
 msgid ""
 "An appropriate testing discipline can help build large complex applications "
 "in Python as well as having interface specifications would.  In fact, it can"
@@ -921,7 +923,7 @@ msgid ""
 "test suite."
 msgstr ""
 
-#: ../../faq/design.rst:597
+#: ../../faq/design.rst:599
 msgid ""
 "Writing test suites is very helpful, and you might want to design your code "
 "to make it easily tested. One increasingly popular technique, test-driven "
@@ -930,11 +932,11 @@ msgid ""
 "not write test cases at all."
 msgstr ""
 
-#: ../../faq/design.rst:605
+#: ../../faq/design.rst:607
 msgid "Why is there no goto?"
 msgstr ""
 
-#: ../../faq/design.rst:607
+#: ../../faq/design.rst:609
 msgid ""
 "In the 1970s people realized that unrestricted goto could lead to messy "
 "\"spaghetti\" code that was hard to understand and revise. In a high-level "
@@ -945,7 +947,7 @@ msgid ""
 ":keyword:`break`)."
 msgstr ""
 
-#: ../../faq/design.rst:614
+#: ../../faq/design.rst:616
 msgid ""
 "One can also use exceptions to provide a \"structured goto\" that works even"
 " across function calls.  Many feel that exceptions can conveniently emulate "
@@ -953,7 +955,7 @@ msgid ""
 "other languages.  For example::"
 msgstr ""
 
-#: ../../faq/design.rst:620
+#: ../../faq/design.rst:622
 msgid ""
 "class label(Exception): pass  # declare a label\n"
 "\n"
@@ -966,24 +968,24 @@ msgid ""
 "..."
 msgstr ""
 
-#: ../../faq/design.rst:630
+#: ../../faq/design.rst:632
 msgid ""
 "This doesn't allow you to jump into the middle of a loop, but that's usually"
 " considered an abuse of ``goto`` anyway.  Use sparingly."
 msgstr ""
 
-#: ../../faq/design.rst:635
+#: ../../faq/design.rst:637
 msgid "Why can't raw strings (r-strings) end with a backslash?"
 msgstr ""
 
-#: ../../faq/design.rst:637
+#: ../../faq/design.rst:639
 msgid ""
 "More precisely, they can't end with an odd number of backslashes: the "
 "unpaired backslash at the end escapes the closing quote character, leaving "
 "an unterminated string."
 msgstr ""
 
-#: ../../faq/design.rst:641
+#: ../../faq/design.rst:643
 msgid ""
 "Raw strings were designed to ease creating input for processors (chiefly "
 "regular expression engines) that want to do their own backslash escape "
@@ -993,51 +995,51 @@ msgid ""
 "rules work well when r-strings are used for their intended purpose."
 msgstr ""
 
-#: ../../faq/design.rst:648
+#: ../../faq/design.rst:650
 msgid ""
 "If you're trying to build Windows pathnames, note that all Windows system "
 "calls accept forward slashes too::"
 msgstr ""
 
-#: ../../faq/design.rst:651
+#: ../../faq/design.rst:653
 msgid "f = open(\"/mydir/file.txt\")  # works fine!"
 msgstr ""
 
-#: ../../faq/design.rst:653
+#: ../../faq/design.rst:655
 msgid ""
 "If you're trying to build a pathname for a DOS command, try e.g. one of ::"
 msgstr ""
 
-#: ../../faq/design.rst:655
+#: ../../faq/design.rst:657
 msgid ""
 "dir = r\"\\this\\is\\my\\dos\\dir\" \"\\\\\"\n"
 "dir = r\"\\this\\is\\my\\dos\\dir\\ \"[:-1]\n"
 "dir = \"\\\\this\\\\is\\\\my\\\\dos\\\\dir\\\\\""
 msgstr ""
 
-#: ../../faq/design.rst:661
+#: ../../faq/design.rst:663
 msgid "Why doesn't Python have a \"with\" statement for attribute assignments?"
 msgstr ""
 
-#: ../../faq/design.rst:663
+#: ../../faq/design.rst:665
 msgid ""
 "Python has a :keyword:`with` statement that wraps the execution of a block, "
 "calling code on the entrance and exit from the block.  Some languages have a"
 " construct that looks like this::"
 msgstr ""
 
-#: ../../faq/design.rst:667
+#: ../../faq/design.rst:669
 msgid ""
 "with obj:\n"
 "    a = 1               # equivalent to obj.a = 1\n"
 "    total = total + 1   # obj.total = obj.total + 1"
 msgstr ""
 
-#: ../../faq/design.rst:671
+#: ../../faq/design.rst:673
 msgid "In Python, such a construct would be ambiguous."
 msgstr ""
 
-#: ../../faq/design.rst:673
+#: ../../faq/design.rst:675
 msgid ""
 "Other languages, such as Object Pascal, Delphi, and C++, use static types, "
 "so it's possible to know, in an unambiguous way, what member is being "
@@ -1045,7 +1047,7 @@ msgid ""
 "*always* knows the scope of every variable at compile time."
 msgstr ""
 
-#: ../../faq/design.rst:678
+#: ../../faq/design.rst:680
 msgid ""
 "Python uses dynamic types. It is impossible to know in advance which "
 "attribute will be referenced at runtime. Member attributes may be added or "
@@ -1054,18 +1056,18 @@ msgid ""
 "one, or a member attribute?"
 msgstr ""
 
-#: ../../faq/design.rst:684
+#: ../../faq/design.rst:686
 msgid "For instance, take the following incomplete snippet::"
 msgstr ""
 
-#: ../../faq/design.rst:686
+#: ../../faq/design.rst:688
 msgid ""
 "def foo(a):\n"
 "    with a:\n"
 "        print(x)"
 msgstr ""
 
-#: ../../faq/design.rst:690
+#: ../../faq/design.rst:692
 msgid ""
 "The snippet assumes that ``a`` must have a member attribute called ``x``. "
 "However, there is nothing in Python that tells the interpreter this. What "
@@ -1074,25 +1076,25 @@ msgid ""
 "you see, the dynamic nature of Python makes such choices much harder."
 msgstr ""
 
-#: ../../faq/design.rst:696
+#: ../../faq/design.rst:698
 msgid ""
 "The primary benefit of :keyword:`with` and similar language features "
 "(reduction of code volume) can, however, easily be achieved in Python by "
 "assignment.  Instead of::"
 msgstr ""
 
-#: ../../faq/design.rst:699
+#: ../../faq/design.rst:701
 msgid ""
 "function(args).mydict[index][index].a = 21\n"
 "function(args).mydict[index][index].b = 42\n"
 "function(args).mydict[index][index].c = 63"
 msgstr ""
 
-#: ../../faq/design.rst:703
+#: ../../faq/design.rst:705
 msgid "write this::"
 msgstr ""
 
-#: ../../faq/design.rst:705
+#: ../../faq/design.rst:707
 msgid ""
 "ref = function(args).mydict[index][index]\n"
 "ref.a = 21\n"
@@ -1100,25 +1102,25 @@ msgid ""
 "ref.c = 63"
 msgstr ""
 
-#: ../../faq/design.rst:710
+#: ../../faq/design.rst:712
 msgid ""
 "This also has the side-effect of increasing execution speed because name "
 "bindings are resolved at run-time in Python, and the second version only "
 "needs to perform the resolution once."
 msgstr ""
 
-#: ../../faq/design.rst:714
+#: ../../faq/design.rst:716
 msgid ""
 "Similar proposals that would introduce syntax to further reduce code volume,"
 " such as using a 'leading dot', have been rejected in favour of explicitness"
 " (see https://mail.python.org/pipermail/python-ideas/2016-May/040070.html)."
 msgstr ""
 
-#: ../../faq/design.rst:720
+#: ../../faq/design.rst:722
 msgid "Why don't generators support the with statement?"
 msgstr ""
 
-#: ../../faq/design.rst:722
+#: ../../faq/design.rst:724
 msgid ""
 "For technical reasons, a generator used directly as a context manager would "
 "not work correctly.  When, as is most common, a generator is used as an "
@@ -1127,40 +1129,40 @@ msgid ""
 ":keyword:`with` statement."
 msgstr ""
 
-#: ../../faq/design.rst:730
+#: ../../faq/design.rst:732
 msgid "Why are colons required for the if/while/def/class statements?"
 msgstr ""
 
-#: ../../faq/design.rst:732
+#: ../../faq/design.rst:734
 msgid ""
 "The colon is required primarily to enhance readability (one of the results "
 "of the experimental ABC language).  Consider this::"
 msgstr ""
 
-#: ../../faq/design.rst:735
+#: ../../faq/design.rst:737
 msgid ""
 "if a == b\n"
 "    print(a)"
 msgstr ""
 
-#: ../../faq/design.rst:738
+#: ../../faq/design.rst:740
 msgid "versus ::"
 msgstr ""
 
-#: ../../faq/design.rst:740
+#: ../../faq/design.rst:742
 msgid ""
 "if a == b:\n"
 "    print(a)"
 msgstr ""
 
-#: ../../faq/design.rst:743
+#: ../../faq/design.rst:745
 msgid ""
 "Notice how the second one is slightly easier to read.  Notice further how a "
 "colon sets off the example in this FAQ answer; it's a standard usage in "
 "English."
 msgstr ""
 
-#: ../../faq/design.rst:746
+#: ../../faq/design.rst:748
 msgid ""
 "Another minor reason is that the colon makes it easier for editors with "
 "syntax highlighting; they can look for colons to decide when indentation "
@@ -1168,17 +1170,17 @@ msgid ""
 "the program text."
 msgstr ""
 
-#: ../../faq/design.rst:752
+#: ../../faq/design.rst:754
 msgid "Why does Python allow commas at the end of lists and tuples?"
 msgstr ""
 
-#: ../../faq/design.rst:754
+#: ../../faq/design.rst:756
 msgid ""
 "Python lets you add a trailing comma at the end of lists, tuples, and "
 "dictionaries::"
 msgstr ""
 
-#: ../../faq/design.rst:757
+#: ../../faq/design.rst:759
 msgid ""
 "[1, 2, 3,]\n"
 "('a', 'b', 'c',)\n"
@@ -1188,11 +1190,11 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../faq/design.rst:765
+#: ../../faq/design.rst:767
 msgid "There are several reasons to allow this."
 msgstr ""
 
-#: ../../faq/design.rst:767
+#: ../../faq/design.rst:769
 msgid ""
 "When you have a literal value for a list, tuple, or dictionary spread across"
 " multiple lines, it's easier to add more elements because you don't have to "
@@ -1200,13 +1202,13 @@ msgid ""
 "reordered without creating a syntax error."
 msgstr ""
 
-#: ../../faq/design.rst:772
+#: ../../faq/design.rst:774
 msgid ""
 "Accidentally omitting the comma can lead to errors that are hard to "
 "diagnose. For example::"
 msgstr ""
 
-#: ../../faq/design.rst:775
+#: ../../faq/design.rst:777
 msgid ""
 "x = [\n"
 "  \"fee\",\n"
@@ -1216,14 +1218,14 @@ msgid ""
 "]"
 msgstr ""
 
-#: ../../faq/design.rst:782
+#: ../../faq/design.rst:784
 msgid ""
 "This list looks like it has four elements, but it actually contains three: "
 "\"fee\", \"fiefoo\" and \"fum\".  Always adding the comma avoids this source"
 " of error."
 msgstr ""
 
-#: ../../faq/design.rst:785
+#: ../../faq/design.rst:787
 msgid ""
 "Allowing the trailing comma may also make programmatic code generation "
 "easier."

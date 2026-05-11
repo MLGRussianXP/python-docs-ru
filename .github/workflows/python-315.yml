@@ -1,4 +1,4 @@
-name: python-314
+name: python-315
 
 on:
   workflow_dispatch:
@@ -12,6 +12,6 @@ jobs:
   sync:
     uses: ./.github/workflows/sync.yml
     with:
-      version: "3.14"
-      tx_project: "python-314"
+      version: "3.15"
+      tx_project: "python-newest"
     secrets: inherit

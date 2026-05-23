@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-13 18:15+0000\n"
+"POT-Creation-Date: 2026-05-23 16:35+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -1036,8 +1036,8 @@ msgstr ""
 #: ../../library/typing.rst:721
 msgid ""
 "A special kind of type is :data:`Any`. A static type checker will treat "
-"every type as being compatible with :data:`Any` and :data:`Any` as being "
-"compatible with every type."
+"every type as assignable to :data:`Any` and :data:`Any` as assignable to "
+"every type."
 msgstr ""
 
 #: ../../library/typing.rst:725
@@ -1130,7 +1130,7 @@ msgid ""
 "hash_a(42)\n"
 "hash_a(\"foo\")\n"
 "\n"
-"# Passes type checking, since Any is compatible with all types\n"
+"# Passes type checking, since Any is assignable to all types\n"
 "hash_b(42)\n"
 "hash_b(\"foo\")"
 msgstr ""
@@ -1229,11 +1229,11 @@ msgid "Special type indicating an unconstrained type."
 msgstr ""
 
 #: ../../library/typing.rst:854
-msgid "Every type is compatible with :data:`Any`."
+msgid "Every type is assignable to :data:`Any`."
 msgstr ""
 
 #: ../../library/typing.rst:855
-msgid ":data:`Any` is compatible with every type."
+msgid ":data:`Any` is assignable to every type."
 msgstr ""
 
 #: ../../library/typing.rst:857
@@ -1853,10 +1853,10 @@ msgstr ""
 
 #: ../../library/typing.rst:1287
 msgid ""
-":data:`ClassVar` is not a class itself, and should not be used with "
+":data:`ClassVar` is not a class itself, and cannot be used with "
 ":func:`isinstance` or :func:`issubclass`. :data:`ClassVar` does not change "
-"Python runtime behavior, but it can be used by third-party type checkers. "
-"For example, a type checker might flag the following code as an error::"
+"Python runtime behavior, but it can be used by static type checkers. For "
+"example, a type checker might flag the following code as an error::"
 msgstr ""
 
 #: ../../library/typing.rst:1293
@@ -1936,7 +1936,7 @@ msgid ""
 "\n"
 "def mutate_movie(m: Movie) -> None:\n"
 "   m[\"year\"] = 1999  # allowed\n"
-"   m[\"title\"] = \"The Matrix\"  # typechecker error"
+"   m[\"title\"] = \"The Matrix\"  # type checker error"
 msgstr ""
 
 #: ../../library/typing.rst:1362
@@ -3186,11 +3186,11 @@ msgstr ""
 
 #: ../../library/typing.rst:2286
 msgid ""
-"The resulting class has an extra attribute ``__annotations__`` giving a dict"
-" that maps the field names to the field types.  (The field names are in the "
-"``_fields`` attribute and the default values are in the ``_field_defaults`` "
-"attribute, both of which are part of the :func:`~collections.namedtuple` "
-"API.)"
+"The types for each field name can be retrieved by calling "
+":func:`inspect.get_annotations` on the resulting class. (The field names are"
+" in the ``_fields`` attribute and the default values are in the "
+"``_field_defaults`` attribute, both of which are part of the "
+":func:`~collections.namedtuple` API.)"
 msgstr ""
 
 #: ../../library/typing.rst:2292
@@ -3289,7 +3289,7 @@ msgstr ""
 
 #: ../../library/typing.rst:2358
 msgid ""
-"A ``NewType`` is considered a distinct type by a typechecker. At runtime, "
+"A ``NewType`` is considered a distinct type by a type checker. At runtime, "
 "however, calling a ``NewType`` returns its argument unchanged."
 msgstr ""
 
@@ -3390,7 +3390,7 @@ msgstr ""
 #: ../../library/typing.rst:2432
 msgid ""
 "Such a protocol can be used with :func:`isinstance` and :func:`issubclass`. "
-"This allows a simple-minded structural check, very similar to \"one trick "
+"This allows a simple-minded structural check, very similar to \"one-trick "
 "ponies\" in :mod:`collections.abc` such as "
 ":class:`~collections.abc.Iterable`.  For example::"
 msgstr ""
@@ -3657,8 +3657,8 @@ msgstr ""
 
 #: ../../library/typing.rst:2624
 msgid ""
-"A ``TypedDict`` can be introspected via annotations dicts (see "
-":ref:`annotations-howto` for more information on annotations best "
+"A ``TypedDict`` can be introspected via :func:`inspect.get_annotations` (see"
+" :ref:`annotations-howto` for more information on annotations best "
 "practices), :attr:`__total__`, :attr:`__required_keys__`, and "
 ":attr:`__optional_keys__`."
 msgstr ""
@@ -3710,8 +3710,8 @@ msgstr ""
 msgid ""
 "For backwards compatibility with Python 3.10 and below, it is also possible "
 "to use inheritance to declare both required and non-required keys in the "
-"same ``TypedDict`` . This is done by declaring a ``TypedDict`` with one "
-"value for the ``total`` argument and then inheriting from it in another "
+"same ``TypedDict``. This is done by declaring a ``TypedDict`` with one value"
+" for the ``total`` argument and then inheriting from it in another "
 "``TypedDict`` with a different value for ``total``:"
 msgstr ""
 
@@ -3808,33 +3808,33 @@ msgstr ""
 
 #: ../../library/typing.rst:2749
 msgid ""
-"An ABC with one abstract method ``__abs__`` that is covariant in its return "
-"type."
+"A protocol with one abstract method ``__abs__`` that is covariant in its "
+"return type."
 msgstr ""
 
 #: ../../library/typing.rst:2754
-msgid "An ABC with one abstract method ``__bytes__``."
+msgid "A protocol with one abstract method ``__bytes__``."
 msgstr ""
 
 #: ../../library/typing.rst:2758
-msgid "An ABC with one abstract method ``__complex__``."
+msgid "A protocol with one abstract method ``__complex__``."
 msgstr ""
 
 #: ../../library/typing.rst:2762
-msgid "An ABC with one abstract method ``__float__``."
+msgid "A protocol with one abstract method ``__float__``."
 msgstr ""
 
 #: ../../library/typing.rst:2766
-msgid "An ABC with one abstract method ``__index__``."
+msgid "A protocol with one abstract method ``__index__``."
 msgstr ""
 
 #: ../../library/typing.rst:2772
-msgid "An ABC with one abstract method ``__int__``."
+msgid "A protocol with one abstract method ``__int__``."
 msgstr ""
 
 #: ../../library/typing.rst:2776
 msgid ""
-"An ABC with one abstract method ``__round__`` that is covariant in its "
+"A protocol with one abstract method ``__round__`` that is covariant in its "
 "return type."
 msgstr ""
 
@@ -4708,8 +4708,8 @@ msgstr ""
 
 #: ../../library/typing.rst:3435
 msgid ""
-"A special constant that is assumed to be ``True`` by 3rd party static type "
-"checkers. It is ``False`` at runtime."
+"A special constant that is assumed to be ``True`` by static type checkers. "
+"It is ``False`` at runtime."
 msgstr ""
 
 #: ../../library/typing.rst:3440

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-25 15:05+0000\n"
+"POT-Creation-Date: 2026-06-03 20:27+0000\n"
 "PO-Revision-Date: 2025-09-15 01:04+0000\n"
 "Last-Translator: Vladimir, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -47,7 +47,7 @@ msgid ""
 "An object frequently used to represent the absence of a value, as when "
 "default arguments are not passed to a function. Assignments to ``None`` are "
 "illegal and raise a :exc:`SyntaxError`. ``None`` is the sole instance of the"
-" :data:`~types.NoneType` type."
+" :class:`~types.NoneType` type."
 msgstr ""
 
 #: ../../library/constants.rst:30
@@ -59,7 +59,7 @@ msgid ""
 "binary special methods (e.g. :meth:`~object.__imul__`, "
 ":meth:`~object.__iand__`, etc.) for the same purpose. It should not be "
 "evaluated in a boolean context. :data:`!NotImplemented` is the sole instance"
-" of the :data:`types.NotImplementedType` type."
+" of the :class:`types.NotImplementedType` type."
 msgstr ""
 
 #: ../../library/constants.rst:40
@@ -96,7 +96,7 @@ msgid ""
 "The same as the ellipsis literal \"``...``\", an object frequently used to "
 "indicate that something is omitted. Assignment to ``Ellipsis`` is possible, "
 "but assignment to  ``...`` raises a :exc:`SyntaxError`. ``Ellipsis`` is the "
-"sole instance of the :data:`types.EllipsisType` type."
+"sole instance of the :class:`types.EllipsisType` type."
 msgstr ""
 
 #: ../../library/constants.rst:73

@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 14:19+0000\n"
+"POT-Creation-Date: 2026-06-11 17:33+0000\n"
 "PO-Revision-Date: 2025-09-16 00:00+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -25,30 +25,22 @@ msgstr ""
 msgid "Unicode HOWTO"
 msgstr ""
 
-#: ../../howto/unicode.rst:0
-msgid "Release"
-msgstr ""
-
 #: ../../howto/unicode.rst:7
-msgid "1.12"
-msgstr ""
-
-#: ../../howto/unicode.rst:9
 msgid ""
 "This HOWTO discusses Python's support for the Unicode specification for "
 "representing textual data, and explains various problems that people "
 "commonly encounter when trying to work with Unicode."
 msgstr ""
 
-#: ../../howto/unicode.rst:15
+#: ../../howto/unicode.rst:13
 msgid "Introduction to Unicode"
 msgstr ""
 
-#: ../../howto/unicode.rst:18
+#: ../../howto/unicode.rst:16
 msgid "Definitions"
 msgstr ""
 
-#: ../../howto/unicode.rst:20
+#: ../../howto/unicode.rst:18
 msgid ""
 "Today's programs need to be able to handle a wide variety of characters.  "
 "Applications are often internationalized to display messages and output in a"
@@ -60,7 +52,7 @@ msgid ""
 "different possible characters."
 msgstr ""
 
-#: ../../howto/unicode.rst:30
+#: ../../howto/unicode.rst:28
 msgid ""
 "Unicode (https://www.unicode.org/) is a specification that aims to list "
 "every character used by human languages and give each character its own "
@@ -68,7 +60,7 @@ msgid ""
 " to add new languages and symbols."
 msgstr ""
 
-#: ../../howto/unicode.rst:35
+#: ../../howto/unicode.rst:33
 msgid ""
 "A **character** is the smallest possible component of a text.  'A', 'B', "
 "'C', etc., are all different characters.  So are 'È' and 'Í'.  Characters "
@@ -78,7 +70,7 @@ msgid ""
 "are two different characters that have different meanings."
 msgstr ""
 
-#: ../../howto/unicode.rst:42
+#: ../../howto/unicode.rst:40
 msgid ""
 "The Unicode standard describes how characters are represented by **code "
 "points**.  A code point value is an integer in the range 0 to 0x10FFFF "
@@ -89,13 +81,13 @@ msgid ""
 "decimal)."
 msgstr ""
 
-#: ../../howto/unicode.rst:50
+#: ../../howto/unicode.rst:48
 msgid ""
 "The Unicode standard contains a lot of tables listing characters and their "
 "corresponding code points:"
 msgstr ""
 
-#: ../../howto/unicode.rst:53
+#: ../../howto/unicode.rst:51
 msgid ""
 "0061    'a'; LATIN SMALL LETTER A\n"
 "0062    'b'; LATIN SMALL LETTER B\n"
@@ -114,7 +106,7 @@ msgid ""
 "..."
 msgstr ""
 
-#: ../../howto/unicode.rst:71
+#: ../../howto/unicode.rst:69
 msgid ""
 "Strictly, these definitions imply that it's meaningless to say 'this is "
 "character ``U+265E``'.  ``U+265E`` is a code point, which represents some "
@@ -123,7 +115,7 @@ msgid ""
 "and characters will sometimes be forgotten."
 msgstr ""
 
-#: ../../howto/unicode.rst:78
+#: ../../howto/unicode.rst:76
 msgid ""
 "A character is represented on a screen or on paper by a set of graphical "
 "elements that's called a **glyph**.  The glyph for an uppercase A, for "
@@ -133,11 +125,11 @@ msgid ""
 "generally the job of a GUI toolkit or a terminal's font renderer."
 msgstr ""
 
-#: ../../howto/unicode.rst:87
+#: ../../howto/unicode.rst:85
 msgid "Encodings"
 msgstr ""
 
-#: ../../howto/unicode.rst:89
+#: ../../howto/unicode.rst:87
 msgid ""
 "To summarize the previous section: a Unicode string is a sequence of code "
 "points, which are numbers from 0 through ``0x10FFFF`` (1,114,111 decimal).  "
@@ -147,31 +139,31 @@ msgid ""
 " **character encoding**, or just an **encoding**."
 msgstr ""
 
-#: ../../howto/unicode.rst:97
+#: ../../howto/unicode.rst:95
 msgid ""
 "The first encoding you might think of is using 32-bit integers as the code "
 "unit, and then using the CPU's representation of 32-bit integers. In this "
 "representation, the string \"Python\" might look like this:"
 msgstr ""
 
-#: ../../howto/unicode.rst:101
+#: ../../howto/unicode.rst:99
 msgid ""
 "   P           y           t           h           o           n\n"
 "0x50 00 00 00 79 00 00 00 74 00 00 00 68 00 00 00 6f 00 00 00 6e 00 00 00\n"
 "   0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23"
 msgstr ""
 
-#: ../../howto/unicode.rst:107
+#: ../../howto/unicode.rst:105
 msgid ""
 "This representation is straightforward but using it presents a number of "
 "problems."
 msgstr ""
 
-#: ../../howto/unicode.rst:110
+#: ../../howto/unicode.rst:108
 msgid "It's not portable; different processors order the bytes differently."
 msgstr ""
 
-#: ../../howto/unicode.rst:112
+#: ../../howto/unicode.rst:110
 msgid ""
 "It's very wasteful of space.  In most texts, the majority of the code points"
 " are less than 127, or less than 255, so a lot of space is occupied by "
@@ -182,19 +174,19 @@ msgid ""
 "factor of 4 is intolerable."
 msgstr ""
 
-#: ../../howto/unicode.rst:120
+#: ../../howto/unicode.rst:118
 msgid ""
 "It's not compatible with existing C functions such as ``strlen()``, so a new"
 " family of wide string functions would need to be used."
 msgstr ""
 
-#: ../../howto/unicode.rst:123
+#: ../../howto/unicode.rst:121
 msgid ""
 "Therefore this encoding isn't used very much, and people instead choose "
 "other encodings that are more efficient and convenient, such as UTF-8."
 msgstr ""
 
-#: ../../howto/unicode.rst:126
+#: ../../howto/unicode.rst:124
 msgid ""
 "UTF-8 is one of the most commonly used encodings, and Python often defaults "
 "to using it.  UTF stands for \"Unicode Transformation Format\", and the '8' "
@@ -203,27 +195,27 @@ msgid ""
 "uses the following rules:"
 msgstr ""
 
-#: ../../howto/unicode.rst:132
+#: ../../howto/unicode.rst:130
 msgid ""
 "If the code point is < 128, it's represented by the corresponding byte "
 "value."
 msgstr ""
 
-#: ../../howto/unicode.rst:133
+#: ../../howto/unicode.rst:131
 msgid ""
 "If the code point is >= 128, it's turned into a sequence of two, three, or "
 "four bytes, where each byte of the sequence is between 128 and 255."
 msgstr ""
 
-#: ../../howto/unicode.rst:136
+#: ../../howto/unicode.rst:134
 msgid "UTF-8 has several convenient properties:"
 msgstr ""
 
-#: ../../howto/unicode.rst:138
+#: ../../howto/unicode.rst:136
 msgid "It can handle any Unicode code point."
 msgstr ""
 
-#: ../../howto/unicode.rst:139
+#: ../../howto/unicode.rst:137
 msgid ""
 "A Unicode string is turned into a sequence of bytes that contains embedded "
 "zero bytes only where they represent the null character (U+0000). This means"
@@ -232,24 +224,24 @@ msgid ""
 " end-of-string markers."
 msgstr ""
 
-#: ../../howto/unicode.rst:144
+#: ../../howto/unicode.rst:142
 msgid "A string of ASCII text is also valid UTF-8 text."
 msgstr ""
 
-#: ../../howto/unicode.rst:145
+#: ../../howto/unicode.rst:143
 msgid ""
 "UTF-8 is fairly compact; the majority of commonly used characters can be "
 "represented with one or two bytes."
 msgstr ""
 
-#: ../../howto/unicode.rst:147
+#: ../../howto/unicode.rst:145
 msgid ""
 "If bytes are corrupted or lost, it's possible to determine the start of the "
 "next UTF-8-encoded code point and resynchronize.  It's also unlikely that "
 "random 8-bit data will look like valid UTF-8."
 msgstr ""
 
-#: ../../howto/unicode.rst:150
+#: ../../howto/unicode.rst:148
 msgid ""
 "UTF-8 is a byte oriented encoding. The encoding specifies that each "
 "character is represented by a specific sequence of one or more bytes. This "
@@ -258,12 +250,12 @@ msgid ""
 "varies depending on the hardware on which the string was encoded."
 msgstr ""
 
-#: ../../howto/unicode.rst:158 ../../howto/unicode.rst:514
+#: ../../howto/unicode.rst:156 ../../howto/unicode.rst:514
 #: ../../howto/unicode.rst:735
 msgid "References"
 msgstr ""
 
-#: ../../howto/unicode.rst:160
+#: ../../howto/unicode.rst:158
 msgid ""
 "The `Unicode Consortium site <https://www.unicode.org>`_ has character "
 "charts, a glossary, and PDF versions of the Unicode specification.  Be "
@@ -272,21 +264,21 @@ msgid ""
 "Unicode is also available on the site."
 msgstr ""
 
-#: ../../howto/unicode.rst:165
+#: ../../howto/unicode.rst:163
 msgid ""
 "On the Computerphile Youtube channel, Tom Scott briefly `discusses the "
 "history of Unicode and UTF-8 <https://www.youtube.com/watch?v=MijmeoH9LT4>`_"
 " (9 minutes 36 seconds)."
 msgstr ""
 
-#: ../../howto/unicode.rst:169
+#: ../../howto/unicode.rst:167
 msgid ""
 "To help understand the standard, Jukka Korpela has written `an introductory "
 "guide <https://jkorpela.fi/unicode/guide.html>`_ to reading the Unicode "
 "character tables."
 msgstr ""
 
-#: ../../howto/unicode.rst:173
+#: ../../howto/unicode.rst:171
 msgid ""
 "Another `good introductory article "
 "<https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-"
@@ -296,28 +288,28 @@ msgid ""
 "alternate article before continuing."
 msgstr ""
 
-#: ../../howto/unicode.rst:178
+#: ../../howto/unicode.rst:176
 msgid ""
 "Wikipedia entries are often helpful; see the entries for \"`character "
 "encoding <https://en.wikipedia.org/wiki/Character_encoding>`_\" and `UTF-8 "
 "<https://en.wikipedia.org/wiki/UTF-8>`_, for example."
 msgstr ""
 
-#: ../../howto/unicode.rst:184
+#: ../../howto/unicode.rst:182
 msgid "Python's Unicode Support"
 msgstr ""
 
-#: ../../howto/unicode.rst:186
+#: ../../howto/unicode.rst:184
 msgid ""
 "Now that you've learned the rudiments of Unicode, we can look at Python's "
 "Unicode features."
 msgstr ""
 
-#: ../../howto/unicode.rst:190
+#: ../../howto/unicode.rst:188
 msgid "The String Type"
 msgstr ""
 
-#: ../../howto/unicode.rst:192
+#: ../../howto/unicode.rst:190
 msgid ""
 "Since Python 3.0, the language's :class:`str` type contains Unicode "
 "characters, meaning any string created using ``\"unicode rocks!\"``, "
@@ -325,13 +317,13 @@ msgid ""
 "Unicode."
 msgstr ""
 
-#: ../../howto/unicode.rst:196
+#: ../../howto/unicode.rst:194
 msgid ""
 "The default encoding for Python source code is UTF-8, so you can simply "
 "include a Unicode character in a string literal::"
 msgstr ""
 
-#: ../../howto/unicode.rst:199
+#: ../../howto/unicode.rst:197
 msgid ""
 "try:\n"
 "    with open('/tmp/input.txt', 'r') as f:\n"
@@ -341,19 +333,19 @@ msgid ""
 "    print(\"Fichier non trouvé\")"
 msgstr ""
 
-#: ../../howto/unicode.rst:206
+#: ../../howto/unicode.rst:204
 msgid ""
 "Side note: Python 3 also supports using Unicode characters in identifiers::"
 msgstr ""
 
-#: ../../howto/unicode.rst:208
+#: ../../howto/unicode.rst:206
 msgid ""
 "répertoire = \"/tmp/records.log\"\n"
 "with open(répertoire, \"w\") as f:\n"
 "    f.write(\"test\\n\")"
 msgstr ""
 
-#: ../../howto/unicode.rst:212
+#: ../../howto/unicode.rst:210
 msgid ""
 "If you can't enter a particular character in your editor or want to keep the"
 " source code ASCII-only for some reason, you can also use escape sequences "
@@ -361,7 +353,7 @@ msgid ""
 "capital-delta glyph instead of a \\u escape.) ::"
 msgstr ""
 
-#: ../../howto/unicode.rst:217
+#: ../../howto/unicode.rst:215
 msgid ""
 ">>> \"\\N{GREEK CAPITAL LETTER DELTA}\"  # Using the character name\n"
 "'\\u0394'\n"
@@ -371,14 +363,14 @@ msgid ""
 "'\\u0394'"
 msgstr ""
 
-#: ../../howto/unicode.rst:224
+#: ../../howto/unicode.rst:222
 msgid ""
 "In addition, one can create a string using the :func:`~bytes.decode` method "
 "of :class:`bytes`.  This method takes an *encoding* argument, such as "
 "``UTF-8``, and optionally an *errors* argument."
 msgstr ""
 
-#: ../../howto/unicode.rst:228
+#: ../../howto/unicode.rst:226
 msgid ""
 "The *errors* argument specifies the response when the input string can't be "
 "converted according to the encoding's rules.  Legal values for this argument"
@@ -389,7 +381,7 @@ msgid ""
 "examples show the differences::"
 msgstr ""
 
-#: ../../howto/unicode.rst:236
+#: ../../howto/unicode.rst:234
 msgid ""
 ">>> b'\\x80abc'.decode(\"utf-8\", \"strict\")\n"
 "Traceback (most recent call last):\n"
@@ -404,7 +396,7 @@ msgid ""
 "'abc'"
 msgstr ""
 
-#: ../../howto/unicode.rst:248
+#: ../../howto/unicode.rst:246
 msgid ""
 "Encodings are specified as strings containing the encoding's name.  Python "
 "comes with roughly 100 different encodings; see the Python Library Reference"
@@ -413,7 +405,7 @@ msgid ""
 "synonyms for the same encoding."
 msgstr ""
 
-#: ../../howto/unicode.rst:254
+#: ../../howto/unicode.rst:252
 msgid ""
 "One-character Unicode strings can also be created with the :func:`chr` "
 "built-in function, which takes integers and returns a Unicode string of "
@@ -422,7 +414,7 @@ msgid ""
 "string and returns the code point value::"
 msgstr ""
 
-#: ../../howto/unicode.rst:260
+#: ../../howto/unicode.rst:258
 msgid ""
 ">>> chr(57344)\n"
 "'\\ue000'\n"
@@ -430,18 +422,18 @@ msgid ""
 "57344"
 msgstr ""
 
-#: ../../howto/unicode.rst:266
+#: ../../howto/unicode.rst:264
 msgid "Converting to Bytes"
 msgstr ""
 
-#: ../../howto/unicode.rst:268
+#: ../../howto/unicode.rst:266
 msgid ""
 "The opposite method of :meth:`bytes.decode` is :meth:`str.encode`, which "
 "returns a :class:`bytes` representation of the Unicode string, encoded in "
 "the requested *encoding*."
 msgstr ""
 
-#: ../../howto/unicode.rst:272
+#: ../../howto/unicode.rst:270
 msgid ""
 "The *errors* parameter is the same as the parameter of the "
 ":meth:`~bytes.decode` method but supports a few more possible handlers. As "
@@ -452,11 +444,11 @@ msgid ""
 "``namereplace`` (inserts a ``\\N{...}`` escape sequence)."
 msgstr ""
 
-#: ../../howto/unicode.rst:280
+#: ../../howto/unicode.rst:278
 msgid "The following example shows the different results::"
 msgstr ""
 
-#: ../../howto/unicode.rst:282
+#: ../../howto/unicode.rst:280
 msgid ""
 ">>> u = chr(40960) + 'abcd' + chr(1972)\n"
 ">>> u.encode('utf-8')\n"
@@ -478,7 +470,7 @@ msgid ""
 "b'\\\\N{YI SYLLABLE IT}abcd\\\\u07b4'"
 msgstr ""
 
-#: ../../howto/unicode.rst:301
+#: ../../howto/unicode.rst:299
 msgid ""
 "The low-level routines for registering and accessing the available encodings"
 " are found in the :mod:`codecs` module.  Implementing new encodings also "
@@ -488,11 +480,11 @@ msgid ""
 "module won't be covered in this HOWTO."
 msgstr ""
 
-#: ../../howto/unicode.rst:310
+#: ../../howto/unicode.rst:308
 msgid "Unicode Literals in Python Source Code"
 msgstr ""
 
-#: ../../howto/unicode.rst:312
+#: ../../howto/unicode.rst:310
 msgid ""
 "In Python source code, specific Unicode code points can be written using the"
 " ``\\u`` escape sequence, which is followed by four hex digits giving the "
@@ -500,7 +492,7 @@ msgid ""
 "digits, not four::"
 msgstr ""
 
-#: ../../howto/unicode.rst:317
+#: ../../howto/unicode.rst:315
 msgid ""
 ">>> s = \"a\\xac\\u1234\\u20ac\\U00008000\"\n"
 "... #     ^^^^ two-digit hex escape\n"
@@ -510,7 +502,7 @@ msgid ""
 "[97, 172, 4660, 8364, 32768]"
 msgstr ""
 
-#: ../../howto/unicode.rst:324
+#: ../../howto/unicode.rst:322
 msgid ""
 "Using escape sequences for code points greater than 127 is fine in small "
 "doses, but becomes an annoyance if you're using many accented characters, as"
@@ -519,7 +511,7 @@ msgid ""
 "function, but this is even more tedious."
 msgstr ""
 
-#: ../../howto/unicode.rst:330
+#: ../../howto/unicode.rst:328
 msgid ""
 "Ideally, you'd want to be able to write literals in your language's natural "
 "encoding.  You could then edit Python source code with your favorite editor "
@@ -527,7 +519,7 @@ msgid ""
 "characters used at runtime."
 msgstr ""
 
-#: ../../howto/unicode.rst:335
+#: ../../howto/unicode.rst:333
 msgid ""
 "Python supports writing source code in UTF-8 by default, but you can use "
 "almost any encoding if you declare the encoding being used.  This is done by"
@@ -535,7 +527,7 @@ msgid ""
 "source file::"
 msgstr ""
 
-#: ../../howto/unicode.rst:339
+#: ../../howto/unicode.rst:337
 msgid ""
 "#!/usr/bin/env python\n"
 "# -*- coding: latin-1 -*-\n"
@@ -544,7 +536,7 @@ msgid ""
 "print(ord(u[-1]))"
 msgstr ""
 
-#: ../../howto/unicode.rst:345
+#: ../../howto/unicode.rst:343
 msgid ""
 "The syntax is inspired by Emacs's notation for specifying variables local to"
 " a file.  Emacs supports many different variables, but Python only supports "
@@ -553,7 +545,7 @@ msgid ""
 "looks for ``coding: name`` or ``coding=name`` in the comment."
 msgstr ""
 
-#: ../../howto/unicode.rst:351
+#: ../../howto/unicode.rst:349
 msgid ""
 "If you don't include such a comment, the default encoding used will be UTF-8"
 " as already mentioned.  See also :pep:`263` for more information."

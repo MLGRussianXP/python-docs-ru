@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 15:40+0000\n"
+"POT-Creation-Date: 2026-06-13 17:01+0000\n"
 "PO-Revision-Date: 2025-09-15 01:04+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -906,8 +906,7 @@ msgstr ""
 #: ../../library/functions.rst:470
 msgid ""
 "Create a new dictionary.  The :class:`dict` object is the dictionary class. "
-"See :class:`dict` and :ref:`typesmapping` for documentation about this "
-"class."
+"See also :ref:`typesmapping` for documentation about this class."
 msgstr ""
 
 #: ../../library/functions.rst:473
@@ -1307,8 +1306,8 @@ msgstr ""
 #: ../../library/functions.rst:846
 msgid ""
 "Return a new :class:`frozenset` object, optionally with elements taken from "
-"*iterable*.  ``frozenset`` is a built-in class.  See :class:`frozenset` and "
-":ref:`types-set` for documentation about this class."
+"*iterable*.  :class:`frozenset` is a built-in class.  See also :ref:`types-"
+"set` for documentation about this class."
 msgstr ""
 
 #: ../../library/functions.rst:850
@@ -2500,8 +2499,8 @@ msgstr ""
 #: ../../library/functions.rst:1799
 msgid ""
 "Return a new :class:`set` object, optionally with elements taken from "
-"*iterable*.  ``set`` is a built-in class.  See :class:`set` and :ref:`types-"
-"set` for documentation about this class."
+"*iterable*.  :class:`set` is a built-in class.  See also :ref:`types-set` "
+"for documentation about this class."
 msgstr ""
 
 #: ../../library/functions.rst:1803

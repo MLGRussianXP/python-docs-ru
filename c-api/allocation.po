@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 15:06+0000\n"
+"POT-Creation-Date: 2026-06-15 20:05+0000\n"
 "PO-Revision-Date: 2025-09-15 01:03+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../c-api/allocation.rst:6
-msgid "Allocating Objects on the Heap"
+msgid "Allocating objects on the heap"
 msgstr ""
 
 #: ../../c-api/allocation.rst:17
@@ -91,48 +91,48 @@ msgid "To allocate and create extension modules."
 msgstr ""
 
 #: ../../c-api/allocation.rst:75
-msgid "Deprecated aliases"
+msgid "Soft-deprecated aliases"
 msgstr ""
 
-#: ../../c-api/allocation.rst:77
+#: ../../c-api/allocation.rst:79
 msgid ""
-"These are :term:`soft deprecated` aliases to existing functions and macros. "
-"They exist solely for backwards compatibility."
+"These are aliases to existing functions and macros. They exist solely for "
+"backwards compatibility."
 msgstr ""
 
-#: ../../c-api/allocation.rst:85
-msgid "Deprecated alias"
-msgstr ""
-
-#: ../../c-api/allocation.rst:86
-msgid "Function"
+#: ../../c-api/allocation.rst:87
+msgid "Soft-deprecated alias"
 msgstr ""
 
 #: ../../c-api/allocation.rst:88
-msgid ":c:macro:`PyObject_New`"
+msgid "Function"
 msgstr ""
 
 #: ../../c-api/allocation.rst:90
-msgid ":c:macro:`PyObject_NewVar`"
+msgid ":c:macro:`PyObject_New`"
 msgstr ""
 
 #: ../../c-api/allocation.rst:92
-msgid ":c:func:`PyObject_Init`"
+msgid ":c:macro:`PyObject_NewVar`"
 msgstr ""
 
 #: ../../c-api/allocation.rst:94
-msgid ":c:func:`PyObject_InitVar`"
+msgid ":c:func:`PyObject_Init`"
 msgstr ""
 
 #: ../../c-api/allocation.rst:96
-msgid ":c:func:`PyObject_Malloc`"
+msgid ":c:func:`PyObject_InitVar`"
 msgstr ""
 
 #: ../../c-api/allocation.rst:98
+msgid ":c:func:`PyObject_Malloc`"
+msgstr ""
+
+#: ../../c-api/allocation.rst:100
 msgid ":c:func:`PyObject_Realloc`"
 msgstr ""
 
-#: ../../c-api/allocation.rst:100 ../../c-api/allocation.rst:102
-#: ../../c-api/allocation.rst:104
+#: ../../c-api/allocation.rst:102 ../../c-api/allocation.rst:104
+#: ../../c-api/allocation.rst:106
 msgid ":c:func:`PyObject_Free`"
 msgstr ""

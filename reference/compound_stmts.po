@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 15:33+0000\n"
+"POT-Creation-Date: 2026-07-05 16:47+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -268,7 +268,7 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:278
 msgid ""
 "When an exception has been assigned using ``as target``, it is cleared at "
-"the end of the :keyword:`!except` clause.  This is as if ::"
+"the end of the :keyword:`!except` clause.  This is as if::"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:281
@@ -278,7 +278,7 @@ msgid ""
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:284
-msgid "was translated to ::"
+msgid "was translated to::"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:286
@@ -341,7 +341,7 @@ msgid ""
 "but not both. The exception type for matching is mandatory in the case of "
 ":keyword:`!except*`, so ``except*:`` is a syntax error. The type is "
 "interpreted as in the case of :keyword:`!except`, but matching is performed "
-"on the exceptions contained in the group that is being handled. An "
+"on the exceptions contained in the group that is being handled. A "
 ":exc:`TypeError` is raised if a matching type is a subclass of "
 ":exc:`!BaseExceptionGroup`, because that would have ambiguous semantics."
 msgstr ""
@@ -365,7 +365,7 @@ msgid ""
 "After all :keyword:`!except*` clauses execute, the group of unhandled "
 "exceptions is merged with any exceptions that were raised or re-raised from "
 "within :keyword:`!except*` clauses. This merged exception group propagates "
-"on.::"
+"on::"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:359
@@ -1645,7 +1645,7 @@ msgid ""
 " an item to a list), the default parameter value is in effect modified.  "
 "This is generally not what was intended.  A way around this is to use "
 "``None`` as the default, and explicitly test for it in the body of the "
-"function, e.g.::"
+"function, for example::"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:1308

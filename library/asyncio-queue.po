@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-25 15:05+0000\n"
+"POT-Creation-Date: 2026-07-11 16:22+0000\n"
 "PO-Revision-Date: 2025-09-15 01:03+0000\n"
 "Last-Translator: Vladimir, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -112,11 +112,16 @@ msgid ""
 ":exc:`QueueEmpty`."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:77
-msgid "Block until all items in the queue have been received and processed."
+#: ../../library/asyncio-queue.rst:74
+msgid ""
+"Raises :exc:`QueueShutDown` if the queue has been shut down and is empty."
 msgstr ""
 
 #: ../../library/asyncio-queue.rst:79
+msgid "Block until all items in the queue have been received and processed."
+msgstr ""
+
+#: ../../library/asyncio-queue.rst:81
 msgid ""
 "The count of unfinished tasks goes up whenever an item is added to the "
 "queue. The count goes down whenever a consumer coroutine calls "
@@ -125,60 +130,60 @@ msgid ""
 ":meth:`join` unblocks."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:88
+#: ../../library/asyncio-queue.rst:90
 msgid ""
 "Put an item into the queue. If the queue is full, wait until a free slot is "
 "available before adding the item."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:91
+#: ../../library/asyncio-queue.rst:93 ../../library/asyncio-queue.rst:101
 msgid "Raises :exc:`QueueShutDown` if the queue has been shut down."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:95
+#: ../../library/asyncio-queue.rst:97
 msgid "Put an item into the queue without blocking."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:97
+#: ../../library/asyncio-queue.rst:99
 msgid "If no free slot is immediately available, raise :exc:`QueueFull`."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:101
+#: ../../library/asyncio-queue.rst:105
 msgid "Return the number of items in the queue."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:105
+#: ../../library/asyncio-queue.rst:109
 msgid "Put a :class:`Queue` instance into a shutdown mode."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:107
+#: ../../library/asyncio-queue.rst:111
 msgid ""
 "The queue can no longer grow. Future calls to :meth:`~Queue.put` raise "
 ":exc:`QueueShutDown`. Currently blocked callers of :meth:`~Queue.put` will "
-"be unblocked and will raise :exc:`QueueShutDown` in the formerly blocked "
-"thread."
+"be unblocked and will raise :exc:`QueueShutDown` in the formerly awaiting "
+"task."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:112
+#: ../../library/asyncio-queue.rst:116
 msgid ""
 "If *immediate* is false (the default), the queue can be wound down normally "
 "with :meth:`~Queue.get` calls to extract tasks that have already been "
 "loaded."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:116
+#: ../../library/asyncio-queue.rst:120
 msgid ""
 "And if :meth:`~Queue.task_done` is called for each remaining task, a pending"
 " :meth:`~Queue.join` will be unblocked normally."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:119
+#: ../../library/asyncio-queue.rst:123
 msgid ""
 "Once the queue is empty, future calls to :meth:`~Queue.get` will raise "
 ":exc:`QueueShutDown`."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:122
+#: ../../library/asyncio-queue.rst:126
 msgid ""
 "If *immediate* is true, the queue is terminated immediately. The queue is "
 "drained to be completely empty and the count of unfinished tasks is reduced "
@@ -188,93 +193,94 @@ msgid ""
 " the queue is empty."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:130
+#: ../../library/asyncio-queue.rst:134
 msgid ""
 "Use caution when using :meth:`~Queue.join` with *immediate* set to true. "
 "This unblocks the join even when no work has been done on the tasks, "
 "violating the usual invariant for joining a queue."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:138
+#: ../../library/asyncio-queue.rst:142
 msgid "Indicate that a formerly enqueued work item is complete."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:140
+#: ../../library/asyncio-queue.rst:144
 msgid ""
 "Used by queue consumers. For each :meth:`~Queue.get` used to fetch a work "
 "item, a subsequent call to :meth:`task_done` tells the queue that the "
 "processing on the work item is complete."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:144
+#: ../../library/asyncio-queue.rst:148
 msgid ""
 "If a :meth:`join` is currently blocking, it will resume when all items have "
 "been processed (meaning that a :meth:`task_done` call was received for every"
 " item that had been :meth:`~Queue.put` into the queue)."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:149
+#: ../../library/asyncio-queue.rst:153
 msgid ""
 "Raises :exc:`ValueError` if called more times than there were items placed "
 "in the queue."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:154
+#: ../../library/asyncio-queue.rst:158
 msgid "Priority Queue"
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:158
+#: ../../library/asyncio-queue.rst:162
 msgid ""
 "A variant of :class:`Queue`; retrieves entries in priority order (lowest "
 "first)."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:161
+#: ../../library/asyncio-queue.rst:165
 msgid "Entries are typically tuples of the form ``(priority_number, data)``."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:166
+#: ../../library/asyncio-queue.rst:170
 msgid "LIFO Queue"
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:170
+#: ../../library/asyncio-queue.rst:174
 msgid ""
 "A variant of :class:`Queue` that retrieves most recently added entries first"
 " (last in, first out)."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:175
+#: ../../library/asyncio-queue.rst:179
 msgid "Exceptions"
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:179
+#: ../../library/asyncio-queue.rst:183
 msgid ""
 "This exception is raised when the :meth:`~Queue.get_nowait` method is called"
 " on an empty queue."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:185
+#: ../../library/asyncio-queue.rst:189
 msgid ""
 "Exception raised when the :meth:`~Queue.put_nowait` method is called on a "
 "queue that has reached its *maxsize*."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:191
+#: ../../library/asyncio-queue.rst:195
 msgid ""
-"Exception raised when :meth:`~Queue.put` or :meth:`~Queue.get` is called on "
-"a queue which has been shut down."
+"Exception raised when :meth:`~Queue.put`, :meth:`~Queue.put_nowait`, "
+":meth:`~Queue.get` or :meth:`~Queue.get_nowait` is called on a queue which "
+"has been shut down."
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:198
+#: ../../library/asyncio-queue.rst:203
 msgid "Examples"
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:202
+#: ../../library/asyncio-queue.rst:207
 msgid ""
 "Queues can be used to distribute workload between several concurrent tasks::"
 msgstr ""
 
-#: ../../library/asyncio-queue.rst:205
+#: ../../library/asyncio-queue.rst:210
 msgid ""
 "import asyncio\n"
 "import random\n"

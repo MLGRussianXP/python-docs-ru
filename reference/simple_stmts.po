@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-05 16:45+0000\n"
+"POT-Creation-Date: 2026-07-31 17:39+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -192,7 +192,7 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:184
 msgid ""
 "This description does not necessarily apply to descriptor attributes, such "
-"as properties created with :func:`property`."
+"as properties created with :deco:`property`."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:191

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:26+0000\n"
+"POT-Creation-Date: 2026-07-31 17:39+0000\n"
 "PO-Revision-Date: 2025-09-15 01:03+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -470,7 +470,7 @@ msgstr ""
 #: ../../c-api/intro.rst:339
 msgid ""
 "A use for ``Py_UNREACHABLE()`` is following a call to a function that never "
-"returns but that is not declared :c:macro:`_Py_NO_RETURN`."
+"returns but that is not declared ``_Py_NO_RETURN``."
 msgstr ""
 
 #: ../../c-api/intro.rst:342
@@ -1268,7 +1268,7 @@ msgstr ""
 
 #: ../../c-api/intro.rst:1027
 msgid ""
-"Defining :c:macro:`Py_TRACE_REFS` enables reference tracing (see the "
+"Defining ``Py_TRACE_REFS`` enables reference tracing (see the "
 ":option:`configure --with-trace-refs option <--with-trace-refs>`). When "
 "defined, a circular doubly linked list of active objects is maintained by "
 "adding two extra fields to every :c:type:`PyObject`.  Total allocations are "

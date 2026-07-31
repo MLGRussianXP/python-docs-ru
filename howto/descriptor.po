@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-03 15:30+0000\n"
+"POT-Creation-Date: 2026-07-31 17:39+0000\n"
 "PO-Revision-Date: 2025-09-15 01:03+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -79,7 +79,7 @@ msgid ""
 "The last section has pure Python equivalents for built-in descriptors that "
 "are written in C.  Read this if you're curious about how functions turn into"
 " bound methods or about the implementation of common tools like "
-":func:`classmethod`, :func:`staticmethod`, :func:`property`, and "
+":deco:`classmethod`, :deco:`staticmethod`, :deco:`property`, and "
 ":term:`__slots__`."
 msgstr ""
 
@@ -451,9 +451,9 @@ msgstr ""
 #: ../../howto/descriptor.rst:319
 msgid ""
 "Descriptors are used throughout the language.  It is how functions turn into"
-" bound methods.  Common tools like :func:`classmethod`, "
-":func:`staticmethod`, :func:`property`, and "
-":func:`functools.cached_property` are all implemented as descriptors."
+" bound methods.  Common tools like :deco:`classmethod`, "
+":deco:`staticmethod`, :deco:`property`, and "
+":deco:`functools.cached_property` are all implemented as descriptors."
 msgstr ""
 
 #: ../../howto/descriptor.rst:326
@@ -1489,7 +1489,7 @@ msgstr ""
 #: ../../howto/descriptor.rst:1328
 msgid ""
 "Using the non-data descriptor protocol, a pure Python version of "
-":func:`staticmethod` would look like this:"
+":deco:`staticmethod` would look like this:"
 msgstr ""
 
 #: ../../howto/descriptor.rst:1331
@@ -1583,7 +1583,7 @@ msgstr ""
 #: ../../howto/descriptor.rst:1464
 msgid ""
 "Using the non-data descriptor protocol, a pure Python version of "
-":func:`classmethod` would look like this:"
+":deco:`classmethod` would look like this:"
 msgstr ""
 
 #: ../../howto/descriptor.rst:1467
@@ -1701,7 +1701,7 @@ msgstr ""
 
 #: ../../howto/descriptor.rst:1603
 msgid ""
-"5. Blocks tools like :func:`functools.cached_property` which require an "
+"5. Blocks tools like :deco:`functools.cached_property` which require an "
 "instance dictionary to function correctly:"
 msgstr ""
 

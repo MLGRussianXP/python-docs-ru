@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-07 15:08+0000\n"
+"POT-Creation-Date: 2026-07-31 17:39+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -517,7 +517,7 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:391
 msgid ""
-":data:`~typing.dataclass_transform` may be used to decorate a class, "
+":deco:`~typing.dataclass_transform` may be used to decorate a class, "
 "metaclass, or a function that is itself a decorator. The presence of "
 "``@dataclass_transform()`` tells a static type checker that the decorated "
 "object performs runtime \"magic\" that transforms a class, giving it "
@@ -904,8 +904,8 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:689
 msgid ""
-"Added the :func:`~enum.property` decorator, which works like "
-":func:`property` except for enums. Use this instead of "
+"Added the :deco:`~enum.property` decorator, which works like "
+":deco:`property` except for enums. Use this instead of "
 ":func:`types.DynamicClassAttribute`."
 msgstr ""
 
@@ -974,7 +974,7 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:743
 msgid ""
-":func:`functools.singledispatch` now supports :data:`types.UnionType` and "
+":deco:`functools.singledispatch` now supports :data:`types.UnionType` and "
 ":data:`typing.Union` as annotations to the dispatch argument.::"
 msgstr ""
 
@@ -1520,7 +1520,7 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:1167
 msgid ""
-"The :func:`typing.final` decorator now sets the ``__final__`` attributed on "
+"The :deco:`typing.final` decorator now sets the ``__final__`` attributed on "
 "the decorated object. (Contributed by Jelle Zijlstra in :gh:`90500`.)"
 msgstr ""
 
@@ -1575,7 +1575,7 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:1200
 msgid ""
-":func:`typing.no_type_check` no longer modifies external classes and "
+":deco:`typing.no_type_check` no longer modifies external classes and "
 "functions. It also now correctly marks classmethods as not to be type "
 "checked. (Contributed by Nikita Sobolev in :gh:`90729`.)"
 msgstr ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2025, Python Software Foundation
+# Copyright (C) 2001-2026, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-03 14:16+0000\n"
+"POT-Creation-Date: 2026-07-31 17:39+0000\n"
 "PO-Revision-Date: 2025-09-15 01:03+0000\n"
 "Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -230,7 +230,7 @@ msgstr ""
 #: ../../howto/annotations.rst:151
 msgid ""
 "If ``o`` is a wrapped callable using :func:`functools.update_wrapper`, "
-":func:`functools.wraps`, or :func:`functools.partial`, iteratively unwrap it"
+":deco:`functools.wraps`, or :func:`functools.partial`, iteratively unwrap it"
 " by accessing either ``o.__wrapped__`` or ``o.func`` as appropriate, until "
 "you have found the root unwrapped function."
 msgstr ""

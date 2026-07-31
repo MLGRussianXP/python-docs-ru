@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"POT-Creation-Date: 2026-07-31 15:58+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
 "Last-Translator: python-doc bot, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -230,7 +230,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/enum.rst:118
-msgid ":func:`~enum.property`"
+msgid ":deco:`~enum.property`"
 msgstr ""
 
 #: ../../library/enum.rst:120
@@ -241,7 +241,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/enum.rst:124
-msgid ":func:`unique`"
+msgid ":deco:`unique`"
 msgstr ""
 
 #: ../../library/enum.rst:126
@@ -250,7 +250,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/enum.rst:128
-msgid ":func:`verify`"
+msgid ":deco:`verify`"
 msgstr ""
 
 #: ../../library/enum.rst:130
@@ -260,7 +260,7 @@ msgid ""
 msgstr ""
 
 #: ../../library/enum.rst:133
-msgid ":func:`member`"
+msgid ":deco:`member`"
 msgstr ""
 
 #: ../../library/enum.rst:135
@@ -268,7 +268,7 @@ msgid "Make ``obj`` a member.  Can be used as a decorator."
 msgstr ""
 
 #: ../../library/enum.rst:137
-msgid ":func:`nonmember`"
+msgid ":deco:`nonmember`"
 msgstr ""
 
 #: ../../library/enum.rst:139
@@ -276,7 +276,7 @@ msgid "Do not make ``obj`` a member.  Can be used as a decorator."
 msgstr ""
 
 #: ../../library/enum.rst:141
-msgid ":func:`global_enum`"
+msgid ":deco:`global_enum`"
 msgstr ""
 
 #: ../../library/enum.rst:143
@@ -1450,7 +1450,7 @@ msgstr ""
 
 #: ../../library/enum.rst:1009
 msgid ""
-"A decorator similar to the built-in *property*, but specifically for "
+"A decorator similar to the built-in :deco:`property`, but specifically for "
 "enumerations.  It allows member attributes to have the same names as members"
 " themselves."
 msgstr ""

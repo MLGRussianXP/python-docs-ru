@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-09 16:27+0000\n"
+"POT-Creation-Date: 2026-07-31 15:58+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: python-doc bot, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -2593,7 +2593,7 @@ msgid ""
 "  There are no other implied relationships among the comparison operators or"
 " default implementations; for example, the truth of ``(x<y or x==y)`` does "
 "not imply ``x<=y``. To automatically generate ordering operations from a "
-"single root operation, see :func:`functools.total_ordering`."
+"single root operation, see :deco:`functools.total_ordering`."
 msgstr ""
 
 #: ../../reference/datamodel.rst:2202
@@ -3098,7 +3098,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:2624
 msgid ""
-"The :func:`property` function is implemented as a data descriptor. "
+"The :deco:`property` decorator is implemented as a data descriptor. "
 "Accordingly, instances cannot override the behavior of a property."
 msgstr ""
 

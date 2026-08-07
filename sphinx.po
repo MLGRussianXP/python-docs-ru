@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-23 16:35+0000\n"
+"POT-Creation-Date: 2026-08-07 16:56+0000\n"
 "PO-Revision-Date: 2025-09-15 01:05+0000\n"
 "Last-Translator: Dmitry Luschan, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -223,23 +223,27 @@ msgstr ""
 msgid "Deprecated since version %s, removed in version %s"
 msgstr ""
 
-#: ../../tools/templates/dummy.html:35
-msgid "in development"
+#: ../../tools/templates/dummy.html:32
+msgid ":term:`Soft deprecated` since version %s"
 msgstr ""
 
 #: ../../tools/templates/dummy.html:36
-msgid "pre-release"
+msgid "in development"
 msgstr ""
 
 #: ../../tools/templates/dummy.html:37
-msgid "stable"
+msgid "pre-release"
 msgstr ""
 
 #: ../../tools/templates/dummy.html:38
-msgid "security-fixes"
+msgid "stable"
 msgstr ""
 
 #: ../../tools/templates/dummy.html:39
+msgid "security-fixes"
+msgstr ""
+
+#: ../../tools/templates/dummy.html:40
 msgid "EOL"
 msgstr ""
 
@@ -346,90 +350,114 @@ msgid "Other resources:"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:85
-msgid "Python Packaging User Guide"
+msgid "Python developer's guide"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:86
+msgid "Information on contributing to Python"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:87
+msgid "Python Packaging User Guide"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:88
 msgid "Resources relating to Python packaging"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:89
-msgid "Static Typing with Python"
+msgid "Audio/visual talks"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:90
-msgid "Information and guides about Python type safety"
+msgid "Podcasts, talks, and video presentations from the community"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:93
+msgid "Python Enhancement Proposals"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:94
-msgid "Indices, glossary, and search:"
+msgid "Index of proposed improvements to Python"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:97
-msgid "Global module index"
+#: ../../tools/templates/indexcontent.html:95
+msgid "Static Typing with Python"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:98
-msgid "All modules and libraries"
-msgstr ""
-
-#: ../../tools/templates/indexcontent.html:99
-msgid "General index"
+#: ../../tools/templates/indexcontent.html:96
+msgid "Information and guides about Python type safety"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:100
-msgid "All functions, classes, and terms"
+msgid "Indices, glossary, and search:"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:101
-msgid "Glossary"
+#: ../../tools/templates/indexcontent.html:103
+msgid "Global module index"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:102
-msgid "Terms explained"
+#: ../../tools/templates/indexcontent.html:104
+msgid "All modules and libraries"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:105
-msgid "Search page"
+msgid "General index"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:106
-msgid "Search this documentation"
+msgid "All functions, classes, and terms"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:107
-msgid "Complete table of contents"
+msgid "Glossary"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:108
-msgid "All sections and subsections"
+msgid "Terms explained"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:111
+msgid "Search page"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:112
+msgid "Search this documentation"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:113
+msgid "Complete table of contents"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:114
+msgid "All sections and subsections"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:118
 msgid "Project information:"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:115
+#: ../../tools/templates/indexcontent.html:121
 msgid "Reporting issues"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:116
+#: ../../tools/templates/indexcontent.html:122
 msgid "Contributing to docs"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:117
+#: ../../tools/templates/indexcontent.html:123
 msgid "Download the documentation"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:120
+#: ../../tools/templates/indexcontent.html:126
 msgid "History and license of Python"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:121
+#: ../../tools/templates/indexcontent.html:127
 msgid "Copyright"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:122
+#: ../../tools/templates/indexcontent.html:128
 msgid "About the documentation"
 msgstr ""
 
@@ -443,30 +471,6 @@ msgstr ""
 
 #: ../../tools/templates/indexsidebar.html:7
 msgid "All versions"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:9
-msgid "Other resources"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:12
-msgid "PEP index"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:13
-msgid "Beginner's guide"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:14
-msgid "Book list"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:15
-msgid "Audio/visual talks"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:16
-msgid "Python developer’s guide"
 msgstr ""
 
 #: ../../tools/templates/layout.html:6

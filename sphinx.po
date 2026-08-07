@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-23 14:55+0000\n"
+"POT-Creation-Date: 2026-08-07 14:47+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: python-doc bot, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
@@ -353,90 +353,114 @@ msgid "Other resources:"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:85
-msgid "Python Packaging User Guide"
+msgid "Python developer's guide"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:86
+msgid "Information on contributing to Python"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:87
+msgid "Python Packaging User Guide"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:88
 msgid "Resources relating to Python packaging"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:89
-msgid "Static Typing with Python"
+msgid "Audio/visual talks"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:90
-msgid "Information and guides about Python type safety"
+msgid "Podcasts, talks, and video presentations from the community"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:93
+msgid "Python Enhancement Proposals"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:94
+msgid "Index of proposed improvements to Python"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:95
+msgid "Static Typing with Python"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:96
+msgid "Information and guides about Python type safety"
+msgstr ""
+
+#: ../../tools/templates/indexcontent.html:100
 msgid "Indices, glossary, and search:"
 msgstr "Индексы, глоссарий и поиск:"
 
-#: ../../tools/templates/indexcontent.html:97
+#: ../../tools/templates/indexcontent.html:103
 msgid "Global module index"
 msgstr "Глобальный указатель модулей"
 
-#: ../../tools/templates/indexcontent.html:98
+#: ../../tools/templates/indexcontent.html:104
 msgid "All modules and libraries"
 msgstr "Все модули и библиотеки"
 
-#: ../../tools/templates/indexcontent.html:99
+#: ../../tools/templates/indexcontent.html:105
 msgid "General index"
 msgstr "Общий указатель"
 
-#: ../../tools/templates/indexcontent.html:100
+#: ../../tools/templates/indexcontent.html:106
 msgid "All functions, classes, and terms"
 msgstr "Все функции, классы и термины"
 
-#: ../../tools/templates/indexcontent.html:101
+#: ../../tools/templates/indexcontent.html:107
 msgid "Glossary"
 msgstr "Глоссарий"
 
-#: ../../tools/templates/indexcontent.html:102
+#: ../../tools/templates/indexcontent.html:108
 msgid "Terms explained"
 msgstr "Объяснение терминов"
 
-#: ../../tools/templates/indexcontent.html:105
+#: ../../tools/templates/indexcontent.html:111
 msgid "Search page"
 msgstr "Страница поиска"
 
-#: ../../tools/templates/indexcontent.html:106
+#: ../../tools/templates/indexcontent.html:112
 msgid "Search this documentation"
 msgstr "Поиск по этой документации"
 
-#: ../../tools/templates/indexcontent.html:107
+#: ../../tools/templates/indexcontent.html:113
 msgid "Complete table of contents"
 msgstr "Полное содержание"
 
-#: ../../tools/templates/indexcontent.html:108
+#: ../../tools/templates/indexcontent.html:114
 msgid "All sections and subsections"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:112
+#: ../../tools/templates/indexcontent.html:118
 msgid "Project information:"
 msgstr "Информация о проекте:"
 
-#: ../../tools/templates/indexcontent.html:115
+#: ../../tools/templates/indexcontent.html:121
 msgid "Reporting issues"
 msgstr "Сообщение о проблемах"
 
-#: ../../tools/templates/indexcontent.html:116
+#: ../../tools/templates/indexcontent.html:122
 msgid "Contributing to docs"
 msgstr "Вклад в документацию"
 
-#: ../../tools/templates/indexcontent.html:117
+#: ../../tools/templates/indexcontent.html:123
 msgid "Download the documentation"
 msgstr "Скачать документацию"
 
-#: ../../tools/templates/indexcontent.html:120
+#: ../../tools/templates/indexcontent.html:126
 msgid "History and license of Python"
 msgstr "История и лицензия Python"
 
-#: ../../tools/templates/indexcontent.html:121
+#: ../../tools/templates/indexcontent.html:127
 msgid "Copyright"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:122
+#: ../../tools/templates/indexcontent.html:128
 msgid "About the documentation"
 msgstr "О документации"
 
@@ -450,30 +474,6 @@ msgstr ""
 
 #: ../../tools/templates/indexsidebar.html:7
 msgid "All versions"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:9
-msgid "Other resources"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:12
-msgid "PEP index"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:13
-msgid "Beginner's guide"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:14
-msgid "Book list"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:15
-msgid "Audio/visual talks"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:16
-msgid "Python developer’s guide"
 msgstr ""
 
 #: ../../tools/templates/layout.html:6

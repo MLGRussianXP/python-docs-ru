@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../tutorial/interpreter.rst:17
 msgid "python3.15"
-msgstr ""
+msgstr "python3.15"
 
 #: ../../tutorial/interpreter.rst:21
 msgid ""

@@ -108,10 +108,15 @@ msgid ""
 "attribute of functions, classes, and modules. Annotate functions are a "
 "subset of :term:`evaluate functions <evaluate function>`."
 msgstr ""
+"Вызываемый объект, который можно вызвать для получения :term:`аннотации "
+"<annotation>` объекта. Функции аннотации обычно являются :term:`функциями "
+"<function>`, автоматически создаваемыми в качестве атрибута "
+":attr:`~object.__annotate__` функций, классов и модулей. Функции аннотации "
+"являются подмножеством :term:`вычисляющих функций <evaluate function>`."
 
 #: ../../glossary.rst:47
 msgid "annotation"
-msgstr ""
+msgstr "аннотация"
 
 #: ../../glossary.rst:49
 msgid ""

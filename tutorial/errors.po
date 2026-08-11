@@ -5,16 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
-# Dmitry Luschan, 2025
+# Dmitry Luschan, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-25 14:54+0000\n"
+"POT-Creation-Date: 2026-08-11 14:51+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Dmitry Luschan, 2025\n"
+"Last-Translator: Dmitry Luschan, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -281,12 +281,20 @@ msgid ""
 "*try clause*, not in other handlers of the same :keyword:`!try` statement.  "
 "An *except clause* may name multiple exceptions, for example::"
 msgstr ""
+"Инструкция :keyword:`try` может содержать более одной *ветви except*, чтобы "
+"указать обработчики для разных исключений. Выполнится не более одного "
+"обработчика. Обработчики обрабатывают только исключения, возникающие в "
+"соответствующей *ветке try*, а не в других обработчиках той же инструкции "
+":keyword:`!try`. *Ветка except* может указывать несколько исключений, "
+"например::"
 
 #: ../../tutorial/errors.rst:126
 msgid ""
 "... except RuntimeError, TypeError, NameError:\n"
 "...     pass"
 msgstr ""
+"... except RuntimeError, TypeError, NameError:\n"
+"...     pass"
 
 #: ../../tutorial/errors.rst:129
 msgid ""
@@ -1187,6 +1195,30 @@ msgid ""
 "caught <class 'ExceptionGroup'>: there were problems (2 sub-exceptions)\n"
 ">>>"
 msgstr ""
+">>> def f():\n"
+"...     excs = [OSError('ошибка 1'), SystemError('ошибка 2')]\n"
+"...     raise ExceptionGroup('возникли проблемы', excs)\n"
+"...\n"
+">>> f()\n"
+"  + Exception Group Traceback (most recent call last):\n"
+"  |   File \"<stdin>\", line 1, in <module>\n"
+"  |     f()\n"
+"  |     ~^^\n"
+"  |   File \"<stdin>\", line 3, in f\n"
+"  |     raise ExceptionGroup('возникли проблемы', excs)\n"
+"  | ExceptionGroup: возникли проблемы (2 sub-exceptions)\n"
+"  +-+---------------- 1 ----------------\n"
+"    | OSError: ошибка 1\n"
+"    +---------------- 2 ----------------\n"
+"    | SystemError: ошибка 2\n"
+"    +------------------------------------\n"
+">>> try:\n"
+"...     f()\n"
+"... except Exception as e:\n"
+"...     print(f'перехвачено {type(e)}: {e}')\n"
+"...\n"
+"перехвачено <class 'ExceptionGroup'>: возникли проблемы (2 sub-exceptions)\n"
+">>>"
 
 #: ../../tutorial/errors.rst:557
 msgid ""

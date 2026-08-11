@@ -123,6 +123,9 @@ msgid ""
 "A label associated with a variable, a class attribute or a function "
 "parameter or return value, used by convention as a :term:`type hint`."
 msgstr ""
+"Метка, связанная с переменной, атрибутом класса, параметром функции или её "
+"возвращаемым значением, которая по соглашению используется в качестве "
+":term:`подсказки типа`."
 
 #: ../../glossary.rst:53
 msgid ""
@@ -131,6 +134,10 @@ msgid ""
 "retrieved by calling :func:`annotationlib.get_annotations` on modules, "
 "classes, and functions, respectively."
 msgstr ""
+"Аннотации локальных переменных недоступны во время выполнения, но аннотации "
+"глобальных переменных, атрибутов классов и функций можно получить, вызвав "
+":func:`annotationlib.get_annotations` для модулей, классов и функций "
+"соответственно."
 
 #: ../../glossary.rst:58
 msgid ""
@@ -138,6 +145,10 @@ msgid ""
 ":pep:`526`, and :pep:`649`, which describe this functionality. Also see "
 ":ref:`annotations-howto` for best practices on working with annotations."
 msgstr ""
+"См. :term:`аннотацию переменных`, :term:`аннотацию функций`, :pep:`484`, "
+":pep:`526` и :pep:`649`, в которых описывается эта функциональность. См. "
+"также раздел :ref:`annotations-howto` с рекомендациями по работе с "
+"аннотациями."
 
 #: ../../glossary.rst:62
 msgid "argument"

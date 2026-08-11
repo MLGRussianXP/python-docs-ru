@@ -5,16 +5,16 @@
 # 
 # Translators:
 # python-doc bot, 2025
-# Dmitry Luschan, 2025
+# Dmitry Luschan, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"POT-Creation-Date: 2026-08-11 14:51+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
-"Last-Translator: Dmitry Luschan, 2025\n"
+"Last-Translator: Dmitry Luschan, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -74,6 +74,8 @@ msgid ""
 "Remove the first item from the list whose value is equal to *value*.  It "
 "raises a :exc:`ValueError` if there is no such item."
 msgstr ""
+"Удалить первый элемент из списка, значение которого равно *value*. "
+"Возбуждает исключение :exc:`ValueError`, если такого элемента нет."
 
 #: ../../tutorial/datastructures.rst:49
 msgid ""
@@ -96,6 +98,8 @@ msgid ""
 "Return zero-based index of the first occurrence of *value* in the list. "
 "Raises a :exc:`ValueError` if there is no such item."
 msgstr ""
+"Возвращает индекс первого вхождения *value* в списке, при нумерации с нуля. "
+"Возбуждает исключение :exc:`ValueError`, если такого элемента нет."
 
 #: ../../tutorial/datastructures.rst:67
 msgid ""
@@ -111,7 +115,7 @@ msgstr ""
 
 #: ../../tutorial/datastructures.rst:76
 msgid "Return the number of times *value* appears in the list."
-msgstr ""
+msgstr "Возвращает количество вхождений *value* в списке."
 
 #: ../../tutorial/datastructures.rst:82
 msgid ""
@@ -635,7 +639,7 @@ msgstr ""
 
 #: ../../tutorial/datastructures.rst:332
 msgid "Unpacking in Lists and List Comprehensions"
-msgstr ""
+msgstr "Распаковка в списках и списковых включениях"
 
 #: ../../tutorial/datastructures.rst:334
 msgid ""
@@ -646,6 +650,12 @@ msgid ""
 "list, prefixing an expression by a ``*`` will unpack the result of that "
 "expression, adding each of its elements to the list we're creating::"
 msgstr ""
+"В разделе :ref:`tut-unpacking-arguments` описывается использование ``*`` для"
+" «распаковки» элементов итерируемого объекта: каждый элемент передаётся в "
+"функцию отдельно в качестве аргумента. Распаковку можно использовать и в "
+"других контекстах, например при создании списков. При указании элементов "
+"списка добавление ``*`` перед выражением приводит к распаковке результата "
+"этого выражения: каждый из его элементов добавляется в создаваемый список::"
 
 #: ../../tutorial/datastructures.rst:341
 msgid ""
@@ -653,6 +663,9 @@ msgid ""
 ">>> [0, *x, 4, 5, 6]\n"
 "[0, 1, 2, 3, 4, 5, 6]"
 msgstr ""
+">>> x = [1, 2, 3]\n"
+">>> [0, *x, 4, 5, 6]\n"
+"[0, 1, 2, 3, 4, 5, 6]"
 
 #: ../../tutorial/datastructures.rst:345
 msgid ""
@@ -660,6 +673,9 @@ msgid ""
 "iterable object; trying to unpack a non-iterable object will raise an "
 "exception::"
 msgstr ""
+"Это работает только в том случае, если выражение после ``*`` вычисляется в "
+"итерируемый объект. Попытка распаковать неитерируемый объект приведёт к "
+"исключению::"
 
 #: ../../tutorial/datastructures.rst:348
 msgid ""
@@ -670,6 +686,12 @@ msgid ""
 "    [0, *x, 2, 3, 4]\n"
 "TypeError: Value after * must be an iterable, not int"
 msgstr ""
+">>> x = 1\n"
+">>> [0, *x, 2, 3, 4]\n"
+"Traceback (most recent call last):\n"
+"  File \"<python-input-1>\", line 1, in <module>\n"
+"    [0, *x, 2, 3, 4]\n"
+"TypeError: Value after * must be an iterable, not int"
 
 #: ../../tutorial/datastructures.rst:355
 msgid ""

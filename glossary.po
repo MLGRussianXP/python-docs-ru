@@ -54,15 +54,21 @@ msgid ""
 "right delimiters (parentheses, square brackets, curly braces or triple "
 "quotes), or after specifying a decorator."
 msgstr ""
+"Стандартное приглашение Python в :term:`интерактивной` оболочке при вводе "
+"блока кода с отступом, внутри пары соответствующих друг другу разделителей "
+"(круглых, квадратных или фигурных скобок, а также тройных кавычек) или после"
+" указания декоратора."
 
 #: ../../glossary.rst:26
 msgid ""
 "The three dots form of the :ref:`Ellipsis <bltin-ellipsis-object>` object."
 msgstr ""
+"Форму записи объекта :ref:`Ellipsis <bltin-ellipsis-object>` в виде "
+"многоточия."
 
 #: ../../glossary.rst:27
 msgid "abstract base class"
-msgstr ""
+msgstr "абстрактный базовый класс"
 
 #: ../../glossary.rst:29
 msgid ""
@@ -77,6 +83,18 @@ msgid ""
 "module), import finders and loaders (in the :mod:`importlib.abc` module).  "
 "You can create your own ABCs with the :mod:`abc` module."
 msgstr ""
+"Абстрактные базовые классы дополняют :term:`утиную типизацию`, предоставляя "
+"способ определения интерфейсов в случаях, когда другие методы, вроде функции"
+" :func:`hasattr`, были бы громоздкими или могли бы привести к трудноуловимым"
+" ошибкам (например, при работе с :ref:`магическими методами <special-"
+"lookup>`). Абстрактные базовые классы вводят виртуальные подклассы — классы,"
+" которые не наследуются от другого класса, но тем не менее распознаются "
+"функциями :func:`isinstance` и :func:`issubclass`; см. документацию модуля "
+":mod:`abc`. Python предоставляет множество встроенных абстрактных базовых "
+"классов для структур данных (в модуле :mod:`collections.abc`), чисел (в "
+"модуле :mod:`numbers`), потоков (в модуле :mod:`io`), а также для механизма "
+"поиска и загрузки при импорте (в модуле :mod:`importlib.abc`). Создавать "
+"собственные абстрактные базовые классы можно с помощью модуля :mod:`abc`."
 
 #: ../../glossary.rst:40
 msgid "annotate function"
@@ -2753,7 +2771,7 @@ msgstr ""
 
 #: ../../glossary.rst:1539
 msgid "subscript"
-msgstr ""
+msgstr "индексатор"
 
 #: ../../glossary.rst:1541
 msgid ""
@@ -2763,6 +2781,11 @@ msgid ""
 "subscripting a :term:`mapping`, or an :term:`index` when subscripting a "
 ":term:`sequence`."
 msgstr ""
+"Выражение в квадратных скобках при :ref:`обращении к элементу "
+"<subscriptions>`, например ``3`` в ``items[3]``. Обычно используется для "
+"выбора элемента контейнера. При обращении к :term:`отображению` индексатор "
+"также называется :term:`ключом`, а при обращении к "
+":term:`последовательности` — :term:`индексом`."
 
 #: ../../glossary.rst:1547
 msgid "synchronization primitive"

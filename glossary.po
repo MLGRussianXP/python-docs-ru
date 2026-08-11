@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Dmitry Luschan, 2026
 # python-doc bot, 2026
+# Dmitry Luschan, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-31 15:58+0000\n"
+"POT-Creation-Date: 2026-08-09 14:27+0000\n"
 "PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Last-Translator: python-doc bot, 2026\n"
+"Last-Translator: Dmitry Luschan, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,21 +28,24 @@ msgstr "Глоссарий"
 
 #: ../../glossary.rst:10
 msgid "``>>>``"
-msgstr ""
+msgstr "``>>>``"
 
 #: ../../glossary.rst:12
 msgid ""
 "The default Python prompt of the :term:`interactive` shell.  Often seen for "
 "code examples which can be executed interactively in the interpreter."
 msgstr ""
+"Стандартное приглашение Python в :term:`интерактивной` оболочке. Часто "
+"встречается в примерах кода, которые можно выполнить интерактивно в "
+"интерпретаторе."
 
 #: ../../glossary.rst:15
 msgid "``...``"
-msgstr ""
+msgstr "``...``"
 
 #: ../../glossary.rst:17
 msgid "Can refer to:"
-msgstr ""
+msgstr "Может обозначать:"
 
 #: ../../glossary.rst:19
 msgid ""
@@ -836,7 +839,7 @@ msgstr ""
 
 #: ../../glossary.rst:470
 msgid "docstring"
-msgstr ""
+msgstr "строка документации"
 
 #: ../../glossary.rst:472
 msgid ""
@@ -846,6 +849,11 @@ msgid ""
 "enclosing class, function or module.  Since it is available via "
 "introspection, it is the canonical place for documentation of the object."
 msgstr ""
+"Строковый литерал, который является первым выражением в классе, функции или "
+"модуле. Хотя при выполнении набора инструкций он игнорируется, компилятор "
+"распознаёт его и помещает в атрибут :attr:`~definition.__doc__` содержащего "
+"его класса, функции или модуля. Поскольку к нему можно получить доступ "
+"средствами интроспекции, это стандартное место для документации объекта."
 
 #: ../../glossary.rst:478
 msgid "duck-typing"
@@ -1446,7 +1454,7 @@ msgstr ""
 
 #: ../../glossary.rst:802
 msgid "index"
-msgstr ""
+msgstr "индекс"
 
 #: ../../glossary.rst:804
 msgid ""
@@ -2671,7 +2679,7 @@ msgstr ""
 
 #: ../../glossary.rst:1504
 msgid "statement"
-msgstr ""
+msgstr "инструкция"
 
 #: ../../glossary.rst:1506
 msgid ""
@@ -2679,6 +2687,10 @@ msgid ""
 " an :term:`expression` or one of several constructs with a keyword, such as "
 ":keyword:`if`, :keyword:`while` or :keyword:`for`."
 msgstr ""
+"Инструкция является частью набора инструкций («блока» кода). Инструкция "
+"представляет собой либо :term:`выражение`, либо одну из конструкций с "
+"ключевым словом, таких как :keyword:`if`, :keyword:`while` или "
+":keyword:`for`."
 
 #: ../../glossary.rst:1509
 msgid "static type checker"

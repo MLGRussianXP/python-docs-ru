@@ -29,15 +29,19 @@ jobs:
         working-directory: /usr/local/bin
       - uses: actions/checkout@master
         with:
+          ref: ${{ github.event.repository.default_branch }}
+          path: workflow
+      - uses: actions/checkout@master
+        with:
           ref: ${{ matrix.version }}
           fetch-depth: 0
-      - run: python .github/scripts/transifex-util.py recreate_tx_config --language ru --project-slug python-newest --version ${{ matrix.version }}
+      - run: python workflow/.github/scripts/transifex-util.py recreate_tx_config --language ru --project-slug python-newest --version ${{ matrix.version }}
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
-      - run: python .github/scripts/transifex-util.py fetch --language ru --pull-options="--mode reviewed" --project-slug python-newest --version ${{ matrix.version }}
+      - run: python workflow/.github/scripts/transifex-util.py fetch --language ru --pull-options="--mode reviewed" --project-slug python-newest --version ${{ matrix.version }}
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
-      - run: python .github/scripts/transifex-util.py delete_obsolete_files --language ru --project-slug python-newest --version ${{ matrix.version }}
+      - run: python workflow/.github/scripts/transifex-util.py delete_obsolete_files --language ru --project-slug python-newest --version ${{ matrix.version }}
       - name: Set up Git
         run: |
           git config --local user.email github-actions@github.com

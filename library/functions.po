@@ -1378,6 +1378,9 @@ msgid ""
 "This function executes arbitrary code. Calling it with untrusted user-"
 "supplied input will lead to security vulnerabilities."
 msgstr ""
+"Эта функция выполняет произвольный код. Вызов этой функции с непроверенными "
+"данными, предоставленными пользователем, приведёт к уязвимостям в системе "
+"безопасности."
 
 #: ../../library/functions.rst:613
 msgid ""

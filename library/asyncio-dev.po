@@ -1,123 +1,105 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2026, Python Software Foundation
+# Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # python-doc bot, 2026
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.13\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-21 15:06+0000\n"
-"PO-Revision-Date: 2025-09-15 01:03+0000\n"
+"POT-Creation-Date: 2026-08-11 14:51+0000\n"
+"PO-Revision-Date: 2025-09-16 00:00+0000\n"
 "Last-Translator: python-doc bot, 2026\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../library/asyncio-dev.rst:7
 msgid "Developing with asyncio"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:9
 msgid ""
 "Asynchronous programming is different from classic \"sequential\" "
 "programming."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:12
 msgid ""
 "This page lists common mistakes and traps and explains how to avoid them."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:19
 msgid "Debug Mode"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:21
 msgid ""
 "By default asyncio runs in production mode.  In order to ease the "
 "development asyncio has a *debug mode*."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:24
 msgid "There are several ways to enable asyncio debug mode:"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:26
-msgid ""
-"Setting the :envvar:`PYTHONASYNCIODEBUG` environment variable to ``1``."
+msgid "Setting the :envvar:`PYTHONASYNCIODEBUG` environment variable to ``1``."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:28
 msgid "Using the :ref:`Python Development Mode <devmode>`."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:30
 msgid "Passing ``debug=True`` to :func:`asyncio.run`."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:32
 msgid "Calling :meth:`loop.set_debug`."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:34
 msgid "In addition to enabling the debug mode, consider also:"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:36
 msgid ""
-"setting the log level of the :ref:`asyncio logger <asyncio-logger>` to "
-":py:const:`logging.DEBUG`, for example the following snippet of code can be "
-"run at startup of the application::"
+"setting the log level of the :ref:`asyncio logger <asyncio-logger>` to :py:"
+"const:`logging.DEBUG`, for example the following snippet of code can be run "
+"at startup of the application::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:40
 msgid "logging.basicConfig(level=logging.DEBUG)"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:42
 msgid ""
 "configuring the :mod:`warnings` module to display :exc:`ResourceWarning` "
 "warnings.  One way of doing that is by using the :option:`-W` ``default`` "
 "command line option."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:47
 msgid "When the debug mode is enabled:"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:49
 msgid ""
-"Many non-threadsafe asyncio APIs (such as :meth:`loop.call_soon` and "
-":meth:`loop.call_at` methods) raise an exception if they are called from a "
-"wrong thread."
+"Many non-threadsafe asyncio APIs (such as :meth:`loop.call_soon` and :meth:"
+"`loop.call_at` methods) raise an exception if they are called from a wrong "
+"thread."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:53
 msgid ""
 "The execution time of the I/O selector is logged if it takes too long to "
 "perform an I/O operation."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:56
 msgid ""
-"Callbacks taking longer than 100 milliseconds are logged.  The "
-":attr:`loop.slow_callback_duration` attribute can be used to set the minimum"
-" execution duration in seconds that is considered \"slow\"."
+"Callbacks taking longer than 100 milliseconds are logged.  The :attr:`loop."
+"slow_callback_duration` attribute can be used to set the minimum execution "
+"duration in seconds that is considered \"slow\"."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:64
 msgid "Concurrency and Multithreading"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:66
 msgid ""
 "An event loop runs in a thread (typically the main thread) and executes all "
 "callbacks and Tasks in its thread.  While a Task is running in the event "
@@ -126,17 +108,14 @@ msgid ""
 "executes the next Task."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:72
 msgid ""
-"To schedule a :term:`callback` from another OS thread, the "
-":meth:`loop.call_soon_threadsafe` method should be used. Example::"
+"To schedule a :term:`callback` from another OS thread, the :meth:`loop."
+"call_soon_threadsafe` method should be used. Example::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:75
 msgid "loop.call_soon_threadsafe(callback, *args)"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:77
 msgid ""
 "Almost all asyncio objects are not thread safe, which is typically not a "
 "problem unless there is code that works with them from outside of a Task or "
@@ -144,18 +123,15 @@ msgid ""
 "API, the :meth:`loop.call_soon_threadsafe` method should be used, e.g.::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:83
 msgid "loop.call_soon_threadsafe(fut.cancel)"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:85
 msgid ""
-"To schedule a coroutine object from a different OS thread, the "
-":func:`run_coroutine_threadsafe` function should be used. It returns a "
-":class:`concurrent.futures.Future` to access the result::"
+"To schedule a coroutine object from a different OS thread, the :func:"
+"`run_coroutine_threadsafe` function should be used. It returns a :class:"
+"`concurrent.futures.Future` to access the result::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:89
 msgid ""
 "async def coro_func():\n"
 "     return await asyncio.sleep(1, 42)\n"
@@ -167,88 +143,75 @@ msgid ""
 "result = future.result()"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:98
 msgid "To handle signals the event loop must be run in the main thread."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:101
 msgid ""
-"The :meth:`loop.run_in_executor` method can be used with a "
-":class:`concurrent.futures.ThreadPoolExecutor` to execute blocking code in a"
-" different OS thread without blocking the OS thread that the event loop runs"
-" in."
+"The :meth:`loop.run_in_executor` method can be used with a :class:"
+"`concurrent.futures.ThreadPoolExecutor` or :class:`~concurrent.futures."
+"InterpreterPoolExecutor` to execute blocking code in a different OS thread "
+"without blocking the OS thread that the event loop runs in."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:106
 msgid ""
 "There is currently no way to schedule coroutines or callbacks directly from "
-"a different process (such as one started with :mod:`multiprocessing`). The "
-":ref:`asyncio-event-loop-methods` section lists APIs that can read from "
-"pipes and watch file descriptors without blocking the event loop. In "
-"addition, asyncio's :ref:`Subprocess <asyncio-subprocess>` APIs provide a "
-"way to start a process and communicate with it from the event loop. Lastly, "
-"the aforementioned :meth:`loop.run_in_executor` method can also be used with"
-" a :class:`concurrent.futures.ProcessPoolExecutor` to execute code in a "
+"a different process (such as one started with :mod:`multiprocessing`). The :"
+"ref:`asyncio-event-loop-methods` section lists APIs that can read from pipes "
+"and watch file descriptors without blocking the event loop. In addition, "
+"asyncio's :ref:`Subprocess <asyncio-subprocess>` APIs provide a way to start "
+"a process and communicate with it from the event loop. Lastly, the "
+"aforementioned :meth:`loop.run_in_executor` method can also be used with a :"
+"class:`concurrent.futures.ProcessPoolExecutor` to execute code in a "
 "different process."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:120
 msgid "Running Blocking Code"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:122
 msgid ""
 "Blocking (CPU-bound) code should not be called directly.  For example, if a "
 "function performs a CPU-intensive calculation for 1 second, all concurrent "
 "asyncio Tasks and IO operations would be delayed by 1 second."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:127
 msgid ""
-"An executor can be used to run a task in a different thread or even in a "
-"different process to avoid blocking the OS thread with the event loop.  See "
-"the :meth:`loop.run_in_executor` method for more details."
+"An executor can be used to run a task in a different thread, including in a "
+"different interpreter, or even in a different process to avoid blocking the "
+"OS thread with the event loop.  See the :meth:`loop.run_in_executor` method "
+"for more details."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:136
 msgid "Logging"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:138
 msgid ""
 "asyncio uses the :mod:`logging` module and all logging is performed via the "
 "``\"asyncio\"`` logger."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:141
 msgid ""
 "The default log level is :py:const:`logging.INFO`, which can be easily "
 "adjusted::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:144
 msgid "logging.getLogger(\"asyncio\").setLevel(logging.WARNING)"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:147
 msgid ""
 "Network logging can block the event loop. It is recommended to use a "
-"separate thread for handling logs or use non-blocking IO. For example, see "
-":ref:`blocking-handlers`."
+"separate thread for handling logs or use non-blocking IO. For example, see :"
+"ref:`blocking-handlers`."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:155
 msgid "Detect never-awaited coroutines"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:157
 msgid ""
 "When a coroutine function is called, but not awaited (e.g. ``coro()`` "
-"instead of ``await coro()``) or the coroutine is not scheduled with "
-":meth:`asyncio.create_task`, asyncio will emit a :exc:`RuntimeWarning`::"
+"instead of ``await coro()``) or the coroutine is not scheduled with :meth:"
+"`asyncio.create_task`, asyncio will emit a :exc:`RuntimeWarning`::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:162
 msgid ""
 "import asyncio\n"
 "\n"
@@ -261,22 +224,17 @@ msgid ""
 "asyncio.run(main())"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:172 ../../library/asyncio-dev.rst:217
-#: ../../library/asyncio-dev.rst:391 ../../library/asyncio-dev.rst:448
 msgid "Output::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:174
 msgid ""
 "test.py:7: RuntimeWarning: coroutine 'test' was never awaited\n"
 "  test()"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:177 ../../library/asyncio-dev.rst:233
 msgid "Output in debug mode::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:179
 msgid ""
 "test.py:7: RuntimeWarning: coroutine 'test' was never awaited\n"
 "Coroutine created at (most recent call last)\n"
@@ -290,23 +248,19 @@ msgid ""
 "  test()"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:190
 msgid ""
-"The usual fix is to either await the coroutine or call the "
-":meth:`asyncio.create_task` function::"
+"The usual fix is to either await the coroutine or call the :meth:`asyncio."
+"create_task` function::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:193
 msgid ""
 "async def main():\n"
 "    await test()"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:198
 msgid "Detect never-retrieved exceptions"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:200
 msgid ""
 "If a :meth:`Future.set_exception` is called but the Future object is never "
 "awaited on, the exception would never be propagated to the user code.  In "
@@ -314,11 +268,9 @@ msgid ""
 "garbage collected."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:205
 msgid "Example of an unhandled exception::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:207
 msgid ""
 "import asyncio\n"
 "\n"
@@ -331,7 +283,6 @@ msgid ""
 "asyncio.run(main())"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:219
 msgid ""
 "Task exception was never retrieved\n"
 "future: <Task finished coro=<bug() done, defined at test.py:3>\n"
@@ -343,17 +294,14 @@ msgid ""
 "Exception: not consumed"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:228
 msgid ""
-":ref:`Enable the debug mode <asyncio-debug-mode>` to get the traceback where"
-" the task was created::"
+":ref:`Enable the debug mode <asyncio-debug-mode>` to get the traceback where "
+"the task was created::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:231
 msgid "asyncio.run(main(), debug=True)"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:235
 msgid ""
 "Task exception was never retrieved\n"
 "future: <Task finished coro=<bug() done, defined at test.py:3>\n"
@@ -371,39 +319,32 @@ msgid ""
 "Exception: not consumed"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:252
 msgid "Asynchronous generators best practices"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:254
 msgid ""
 "Writing correct and efficient asyncio code requires awareness of certain "
 "pitfalls. This section outlines essential best practices that can save you "
 "hours of debugging."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:259
 msgid "Close asynchronous generators explicitly"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:261
 msgid ""
 "It is recommended to manually close the :term:`asynchronous generator "
 "<asynchronous generator iterator>`. If a generator exits early - for "
 "example, due to an exception raised in the body of an ``async for`` loop - "
 "its asynchronous cleanup code may run in an unexpected context. This can "
-"occur after the tasks it depends on have completed, or during the event loop"
-" shutdown when the async-generator's garbage collection hook is called."
+"occur after the tasks it depends on have completed, or during the event loop "
+"shutdown when the async-generator's garbage collection hook is called."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:269
 msgid ""
-"To avoid this, explicitly close the generator by calling its "
-":meth:`~agen.aclose` method, or use the :func:`contextlib.aclosing` context "
-"manager::"
+"To avoid this, explicitly close the generator by calling its :meth:`~agen."
+"aclose` method, or use the :func:`contextlib.aclosing` context manager::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:273
 msgid ""
 "import asyncio\n"
 "import contextlib\n"
@@ -420,14 +361,12 @@ msgid ""
 "asyncio.run(func())"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:287
 msgid ""
 "As noted above, the cleanup code for these asynchronous generators is "
 "deferred. The following example demonstrates that the finalization of an "
 "asynchronous generator can occur in an unexpected order::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:291
 msgid ""
 "import asyncio\n"
 "work_done = False\n"
@@ -443,7 +382,7 @@ msgid ""
 "    try:\n"
 "        yield 2\n"
 "    finally:\n"
-"        await asyncio.sleep(0.1) # immitate some async work\n"
+"        await asyncio.sleep(0.1) # imitate some async work\n"
 "        work_done = True\n"
 "\n"
 "\n"
@@ -456,14 +395,13 @@ msgid ""
 "asyncio.run(main())"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:317
 msgid "For this example, we get the following output::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:319
 msgid ""
 "unhandled exception during asyncio.run() shutdown\n"
-"task: <Task finished name='Task-3' coro=<<async_generator_athrow without __name__>()> exception=AssertionError()>\n"
+"task: <Task finished name='Task-3' coro=<<async_generator_athrow without "
+"__name__>()> exception=AssertionError()>\n"
 "Traceback (most recent call last):\n"
 "  File \"example.py\", line 6, in cursor\n"
 "    yield 1\n"
@@ -478,19 +416,16 @@ msgid ""
 "AssertionError"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:334
 msgid ""
 "The ``cursor()`` asynchronous generator was finalized before the ``rows`` "
 "generator - an unexpected behavior."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:337
 msgid ""
 "The example can be fixed by explicitly closing the ``cursor`` and ``rows`` "
 "async-generators::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:340
 msgid ""
 "async def main():\n"
 "    async with contextlib.aclosing(cursor()) as cursor_gen:\n"
@@ -501,17 +436,14 @@ msgid ""
 "            break"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:350
 msgid "Create asynchronous generators only when the event loop is running"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:352
 msgid ""
 "It is recommended to create :term:`asynchronous generators <asynchronous "
 "generator iterator>` only after the event loop has been created."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:356
 msgid ""
 "To ensure that asynchronous generators close reliably, the event loop uses "
 "the :func:`sys.set_asyncgen_hooks` function to register callback functions. "
@@ -519,21 +451,18 @@ msgid ""
 "it in a consistent state."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:361
 msgid ""
-"When the :meth:`loop.shutdown_asyncgens() <asyncio.loop.shutdown_asyncgens>`"
-" function is called, the running generators are stopped gracefully and the "
+"When the :meth:`loop.shutdown_asyncgens() <asyncio.loop.shutdown_asyncgens>` "
+"function is called, the running generators are stopped gracefully and the "
 "list is cleared."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:365
 msgid ""
 "The asynchronous generator invokes the corresponding system hook during its "
 "first iteration. At the same time, the generator records that the hook has "
 "been called and does not call it again."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:369
 msgid ""
 "Therefore, if iteration begins before the event loop is created, the event "
 "loop will not be able to add the generator to its list of active generators "
@@ -542,11 +471,9 @@ msgid ""
 "necessary."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:375
 msgid "Consider the following example::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:377
 msgid ""
 "import asyncio\n"
 "\n"
@@ -563,10 +490,10 @@ msgid ""
 "    del agen"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:393
 msgid ""
 "10\n"
-"Exception ignored while closing generator <async_generator object agenfn at 0x000002F71CD10D70>:\n"
+"Exception ignored while closing generator <async_generator object agenfn at "
+"0x000002F71CD10D70>:\n"
 "Traceback (most recent call last):\n"
 "  File \"example.py\", line 13, in <module>\n"
 "    del agen\n"
@@ -574,11 +501,9 @@ msgid ""
 "RuntimeError: async generator ignored GeneratorExit"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:401
 msgid "This example can be fixed as follows::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:403
 msgid ""
 "import asyncio\n"
 "\n"
@@ -596,22 +521,18 @@ msgid ""
 "asyncio.run(main())"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:420
 msgid "Avoid concurrent iteration and closure of the same generator"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:422
 msgid ""
-"Async generators may be reentered while another :meth:`~agen.__anext__` / "
-":meth:`~agen.athrow` / :meth:`~agen.aclose` call is in progress. This may "
+"Async generators may be reentered while another :meth:`~agen.__anext__` / :"
+"meth:`~agen.athrow` / :meth:`~agen.aclose` call is in progress. This may "
 "lead to an inconsistent state of the async generator and can cause errors."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:427
 msgid "Let's consider the following example::"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:429
 msgid ""
 "import asyncio\n"
 "\n"
@@ -633,7 +554,6 @@ msgid ""
 "asyncio.run(amain())"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:450
 msgid ""
 "received A\n"
 "Traceback (most recent call last):\n"
@@ -654,7 +574,6 @@ msgid ""
 "RuntimeError: anext(): asynchronous generator is already running"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:469
 msgid ""
 "Therefore, it is recommended to avoid using asynchronous generators in "
 "parallel tasks or across multiple event loops."

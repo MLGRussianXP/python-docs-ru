@@ -935,12 +935,17 @@ msgid ""
 "The optional argument *module* specifies the module name. It is needed to "
 "unambiguous :ref:`filter <warning-filter>` syntax warnings by module name."
 msgstr ""
+"Необязательный аргумент *module* задаёт имя модуля. Он нужен для однозначной"
+" :ref:`фильтрации <warning-filter>` предупреждений о синтаксисе по имени "
+"модуля."
 
 #: ../../library/functions.rst:347
 msgid ""
 "This function raises :exc:`SyntaxError` or :exc:`ValueError` if the compiled"
 " source is invalid."
 msgstr ""
+"Эта функция возбуждает исключения :exc:`SyntaxError` или :exc:`ValueError`, "
+"если исходный код для компиляции некорректен."
 
 #: ../../library/functions.rst:350
 msgid ""
@@ -1181,6 +1186,8 @@ msgid ""
 "Create a new dictionary.  The :class:`dict` object is the dictionary class. "
 "See also :ref:`typesmapping` for documentation about this class."
 msgstr ""
+"Создаёт новый словарь. Объект :class:`dict` является классом словаря. См. "
+"также :ref:`typesmapping` для получения документации по этому классу."
 
 #: ../../library/functions.rst:490
 msgid ""
@@ -1188,6 +1195,9 @@ msgid ""
 ":class:`set`, and :class:`tuple` classes, as well as the :mod:`collections` "
 "module."
 msgstr ""
+"Для других контейнеров см. встроенные классы :class:`frozendict`, "
+":class:`list`, :class:`set` и :class:`tuple`, а также модуль "
+":mod:`collections`."
 
 #: ../../library/functions.rst:497
 msgid ""

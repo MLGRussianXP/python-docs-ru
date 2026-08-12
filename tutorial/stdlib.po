@@ -2,11 +2,11 @@
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # python-doc bot, 2025
 # Dmitry Luschan, 2026
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -15,22 +15,22 @@ msgstr ""
 "POT-Creation-Date: 2026-08-11 14:51+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Dmitry Luschan, 2026\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../tutorial/stdlib.rst:5
 msgid "Brief tour of the standard library"
 msgstr "Краткий обзор стандартной библиотеки"
 
-#: ../../tutorial/stdlib.rst:11
 msgid "Operating system interface"
 msgstr "Интерфейс операционной системы"
 
-#: ../../tutorial/stdlib.rst:13
 msgid ""
 "The :mod:`os` module provides dozens of functions for interacting with the "
 "operating system::"
@@ -38,7 +38,6 @@ msgstr ""
 "Модуль :mod:`os` предоставляет десятки функций для взаимодействия с "
 "операционной системой::"
 
-#: ../../tutorial/stdlib.rst:16
 msgid ""
 ">>> import os\n"
 ">>> os.getcwd()      # Return the current working directory\n"
@@ -51,20 +50,19 @@ msgstr ""
 ">>> os.getcwd()      # Вернуть текущий рабочий каталог\n"
 "'C:\\\\Python315'\n"
 ">>> os.chdir('/server/accesslogs')   # Изменить текущий рабочий каталог\n"
-">>> os.system('mkdir today')   # Выполнить команду mkdir в системной оболочке\n"
+">>> os.system('mkdir today')   # Выполнить команду mkdir в системной "
+"оболочке\n"
 "0"
 
-#: ../../tutorial/stdlib.rst:23
 msgid ""
 "Be sure to use the ``import os`` style instead of ``from os import *``.  "
 "This will keep :func:`os.open` from shadowing the built-in :func:`open` "
 "function which operates much differently."
 msgstr ""
 "Для импорта этого модуля используйте стиль ``import os``, а не ``from os "
-"import *``. В противном случае :func:`os.open` затенит встроенную функцию "
-":func:`open`, а они работают по-разному."
+"import *``. В противном случае :func:`os.open` затенит встроенную функцию :"
+"func:`open`, а они работают по-разному."
 
-#: ../../tutorial/stdlib.rst:29
 msgid ""
 "The built-in :func:`dir` and :func:`help` functions are useful as "
 "interactive aids for working with large modules like :mod:`os`::"
@@ -72,7 +70,6 @@ msgstr ""
 "Встроенные функции :func:`dir` и :func:`help` полезны как интерактивные "
 "помощники при работе с большими модулями, вроде:mod:`os`::"
 
-#: ../../tutorial/stdlib.rst:32
 msgid ""
 ">>> import os\n"
 ">>> dir(os)\n"
@@ -86,15 +83,13 @@ msgstr ""
 ">>> help(os)\n"
 "<возвращает подробную справку, собранную из docstring’ов модуля>"
 
-#: ../../tutorial/stdlib.rst:38
 msgid ""
 "For daily file and directory management tasks, the :mod:`shutil` module "
 "provides a higher level interface that is easier to use::"
 msgstr ""
-"Для повседневных операций с файлами и каталогами более удобен модуль "
-":mod:`shutil`, предоставляющий высокоуровневый интерфейс::"
+"Для повседневных операций с файлами и каталогами более удобен модуль :mod:"
+"`shutil`, предоставляющий высокоуровневый интерфейс::"
 
-#: ../../tutorial/stdlib.rst:41
 msgid ""
 ">>> import shutil\n"
 ">>> shutil.copyfile('data.db', 'archive.db')\n"
@@ -108,11 +103,9 @@ msgstr ""
 ">>> shutil.move('/build/executables', 'installdir')\n"
 "'installdir'"
 
-#: ../../tutorial/stdlib.rst:51
 msgid "File wildcards"
 msgstr "Шаблоны файлов"
 
-#: ../../tutorial/stdlib.rst:53
 msgid ""
 "The :mod:`glob` module provides a function for making file lists from "
 "directory wildcard searches::"
@@ -120,7 +113,6 @@ msgstr ""
 "Модуль :mod:`glob` предоставляет функцию для получения списка файлов по "
 "указанному шаблону::"
 
-#: ../../tutorial/stdlib.rst:56
 msgid ""
 ">>> import glob\n"
 ">>> glob.glob('*.py')\n"
@@ -130,21 +122,18 @@ msgstr ""
 ">>> glob.glob('*.py')\n"
 "['primes.py', 'random.py', 'quote.py']"
 
-#: ../../tutorial/stdlib.rst:64
 msgid "Command-line arguments"
 msgstr "Аргументы командной строки"
 
-#: ../../tutorial/stdlib.rst:66
 msgid ""
 "Common utility scripts often need to process command line arguments. These "
-"arguments are stored in the :mod:`sys` module's *argv* attribute as a list."
-"  For instance, let's take the following :file:`demo.py` file::"
+"arguments are stored in the :mod:`sys` module's *argv* attribute as a list.  "
+"For instance, let's take the following :file:`demo.py` file::"
 msgstr ""
 "Обычные вспомогательные скрипты часто должны обрабатывать аргументы "
-"командной строки. Эти аргументы хранятся в атрибуте *argv* модуля :mod:`sys`"
-" в виде списка. К примеру, рассмотрим следующий файл :file:`demo.py`::"
+"командной строки. Эти аргументы хранятся в атрибуте *argv* модуля :mod:`sys` "
+"в виде списка. К примеру, рассмотрим следующий файл :file:`demo.py`::"
 
-#: ../../tutorial/stdlib.rst:70
 msgid ""
 "# File demo.py\n"
 "import sys\n"
@@ -154,7 +143,6 @@ msgstr ""
 "import sys\n"
 "print(sys.argv)"
 
-#: ../../tutorial/stdlib.rst:74
 msgid ""
 "Here is the output from running ``python demo.py one two three`` at the "
 "command line::"
@@ -162,11 +150,9 @@ msgstr ""
 "Вот результат выполнения ``python demo.py one two three`` в командной "
 "строке::"
 
-#: ../../tutorial/stdlib.rst:77
 msgid "['demo.py', 'one', 'two', 'three']"
 msgstr "['demo.py', 'one', 'two', 'three']"
 
-#: ../../tutorial/stdlib.rst:79
 msgid ""
 "The :mod:`argparse` module provides a more sophisticated mechanism to "
 "process command line arguments.  The following script extracts one or more "
@@ -176,7 +162,6 @@ msgstr ""
 "аргументов командной строки. Следующий скрипт извлекает одно или более имён "
 "файлов и необязательное количество строк, которые нужно вывести::"
 
-#: ../../tutorial/stdlib.rst:83
 msgid ""
 "import argparse\n"
 "\n"
@@ -198,21 +183,18 @@ msgstr ""
 "args = parser.parse_args()\n"
 "print(args)"
 
-#: ../../tutorial/stdlib.rst:93
 msgid ""
-"When run at the command line with ``python top.py --lines=5 alpha.txt "
-"beta.txt``, the script sets ``args.lines`` to ``5`` and ``args.filenames`` "
-"to ``['alpha.txt', 'beta.txt']``."
+"When run at the command line with ``python top.py --lines=5 alpha.txt beta."
+"txt``, the script sets ``args.lines`` to ``5`` and ``args.filenames`` to "
+"``['alpha.txt', 'beta.txt']``."
 msgstr ""
-"При запуске из командной строки как ``python top.py --lines=5 alpha.txt "
-"beta.txt``, скрипт установит ``args.lines`` в ``5``, а ``args.filenames`` в "
+"При запуске из командной строки как ``python top.py --lines=5 alpha.txt beta."
+"txt``, скрипт установит ``args.lines`` в ``5``, а ``args.filenames`` в "
 "``['alpha.txt', 'beta.txt']``."
 
-#: ../../tutorial/stdlib.rst:101
 msgid "Error output redirection and program termination"
 msgstr "Перенаправление вывода ошибок и завершение программы"
 
-#: ../../tutorial/stdlib.rst:103
 msgid ""
 "The :mod:`sys` module also has attributes for *stdin*, *stdout*, and "
 "*stderr*. The latter is useful for emitting warnings and error messages to "
@@ -222,33 +204,29 @@ msgstr ""
 "Последний полезен для вывода предупреждений и сообщений об ошибках, которые "
 "должны быть видны даже при перенаправленном *stdout*::"
 
-#: ../../tutorial/stdlib.rst:107
 msgid ""
 ">>> sys.stderr.write('Warning, log file not found starting a new one\\n')\n"
 "Warning, log file not found starting a new one"
 msgstr ""
-">>> sys.stderr.write('Предупреждение, файл журнала не найден — начинаю новый\\n')\n"
+">>> sys.stderr.write('Предупреждение, файл журнала не найден — начинаю "
+"новый\\n')\n"
 "Предупреждение, файл журнала не найден — начинаю новый"
 
-#: ../../tutorial/stdlib.rst:110
 msgid "The most direct way to terminate a script is to use ``sys.exit()``."
 msgstr "Самый простой способ завершить программу -- вызвать ``sys.exit()``."
 
-#: ../../tutorial/stdlib.rst:116
 msgid "String pattern matching"
 msgstr "Сопоставление строк с шаблонами"
 
-#: ../../tutorial/stdlib.rst:118
 msgid ""
 "The :mod:`re` module provides regular expression tools for advanced string "
-"processing. For complex matching and manipulation, regular expressions offer"
-" succinct, optimized solutions::"
+"processing. For complex matching and manipulation, regular expressions offer "
+"succinct, optimized solutions::"
 msgstr ""
 "Модуль :mod:`re` предоставляет инструменты регулярных выражений для "
 "продвинутой обработки строк. Для сложного сопоставления и преобразования "
 "регулярные выражения предлагают лаконичные и оптимизированные решения::"
 
-#: ../../tutorial/stdlib.rst:122
 msgid ""
 ">>> import re\n"
 ">>> re.findall(r'\\bf[a-z]*', 'which foot or hand fell fastest')\n"
@@ -262,15 +240,13 @@ msgstr ""
 ">>> re.sub(r'(\\b[а-я]+) \\1', r'\\1', 'кот на на крыше')\n"
 "'кот на крыше'"
 
-#: ../../tutorial/stdlib.rst:128
 msgid ""
 "When only simple capabilities are needed, string methods are preferred "
 "because they are easier to read and debug::"
 msgstr ""
-"Если нужны только простые возможности, методы строк предпочтительнее, потому"
-" что их проще читать и отлаживать::"
+"Если нужны только простые возможности, методы строк предпочтительнее, потому "
+"что их проще читать и отлаживать::"
 
-#: ../../tutorial/stdlib.rst:131
 msgid ""
 ">>> 'tea for too'.replace('too', 'two')\n"
 "'tea for two'"
@@ -278,11 +254,9 @@ msgstr ""
 ">>> 'чай для два'.replace('два', 'двоих')\n"
 "'чай для двоих'"
 
-#: ../../tutorial/stdlib.rst:138
 msgid "Mathematics"
 msgstr "Математика"
 
-#: ../../tutorial/stdlib.rst:140
 msgid ""
 "The :mod:`math` module gives access to the underlying C library functions "
 "for floating-point math::"
@@ -290,7 +264,6 @@ msgstr ""
 "Модуль :mod:`math` даёт доступ к функциям стандартной библиотеки C для "
 "вычислений с плавающей точкой::"
 
-#: ../../tutorial/stdlib.rst:143
 msgid ""
 ">>> import math\n"
 ">>> math.cos(math.pi / 4)\n"
@@ -304,13 +277,11 @@ msgstr ""
 ">>> math.log(1024, 2)\n"
 "10.0"
 
-#: ../../tutorial/stdlib.rst:149
 msgid "The :mod:`random` module provides tools for making random selections::"
 msgstr ""
 "Модуль :mod:`random` предоставляет инструменты для выполнения случайных "
 "выборок::"
 
-#: ../../tutorial/stdlib.rst:151
 msgid ""
 ">>> import random\n"
 ">>> random.choice(['apple', 'pear', 'banana'])\n"
@@ -327,12 +298,12 @@ msgstr ""
 "'яблоко'\n"
 ">>> random.sample(range(100), 10)   # выборка без повторов\n"
 "[30, 83, 16, 4, 8, 81, 41, 50, 18, 33]\n"
-">>> random.random()    # случайное число с плавающей точкой из интервала [0.0, 1.0)\n"
+">>> random.random()    # случайное число с плавающей точкой из интервала "
+"[0.0, 1.0)\n"
 "0.17970987693706186\n"
 ">>> random.randrange(6)    # случайное целое из диапазона range(6)\n"
 "4"
 
-#: ../../tutorial/stdlib.rst:161
 msgid ""
 "The :mod:`statistics` module calculates basic statistical properties (the "
 "mean, median, variance, etc.) of numeric data::"
@@ -340,7 +311,6 @@ msgstr ""
 "Модуль :mod:`statistics` позволяет вычислять базовые статистические "
 "характеристики (среднее, медиану, дисперсию и т. п.) для числовых данных::"
 
-#: ../../tutorial/stdlib.rst:164
 msgid ""
 ">>> import statistics\n"
 ">>> data = [2.75, 1.75, 1.25, 0.25, 0.5, 1.25, 3.5]\n"
@@ -360,7 +330,6 @@ msgstr ""
 ">>> statistics.variance(data)\n"
 "1.3720238095238095"
 
-#: ../../tutorial/stdlib.rst:173
 msgid ""
 "The SciPy project <https://scipy.org> has many other modules for numerical "
 "computations."
@@ -368,11 +337,9 @@ msgstr ""
 "Проект SciPy <https://scipy.org> содержит большое количество других модулей "
 "для численных вычислений."
 
-#: ../../tutorial/stdlib.rst:179
 msgid "Internet access"
 msgstr "Доступ в интернет"
 
-#: ../../tutorial/stdlib.rst:181
 msgid ""
 "There are a number of modules for accessing the internet and processing "
 "internet protocols. Two of the simplest are :mod:`urllib.request` for "
@@ -382,7 +349,6 @@ msgstr ""
 "его протоколами. Два самых простых модуля: :mod:`urllib.request` — для "
 "получения данных по URL и :mod:`smtplib` — для отправки электронной почты::"
 
-#: ../../tutorial/stdlib.rst:185
 msgid ""
 ">>> from urllib.request import urlopen\n"
 ">>> with urlopen('https://docs.python.org/3/') as response:\n"
@@ -408,7 +374,8 @@ msgstr ""
 "...     for line in response:\n"
 "...         line = line.decode()             # Преобразовать байты в строку\n"
 "...         if 'updated' in line:\n"
-"...             print(line.rstrip())         # Убрать завершающий перевод строки\n"
+"...             print(line.rstrip())         # Убрать завершающий перевод "
+"строки\n"
 "...\n"
 "      Last updated on Nov 11, 2025 (20:11 UTC).\n"
 "\n"
@@ -422,23 +389,19 @@ msgstr ""
 "... \"\"\")\n"
 ">>> server.quit()"
 
-#: ../../tutorial/stdlib.rst:204
-msgid ""
-"(Note that the second example needs a mailserver running on localhost.)"
+msgid "(Note that the second example needs a mailserver running on localhost.)"
 msgstr ""
 "(Обратите внимание, что для второго примера требуется почтовый сервер, "
 "запущенный на localhost.)"
 
-#: ../../tutorial/stdlib.rst:210
 msgid "Dates and times"
 msgstr "Дата и время"
 
-#: ../../tutorial/stdlib.rst:212
 msgid ""
-"The :mod:`datetime` module supplies classes for manipulating dates and times"
-" in both simple and complex ways. While date and time arithmetic is "
-"supported, the focus of the implementation is on efficient member extraction"
-" for output formatting and manipulation.  The module also supports objects "
+"The :mod:`datetime` module supplies classes for manipulating dates and times "
+"in both simple and complex ways. While date and time arithmetic is "
+"supported, the focus of the implementation is on efficient member extraction "
+"for output formatting and manipulation.  The module also supports objects "
 "that are timezone aware. ::"
 msgstr ""
 "Модуль :mod:`datetime` предоставляет классы для манипуляции с датами и "
@@ -447,7 +410,6 @@ msgstr ""
 "эффективному извлечению элементов для форматирования и обработки выходных "
 "данных. Модуль также поддерживает объекты, учитывающие часовой пояс. ::"
 
-#: ../../tutorial/stdlib.rst:218
 msgid ""
 ">>> # dates are easily constructed and formatted\n"
 ">>> import datetime as dt\n"
@@ -468,7 +430,8 @@ msgstr ""
 ">>> now = dt.date.today()\n"
 ">>> now\n"
 "datetime.date(2003, 12, 2)\n"
-">>> now.strftime(\"%d.%m.%y. Сегодня %A. %B %Y-го года идёт уже %-d-й день.\")\n"
+">>> now.strftime(\"%d.%m.%y. Сегодня %A. %B %Y-го года идёт уже %-d-й день."
+"\")\n"
 "'02.12.03. Сегодня Вторник. Декабрь 2003-го года идёт уже 2-й день.'\n"
 "\n"
 ">>> # даты поддерживают календарную арифметику\n"
@@ -477,21 +440,18 @@ msgstr ""
 ">>> age.days\n"
 "14368"
 
-#: ../../tutorial/stdlib.rst:236
 msgid "Data compression"
 msgstr "Сжатие данных"
 
-#: ../../tutorial/stdlib.rst:238
 msgid ""
 "Common data archiving and compression formats are directly supported by "
-"modules including: :mod:`zlib`, :mod:`gzip`, :mod:`bz2`, :mod:`lzma`, "
-":mod:`zipfile` and :mod:`tarfile`. ::"
+"modules including: :mod:`zlib`, :mod:`gzip`, :mod:`bz2`, :mod:`lzma`, :mod:"
+"`zipfile` and :mod:`tarfile`. ::"
 msgstr ""
 "Распространённые форматы архивирования и сжатия данных напрямую "
-"поддерживаются модулями, включая :mod:`zlib`, :mod:`gzip`, :mod:`bz2`, "
-":mod:`lzma`, :mod:`zipfile` и :mod:`tarfile`. ::"
+"поддерживаются модулями, включая :mod:`zlib`, :mod:`gzip`, :mod:`bz2`, :mod:"
+"`lzma`, :mod:`zipfile` и :mod:`tarfile`. ::"
 
-#: ../../tutorial/stdlib.rst:242
 msgid ""
 ">>> import zlib\n"
 ">>> s = b'witch which has which witches wrist watch'\n"
@@ -517,31 +477,27 @@ msgstr ""
 ">>> zlib.crc32(s)\n"
 "226805979"
 
-#: ../../tutorial/stdlib.rst:258
 msgid "Performance measurement"
 msgstr "Измерение производительности"
 
-#: ../../tutorial/stdlib.rst:260
 msgid ""
 "Some Python users develop a deep interest in knowing the relative "
 "performance of different approaches to the same problem. Python provides a "
 "measurement tool that answers those questions immediately."
 msgstr ""
-"Некоторым разработчикам весьма интересно, какой из подходов к решению задачи"
-" выигрывает по производительности. Python предоставляет инструмент "
-"измерения, который мгновенно отвечает на эти вопросы."
+"Некоторым разработчикам весьма интересно, какой из подходов к решению задачи "
+"выигрывает по производительности. Python предоставляет инструмент измерения, "
+"который мгновенно отвечает на эти вопросы."
 
-#: ../../tutorial/stdlib.rst:264
 msgid ""
 "For example, it may be tempting to use the tuple packing and unpacking "
-"feature instead of the traditional approach to swapping arguments. The "
-":mod:`timeit` module quickly demonstrates a modest performance advantage::"
+"feature instead of the traditional approach to swapping arguments. The :mod:"
+"`timeit` module quickly demonstrates a modest performance advantage::"
 msgstr ""
 "Например, может быть заманчивым использовать распаковку и упаковку кортежей "
-"вместо традиционного подхода к обмену значений между переменными. Модуль "
-":mod:`timeit` быстро показывает скромное преимущество в производительности::"
+"вместо традиционного подхода к обмену значений между переменными. Модуль :"
+"mod:`timeit` быстро показывает скромное преимущество в производительности::"
 
-#: ../../tutorial/stdlib.rst:268
 msgid ""
 ">>> from timeit import Timer\n"
 ">>> Timer('t=a; a=b; b=t', 'a=1; b=2').timeit()\n"
@@ -555,47 +511,42 @@ msgstr ""
 ">>> Timer('a,b = b,a', 'a=1; b=2').timeit()\n"
 "0.54962537085770791"
 
-#: ../../tutorial/stdlib.rst:274
 msgid ""
-"In contrast to :mod:`timeit`'s fine level of granularity, the :mod:`profile`"
-" and :mod:`pstats` modules provide tools for identifying time critical "
+"In contrast to :mod:`timeit`'s fine level of granularity, the :mod:`profile` "
+"and :mod:`pstats` modules provide tools for identifying time critical "
 "sections in larger blocks of code."
 msgstr ""
-"В отличие от высокой детализации :mod:`timeit`, модули :mod:`profile` и "
-":mod:`pstats` предоставляют инструменты для выявления критичных по времени "
+"В отличие от высокой детализации :mod:`timeit`, модули :mod:`profile` и :mod:"
+"`pstats` предоставляют инструменты для выявления критичных по времени "
 "участков в более крупных блоках кода."
 
-#: ../../tutorial/stdlib.rst:282
 msgid "Quality control"
 msgstr "Контроль качества"
 
-#: ../../tutorial/stdlib.rst:284
 msgid ""
-"One approach for developing high quality software is to write tests for each"
-" function as it is developed and to run those tests frequently during the "
+"One approach for developing high quality software is to write tests for each "
+"function as it is developed and to run those tests frequently during the "
 "development process."
 msgstr ""
 "Один из подходов к разработке программного обеспечения высокого качества — "
 "писать тесты для каждой функции по мере их разработки и регулярно запускать "
 "их."
 
-#: ../../tutorial/stdlib.rst:288
 msgid ""
 "The :mod:`doctest` module provides a tool for scanning a module and "
 "validating tests embedded in a program's docstrings.  Test construction is "
 "as simple as cutting-and-pasting a typical call along with its results into "
-"the docstring. This improves the documentation by providing the user with an"
-" example and it allows the doctest module to make sure the code remains true"
-" to the documentation::"
+"the docstring. This improves the documentation by providing the user with an "
+"example and it allows the doctest module to make sure the code remains true "
+"to the documentation::"
 msgstr ""
 "Модуль :mod:`doctest` предоставляет инструмент для сканирования модуля и "
 "проверки тестов, встроенных в строки документации программы. Создание теста "
-"настолько просто, что достаточно скопировать типичный вызов функции вместе с"
-" результатом в строку документации. Это улучшает документацию, предоставляя "
+"настолько просто, что достаточно скопировать типичный вызов функции вместе с "
+"результатом в строку документации. Это улучшает документацию, предоставляя "
 "пользователю пример, и позволяет модулю doctest убедиться, что код "
 "соответствует документации."
 
-#: ../../tutorial/stdlib.rst:295
 msgid ""
 "def average(values):\n"
 "    \"\"\"Computes the arithmetic mean of a list of numbers.\n"
@@ -619,16 +570,14 @@ msgstr ""
 "import doctest\n"
 "doctest.testmod()   # автоматически проверяет встроенные тесты"
 
-#: ../../tutorial/stdlib.rst:306
 msgid ""
 "The :mod:`unittest` module is not as effortless as the :mod:`doctest` "
 "module, but it allows a more comprehensive set of tests to be maintained in "
 "a separate file::"
 msgstr ""
-"Модуль :mod:`unittest` не так просто в использовании, как :mod:`doctest`, но"
-" позволяет поддерживать более полный набор тестов в отдельном файле::"
+"Модуль :mod:`unittest` не так просто в использовании, как :mod:`doctest`, но "
+"позволяет поддерживать более полный набор тестов в отдельном файле::"
 
-#: ../../tutorial/stdlib.rst:310
 msgid ""
 "import unittest\n"
 "\n"
@@ -658,21 +607,18 @@ msgstr ""
 "\n"
 "unittest.main()  # Запуск с командной строки вызывает все тесты"
 
-#: ../../tutorial/stdlib.rst:328
 msgid "Batteries included"
 msgstr "Батарейки прилагаются"
 
-#: ../../tutorial/stdlib.rst:330
 msgid ""
 "Python has a \"batteries included\" philosophy.  This is best seen through "
 "the sophisticated and robust capabilities of its larger packages. For "
 "example:"
 msgstr ""
 "Python придерживается философии «батарейки включены в комплект». Это лучше "
-"всего проявляется в продвинутых и надёжных возможностях его крупных пакетов."
-" Например:"
+"всего проявляется в продвинутых и надёжных возможностях его крупных пакетов. "
+"Например:"
 
-#: ../../tutorial/stdlib.rst:333
 msgid ""
 "The :mod:`xmlrpc.client` and :mod:`xmlrpc.server` modules make implementing "
 "remote procedure calls into an almost trivial task.  Despite the modules' "
@@ -682,63 +628,57 @@ msgstr ""
 "удалённого вызова процедур почти тривиальной задачей. Несмотря на название "
 "модулей, не требуется прямых знаний или обработки XML."
 
-#: ../../tutorial/stdlib.rst:337
 msgid ""
-"The :mod:`email` package is a library for managing email messages, including"
-" MIME and other :rfc:`5322`-based message documents. Unlike :mod:`smtplib` "
+"The :mod:`email` package is a library for managing email messages, including "
+"MIME and other :rfc:`5322`-based message documents. Unlike :mod:`smtplib` "
 "and :mod:`poplib` which actually send and receive messages, the email "
 "package has a complete toolset for building or decoding complex message "
 "structures (including attachments) and for implementing internet encoding "
 "and header protocols."
 msgstr ""
 "Пакет :mod:`email` — библиотека для управления сообщениями электронной "
-"почты, включая MIME и другие документы сообщений, основанные на :rfc:`5322`."
-" В отличие от модулей :mod:`smtplib` и :mod:`poplib`, которые предназначены "
+"почты, включая MIME и другие документы сообщений, основанные на :rfc:`5322`. "
+"В отличие от модулей :mod:`smtplib` и :mod:`poplib`, которые предназначены "
 "именно для отправки и получения сообщений, в пакете email содержится полный "
 "набор инструментов для создания и декодирования сообщений со сложной "
 "структурой (включая вложения), а также для работы с интернет-кодировками и "
 "заголовками."
 
-#: ../../tutorial/stdlib.rst:344
 msgid ""
 "The :mod:`json` package provides robust support for parsing this popular "
 "data interchange format.  The :mod:`csv` module supports direct reading and "
 "writing of files in Comma-Separated Value format, commonly supported by "
-"databases and spreadsheets.  XML processing is supported by the "
-":mod:`xml.etree.ElementTree`, :mod:`xml.dom` and :mod:`xml.sax` packages. "
-"Together, these modules and packages greatly simplify data interchange "
-"between Python applications and other tools."
+"databases and spreadsheets.  XML processing is supported by the :mod:`xml."
+"etree.ElementTree`, :mod:`xml.dom` and :mod:`xml.sax` packages. Together, "
+"these modules and packages greatly simplify data interchange between Python "
+"applications and other tools."
 msgstr ""
 "Пакет :mod:`json` предоставляет надёжные средства для работы с этим "
 "популярным форматом обмена данными. Модуль :mod:`csv` поддерживает прямое "
 "чтение и запись файлов в формате CSV (Comma-Separated Value), широко "
 "используемом в базах данных и электронных таблицах. Обработка XML "
-"осуществляется пакетами :mod:`xml.etree.ElementTree`, :mod:`xml.dom` и "
-":mod:`xml.sax`. Вместе эти модули и пакеты значительно упрощают обмен "
-"данными между приложениями Python и другими инструментами."
+"осуществляется пакетами :mod:`xml.etree.ElementTree`, :mod:`xml.dom` и :mod:"
+"`xml.sax`. Вместе эти модули и пакеты значительно упрощают обмен данными "
+"между приложениями Python и другими инструментами."
 
-#: ../../tutorial/stdlib.rst:353
 msgid ""
 "The :mod:`sqlite3` module is a wrapper for the SQLite database library, "
 "providing a persistent database that can be updated and accessed using "
 "slightly nonstandard SQL syntax."
 msgstr ""
 "Модуль :mod:`sqlite3` является обёрткой для библиотеки базы данных SQLite, "
-"предоставляя постоянное хранилище, которое можно обновлять и использовать со"
-" слегка нестандартным синтаксисом SQL."
+"предоставляя постоянное хранилище, которое можно обновлять и использовать со "
+"слегка нестандартным синтаксисом SQL."
 
-#: ../../tutorial/stdlib.rst:357
 msgid ""
-"Internationalization is supported by a number of modules including "
-":mod:`gettext`, :mod:`locale`, and the :mod:`codecs` package."
+"Internationalization is supported by a number of modules including :mod:"
+"`gettext`, :mod:`locale`, and the :mod:`codecs` package."
 msgstr ""
-"Поддержка интернационализации обеспечивается рядом модулей, включая "
-":mod:`gettext`, :mod:`locale`, и пакетом :mod:`codecs`."
+"Поддержка интернационализации обеспечивается рядом модулей, включая :mod:"
+"`gettext`, :mod:`locale`, и пакетом :mod:`codecs`."
 
-#: ../../tutorial/stdlib.rst:27
 msgid "built-in function"
 msgstr "встроенная функция"
 
-#: ../../tutorial/stdlib.rst:27
 msgid "help"
 msgstr "помощь"

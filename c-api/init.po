@@ -2,49 +2,44 @@
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.14\n"
+"Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-25 14:44+0000\n"
+"POT-Creation-Date: 2026-08-11 14:51+0000\n"
 "PO-Revision-Date: 2025-09-16 00:00+0000\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../c-api/init.rst:4
 msgid "Initialization, finalization, and threads"
 msgstr ""
 
-#: ../../c-api/init.rst:6
 msgid "This page has been split up into the following:"
 msgstr ""
 
-#: ../../c-api/init.rst:8
 msgid ":ref:`initialization`"
 msgstr ""
 
-#: ../../c-api/init.rst:9
 msgid ":ref:`threads`"
 msgstr ""
 
-#: ../../c-api/init.rst:10
 msgid ":ref:`synchronization`"
 msgstr ""
 
-#: ../../c-api/init.rst:11
 msgid ":ref:`thread-local-storage`"
 msgstr ""
 
-#: ../../c-api/init.rst:12
 msgid ":ref:`sub-interpreter-support`"
 msgstr ""
 
-#: ../../c-api/init.rst:13
 msgid ":ref:`profiling`"
 msgstr ""

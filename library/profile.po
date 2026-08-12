@@ -2,71 +2,64 @@
 # Copyright (C) 2001 Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # python-doc bot, 2026
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-08 18:34+0000\n"
+"POT-Creation-Date: 2026-08-11 14:51+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
 "Last-Translator: python-doc bot, 2026\n"
-"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../library/profile.rst:5
 msgid ":mod:`!profile` --- Pure Python profiler"
 msgstr ""
 
-#: ../../library/profile.rst:11
 msgid "**Source code:** :source:`Lib/profile.py`"
 msgstr ""
 
-#: ../../library/profile.rst:17
 msgid ""
-"The :mod:`!profile` module is deprecated and will be removed in Python 3.17."
-" Use :mod:`profiling.tracing` instead."
+"The :mod:`!profile` module is deprecated and will be removed in Python 3.17. "
+"Use :mod:`profiling.tracing` instead."
 msgstr ""
 
-#: ../../library/profile.rst:20
 msgid ""
 "The :mod:`!profile` module provides a pure Python implementation of a "
-"deterministic profiler. While useful for understanding profiler internals or"
-" extending profiler behavior through subclassing, its pure Python "
-"implementation introduces significant overhead compared to the C-based "
-":mod:`profiling.tracing` module."
+"deterministic profiler. While useful for understanding profiler internals or "
+"extending profiler behavior through subclassing, its pure Python "
+"implementation introduces significant overhead compared to the C-based :mod:"
+"`profiling.tracing` module."
 msgstr ""
 
-#: ../../library/profile.rst:26
 msgid "For most profiling tasks, use:"
 msgstr ""
 
-#: ../../library/profile.rst:28
 msgid ":mod:`profiling.sampling` for production debugging with zero overhead"
 msgstr ""
 
-#: ../../library/profile.rst:29
 msgid ":mod:`profiling.tracing` for development and testing"
 msgstr ""
 
-#: ../../library/profile.rst:33
 msgid "Migration"
 msgstr ""
 
-#: ../../library/profile.rst:35
 msgid ""
 "Migrating from :mod:`!profile` to :mod:`profiling.tracing` is "
 "straightforward. The APIs are compatible::"
 msgstr ""
 
-#: ../../library/profile.rst:38
 msgid ""
 "# Old (deprecated)\n"
 "import profile\n"
@@ -77,41 +70,34 @@ msgid ""
 "profiling.tracing.run('my_function()')"
 msgstr ""
 
-#: ../../library/profile.rst:46
 msgid ""
-"For most code, replacing ``import profile`` with ``import "
-"profiling.tracing`` (and using ``profiling.tracing`` instead of ``profile`` "
+"For most code, replacing ``import profile`` with ``import profiling."
+"tracing`` (and using ``profiling.tracing`` instead of ``profile`` "
 "throughout) provides a straightforward migration path."
 msgstr ""
 
-#: ../../library/profile.rst:52
 msgid ""
-"The ``cProfile`` module remains available as a backward-compatible alias to "
-":mod:`profiling.tracing`. Existing code using ``import cProfile`` will "
+"The ``cProfile`` module remains available as a backward-compatible alias to :"
+"mod:`profiling.tracing`. Existing code using ``import cProfile`` will "
 "continue to work without modification."
 msgstr ""
 
-#: ../../library/profile.rst:58
 msgid ":mod:`!profile` and :mod:`!profiling.tracing` module reference"
 msgstr ""
 
-#: ../../library/profile.rst:60
 msgid ""
 "Both the :mod:`!profile` and :mod:`profiling.tracing` modules provide the "
 "following functions:"
 msgstr ""
 
-#: ../../library/profile.rst:65
 msgid ""
-"This function takes a single argument that can be passed to the :func:`exec`"
-" function, and an optional file name.  In all cases this routine executes::"
+"This function takes a single argument that can be passed to the :func:`exec` "
+"function, and an optional file name.  In all cases this routine executes::"
 msgstr ""
 
-#: ../../library/profile.rst:68
 msgid "exec(command, __main__.__dict__, __main__.__dict__)"
 msgstr ""
 
-#: ../../library/profile.rst:70
 msgid ""
 "and gathers profiling statistics from the execution. If no file name is "
 "present, then this function automatically creates a :class:`~pstats.Stats` "
@@ -120,44 +106,36 @@ msgid ""
 "how the results are sorted."
 msgstr ""
 
-#: ../../library/profile.rst:78
 msgid ""
 "This function is similar to :func:`run`, with added arguments to supply the "
-"globals and locals mappings for the *command* string. This routine "
-"executes::"
+"globals and locals mappings for the *command* string. This routine executes::"
 msgstr ""
 
-#: ../../library/profile.rst:82
 msgid "exec(command, globals, locals)"
 msgstr ""
 
-#: ../../library/profile.rst:84
 msgid "and gathers profiling statistics as in the :func:`run` function above."
 msgstr ""
 
-#: ../../library/profile.rst:88
 msgid ""
 "This class is normally only used if more precise control over profiling is "
 "needed than what the :func:`profiling.tracing.run` function provides."
 msgstr ""
 
-#: ../../library/profile.rst:91
 msgid ""
 "A custom timer can be supplied for measuring how long code takes to run via "
 "the *timer* argument. This must be a function that returns a single number "
 "representing the current time. If the number is an integer, the *timeunit* "
-"specifies a multiplier that specifies the duration of each unit of time. For"
-" example, if the timer returns times measured in thousands of seconds, the "
+"specifies a multiplier that specifies the duration of each unit of time. For "
+"example, if the timer returns times measured in thousands of seconds, the "
 "time unit would be ``.001``."
 msgstr ""
 
-#: ../../library/profile.rst:98
 msgid ""
 "Directly using the :class:`Profile` class allows formatting profile results "
 "without writing the profile data to a file::"
 msgstr ""
 
-#: ../../library/profile.rst:101
 msgid ""
 "import profiling.tracing\n"
 "import pstats\n"
@@ -175,14 +153,12 @@ msgid ""
 "print(s.getvalue())"
 msgstr ""
 
-#: ../../library/profile.rst:116
 msgid ""
 "The :class:`Profile` class can also be used as a context manager (supported "
 "only in :mod:`profiling.tracing`, not in the deprecated :mod:`!profile` "
 "module; see :ref:`typecontextmanager`)::"
 msgstr ""
 
-#: ../../library/profile.rst:120
 msgid ""
 "import profiling.tracing\n"
 "\n"
@@ -192,110 +168,89 @@ msgid ""
 "    pr.print_stats()"
 msgstr ""
 
-#: ../../library/profile.rst:127
 msgid "Added context manager support."
 msgstr ""
 
-#: ../../library/profile.rst:132
 msgid "Start collecting profiling data. Only in :mod:`profiling.tracing`."
 msgstr ""
 
-#: ../../library/profile.rst:136
 msgid "Stop collecting profiling data. Only in :mod:`profiling.tracing`."
 msgstr ""
 
-#: ../../library/profile.rst:140
 msgid ""
 "Stop collecting profiling data and record the results internally as the "
 "current profile."
 msgstr ""
 
-#: ../../library/profile.rst:145
 msgid ""
 "Create a :class:`~pstats.Stats` object based on the current profile and "
 "print the results to stdout."
 msgstr ""
 
-#: ../../library/profile.rst:148
 msgid ""
 "The *sort* parameter specifies the sorting order of the displayed "
-"statistics. It accepts a single key or a tuple of keys to enable multi-level"
-" sorting, as in :meth:`pstats.Stats.sort_stats`."
+"statistics. It accepts a single key or a tuple of keys to enable multi-level "
+"sorting, as in :meth:`pstats.Stats.sort_stats`."
 msgstr ""
 
-#: ../../library/profile.rst:152
 msgid ":meth:`~Profile.print_stats` now accepts a tuple of keys."
 msgstr ""
 
-#: ../../library/profile.rst:157
 msgid "Write the results of the current profile to *filename*."
 msgstr ""
 
-#: ../../library/profile.rst:161
 msgid "Profile the cmd via :func:`exec`."
 msgstr ""
 
-#: ../../library/profile.rst:165
 msgid ""
 "Profile the cmd via :func:`exec` with the specified global and local "
 "environment."
 msgstr ""
 
-#: ../../library/profile.rst:170
 msgid "Profile ``func(*args, **kwargs)``"
 msgstr ""
 
-#: ../../library/profile.rst:172
 msgid ""
 "Note that profiling will only work if the called command/function actually "
-"returns.  If the interpreter is terminated (e.g. via a :func:`sys.exit` call"
-" during the called command/function execution) no profiling results will be "
+"returns.  If the interpreter is terminated (e.g. via a :func:`sys.exit` call "
+"during the called command/function execution) no profiling results will be "
 "printed."
 msgstr ""
 
-#: ../../library/profile.rst:179
 msgid "Differences from :mod:`!profiling.tracing`"
 msgstr ""
 
-#: ../../library/profile.rst:181
 msgid ""
 "The :mod:`!profile` module differs from :mod:`profiling.tracing` in several "
 "ways:"
 msgstr ""
 
-#: ../../library/profile.rst:184
 msgid ""
 "**Higher overhead.** The pure Python implementation is significantly slower "
 "than the C implementation, making it unsuitable for profiling long-running "
 "programs or performance-sensitive code."
 msgstr ""
 
-#: ../../library/profile.rst:188
 msgid ""
 "**Calibration support.** The :mod:`!profile` module supports calibration to "
-"compensate for profiling overhead. This is not needed in "
-":mod:`profiling.tracing` because the C implementation has negligible "
-"overhead."
+"compensate for profiling overhead. This is not needed in :mod:`profiling."
+"tracing` because the C implementation has negligible overhead."
 msgstr ""
 
-#: ../../library/profile.rst:192
 msgid ""
 "**Custom timers.** Both modules support custom timers, but :mod:`!profile` "
-"accepts timer functions that return tuples (like :func:`os.times`), while "
-":mod:`profiling.tracing` requires a function returning a single number."
+"accepts timer functions that return tuples (like :func:`os.times`), while :"
+"mod:`profiling.tracing` requires a function returning a single number."
 msgstr ""
 
-#: ../../library/profile.rst:196
 msgid ""
 "**Subclassing.** The pure Python implementation is easier to subclass and "
 "extend for custom profiling behavior."
 msgstr ""
 
-#: ../../library/profile.rst:203
 msgid "What is deterministic profiling?"
 msgstr ""
 
-#: ../../library/profile.rst:205
 msgid ""
 ":dfn:`Deterministic profiling` is meant to reflect the fact that all "
 "*function call*, *function return*, and *exception* events are monitored, "
@@ -308,7 +263,6 @@ msgid ""
 "relative indications of where time is being spent."
 msgstr ""
 
-#: ../../library/profile.rst:215
 msgid ""
 "In Python, since there is an interpreter active during execution, the "
 "presence of instrumented code is not required in order to do deterministic "
@@ -320,7 +274,6 @@ msgid ""
 "time statistics about the execution of a Python program."
 msgstr ""
 
-#: ../../library/profile.rst:224
 msgid ""
 "Call count statistics can be used to identify bugs in code (surprising "
 "counts), and to identify possible inline-expansion points (high call "
@@ -332,22 +285,19 @@ msgid ""
 "compared to iterative implementations."
 msgstr ""
 
-#: ../../library/profile.rst:237
 msgid "Limitations"
 msgstr ""
 
-#: ../../library/profile.rst:239
 msgid ""
 "One limitation has to do with accuracy of timing information. There is a "
 "fundamental problem with deterministic profilers involving accuracy.  The "
-"most obvious restriction is that the underlying \"clock\" is only ticking at"
-" a rate (typically) of about .001 seconds.  Hence no measurements will be "
+"most obvious restriction is that the underlying \"clock\" is only ticking at "
+"a rate (typically) of about .001 seconds.  Hence no measurements will be "
 "more accurate than the underlying clock.  If enough measurements are taken, "
 "then the \"error\" will tend to average out. Unfortunately, removing this "
 "first error induces a second source of error."
 msgstr ""
 
-#: ../../library/profile.rst:247
 msgid ""
 "The second problem is that it \"takes a while\" from when an event is "
 "dispatched until the profiler's call to get the time actually *gets* the "
@@ -360,25 +310,22 @@ msgid ""
 "clock tick), but it *can* accumulate and become very significant."
 msgstr ""
 
-#: ../../library/profile.rst:257
 msgid ""
 "The problem is more important with the deprecated :mod:`!profile` module "
-"than with the lower-overhead :mod:`profiling.tracing`.  For this reason, "
-":mod:`!profile` provides a means of calibrating itself for a given platform "
+"than with the lower-overhead :mod:`profiling.tracing`.  For this reason, :"
+"mod:`!profile` provides a means of calibrating itself for a given platform "
 "so that this error can be probabilistically (on the average) removed. After "
 "the profiler is calibrated, it will be more accurate (in a least square "
-"sense), but it will sometimes produce negative numbers (when call counts are"
-" exceptionally low, and the gods of probability work against you :-). )  Do "
+"sense), but it will sometimes produce negative numbers (when call counts are "
+"exceptionally low, and the gods of probability work against you :-). )  Do "
 "*not* be alarmed by negative numbers in the profile.  They should *only* "
 "appear if you have calibrated your profiler, and the results are actually "
 "better than without calibration."
 msgstr ""
 
-#: ../../library/profile.rst:272
 msgid "Calibration"
 msgstr ""
 
-#: ../../library/profile.rst:274
 msgid ""
 "The profiler of the :mod:`!profile` module subtracts a constant from each "
 "event handling time to compensate for the overhead of calling the time "
@@ -387,7 +334,6 @@ msgid ""
 "platform (see :ref:`profile-limitations`). ::"
 msgstr ""
 
-#: ../../library/profile.rst:280
 msgid ""
 "import profile\n"
 "pr = profile.Profile()\n"
@@ -395,7 +341,6 @@ msgid ""
 "    print(pr.calibrate(10000))"
 msgstr ""
 
-#: ../../library/profile.rst:285
 msgid ""
 "The method executes the number of Python calls given by the argument, "
 "directly and again under the profiler, measuring the time for both. It then "
@@ -405,19 +350,16 @@ msgid ""
 "4.04e-6."
 msgstr ""
 
-#: ../../library/profile.rst:291
 msgid ""
 "The object of this exercise is to get a fairly consistent result. If your "
 "computer is *very* fast, or your timer function has poor resolution, you "
 "might have to pass 100000, or even 1000000, to get consistent results."
 msgstr ""
 
-#: ../../library/profile.rst:295
 msgid ""
 "When you have a consistent answer, there are three ways you can use it::"
 msgstr ""
 
-#: ../../library/profile.rst:297
 msgid ""
 "import profile\n"
 "\n"
@@ -432,50 +374,41 @@ msgid ""
 "pr = profile.Profile(bias=your_computed_bias)"
 msgstr ""
 
-#: ../../library/profile.rst:309
 msgid ""
 "If you have a choice, you are better off choosing a smaller constant, and "
 "then your results will \"less often\" show up as negative in profile "
 "statistics."
 msgstr ""
 
-#: ../../library/profile.rst:316
 msgid "Using a custom timer"
 msgstr ""
 
-#: ../../library/profile.rst:318
 msgid ""
 "If you want to change how current time is determined (for example, to force "
 "use of wall-clock time or elapsed process time), pass the timing function "
 "you want to the :class:`Profile` class constructor::"
 msgstr ""
 
-#: ../../library/profile.rst:322
 msgid "pr = profile.Profile(your_time_func)"
 msgstr ""
 
-#: ../../library/profile.rst:324
 msgid ""
 "The resulting profiler will then call ``your_time_func``. Depending on "
-"whether you are using :class:`profile.Profile` or "
-":class:`profiling.tracing.Profile`, ``your_time_func``'s return value will "
-"be interpreted differently:"
+"whether you are using :class:`profile.Profile` or :class:`profiling.tracing."
+"Profile`, ``your_time_func``'s return value will be interpreted differently:"
 msgstr ""
 
-#: ../../library/profile.rst:328
 msgid ":class:`profile.Profile`"
 msgstr ""
 
-#: ../../library/profile.rst:329
 msgid ""
-"``your_time_func`` should return a single number, or a list of numbers whose"
-" sum is the current time (like what :func:`os.times` returns).  If the "
+"``your_time_func`` should return a single number, or a list of numbers whose "
+"sum is the current time (like what :func:`os.times` returns).  If the "
 "function returns a single time number, or the list of returned numbers has "
 "length 2, then you will get an especially fast version of the dispatch "
 "routine."
 msgstr ""
 
-#: ../../library/profile.rst:335
 msgid ""
 "Be warned that you should calibrate the profiler class for the timer "
 "function that you choose (see :ref:`profile-calibration`).  For most "
@@ -487,11 +420,9 @@ msgid ""
 "along with the appropriate calibration constant."
 msgstr ""
 
-#: ../../library/profile.rst:344
 msgid ":class:`profiling.tracing.Profile`"
 msgstr ""
 
-#: ../../library/profile.rst:345
 msgid ""
 "``your_time_func`` should return a single number.  If it returns integers, "
 "you can also invoke the class constructor with a second argument specifying "
@@ -500,45 +431,36 @@ msgid ""
 "you would construct the :class:`Profile` instance as follows::"
 msgstr ""
 
-#: ../../library/profile.rst:351
 msgid "pr = profiling.tracing.Profile(your_integer_time_func, 0.001)"
 msgstr ""
 
-#: ../../library/profile.rst:353
 msgid ""
-"As the :class:`profiling.tracing.Profile` class cannot be calibrated, custom"
-" timer functions should be used with care and should be as fast as possible."
-" For the best results with a custom timer, it might be necessary to hard-"
-"code it in the C source of the internal :mod:`!_lsprof` module."
+"As the :class:`profiling.tracing.Profile` class cannot be calibrated, custom "
+"timer functions should be used with care and should be as fast as possible. "
+"For the best results with a custom timer, it might be necessary to hard-code "
+"it in the C source of the internal :mod:`!_lsprof` module."
 msgstr ""
 
-#: ../../library/profile.rst:358
 msgid ""
 "Python 3.3 adds several new functions in :mod:`time` that can be used to "
-"make precise measurements of process or wall-clock time. For example, see "
-":func:`time.perf_counter`."
+"make precise measurements of process or wall-clock time. For example, see :"
+"func:`time.perf_counter`."
 msgstr ""
 
-#: ../../library/profile.rst:365
 msgid ":mod:`profiling`"
 msgstr ""
 
-#: ../../library/profile.rst:366
 msgid "Overview of Python profiling tools."
 msgstr ""
 
-#: ../../library/profile.rst:368
 msgid ":mod:`profiling.tracing`"
 msgstr ""
 
-#: ../../library/profile.rst:369
 msgid "Recommended replacement for this module."
 msgstr ""
 
-#: ../../library/profile.rst:371
 msgid ":mod:`pstats`"
 msgstr ""
 
-#: ../../library/profile.rst:372
 msgid "Statistical analysis and formatting for profile data."
 msgstr ""

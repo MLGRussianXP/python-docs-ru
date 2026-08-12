@@ -33,6 +33,14 @@ jobs:
           fetch-depth: 0
       - run: curl -O https://raw.githubusercontent.com/python-docs-translations/transifex-automations/master/sample-workflows/transifex-util.py
       - run: chmod +x transifex-util.py
+      - run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('transifex-util.py')
+          text = path.read_text()
+          path.write_text(text.replace('make -C cpython/Doc/ gettext', 'make -C cpython/Doc/ build BUILDER=gettext'))
+          PY
       - run: ./transifex-util.py recreate_tx_config --language ru --project-slug python-newest --version ${{ matrix.version }}
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}

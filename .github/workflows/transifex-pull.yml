@@ -44,7 +44,17 @@ jobs:
       - run: chmod +x transifex-util.py
       - name: Patch helper for cross-version Doc Makefile compatibility
         run: |
-          sed -i 's|_call("make -C cpython/Doc/ gettext")|_call("make -C cpython/Doc/ JOBS=1 gettext || make -C cpython/Doc/ JOBS=1 build BUILDER=gettext")|' transifex-util.py
+          python - <<'PY'
+          from pathlib import Path
+
+          p = Path("transifex-util.py")
+          old = '_call("make -C cpython/Doc/ gettext")'
+          new = '_call("make -C cpython/Doc/ JOBS=1 gettext || make -C cpython/Doc/ JOBS=1 build BUILDER=gettext")'
+          s = p.read_text()
+          if old not in s:
+              raise SystemExit("Expected pattern was not found in transifex-util.py")
+          p.write_text(s.replace(old, new))
+          PY
           grep -n "JOBS=1" transifex-util.py
       - run: ./transifex-util.py recreate_tx_config --language ru --project-slug python-newest --version ${{ matrix.version }}
         env:

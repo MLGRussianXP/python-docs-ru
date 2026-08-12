@@ -1459,6 +1459,8 @@ msgid ""
 "See :func:`ast.literal_eval` for a function to evaluate strings with "
 "expressions containing only literals."
 msgstr ""
+"См. функцию :func:`ast.literal_eval` для вычисления строк, содержащих "
+"выражения, состоящие только из литералов."
 
 #: ../../library/functions.rst:656 ../../library/functions.rst:658
 #: ../../library/functions.rst:723 ../../library/functions.rst:725
@@ -1484,7 +1486,7 @@ msgstr ""
 
 #: ../../library/functions.rst:672 ../../library/functions.rst:754
 msgid "*globals* can now be a :class:`frozendict`."
-msgstr ""
+msgstr "Теперь *globals* может быть экземпляром :class:`frozendict`."
 
 #: ../../library/functions.rst:683
 msgid ""
@@ -1551,6 +1553,12 @@ msgid ""
 "be used to restrict or change the available names, but this is **not** a "
 "security mechanism: the executed code can still access all builtins."
 msgstr ""
+"Если словарь *globals* не содержит значения для ключа ``__builtins__``, "
+"ссылка на словарь встроенного модуля :mod:`builtins` вставляется под этим "
+"ключом. Переопределение ``__builtins__`` можно использовать для ограничения "
+"или изменения доступных имён, но это **не** является механизмом "
+"безопасности: выполняемый код по-прежнему может получить доступ ко всем "
+"встроенным именам."
 
 #: ../../library/functions.rst:717
 msgid ""

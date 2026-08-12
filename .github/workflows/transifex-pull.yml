@@ -31,23 +31,13 @@ jobs:
         with:
           ref: ${{ matrix.version }}
           fetch-depth: 0
-      - run: curl -O https://raw.githubusercontent.com/python-docs-translations/transifex-automations/master/sample-workflows/transifex-util.py
-      - run: chmod +x transifex-util.py
-      - run: |
-          python - <<'PY'
-          from pathlib import Path
-
-          path = Path('transifex-util.py')
-          text = path.read_text()
-          path.write_text(text.replace('make -C cpython/Doc/ gettext', 'make -C cpython/Doc/ build BUILDER=gettext'))
-          PY
-      - run: ./transifex-util.py recreate_tx_config --language ru --project-slug python-newest --version ${{ matrix.version }}
+      - run: python .github/scripts/transifex-util.py recreate_tx_config --language ru --project-slug python-newest --version ${{ matrix.version }}
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
-      - run: ./transifex-util.py fetch --language ru --pull-options="--mode reviewed" --project-slug python-newest --version ${{ matrix.version }}
+      - run: python .github/scripts/transifex-util.py fetch --language ru --pull-options="--mode reviewed" --project-slug python-newest --version ${{ matrix.version }}
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
-      - run: ./transifex-util.py delete_obsolete_files --language ru --project-slug python-newest --version ${{ matrix.version }}
+      - run: python .github/scripts/transifex-util.py delete_obsolete_files --language ru --project-slug python-newest --version ${{ matrix.version }}
       - name: Set up Git
         run: |
           git config --local user.email github-actions@github.com
@@ -59,7 +49,7 @@ jobs:
                      -I'^# ' -I'^"Last-Translator: ' \
                      --exit-code \
             && echo "SIGNIFICANT_CHANGES=1" >> $GITHUB_ENV || exit 0
-      - run: git add . ':!transifex-util.py'
+      - run: git add .
       - run: git commit -m 'Update translation from Transifex'
         if: env.SIGNIFICANT_CHANGES
       - uses: ad-m/github-push-action@master

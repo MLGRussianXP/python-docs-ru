@@ -20,19 +20,32 @@ jobs:
           access_token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-python@master
         with:
-          python-version: 3
+          python-version: '3.12'
       - name: Install Dependencies
         run: |
-          sudo apt-get install -y gettext
+          set -euxo pipefail
+          sudo apt-get update
+          sudo apt-get install -y gettext curl tar
+          python -m pip install --upgrade pip
           pip install requests cogapp polib transifex-python sphinx-intl blurb six
-          curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
-        working-directory: /usr/local/bin
+
+          # Install tx deterministically with retries instead of piping installer script.
+          TX_URL="https://github.com/transifex/cli/releases/latest/download/tx-linux-amd64.tar.gz"
+          curl -fL --retry 5 --retry-delay 2 --retry-connrefused "$TX_URL" -o /tmp/tx.tar.gz
+          tar -xzf /tmp/tx.tar.gz -C /tmp
+          sudo install -m 0755 /tmp/tx /usr/local/bin/tx
+          command -v tx
+          tx --version
       - uses: actions/checkout@master
         with:
           ref: ${{ matrix.version }}
           fetch-depth: 0
-      - run: curl -O https://raw.githubusercontent.com/python-docs-translations/transifex-automations/master/sample-workflows/transifex-util.py
+      - run: curl -fL -o transifex-util.py https://raw.githubusercontent.com/python-docs-translations/transifex-automations/master/sample-workflows/transifex-util.py
       - run: chmod +x transifex-util.py
+      - name: Patch helper for cross-version Doc Makefile compatibility
+        run: |
+          sed -i 's|_call("make -C cpython/Doc/ gettext")|_call("make -C cpython/Doc/ JOBS=1 gettext || make -C cpython/Doc/ JOBS=1 build BUILDER=gettext")|' transifex-util.py
+          grep -n "JOBS=1" transifex-util.py
       - run: ./transifex-util.py recreate_tx_config --language ru --project-slug python-newest --version ${{ matrix.version }}
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
@@ -53,9 +66,9 @@ jobs:
             && echo "SIGNIFICANT_CHANGES=1" >> $GITHUB_ENV || exit 0
       - run: git add . ':!transifex-util.py'
       - run: git commit -m 'Update translation from Transifex'
-        if: env.SIGNIFICANT_CHANGES
+        if: env.SIGNIFICANT_CHANGES == '1'
       - uses: ad-m/github-push-action@master
-        if: env.SIGNIFICANT_CHANGES
+        if: env.SIGNIFICANT_CHANGES == '1'
         with:
           branch: ${{ matrix.version }}
           github_token: ${{ secrets.GITHUB_TOKEN }}

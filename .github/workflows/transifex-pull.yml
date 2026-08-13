@@ -49,7 +49,7 @@ jobs:
 
           p = Path("transifex-util.py")
           old = '_call("make -C cpython/Doc/ gettext")'
-          new = '_call("make -C cpython/Doc/ JOBS=1 gettext || make -C cpython/Doc/ JOBS=1 build BUILDER=gettext")'
+          new = '_call("make -C cpython/Doc/ venv")\n    _call("make -C cpython/Doc/ JOBS=1 gettext || make -C cpython/Doc/ JOBS=1 build BUILDER=gettext")'
           s = p.read_text()
           if old not in s:
               raise SystemExit("Expected pattern was not found in transifex-util.py")

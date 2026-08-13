@@ -80,7 +80,11 @@ jobs:
         run: |
           git config --local user.email github-actions@github.com
           git config --local user.name "GitHub Action's update-translation job"
-      - run: git add -N . ':!transifex-util.py'
+      - run: git add . ':!transifex-util.py'
+      - name: Debug staged files
+        run: |
+          echo "== staged after git add =="
+          git diff --cached --name-status -- . ':!transifex-util.py'
       - name: Filter files
         run: |
           ! git diff --cached -I'^"POT-Creation-Date: ' \
@@ -88,7 +92,6 @@ jobs:
                                 -I'^# ' -I'^"Last-Translator: ' \
                                 --exit-code \
             && echo "SIGNIFICANT_CHANGES=1" >> $GITHUB_ENV || exit 0
-      - run: git add . ':!transifex-util.py'
       - run: git commit -m 'Update translation from Transifex'
         if: env.SIGNIFICANT_CHANGES == '1'
       - uses: ad-m/github-push-action@master

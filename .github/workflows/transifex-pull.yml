@@ -55,7 +55,6 @@ jobs:
               raise SystemExit("Expected pattern was not found in transifex-util.py")
           p.write_text(s.replace(old, new))
           PY
-          grep -n "JOBS=1" transifex-util.py
       - run: ./transifex-util.py recreate_tx_config --language ru --project-slug python-newest --version ${{ matrix.version }}
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
@@ -63,28 +62,11 @@ jobs:
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
       - run: ./transifex-util.py delete_obsolete_files --language ru --project-slug python-newest --version ${{ matrix.version }}
-      - name: Debug fetched files
-        run: |
-          set -euxo pipefail
-          echo "== git status =="
-          git status --short --ignored
-          echo "== untracked files =="
-          git ls-files -o --exclude-standard
-          echo "== ignored files =="
-          git ls-files -oi --exclude-standard
-          echo "== worktree diff =="
-          git diff --name-status -- . ':!transifex-util.py'
-          echo "== cached diff =="
-          git diff --cached --name-status -- . ':!transifex-util.py'
       - name: Set up Git
         run: |
           git config --local user.email github-actions@github.com
           git config --local user.name "GitHub Action's update-translation job"
       - run: git add . ':!transifex-util.py'
-      - name: Debug staged files
-        run: |
-          echo "== staged after git add =="
-          git diff --cached --name-status -- . ':!transifex-util.py'
       - name: Filter files
         run: |
           ! git diff --cached -I'^"POT-Creation-Date: ' \

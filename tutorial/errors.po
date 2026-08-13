@@ -161,7 +161,7 @@ msgid ""
 "caused it."
 msgstr ""
 "Остаток строки содержит уточняющую информацию, которая зависит от типа "
-"исключения и от причины его возникновения. "
+"исключения и от причины его возникновения."
 
 msgid ""
 "The preceding part of the error message shows the context where the "

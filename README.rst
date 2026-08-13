@@ -1,7 +1,7 @@
 RU Translation of the Python Documentation
 =============================================
 
-All translations are done on [Transifex](https://www.transifex.com/python-doc/python-newest/).
+All translations are done on [Transifex](https://explore.transifex.com/python-doc/python-newest/).
 
 Documentation Contribution Agreement
 ------------------------------------

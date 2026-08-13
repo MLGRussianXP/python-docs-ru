@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001 Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# python-doc bot, 2025
+# Dmitry Luschan, 2025
+# Роман Кисаков, 2026
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.15\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-24 08:30+0000\n"
+"PO-Revision-Date: 2025-09-16 00:00+0000\n"
+"Last-Translator: Роман Кисаков, 2026\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+msgid "About this documentation"
+msgstr "Об этой документации"
+
+msgid ""
+"Python's documentation is generated from `reStructuredText`_ sources using "
+"`Sphinx`_, a documentation generator originally created for Python and now "
+"maintained as an independent project."
+msgstr ""
+"Документация Python создаётся из исходников в формате `reStructuredText`_с "
+"помощью`Sphinx`_ — генератора документации, изначально созданного для "
+"Python, а теперь поддерживаемого как независимый проект."
+
+msgid ""
+"Development of the documentation and its toolchain is an entirely volunteer "
+"effort, just like Python itself.  If you want to contribute, please take a "
+"look at the :ref:`reporting-bugs` page for information on how to do so.  New "
+"volunteers are always welcome!"
+msgstr ""
+"Разработка и совершенствование данной документации и её инструментов, как и "
+"весь проект Python, поддерживается добровольцами. Если вы хотите внести свой "
+"вклад, пожалуйста, ознакомьтесь со страницей :ref:`reporting-bugs`, где "
+"описано, как это сделать. Мы всегда рады новым людям!"
+
+msgid "Many thanks go to:"
+msgstr "Особой благодарности заслуживают:"
+
+msgid ""
+"Fred L. Drake, Jr., the creator of the original Python documentation toolset "
+"and author of much of the content;"
+msgstr ""
+"Фред Л. Дрейк младший, создатель оригинального набора инструментов для "
+"документации Python и автор большей части контента;"
+
+msgid ""
+"the `Docutils <https://docutils.sourceforge.io/>`_ project for creating "
+"reStructuredText and the Docutils suite;"
+msgstr ""
+"проект `Docutils <https://docutils.sourceforge.io/>`_ за создание "
+"reStructuredText и библиотеки Docutils;"
+
+msgid ""
+"Fredrik Lundh for his Alternative Python Reference project from which Sphinx "
+"got many good ideas."
+msgstr ""
+"Фредрик Лунд за его проект «Альтернативный справочник по Python», из "
+"которого Sphinx получил много хороших идей."
+
+msgid "Contributors to the Python documentation"
+msgstr "Авторы документации Python"
+
+msgid ""
+"Many people have contributed to the Python language, the Python standard "
+"library, and the Python documentation.  See the `CPython GitHub repository "
+"<https://github.com/python/cpython/graphs/contributors>`__ for a partial "
+"list of contributors."
+msgstr ""
+
+msgid ""
+"It is only with the input and contributions of the Python community that "
+"Python has such wonderful documentation -- Thank You!"
+msgstr ""
+"Только благодаря вкладу и участию сообщества у Python есть такая "
+"замечательная документация. Спасибо Вам!"

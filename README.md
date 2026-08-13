@@ -1,10 +1,8 @@
-RU Translation of the Python Documentation
-=============================================
+# RU Translation of the Python Documentation
 
 All translations are done on [Transifex](https://explore.transifex.com/python-doc/python-newest/).
 
-Documentation Contribution Agreement
-------------------------------------
+## Documentation Contribution Agreement
 
 NOTE REGARDING THE LICENSE FOR TRANSLATIONS: Python's documentation is
 maintained using a global network of volunteers. By posting this
@@ -25,12 +23,9 @@ Python community is welcomed and appreciated.
 You signify acceptance of this agreement by submitting your work to
 the PSF for inclusion in the documentation.
 
-Contributing to the Translation
--------------------------------
+## Contributing to the Translation
 
-Join the Russian team on transifex to start.
+Join the Russian team on Transifex to start.
 
 You're recommended to join
-`our Telegram channel`__ first.
-
-__ https://t.me/py_docs_ru
+[our Telegram channel](https://t.me/py_docs_ru) first.

@@ -1,8 +1,7 @@
 RU Translation of the Python Documentation
 =============================================
 
-All translations are done on transifex.
-https://www.transifex.com/python-doc/public/
+All translations are done on [Transifex](https://www.transifex.com/python-doc/python-newest/).
 
 Documentation Contribution Agreement
 ------------------------------------

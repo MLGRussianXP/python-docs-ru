@@ -1,0 +1,393 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001 Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Dmitry Luschan, 2025
+# python-doc bot, 2026
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.15\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-07 14:47+0000\n"
+"PO-Revision-Date: 2025-09-16 00:02+0000\n"
+"Last-Translator: python-doc bot, 2026\n"
+"Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
+"ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+msgid "Stable"
+msgstr ""
+
+msgid "In development"
+msgstr ""
+
+msgid "This page"
+msgstr ""
+
+msgid "Report a bug"
+msgstr ""
+
+msgid "Improve this page"
+msgstr ""
+
+msgid "Show source"
+msgstr ""
+
+msgid "Show translation source"
+msgstr ""
+
+msgid "Download"
+msgstr ""
+
+msgid "Download Python %(dl_version)s documentation"
+msgstr ""
+
+msgid "Last updated on: %(last_updated)s."
+msgstr ""
+
+msgid ""
+"Download an archive containing all the documentation for this version of "
+"Python:"
+msgstr ""
+
+msgid "Format"
+msgstr ""
+
+msgid "Packed as .zip"
+msgstr ""
+
+msgid "Packed as .tar.bz2"
+msgstr ""
+
+msgid "HTML"
+msgstr ""
+
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.zip\">Download</a>"
+msgstr ""
+
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.tar.bz2\">Download</a>"
+msgstr ""
+
+msgid "Plain text"
+msgstr ""
+
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.zip\">Download</a>"
+msgstr ""
+
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.tar.bz2\">Download</a>"
+msgstr ""
+
+msgid "Texinfo"
+msgstr ""
+
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.zip\">Download</a>"
+msgstr ""
+
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.tar.bz2\">Download</"
+"a>"
+msgstr ""
+
+msgid "EPUB"
+msgstr ""
+
+msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs.epub\">Download</a>"
+msgstr ""
+
+msgid ""
+"\n"
+"We no longer provide pre-built PDFs of the documentation.\n"
+"To build a PDF archive, follow the instructions in the\n"
+"<a href=\"https://devguide.python.org/documentation/start-documenting/"
+"#building-the-documentation\">Developer's Guide</a>\n"
+"and run <code>make dist-pdf</code> in the <code>Doc/</code> directory of a "
+"copy of the CPython repository.\n"
+msgstr ""
+
+msgid ""
+"\n"
+"See the <a href=\"https://docs.python.org/%(version)s/archives/\">directory "
+"listing</a>\n"
+"for file sizes."
+msgstr ""
+
+msgid "Problems"
+msgstr "Проблемы"
+
+msgid ""
+"<a href=\"%(bugs)s\">Open an issue</a>\n"
+"if you have comments or suggestions for the Python documentation."
+msgstr ""
+
+msgid "Availability"
+msgstr "Доступность"
+
+msgid "Part of the"
+msgstr "Часть"
+
+msgid "Limited API"
+msgstr "Ограниченный API"
+
+msgid "Stable ABI"
+msgstr "Стабильный ABI"
+
+msgid "(as an opaque struct)"
+msgstr "(как непрозрачная структура)"
+
+msgid "(including all members)"
+msgstr "(включая всех участников)"
+
+msgid "since version %s"
+msgstr "начиная с версии %s"
+
+msgid "(Only some members are part of the stable ABI.)"
+msgstr ""
+
+msgid "This is"
+msgstr "Это"
+
+msgid "Unstable API"
+msgstr "Нестабильный API"
+
+msgid ". It may change without warning in minor releases."
+msgstr ""
+
+msgid "Return value: Always NULL."
+msgstr ""
+
+msgid "Return value: New reference."
+msgstr ""
+
+msgid "Return value: Borrowed reference."
+msgstr ""
+
+msgid "CPython implementation detail:"
+msgstr ""
+
+msgid "Deprecated since version %s, will be removed in version %s"
+msgstr ""
+
+msgid "Deprecated since version %s, removed in version %s"
+msgstr ""
+
+msgid ":term:`Soft deprecated` since version %s"
+msgstr ""
+
+msgid "in development"
+msgstr "в разработке"
+
+msgid "pre-release"
+msgstr "пререлиз"
+
+msgid "stable"
+msgstr "стабильный"
+
+msgid "security-fixes"
+msgstr "исправления безопасности"
+
+msgid "EOL"
+msgstr "EOL"
+
+msgid "Welcome! This is the official documentation for Python %(release)s."
+msgstr "Добро пожаловать! Это официальная документация Python %(release)s."
+
+msgid "Documentation sections:"
+msgstr "Разделы документации:"
+
+msgid "What's new in Python %(version)s?"
+msgstr "Что нового в Python %(version)s?"
+
+msgid ""
+"Or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents since Python "
+"2.0</a>"
+msgstr ""
+"Или <a href=\"%(whatsnew_index)s\">все документы \"Что нового\", начиная с "
+"Python 2.0</a>"
+
+msgid "Tutorial"
+msgstr "Руководство"
+
+msgid "Start here: a tour of Python's syntax and features"
+msgstr "Начните здесь: обзор синтаксиса и возможностей Python"
+
+msgid "Library reference"
+msgstr "Справочник по библиотеке"
+
+msgid "Standard library and builtins"
+msgstr "Стандартная библиотека и встроенные функции"
+
+msgid "Language reference"
+msgstr "Справочник по языку"
+
+msgid "Syntax and language elements"
+msgstr "Синтаксис и элементы языка"
+
+msgid "Python setup and usage"
+msgstr "Установка и использование Python"
+
+msgid "How to install, configure, and use Python"
+msgstr "Как установить, настроить и использовать Python"
+
+msgid "Python HOWTOs"
+msgstr "Python HOWTOs"
+
+msgid "In-depth topic manuals"
+msgstr "Подробные тематические руководства"
+
+msgid "Installing Python modules"
+msgstr "Установка модулей Python"
+
+msgid "Third-party modules and PyPI.org"
+msgstr "Сторонние модули и PyPI.org"
+
+msgid "Extending and embedding"
+msgstr "Расширение и встраивание"
+
+msgid "For C/C++ programmers"
+msgstr "Для программистов на C/C++"
+
+msgid "Python's C API"
+msgstr "C API Python"
+
+msgid "C API reference"
+msgstr "Справочник по C API"
+
+msgid "FAQs"
+msgstr "ЧаВо"
+
+msgid "Frequently asked questions (with answers!)"
+msgstr "Часто задаваемые вопросы (с ответами!)"
+
+msgid "Deprecations"
+msgstr "Устаревшие возможности"
+
+msgid "Deprecated functionality"
+msgstr "Функциональность, признанная устаревшей"
+
+msgid "Other resources:"
+msgstr ""
+
+msgid "Python developer's guide"
+msgstr ""
+
+msgid "Information on contributing to Python"
+msgstr ""
+
+msgid "Python Packaging User Guide"
+msgstr ""
+
+msgid "Resources relating to Python packaging"
+msgstr ""
+
+msgid "Audio/visual talks"
+msgstr ""
+
+msgid "Podcasts, talks, and video presentations from the community"
+msgstr ""
+
+msgid "Python Enhancement Proposals"
+msgstr ""
+
+msgid "Index of proposed improvements to Python"
+msgstr ""
+
+msgid "Static Typing with Python"
+msgstr ""
+
+msgid "Information and guides about Python type safety"
+msgstr ""
+
+msgid "Indices, glossary, and search:"
+msgstr "Индексы, глоссарий и поиск:"
+
+msgid "Global module index"
+msgstr "Глобальный указатель модулей"
+
+msgid "All modules and libraries"
+msgstr "Все модули и библиотеки"
+
+msgid "General index"
+msgstr "Общий указатель"
+
+msgid "All functions, classes, and terms"
+msgstr "Все функции, классы и термины"
+
+msgid "Glossary"
+msgstr "Глоссарий"
+
+msgid "Terms explained"
+msgstr "Объяснение терминов"
+
+msgid "Search page"
+msgstr "Страница поиска"
+
+msgid "Search this documentation"
+msgstr "Поиск по этой документации"
+
+msgid "Complete table of contents"
+msgstr "Полное содержание"
+
+msgid "All sections and subsections"
+msgstr ""
+
+msgid "Project information:"
+msgstr "Информация о проекте:"
+
+msgid "Reporting issues"
+msgstr "Сообщение о проблемах"
+
+msgid "Contributing to docs"
+msgstr "Вклад в документацию"
+
+msgid "Download the documentation"
+msgstr "Скачать документацию"
+
+msgid "History and license of Python"
+msgstr "История и лицензия Python"
+
+msgid "Copyright"
+msgstr ""
+
+msgid "About the documentation"
+msgstr "О документации"
+
+msgid "Download these documents"
+msgstr ""
+
+msgid "Docs by version"
+msgstr ""
+
+msgid "All versions"
+msgstr ""
+
+msgid ""
+"This document is for an old version of Python that is no longer supported.\n"
+"    You should upgrade, and read the"
+msgstr ""
+
+msgid "Python documentation for the current stable release"
+msgstr ""
+
+msgid ""
+"This is a deploy preview created from a <a href=\"%(repository_url)s/pull/"
+"%(pr_id)s\">pull request</a>.\n"
+"  For authoritative documentation, see"
+msgstr ""
+
+msgid "the current stable release"
+msgstr ""

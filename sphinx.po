@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-19 14:25+0000\n"
+"POT-Creation-Date: 2026-08-21 14:26+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Daniil Kolesnikov, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/python-doc/teams/5390/"
@@ -373,9 +373,6 @@ msgstr ""
 
 msgid "About the documentation"
 msgstr "О документации"
-
-msgid "Download these documents"
-msgstr ""
 
 msgid "Docs by version"
 msgstr ""

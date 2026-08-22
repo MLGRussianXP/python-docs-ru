@@ -38,7 +38,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y librsvg2-bin
       - uses: sphinx-doc/github-problem-matcher@v1.1
-      - run: make -e SPHINXOPTS="--color -D language='ru' -W --keep-going -D suppress_warnings='term.not_in_glossary,inconsistent_references'" ${{ matrix.format }}
+      - run: make -e SPHINXOPTS="--color -D language='ru' -W --keep-going -D suppress_warnings='ref.term,i18n.inconsistent_references'" ${{ matrix.format }}
         working-directory: ./Doc
       - uses: actions/upload-artifact@master
         if: success() || failure()
